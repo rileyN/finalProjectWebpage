@@ -1,0 +1,386 @@
+\hypertarget{datetime_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/datetime.h File Reference}
+\label{datetime_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/datetime.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/datetime.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_date_time___delta}{Py\+Date\+Time\+\_\+\+Delta}}
+\item 
+struct \mbox{\hyperlink{struct_py_date_time___t_z_info}{Py\+Date\+Time\+\_\+\+T\+Z\+Info}}
+\item 
+struct \mbox{\hyperlink{struct___py_date_time___base_t_z_info}{\+\_\+\+Py\+Date\+Time\+\_\+\+Base\+T\+Z\+Info}}
+\item 
+struct \mbox{\hyperlink{struct___py_date_time___base_time}{\+\_\+\+Py\+Date\+Time\+\_\+\+Base\+Time}}
+\item 
+struct \mbox{\hyperlink{struct_py_date_time___time}{Py\+Date\+Time\+\_\+\+Time}}
+\item 
+struct \mbox{\hyperlink{struct_py_date_time___date}{Py\+Date\+Time\+\_\+\+Date}}
+\item 
+struct \mbox{\hyperlink{struct___py_date_time___base_date_time}{\+\_\+\+Py\+Date\+Time\+\_\+\+Base\+Date\+Time}}
+\item 
+struct \mbox{\hyperlink{struct_py_date_time___date_time}{Py\+Date\+Time\+\_\+\+Date\+Time}}
+\item 
+struct \mbox{\hyperlink{struct_py_date_time___c_a_p_i}{Py\+Date\+Time\+\_\+\+C\+A\+PI}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a5bfa01cfa7497f2b7f327492f9f55eb6}{\+\_\+\+Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+D\+A\+T\+A\+S\+I\+ZE}}~4
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a6df6d23894cf34b77ade3ecd059b3849}{\+\_\+\+Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+D\+A\+T\+A\+S\+I\+ZE}}~6
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a2b10d29015ef68695d6ad9c98d55ddbb}{\+\_\+\+Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+D\+A\+T\+A\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{datetime_8h_ae994bac5989fb22f9e704dd1661fdf9c}{\+\_\+\+Py\+T\+Z\+I\+N\+F\+O\+\_\+\+H\+E\+AD}}
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a50ec910e9774082e73625e3604d71d8c}{\+\_\+\+Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+H\+E\+AD}}
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a6234d690c9278e610c9201ad7190dd0e}{\+\_\+\+Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+T\+I\+M\+E\+H\+E\+AD}}
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a41a26d9e8bee6b715d6bd9a9a9ab9849}{Py\+Date\+Time\+\_\+\+G\+E\+T\+\_\+\+Y\+E\+AR}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a7bcbc19d646f63e5e887c84e793bd2c9}{Py\+Date\+Time\+\_\+\+G\+E\+T\+\_\+\+M\+O\+N\+TH}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___date}{Py\+Date\+Time\+\_\+\+Date}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}2\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a6fc56bbf5596e7470d417d49f6198005}{Py\+Date\+Time\+\_\+\+G\+E\+T\+\_\+\+D\+AY}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___date}{Py\+Date\+Time\+\_\+\+Date}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}3\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a7a3c7406dfc6ec23e0efd0864b5d3b47}{Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+H\+O\+UR}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___date_time}{Py\+Date\+Time\+\_\+\+Date\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}4\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a18d62930e10ad35ee2ea040404c456f1}{Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+N\+U\+TE}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___date_time}{Py\+Date\+Time\+\_\+\+Date\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}5\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a7ec78e41611900ecb541ddeb2d439103}{Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+S\+E\+C\+O\+ND}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___date_time}{Py\+Date\+Time\+\_\+\+Date\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}6\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a7e18fa8342fe7919e940a4412de328a9}{Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+C\+R\+O\+S\+E\+C\+O\+ND}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_ae9cff24f84f5dd4c4ab11062997bfc78}{Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+H\+O\+UR}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___time}{Py\+Date\+Time\+\_\+\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a41500648440ad4de173f084da9a5c260}{Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+N\+U\+TE}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___time}{Py\+Date\+Time\+\_\+\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a02c2288f5765d2d72fb348f062c74567}{Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+S\+E\+C\+O\+ND}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___time}{Py\+Date\+Time\+\_\+\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}2\mbox{]})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_ae190a266ec5a36c754455202b8fb597f}{Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+C\+R\+O\+S\+E\+C\+O\+ND}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_aa4361d39f14299960f852abc88e8e446}{Py\+Date\+Time\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}~\char`\"{}datetime.\+datetime\+\_\+\+C\+A\+PI\char`\"{}
+\item 
+\#define \mbox{\hyperlink{datetime_8h_afc23ae3496bbc2161a623dd96f3d2fc3}{D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+A\+P\+I\+\_\+\+M\+A\+G\+IC}}~0x414548d5
+\item 
+\#define \mbox{\hyperlink{datetime_8h_ab50bca1010d8d5e0da2947a474d66665}{Py\+Date\+Time\+\_\+\+I\+M\+P\+O\+RT}}~Py\+Date\+Time\+A\+PI = (\mbox{\hyperlink{struct_py_date_time___c_a_p_i}{Py\+Date\+Time\+\_\+\+C\+A\+PI}} $\ast$)Py\+Capsule\+\_\+\+Import(\mbox{\hyperlink{datetime_8h_aa4361d39f14299960f852abc88e8e446}{Py\+Date\+Time\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}, 0)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_ab233e97b4035b38c47bc13d5cebaca24}{Py\+Date\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Date\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a2d11085fb0949be19da9cc41dbcc7a8a}{Py\+Date\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Date\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_af3b4821e816fd3fa05b90b071f1bddfe}{Py\+Date\+Time\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Date\+Time\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_aa34904bb3cd22be803b55586a46494a9}{Py\+Date\+Time\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Date\+Time\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a6a8f992d9b33eaf2a91b3074f83f9d3d}{Py\+Time\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Time\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_aa7f6020b34351c309798c655fb143fbe}{Py\+Time\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Time\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a8b8b0c65be7ca9c3132ace3d68097c21}{Py\+Delta\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Delta\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_ae97c92578f591bda2fb3f8c2c9aa1a00}{Py\+Delta\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Delta\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a902fb09ddeb3ae6ee41118dfe4f0f21c}{Py\+T\+Z\+Info\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$T\+Z\+Info\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a9c30134fd4a9b27ce9a1e9f9029613de}{Py\+T\+Z\+Info\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$T\+Z\+Info\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a3fc84289a87c27b0f89848c5929d6d73}{Py\+Date\+\_\+\+From\+Date}}(year,  month,  day)~Py\+Date\+Time\+A\+PI-\/$>$Date\+\_\+\+From\+Date(year, month, day, Py\+Date\+Time\+A\+PI-\/$>$Date\+Type)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a2e35b3eb08f2cf57cf150d0168addea0}{Py\+Date\+Time\+\_\+\+From\+Date\+And\+Time}}(year,  month,  day,  hour,  min,  sec,  usec)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a355d317a4638e76672c0a50b60bac4d6}{Py\+Time\+\_\+\+From\+Time}}(hour,  minute,  second,  usecond)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a9a74e235896584a7947144777ee0d0fd}{Py\+Delta\+\_\+\+From\+D\+SU}}(days,  seconds,  useconds)
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a2fd19b87f21b76e279b6b253dc895124}{Py\+Date\+Time\+\_\+\+From\+Timestamp}}(\mbox{\hyperlink{classargs}{args}})
+\item 
+\#define \mbox{\hyperlink{datetime_8h_a12ff61e2bbff852a3bd8a4a92df31fc7}{Py\+Date\+\_\+\+From\+Timestamp}}(\mbox{\hyperlink{classargs}{args}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{datetime_8h_a5bfa01cfa7497f2b7f327492f9f55eb6}\label{datetime_8h_a5bfa01cfa7497f2b7f327492f9f55eb6}} 
+\index{datetime.h@{datetime.h}!\_PyDateTime\_DATE\_DATASIZE@{\_PyDateTime\_DATE\_DATASIZE}}
+\index{\_PyDateTime\_DATE\_DATASIZE@{\_PyDateTime\_DATE\_DATASIZE}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{\_PyDateTime\_DATE\_DATASIZE}{\_PyDateTime\_DATE\_DATASIZE}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+D\+A\+T\+A\+S\+I\+ZE~4}
+
+\mbox{\Hypertarget{datetime_8h_a2b10d29015ef68695d6ad9c98d55ddbb}\label{datetime_8h_a2b10d29015ef68695d6ad9c98d55ddbb}} 
+\index{datetime.h@{datetime.h}!\_PyDateTime\_DATETIME\_DATASIZE@{\_PyDateTime\_DATETIME\_DATASIZE}}
+\index{\_PyDateTime\_DATETIME\_DATASIZE@{\_PyDateTime\_DATETIME\_DATASIZE}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{\_PyDateTime\_DATETIME\_DATASIZE}{\_PyDateTime\_DATETIME\_DATASIZE}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+D\+A\+T\+A\+S\+I\+ZE~10}
+
+\mbox{\Hypertarget{datetime_8h_a6234d690c9278e610c9201ad7190dd0e}\label{datetime_8h_a6234d690c9278e610c9201ad7190dd0e}} 
+\index{datetime.h@{datetime.h}!\_PyDateTime\_DATETIMEHEAD@{\_PyDateTime\_DATETIMEHEAD}}
+\index{\_PyDateTime\_DATETIMEHEAD@{\_PyDateTime\_DATETIMEHEAD}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{\_PyDateTime\_DATETIMEHEAD}{\_PyDateTime\_DATETIMEHEAD}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+T\+I\+M\+E\+H\+E\+AD}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_PyTZINFO\_HEAD                      \(\backslash\)}
+\DoxyCodeLine{    unsigned \textcolor{keywordtype}{char} \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[\mbox{\hyperlink{datetime_8h_a2b10d29015ef68695d6ad9c98d55ddbb}{\_PyDateTime\_DATETIME\_DATASIZE}}];}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_a6df6d23894cf34b77ade3ecd059b3849}\label{datetime_8h_a6df6d23894cf34b77ade3ecd059b3849}} 
+\index{datetime.h@{datetime.h}!\_PyDateTime\_TIME\_DATASIZE@{\_PyDateTime\_TIME\_DATASIZE}}
+\index{\_PyDateTime\_TIME\_DATASIZE@{\_PyDateTime\_TIME\_DATASIZE}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{\_PyDateTime\_TIME\_DATASIZE}{\_PyDateTime\_TIME\_DATASIZE}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+D\+A\+T\+A\+S\+I\+ZE~6}
+
+\mbox{\Hypertarget{datetime_8h_a50ec910e9774082e73625e3604d71d8c}\label{datetime_8h_a50ec910e9774082e73625e3604d71d8c}} 
+\index{datetime.h@{datetime.h}!\_PyDateTime\_TIMEHEAD@{\_PyDateTime\_TIMEHEAD}}
+\index{\_PyDateTime\_TIMEHEAD@{\_PyDateTime\_TIMEHEAD}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{\_PyDateTime\_TIMEHEAD}{\_PyDateTime\_TIMEHEAD}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+H\+E\+AD}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_PyTZINFO\_HEAD              \(\backslash\)}
+\DoxyCodeLine{    unsigned \textcolor{keywordtype}{char} \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[\mbox{\hyperlink{datetime_8h_a6df6d23894cf34b77ade3ecd059b3849}{\_PyDateTime\_TIME\_DATASIZE}}];}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_ae994bac5989fb22f9e704dd1661fdf9c}\label{datetime_8h_ae994bac5989fb22f9e704dd1661fdf9c}} 
+\index{datetime.h@{datetime.h}!\_PyTZINFO\_HEAD@{\_PyTZINFO\_HEAD}}
+\index{\_PyTZINFO\_HEAD@{\_PyTZINFO\_HEAD}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{\_PyTZINFO\_HEAD}{\_PyTZINFO\_HEAD}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+T\+Z\+I\+N\+F\+O\+\_\+\+H\+E\+AD}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PyObject\_HEAD               \(\backslash\)}
+\DoxyCodeLine{    long hashcode;              \(\backslash\)}
+\DoxyCodeLine{    char hastzinfo;             \textcolor{comment}{/* boolean flag */}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_afc23ae3496bbc2161a623dd96f3d2fc3}\label{datetime_8h_afc23ae3496bbc2161a623dd96f3d2fc3}} 
+\index{datetime.h@{datetime.h}!DATETIME\_API\_MAGIC@{DATETIME\_API\_MAGIC}}
+\index{DATETIME\_API\_MAGIC@{DATETIME\_API\_MAGIC}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{DATETIME\_API\_MAGIC}{DATETIME\_API\_MAGIC}}
+{\footnotesize\ttfamily \#define D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+A\+P\+I\+\_\+\+M\+A\+G\+IC~0x414548d5}
+
+\mbox{\Hypertarget{datetime_8h_ab233e97b4035b38c47bc13d5cebaca24}\label{datetime_8h_ab233e97b4035b38c47bc13d5cebaca24}} 
+\index{datetime.h@{datetime.h}!PyDate\_Check@{PyDate\_Check}}
+\index{PyDate\_Check@{PyDate\_Check}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDate\_Check}{PyDate\_Check}}
+{\footnotesize\ttfamily \#define Py\+Date\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Date\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_a2d11085fb0949be19da9cc41dbcc7a8a}\label{datetime_8h_a2d11085fb0949be19da9cc41dbcc7a8a}} 
+\index{datetime.h@{datetime.h}!PyDate\_CheckExact@{PyDate\_CheckExact}}
+\index{PyDate\_CheckExact@{PyDate\_CheckExact}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDate\_CheckExact}{PyDate\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Date\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Date\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_a3fc84289a87c27b0f89848c5929d6d73}\label{datetime_8h_a3fc84289a87c27b0f89848c5929d6d73}} 
+\index{datetime.h@{datetime.h}!PyDate\_FromDate@{PyDate\_FromDate}}
+\index{PyDate\_FromDate@{PyDate\_FromDate}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDate\_FromDate}{PyDate\_FromDate}}
+{\footnotesize\ttfamily \#define Py\+Date\+\_\+\+From\+Date(\begin{DoxyParamCaption}\item[{}]{year,  }\item[{}]{month,  }\item[{}]{day }\end{DoxyParamCaption})~Py\+Date\+Time\+A\+PI-\/$>$Date\+\_\+\+From\+Date(year, month, day, Py\+Date\+Time\+A\+PI-\/$>$Date\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_a12ff61e2bbff852a3bd8a4a92df31fc7}\label{datetime_8h_a12ff61e2bbff852a3bd8a4a92df31fc7}} 
+\index{datetime.h@{datetime.h}!PyDate\_FromTimestamp@{PyDate\_FromTimestamp}}
+\index{PyDate\_FromTimestamp@{PyDate\_FromTimestamp}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDate\_FromTimestamp}{PyDate\_FromTimestamp}}
+{\footnotesize\ttfamily \#define Py\+Date\+\_\+\+From\+Timestamp(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{classargs}{args}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_a5f2e838aedbb4a18c649736ba252613b}{Date\_FromTimestamp}}( \(\backslash\)}
+\DoxyCodeLine{        (\mbox{\hyperlink{struct__object}{PyObject}}*) (PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_abfafd0453a7f387ab8f4365431543905}{DateType}}), \mbox{\hyperlink{classargs}{args}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_aa4361d39f14299960f852abc88e8e446}\label{datetime_8h_aa4361d39f14299960f852abc88e8e446}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_CAPSULE\_NAME@{PyDateTime\_CAPSULE\_NAME}}
+\index{PyDateTime\_CAPSULE\_NAME@{PyDateTime\_CAPSULE\_NAME}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_CAPSULE\_NAME}{PyDateTime\_CAPSULE\_NAME}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME~\char`\"{}datetime.\+datetime\+\_\+\+C\+A\+PI\char`\"{}}
+
+\mbox{\Hypertarget{datetime_8h_af3b4821e816fd3fa05b90b071f1bddfe}\label{datetime_8h_af3b4821e816fd3fa05b90b071f1bddfe}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_Check@{PyDateTime\_Check}}
+\index{PyDateTime\_Check@{PyDateTime\_Check}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_Check}{PyDateTime\_Check}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Date\+Time\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_aa34904bb3cd22be803b55586a46494a9}\label{datetime_8h_aa34904bb3cd22be803b55586a46494a9}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_CheckExact@{PyDateTime\_CheckExact}}
+\index{PyDateTime\_CheckExact@{PyDateTime\_CheckExact}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_CheckExact}{PyDateTime\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Date\+Time\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_a7a3c7406dfc6ec23e0efd0864b5d3b47}\label{datetime_8h_a7a3c7406dfc6ec23e0efd0864b5d3b47}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_DATE\_GET\_HOUR@{PyDateTime\_DATE\_GET\_HOUR}}
+\index{PyDateTime\_DATE\_GET\_HOUR@{PyDateTime\_DATE\_GET\_HOUR}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_DATE\_GET\_HOUR}{PyDateTime\_DATE\_GET\_HOUR}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+H\+O\+UR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___date_time}{Py\+Date\+Time\+\_\+\+Date\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}4\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_a7e18fa8342fe7919e940a4412de328a9}\label{datetime_8h_a7e18fa8342fe7919e940a4412de328a9}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_DATE\_GET\_MICROSECOND@{PyDateTime\_DATE\_GET\_MICROSECOND}}
+\index{PyDateTime\_DATE\_GET\_MICROSECOND@{PyDateTime\_DATE\_GET\_MICROSECOND}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_DATE\_GET\_MICROSECOND}{PyDateTime\_DATE\_GET\_MICROSECOND}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+C\+R\+O\+S\+E\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((((\mbox{\hyperlink{struct_py_date_time___date_time}{PyDateTime\_DateTime}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->data[7] << 16) |       \(\backslash\)}
+\DoxyCodeLine{     (((\mbox{\hyperlink{struct_py_date_time___date_time}{PyDateTime\_DateTime}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[8] << 8)  |       \(\backslash\)}
+\DoxyCodeLine{      ((\mbox{\hyperlink{struct_py_date_time___date_time}{PyDateTime\_DateTime}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->data[9])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_a18d62930e10ad35ee2ea040404c456f1}\label{datetime_8h_a18d62930e10ad35ee2ea040404c456f1}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_DATE\_GET\_MINUTE@{PyDateTime\_DATE\_GET\_MINUTE}}
+\index{PyDateTime\_DATE\_GET\_MINUTE@{PyDateTime\_DATE\_GET\_MINUTE}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_DATE\_GET\_MINUTE}{PyDateTime\_DATE\_GET\_MINUTE}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+N\+U\+TE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___date_time}{Py\+Date\+Time\+\_\+\+Date\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}5\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_a7ec78e41611900ecb541ddeb2d439103}\label{datetime_8h_a7ec78e41611900ecb541ddeb2d439103}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_DATE\_GET\_SECOND@{PyDateTime\_DATE\_GET\_SECOND}}
+\index{PyDateTime\_DATE\_GET\_SECOND@{PyDateTime\_DATE\_GET\_SECOND}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_DATE\_GET\_SECOND}{PyDateTime\_DATE\_GET\_SECOND}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+D\+A\+T\+E\+\_\+\+G\+E\+T\+\_\+\+S\+E\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___date_time}{Py\+Date\+Time\+\_\+\+Date\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}6\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_a2e35b3eb08f2cf57cf150d0168addea0}\label{datetime_8h_a2e35b3eb08f2cf57cf150d0168addea0}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_FromDateAndTime@{PyDateTime\_FromDateAndTime}}
+\index{PyDateTime\_FromDateAndTime@{PyDateTime\_FromDateAndTime}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_FromDateAndTime}{PyDateTime\_FromDateAndTime}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+From\+Date\+And\+Time(\begin{DoxyParamCaption}\item[{}]{year,  }\item[{}]{month,  }\item[{}]{day,  }\item[{}]{hour,  }\item[{}]{min,  }\item[{}]{sec,  }\item[{}]{usec }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_afecc6e6c8d9e677f9242e78fe3138b12}{DateTime\_FromDateAndTime}}(year, month, day, hour, \(\backslash\)}
+\DoxyCodeLine{        min, sec, usec, \mbox{\hyperlink{_python27_2object_8h_a02ab767ffd5e5a73d8dcd6db87c05e40}{Py\_None}}, PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_a85f29d980c43599949a37890882e5051}{DateTimeType}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_a2fd19b87f21b76e279b6b253dc895124}\label{datetime_8h_a2fd19b87f21b76e279b6b253dc895124}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_FromTimestamp@{PyDateTime\_FromTimestamp}}
+\index{PyDateTime\_FromTimestamp@{PyDateTime\_FromTimestamp}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_FromTimestamp}{PyDateTime\_FromTimestamp}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+From\+Timestamp(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{classargs}{args}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_af647a82aacdc468e9a5036a35f7e43eb}{DateTime\_FromTimestamp}}( \(\backslash\)}
+\DoxyCodeLine{        (\mbox{\hyperlink{struct__object}{PyObject}}*) (PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_a85f29d980c43599949a37890882e5051}{DateTimeType}}), \mbox{\hyperlink{classargs}{args}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_a6fc56bbf5596e7470d417d49f6198005}\label{datetime_8h_a6fc56bbf5596e7470d417d49f6198005}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_GET\_DAY@{PyDateTime\_GET\_DAY}}
+\index{PyDateTime\_GET\_DAY@{PyDateTime\_GET\_DAY}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_GET\_DAY}{PyDateTime\_GET\_DAY}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+G\+E\+T\+\_\+\+D\+AY(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___date}{Py\+Date\+Time\+\_\+\+Date}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}3\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_a7bcbc19d646f63e5e887c84e793bd2c9}\label{datetime_8h_a7bcbc19d646f63e5e887c84e793bd2c9}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_GET\_MONTH@{PyDateTime\_GET\_MONTH}}
+\index{PyDateTime\_GET\_MONTH@{PyDateTime\_GET\_MONTH}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_GET\_MONTH}{PyDateTime\_GET\_MONTH}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+G\+E\+T\+\_\+\+M\+O\+N\+TH(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___date}{Py\+Date\+Time\+\_\+\+Date}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}2\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_a41a26d9e8bee6b715d6bd9a9a9ab9849}\label{datetime_8h_a41a26d9e8bee6b715d6bd9a9a9ab9849}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_GET\_YEAR@{PyDateTime\_GET\_YEAR}}
+\index{PyDateTime\_GET\_YEAR@{PyDateTime\_GET\_YEAR}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_GET\_YEAR}{PyDateTime\_GET\_YEAR}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+G\+E\+T\+\_\+\+Y\+E\+AR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((((\mbox{\hyperlink{struct_py_date_time___date}{PyDateTime\_Date}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->data[0] << 8) | \(\backslash\)}
+\DoxyCodeLine{                     ((\mbox{\hyperlink{struct_py_date_time___date}{PyDateTime\_Date}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[1])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_ab50bca1010d8d5e0da2947a474d66665}\label{datetime_8h_ab50bca1010d8d5e0da2947a474d66665}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_IMPORT@{PyDateTime\_IMPORT}}
+\index{PyDateTime\_IMPORT@{PyDateTime\_IMPORT}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_IMPORT}{PyDateTime\_IMPORT}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+I\+M\+P\+O\+RT~Py\+Date\+Time\+A\+PI = (\mbox{\hyperlink{struct_py_date_time___c_a_p_i}{Py\+Date\+Time\+\_\+\+C\+A\+PI}} $\ast$)Py\+Capsule\+\_\+\+Import(\mbox{\hyperlink{datetime_8h_aa4361d39f14299960f852abc88e8e446}{Py\+Date\+Time\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}, 0)}
+
+\mbox{\Hypertarget{datetime_8h_ae9cff24f84f5dd4c4ab11062997bfc78}\label{datetime_8h_ae9cff24f84f5dd4c4ab11062997bfc78}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_TIME\_GET\_HOUR@{PyDateTime\_TIME\_GET\_HOUR}}
+\index{PyDateTime\_TIME\_GET\_HOUR@{PyDateTime\_TIME\_GET\_HOUR}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_TIME\_GET\_HOUR}{PyDateTime\_TIME\_GET\_HOUR}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+H\+O\+UR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___time}{Py\+Date\+Time\+\_\+\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}0\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_ae190a266ec5a36c754455202b8fb597f}\label{datetime_8h_ae190a266ec5a36c754455202b8fb597f}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_TIME\_GET\_MICROSECOND@{PyDateTime\_TIME\_GET\_MICROSECOND}}
+\index{PyDateTime\_TIME\_GET\_MICROSECOND@{PyDateTime\_TIME\_GET\_MICROSECOND}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_TIME\_GET\_MICROSECOND}{PyDateTime\_TIME\_GET\_MICROSECOND}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+C\+R\+O\+S\+E\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((((\mbox{\hyperlink{struct_py_date_time___time}{PyDateTime\_Time}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->data[3] << 16) |           \(\backslash\)}
+\DoxyCodeLine{     (((\mbox{\hyperlink{struct_py_date_time___time}{PyDateTime\_Time}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[4] << 8)  |           \(\backslash\)}
+\DoxyCodeLine{      ((\mbox{\hyperlink{struct_py_date_time___time}{PyDateTime\_Time}}*)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})->data[5])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_a41500648440ad4de173f084da9a5c260}\label{datetime_8h_a41500648440ad4de173f084da9a5c260}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_TIME\_GET\_MINUTE@{PyDateTime\_TIME\_GET\_MINUTE}}
+\index{PyDateTime\_TIME\_GET\_MINUTE@{PyDateTime\_TIME\_GET\_MINUTE}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_TIME\_GET\_MINUTE}{PyDateTime\_TIME\_GET\_MINUTE}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+M\+I\+N\+U\+TE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___time}{Py\+Date\+Time\+\_\+\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}1\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_a02c2288f5765d2d72fb348f062c74567}\label{datetime_8h_a02c2288f5765d2d72fb348f062c74567}} 
+\index{datetime.h@{datetime.h}!PyDateTime\_TIME\_GET\_SECOND@{PyDateTime\_TIME\_GET\_SECOND}}
+\index{PyDateTime\_TIME\_GET\_SECOND@{PyDateTime\_TIME\_GET\_SECOND}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_TIME\_GET\_SECOND}{PyDateTime\_TIME\_GET\_SECOND}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+T\+I\+M\+E\+\_\+\+G\+E\+T\+\_\+\+S\+E\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___time}{Py\+Date\+Time\+\_\+\+Time}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}\mbox{[}2\mbox{]})}
+
+\mbox{\Hypertarget{datetime_8h_a8b8b0c65be7ca9c3132ace3d68097c21}\label{datetime_8h_a8b8b0c65be7ca9c3132ace3d68097c21}} 
+\index{datetime.h@{datetime.h}!PyDelta\_Check@{PyDelta\_Check}}
+\index{PyDelta\_Check@{PyDelta\_Check}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDelta\_Check}{PyDelta\_Check}}
+{\footnotesize\ttfamily \#define Py\+Delta\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Delta\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_ae97c92578f591bda2fb3f8c2c9aa1a00}\label{datetime_8h_ae97c92578f591bda2fb3f8c2c9aa1a00}} 
+\index{datetime.h@{datetime.h}!PyDelta\_CheckExact@{PyDelta\_CheckExact}}
+\index{PyDelta\_CheckExact@{PyDelta\_CheckExact}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDelta\_CheckExact}{PyDelta\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Delta\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Delta\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_a9a74e235896584a7947144777ee0d0fd}\label{datetime_8h_a9a74e235896584a7947144777ee0d0fd}} 
+\index{datetime.h@{datetime.h}!PyDelta\_FromDSU@{PyDelta\_FromDSU}}
+\index{PyDelta\_FromDSU@{PyDelta\_FromDSU}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyDelta\_FromDSU}{PyDelta\_FromDSU}}
+{\footnotesize\ttfamily \#define Py\+Delta\+\_\+\+From\+D\+SU(\begin{DoxyParamCaption}\item[{}]{days,  }\item[{}]{seconds,  }\item[{}]{useconds }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_aeac28563c38854bbb88403ec237cf46a}{Delta\_FromDelta}}(days, seconds, useconds, 1, \(\backslash\)}
+\DoxyCodeLine{        PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_a0fb84e80d67fd689d265d94811418231}{DeltaType}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_a6a8f992d9b33eaf2a91b3074f83f9d3d}\label{datetime_8h_a6a8f992d9b33eaf2a91b3074f83f9d3d}} 
+\index{datetime.h@{datetime.h}!PyTime\_Check@{PyTime\_Check}}
+\index{PyTime\_Check@{PyTime\_Check}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyTime\_Check}{PyTime\_Check}}
+{\footnotesize\ttfamily \#define Py\+Time\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$Time\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_aa7f6020b34351c309798c655fb143fbe}\label{datetime_8h_aa7f6020b34351c309798c655fb143fbe}} 
+\index{datetime.h@{datetime.h}!PyTime\_CheckExact@{PyTime\_CheckExact}}
+\index{PyTime\_CheckExact@{PyTime\_CheckExact}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyTime\_CheckExact}{PyTime\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Time\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$Time\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_a355d317a4638e76672c0a50b60bac4d6}\label{datetime_8h_a355d317a4638e76672c0a50b60bac4d6}} 
+\index{datetime.h@{datetime.h}!PyTime\_FromTime@{PyTime\_FromTime}}
+\index{PyTime\_FromTime@{PyTime\_FromTime}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyTime\_FromTime}{PyTime\_FromTime}}
+{\footnotesize\ttfamily \#define Py\+Time\+\_\+\+From\+Time(\begin{DoxyParamCaption}\item[{}]{hour,  }\item[{}]{minute,  }\item[{}]{second,  }\item[{}]{usecond }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_a7ab28a3df6cf8503f49553d40a4bdb08}{Time\_FromTime}}(hour, minute, second, usecond, \(\backslash\)}
+\DoxyCodeLine{        \mbox{\hyperlink{_python27_2object_8h_a02ab767ffd5e5a73d8dcd6db87c05e40}{Py\_None}}, PyDateTimeAPI->\mbox{\hyperlink{struct_py_date_time___c_a_p_i_a14967c0f0703a60b53eee61f3a868c82}{TimeType}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{datetime_8h_a902fb09ddeb3ae6ee41118dfe4f0f21c}\label{datetime_8h_a902fb09ddeb3ae6ee41118dfe4f0f21c}} 
+\index{datetime.h@{datetime.h}!PyTZInfo\_Check@{PyTZInfo\_Check}}
+\index{PyTZInfo\_Check@{PyTZInfo\_Check}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyTZInfo\_Check}{PyTZInfo\_Check}}
+{\footnotesize\ttfamily \#define Py\+T\+Z\+Info\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, Py\+Date\+Time\+A\+PI-\/$>$T\+Z\+Info\+Type)}
+
+\mbox{\Hypertarget{datetime_8h_a9c30134fd4a9b27ce9a1e9f9029613de}\label{datetime_8h_a9c30134fd4a9b27ce9a1e9f9029613de}} 
+\index{datetime.h@{datetime.h}!PyTZInfo\_CheckExact@{PyTZInfo\_CheckExact}}
+\index{PyTZInfo\_CheckExact@{PyTZInfo\_CheckExact}!datetime.h@{datetime.h}}
+\subsubsection{\texorpdfstring{PyTZInfo\_CheckExact}{PyTZInfo\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+T\+Z\+Info\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == Py\+Date\+Time\+A\+PI-\/$>$T\+Z\+Info\+Type)}
+

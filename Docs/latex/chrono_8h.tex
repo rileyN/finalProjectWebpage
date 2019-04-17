@@ -1,0 +1,48 @@
+\hypertarget{chrono_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/include/pybind11/chrono.h File Reference}
+\label{chrono_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/include/pybind11/chrono.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/include/pybind11/chrono.h}}
+{\ttfamily \#include \char`\"{}pybind11.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$datetime.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classduration__caster}{duration\+\_\+caster$<$ type $>$}}
+\item 
+class \mbox{\hyperlink{classtype__caster_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_01_4}{type\+\_\+caster$<$ std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock, Duration $>$ $>$}}
+\item 
+class \mbox{\hyperlink{classtype__caster_3_01std_1_1chrono_1_1time__point_3_01_clock_00_01_duration_01_4_01_4}{type\+\_\+caster$<$ std\+::chrono\+::time\+\_\+point$<$ Clock, Duration $>$ $>$}}
+\item 
+class \mbox{\hyperlink{classtype__caster_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_01_4}{type\+\_\+caster$<$ std\+::chrono\+::duration$<$ Rep, Period $>$ $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{chrono_8h_a63a70ee060130679f0e68c6158bc0915}{Py\+Date\+Time\+\_\+\+D\+E\+L\+T\+A\+\_\+\+G\+E\+T\+\_\+\+D\+A\+YS}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___delta}{Py\+Date\+Time\+\_\+\+Delta}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$days)
+\item 
+\#define \mbox{\hyperlink{chrono_8h_a2f71a8da1deec5bf289504c423ba7bca}{Py\+Date\+Time\+\_\+\+D\+E\+L\+T\+A\+\_\+\+G\+E\+T\+\_\+\+S\+E\+C\+O\+N\+DS}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___delta}{Py\+Date\+Time\+\_\+\+Delta}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$seconds)
+\item 
+\#define \mbox{\hyperlink{chrono_8h_a53bf22cb6352ec82a79cb110211162ef}{Py\+Date\+Time\+\_\+\+D\+E\+L\+T\+A\+\_\+\+G\+E\+T\+\_\+\+M\+I\+C\+R\+O\+S\+E\+C\+O\+N\+DS}}(\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})~(((\mbox{\hyperlink{struct_py_date_time___delta}{Py\+Date\+Time\+\_\+\+Delta}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$microseconds)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{chrono_8h_a63a70ee060130679f0e68c6158bc0915}\label{chrono_8h_a63a70ee060130679f0e68c6158bc0915}} 
+\index{chrono.h@{chrono.h}!PyDateTime\_DELTA\_GET\_DAYS@{PyDateTime\_DELTA\_GET\_DAYS}}
+\index{PyDateTime\_DELTA\_GET\_DAYS@{PyDateTime\_DELTA\_GET\_DAYS}!chrono.h@{chrono.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_DELTA\_GET\_DAYS}{PyDateTime\_DELTA\_GET\_DAYS}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+D\+E\+L\+T\+A\+\_\+\+G\+E\+T\+\_\+\+D\+A\+YS(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___delta}{Py\+Date\+Time\+\_\+\+Delta}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$days)}
+
+\mbox{\Hypertarget{chrono_8h_a53bf22cb6352ec82a79cb110211162ef}\label{chrono_8h_a53bf22cb6352ec82a79cb110211162ef}} 
+\index{chrono.h@{chrono.h}!PyDateTime\_DELTA\_GET\_MICROSECONDS@{PyDateTime\_DELTA\_GET\_MICROSECONDS}}
+\index{PyDateTime\_DELTA\_GET\_MICROSECONDS@{PyDateTime\_DELTA\_GET\_MICROSECONDS}!chrono.h@{chrono.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_DELTA\_GET\_MICROSECONDS}{PyDateTime\_DELTA\_GET\_MICROSECONDS}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+D\+E\+L\+T\+A\+\_\+\+G\+E\+T\+\_\+\+M\+I\+C\+R\+O\+S\+E\+C\+O\+N\+DS(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___delta}{Py\+Date\+Time\+\_\+\+Delta}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$microseconds)}
+
+\mbox{\Hypertarget{chrono_8h_a2f71a8da1deec5bf289504c423ba7bca}\label{chrono_8h_a2f71a8da1deec5bf289504c423ba7bca}} 
+\index{chrono.h@{chrono.h}!PyDateTime\_DELTA\_GET\_SECONDS@{PyDateTime\_DELTA\_GET\_SECONDS}}
+\index{PyDateTime\_DELTA\_GET\_SECONDS@{PyDateTime\_DELTA\_GET\_SECONDS}!chrono.h@{chrono.h}}
+\subsubsection{\texorpdfstring{PyDateTime\_DELTA\_GET\_SECONDS}{PyDateTime\_DELTA\_GET\_SECONDS}}
+{\footnotesize\ttfamily \#define Py\+Date\+Time\+\_\+\+D\+E\+L\+T\+A\+\_\+\+G\+E\+T\+\_\+\+S\+E\+C\+O\+N\+DS(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_date_time___delta}{Py\+Date\+Time\+\_\+\+Delta}}$\ast$)\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}})-\/$>$seconds)}
+

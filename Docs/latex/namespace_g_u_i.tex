@@ -1,0 +1,414 @@
+\hypertarget{namespace_g_u_i}{}\section{G\+UI Namespace Reference}
+\label{namespace_g_u_i}\index{GUI@{GUI}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}} (sig)
+\begin{DoxyCompactList}\small\item\em Sends a signal through the socket. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_g_u_i_a6331e60bc4c66b1f0460cd987e6b0d1d}{end}} ()
+\begin{DoxyCompactList}\small\item\em Called when the application is closing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a75551f8a671434e8c984ec81add33a23}{r}} = tk.\+Tk()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_g_u_i}{G\+UI}} Functionality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}} \mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}} = \textquotesingle{}../media/Buttons/\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a95a82d369df3d4c7b727a9411b5200bf}{l1}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Level Variables\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=0)
+\begin{DoxyCompactList}\small\item\em Level Variables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_ac7c465b5857043b3fa99979abb72f6f8}{l2}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a8c8f50b76976c33a0eaa959e28d7b453}{Num}} of Rows\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=1,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a35519123b77b2a3bdeaaa694185dd02a}{l3}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a8c8f50b76976c33a0eaa959e28d7b453}{Num}} of Columns\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=2,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a9a674293f87e667971e46f422129f8be}{s1}} = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a9b4f27a5e87a161111559dd8e38219d4}{s2}} = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a50392865479db3a869a19c926d474f1f}{row}}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a4d9166e323570c16afa5de2e7bd788af}{column}}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a329472468460bb661747b9e01449d184}{b1}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Size\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 10, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}Change Size\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ac505e29343a8c79d7347a8be5c4fffa5}{l4}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Tiles\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=4)
+\begin{DoxyCompactList}\small\item\em Tiles Section. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_a2b9af2e6ceeadebce40ff8171633d86c}{img1}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Floor\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ac572e0369b73d3b0493771239995d91d}{b2}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a2b9af2e6ceeadebce40ff8171633d86c}{img1}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Floor\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a49cad6894844031f41a996947032a4a4}{img2}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Wall\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ae03019b48b46235fcf9eb1ae963fd68e}{b3}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a49cad6894844031f41a996947032a4a4}{img2}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Wall\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a06adcfe75921645a1ef64cf7a4cdb3fd}{img3}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Statue\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a4e69ff82719fbda902c3b2126e79d692}{b4}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a06adcfe75921645a1ef64cf7a4cdb3fd}{img3}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Statue\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a63bec101ed0dcb5864839c78fcb02572}{img4}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Spikes\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ab78877371456f13f3765198ec7ee8d91}{b5}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a63bec101ed0dcb5864839c78fcb02572}{img4}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Spikes\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a3e9631bef05195054e18899712ee62e7}{img5}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Lock\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a8b3fe1a314a7f97eb58e91a936f16d24}{b6}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a3e9631bef05195054e18899712ee62e7}{img5}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Lock\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a6cb0dc882c4030753831044192cbef73}{img6}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Quad\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a2b170b4727c7ee7938399888e449e39b}{b7}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a6cb0dc882c4030753831044192cbef73}{img6}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Quad\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_af4d553e4d64242f914c988b9b5cb6c88}{l5}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Items\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=7)
+\begin{DoxyCompactList}\small\item\em Items. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_ab8b458d392f9b3d983f3d09b8eadf226}{img7}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Heart\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a75a5a8fdd144311f4409de4a0dcfd143}{b8}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_ab8b458d392f9b3d983f3d09b8eadf226}{img7}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Heart\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a16cb8d3ad11106b26025ddbf102b8a6f}{img8}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Key\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ad8ee1e3aaa566c9c531afb653646940f}{b9}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a16cb8d3ad11106b26025ddbf102b8a6f}{img8}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Key\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a030836603e07318a291bb6c3ad25ff3f}{l6}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Enemies\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=9)
+\begin{DoxyCompactList}\small\item\em Enemies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_a6ece4b78fbb7ed63258caf1a781471f4}{img9}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Ghost\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a385149b9ed164ef153e01cc07a42a12f}{b10}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a6ece4b78fbb7ed63258caf1a781471f4}{img9}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Ghost\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ae7bae4d0c7bb1a98517fed2294b60f46}{img10}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Octo\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a737db9240917cd4bce0a7f294b6038b2}{b11}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_ae7bae4d0c7bb1a98517fed2294b60f46}{img10}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Octo\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a3e7474bdd0fb176960a855522043a291}{l7}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Player Values\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=11)
+\begin{DoxyCompactList}\small\item\em Player Vaues. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_a54eba3e54367f4dc592947bf19468e7f}{img11}} = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Player\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_af2a2606c0440d1c893c60b4d6d4fbec5}{b12}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a54eba3e54367f4dc592947bf19468e7f}{img11}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Move Player\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a66ff0e016573e1293d4bf6cc8e2238bd}{l8}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Player Lives\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=12,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a16b808fdebb02f1fb7304c7de82b9584}{s3}} = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a70f8a6b3e40fa679f0be933103c4e3c1}{b13}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Lives\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}Change Lives\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a92765160ab69a02bcf2f7aa02a16aaa7}{l9}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}File \mbox{\hyperlink{_python-ast_8h_a3e9f22c154a65956ebd413d2d8dafc0f}{Name}}\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=13,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_af268557bd2f393a6fce1161af8ab0300}{e1}} = Entry(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_aa59d8fa69f7030816bf471c883ccf8fc}{b14}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Save Level\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}Save Level\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a88eaf4fa14b32d5a2a10202a201bbe88}{b15}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a7cc9da6a6307ea8052f27a18bd3d7d5bac40ec5db2990469fc236f4c5dea23edb}{Load}} Level\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a7cc9da6a6307ea8052f27a18bd3d7d5bac40ec5db2990469fc236f4c5dea23edb}{Load}} Level\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a676b78f5c42c7f4c6c3e338e078dd0fb}{b16}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Q\+U\+IT\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 7, command = \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_g_u_i_a6331e60bc4c66b1f0460cd987e6b0d1d}\label{namespace_g_u_i_a6331e60bc4c66b1f0460cd987e6b0d1d}} 
+\index{GUI@{GUI}!end@{end}}
+\index{end@{end}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily def G\+U\+I.\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the application is closing. 
+
+\mbox{\Hypertarget{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}\label{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}} 
+\index{GUI@{GUI}!sendSignal@{sendSignal}}
+\index{sendSignal@{sendSignal}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{sendSignal()}{sendSignal()}}
+{\footnotesize\ttfamily def G\+U\+I.\+send\+Signal (\begin{DoxyParamCaption}\item[{}]{sig }\end{DoxyParamCaption})}
+
+
+
+Sends a signal through the socket. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_g_u_i_a329472468460bb661747b9e01449d184}\label{namespace_g_u_i_a329472468460bb661747b9e01449d184}} 
+\index{GUI@{GUI}!b1@{b1}}
+\index{b1@{b1}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b1}{b1}}
+{\footnotesize\ttfamily G\+U\+I.\+b1 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Size\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 10, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}Change Size\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a385149b9ed164ef153e01cc07a42a12f}\label{namespace_g_u_i_a385149b9ed164ef153e01cc07a42a12f}} 
+\index{GUI@{GUI}!b10@{b10}}
+\index{b10@{b10}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b10}{b10}}
+{\footnotesize\ttfamily G\+U\+I.\+b10 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a6ece4b78fbb7ed63258caf1a781471f4}{img9}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Ghost\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a737db9240917cd4bce0a7f294b6038b2}\label{namespace_g_u_i_a737db9240917cd4bce0a7f294b6038b2}} 
+\index{GUI@{GUI}!b11@{b11}}
+\index{b11@{b11}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b11}{b11}}
+{\footnotesize\ttfamily G\+U\+I.\+b11 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_ae7bae4d0c7bb1a98517fed2294b60f46}{img10}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Octo\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_af2a2606c0440d1c893c60b4d6d4fbec5}\label{namespace_g_u_i_af2a2606c0440d1c893c60b4d6d4fbec5}} 
+\index{GUI@{GUI}!b12@{b12}}
+\index{b12@{b12}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b12}{b12}}
+{\footnotesize\ttfamily G\+U\+I.\+b12 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a54eba3e54367f4dc592947bf19468e7f}{img11}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Move Player\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a70f8a6b3e40fa679f0be933103c4e3c1}\label{namespace_g_u_i_a70f8a6b3e40fa679f0be933103c4e3c1}} 
+\index{GUI@{GUI}!b13@{b13}}
+\index{b13@{b13}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b13}{b13}}
+{\footnotesize\ttfamily G\+U\+I.\+b13 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Lives\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}Change Lives\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_aa59d8fa69f7030816bf471c883ccf8fc}\label{namespace_g_u_i_aa59d8fa69f7030816bf471c883ccf8fc}} 
+\index{GUI@{GUI}!b14@{b14}}
+\index{b14@{b14}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b14}{b14}}
+{\footnotesize\ttfamily G\+U\+I.\+b14 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Save Level\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}Save Level\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a88eaf4fa14b32d5a2a10202a201bbe88}\label{namespace_g_u_i_a88eaf4fa14b32d5a2a10202a201bbe88}} 
+\index{GUI@{GUI}!b15@{b15}}
+\index{b15@{b15}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b15}{b15}}
+{\footnotesize\ttfamily G\+U\+I.\+b15 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a7cc9da6a6307ea8052f27a18bd3d7d5bac40ec5db2990469fc236f4c5dea23edb}{Load}} Level\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}},\textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a7cc9da6a6307ea8052f27a18bd3d7d5bac40ec5db2990469fc236f4c5dea23edb}{Load}} Level\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a676b78f5c42c7f4c6c3e338e078dd0fb}\label{namespace_g_u_i_a676b78f5c42c7f4c6c3e338e078dd0fb}} 
+\index{GUI@{GUI}!b16@{b16}}
+\index{b16@{b16}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b16}{b16}}
+{\footnotesize\ttfamily G\+U\+I.\+b16 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Q\+U\+IT\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 7, command = \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}})}
+
+\mbox{\Hypertarget{namespace_g_u_i_ac572e0369b73d3b0493771239995d91d}\label{namespace_g_u_i_ac572e0369b73d3b0493771239995d91d}} 
+\index{GUI@{GUI}!b2@{b2}}
+\index{b2@{b2}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b2}{b2}}
+{\footnotesize\ttfamily G\+U\+I.\+b2 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a2b9af2e6ceeadebce40ff8171633d86c}{img1}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Floor\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_ae03019b48b46235fcf9eb1ae963fd68e}\label{namespace_g_u_i_ae03019b48b46235fcf9eb1ae963fd68e}} 
+\index{GUI@{GUI}!b3@{b3}}
+\index{b3@{b3}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b3}{b3}}
+{\footnotesize\ttfamily G\+U\+I.\+b3 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a49cad6894844031f41a996947032a4a4}{img2}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Wall\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a4e69ff82719fbda902c3b2126e79d692}\label{namespace_g_u_i_a4e69ff82719fbda902c3b2126e79d692}} 
+\index{GUI@{GUI}!b4@{b4}}
+\index{b4@{b4}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b4}{b4}}
+{\footnotesize\ttfamily G\+U\+I.\+b4 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a06adcfe75921645a1ef64cf7a4cdb3fd}{img3}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Statue\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_ab78877371456f13f3765198ec7ee8d91}\label{namespace_g_u_i_ab78877371456f13f3765198ec7ee8d91}} 
+\index{GUI@{GUI}!b5@{b5}}
+\index{b5@{b5}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b5}{b5}}
+{\footnotesize\ttfamily G\+U\+I.\+b5 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a63bec101ed0dcb5864839c78fcb02572}{img4}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Spikes\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a8b3fe1a314a7f97eb58e91a936f16d24}\label{namespace_g_u_i_a8b3fe1a314a7f97eb58e91a936f16d24}} 
+\index{GUI@{GUI}!b6@{b6}}
+\index{b6@{b6}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b6}{b6}}
+{\footnotesize\ttfamily G\+U\+I.\+b6 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a3e9631bef05195054e18899712ee62e7}{img5}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Lock\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a2b170b4727c7ee7938399888e449e39b}\label{namespace_g_u_i_a2b170b4727c7ee7938399888e449e39b}} 
+\index{GUI@{GUI}!b7@{b7}}
+\index{b7@{b7}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b7}{b7}}
+{\footnotesize\ttfamily G\+U\+I.\+b7 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a6cb0dc882c4030753831044192cbef73}{img6}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Quad\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a75a5a8fdd144311f4409de4a0dcfd143}\label{namespace_g_u_i_a75a5a8fdd144311f4409de4a0dcfd143}} 
+\index{GUI@{GUI}!b8@{b8}}
+\index{b8@{b8}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b8}{b8}}
+{\footnotesize\ttfamily G\+U\+I.\+b8 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_ab8b458d392f9b3d983f3d09b8eadf226}{img7}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Heart\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_ad8ee1e3aaa566c9c531afb653646940f}\label{namespace_g_u_i_ad8ee1e3aaa566c9c531afb653646940f}} 
+\index{GUI@{GUI}!b9@{b9}}
+\index{b9@{b9}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{b9}{b9}}
+{\footnotesize\ttfamily G\+U\+I.\+b9 = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = \mbox{\hyperlink{namespace_g_u_i_a16cb8d3ad11106b26025ddbf102b8a6f}{img8}}, command = partial(\mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{send\+Signal}}, \textquotesingle{}Draw Key\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespace_g_u_i_a4d9166e323570c16afa5de2e7bd788af}\label{namespace_g_u_i_a4d9166e323570c16afa5de2e7bd788af}} 
+\index{GUI@{GUI}!column@{column}}
+\index{column@{column}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily G\+U\+I.\+column}
+
+\mbox{\Hypertarget{namespace_g_u_i_af268557bd2f393a6fce1161af8ab0300}\label{namespace_g_u_i_af268557bd2f393a6fce1161af8ab0300}} 
+\index{GUI@{GUI}!e1@{e1}}
+\index{e1@{e1}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{e1}{e1}}
+{\footnotesize\ttfamily G\+U\+I.\+e1 = Entry(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a2b9af2e6ceeadebce40ff8171633d86c}\label{namespace_g_u_i_a2b9af2e6ceeadebce40ff8171633d86c}} 
+\index{GUI@{GUI}!img1@{img1}}
+\index{img1@{img1}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img1}{img1}}
+{\footnotesize\ttfamily G\+U\+I.\+img1 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Floor\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_ae7bae4d0c7bb1a98517fed2294b60f46}\label{namespace_g_u_i_ae7bae4d0c7bb1a98517fed2294b60f46}} 
+\index{GUI@{GUI}!img10@{img10}}
+\index{img10@{img10}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img10}{img10}}
+{\footnotesize\ttfamily G\+U\+I.\+img10 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Octo\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a54eba3e54367f4dc592947bf19468e7f}\label{namespace_g_u_i_a54eba3e54367f4dc592947bf19468e7f}} 
+\index{GUI@{GUI}!img11@{img11}}
+\index{img11@{img11}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img11}{img11}}
+{\footnotesize\ttfamily G\+U\+I.\+img11 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Player\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a49cad6894844031f41a996947032a4a4}\label{namespace_g_u_i_a49cad6894844031f41a996947032a4a4}} 
+\index{GUI@{GUI}!img2@{img2}}
+\index{img2@{img2}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img2}{img2}}
+{\footnotesize\ttfamily G\+U\+I.\+img2 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Wall\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a06adcfe75921645a1ef64cf7a4cdb3fd}\label{namespace_g_u_i_a06adcfe75921645a1ef64cf7a4cdb3fd}} 
+\index{GUI@{GUI}!img3@{img3}}
+\index{img3@{img3}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img3}{img3}}
+{\footnotesize\ttfamily G\+U\+I.\+img3 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Statue\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a63bec101ed0dcb5864839c78fcb02572}\label{namespace_g_u_i_a63bec101ed0dcb5864839c78fcb02572}} 
+\index{GUI@{GUI}!img4@{img4}}
+\index{img4@{img4}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img4}{img4}}
+{\footnotesize\ttfamily G\+U\+I.\+img4 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Spikes\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a3e9631bef05195054e18899712ee62e7}\label{namespace_g_u_i_a3e9631bef05195054e18899712ee62e7}} 
+\index{GUI@{GUI}!img5@{img5}}
+\index{img5@{img5}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img5}{img5}}
+{\footnotesize\ttfamily G\+U\+I.\+img5 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Lock\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a6cb0dc882c4030753831044192cbef73}\label{namespace_g_u_i_a6cb0dc882c4030753831044192cbef73}} 
+\index{GUI@{GUI}!img6@{img6}}
+\index{img6@{img6}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img6}{img6}}
+{\footnotesize\ttfamily G\+U\+I.\+img6 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Quad\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_ab8b458d392f9b3d983f3d09b8eadf226}\label{namespace_g_u_i_ab8b458d392f9b3d983f3d09b8eadf226}} 
+\index{GUI@{GUI}!img7@{img7}}
+\index{img7@{img7}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img7}{img7}}
+{\footnotesize\ttfamily G\+U\+I.\+img7 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Heart\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a16cb8d3ad11106b26025ddbf102b8a6f}\label{namespace_g_u_i_a16cb8d3ad11106b26025ddbf102b8a6f}} 
+\index{GUI@{GUI}!img8@{img8}}
+\index{img8@{img8}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img8}{img8}}
+{\footnotesize\ttfamily G\+U\+I.\+img8 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Key\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a6ece4b78fbb7ed63258caf1a781471f4}\label{namespace_g_u_i_a6ece4b78fbb7ed63258caf1a781471f4}} 
+\index{GUI@{GUI}!img9@{img9}}
+\index{img9@{img9}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{img9}{img9}}
+{\footnotesize\ttfamily G\+U\+I.\+img9 = Photo\+Image(file=\mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{img\+Path}}+\textquotesingle{}Ghost\+Button.\+png\textquotesingle{})}
+
+\mbox{\Hypertarget{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}\label{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}} 
+\index{GUI@{GUI}!imgPath@{imgPath}}
+\index{imgPath@{imgPath}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{imgPath}{imgPath}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}} G\+U\+I.\+img\+Path = \textquotesingle{}../media/Buttons/\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace_g_u_i_a95a82d369df3d4c7b727a9411b5200bf}\label{namespace_g_u_i_a95a82d369df3d4c7b727a9411b5200bf}} 
+\index{GUI@{GUI}!l1@{l1}}
+\index{l1@{l1}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l1}{l1}}
+{\footnotesize\ttfamily G\+U\+I.\+l1 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Level Variables\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=0)}
+
+
+
+Level Variables. 
+
+\mbox{\Hypertarget{namespace_g_u_i_ac7c465b5857043b3fa99979abb72f6f8}\label{namespace_g_u_i_ac7c465b5857043b3fa99979abb72f6f8}} 
+\index{GUI@{GUI}!l2@{l2}}
+\index{l2@{l2}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l2}{l2}}
+{\footnotesize\ttfamily G\+U\+I.\+l2 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a8c8f50b76976c33a0eaa959e28d7b453}{Num}} of Rows\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=1,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)}
+
+\mbox{\Hypertarget{namespace_g_u_i_a35519123b77b2a3bdeaaa694185dd02a}\label{namespace_g_u_i_a35519123b77b2a3bdeaaa694185dd02a}} 
+\index{GUI@{GUI}!l3@{l3}}
+\index{l3@{l3}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l3}{l3}}
+{\footnotesize\ttfamily G\+U\+I.\+l3 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a8c8f50b76976c33a0eaa959e28d7b453}{Num}} of Columns\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=2,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)}
+
+\mbox{\Hypertarget{namespace_g_u_i_ac505e29343a8c79d7347a8be5c4fffa5}\label{namespace_g_u_i_ac505e29343a8c79d7347a8be5c4fffa5}} 
+\index{GUI@{GUI}!l4@{l4}}
+\index{l4@{l4}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l4}{l4}}
+{\footnotesize\ttfamily G\+U\+I.\+l4 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Tiles\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=4)}
+
+
+
+Tiles Section. 
+
+\mbox{\Hypertarget{namespace_g_u_i_af4d553e4d64242f914c988b9b5cb6c88}\label{namespace_g_u_i_af4d553e4d64242f914c988b9b5cb6c88}} 
+\index{GUI@{GUI}!l5@{l5}}
+\index{l5@{l5}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l5}{l5}}
+{\footnotesize\ttfamily G\+U\+I.\+l5 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Items\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=7)}
+
+
+
+Items. 
+
+\mbox{\Hypertarget{namespace_g_u_i_a030836603e07318a291bb6c3ad25ff3f}\label{namespace_g_u_i_a030836603e07318a291bb6c3ad25ff3f}} 
+\index{GUI@{GUI}!l6@{l6}}
+\index{l6@{l6}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l6}{l6}}
+{\footnotesize\ttfamily G\+U\+I.\+l6 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Enemies\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=9)}
+
+
+
+Enemies. 
+
+\mbox{\Hypertarget{namespace_g_u_i_a3e7474bdd0fb176960a855522043a291}\label{namespace_g_u_i_a3e7474bdd0fb176960a855522043a291}} 
+\index{GUI@{GUI}!l7@{l7}}
+\index{l7@{l7}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l7}{l7}}
+{\footnotesize\ttfamily G\+U\+I.\+l7 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Player Values\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=11)}
+
+
+
+Player Vaues. 
+
+\mbox{\Hypertarget{namespace_g_u_i_a66ff0e016573e1293d4bf6cc8e2238bd}\label{namespace_g_u_i_a66ff0e016573e1293d4bf6cc8e2238bd}} 
+\index{GUI@{GUI}!l8@{l8}}
+\index{l8@{l8}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l8}{l8}}
+{\footnotesize\ttfamily G\+U\+I.\+l8 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Player Lives\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=12,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)}
+
+\mbox{\Hypertarget{namespace_g_u_i_a92765160ab69a02bcf2f7aa02a16aaa7}\label{namespace_g_u_i_a92765160ab69a02bcf2f7aa02a16aaa7}} 
+\index{GUI@{GUI}!l9@{l9}}
+\index{l9@{l9}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{l9}{l9}}
+{\footnotesize\ttfamily G\+U\+I.\+l9 = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}File \mbox{\hyperlink{_python-ast_8h_a3e9f22c154a65956ebd413d2d8dafc0f}{Name}}\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=13,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)}
+
+\mbox{\Hypertarget{namespace_g_u_i_a75551f8a671434e8c984ec81add33a23}\label{namespace_g_u_i_a75551f8a671434e8c984ec81add33a23}} 
+\index{GUI@{GUI}!r@{r}}
+\index{r@{r}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily G\+U\+I.\+r = tk.\+Tk()}
+
+
+
+\mbox{\hyperlink{namespace_g_u_i}{G\+UI}} Functionality. 
+
+Various \mbox{\hyperlink{namespace_g_u_i}{G\+UI}} elements, buttons call send message upon being clicked to senf respective signals. \mbox{\Hypertarget{namespace_g_u_i_a50392865479db3a869a19c926d474f1f}\label{namespace_g_u_i_a50392865479db3a869a19c926d474f1f}} 
+\index{GUI@{GUI}!row@{row}}
+\index{row@{row}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{row}{row}}
+{\footnotesize\ttfamily G\+U\+I.\+row}
+
+\mbox{\Hypertarget{namespace_g_u_i_a9a674293f87e667971e46f422129f8be}\label{namespace_g_u_i_a9a674293f87e667971e46f422129f8be}} 
+\index{GUI@{GUI}!s1@{s1}}
+\index{s1@{s1}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{s1}{s1}}
+{\footnotesize\ttfamily G\+U\+I.\+s1 = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)}
+
+\mbox{\Hypertarget{namespace_g_u_i_a9b4f27a5e87a161111559dd8e38219d4}\label{namespace_g_u_i_a9b4f27a5e87a161111559dd8e38219d4}} 
+\index{GUI@{GUI}!s2@{s2}}
+\index{s2@{s2}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{s2}{s2}}
+{\footnotesize\ttfamily G\+U\+I.\+s2 = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)}
+
+\mbox{\Hypertarget{namespace_g_u_i_a16b808fdebb02f1fb7304c7de82b9584}\label{namespace_g_u_i_a16b808fdebb02f1fb7304c7de82b9584}} 
+\index{GUI@{GUI}!s3@{s3}}
+\index{s3@{s3}!GUI@{GUI}}
+\subsubsection{\texorpdfstring{s3}{s3}}
+{\footnotesize\ttfamily G\+U\+I.\+s3 = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)}
+

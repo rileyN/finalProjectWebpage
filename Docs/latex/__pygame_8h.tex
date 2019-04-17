@@ -1,0 +1,1750 @@
+\hypertarget{__pygame_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pygame/\+\_\+pygame.h File Reference}
+\label{__pygame_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/\_pygame.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/\_pygame.h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbufferinfo}{bufferinfo}}
+\item 
+struct \mbox{\hyperlink{structpg__bufferinfo__s}{pg\+\_\+bufferinfo\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{struct_g_a_m_e___rect}{G\+A\+M\+E\+\_\+\+Rect}}
+\item 
+struct \mbox{\hyperlink{structpg_rect_object}{pg\+Rect\+Object}}
+\item 
+struct \mbox{\hyperlink{structpg_c_d_object}{pg\+C\+D\+Object}}
+\item 
+struct \mbox{\hyperlink{structpg_joystick_object}{pg\+Joystick\+Object}}
+\item 
+struct \mbox{\hyperlink{structpg_vid_info_object}{pg\+Vid\+Info\+Object}}
+\item 
+struct \mbox{\hyperlink{structpg_surface_object}{pg\+Surface\+Object}}
+\item 
+struct \mbox{\hyperlink{structpg_sub_surface___data}{pg\+Sub\+Surface\+\_\+\+Data}}
+\item 
+struct \mbox{\hyperlink{structpg_lifetime_lock_object}{pg\+Lifetime\+Lock\+Object}}
+\item 
+struct \mbox{\hyperlink{structpg_event_object}{pg\+Event\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a907e2bb30993d824ba08cff28e78f51f}{P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+Z\+E\+\_\+\+H\+E\+L\+P\+ER}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~\#\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a533e0c32f9dd8c4ac05c70dfb7803d09}{P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+ZE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~\mbox{\hyperlink{__pygame_8h_a907e2bb30993d824ba08cff28e78f51f}{P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+Z\+E\+\_\+\+H\+E\+L\+P\+ER}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4a4d93cf2db6fb650a16307d9610d8a6}{P\+G\+\_\+\+W\+A\+RN}}(\mbox{\hyperlink{structseq_8h_aee871ea0a0fe93be46762978ca8895ca}{desc}})~\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a7b6161cffb9b8aee272b3b916183d28c}{message}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+ \char`\"{}(\char`\"{} \mbox{\hyperlink{__pygame_8h_a533e0c32f9dd8c4ac05c70dfb7803d09}{P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+ZE}}(\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) \char`\"{})\+: W\+A\+R\+N\+I\+N\+G\+: \char`\"{} \#desc)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3a324aa072da5bf7bcbeebf0feb4ea43}{P\+G\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~1
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a79fcec56a9572f41cac0591f20b36ed3}{P\+G\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~9
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ae1993b4d08912ede5e9930654a16cd78}{P\+G\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON}}~5
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa850adfa16854f764ab0ce55e1ba9c5e}{P\+G\+\_\+\+V\+E\+R\+S\+I\+O\+N\+N\+UM}}(M\+A\+J\+OR,  M\+I\+N\+OR,  P\+A\+T\+CH)~(1000$\ast$(M\+A\+J\+OR) + 100$\ast$(M\+I\+N\+OR) + (P\+A\+T\+CH))
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_acdb97480619862ad15eb63b1973652a0}{P\+G\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+T\+L\+E\+A\+ST}}(M\+A\+J\+OR,  M\+I\+N\+OR,  P\+A\+T\+CH)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ae048302b47c19f7e66ae8dc49e54d53e}{P\+G\+\_\+\+H\+A\+V\+E\+\_\+\+C\+A\+P\+S\+U\+LE}}~0
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a9770ad8201237baffef5b9ee5908409d}{P\+G\+\_\+\+H\+A\+V\+E\+\_\+\+C\+O\+B\+J\+E\+CT}}~0
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a12fc17457f2c51f1e2de2870fa669749}{Py\+Capsule\+\_\+\+New}}(\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  dfn)~Py\+C\+Object\+\_\+\+From\+Void\+Ptr(\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}}, dfn)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_af67b891ff25a9037bbbdfd318a4b8096}{Py\+Capsule\+\_\+\+Get\+Pointer}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})~Py\+C\+Object\+\_\+\+As\+Void\+Ptr(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad8cff51489e10249b30da3914e99b522}{Py\+Capsule\+\_\+\+Check\+Exact}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}})~\mbox{\hyperlink{cobject_8h_a0497109a6cc0ba685c8e007271cb8068}{Py\+C\+Object\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a734b71480a0ce09f2fbd994bbf61703d}{Py\+B\+U\+F\+\_\+\+S\+I\+M\+P\+LE}}~0
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}}~0x0001
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a807356e2564a1de372104fcc5c62dd68}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE}}~\mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}}~0x0004
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a114c8c1fa379eaa820e4bec834e687ff}{Py\+B\+U\+F\+\_\+\+ND}}~0x0008
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}}~(0x0010 $\vert$ Py\+B\+U\+F\+\_\+\+N\+D)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5925988be85b809111189d82f9db7f18}{Py\+B\+U\+F\+\_\+\+C\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US}}~(0x0020 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a907837985e8a3bc707c66be5a83a88ac}{Py\+B\+U\+F\+\_\+\+F\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US}}~(0x0040 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_af70e6eaf86795a6477bad8f89f5781fd}{Py\+B\+U\+F\+\_\+\+A\+N\+Y\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US}}~(0x0080 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a032e746e03b1a5844382dfc442ec3f54}{Py\+B\+U\+F\+\_\+\+I\+N\+D\+I\+R\+E\+CT}}~(0x0100 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a2fd42e1506d1ac75a974830d7eb5ff29}{Py\+B\+U\+F\+\_\+\+C\+O\+N\+T\+IG}}~(\mbox{\hyperlink{__pygame_8h_a114c8c1fa379eaa820e4bec834e687ff}{Py\+B\+U\+F\+\_\+\+ND}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a6c5b45e55d39f6502ca92b4099b6223b}{Py\+B\+U\+F\+\_\+\+C\+O\+N\+T\+I\+G\+\_\+\+RO}}~(\mbox{\hyperlink{__pygame_8h_a114c8c1fa379eaa820e4bec834e687ff}{Py\+B\+U\+F\+\_\+\+ND}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a2f59ec2686769b7f7a3ed0db9155d485}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ED}}~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a58e6f4f2b71f51e392607dc9691a59d2}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+D\+\_\+\+RO}}~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4335c9c7e6e1aa3a2fbdb9f6e9292b97}{Py\+B\+U\+F\+\_\+\+R\+E\+C\+O\+R\+DS}}~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_afcd4b465ee5c97c7d4be7eee9c77eac5}{Py\+B\+U\+F\+\_\+\+R\+E\+C\+O\+R\+D\+S\+\_\+\+RO}}~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_af64ee4c5964e384101e3879791c81c25}{Py\+B\+U\+F\+\_\+\+F\+U\+LL}}~(\mbox{\hyperlink{__pygame_8h_a032e746e03b1a5844382dfc442ec3f54}{Py\+B\+U\+F\+\_\+\+I\+N\+D\+I\+R\+E\+CT}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_afda293d387661b63d91d1028c758285b}{Py\+B\+U\+F\+\_\+\+F\+U\+L\+L\+\_\+\+RO}}~(\mbox{\hyperlink{__pygame_8h_a032e746e03b1a5844382dfc442ec3f54}{Py\+B\+U\+F\+\_\+\+I\+N\+D\+I\+R\+E\+CT}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a39a69779940281b4e67c912025992bbc}{Py\+B\+U\+F\+\_\+\+R\+E\+AD}}~0x100
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_adb25f1357b0075e774c5faf91c948bb9}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+TE}}~0x200
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aab47e555b3061d3913fad89ac4e75799}{Py\+B\+U\+F\+\_\+\+S\+H\+A\+D\+OW}}~0x400
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4e5b0c6ccbcc437beb4b4c89afc9ea04}{Py\+B\+U\+F\+\_\+\+P\+Y\+G\+A\+ME}}~0x4000
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5fa862e6fd6893350e030974b6d66119}{Py\+B\+U\+F\+\_\+\+H\+A\+S\+\_\+\+F\+L\+AG}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  F)~(((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}) \& (F)) == (F))
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a35312eceb83f6202115211dcb293f8be}{M\+O\+D\+P\+R\+E\+F\+IX}}~\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Prefix when initializing module. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad09d5bf8a0bfa52a6db2224ac5f86a61}{I\+M\+P\+P\+R\+E\+F\+IX}}~\char`\"{}pygame.\char`\"{}
+\begin{DoxyCompactList}\small\item\em Prefix when importing module. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{__pygame_8h_ade117c4a8a68dae70a1f8f3f157e3dbb}{I\+S\+\_\+\+S\+D\+Lv1}}~1
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a9e2b7e8729e0e61f23549cd5c1857030}{I\+S\+\_\+\+S\+D\+Lv2}}~0
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{R\+A\+I\+SE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})~(Py\+Err\+\_\+\+Set\+String((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}), (\mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})), (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac9b15e2c189cba0de8fc7f5c453dff9e}{P\+G\+\_\+\+C\+H\+E\+C\+K\+\_\+\+T\+H\+R\+E\+A\+DS}}()
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a1f5aeef0f6a189317a5ad23008713326}{Py\+Type\+\_\+\+Init}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}).ob\+\_\+type) = \&Py\+Type\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ae353fb06021df3a7641ec6f49d44d2ac}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY}}~\char`\"{}\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI\char`\"{}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) $<$ (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}) ? (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}))
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) $>$ (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}) ? (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}))
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ae2f08dc603ae93c402abd918ba4e23e1}{A\+BS}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}})~(((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) $<$ 0) ? -\/(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}))
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a14d1ea95cffc821c5d753ad3d8175036}{V\+I\+D\+E\+O\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}}()
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3524c434de4cde99a12d3c9708e340d1}{C\+D\+R\+O\+M\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}}()
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a08490f4578dcdcb0d6a207b013611e38}{J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}}()
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac30889b6e3b397ff1f0c8d0bbba02d1a}{V\+I\+E\+W\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US}}~1
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a6e77794a645040d26f95e5b5cd947267}{V\+I\+E\+W\+\_\+\+C\+\_\+\+O\+R\+D\+ER}}~2
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa39bc8917f36999e15f6b8179dc98b46}{V\+I\+E\+W\+\_\+\+F\+\_\+\+O\+R\+D\+ER}}~4
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~0
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a8c868b893a5e1e6663305ac0123ab31c}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~19
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa266543992d8b718fb37a96e66b7e128}{pg\+Exc\+\_\+\+S\+D\+L\+Error}}~((\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a86a2174f929f6a40772e8aff1e34c6c8}{pg\+\_\+\+Register\+Quit}}~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_abb1934f86ea438f1e535d35f5082676f}{pg\+\_\+\+Int\+From\+Obj}}~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 2\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a0de162e6c6ea87d2815d7df433140861}{pg\+\_\+\+Int\+From\+Obj\+Index}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aba1b1d4e0efc5626a16fc5fb161caa93}{pg\+\_\+\+Two\+Ints\+From\+Obj}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ade08522214475d074e5f8a53e97511bc}{pg\+\_\+\+Float\+From\+Obj}}~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, float $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 5\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a0aca6af62d8c1d57b70f6199ac4ba3bf}{pg\+\_\+\+Float\+From\+Obj\+Index}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a68b4675ce6950c6e04339c8fc4810c99}{pg\+\_\+\+Two\+Floats\+From\+Obj}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a327d233e56ba56c76e8e135e2f485f73}{pg\+\_\+\+Uint\+From\+Obj}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a1dcddd93963bf3c4924beb905d3aa371}{pg\+\_\+\+Uint\+From\+Obj\+Index}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a0adeca28fa3d63f133e58cd6a43ad33f}{pg\+Video\+\_\+\+Auto\+Quit}}~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 10\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a2d91d36c927817254a108be7f676e87f}{pg\+Video\+\_\+\+Auto\+Init}}~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 11\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a6de44724331bde39273ca1686e11f9fe}{pg\+\_\+\+R\+G\+B\+A\+From\+Obj}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a859350eb150c009aea698a31009771a8}{pg\+Buffer\+\_\+\+As\+Array\+Interface}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac5013422e725a7d912dc4d6667c55b41}{pg\+Buffer\+\_\+\+As\+Array\+Struct}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a248f0c4796861eb51e8ab4378e2b1e04}{pg\+Object\+\_\+\+Get\+Buffer}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4df07e77407997d955786b777ec88e43}{pg\+Buffer\+\_\+\+Release}}~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{__pygame_8h_a69f81ff907a38a579a9f6d038ee42690}{pg\+\_\+buffer}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 16\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aeb430906bf905935563c3169394d4d1a}{pg\+Dict\+\_\+\+As\+Buffer}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa4fe444859f46c2ba464f2cb4cf6086a}{pg\+Exc\+\_\+\+Buffer\+Error}}~((\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 18\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4532f507fc3a83551282f2d1967ed841}{import\+\_\+pygame\+\_\+base}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{structbase}{base}}, \mbox{\hyperlink{longintrepr_8h_a79bcfb6bde984f42d1124b068a509af7}{B\+A\+SE}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a8c868b893a5e1e6663305ac0123ab31c}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac2a87e3fa2f5de0628d0658bb6c822bf}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~4
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5695562fa3b3ddbf382551cc4a80c72d}{pg\+Rect\+\_\+\+As\+Rect}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{structpg_rect_object}{pg\+Rect\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ab55c101f74a59894dcacf3dcfe7e4659}{pg\+Rect\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac0acb23cffe06b76c0d6945a86a1dbb2}{pg\+Rect\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5204e0664c55752dd6fe0eeba0ce19b4}{pg\+Rect\+\_\+\+New}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$)) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_af1427ea2a4444bc97ed24b967bbbf8bf}{pg\+Rect\+\_\+\+New4}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a10e5ef8801bd2c3d914a70a4a3ecf186}{pg\+Rect\+\_\+\+From\+Object}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad6ed26d0fa9126542c2cacf519aea33f}{import\+\_\+pygame\+\_\+rect}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(rect, R\+E\+CT)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_ac2a87e3fa2f5de0628d0658bb6c822bf}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4a8629b5442756dab5c553957d7ec14d}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~2
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a01641254dd53080aca2b7339a4872e9b}{pg\+C\+D\+\_\+\+As\+ID}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{structpg_c_d_object}{pg\+C\+D\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a94433c469f12a2e27af79001c4091f2f}{pg\+C\+D\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5bb18f7750d8e4e51043cb1eff0cc61c}{pg\+C\+D\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a59719de93ca3b2ba867c28270887da4b}{pg\+C\+D\+\_\+\+New}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aca1e34b6e57ba132d0048c658d72735e}{import\+\_\+pygame\+\_\+cd}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(cdrom, C\+D\+R\+OM)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a4a8629b5442756dab5c553957d7ec14d}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a6567926370431ae9978531d6387ac82f}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~2
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5a0f26a8b25eea56bfc38b7eb86f1a67}{pg\+Joystick\+\_\+\+As\+ID}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{structpg_joystick_object}{pg\+Joystick\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad5b2bdfab8b9da79933503f9efefebcc}{pg\+Joystick\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad4d625a368c6e921e0810189ff795913}{pg\+Joystick\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3b898aca070309cedb16805fe0da275c}{pg\+Joystick\+\_\+\+New}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a7b64d8370aa27c31e5a282699230fdc0}{import\+\_\+pygame\+\_\+joystick}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(joystick, J\+O\+Y\+S\+T\+I\+CK)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a6567926370431ae9978531d6387ac82f}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a0ab9d599b712ac2920d37d6316b7c162}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~2
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ae5a83b18d1357923ea2a0a04d4c8c828}{pg\+Vid\+Info\+\_\+\+As\+Vid\+Info}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{structpg_vid_info_object}{pg\+Vid\+Info\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$info)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a891c3289e338d7865c1baabe8e1a3d18}{pg\+Vid\+Info\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a23b39a7a75cb5d7111dabcc43a1ab359}{pg\+Vid\+Info\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a4cb01e47e3f61035900d7b6e5fbcc8b2}{pg\+Vid\+Info\+\_\+\+New}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_af83c79c0210a436825472cd1a7c9796a}{import\+\_\+pygame\+\_\+display}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(display, D\+I\+S\+P\+L\+AY)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a0ab9d599b712ac2920d37d6316b7c162}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a2db53f8b9e0469b002d08839781dcb22}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~3
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5bbcdbf08681584c8b161f6684b45444}{pg\+Surface\+\_\+\+As\+Surface}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{structpg_surface_object}{pg\+Surface\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$surf)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a0c6a3c1a8a2ba07faf2d86d67b7b946c}{pg\+Surface\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ae586cda5baf614735620cfdf7860f310}{pg\+Surface\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a5dcf489bb4f4bb87b0574123d155d894}{pg\+Surface\+\_\+\+New}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a9481b1f4ca2b5eac8621d72fec1bcc0e}{pg\+Surface\+\_\+\+Blit}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aebd3954646446bc917d0d344fa519fb5}{import\+\_\+pygame\+\_\+surface}}()
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a2db53f8b9e0469b002d08839781dcb22}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a2ae4869955b37f8130934671864fea2a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~8
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a40109884dc8cfce304dff22810debd62}{pg\+Lifetime\+Lock\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a25fda96aece7433d907f080938cd9777}{pg\+Surface\+\_\+\+Prep}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a21a19f7db5befc0b5d651dbfba32032e}{pg\+Surface\+\_\+\+Unprep}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3e08170458c57b6d1f8256a617c0af1b}{pg\+Surface\+\_\+\+Lock}}~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 3\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a1d37334a1e2f2f0792b60633b14ec10c}{pg\+Surface\+\_\+\+Unlock}}~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 4\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ab2f3ea5872e1a1dd41b366c8d9bcb38b}{pg\+Surface\+\_\+\+Lock\+By}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_afd5cda6cd3fc4469da82f7cceb1719ee}{pg\+Surface\+\_\+\+Unlock\+By}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a00e6db357147452e18429b0f3a974695}{pg\+Surface\+\_\+\+Lock\+Lifetime}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a2ae4869955b37f8130934671864fea2a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3a1f7f220bb5ba97abfd41e493eea709}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~4
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a0b04ef0af5543497479cd77b0523be4a}{pg\+Event\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a59cdd971e4edf6de2c9a5ff0de73087f}{pg\+Event\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a034500f09aef331960803a8122d6a614}{pg\+Event\+\_\+\+New}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a48cff03226ab15fe83f7875b4935a4f0}{pg\+Event\+\_\+\+New2}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a8d462acd7b41f4443773a19cec60cc5c}{pg\+Event\+\_\+\+Fill\+User\+Event}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ade1cd217bd1d192456ddd4b7b75b777b}{import\+\_\+pygame\+\_\+event}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a03b04a5a978bad576866339075de01f6}{event}}, E\+V\+E\+NT)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a3a1f7f220bb5ba97abfd41e493eea709}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a88d1826a76577b3f75cff034cb8817d2}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~6
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a3e2614bae1b63ee8260b2651a29f8c4e}{pg\+R\+Wops\+\_\+\+From\+Object}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac57691e8f77a5a608049f02133f60738}{pg\+R\+Wops\+\_\+\+Is\+File\+Object}}~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{struct_s_d_l___r_wops}{S\+D\+L\+\_\+\+R\+Wops}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aedee797ce7bccb3d511b26b7f23de8a8}{pg\+\_\+\+Encode\+File\+Path}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a22418f854c8a5ce6a4ab81d1988a84c7}{pg\+\_\+\+Encode\+String}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a84c9cb7ca92ebec4a1de45e89a13b4c0}{pg\+R\+Wops\+\_\+\+From\+File\+Object}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_afd1848439ce3b6f559ff6f4caaa74108}{pg\+R\+Wops\+\_\+\+Release\+Object}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aae46d4be99a19b65183d4c74ad283e4d}{import\+\_\+pygame\+\_\+rwobject}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(rwobject, R\+W\+O\+B\+J\+E\+CT)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a88d1826a76577b3f75cff034cb8817d2}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad9ac6694d06d285609b5ec0178364c11}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~2
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_abc757dc2e813a63e2fc134851f2ad2c5}{Py\+Pixel\+Array\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad5a5c77eaf204e99af410e61727e33cd}{Py\+Pixel\+Array\+\_\+\+New}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a303ae73f28fbc4c4093fb8d54d104406}{import\+\_\+pygame\+\_\+pixelarray}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(pixelarray, P\+I\+X\+E\+L\+A\+R\+R\+AY)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_ad9ac6694d06d285609b5ec0178364c11}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a05ca25136dddbd1e5d19d951095fe8bf}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~4
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a2c59e8060a0cf95be897a8cc74d4d383}{pg\+Color\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a9236236add92d13c6c76da9c5f491ccc}{pg\+Color\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a7c92735be9ed3aea4806e72fd420b746}{pg\+Color\+\_\+\+New}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}} $\ast$)) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a8e3355be36f5a4c58c900a78897f9c47}{pg\+Color\+\_\+\+New\+Length}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac455c6b8731dc4d524cf223cdb1d0896}{pg\+\_\+\+R\+G\+B\+A\+From\+Color\+Obj}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_af38a237156e82d9c0c33999c14e847d1}{import\+\_\+pygame\+\_\+color}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3ea846f998d64f079b86052b6c4193a8}{color}}, C\+O\+L\+OR)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aa39b09eb8ae4999f3065eb2f2acc5a2b}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~(\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a05ca25136dddbd1e5d19d951095fe8bf}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ac3526b24231d9e8314649a9542368726}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~2
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a0760a717e4972786d4de3819de873e46}{pg\+Vector2\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a9a48420f9a26f26fb11bc64c751f9f85}{pg\+Vector3\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a9adf2c8d56b35511dcdabbab45cb34cf}{import\+\_\+pygame\+\_\+math}}()~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(math, M\+A\+TH)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_ad830c5ec579623e85f56f1d866d88896}{P\+G\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})~(\mbox{\hyperlink{__pygame_8h_ad09d5bf8a0bfa52a6db2224ac5f86a61}{I\+M\+P\+P\+R\+E\+F\+IX}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}} \char`\"{}.\char`\"{} \mbox{\hyperlink{mask_8h_ae353fb06021df3a7641ec6f49d44d2ac}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{classmodule}{module}},  M\+O\+D\+U\+LE,  api\+\_\+root)
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{classmodule}{module}},  M\+O\+D\+U\+LE)~\mbox{\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{classmodule}{module}}, M\+O\+D\+U\+LE, \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a1f5ac0776a8546039f794f654aee169c}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+T\+O\+T\+A\+L\+S\+L\+O\+TS}}~(\mbox{\hyperlink{__pygame_8h_aa39b09eb8ae4999f3065eb2f2acc5a2b}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_ac3526b24231d9e8314649a9542368726}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a62d35ed82cf1b7d1ca3310e317b18515}{encapsulate\+\_\+api}}(\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}},  \mbox{\hyperlink{classmodule}{module}})~Py\+C\+Object\+\_\+\+From\+Void\+Ptr(\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_a6074d9160eae1047d114f261446ad40d}{P\+G\+\_\+\+I\+N\+L\+I\+NE}}
+\item 
+\#define \mbox{\hyperlink{__pygame_8h_aef85b95532163dc497fafdce53f321b7}{P\+Y\+G\+A\+M\+E\+\_\+\+E\+X\+P\+O\+RT}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structbufferinfo}{bufferinfo}} \mbox{\hyperlink{__pygame_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}}
+\item 
+typedef \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ \mbox{\hyperlink{__pygame_8h_aa017fb2160e0b5c8aa3da451f0481384}{getbufferproc}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}} $\ast$, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{__pygame_8h_adfedb341571d379d3146eb4d59019023}{releasebufferproc}}) (\mbox{\hyperlink{_python27_2object_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}} $\ast$)
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{__pygame_8h_ad02fd84ceaf918398aa37e358cd2cc3f}{pybuffer\+\_\+releaseproc}}) (\mbox{\hyperlink{_python27_2object_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}} $\ast$)
+\item 
+typedef struct \mbox{\hyperlink{structpg__bufferinfo__s}{pg\+\_\+bufferinfo\+\_\+s}} \mbox{\hyperlink{__pygame_8h_a69f81ff907a38a579a9f6d038ee42690}{pg\+\_\+buffer}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}} \mbox{[}\mbox{\hyperlink{__pygame_8h_a1f5ac0776a8546039f794f654aee169c}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+T\+O\+T\+A\+L\+S\+L\+O\+TS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}\label{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}} 
+\index{\_pygame.h@{\_pygame.h}!\_IMPORT\_PYGAME\_MODULE@{\_IMPORT\_PYGAME\_MODULE}}
+\index{\_IMPORT\_PYGAME\_MODULE@{\_IMPORT\_PYGAME\_MODULE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{\_IMPORT\_PYGAME\_MODULE}{\_IMPORT\_PYGAME\_MODULE}}
+{\footnotesize\ttfamily \#define \+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{classmodule}{module}},  }\item[{}]{M\+O\+D\+U\+LE,  }\item[{}]{api\+\_\+root }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{                                                                        \(\backslash\)}
+\DoxyCodeLine{        PyObject *\_module = PyImport\_ImportModule(\mbox{\hyperlink{__pygame_8h_ad09d5bf8a0bfa52a6db2224ac5f86a61}{IMPPREFIX}} \#\mbox{\hyperlink{classmodule}{module}});        \(\backslash\)}
+\DoxyCodeLine{                                                                             \(\backslash\)}
+\DoxyCodeLine{        if (\_module != \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}) \{                                               \(\backslash\)}
+\DoxyCodeLine{            PyObject *\_c\_api =                                               \(\backslash\)}
+\DoxyCodeLine{                PyObject\_GetAttrString(\_module, \mbox{\hyperlink{__pygame_8h_ae353fb06021df3a7641ec6f49d44d2ac}{PYGAMEAPI\_LOCAL\_ENTRY}});      \mbox{\hyperlink{_python27_2object_8h_a19be7acd3e9a57b82c7be99b8594d293}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{_python27_2object_8h_a19be7acd3e9a57b82c7be99b8594d293}{                                                                             \(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{_python27_2object_8h_a19be7acd3e9a57b82c7be99b8594d293}{            Py\_DECREF}}(\_module);                                              \(\backslash\)}
+\DoxyCodeLine{            if (\_c\_api != \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \&\& \mbox{\hyperlink{__pygame_8h_ad8cff51489e10249b30da3914e99b522}{PyCapsule\_CheckExact}}(\_c\_api)) \{            \(\backslash\)}
+\DoxyCodeLine{                void **localptr = (\textcolor{keywordtype}{void} **)\mbox{\hyperlink{__pygame_8h_af67b891ff25a9037bbbdfd318a4b8096}{PyCapsule\_GetPointer}}(             \(\backslash\)}
+\DoxyCodeLine{                    \_c\_api, \mbox{\hyperlink{__pygame_8h_ad830c5ec579623e85f56f1d866d88896}{PG\_CAPSULE\_NAME}}(\#\mbox{\hyperlink{classmodule}{module}}));                       \(\backslash\)}
+\DoxyCodeLine{                                                                             \(\backslash\)}
+\DoxyCodeLine{                if (localptr != \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}) \{                                      \(\backslash\)}
+\DoxyCodeLine{                    memcpy(api\_root + PYGAMEAPI\_\#\#MODULE\#\#\_FIRSTSLOT,        \(\backslash\)}
+\DoxyCodeLine{                           localptr,                                         \(\backslash\)}
+\DoxyCodeLine{                           \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{void} **) * PYGAMEAPI\_\#\#MODULE\#\#\_NUMSLOTS); \(\backslash\)}
+\DoxyCodeLine{                \}                                                            \(\backslash\)}
+\DoxyCodeLine{            \}                                                                \(\backslash\)}
+\DoxyCodeLine{            Py\_XDECREF(\_c\_api);                                              \(\backslash\)}
+\DoxyCodeLine{        \}                                                                    \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ae2f08dc603ae93c402abd918ba4e23e1}\label{__pygame_8h_ae2f08dc603ae93c402abd918ba4e23e1}} 
+\index{\_pygame.h@{\_pygame.h}!ABS@{ABS}}
+\index{ABS@{ABS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{ABS}{ABS}}
+{\footnotesize\ttfamily \#define A\+BS(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) $<$ 0) ? -\/(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}))}
+
+\mbox{\Hypertarget{__pygame_8h_a3524c434de4cde99a12d3c9708e340d1}\label{__pygame_8h_a3524c434de4cde99a12d3c9708e340d1}} 
+\index{\_pygame.h@{\_pygame.h}!CDROM\_INIT\_CHECK@{CDROM\_INIT\_CHECK}}
+\index{CDROM\_INIT\_CHECK@{CDROM\_INIT\_CHECK}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{CDROM\_INIT\_CHECK}{CDROM\_INIT\_CHECK}}
+{\footnotesize\ttfamily \#define C\+D\+R\+O\+M\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!\mbox{\hyperlink{_s_d_l_8h_a04dc570990c697eed95681216801710d}{SDL\_WasInit}}(SDL\_INIT\_CDROM)) \(\backslash\)}
+\DoxyCodeLine{    return \mbox{\hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{RAISE}}(\mbox{\hyperlink{__pygame_8h_aa266543992d8b718fb37a96e66b7e128}{pgExc\_SDLError}}, \textcolor{stringliteral}{"cdrom system not initialized"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a62d35ed82cf1b7d1ca3310e317b18515}\label{__pygame_8h_a62d35ed82cf1b7d1ca3310e317b18515}} 
+\index{\_pygame.h@{\_pygame.h}!encapsulate\_api@{encapsulate\_api}}
+\index{encapsulate\_api@{encapsulate\_api}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{encapsulate\_api}{encapsulate\_api}}
+{\footnotesize\ttfamily \#define encapsulate\+\_\+api(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}},  }\item[{}]{\mbox{\hyperlink{classmodule}{module}} }\end{DoxyParamCaption})~Py\+C\+Object\+\_\+\+From\+Void\+Ptr(\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{__pygame_8h_a4532f507fc3a83551282f2d1967ed841}\label{__pygame_8h_a4532f507fc3a83551282f2d1967ed841}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_base@{import\_pygame\_base}}
+\index{import\_pygame\_base@{import\_pygame\_base}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_base}{import\_pygame\_base}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+base(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{structbase}{base}}, \mbox{\hyperlink{longintrepr_8h_a79bcfb6bde984f42d1124b068a509af7}{B\+A\+SE}})}
+
+\mbox{\Hypertarget{__pygame_8h_aca1e34b6e57ba132d0048c658d72735e}\label{__pygame_8h_aca1e34b6e57ba132d0048c658d72735e}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_cd@{import\_pygame\_cd}}
+\index{import\_pygame\_cd@{import\_pygame\_cd}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_cd}{import\_pygame\_cd}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+cd(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(cdrom, C\+D\+R\+OM)}
+
+\mbox{\Hypertarget{__pygame_8h_af38a237156e82d9c0c33999c14e847d1}\label{__pygame_8h_af38a237156e82d9c0c33999c14e847d1}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_color@{import\_pygame\_color}}
+\index{import\_pygame\_color@{import\_pygame\_color}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_color}{import\_pygame\_color}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+color(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3ea846f998d64f079b86052b6c4193a8}{color}}, C\+O\+L\+OR)}
+
+\mbox{\Hypertarget{__pygame_8h_af83c79c0210a436825472cd1a7c9796a}\label{__pygame_8h_af83c79c0210a436825472cd1a7c9796a}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_display@{import\_pygame\_display}}
+\index{import\_pygame\_display@{import\_pygame\_display}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_display}{import\_pygame\_display}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+display(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(display, D\+I\+S\+P\+L\+AY)}
+
+\mbox{\Hypertarget{__pygame_8h_ade1cd217bd1d192456ddd4b7b75b777b}\label{__pygame_8h_ade1cd217bd1d192456ddd4b7b75b777b}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_event@{import\_pygame\_event}}
+\index{import\_pygame\_event@{import\_pygame\_event}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_event}{import\_pygame\_event}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+event(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a03b04a5a978bad576866339075de01f6}{event}}, E\+V\+E\+NT)}
+
+\mbox{\Hypertarget{__pygame_8h_a7b64d8370aa27c31e5a282699230fdc0}\label{__pygame_8h_a7b64d8370aa27c31e5a282699230fdc0}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_joystick@{import\_pygame\_joystick}}
+\index{import\_pygame\_joystick@{import\_pygame\_joystick}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_joystick}{import\_pygame\_joystick}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+joystick(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(joystick, J\+O\+Y\+S\+T\+I\+CK)}
+
+\mbox{\Hypertarget{__pygame_8h_a9adf2c8d56b35511dcdabbab45cb34cf}\label{__pygame_8h_a9adf2c8d56b35511dcdabbab45cb34cf}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_math@{import\_pygame\_math}}
+\index{import\_pygame\_math@{import\_pygame\_math}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_math}{import\_pygame\_math}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+math(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(math, M\+A\+TH)}
+
+\mbox{\Hypertarget{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}\label{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}} 
+\index{\_pygame.h@{\_pygame.h}!IMPORT\_PYGAME\_MODULE@{IMPORT\_PYGAME\_MODULE}}
+\index{IMPORT\_PYGAME\_MODULE@{IMPORT\_PYGAME\_MODULE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{IMPORT\_PYGAME\_MODULE}{IMPORT\_PYGAME\_MODULE}}
+{\footnotesize\ttfamily \#define I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{classmodule}{module}},  }\item[{}]{M\+O\+D\+U\+LE }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{classmodule}{module}}, M\+O\+D\+U\+LE, \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}})}
+
+\mbox{\Hypertarget{__pygame_8h_a303ae73f28fbc4c4093fb8d54d104406}\label{__pygame_8h_a303ae73f28fbc4c4093fb8d54d104406}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_pixelarray@{import\_pygame\_pixelarray}}
+\index{import\_pygame\_pixelarray@{import\_pygame\_pixelarray}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_pixelarray}{import\_pygame\_pixelarray}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+pixelarray(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(pixelarray, P\+I\+X\+E\+L\+A\+R\+R\+AY)}
+
+\mbox{\Hypertarget{__pygame_8h_ad6ed26d0fa9126542c2cacf519aea33f}\label{__pygame_8h_ad6ed26d0fa9126542c2cacf519aea33f}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_rect@{import\_pygame\_rect}}
+\index{import\_pygame\_rect@{import\_pygame\_rect}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_rect}{import\_pygame\_rect}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+rect(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(rect, R\+E\+CT)}
+
+\mbox{\Hypertarget{__pygame_8h_aae46d4be99a19b65183d4c74ad283e4d}\label{__pygame_8h_aae46d4be99a19b65183d4c74ad283e4d}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_rwobject@{import\_pygame\_rwobject}}
+\index{import\_pygame\_rwobject@{import\_pygame\_rwobject}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_rwobject}{import\_pygame\_rwobject}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+rwobject(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a56f70c5ba0badb7e0535a2f6be65fe22}{I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(rwobject, R\+W\+O\+B\+J\+E\+CT)}
+
+\mbox{\Hypertarget{__pygame_8h_aebd3954646446bc917d0d344fa519fb5}\label{__pygame_8h_aebd3954646446bc917d0d344fa519fb5}} 
+\index{\_pygame.h@{\_pygame.h}!import\_pygame\_surface@{import\_pygame\_surface}}
+\index{import\_pygame\_surface@{import\_pygame\_surface}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_surface}{import\_pygame\_surface}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+surface(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{                                          \(\backslash\)}
+\DoxyCodeLine{        IMPORT\_PYGAME\_MODULE(surface, SURFACE);   \(\backslash\)}
+\DoxyCodeLine{        if (PyErr\_Occurred() != \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})             \(\backslash\)}
+\DoxyCodeLine{            break;                                \(\backslash\)}
+\DoxyCodeLine{        IMPORT\_PYGAME\_MODULE(surflock, SURFLOCK); \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ad09d5bf8a0bfa52a6db2224ac5f86a61}\label{__pygame_8h_ad09d5bf8a0bfa52a6db2224ac5f86a61}} 
+\index{\_pygame.h@{\_pygame.h}!IMPPREFIX@{IMPPREFIX}}
+\index{IMPPREFIX@{IMPPREFIX}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{IMPPREFIX}{IMPPREFIX}}
+{\footnotesize\ttfamily \#define I\+M\+P\+P\+R\+E\+F\+IX~\char`\"{}pygame.\char`\"{}}
+
+
+
+Prefix when importing module. 
+
+\mbox{\Hypertarget{__pygame_8h_ade117c4a8a68dae70a1f8f3f157e3dbb}\label{__pygame_8h_ade117c4a8a68dae70a1f8f3f157e3dbb}} 
+\index{\_pygame.h@{\_pygame.h}!IS\_SDLv1@{IS\_SDLv1}}
+\index{IS\_SDLv1@{IS\_SDLv1}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{IS\_SDLv1}{IS\_SDLv1}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+S\+D\+Lv1~1}
+
+\mbox{\Hypertarget{__pygame_8h_a9e2b7e8729e0e61f23549cd5c1857030}\label{__pygame_8h_a9e2b7e8729e0e61f23549cd5c1857030}} 
+\index{\_pygame.h@{\_pygame.h}!IS\_SDLv2@{IS\_SDLv2}}
+\index{IS\_SDLv2@{IS\_SDLv2}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{IS\_SDLv2}{IS\_SDLv2}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+S\+D\+Lv2~0}
+
+\mbox{\Hypertarget{__pygame_8h_a08490f4578dcdcb0d6a207b013611e38}\label{__pygame_8h_a08490f4578dcdcb0d6a207b013611e38}} 
+\index{\_pygame.h@{\_pygame.h}!JOYSTICK\_INIT\_CHECK@{JOYSTICK\_INIT\_CHECK}}
+\index{JOYSTICK\_INIT\_CHECK@{JOYSTICK\_INIT\_CHECK}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{JOYSTICK\_INIT\_CHECK}{JOYSTICK\_INIT\_CHECK}}
+{\footnotesize\ttfamily \#define J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!\mbox{\hyperlink{_s_d_l_8h_a04dc570990c697eed95681216801710d}{SDL\_WasInit}}(\mbox{\hyperlink{_s_d_l_8h_ad6b47d785eaa00d9c48e6c1cff4aef4b}{SDL\_INIT\_JOYSTICK}})) \(\backslash\)}
+\DoxyCodeLine{    return \mbox{\hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{RAISE}}(\mbox{\hyperlink{__pygame_8h_aa266543992d8b718fb37a96e66b7e128}{pgExc\_SDLError}}, \textcolor{stringliteral}{"joystick system not initialized"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}\label{__pygame_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}} 
+\index{\_pygame.h@{\_pygame.h}!MAX@{MAX}}
+\index{MAX@{MAX}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define M\+AX(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) $>$ (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}) ? (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}))}
+
+\mbox{\Hypertarget{__pygame_8h_a3acffbd305ee72dcd4593c0d8af64a4f}\label{__pygame_8h_a3acffbd305ee72dcd4593c0d8af64a4f}} 
+\index{\_pygame.h@{\_pygame.h}!MIN@{MIN}}
+\index{MIN@{MIN}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define M\+IN(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) $<$ (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}) ? (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}))}
+
+\mbox{\Hypertarget{__pygame_8h_a35312eceb83f6202115211dcb293f8be}\label{__pygame_8h_a35312eceb83f6202115211dcb293f8be}} 
+\index{\_pygame.h@{\_pygame.h}!MODPREFIX@{MODPREFIX}}
+\index{MODPREFIX@{MODPREFIX}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{MODPREFIX}{MODPREFIX}}
+{\footnotesize\ttfamily \#define M\+O\+D\+P\+R\+E\+F\+IX~\char`\"{}\char`\"{}}
+
+
+
+Prefix when initializing module. 
+
+\mbox{\Hypertarget{__pygame_8h_ad830c5ec579623e85f56f1d866d88896}\label{__pygame_8h_ad830c5ec579623e85f56f1d866d88896}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_CAPSULE\_NAME@{PG\_CAPSULE\_NAME}}
+\index{PG\_CAPSULE\_NAME@{PG\_CAPSULE\_NAME}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_CAPSULE\_NAME}{PG\_CAPSULE\_NAME}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{__pygame_8h_ad09d5bf8a0bfa52a6db2224ac5f86a61}{I\+M\+P\+P\+R\+E\+F\+IX}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}} \char`\"{}.\char`\"{} \mbox{\hyperlink{mask_8h_ae353fb06021df3a7641ec6f49d44d2ac}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY}})}
+
+\mbox{\Hypertarget{__pygame_8h_ac9b15e2c189cba0de8fc7f5c453dff9e}\label{__pygame_8h_ac9b15e2c189cba0de8fc7f5c453dff9e}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_CHECK\_THREADS@{PG\_CHECK\_THREADS}}
+\index{PG\_CHECK\_THREADS@{PG\_CHECK\_THREADS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_CHECK\_THREADS}{PG\_CHECK\_THREADS}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+C\+H\+E\+C\+K\+\_\+\+T\+H\+R\+E\+A\+DS(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{RAISE}}(PyExc\_NotImplementedError,             \(\backslash\)}
+\DoxyCodeLine{          \textcolor{stringliteral}{"Python built without thread support"}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_aedee797ce7bccb3d511b26b7f23de8a8}\label{__pygame_8h_aedee797ce7bccb3d511b26b7f23de8a8}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_EncodeFilePath@{pg\_EncodeFilePath}}
+\index{pg\_EncodeFilePath@{pg\_EncodeFilePath}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_EncodeFilePath}{pg\_EncodeFilePath}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Encode\+File\+Path}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{struct__object}{PyObject}} *))  \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}} + 2])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a22418f854c8a5ce6a4ab81d1988a84c7}\label{__pygame_8h_a22418f854c8a5ce6a4ab81d1988a84c7}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_EncodeString@{pg\_EncodeString}}
+\index{pg\_EncodeString@{pg\_EncodeString}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_EncodeString}{pg\_EncodeString}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Encode\+String}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *, \mbox{\hyperlink{struct__object}{PyObject}} *))  \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}} + 3])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ade08522214475d074e5f8a53e97511bc}\label{__pygame_8h_ade08522214475d074e5f8a53e97511bc}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_FloatFromObj@{pg\_FloatFromObj}}
+\index{pg\_FloatFromObj@{pg\_FloatFromObj}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_FloatFromObj}{pg\_FloatFromObj}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Float\+From\+Obj~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, float $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 5\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a0aca6af62d8c1d57b70f6199ac4ba3bf}\label{__pygame_8h_a0aca6af62d8c1d57b70f6199ac4ba3bf}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_FloatFromObjIndex@{pg\_FloatFromObjIndex}}
+\index{pg\_FloatFromObjIndex@{pg\_FloatFromObjIndex}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_FloatFromObjIndex}{pg\_FloatFromObjIndex}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Float\+From\+Obj\+Index}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}, \(\backslash\)}
+\DoxyCodeLine{               float *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 6])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ae048302b47c19f7e66ae8dc49e54d53e}\label{__pygame_8h_ae048302b47c19f7e66ae8dc49e54d53e}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_HAVE\_CAPSULE@{PG\_HAVE\_CAPSULE}}
+\index{PG\_HAVE\_CAPSULE@{PG\_HAVE\_CAPSULE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_HAVE\_CAPSULE}{PG\_HAVE\_CAPSULE}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+H\+A\+V\+E\+\_\+\+C\+A\+P\+S\+U\+LE~0}
+
+\mbox{\Hypertarget{__pygame_8h_a9770ad8201237baffef5b9ee5908409d}\label{__pygame_8h_a9770ad8201237baffef5b9ee5908409d}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_HAVE\_COBJECT@{PG\_HAVE\_COBJECT}}
+\index{PG\_HAVE\_COBJECT@{PG\_HAVE\_COBJECT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_HAVE\_COBJECT}{PG\_HAVE\_COBJECT}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+H\+A\+V\+E\+\_\+\+C\+O\+B\+J\+E\+CT~0}
+
+\mbox{\Hypertarget{__pygame_8h_a6074d9160eae1047d114f261446ad40d}\label{__pygame_8h_a6074d9160eae1047d114f261446ad40d}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_INLINE@{PG\_INLINE}}
+\index{PG\_INLINE@{PG\_INLINE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_INLINE}{PG\_INLINE}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+I\+N\+L\+I\+NE}
+
+\mbox{\Hypertarget{__pygame_8h_abb1934f86ea438f1e535d35f5082676f}\label{__pygame_8h_abb1934f86ea438f1e535d35f5082676f}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_IntFromObj@{pg\_IntFromObj}}
+\index{pg\_IntFromObj@{pg\_IntFromObj}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_IntFromObj}{pg\_IntFromObj}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Int\+From\+Obj~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 2\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a0de162e6c6ea87d2815d7df433140861}\label{__pygame_8h_a0de162e6c6ea87d2815d7df433140861}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_IntFromObjIndex@{pg\_IntFromObjIndex}}
+\index{pg\_IntFromObjIndex@{pg\_IntFromObjIndex}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_IntFromObjIndex}{pg\_IntFromObjIndex}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Int\+From\+Obj\+Index}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}, \(\backslash\)}
+\DoxyCodeLine{               int *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 3])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a3a324aa072da5bf7bcbeebf0feb4ea43}\label{__pygame_8h_a3a324aa072da5bf7bcbeebf0feb4ea43}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_MAJOR\_VERSION@{PG\_MAJOR\_VERSION}}
+\index{PG\_MAJOR\_VERSION@{PG\_MAJOR\_VERSION}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_MAJOR\_VERSION}{PG\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~1}
+
+\mbox{\Hypertarget{__pygame_8h_a79fcec56a9572f41cac0591f20b36ed3}\label{__pygame_8h_a79fcec56a9572f41cac0591f20b36ed3}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_MINOR\_VERSION@{PG\_MINOR\_VERSION}}
+\index{PG\_MINOR\_VERSION@{PG\_MINOR\_VERSION}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_MINOR\_VERSION}{PG\_MINOR\_VERSION}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~9}
+
+\mbox{\Hypertarget{__pygame_8h_ae1993b4d08912ede5e9930654a16cd78}\label{__pygame_8h_ae1993b4d08912ede5e9930654a16cd78}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_PATCH\_VERSION@{PG\_PATCH\_VERSION}}
+\index{PG\_PATCH\_VERSION@{PG\_PATCH\_VERSION}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_PATCH\_VERSION}{PG\_PATCH\_VERSION}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON~5}
+
+\mbox{\Hypertarget{__pygame_8h_a86a2174f929f6a40772e8aff1e34c6c8}\label{__pygame_8h_a86a2174f929f6a40772e8aff1e34c6c8}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_RegisterQuit@{pg\_RegisterQuit}}
+\index{pg\_RegisterQuit@{pg\_RegisterQuit}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_RegisterQuit}{pg\_RegisterQuit}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Register\+Quit~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_ac455c6b8731dc4d524cf223cdb1d0896}\label{__pygame_8h_ac455c6b8731dc4d524cf223cdb1d0896}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_RGBAFromColorObj@{pg\_RGBAFromColorObj}}
+\index{pg\_RGBAFromColorObj@{pg\_RGBAFromColorObj}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_RGBAFromColorObj}{pg\_RGBAFromColorObj}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+R\+G\+B\+A\+From\+Color\+Obj}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *,  \(\backslash\)}
+\DoxyCodeLine{               Uint8 *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{PYGAMEAPI\_COLOR\_FIRSTSLOT}} + 2])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a6de44724331bde39273ca1686e11f9fe}\label{__pygame_8h_a6de44724331bde39273ca1686e11f9fe}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_RGBAFromObj@{pg\_RGBAFromObj}}
+\index{pg\_RGBAFromObj@{pg\_RGBAFromObj}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_RGBAFromObj}{pg\_RGBAFromObj}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+R\+G\+B\+A\+From\+Obj}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \(\backslash\)}
+\DoxyCodeLine{               Uint8 *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 12])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a533e0c32f9dd8c4ac05c70dfb7803d09}\label{__pygame_8h_a533e0c32f9dd8c4ac05c70dfb7803d09}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_STRINGIZE@{PG\_STRINGIZE}}
+\index{PG\_STRINGIZE@{PG\_STRINGIZE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_STRINGIZE}{PG\_STRINGIZE}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+ZE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a907e2bb30993d824ba08cff28e78f51f}{P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+Z\+E\+\_\+\+H\+E\+L\+P\+ER}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})}
+
+\mbox{\Hypertarget{__pygame_8h_a907e2bb30993d824ba08cff28e78f51f}\label{__pygame_8h_a907e2bb30993d824ba08cff28e78f51f}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_STRINGIZE\_HELPER@{PG\_STRINGIZE\_HELPER}}
+\index{PG\_STRINGIZE\_HELPER@{PG\_STRINGIZE\_HELPER}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_STRINGIZE\_HELPER}{PG\_STRINGIZE\_HELPER}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+Z\+E\+\_\+\+H\+E\+L\+P\+ER(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~\#\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}}
+
+This header file includes all the definitions for the base pygame extensions. This header only requires S\+DL and Python includes. The reason for functions prototyped with \#define\textquotesingle{}s is to allow for maximum python portability. It also uses python as the runtime linker, which allows for late binding. For more information on this style of development, read the Python docs on this subject. \href{http://www.python.org/doc/current/ext/using-cobjects.html}{\texttt{ http\+://www.\+python.\+org/doc/current/ext/using-\/cobjects.\+html}}
+
+If using this to build your own derived extensions, you\textquotesingle{}ll see that the functions available here are mainly used to help convert between python objects and S\+DL objects. Since this library doesn\textquotesingle{}t add a lot of functionality to the S\+DL libarary, it doesn\textquotesingle{}t need to offer a lot either.
+
+When initializing your extension module, you must manually import the modules you want to use. (this is the part about using python as the runtime linker). Each module has its own import\+\_\+xxx() routine. You need to perform this import after you have initialized your own module, and before you call any routines from that module. Since every module in pygame does this, there are plenty of examples.
+
+The base module does include some useful conversion routines that you are free to use in your own extension.
+
+When making changes, it is very important to keep the F\+I\+R\+S\+T\+S\+L\+OT and N\+U\+M\+S\+L\+OT constants up to date for each section. Also be sure not to overlap any of the slots. When you do make a mistake with this, it will result is a dereferenced N\+U\+LL pointer that is easier to diagnose than it could be \+:\mbox{]} \mbox{\Hypertarget{__pygame_8h_a68b4675ce6950c6e04339c8fc4810c99}\label{__pygame_8h_a68b4675ce6950c6e04339c8fc4810c99}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_TwoFloatsFromObj@{pg\_TwoFloatsFromObj}}
+\index{pg\_TwoFloatsFromObj@{pg\_TwoFloatsFromObj}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_TwoFloatsFromObj}{pg\_TwoFloatsFromObj}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Two\+Floats\+From\+Obj}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \textcolor{keywordtype}{float} *, \(\backslash\)}
+\DoxyCodeLine{               float *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 7])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_aba1b1d4e0efc5626a16fc5fb161caa93}\label{__pygame_8h_aba1b1d4e0efc5626a16fc5fb161caa93}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_TwoIntsFromObj@{pg\_TwoIntsFromObj}}
+\index{pg\_TwoIntsFromObj@{pg\_TwoIntsFromObj}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_TwoIntsFromObj}{pg\_TwoIntsFromObj}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Two\+Ints\+From\+Obj}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \textcolor{keywordtype}{int} *, \(\backslash\)}
+\DoxyCodeLine{               int *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 4])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a327d233e56ba56c76e8e135e2f485f73}\label{__pygame_8h_a327d233e56ba56c76e8e135e2f485f73}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_UintFromObj@{pg\_UintFromObj}}
+\index{pg\_UintFromObj@{pg\_UintFromObj}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_UintFromObj}{pg\_UintFromObj}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Uint\+From\+Obj}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \(\backslash\)}
+\DoxyCodeLine{               Uint32 *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 8])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a1dcddd93963bf3c4924beb905d3aa371}\label{__pygame_8h_a1dcddd93963bf3c4924beb905d3aa371}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_UintFromObjIndex@{pg\_UintFromObjIndex}}
+\index{pg\_UintFromObjIndex@{pg\_UintFromObjIndex}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_UintFromObjIndex}{pg\_UintFromObjIndex}}
+{\footnotesize\ttfamily \#define pg\+\_\+\+Uint\+From\+Obj\+Index}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}, \(\backslash\)}
+\DoxyCodeLine{               Uint32 *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 9])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_acdb97480619862ad15eb63b1973652a0}\label{__pygame_8h_acdb97480619862ad15eb63b1973652a0}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_VERSION\_ATLEAST@{PG\_VERSION\_ATLEAST}}
+\index{PG\_VERSION\_ATLEAST@{PG\_VERSION\_ATLEAST}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_VERSION\_ATLEAST}{PG\_VERSION\_ATLEAST}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+T\+L\+E\+A\+ST(\begin{DoxyParamCaption}\item[{}]{M\+A\+J\+OR,  }\item[{}]{M\+I\+N\+OR,  }\item[{}]{P\+A\+T\+CH }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{__pygame_8h_aa850adfa16854f764ab0ce55e1ba9c5e}{PG\_VERSIONNUM}}(\mbox{\hyperlink{__pygame_8h_a3a324aa072da5bf7bcbeebf0feb4ea43}{PG\_MAJOR\_VERSION}}, \mbox{\hyperlink{__pygame_8h_a79fcec56a9572f41cac0591f20b36ed3}{PG\_MINOR\_VERSION}}, \mbox{\hyperlink{__pygame_8h_ae1993b4d08912ede5e9930654a16cd78}{PG\_PATCH\_VERSION}}) >= \(\backslash\)}
+\DoxyCodeLine{     PG\_VERSIONNUM(MAJOR, MINOR, PATCH))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_aa850adfa16854f764ab0ce55e1ba9c5e}\label{__pygame_8h_aa850adfa16854f764ab0ce55e1ba9c5e}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_VERSIONNUM@{PG\_VERSIONNUM}}
+\index{PG\_VERSIONNUM@{PG\_VERSIONNUM}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_VERSIONNUM}{PG\_VERSIONNUM}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+V\+E\+R\+S\+I\+O\+N\+N\+UM(\begin{DoxyParamCaption}\item[{}]{M\+A\+J\+OR,  }\item[{}]{M\+I\+N\+OR,  }\item[{}]{P\+A\+T\+CH }\end{DoxyParamCaption})~(1000$\ast$(M\+A\+J\+OR) + 100$\ast$(M\+I\+N\+OR) + (P\+A\+T\+CH))}
+
+\mbox{\Hypertarget{__pygame_8h_a4a4d93cf2db6fb650a16307d9610d8a6}\label{__pygame_8h_a4a4d93cf2db6fb650a16307d9610d8a6}} 
+\index{\_pygame.h@{\_pygame.h}!PG\_WARN@{PG\_WARN}}
+\index{PG\_WARN@{PG\_WARN}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PG\_WARN}{PG\_WARN}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+W\+A\+RN(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{structseq_8h_aee871ea0a0fe93be46762978ca8895ca}{desc}} }\end{DoxyParamCaption})~\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a7b6161cffb9b8aee272b3b916183d28c}{message}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+ \char`\"{}(\char`\"{} \mbox{\hyperlink{__pygame_8h_a533e0c32f9dd8c4ac05c70dfb7803d09}{P\+G\+\_\+\+S\+T\+R\+I\+N\+G\+I\+ZE}}(\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) \char`\"{})\+: W\+A\+R\+N\+I\+N\+G\+: \char`\"{} \#desc)}
+
+\mbox{\Hypertarget{__pygame_8h_a859350eb150c009aea698a31009771a8}\label{__pygame_8h_a859350eb150c009aea698a31009771a8}} 
+\index{\_pygame.h@{\_pygame.h}!pgBuffer\_AsArrayInterface@{pgBuffer\_AsArrayInterface}}
+\index{pgBuffer\_AsArrayInterface@{pgBuffer\_AsArrayInterface}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgBuffer\_AsArrayInterface}{pgBuffer\_AsArrayInterface}}
+{\footnotesize\ttfamily \#define pg\+Buffer\+\_\+\+As\+Array\+Interface}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{structbufferinfo}{Py\_buffer}} *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 13])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ac5013422e725a7d912dc4d6667c55b41}\label{__pygame_8h_ac5013422e725a7d912dc4d6667c55b41}} 
+\index{\_pygame.h@{\_pygame.h}!pgBuffer\_AsArrayStruct@{pgBuffer\_AsArrayStruct}}
+\index{pgBuffer\_AsArrayStruct@{pgBuffer\_AsArrayStruct}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgBuffer\_AsArrayStruct}{pgBuffer\_AsArrayStruct}}
+{\footnotesize\ttfamily \#define pg\+Buffer\+\_\+\+As\+Array\+Struct}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{structbufferinfo}{Py\_buffer}} *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 14])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a4df07e77407997d955786b777ec88e43}\label{__pygame_8h_a4df07e77407997d955786b777ec88e43}} 
+\index{\_pygame.h@{\_pygame.h}!pgBuffer\_Release@{pgBuffer\_Release}}
+\index{pgBuffer\_Release@{pgBuffer\_Release}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgBuffer\_Release}{pgBuffer\_Release}}
+{\footnotesize\ttfamily \#define pg\+Buffer\+\_\+\+Release~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{__pygame_8h_a69f81ff907a38a579a9f6d038ee42690}{pg\+\_\+buffer}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 16\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a01641254dd53080aca2b7339a4872e9b}\label{__pygame_8h_a01641254dd53080aca2b7339a4872e9b}} 
+\index{\_pygame.h@{\_pygame.h}!pgCD\_AsID@{pgCD\_AsID}}
+\index{pgCD\_AsID@{pgCD\_AsID}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgCD\_AsID}{pgCD\_AsID}}
+{\footnotesize\ttfamily \#define pg\+C\+D\+\_\+\+As\+ID(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{structpg_c_d_object}{pg\+C\+D\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}})}
+
+\mbox{\Hypertarget{__pygame_8h_a94433c469f12a2e27af79001c4091f2f}\label{__pygame_8h_a94433c469f12a2e27af79001c4091f2f}} 
+\index{\_pygame.h@{\_pygame.h}!pgCD\_Check@{pgCD\_Check}}
+\index{pgCD\_Check@{pgCD\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgCD\_Check}{pgCD\_Check}}
+{\footnotesize\ttfamily \#define pg\+C\+D\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==  \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{PYGAMEAPI\_CDROM\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a59719de93ca3b2ba867c28270887da4b}\label{__pygame_8h_a59719de93ca3b2ba867c28270887da4b}} 
+\index{\_pygame.h@{\_pygame.h}!pgCD\_New@{pgCD\_New}}
+\index{pgCD\_New@{pgCD\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgCD\_New}{pgCD\_New}}
+{\footnotesize\ttfamily \#define pg\+C\+D\+\_\+\+New~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a5bb18f7750d8e4e51043cb1eff0cc61c}\label{__pygame_8h_a5bb18f7750d8e4e51043cb1eff0cc61c}} 
+\index{\_pygame.h@{\_pygame.h}!pgCD\_Type@{pgCD\_Type}}
+\index{pgCD\_Type@{pgCD\_Type}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgCD\_Type}{pgCD\_Type}}
+{\footnotesize\ttfamily \#define pg\+C\+D\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a2c59e8060a0cf95be897a8cc74d4d383}\label{__pygame_8h_a2c59e8060a0cf95be897a8cc74d4d383}} 
+\index{\_pygame.h@{\_pygame.h}!pgColor\_Check@{pgColor\_Check}}
+\index{pgColor\_Check@{pgColor\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgColor\_Check}{pgColor\_Check}}
+{\footnotesize\ttfamily \#define pg\+Color\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==     \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{PYGAMEAPI\_COLOR\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a7c92735be9ed3aea4806e72fd420b746}\label{__pygame_8h_a7c92735be9ed3aea4806e72fd420b746}} 
+\index{\_pygame.h@{\_pygame.h}!pgColor\_New@{pgColor\_New}}
+\index{pgColor\_New@{pgColor\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgColor\_New}{pgColor\_New}}
+{\footnotesize\ttfamily \#define pg\+Color\+\_\+\+New~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}} $\ast$)) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a8e3355be36f5a4c58c900a78897f9c47}\label{__pygame_8h_a8e3355be36f5a4c58c900a78897f9c47}} 
+\index{\_pygame.h@{\_pygame.h}!pgColor\_NewLength@{pgColor\_NewLength}}
+\index{pgColor\_NewLength@{pgColor\_NewLength}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgColor\_NewLength}{pgColor\_NewLength}}
+{\footnotesize\ttfamily \#define pg\+Color\+\_\+\+New\+Length}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}} *, \mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}})) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{PYGAMEAPI\_COLOR\_FIRSTSLOT}} + 3])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a9236236add92d13c6c76da9c5f491ccc}\label{__pygame_8h_a9236236add92d13c6c76da9c5f491ccc}} 
+\index{\_pygame.h@{\_pygame.h}!pgColor\_Type@{pgColor\_Type}}
+\index{pgColor\_Type@{pgColor\_Type}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgColor\_Type}{pgColor\_Type}}
+{\footnotesize\ttfamily \#define pg\+Color\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_aeb430906bf905935563c3169394d4d1a}\label{__pygame_8h_aeb430906bf905935563c3169394d4d1a}} 
+\index{\_pygame.h@{\_pygame.h}!pgDict\_AsBuffer@{pgDict\_AsBuffer}}
+\index{pgDict\_AsBuffer@{pgDict\_AsBuffer}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgDict\_AsBuffer}{pgDict\_AsBuffer}}
+{\footnotesize\ttfamily \#define pg\+Dict\+\_\+\+As\+Buffer}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{structpg__bufferinfo__s}{pg\_buffer}} *, \mbox{\hyperlink{struct__object}{PyObject}} *, \(\backslash\)}
+\DoxyCodeLine{               int))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 17])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a0b04ef0af5543497479cd77b0523be4a}\label{__pygame_8h_a0b04ef0af5543497479cd77b0523be4a}} 
+\index{\_pygame.h@{\_pygame.h}!pgEvent\_Check@{pgEvent\_Check}}
+\index{pgEvent\_Check@{pgEvent\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgEvent\_Check}{pgEvent\_Check}}
+{\footnotesize\ttfamily \#define pg\+Event\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==     \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{PYGAMEAPI\_EVENT\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a8d462acd7b41f4443773a19cec60cc5c}\label{__pygame_8h_a8d462acd7b41f4443773a19cec60cc5c}} 
+\index{\_pygame.h@{\_pygame.h}!pgEvent\_FillUserEvent@{pgEvent\_FillUserEvent}}
+\index{pgEvent\_FillUserEvent@{pgEvent\_FillUserEvent}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgEvent\_FillUserEvent}{pgEvent\_FillUserEvent}}
+{\footnotesize\ttfamily \#define pg\+Event\+\_\+\+Fill\+User\+Event}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{structpg_event_object}{pgEventObject}} *, \(\backslash\)}
+\DoxyCodeLine{               SDL\_Event *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{PYGAMEAPI\_EVENT\_FIRSTSLOT}} + 3])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a034500f09aef331960803a8122d6a614}\label{__pygame_8h_a034500f09aef331960803a8122d6a614}} 
+\index{\_pygame.h@{\_pygame.h}!pgEvent\_New@{pgEvent\_New}}
+\index{pgEvent\_New@{pgEvent\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgEvent\_New}{pgEvent\_New}}
+{\footnotesize\ttfamily \#define pg\+Event\+\_\+\+New}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{union_s_d_l___event}{SDL\_Event}} *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{PYGAMEAPI\_EVENT\_FIRSTSLOT}} + 1])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a48cff03226ab15fe83f7875b4935a4f0}\label{__pygame_8h_a48cff03226ab15fe83f7875b4935a4f0}} 
+\index{\_pygame.h@{\_pygame.h}!pgEvent\_New2@{pgEvent\_New2}}
+\index{pgEvent\_New2@{pgEvent\_New2}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgEvent\_New2}{pgEvent\_New2}}
+{\footnotesize\ttfamily \#define pg\+Event\+\_\+\+New2}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}, \mbox{\hyperlink{struct__object}{PyObject}} *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{PYGAMEAPI\_EVENT\_FIRSTSLOT}} + 2])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a59cdd971e4edf6de2c9a5ff0de73087f}\label{__pygame_8h_a59cdd971e4edf6de2c9a5ff0de73087f}} 
+\index{\_pygame.h@{\_pygame.h}!pgEvent\_Type@{pgEvent\_Type}}
+\index{pgEvent\_Type@{pgEvent\_Type}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgEvent\_Type}{pgEvent\_Type}}
+{\footnotesize\ttfamily \#define pg\+Event\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_aa4fe444859f46c2ba464f2cb4cf6086a}\label{__pygame_8h_aa4fe444859f46c2ba464f2cb4cf6086a}} 
+\index{\_pygame.h@{\_pygame.h}!pgExc\_BufferError@{pgExc\_BufferError}}
+\index{pgExc\_BufferError@{pgExc\_BufferError}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgExc\_BufferError}{pgExc\_BufferError}}
+{\footnotesize\ttfamily \#define pg\+Exc\+\_\+\+Buffer\+Error~((\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 18\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_aa266543992d8b718fb37a96e66b7e128}\label{__pygame_8h_aa266543992d8b718fb37a96e66b7e128}} 
+\index{\_pygame.h@{\_pygame.h}!pgExc\_SDLError@{pgExc\_SDLError}}
+\index{pgExc\_SDLError@{pgExc\_SDLError}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgExc\_SDLError}{pgExc\_SDLError}}
+{\footnotesize\ttfamily \#define pg\+Exc\+\_\+\+S\+D\+L\+Error~((\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a5a0f26a8b25eea56bfc38b7eb86f1a67}\label{__pygame_8h_a5a0f26a8b25eea56bfc38b7eb86f1a67}} 
+\index{\_pygame.h@{\_pygame.h}!pgJoystick\_AsID@{pgJoystick\_AsID}}
+\index{pgJoystick\_AsID@{pgJoystick\_AsID}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgJoystick\_AsID}{pgJoystick\_AsID}}
+{\footnotesize\ttfamily \#define pg\+Joystick\+\_\+\+As\+ID(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{structpg_joystick_object}{pg\+Joystick\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a58c2a664503e14ffb8f21012aabff3e9}{id}})}
+
+\mbox{\Hypertarget{__pygame_8h_ad5b2bdfab8b9da79933503f9efefebcc}\label{__pygame_8h_ad5b2bdfab8b9da79933503f9efefebcc}} 
+\index{\_pygame.h@{\_pygame.h}!pgJoystick\_Check@{pgJoystick\_Check}}
+\index{pgJoystick\_Check@{pgJoystick\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgJoystick\_Check}{pgJoystick\_Check}}
+{\footnotesize\ttfamily \#define pg\+Joystick\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==        \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{PYGAMEAPI\_JOYSTICK\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a3b898aca070309cedb16805fe0da275c}\label{__pygame_8h_a3b898aca070309cedb16805fe0da275c}} 
+\index{\_pygame.h@{\_pygame.h}!pgJoystick\_New@{pgJoystick\_New}}
+\index{pgJoystick\_New@{pgJoystick\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgJoystick\_New}{pgJoystick\_New}}
+{\footnotesize\ttfamily \#define pg\+Joystick\+\_\+\+New~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_ad4d625a368c6e921e0810189ff795913}\label{__pygame_8h_ad4d625a368c6e921e0810189ff795913}} 
+\index{\_pygame.h@{\_pygame.h}!pgJoystick\_Type@{pgJoystick\_Type}}
+\index{pgJoystick\_Type@{pgJoystick\_Type}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgJoystick\_Type}{pgJoystick\_Type}}
+{\footnotesize\ttfamily \#define pg\+Joystick\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a40109884dc8cfce304dff22810debd62}\label{__pygame_8h_a40109884dc8cfce304dff22810debd62}} 
+\index{\_pygame.h@{\_pygame.h}!pgLifetimeLock\_Check@{pgLifetimeLock\_Check}}
+\index{pgLifetimeLock\_Check@{pgLifetimeLock\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgLifetimeLock\_Check}{pgLifetimeLock\_Check}}
+{\footnotesize\ttfamily \#define pg\+Lifetime\+Lock\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==            \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a248f0c4796861eb51e8ab4378e2b1e04}\label{__pygame_8h_a248f0c4796861eb51e8ab4378e2b1e04}} 
+\index{\_pygame.h@{\_pygame.h}!pgObject\_GetBuffer@{pgObject\_GetBuffer}}
+\index{pgObject\_GetBuffer@{pgObject\_GetBuffer}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgObject\_GetBuffer}{pgObject\_GetBuffer}}
+{\footnotesize\ttfamily \#define pg\+Object\+\_\+\+Get\+Buffer}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{structpg__bufferinfo__s}{pg\_buffer}} *, \(\backslash\)}
+\DoxyCodeLine{               int))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{PYGAMEAPI\_BASE\_FIRSTSLOT}} + 15])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a5695562fa3b3ddbf382551cc4a80c72d}\label{__pygame_8h_a5695562fa3b3ddbf382551cc4a80c72d}} 
+\index{\_pygame.h@{\_pygame.h}!pgRect\_AsRect@{pgRect\_AsRect}}
+\index{pgRect\_AsRect@{pgRect\_AsRect}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRect\_AsRect}{pgRect\_AsRect}}
+{\footnotesize\ttfamily \#define pg\+Rect\+\_\+\+As\+Rect(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{structpg_rect_object}{pg\+Rect\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})}
+
+\mbox{\Hypertarget{__pygame_8h_ab55c101f74a59894dcacf3dcfe7e4659}\label{__pygame_8h_ab55c101f74a59894dcacf3dcfe7e4659}} 
+\index{\_pygame.h@{\_pygame.h}!pgRect\_Check@{pgRect\_Check}}
+\index{pgRect\_Check@{pgRect\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRect\_Check}{pgRect\_Check}}
+{\footnotesize\ttfamily \#define pg\+Rect\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==    \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{PYGAMEAPI\_RECT\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a10e5ef8801bd2c3d914a70a4a3ecf186}\label{__pygame_8h_a10e5ef8801bd2c3d914a70a4a3ecf186}} 
+\index{\_pygame.h@{\_pygame.h}!pgRect\_FromObject@{pgRect\_FromObject}}
+\index{pgRect\_FromObject@{pgRect\_FromObject}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRect\_FromObject}{pgRect\_FromObject}}
+{\footnotesize\ttfamily \#define pg\+Rect\+\_\+\+From\+Object}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct_g_a_m_e___rect}{GAME\_Rect}} * (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{struct_g_a_m_e___rect}{GAME\_Rect}} *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{PYGAMEAPI\_RECT\_FIRSTSLOT}} + 3])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a5204e0664c55752dd6fe0eeba0ce19b4}\label{__pygame_8h_a5204e0664c55752dd6fe0eeba0ce19b4}} 
+\index{\_pygame.h@{\_pygame.h}!pgRect\_New@{pgRect\_New}}
+\index{pgRect\_New@{pgRect\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRect\_New}{pgRect\_New}}
+{\footnotesize\ttfamily \#define pg\+Rect\+\_\+\+New~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)(\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$)) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_af1427ea2a4444bc97ed24b967bbbf8bf}\label{__pygame_8h_af1427ea2a4444bc97ed24b967bbbf8bf}} 
+\index{\_pygame.h@{\_pygame.h}!pgRect\_New4@{pgRect\_New4}}
+\index{pgRect\_New4@{pgRect\_New4}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRect\_New4}{pgRect\_New4}}
+{\footnotesize\ttfamily \#define pg\+Rect\+\_\+\+New4}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}, \mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}, \mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}, \mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}})) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{PYGAMEAPI\_RECT\_FIRSTSLOT}} + 2])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ac0acb23cffe06b76c0d6945a86a1dbb2}\label{__pygame_8h_ac0acb23cffe06b76c0d6945a86a1dbb2}} 
+\index{\_pygame.h@{\_pygame.h}!pgRect\_Type@{pgRect\_Type}}
+\index{pgRect\_Type@{pgRect\_Type}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRect\_Type}{pgRect\_Type}}
+{\footnotesize\ttfamily \#define pg\+Rect\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a84c9cb7ca92ebec4a1de45e89a13b4c0}\label{__pygame_8h_a84c9cb7ca92ebec4a1de45e89a13b4c0}} 
+\index{\_pygame.h@{\_pygame.h}!pgRWops\_FromFileObject@{pgRWops\_FromFileObject}}
+\index{pgRWops\_FromFileObject@{pgRWops\_FromFileObject}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRWops\_FromFileObject}{pgRWops\_FromFileObject}}
+{\footnotesize\ttfamily \#define pg\+R\+Wops\+\_\+\+From\+File\+Object}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct_s_d_l___r_wops}{SDL\_RWops}} * (*)(\mbox{\hyperlink{struct__object}{PyObject}} *))  \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}} + 4])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a3e2614bae1b63ee8260b2651a29f8c4e}\label{__pygame_8h_a3e2614bae1b63ee8260b2651a29f8c4e}} 
+\index{\_pygame.h@{\_pygame.h}!pgRWops\_FromObject@{pgRWops\_FromObject}}
+\index{pgRWops\_FromObject@{pgRWops\_FromObject}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRWops\_FromObject}{pgRWops\_FromObject}}
+{\footnotesize\ttfamily \#define pg\+R\+Wops\+\_\+\+From\+Object}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct_s_d_l___r_wops}{SDL\_RWops}} * (*)(\mbox{\hyperlink{struct__object}{PyObject}} *))  \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ac57691e8f77a5a608049f02133f60738}\label{__pygame_8h_ac57691e8f77a5a608049f02133f60738}} 
+\index{\_pygame.h@{\_pygame.h}!pgRWops\_IsFileObject@{pgRWops\_IsFileObject}}
+\index{pgRWops\_IsFileObject@{pgRWops\_IsFileObject}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRWops\_IsFileObject}{pgRWops\_IsFileObject}}
+{\footnotesize\ttfamily \#define pg\+R\+Wops\+\_\+\+Is\+File\+Object~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{struct_s_d_l___r_wops}{S\+D\+L\+\_\+\+R\+Wops}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_afd1848439ce3b6f559ff6f4caaa74108}\label{__pygame_8h_afd1848439ce3b6f559ff6f4caaa74108}} 
+\index{\_pygame.h@{\_pygame.h}!pgRWops\_ReleaseObject@{pgRWops\_ReleaseObject}}
+\index{pgRWops\_ReleaseObject@{pgRWops\_ReleaseObject}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgRWops\_ReleaseObject}{pgRWops\_ReleaseObject}}
+{\footnotesize\ttfamily \#define pg\+R\+Wops\+\_\+\+Release\+Object}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct_s_d_l___r_wops}{SDL\_RWops}} *))        \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}} + 5])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a5bbcdbf08681584c8b161f6684b45444}\label{__pygame_8h_a5bbcdbf08681584c8b161f6684b45444}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_AsSurface@{pgSurface\_AsSurface}}
+\index{pgSurface\_AsSurface@{pgSurface\_AsSurface}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_AsSurface}{pgSurface\_AsSurface}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+As\+Surface(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{structpg_surface_object}{pg\+Surface\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$surf)}
+
+\mbox{\Hypertarget{__pygame_8h_a9481b1f4ca2b5eac8621d72fec1bcc0e}\label{__pygame_8h_a9481b1f4ca2b5eac8621d72fec1bcc0e}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_Blit@{pgSurface\_Blit}}
+\index{pgSurface\_Blit@{pgSurface\_Blit}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_Blit}{pgSurface\_Blit}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Blit}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{struct_s_d_l___rect}{SDL\_Rect}} *, \mbox{\hyperlink{struct_s_d_l___rect}{SDL\_Rect}} *, \(\backslash\)}
+\DoxyCodeLine{               int))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{PYGAMEAPI\_SURFACE\_FIRSTSLOT}} + 2])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a0c6a3c1a8a2ba07faf2d86d67b7b946c}\label{__pygame_8h_a0c6a3c1a8a2ba07faf2d86d67b7b946c}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_Check@{pgSurface\_Check}}
+\index{pgSurface\_Check@{pgSurface\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_Check}{pgSurface\_Check}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(PyObject\_IsInstance((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}), \(\backslash\)}
+\DoxyCodeLine{        (\mbox{\hyperlink{struct__object}{PyObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{PYGAMEAPI\_SURFACE\_FIRSTSLOT}} + 0]))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a3e08170458c57b6d1f8256a617c0af1b}\label{__pygame_8h_a3e08170458c57b6d1f8256a617c0af1b}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_Lock@{pgSurface\_Lock}}
+\index{pgSurface\_Lock@{pgSurface\_Lock}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_Lock}{pgSurface\_Lock}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Lock~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 3\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_ab2f3ea5872e1a1dd41b366c8d9bcb38b}\label{__pygame_8h_ab2f3ea5872e1a1dd41b366c8d9bcb38b}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_LockBy@{pgSurface\_LockBy}}
+\index{pgSurface\_LockBy@{pgSurface\_LockBy}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_LockBy}{pgSurface\_LockBy}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Lock\+By}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \(\backslash\)}
+\DoxyCodeLine{               PyObject *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}} + 5])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a00e6db357147452e18429b0f3a974695}\label{__pygame_8h_a00e6db357147452e18429b0f3a974695}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_LockLifetime@{pgSurface\_LockLifetime}}
+\index{pgSurface\_LockLifetime@{pgSurface\_LockLifetime}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_LockLifetime}{pgSurface\_LockLifetime}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Lock\+Lifetime}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \mbox{\hyperlink{struct__object}{PyObject}} *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}} + 7])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a5dcf489bb4f4bb87b0574123d155d894}\label{__pygame_8h_a5dcf489bb4f4bb87b0574123d155d894}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_New@{pgSurface\_New}}
+\index{pgSurface\_New@{pgSurface\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_New}{pgSurface\_New}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+New}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(\mbox{\hyperlink{struct_s_d_l___surface}{SDL\_Surface}} *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{PYGAMEAPI\_SURFACE\_FIRSTSLOT}} + 1])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a25fda96aece7433d907f080938cd9777}\label{__pygame_8h_a25fda96aece7433d907f080938cd9777}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_Prep@{pgSurface\_Prep}}
+\index{pgSurface\_Prep@{pgSurface\_Prep}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_Prep}{pgSurface\_Prep}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Prep(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (((\mbox{\hyperlink{structpg_surface_object}{pgSurfaceObject}} *)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->subsurface) \(\backslash\)}
+\DoxyCodeLine{    (*(*(\mbox{\hyperlink{_s_d_l__audio_8h_aa5cb90967788ada2711894ca158ece01}{void}} (*)(                          \(\backslash\)}
+\DoxyCodeLine{        PyObject *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}} + 1]))(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ae586cda5baf614735620cfdf7860f310}\label{__pygame_8h_ae586cda5baf614735620cfdf7860f310}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_Type@{pgSurface\_Type}}
+\index{pgSurface\_Type@{pgSurface\_Type}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_Type}{pgSurface\_Type}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a1d37334a1e2f2f0792b60633b14ec10c}\label{__pygame_8h_a1d37334a1e2f2f0792b60633b14ec10c}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_Unlock@{pgSurface\_Unlock}}
+\index{pgSurface\_Unlock@{pgSurface\_Unlock}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_Unlock}{pgSurface\_Unlock}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Unlock~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 4\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_afd5cda6cd3fc4469da82f7cceb1719ee}\label{__pygame_8h_afd5cda6cd3fc4469da82f7cceb1719ee}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_UnlockBy@{pgSurface\_UnlockBy}}
+\index{pgSurface\_UnlockBy@{pgSurface\_UnlockBy}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_UnlockBy}{pgSurface\_UnlockBy}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Unlock\+By}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}} (*)(\mbox{\hyperlink{struct__object}{PyObject}} *, \(\backslash\)}
+\DoxyCodeLine{               PyObject *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}} + 6])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a21a19f7db5befc0b5d651dbfba32032e}\label{__pygame_8h_a21a19f7db5befc0b5d651dbfba32032e}} 
+\index{\_pygame.h@{\_pygame.h}!pgSurface\_Unprep@{pgSurface\_Unprep}}
+\index{pgSurface\_Unprep@{pgSurface\_Unprep}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgSurface\_Unprep}{pgSurface\_Unprep}}
+{\footnotesize\ttfamily \#define pg\+Surface\+\_\+\+Unprep(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (((\mbox{\hyperlink{structpg_surface_object}{pgSurfaceObject}} *)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->subsurface) \(\backslash\)}
+\DoxyCodeLine{    (*(*(\mbox{\hyperlink{_s_d_l__audio_8h_aa5cb90967788ada2711894ca158ece01}{void}} (*)(                          \(\backslash\)}
+\DoxyCodeLine{        PyObject *))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}} + 2]))(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a0760a717e4972786d4de3819de873e46}\label{__pygame_8h_a0760a717e4972786d4de3819de873e46}} 
+\index{\_pygame.h@{\_pygame.h}!pgVector2\_Check@{pgVector2\_Check}}
+\index{pgVector2\_Check@{pgVector2\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVector2\_Check}{pgVector2\_Check}}
+{\footnotesize\ttfamily \#define pg\+Vector2\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==       \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa39b09eb8ae4999f3065eb2f2acc5a2b}{PYGAMEAPI\_MATH\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a9a48420f9a26f26fb11bc64c751f9f85}\label{__pygame_8h_a9a48420f9a26f26fb11bc64c751f9f85}} 
+\index{\_pygame.h@{\_pygame.h}!pgVector3\_Check@{pgVector3\_Check}}
+\index{pgVector3\_Check@{pgVector3\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVector3\_Check}{pgVector3\_Check}}
+{\footnotesize\ttfamily \#define pg\+Vector3\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==       \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa39b09eb8ae4999f3065eb2f2acc5a2b}{PYGAMEAPI\_MATH\_FIRSTSLOT}} + 1])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a2d91d36c927817254a108be7f676e87f}\label{__pygame_8h_a2d91d36c927817254a108be7f676e87f}} 
+\index{\_pygame.h@{\_pygame.h}!pgVideo\_AutoInit@{pgVideo\_AutoInit}}
+\index{pgVideo\_AutoInit@{pgVideo\_AutoInit}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVideo\_AutoInit}{pgVideo\_AutoInit}}
+{\footnotesize\ttfamily \#define pg\+Video\+\_\+\+Auto\+Init~($\ast$(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 11\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a0adeca28fa3d63f133e58cd6a43ad33f}\label{__pygame_8h_a0adeca28fa3d63f133e58cd6a43ad33f}} 
+\index{\_pygame.h@{\_pygame.h}!pgVideo\_AutoQuit@{pgVideo\_AutoQuit}}
+\index{pgVideo\_AutoQuit@{pgVideo\_AutoQuit}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVideo\_AutoQuit}{pgVideo\_AutoQuit}}
+{\footnotesize\ttfamily \#define pg\+Video\+\_\+\+Auto\+Quit~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 10\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_ae5a83b18d1357923ea2a0a04d4c8c828}\label{__pygame_8h_ae5a83b18d1357923ea2a0a04d4c8c828}} 
+\index{\_pygame.h@{\_pygame.h}!pgVidInfo\_AsVidInfo@{pgVidInfo\_AsVidInfo}}
+\index{pgVidInfo\_AsVidInfo@{pgVidInfo\_AsVidInfo}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVidInfo\_AsVidInfo}{pgVidInfo\_AsVidInfo}}
+{\footnotesize\ttfamily \#define pg\+Vid\+Info\+\_\+\+As\+Vid\+Info(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{structpg_vid_info_object}{pg\+Vid\+Info\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$info)}
+
+\mbox{\Hypertarget{__pygame_8h_a891c3289e338d7865c1baabe8e1a3d18}\label{__pygame_8h_a891c3289e338d7865c1baabe8e1a3d18}} 
+\index{\_pygame.h@{\_pygame.h}!pgVidInfo\_Check@{pgVidInfo\_Check}}
+\index{pgVidInfo\_Check@{pgVidInfo\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVidInfo\_Check}{pgVidInfo\_Check}}
+{\footnotesize\ttfamily \#define pg\+Vid\+Info\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==       \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}{PYGAMEAPI\_DISPLAY\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a4cb01e47e3f61035900d7b6e5fbcc8b2}\label{__pygame_8h_a4cb01e47e3f61035900d7b6e5fbcc8b2}} 
+\index{\_pygame.h@{\_pygame.h}!pgVidInfo\_New@{pgVidInfo\_New}}
+\index{pgVidInfo\_New@{pgVidInfo\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVidInfo\_New}{pgVidInfo\_New}}
+{\footnotesize\ttfamily \#define pg\+Vid\+Info\+\_\+\+New}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(*(\mbox{\hyperlink{struct__object}{PyObject}} * (*)(SDL\_VideoInfo *)) \(\backslash\)}
+\DoxyCodeLine{         PyGAME\_C\_API[\mbox{\hyperlink{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}{PYGAMEAPI\_DISPLAY\_FIRSTSLOT}} + 1])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a23b39a7a75cb5d7111dabcc43a1ab359}\label{__pygame_8h_a23b39a7a75cb5d7111dabcc43a1ab359}} 
+\index{\_pygame.h@{\_pygame.h}!pgVidInfo\_Type@{pgVidInfo\_Type}}
+\index{pgVidInfo\_Type@{pgVidInfo\_Type}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pgVidInfo\_Type}{pgVidInfo\_Type}}
+{\footnotesize\ttfamily \#define pg\+Vid\+Info\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 0\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_af70e6eaf86795a6477bad8f89f5781fd}\label{__pygame_8h_af70e6eaf86795a6477bad8f89f5781fd}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_ANY\_CONTIGUOUS@{PyBUF\_ANY\_CONTIGUOUS}}
+\index{PyBUF\_ANY\_CONTIGUOUS@{PyBUF\_ANY\_CONTIGUOUS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_ANY\_CONTIGUOUS}{PyBUF\_ANY\_CONTIGUOUS}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+A\+N\+Y\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US~(0x0080 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)}
+
+\mbox{\Hypertarget{__pygame_8h_a5925988be85b809111189d82f9db7f18}\label{__pygame_8h_a5925988be85b809111189d82f9db7f18}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_C\_CONTIGUOUS@{PyBUF\_C\_CONTIGUOUS}}
+\index{PyBUF\_C\_CONTIGUOUS@{PyBUF\_C\_CONTIGUOUS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_C\_CONTIGUOUS}{PyBUF\_C\_CONTIGUOUS}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+C\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US~(0x0020 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)}
+
+\mbox{\Hypertarget{__pygame_8h_a2fd42e1506d1ac75a974830d7eb5ff29}\label{__pygame_8h_a2fd42e1506d1ac75a974830d7eb5ff29}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_CONTIG@{PyBUF\_CONTIG}}
+\index{PyBUF\_CONTIG@{PyBUF\_CONTIG}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_CONTIG}{PyBUF\_CONTIG}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+C\+O\+N\+T\+IG~(\mbox{\hyperlink{__pygame_8h_a114c8c1fa379eaa820e4bec834e687ff}{Py\+B\+U\+F\+\_\+\+ND}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}})}
+
+\mbox{\Hypertarget{__pygame_8h_a6c5b45e55d39f6502ca92b4099b6223b}\label{__pygame_8h_a6c5b45e55d39f6502ca92b4099b6223b}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_CONTIG\_RO@{PyBUF\_CONTIG\_RO}}
+\index{PyBUF\_CONTIG\_RO@{PyBUF\_CONTIG\_RO}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_CONTIG\_RO}{PyBUF\_CONTIG\_RO}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+C\+O\+N\+T\+I\+G\+\_\+\+RO~(\mbox{\hyperlink{__pygame_8h_a114c8c1fa379eaa820e4bec834e687ff}{Py\+B\+U\+F\+\_\+\+ND}})}
+
+\mbox{\Hypertarget{__pygame_8h_a907837985e8a3bc707c66be5a83a88ac}\label{__pygame_8h_a907837985e8a3bc707c66be5a83a88ac}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_F\_CONTIGUOUS@{PyBUF\_F\_CONTIGUOUS}}
+\index{PyBUF\_F\_CONTIGUOUS@{PyBUF\_F\_CONTIGUOUS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_F\_CONTIGUOUS}{PyBUF\_F\_CONTIGUOUS}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+F\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US~(0x0040 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)}
+
+\mbox{\Hypertarget{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}\label{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_FORMAT@{PyBUF\_FORMAT}}
+\index{PyBUF\_FORMAT@{PyBUF\_FORMAT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_FORMAT}{PyBUF\_FORMAT}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT~0x0004}
+
+\mbox{\Hypertarget{__pygame_8h_af64ee4c5964e384101e3879791c81c25}\label{__pygame_8h_af64ee4c5964e384101e3879791c81c25}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_FULL@{PyBUF\_FULL}}
+\index{PyBUF\_FULL@{PyBUF\_FULL}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_FULL}{PyBUF\_FULL}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+F\+U\+LL~(\mbox{\hyperlink{__pygame_8h_a032e746e03b1a5844382dfc442ec3f54}{Py\+B\+U\+F\+\_\+\+I\+N\+D\+I\+R\+E\+CT}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})}
+
+\mbox{\Hypertarget{__pygame_8h_afda293d387661b63d91d1028c758285b}\label{__pygame_8h_afda293d387661b63d91d1028c758285b}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_FULL\_RO@{PyBUF\_FULL\_RO}}
+\index{PyBUF\_FULL\_RO@{PyBUF\_FULL\_RO}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_FULL\_RO}{PyBUF\_FULL\_RO}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+F\+U\+L\+L\+\_\+\+RO~(\mbox{\hyperlink{__pygame_8h_a032e746e03b1a5844382dfc442ec3f54}{Py\+B\+U\+F\+\_\+\+I\+N\+D\+I\+R\+E\+CT}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})}
+
+\mbox{\Hypertarget{__pygame_8h_a5fa862e6fd6893350e030974b6d66119}\label{__pygame_8h_a5fa862e6fd6893350e030974b6d66119}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_HAS\_FLAG@{PyBUF\_HAS\_FLAG}}
+\index{PyBUF\_HAS\_FLAG@{PyBUF\_HAS\_FLAG}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_HAS\_FLAG}{PyBUF\_HAS\_FLAG}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+H\+A\+S\+\_\+\+F\+L\+AG(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  }\item[{}]{F }\end{DoxyParamCaption})~(((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}) \& (F)) == (F))}
+
+\mbox{\Hypertarget{__pygame_8h_a032e746e03b1a5844382dfc442ec3f54}\label{__pygame_8h_a032e746e03b1a5844382dfc442ec3f54}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_INDIRECT@{PyBUF\_INDIRECT}}
+\index{PyBUF\_INDIRECT@{PyBUF\_INDIRECT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_INDIRECT}{PyBUF\_INDIRECT}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+I\+N\+D\+I\+R\+E\+CT~(0x0100 $\vert$ Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+S)}
+
+\mbox{\Hypertarget{__pygame_8h_a114c8c1fa379eaa820e4bec834e687ff}\label{__pygame_8h_a114c8c1fa379eaa820e4bec834e687ff}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_ND@{PyBUF\_ND}}
+\index{PyBUF\_ND@{PyBUF\_ND}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_ND}{PyBUF\_ND}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+ND~0x0008}
+
+\mbox{\Hypertarget{__pygame_8h_a4e5b0c6ccbcc437beb4b4c89afc9ea04}\label{__pygame_8h_a4e5b0c6ccbcc437beb4b4c89afc9ea04}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_PYGAME@{PyBUF\_PYGAME}}
+\index{PyBUF\_PYGAME@{PyBUF\_PYGAME}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_PYGAME}{PyBUF\_PYGAME}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+P\+Y\+G\+A\+ME~0x4000}
+
+\mbox{\Hypertarget{__pygame_8h_a39a69779940281b4e67c912025992bbc}\label{__pygame_8h_a39a69779940281b4e67c912025992bbc}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_READ@{PyBUF\_READ}}
+\index{PyBUF\_READ@{PyBUF\_READ}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_READ}{PyBUF\_READ}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+R\+E\+AD~0x100}
+
+\mbox{\Hypertarget{__pygame_8h_a4335c9c7e6e1aa3a2fbdb9f6e9292b97}\label{__pygame_8h_a4335c9c7e6e1aa3a2fbdb9f6e9292b97}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_RECORDS@{PyBUF\_RECORDS}}
+\index{PyBUF\_RECORDS@{PyBUF\_RECORDS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_RECORDS}{PyBUF\_RECORDS}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+R\+E\+C\+O\+R\+DS~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})}
+
+\mbox{\Hypertarget{__pygame_8h_afcd4b465ee5c97c7d4be7eee9c77eac5}\label{__pygame_8h_afcd4b465ee5c97c7d4be7eee9c77eac5}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_RECORDS\_RO@{PyBUF\_RECORDS\_RO}}
+\index{PyBUF\_RECORDS\_RO@{PyBUF\_RECORDS\_RO}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_RECORDS\_RO}{PyBUF\_RECORDS\_RO}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+R\+E\+C\+O\+R\+D\+S\+\_\+\+RO~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}} $\vert$ \mbox{\hyperlink{__pygame_8h_a4e375ce7d7017f36f419a927879e22cf}{Py\+B\+U\+F\+\_\+\+F\+O\+R\+M\+AT}})}
+
+\mbox{\Hypertarget{__pygame_8h_aab47e555b3061d3913fad89ac4e75799}\label{__pygame_8h_aab47e555b3061d3913fad89ac4e75799}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_SHADOW@{PyBUF\_SHADOW}}
+\index{PyBUF\_SHADOW@{PyBUF\_SHADOW}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_SHADOW}{PyBUF\_SHADOW}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+S\+H\+A\+D\+OW~0x400}
+
+\mbox{\Hypertarget{__pygame_8h_a734b71480a0ce09f2fbd994bbf61703d}\label{__pygame_8h_a734b71480a0ce09f2fbd994bbf61703d}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_SIMPLE@{PyBUF\_SIMPLE}}
+\index{PyBUF\_SIMPLE@{PyBUF\_SIMPLE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_SIMPLE}{PyBUF\_SIMPLE}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+S\+I\+M\+P\+LE~0}
+
+\mbox{\Hypertarget{__pygame_8h_a2f59ec2686769b7f7a3ed0db9155d485}\label{__pygame_8h_a2f59ec2686769b7f7a3ed0db9155d485}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_STRIDED@{PyBUF\_STRIDED}}
+\index{PyBUF\_STRIDED@{PyBUF\_STRIDED}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_STRIDED}{PyBUF\_STRIDED}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ED~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}} $\vert$ \mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}})}
+
+\mbox{\Hypertarget{__pygame_8h_a58e6f4f2b71f51e392607dc9691a59d2}\label{__pygame_8h_a58e6f4f2b71f51e392607dc9691a59d2}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_STRIDED\_RO@{PyBUF\_STRIDED\_RO}}
+\index{PyBUF\_STRIDED\_RO@{PyBUF\_STRIDED\_RO}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_STRIDED\_RO}{PyBUF\_STRIDED\_RO}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+E\+D\+\_\+\+RO~(\mbox{\hyperlink{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}{Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES}})}
+
+\mbox{\Hypertarget{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}\label{__pygame_8h_ae8025f91cf2b9fef985381a46198cf25}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_STRIDES@{PyBUF\_STRIDES}}
+\index{PyBUF\_STRIDES@{PyBUF\_STRIDES}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_STRIDES}{PyBUF\_STRIDES}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+S\+T\+R\+I\+D\+ES~(0x0010 $\vert$ Py\+B\+U\+F\+\_\+\+N\+D)}
+
+\mbox{\Hypertarget{__pygame_8h_acdd49fc839910bf2c301039c77e45848}\label{__pygame_8h_acdd49fc839910bf2c301039c77e45848}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_WRITABLE@{PyBUF\_WRITABLE}}
+\index{PyBUF\_WRITABLE@{PyBUF\_WRITABLE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_WRITABLE}{PyBUF\_WRITABLE}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE~0x0001}
+
+\mbox{\Hypertarget{__pygame_8h_adb25f1357b0075e774c5faf91c948bb9}\label{__pygame_8h_adb25f1357b0075e774c5faf91c948bb9}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_WRITE@{PyBUF\_WRITE}}
+\index{PyBUF\_WRITE@{PyBUF\_WRITE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_WRITE}{PyBUF\_WRITE}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+W\+R\+I\+TE~0x200}
+
+\mbox{\Hypertarget{__pygame_8h_a807356e2564a1de372104fcc5c62dd68}\label{__pygame_8h_a807356e2564a1de372104fcc5c62dd68}} 
+\index{\_pygame.h@{\_pygame.h}!PyBUF\_WRITEABLE@{PyBUF\_WRITEABLE}}
+\index{PyBUF\_WRITEABLE@{PyBUF\_WRITEABLE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyBUF\_WRITEABLE}{PyBUF\_WRITEABLE}}
+{\footnotesize\ttfamily \#define Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+E\+A\+B\+LE~\mbox{\hyperlink{__pygame_8h_acdd49fc839910bf2c301039c77e45848}{Py\+B\+U\+F\+\_\+\+W\+R\+I\+T\+A\+B\+LE}}}
+
+\mbox{\Hypertarget{__pygame_8h_ad8cff51489e10249b30da3914e99b522}\label{__pygame_8h_ad8cff51489e10249b30da3914e99b522}} 
+\index{\_pygame.h@{\_pygame.h}!PyCapsule\_CheckExact@{PyCapsule\_CheckExact}}
+\index{PyCapsule\_CheckExact@{PyCapsule\_CheckExact}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyCapsule\_CheckExact}{PyCapsule\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Capsule\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}} }\end{DoxyParamCaption})~\mbox{\hyperlink{cobject_8h_a0497109a6cc0ba685c8e007271cb8068}{Py\+C\+Object\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}})}
+
+\mbox{\Hypertarget{__pygame_8h_af67b891ff25a9037bbbdfd318a4b8096}\label{__pygame_8h_af67b891ff25a9037bbbdfd318a4b8096}} 
+\index{\_pygame.h@{\_pygame.h}!PyCapsule\_GetPointer@{PyCapsule\_GetPointer}}
+\index{PyCapsule\_GetPointer@{PyCapsule\_GetPointer}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyCapsule\_GetPointer}{PyCapsule\_GetPointer}}
+{\footnotesize\ttfamily \#define Py\+Capsule\+\_\+\+Get\+Pointer(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}} }\end{DoxyParamCaption})~Py\+C\+Object\+\_\+\+As\+Void\+Ptr(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}})}
+
+\mbox{\Hypertarget{__pygame_8h_a12fc17457f2c51f1e2de2870fa669749}\label{__pygame_8h_a12fc17457f2c51f1e2de2870fa669749}} 
+\index{\_pygame.h@{\_pygame.h}!PyCapsule\_New@{PyCapsule\_New}}
+\index{PyCapsule\_New@{PyCapsule\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyCapsule\_New}{PyCapsule\_New}}
+{\footnotesize\ttfamily \#define Py\+Capsule\+\_\+\+New(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  }\item[{}]{dfn }\end{DoxyParamCaption})~Py\+C\+Object\+\_\+\+From\+Void\+Ptr(\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}}, dfn)}
+
+\mbox{\Hypertarget{__pygame_8h_aef85b95532163dc497fafdce53f321b7}\label{__pygame_8h_aef85b95532163dc497fafdce53f321b7}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAME\_EXPORT@{PYGAME\_EXPORT}}
+\index{PYGAME\_EXPORT@{PYGAME\_EXPORT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAME\_EXPORT}{PYGAME\_EXPORT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+E\+X\+P\+O\+RT}
+
+\mbox{\Hypertarget{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}\label{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_BASE\_FIRSTSLOT@{PYGAMEAPI\_BASE\_FIRSTSLOT}}
+\index{PYGAMEAPI\_BASE\_FIRSTSLOT@{PYGAMEAPI\_BASE\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_BASE\_FIRSTSLOT}{PYGAMEAPI\_BASE\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~0}
+
+\mbox{\Hypertarget{__pygame_8h_a8c868b893a5e1e6663305ac0123ab31c}\label{__pygame_8h_a8c868b893a5e1e6663305ac0123ab31c}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_BASE\_NUMSLOTS@{PYGAMEAPI\_BASE\_NUMSLOTS}}
+\index{PYGAMEAPI\_BASE\_NUMSLOTS@{PYGAMEAPI\_BASE\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_BASE\_NUMSLOTS}{PYGAMEAPI\_BASE\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS~19}
+
+\mbox{\Hypertarget{__pygame_8h_ab852310627ec9a51820e257f44f146c6}\label{__pygame_8h_ab852310627ec9a51820e257f44f146c6}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_CDROM\_FIRSTSLOT@{PYGAMEAPI\_CDROM\_FIRSTSLOT}}
+\index{PYGAMEAPI\_CDROM\_FIRSTSLOT@{PYGAMEAPI\_CDROM\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_CDROM\_FIRSTSLOT}{PYGAMEAPI\_CDROM\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_ac2a87e3fa2f5de0628d0658bb6c822bf}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a4a8629b5442756dab5c553957d7ec14d}\label{__pygame_8h_a4a8629b5442756dab5c553957d7ec14d}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_CDROM\_NUMSLOTS@{PYGAMEAPI\_CDROM\_NUMSLOTS}}
+\index{PYGAMEAPI\_CDROM\_NUMSLOTS@{PYGAMEAPI\_CDROM\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_CDROM\_NUMSLOTS}{PYGAMEAPI\_CDROM\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+N\+U\+M\+S\+L\+O\+TS~2}
+
+\mbox{\Hypertarget{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}\label{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_COLOR\_FIRSTSLOT@{PYGAMEAPI\_COLOR\_FIRSTSLOT}}
+\index{PYGAMEAPI\_COLOR\_FIRSTSLOT@{PYGAMEAPI\_COLOR\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_COLOR\_FIRSTSLOT}{PYGAMEAPI\_COLOR\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_ad9ac6694d06d285609b5ec0178364c11}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a05ca25136dddbd1e5d19d951095fe8bf}\label{__pygame_8h_a05ca25136dddbd1e5d19d951095fe8bf}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_COLOR\_NUMSLOTS@{PYGAMEAPI\_COLOR\_NUMSLOTS}}
+\index{PYGAMEAPI\_COLOR\_NUMSLOTS@{PYGAMEAPI\_COLOR\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_COLOR\_NUMSLOTS}{PYGAMEAPI\_COLOR\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS~4}
+
+\mbox{\Hypertarget{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}\label{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_DISPLAY\_FIRSTSLOT@{PYGAMEAPI\_DISPLAY\_FIRSTSLOT}}
+\index{PYGAMEAPI\_DISPLAY\_FIRSTSLOT@{PYGAMEAPI\_DISPLAY\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_DISPLAY\_FIRSTSLOT}{PYGAMEAPI\_DISPLAY\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a6567926370431ae9978531d6387ac82f}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a0ab9d599b712ac2920d37d6316b7c162}\label{__pygame_8h_a0ab9d599b712ac2920d37d6316b7c162}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_DISPLAY\_NUMSLOTS@{PYGAMEAPI\_DISPLAY\_NUMSLOTS}}
+\index{PYGAMEAPI\_DISPLAY\_NUMSLOTS@{PYGAMEAPI\_DISPLAY\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_DISPLAY\_NUMSLOTS}{PYGAMEAPI\_DISPLAY\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS~2}
+
+\mbox{\Hypertarget{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}\label{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_EVENT\_FIRSTSLOT@{PYGAMEAPI\_EVENT\_FIRSTSLOT}}
+\index{PYGAMEAPI\_EVENT\_FIRSTSLOT@{PYGAMEAPI\_EVENT\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_EVENT\_FIRSTSLOT}{PYGAMEAPI\_EVENT\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a2ae4869955b37f8130934671864fea2a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a3a1f7f220bb5ba97abfd41e493eea709}\label{__pygame_8h_a3a1f7f220bb5ba97abfd41e493eea709}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_EVENT\_NUMSLOTS@{PYGAMEAPI\_EVENT\_NUMSLOTS}}
+\index{PYGAMEAPI\_EVENT\_NUMSLOTS@{PYGAMEAPI\_EVENT\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_EVENT\_NUMSLOTS}{PYGAMEAPI\_EVENT\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS~4}
+
+\mbox{\Hypertarget{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}\label{__pygame_8h_af08ed450b72e6446cebe504fe88df0f1}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_JOYSTICK\_FIRSTSLOT@{PYGAMEAPI\_JOYSTICK\_FIRSTSLOT}}
+\index{PYGAMEAPI\_JOYSTICK\_FIRSTSLOT@{PYGAMEAPI\_JOYSTICK\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_JOYSTICK\_FIRSTSLOT}{PYGAMEAPI\_JOYSTICK\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_ab852310627ec9a51820e257f44f146c6}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a4a8629b5442756dab5c553957d7ec14d}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+D\+R\+O\+M\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a6567926370431ae9978531d6387ac82f}\label{__pygame_8h_a6567926370431ae9978531d6387ac82f}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_JOYSTICK\_NUMSLOTS@{PYGAMEAPI\_JOYSTICK\_NUMSLOTS}}
+\index{PYGAMEAPI\_JOYSTICK\_NUMSLOTS@{PYGAMEAPI\_JOYSTICK\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_JOYSTICK\_NUMSLOTS}{PYGAMEAPI\_JOYSTICK\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS~2}
+
+\mbox{\Hypertarget{__pygame_8h_ae353fb06021df3a7641ec6f49d44d2ac}\label{__pygame_8h_ae353fb06021df3a7641ec6f49d44d2ac}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_LOCAL\_ENTRY@{PYGAMEAPI\_LOCAL\_ENTRY}}
+\index{PYGAMEAPI\_LOCAL\_ENTRY@{PYGAMEAPI\_LOCAL\_ENTRY}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_LOCAL\_ENTRY}{PYGAMEAPI\_LOCAL\_ENTRY}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY~\char`\"{}\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI\char`\"{}}
+
+\mbox{\Hypertarget{__pygame_8h_aa39b09eb8ae4999f3065eb2f2acc5a2b}\label{__pygame_8h_aa39b09eb8ae4999f3065eb2f2acc5a2b}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_MATH\_FIRSTSLOT@{PYGAMEAPI\_MATH\_FIRSTSLOT}}
+\index{PYGAMEAPI\_MATH\_FIRSTSLOT@{PYGAMEAPI\_MATH\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_MATH\_FIRSTSLOT}{PYGAMEAPI\_MATH\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_a493ac99f03faa069f8a179bb01d0ef50}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a05ca25136dddbd1e5d19d951095fe8bf}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+C\+O\+L\+O\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_ac3526b24231d9e8314649a9542368726}\label{__pygame_8h_ac3526b24231d9e8314649a9542368726}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_MATH\_NUMSLOTS@{PYGAMEAPI\_MATH\_NUMSLOTS}}
+\index{PYGAMEAPI\_MATH\_NUMSLOTS@{PYGAMEAPI\_MATH\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_MATH\_NUMSLOTS}{PYGAMEAPI\_MATH\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+N\+U\+M\+S\+L\+O\+TS~2}
+
+\mbox{\Hypertarget{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}\label{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_PIXELARRAY\_FIRSTSLOT@{PYGAMEAPI\_PIXELARRAY\_FIRSTSLOT}}
+\index{PYGAMEAPI\_PIXELARRAY\_FIRSTSLOT@{PYGAMEAPI\_PIXELARRAY\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_PIXELARRAY\_FIRSTSLOT}{PYGAMEAPI\_PIXELARRAY\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a88d1826a76577b3f75cff034cb8817d2}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_ad9ac6694d06d285609b5ec0178364c11}\label{__pygame_8h_ad9ac6694d06d285609b5ec0178364c11}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_PIXELARRAY\_NUMSLOTS@{PYGAMEAPI\_PIXELARRAY\_NUMSLOTS}}
+\index{PYGAMEAPI\_PIXELARRAY\_NUMSLOTS@{PYGAMEAPI\_PIXELARRAY\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_PIXELARRAY\_NUMSLOTS}{PYGAMEAPI\_PIXELARRAY\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS~2}
+
+\mbox{\Hypertarget{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}\label{__pygame_8h_a3cd4a5312be312f5ecf6b8f87b2c4f08}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_RECT\_FIRSTSLOT@{PYGAMEAPI\_RECT\_FIRSTSLOT}}
+\index{PYGAMEAPI\_RECT\_FIRSTSLOT@{PYGAMEAPI\_RECT\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_RECT\_FIRSTSLOT}{PYGAMEAPI\_RECT\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_aa7db09a88c018dc593e8acff1eb0b797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a8c868b893a5e1e6663305ac0123ab31c}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+A\+S\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_ac2a87e3fa2f5de0628d0658bb6c822bf}\label{__pygame_8h_ac2a87e3fa2f5de0628d0658bb6c822bf}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_RECT\_NUMSLOTS@{PYGAMEAPI\_RECT\_NUMSLOTS}}
+\index{PYGAMEAPI\_RECT\_NUMSLOTS@{PYGAMEAPI\_RECT\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_RECT\_NUMSLOTS}{PYGAMEAPI\_RECT\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS~4}
+
+\mbox{\Hypertarget{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}\label{__pygame_8h_a9b3499cbfd2e991fdb0b6700ad927163}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_RWOBJECT\_FIRSTSLOT@{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}}
+\index{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT@{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}{PYGAMEAPI\_RWOBJECT\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_ac78c4920c2233c57894096d4fd9db5dc}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a3a1f7f220bb5ba97abfd41e493eea709}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a88d1826a76577b3f75cff034cb8817d2}\label{__pygame_8h_a88d1826a76577b3f75cff034cb8817d2}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_RWOBJECT\_NUMSLOTS@{PYGAMEAPI\_RWOBJECT\_NUMSLOTS}}
+\index{PYGAMEAPI\_RWOBJECT\_NUMSLOTS@{PYGAMEAPI\_RWOBJECT\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_RWOBJECT\_NUMSLOTS}{PYGAMEAPI\_RWOBJECT\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+R\+W\+O\+B\+J\+E\+C\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS~6}
+
+\mbox{\Hypertarget{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}\label{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_SURFACE\_FIRSTSLOT@{PYGAMEAPI\_SURFACE\_FIRSTSLOT}}
+\index{PYGAMEAPI\_SURFACE\_FIRSTSLOT@{PYGAMEAPI\_SURFACE\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_SURFACE\_FIRSTSLOT}{PYGAMEAPI\_SURFACE\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_a97e5a2f39e4daab9b40dad6beb130797}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a0ab9d599b712ac2920d37d6316b7c162}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a2db53f8b9e0469b002d08839781dcb22}\label{__pygame_8h_a2db53f8b9e0469b002d08839781dcb22}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_SURFACE\_NUMSLOTS@{PYGAMEAPI\_SURFACE\_NUMSLOTS}}
+\index{PYGAMEAPI\_SURFACE\_NUMSLOTS@{PYGAMEAPI\_SURFACE\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_SURFACE\_NUMSLOTS}{PYGAMEAPI\_SURFACE\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS~3}
+
+\mbox{\Hypertarget{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}\label{__pygame_8h_aa878cb23c68ce21b084737c7478d57aa}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_SURFLOCK\_FIRSTSLOT@{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}}
+\index{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT@{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}{PYGAMEAPI\_SURFLOCK\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~(\mbox{\hyperlink{__pygame_8h_a3d7ce7f8f23ff98fae9a6831d44fa80a}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_a2db53f8b9e0469b002d08839781dcb22}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+A\+C\+E\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_a2ae4869955b37f8130934671864fea2a}\label{__pygame_8h_a2ae4869955b37f8130934671864fea2a}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_SURFLOCK\_NUMSLOTS@{PYGAMEAPI\_SURFLOCK\_NUMSLOTS}}
+\index{PYGAMEAPI\_SURFLOCK\_NUMSLOTS@{PYGAMEAPI\_SURFLOCK\_NUMSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_SURFLOCK\_NUMSLOTS}{PYGAMEAPI\_SURFLOCK\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+S\+U\+R\+F\+L\+O\+C\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS~8}
+
+\mbox{\Hypertarget{__pygame_8h_a1f5ac0776a8546039f794f654aee169c}\label{__pygame_8h_a1f5ac0776a8546039f794f654aee169c}} 
+\index{\_pygame.h@{\_pygame.h}!PYGAMEAPI\_TOTALSLOTS@{PYGAMEAPI\_TOTALSLOTS}}
+\index{PYGAMEAPI\_TOTALSLOTS@{PYGAMEAPI\_TOTALSLOTS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_TOTALSLOTS}{PYGAMEAPI\_TOTALSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+T\+O\+T\+A\+L\+S\+L\+O\+TS~(\mbox{\hyperlink{__pygame_8h_aa39b09eb8ae4999f3065eb2f2acc5a2b}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + \mbox{\hyperlink{__pygame_8h_ac3526b24231d9e8314649a9542368726}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+T\+H\+\_\+\+N\+U\+M\+S\+L\+O\+TS}})}
+
+\mbox{\Hypertarget{__pygame_8h_abc757dc2e813a63e2fc134851f2ad2c5}\label{__pygame_8h_abc757dc2e813a63e2fc134851f2ad2c5}} 
+\index{\_pygame.h@{\_pygame.h}!PyPixelArray\_Check@{PyPixelArray\_Check}}
+\index{PyPixelArray\_Check@{PyPixelArray\_Check}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyPixelArray\_Check}{PyPixelArray\_Check}}
+{\footnotesize\ttfamily \#define Py\+Pixel\+Array\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type ==          \(\backslash\)}
+\DoxyCodeLine{     (\mbox{\hyperlink{struct__typeobject}{PyTypeObject}} *)\mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{PyGAME\_C\_API}}[\mbox{\hyperlink{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}{PYGAMEAPI\_PIXELARRAY\_FIRSTSLOT}} + 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_ad5a5c77eaf204e99af410e61727e33cd}\label{__pygame_8h_ad5a5c77eaf204e99af410e61727e33cd}} 
+\index{\_pygame.h@{\_pygame.h}!PyPixelArray\_New@{PyPixelArray\_New}}
+\index{PyPixelArray\_New@{PyPixelArray\_New}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyPixelArray\_New}{PyPixelArray\_New}}
+{\footnotesize\ttfamily \#define Py\+Pixel\+Array\+\_\+\+New~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ ($\ast$)) \mbox{\hyperlink{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}{Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI}}\mbox{[}\mbox{\hyperlink{__pygame_8h_aa415458e9694c8dd9c786fa159ba4cef}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+P\+I\+X\+E\+L\+A\+R\+R\+A\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}} + 1\mbox{]})}
+
+\mbox{\Hypertarget{__pygame_8h_a1f5aeef0f6a189317a5ad23008713326}\label{__pygame_8h_a1f5aeef0f6a189317a5ad23008713326}} 
+\index{\_pygame.h@{\_pygame.h}!PyType\_Init@{PyType\_Init}}
+\index{PyType\_Init@{PyType\_Init}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyType\_Init}{PyType\_Init}}
+{\footnotesize\ttfamily \#define Py\+Type\+\_\+\+Init(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}).ob\+\_\+type) = \&Py\+Type\+\_\+\+Type)}
+
+\mbox{\Hypertarget{__pygame_8h_aa133c030761504a9ed589e590a98c269}\label{__pygame_8h_aa133c030761504a9ed589e590a98c269}} 
+\index{\_pygame.h@{\_pygame.h}!RAISE@{RAISE}}
+\index{RAISE@{RAISE}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{RAISE}{RAISE}}
+{\footnotesize\ttfamily \#define R\+A\+I\+SE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}} }\end{DoxyParamCaption})~(Py\+Err\+\_\+\+Set\+String((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}), (\mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})), (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)\mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{__pygame_8h_a14d1ea95cffc821c5d753ad3d8175036}\label{__pygame_8h_a14d1ea95cffc821c5d753ad3d8175036}} 
+\index{\_pygame.h@{\_pygame.h}!VIDEO\_INIT\_CHECK@{VIDEO\_INIT\_CHECK}}
+\index{VIDEO\_INIT\_CHECK@{VIDEO\_INIT\_CHECK}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{VIDEO\_INIT\_CHECK}{VIDEO\_INIT\_CHECK}}
+{\footnotesize\ttfamily \#define V\+I\+D\+E\+O\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!\mbox{\hyperlink{_s_d_l_8h_a04dc570990c697eed95681216801710d}{SDL\_WasInit}}(\mbox{\hyperlink{_s_d_l_8h_afc988e510ed522628ffeb7c76f80c233}{SDL\_INIT\_VIDEO}})) \(\backslash\)}
+\DoxyCodeLine{    return \mbox{\hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{RAISE}}(\mbox{\hyperlink{__pygame_8h_aa266543992d8b718fb37a96e66b7e128}{pgExc\_SDLError}}, \textcolor{stringliteral}{"video system not initialized"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{__pygame_8h_a6e77794a645040d26f95e5b5cd947267}\label{__pygame_8h_a6e77794a645040d26f95e5b5cd947267}} 
+\index{\_pygame.h@{\_pygame.h}!VIEW\_C\_ORDER@{VIEW\_C\_ORDER}}
+\index{VIEW\_C\_ORDER@{VIEW\_C\_ORDER}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{VIEW\_C\_ORDER}{VIEW\_C\_ORDER}}
+{\footnotesize\ttfamily \#define V\+I\+E\+W\+\_\+\+C\+\_\+\+O\+R\+D\+ER~2}
+
+\mbox{\Hypertarget{__pygame_8h_ac30889b6e3b397ff1f0c8d0bbba02d1a}\label{__pygame_8h_ac30889b6e3b397ff1f0c8d0bbba02d1a}} 
+\index{\_pygame.h@{\_pygame.h}!VIEW\_CONTIGUOUS@{VIEW\_CONTIGUOUS}}
+\index{VIEW\_CONTIGUOUS@{VIEW\_CONTIGUOUS}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{VIEW\_CONTIGUOUS}{VIEW\_CONTIGUOUS}}
+{\footnotesize\ttfamily \#define V\+I\+E\+W\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US~1}
+
+\mbox{\Hypertarget{__pygame_8h_aa39bc8917f36999e15f6b8179dc98b46}\label{__pygame_8h_aa39bc8917f36999e15f6b8179dc98b46}} 
+\index{\_pygame.h@{\_pygame.h}!VIEW\_F\_ORDER@{VIEW\_F\_ORDER}}
+\index{VIEW\_F\_ORDER@{VIEW\_F\_ORDER}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{VIEW\_F\_ORDER}{VIEW\_F\_ORDER}}
+{\footnotesize\ttfamily \#define V\+I\+E\+W\+\_\+\+F\+\_\+\+O\+R\+D\+ER~4}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{__pygame_8h_aa017fb2160e0b5c8aa3da451f0481384}\label{__pygame_8h_aa017fb2160e0b5c8aa3da451f0481384}} 
+\index{\_pygame.h@{\_pygame.h}!getbufferproc@{getbufferproc}}
+\index{getbufferproc@{getbufferproc}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{getbufferproc}{getbufferproc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ getbufferproc) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}} $\ast$, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})}
+
+\mbox{\Hypertarget{__pygame_8h_a69f81ff907a38a579a9f6d038ee42690}\label{__pygame_8h_a69f81ff907a38a579a9f6d038ee42690}} 
+\index{\_pygame.h@{\_pygame.h}!pg\_buffer@{pg\_buffer}}
+\index{pg\_buffer@{pg\_buffer}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pg\_buffer}{pg\_buffer}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpg__bufferinfo__s}{pg\+\_\+bufferinfo\+\_\+s}}  \mbox{\hyperlink{__pygame_8h_a69f81ff907a38a579a9f6d038ee42690}{pg\+\_\+buffer}}}
+
+\mbox{\Hypertarget{__pygame_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}\label{__pygame_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}} 
+\index{\_pygame.h@{\_pygame.h}!Py\_buffer@{Py\_buffer}}
+\index{Py\_buffer@{Py\_buffer}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{Py\_buffer}{Py\_buffer}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structbufferinfo}{bufferinfo}}  \mbox{\hyperlink{_python27_2object_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}}}
+
+\mbox{\Hypertarget{__pygame_8h_ad02fd84ceaf918398aa37e358cd2cc3f}\label{__pygame_8h_ad02fd84ceaf918398aa37e358cd2cc3f}} 
+\index{\_pygame.h@{\_pygame.h}!pybuffer\_releaseproc@{pybuffer\_releaseproc}}
+\index{pybuffer\_releaseproc@{pybuffer\_releaseproc}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{pybuffer\_releaseproc}{pybuffer\_releaseproc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ pybuffer\+\_\+releaseproc) (\mbox{\hyperlink{_python27_2object_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}} $\ast$)}
+
+\mbox{\Hypertarget{__pygame_8h_adfedb341571d379d3146eb4d59019023}\label{__pygame_8h_adfedb341571d379d3146eb4d59019023}} 
+\index{\_pygame.h@{\_pygame.h}!releasebufferproc@{releasebufferproc}}
+\index{releasebufferproc@{releasebufferproc}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{releasebufferproc}{releasebufferproc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ releasebufferproc) (\mbox{\hyperlink{_python27_2object_8h_a0c1c5dc66cfb07c46b863b5186f61cf4}{Py\+\_\+buffer}} $\ast$)}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}\label{__pygame_8h_af786b436eb23bb1541a7c68b36f8dc2d}} 
+\index{\_pygame.h@{\_pygame.h}!PyGAME\_C\_API@{PyGAME\_C\_API}}
+\index{PyGAME\_C\_API@{PyGAME\_C\_API}!\_pygame.h@{\_pygame.h}}
+\subsubsection{\texorpdfstring{PyGAME\_C\_API}{PyGAME\_C\_API}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$ Py\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI\mbox{[}\mbox{\hyperlink{__pygame_8h_a1f5ac0776a8546039f794f654aee169c}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+T\+O\+T\+A\+L\+S\+L\+O\+TS}}\mbox{]}}
+

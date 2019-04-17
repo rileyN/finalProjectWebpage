@@ -1,0 +1,437 @@
+\hypertarget{struct__stmt}{}\section{\+\_\+stmt Struct Reference}
+\label{struct__stmt}\index{\_stmt@{\_stmt}}
+
+
+{\ttfamily \#include $<$Python-\/ast.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_python-ast_8h_a3f8747ef1343a8899c10bb4911deed50}{\+\_\+stmt\+\_\+kind}} \mbox{\hyperlink{struct__stmt_a9074cf45fef325a5baa737d59102ec9a}{kind}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{asdl_8h_a78ca2081e230a95abc88c411c9816775}{identifier}} \mbox{\hyperlink{struct__stmt_ab7db310d6742d73ac25decd9d8d97053}{name}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a45cc6e94d598fdc335d8c85739108a3e}{arguments\_ty}} \mbox{\hyperlink{struct__stmt_ac731167ba143dd9aa967900ec61abedf}{args}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a739b41aa7343830a6bcfb7833155ba86}{decorator\_list}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a5e02cf8428c5b693aa36330b0ef070bb}{FunctionDef}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{asdl_8h_a78ca2081e230a95abc88c411c9816775}{identifier}} \mbox{\hyperlink{struct__stmt_ab7db310d6742d73ac25decd9d8d97053}{name}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_ade5a7beb8cbe67ccb6fd09c8e674c676}{bases}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a739b41aa7343830a6bcfb7833155ba86}{decorator\_list}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a5f68581f216f58d243551b8fe9e25b82}{ClassDef}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_af74f15a2e6d4ef9423f8f6595de0b802}{value}}\\
+\>\} \mbox{\hyperlink{struct__stmt_addd6e63107fdcd99caa5449e87aee467}{Return}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_aebed3a44ab223eae478f739ea80f28d0}{targets}}\\
+\>\} \mbox{\hyperlink{struct__stmt_abf4fc1be2723e72bb04b0767a0400a92}{Delete}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_aebed3a44ab223eae478f739ea80f28d0}{targets}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_af74f15a2e6d4ef9423f8f6595de0b802}{value}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a8508aa8bc3f7b13aab32cb29ab4f0503}{Assign}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a177714ebb9716b3f8ffcdf8d4fb38e2e}{target}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a64ffe6085a53816a513038b9f1a04a9d}{operator\_ty}} \mbox{\hyperlink{struct__stmt_a569578bba46e986e59d57381b4a14a26}{op}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_af74f15a2e6d4ef9423f8f6595de0b802}{value}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a016245fd0b16e868821eae2bafb79dd2}{AugAssign}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a760c7987187a06e882bfcbab14b7fdb9}{dest}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_aec371454808c8e926659676e3c454bcc}{values}}\\
+\>\>\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{struct__stmt_afc43b142b0d241edeba16fe35a872337}{nl}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a5f4b0a18eeb8601199dc5d99904c7413}{Print}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a177714ebb9716b3f8ffcdf8d4fb38e2e}{target}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a01937d69e8ba0212ddd700bd1ddf7d35}{iter}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a66f6f20b75eafa36433ac6584cefbbd9}{orelse}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a8a5d516bb814c8ce1a16a8b763df0517}{For}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a8515b2fedbd67231f7c909d52ebadfa5}{test}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a66f6f20b75eafa36433ac6584cefbbd9}{orelse}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a0e4b5ff38c91a9d639ad2e72b44a5b55}{While}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a8515b2fedbd67231f7c909d52ebadfa5}{test}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a66f6f20b75eafa36433ac6584cefbbd9}{orelse}}\\
+\>\} \mbox{\hyperlink{struct__stmt_aac5003a8d69b2c3098c0379950f8c768}{If}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a2df3be632234b161842c0cc1646819eb}{context\_expr}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_afd56617c6467fd7d12983ccf75fdb6e4}{optional\_vars}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\} \mbox{\hyperlink{struct__stmt_aa5ad76e29931c06349137816f5ff304e}{With}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a239243bd19534455c5048e0b6fe25d4c}{type}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a7e058de69ac9cb2c466166a8e414fa0e}{inst}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a32ce23a33f8440a8bdae1ee04e4bd87f}{tback}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a236554e9d881db57cd4899f8c406c2c5}{Raise}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_aacb3c177deeb22ee720e1a87d463c942}{handlers}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a66f6f20b75eafa36433ac6584cefbbd9}{orelse}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a80ed845edbf81628378c28ceb7a0d3f7}{TryExcept}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a3af2e247c98c7a600aa988467119d0da}{body}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a363c06398e09081c267c31f443a50541}{finalbody}}\\
+\>\} \mbox{\hyperlink{struct__stmt_ac636fc02a188ea552a4706dc30b7f4e6}{TryFinally}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a8515b2fedbd67231f7c909d52ebadfa5}{test}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a89b7a5ee3a08256e9755057f08e2473c}{msg}}\\
+\>\} \mbox{\hyperlink{struct__stmt_aa86cd57e5089757765d27a151dd0ba42}{Assert}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a327c974801f9e0353286c61d1892069f}{names}}\\
+\>\} \mbox{\hyperlink{struct__stmt_ae9c74911099530152263f755af22d30d}{Import}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{asdl_8h_a78ca2081e230a95abc88c411c9816775}{identifier}} \mbox{\hyperlink{struct__stmt_ace6ad861a3d463d6ffefaa028a5239d6}{module}}\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a327c974801f9e0353286c61d1892069f}{names}}\\
+\>\>\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__stmt_a2ff950f55dfd2b7e168973bd70bf1c04}{level}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a76994ddfaadba0ee422dbd32ffc21b84}{ImportFrom}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_ac66b2dfd0e674ec45a9cc1221e68cdc1}{body}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_ac46d3b2efe76daff8ed15a47f243582e}{globals}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_a0b592c959686fbf489195521a76f5527}{locals}}\\
+\>\} \mbox{\hyperlink{struct__stmt_ac77ed6ca345034c90ad9df8e5f1f00fd}{Exec}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__stmt_a327c974801f9e0353286c61d1892069f}{names}}\\
+\>\} \mbox{\hyperlink{struct__stmt_a11c4d9ff916f09ccd331c4f5bd8e1596}{Global}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__stmt_af74f15a2e6d4ef9423f8f6595de0b802}{value}}\\
+\>\} \mbox{\hyperlink{struct__stmt_af2c1c96bed18aa80856923ba425fe33f}{Expr}}\\
+\} \mbox{\hyperlink{struct__stmt_ac2cd778ce0da149341b0323591258319}{v}}\\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__stmt_a80852961a5875977df5769033d8039d4}{lineno}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__stmt_aa2948b6a670a4b66a09dc3eaf022bbf2}{col\+\_\+offset}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct__stmt_ac731167ba143dd9aa967900ec61abedf}\label{struct__stmt_ac731167ba143dd9aa967900ec61abedf}} 
+\index{\_stmt@{\_stmt}!args@{args}}
+\index{args@{args}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a45cc6e94d598fdc335d8c85739108a3e}{arguments\+\_\+ty}} \+\_\+stmt\+::args}
+
+\mbox{\Hypertarget{struct__stmt_aa86cd57e5089757765d27a151dd0ba42}\label{struct__stmt_aa86cd57e5089757765d27a151dd0ba42}} 
+\index{\_stmt@{\_stmt}!Assert@{Assert}}
+\index{Assert@{Assert}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Assert}{Assert}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Assert}
+
+\mbox{\Hypertarget{struct__stmt_a8508aa8bc3f7b13aab32cb29ab4f0503}\label{struct__stmt_a8508aa8bc3f7b13aab32cb29ab4f0503}} 
+\index{\_stmt@{\_stmt}!Assign@{Assign}}
+\index{Assign@{Assign}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Assign}{Assign}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Assign}
+
+\mbox{\Hypertarget{struct__stmt_a016245fd0b16e868821eae2bafb79dd2}\label{struct__stmt_a016245fd0b16e868821eae2bafb79dd2}} 
+\index{\_stmt@{\_stmt}!AugAssign@{AugAssign}}
+\index{AugAssign@{AugAssign}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{AugAssign}{AugAssign}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Aug\+Assign}
+
+\mbox{\Hypertarget{struct__stmt_ade5a7beb8cbe67ccb6fd09c8e674c676}\label{struct__stmt_ade5a7beb8cbe67ccb6fd09c8e674c676}} 
+\index{\_stmt@{\_stmt}!bases@{bases}}
+\index{bases@{bases}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{bases}{bases}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::bases}
+
+\mbox{\Hypertarget{struct__stmt_a3af2e247c98c7a600aa988467119d0da}\label{struct__stmt_a3af2e247c98c7a600aa988467119d0da}} 
+\index{\_stmt@{\_stmt}!body@{body}}
+\index{body@{body}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{body}{body}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::body}
+
+\mbox{\Hypertarget{struct__stmt_ac66b2dfd0e674ec45a9cc1221e68cdc1}\label{struct__stmt_ac66b2dfd0e674ec45a9cc1221e68cdc1}} 
+\index{\_stmt@{\_stmt}!body@{body}}
+\index{body@{body}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{body}{body}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::body}
+
+\mbox{\Hypertarget{struct__stmt_a5f68581f216f58d243551b8fe9e25b82}\label{struct__stmt_a5f68581f216f58d243551b8fe9e25b82}} 
+\index{\_stmt@{\_stmt}!ClassDef@{ClassDef}}
+\index{ClassDef@{ClassDef}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{ClassDef}{ClassDef}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Class\+Def}
+
+\mbox{\Hypertarget{struct__stmt_aa2948b6a670a4b66a09dc3eaf022bbf2}\label{struct__stmt_aa2948b6a670a4b66a09dc3eaf022bbf2}} 
+\index{\_stmt@{\_stmt}!col\_offset@{col\_offset}}
+\index{col\_offset@{col\_offset}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{col\_offset}{col\_offset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+stmt\+::col\+\_\+offset}
+
+\mbox{\Hypertarget{struct__stmt_a2df3be632234b161842c0cc1646819eb}\label{struct__stmt_a2df3be632234b161842c0cc1646819eb}} 
+\index{\_stmt@{\_stmt}!context\_expr@{context\_expr}}
+\index{context\_expr@{context\_expr}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{context\_expr}{context\_expr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::context\+\_\+expr}
+
+\mbox{\Hypertarget{struct__stmt_a739b41aa7343830a6bcfb7833155ba86}\label{struct__stmt_a739b41aa7343830a6bcfb7833155ba86}} 
+\index{\_stmt@{\_stmt}!decorator\_list@{decorator\_list}}
+\index{decorator\_list@{decorator\_list}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{decorator\_list}{decorator\_list}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::decorator\+\_\+list}
+
+\mbox{\Hypertarget{struct__stmt_abf4fc1be2723e72bb04b0767a0400a92}\label{struct__stmt_abf4fc1be2723e72bb04b0767a0400a92}} 
+\index{\_stmt@{\_stmt}!Delete@{Delete}}
+\index{Delete@{Delete}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Delete}{Delete}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Delete}
+
+\mbox{\Hypertarget{struct__stmt_a760c7987187a06e882bfcbab14b7fdb9}\label{struct__stmt_a760c7987187a06e882bfcbab14b7fdb9}} 
+\index{\_stmt@{\_stmt}!dest@{dest}}
+\index{dest@{dest}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{dest}{dest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::dest}
+
+\mbox{\Hypertarget{struct__stmt_ac77ed6ca345034c90ad9df8e5f1f00fd}\label{struct__stmt_ac77ed6ca345034c90ad9df8e5f1f00fd}} 
+\index{\_stmt@{\_stmt}!Exec@{Exec}}
+\index{Exec@{Exec}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Exec}{Exec}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Exec}
+
+\mbox{\Hypertarget{struct__stmt_af2c1c96bed18aa80856923ba425fe33f}\label{struct__stmt_af2c1c96bed18aa80856923ba425fe33f}} 
+\index{\_stmt@{\_stmt}!Expr@{Expr}}
+\index{Expr@{Expr}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Expr}{Expr}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Expr}
+
+\mbox{\Hypertarget{struct__stmt_a363c06398e09081c267c31f443a50541}\label{struct__stmt_a363c06398e09081c267c31f443a50541}} 
+\index{\_stmt@{\_stmt}!finalbody@{finalbody}}
+\index{finalbody@{finalbody}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{finalbody}{finalbody}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::finalbody}
+
+\mbox{\Hypertarget{struct__stmt_a8a5d516bb814c8ce1a16a8b763df0517}\label{struct__stmt_a8a5d516bb814c8ce1a16a8b763df0517}} 
+\index{\_stmt@{\_stmt}!For@{For}}
+\index{For@{For}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{For}{For}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+For}
+
+\mbox{\Hypertarget{struct__stmt_a5e02cf8428c5b693aa36330b0ef070bb}\label{struct__stmt_a5e02cf8428c5b693aa36330b0ef070bb}} 
+\index{\_stmt@{\_stmt}!FunctionDef@{FunctionDef}}
+\index{FunctionDef@{FunctionDef}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{FunctionDef}{FunctionDef}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Function\+Def}
+
+\mbox{\Hypertarget{struct__stmt_a11c4d9ff916f09ccd331c4f5bd8e1596}\label{struct__stmt_a11c4d9ff916f09ccd331c4f5bd8e1596}} 
+\index{\_stmt@{\_stmt}!Global@{Global}}
+\index{Global@{Global}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Global}{Global}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Global}
+
+\mbox{\Hypertarget{struct__stmt_ac46d3b2efe76daff8ed15a47f243582e}\label{struct__stmt_ac46d3b2efe76daff8ed15a47f243582e}} 
+\index{\_stmt@{\_stmt}!globals@{globals}}
+\index{globals@{globals}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{globals}{globals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::globals}
+
+\mbox{\Hypertarget{struct__stmt_aacb3c177deeb22ee720e1a87d463c942}\label{struct__stmt_aacb3c177deeb22ee720e1a87d463c942}} 
+\index{\_stmt@{\_stmt}!handlers@{handlers}}
+\index{handlers@{handlers}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{handlers}{handlers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::handlers}
+
+\mbox{\Hypertarget{struct__stmt_aac5003a8d69b2c3098c0379950f8c768}\label{struct__stmt_aac5003a8d69b2c3098c0379950f8c768}} 
+\index{\_stmt@{\_stmt}!If@{If}}
+\index{If@{If}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{If}{If}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+If}
+
+\mbox{\Hypertarget{struct__stmt_ae9c74911099530152263f755af22d30d}\label{struct__stmt_ae9c74911099530152263f755af22d30d}} 
+\index{\_stmt@{\_stmt}!Import@{Import}}
+\index{Import@{Import}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Import}{Import}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Import}
+
+\mbox{\Hypertarget{struct__stmt_a76994ddfaadba0ee422dbd32ffc21b84}\label{struct__stmt_a76994ddfaadba0ee422dbd32ffc21b84}} 
+\index{\_stmt@{\_stmt}!ImportFrom@{ImportFrom}}
+\index{ImportFrom@{ImportFrom}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{ImportFrom}{ImportFrom}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Import\+From}
+
+\mbox{\Hypertarget{struct__stmt_a7e058de69ac9cb2c466166a8e414fa0e}\label{struct__stmt_a7e058de69ac9cb2c466166a8e414fa0e}} 
+\index{\_stmt@{\_stmt}!inst@{inst}}
+\index{inst@{inst}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{inst}{inst}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::inst}
+
+\mbox{\Hypertarget{struct__stmt_a01937d69e8ba0212ddd700bd1ddf7d35}\label{struct__stmt_a01937d69e8ba0212ddd700bd1ddf7d35}} 
+\index{\_stmt@{\_stmt}!iter@{iter}}
+\index{iter@{iter}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{iter}{iter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::iter}
+
+\mbox{\Hypertarget{struct__stmt_a9074cf45fef325a5baa737d59102ec9a}\label{struct__stmt_a9074cf45fef325a5baa737d59102ec9a}} 
+\index{\_stmt@{\_stmt}!kind@{kind}}
+\index{kind@{kind}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{kind}{kind}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_python-ast_8h_a3f8747ef1343a8899c10bb4911deed50}{\+\_\+stmt\+\_\+kind}} \+\_\+stmt\+::kind}
+
+\mbox{\Hypertarget{struct__stmt_a2ff950f55dfd2b7e168973bd70bf1c04}\label{struct__stmt_a2ff950f55dfd2b7e168973bd70bf1c04}} 
+\index{\_stmt@{\_stmt}!level@{level}}
+\index{level@{level}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+stmt\+::level}
+
+\mbox{\Hypertarget{struct__stmt_a80852961a5875977df5769033d8039d4}\label{struct__stmt_a80852961a5875977df5769033d8039d4}} 
+\index{\_stmt@{\_stmt}!lineno@{lineno}}
+\index{lineno@{lineno}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{lineno}{lineno}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+stmt\+::lineno}
+
+\mbox{\Hypertarget{struct__stmt_a0b592c959686fbf489195521a76f5527}\label{struct__stmt_a0b592c959686fbf489195521a76f5527}} 
+\index{\_stmt@{\_stmt}!locals@{locals}}
+\index{locals@{locals}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{locals}{locals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::locals}
+
+\mbox{\Hypertarget{struct__stmt_ace6ad861a3d463d6ffefaa028a5239d6}\label{struct__stmt_ace6ad861a3d463d6ffefaa028a5239d6}} 
+\index{\_stmt@{\_stmt}!module@{module}}
+\index{module@{module}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{module}{module}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_a78ca2081e230a95abc88c411c9816775}{identifier}} \+\_\+stmt\+::module}
+
+\mbox{\Hypertarget{struct__stmt_a89b7a5ee3a08256e9755057f08e2473c}\label{struct__stmt_a89b7a5ee3a08256e9755057f08e2473c}} 
+\index{\_stmt@{\_stmt}!msg@{msg}}
+\index{msg@{msg}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::msg}
+
+\mbox{\Hypertarget{struct__stmt_ab7db310d6742d73ac25decd9d8d97053}\label{struct__stmt_ab7db310d6742d73ac25decd9d8d97053}} 
+\index{\_stmt@{\_stmt}!name@{name}}
+\index{name@{name}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_a78ca2081e230a95abc88c411c9816775}{identifier}} \+\_\+stmt\+::name}
+
+\mbox{\Hypertarget{struct__stmt_a327c974801f9e0353286c61d1892069f}\label{struct__stmt_a327c974801f9e0353286c61d1892069f}} 
+\index{\_stmt@{\_stmt}!names@{names}}
+\index{names@{names}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::names}
+
+\mbox{\Hypertarget{struct__stmt_afc43b142b0d241edeba16fe35a872337}\label{struct__stmt_afc43b142b0d241edeba16fe35a872337}} 
+\index{\_stmt@{\_stmt}!nl@{nl}}
+\index{nl@{nl}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{nl}{nl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \+\_\+stmt\+::nl}
+
+\mbox{\Hypertarget{struct__stmt_a569578bba46e986e59d57381b4a14a26}\label{struct__stmt_a569578bba46e986e59d57381b4a14a26}} 
+\index{\_stmt@{\_stmt}!op@{op}}
+\index{op@{op}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{op}{op}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a64ffe6085a53816a513038b9f1a04a9d}{operator\+\_\+ty}} \+\_\+stmt\+::op}
+
+\mbox{\Hypertarget{struct__stmt_afd56617c6467fd7d12983ccf75fdb6e4}\label{struct__stmt_afd56617c6467fd7d12983ccf75fdb6e4}} 
+\index{\_stmt@{\_stmt}!optional\_vars@{optional\_vars}}
+\index{optional\_vars@{optional\_vars}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{optional\_vars}{optional\_vars}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::optional\+\_\+vars}
+
+\mbox{\Hypertarget{struct__stmt_a66f6f20b75eafa36433ac6584cefbbd9}\label{struct__stmt_a66f6f20b75eafa36433ac6584cefbbd9}} 
+\index{\_stmt@{\_stmt}!orelse@{orelse}}
+\index{orelse@{orelse}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{orelse}{orelse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::orelse}
+
+\mbox{\Hypertarget{struct__stmt_a5f4b0a18eeb8601199dc5d99904c7413}\label{struct__stmt_a5f4b0a18eeb8601199dc5d99904c7413}} 
+\index{\_stmt@{\_stmt}!Print@{Print}}
+\index{Print@{Print}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Print}{Print}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Print}
+
+\mbox{\Hypertarget{struct__stmt_a236554e9d881db57cd4899f8c406c2c5}\label{struct__stmt_a236554e9d881db57cd4899f8c406c2c5}} 
+\index{\_stmt@{\_stmt}!Raise@{Raise}}
+\index{Raise@{Raise}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Raise}{Raise}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Raise}
+
+\mbox{\Hypertarget{struct__stmt_addd6e63107fdcd99caa5449e87aee467}\label{struct__stmt_addd6e63107fdcd99caa5449e87aee467}} 
+\index{\_stmt@{\_stmt}!Return@{Return}}
+\index{Return@{Return}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{Return}{Return}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Return}
+
+\mbox{\Hypertarget{struct__stmt_a177714ebb9716b3f8ffcdf8d4fb38e2e}\label{struct__stmt_a177714ebb9716b3f8ffcdf8d4fb38e2e}} 
+\index{\_stmt@{\_stmt}!target@{target}}
+\index{target@{target}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::target}
+
+\mbox{\Hypertarget{struct__stmt_aebed3a44ab223eae478f739ea80f28d0}\label{struct__stmt_aebed3a44ab223eae478f739ea80f28d0}} 
+\index{\_stmt@{\_stmt}!targets@{targets}}
+\index{targets@{targets}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::targets}
+
+\mbox{\Hypertarget{struct__stmt_a32ce23a33f8440a8bdae1ee04e4bd87f}\label{struct__stmt_a32ce23a33f8440a8bdae1ee04e4bd87f}} 
+\index{\_stmt@{\_stmt}!tback@{tback}}
+\index{tback@{tback}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{tback}{tback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::tback}
+
+\mbox{\Hypertarget{struct__stmt_a8515b2fedbd67231f7c909d52ebadfa5}\label{struct__stmt_a8515b2fedbd67231f7c909d52ebadfa5}} 
+\index{\_stmt@{\_stmt}!test@{test}}
+\index{test@{test}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{test}{test}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::test}
+
+\mbox{\Hypertarget{struct__stmt_a80ed845edbf81628378c28ceb7a0d3f7}\label{struct__stmt_a80ed845edbf81628378c28ceb7a0d3f7}} 
+\index{\_stmt@{\_stmt}!TryExcept@{TryExcept}}
+\index{TryExcept@{TryExcept}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{TryExcept}{TryExcept}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Try\+Except}
+
+\mbox{\Hypertarget{struct__stmt_ac636fc02a188ea552a4706dc30b7f4e6}\label{struct__stmt_ac636fc02a188ea552a4706dc30b7f4e6}} 
+\index{\_stmt@{\_stmt}!TryFinally@{TryFinally}}
+\index{TryFinally@{TryFinally}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{TryFinally}{TryFinally}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+Try\+Finally}
+
+\mbox{\Hypertarget{struct__stmt_a239243bd19534455c5048e0b6fe25d4c}\label{struct__stmt_a239243bd19534455c5048e0b6fe25d4c}} 
+\index{\_stmt@{\_stmt}!type@{type}}
+\index{type@{type}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::type}
+
+\mbox{\Hypertarget{struct__stmt_ac2cd778ce0da149341b0323591258319}\label{struct__stmt_ac2cd778ce0da149341b0323591258319}} 
+\index{\_stmt@{\_stmt}!v@{v}}
+\index{v@{v}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily union \{ ... \}   \+\_\+stmt\+::v}
+
+\mbox{\Hypertarget{struct__stmt_af74f15a2e6d4ef9423f8f6595de0b802}\label{struct__stmt_af74f15a2e6d4ef9423f8f6595de0b802}} 
+\index{\_stmt@{\_stmt}!value@{value}}
+\index{value@{value}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+stmt\+::value}
+
+\mbox{\Hypertarget{struct__stmt_aec371454808c8e926659676e3c454bcc}\label{struct__stmt_aec371454808c8e926659676e3c454bcc}} 
+\index{\_stmt@{\_stmt}!values@{values}}
+\index{values@{values}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+stmt\+::values}
+
+\mbox{\Hypertarget{struct__stmt_a0e4b5ff38c91a9d639ad2e72b44a5b55}\label{struct__stmt_a0e4b5ff38c91a9d639ad2e72b44a5b55}} 
+\index{\_stmt@{\_stmt}!While@{While}}
+\index{While@{While}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{While}{While}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+While}
+
+\mbox{\Hypertarget{struct__stmt_aa5ad76e29931c06349137816f5ff304e}\label{struct__stmt_aa5ad76e29931c06349137816f5ff304e}} 
+\index{\_stmt@{\_stmt}!With@{With}}
+\index{With@{With}!\_stmt@{\_stmt}}
+\subsubsection{\texorpdfstring{With}{With}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+stmt\+::\+With}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/\mbox{\hyperlink{_python-ast_8h}{Python-\/ast.\+h}}\end{DoxyCompactItemize}

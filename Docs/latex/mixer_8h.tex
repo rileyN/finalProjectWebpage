@@ -1,0 +1,144 @@
+\hypertarget{mixer_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pygame/mixer.h File Reference}
+\label{mixer_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/mixer.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/mixer.h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$structmember.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpg_sound_object}{pg\+Sound\+Object}}
+\item 
+struct \mbox{\hyperlink{structpg_channel_object}{pg\+Channel\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a0e36a8a4a5b6a5c04eaff4e6bd36b66f}{M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}}()
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a95ca792f86679927c3834aee6437ddf5}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}~0
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a33def5bc8f281f95c8e88a771e78d270}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}~7
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a1af80d81497924f8532781cfdb9a65d9}{pg\+Sound\+\_\+\+As\+Chunk}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{structpg_sound_object}{pg\+Sound\+Object}}$\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$chunk)
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a831549502fdef49b954bdce744dca089}{pg\+Channel\+\_\+\+As\+Int}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~(((\mbox{\hyperlink{structpg_channel_object}{pg\+Channel\+Object}}$\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$chan)
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a90492a307209b5766a20647c3918ecb5}{pg\+Sound\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$ob\+\_\+type == (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a17c27908f58487ca829915ce4e2112e4}{pg\+Sound\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_ae8e7daa7545597b4298fd154fa021270}{pg\+Sound\+\_\+\+New}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{struct_mix___chunk}{Mix\+\_\+\+Chunk}}$\ast$))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_ab781420b77b0d3df992cd1eb7dcccedd}{pg\+Sound\+\_\+\+Play}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}2\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a1c1a0b9519d2bc5683637bb15dab6ef0}{pg\+Channel\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$ob\+\_\+type == (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a8515b17b1b501ddf78ebdcabb0cc8588}{pg\+Channel\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_aff0f795416cd68ada5ff1983ec9f77b0}{pg\+Channel\+\_\+\+New}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}4\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_ae28b4eca8b6c208ac99d6c418552348e}{pg\+Mixer\+\_\+\+Auto\+Init}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}5\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a9e91da1d84af47ba76742255f819e5c1}{pg\+Mixer\+\_\+\+Auto\+Quit}}~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}6\mbox{]})
+\item 
+\#define \mbox{\hyperlink{mixer_8h_a66b7af67a2739f6f5fcd49ed3175d6a7}{import\+\_\+pygame\+\_\+mixer}}()~\mbox{\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(mixer, M\+I\+X\+ER, pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mixer_8h_a66b7af67a2739f6f5fcd49ed3175d6a7}\label{mixer_8h_a66b7af67a2739f6f5fcd49ed3175d6a7}} 
+\index{mixer.h@{mixer.h}!import\_pygame\_mixer@{import\_pygame\_mixer}}
+\index{import\_pygame\_mixer@{import\_pygame\_mixer}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{import\_pygame\_mixer}{import\_pygame\_mixer}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+mixer(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}}(mixer, M\+I\+X\+ER, pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI)}
+
+\mbox{\Hypertarget{mixer_8h_a0e36a8a4a5b6a5c04eaff4e6bd36b66f}\label{mixer_8h_a0e36a8a4a5b6a5c04eaff4e6bd36b66f}} 
+\index{mixer.h@{mixer.h}!MIXER\_INIT\_CHECK@{MIXER\_INIT\_CHECK}}
+\index{MIXER\_INIT\_CHECK@{MIXER\_INIT\_CHECK}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{MIXER\_INIT\_CHECK}{MIXER\_INIT\_CHECK}}
+{\footnotesize\ttfamily \#define M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(!\mbox{\hyperlink{_s_d_l_8h_a04dc570990c697eed95681216801710d}{SDL\_WasInit}}(\mbox{\hyperlink{_s_d_l_8h_abeceb02c19508655cb05cc8e64206333}{SDL\_INIT\_AUDIO}})) \(\backslash\)}
+\DoxyCodeLine{        return \mbox{\hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{RAISE}}(\mbox{\hyperlink{__pygame_8h_aa266543992d8b718fb37a96e66b7e128}{pgExc\_SDLError}}, \textcolor{stringliteral}{"mixer not initialized"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mixer_8h_a831549502fdef49b954bdce744dca089}\label{mixer_8h_a831549502fdef49b954bdce744dca089}} 
+\index{mixer.h@{mixer.h}!pgChannel\_AsInt@{pgChannel\_AsInt}}
+\index{pgChannel\_AsInt@{pgChannel\_AsInt}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgChannel\_AsInt}{pgChannel\_AsInt}}
+{\footnotesize\ttfamily \#define pg\+Channel\+\_\+\+As\+Int(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{structpg_channel_object}{pg\+Channel\+Object}}$\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$chan)}
+
+\mbox{\Hypertarget{mixer_8h_a1c1a0b9519d2bc5683637bb15dab6ef0}\label{mixer_8h_a1c1a0b9519d2bc5683637bb15dab6ef0}} 
+\index{mixer.h@{mixer.h}!pgChannel\_Check@{pgChannel\_Check}}
+\index{pgChannel\_Check@{pgChannel\_Check}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgChannel\_Check}{pgChannel\_Check}}
+{\footnotesize\ttfamily \#define pg\+Channel\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$ob\+\_\+type == (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_aff0f795416cd68ada5ff1983ec9f77b0}\label{mixer_8h_aff0f795416cd68ada5ff1983ec9f77b0}} 
+\index{mixer.h@{mixer.h}!pgChannel\_New@{pgChannel\_New}}
+\index{pgChannel\_New@{pgChannel\_New}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgChannel\_New}{pgChannel\_New}}
+{\footnotesize\ttfamily \#define pg\+Channel\+\_\+\+New~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}4\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a8515b17b1b501ddf78ebdcabb0cc8588}\label{mixer_8h_a8515b17b1b501ddf78ebdcabb0cc8588}} 
+\index{mixer.h@{mixer.h}!pgChannel\_Type@{pgChannel\_Type}}
+\index{pgChannel\_Type@{pgChannel\_Type}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgChannel\_Type}{pgChannel\_Type}}
+{\footnotesize\ttfamily \#define pg\+Channel\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_ae28b4eca8b6c208ac99d6c418552348e}\label{mixer_8h_ae28b4eca8b6c208ac99d6c418552348e}} 
+\index{mixer.h@{mixer.h}!pgMixer\_AutoInit@{pgMixer\_AutoInit}}
+\index{pgMixer\_AutoInit@{pgMixer\_AutoInit}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgMixer\_AutoInit}{pgMixer\_AutoInit}}
+{\footnotesize\ttfamily \#define pg\+Mixer\+\_\+\+Auto\+Init~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}5\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a9e91da1d84af47ba76742255f819e5c1}\label{mixer_8h_a9e91da1d84af47ba76742255f819e5c1}} 
+\index{mixer.h@{mixer.h}!pgMixer\_AutoQuit@{pgMixer\_AutoQuit}}
+\index{pgMixer\_AutoQuit@{pgMixer\_AutoQuit}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgMixer\_AutoQuit}{pgMixer\_AutoQuit}}
+{\footnotesize\ttfamily \#define pg\+Mixer\+\_\+\+Auto\+Quit~($\ast$(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}6\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a1af80d81497924f8532781cfdb9a65d9}\label{mixer_8h_a1af80d81497924f8532781cfdb9a65d9}} 
+\index{mixer.h@{mixer.h}!pgSound\_AsChunk@{pgSound\_AsChunk}}
+\index{pgSound\_AsChunk@{pgSound\_AsChunk}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgSound\_AsChunk}{pgSound\_AsChunk}}
+{\footnotesize\ttfamily \#define pg\+Sound\+\_\+\+As\+Chunk(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{structpg_sound_object}{pg\+Sound\+Object}}$\ast$)\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$chunk)}
+
+\mbox{\Hypertarget{mixer_8h_a90492a307209b5766a20647c3918ecb5}\label{mixer_8h_a90492a307209b5766a20647c3918ecb5}} 
+\index{mixer.h@{mixer.h}!pgSound\_Check@{pgSound\_Check}}
+\index{pgSound\_Check@{pgSound\_Check}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgSound\_Check}{pgSound\_Check}}
+{\footnotesize\ttfamily \#define pg\+Sound\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})-\/$>$ob\+\_\+type == (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_ae8e7daa7545597b4298fd154fa021270}\label{mixer_8h_ae8e7daa7545597b4298fd154fa021270}} 
+\index{mixer.h@{mixer.h}!pgSound\_New@{pgSound\_New}}
+\index{pgSound\_New@{pgSound\_New}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgSound\_New}{pgSound\_New}}
+{\footnotesize\ttfamily \#define pg\+Sound\+\_\+\+New~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{struct_mix___chunk}{Mix\+\_\+\+Chunk}}$\ast$))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_ab781420b77b0d3df992cd1eb7dcccedd}\label{mixer_8h_ab781420b77b0d3df992cd1eb7dcccedd}} 
+\index{mixer.h@{mixer.h}!pgSound\_Play@{pgSound\_Play}}
+\index{pgSound\_Play@{pgSound\_Play}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgSound\_Play}{pgSound\_Play}}
+{\footnotesize\ttfamily \#define pg\+Sound\+\_\+\+Play~($\ast$(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$)(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$))pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}2\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a17c27908f58487ca829915ce4e2112e4}\label{mixer_8h_a17c27908f58487ca829915ce4e2112e4}} 
+\index{mixer.h@{mixer.h}!pgSound\_Type@{pgSound\_Type}}
+\index{pgSound\_Type@{pgSound\_Type}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{pgSound\_Type}{pgSound\_Type}}
+{\footnotesize\ttfamily \#define pg\+Sound\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$)pg\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a95ca792f86679927c3834aee6437ddf5}\label{mixer_8h_a95ca792f86679927c3834aee6437ddf5}} 
+\index{mixer.h@{mixer.h}!PYGAMEAPI\_MIXER\_FIRSTSLOT@{PYGAMEAPI\_MIXER\_FIRSTSLOT}}
+\index{PYGAMEAPI\_MIXER\_FIRSTSLOT@{PYGAMEAPI\_MIXER\_FIRSTSLOT}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_MIXER\_FIRSTSLOT}{PYGAMEAPI\_MIXER\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~0}
+
+\mbox{\Hypertarget{mixer_8h_a33def5bc8f281f95c8e88a771e78d270}\label{mixer_8h_a33def5bc8f281f95c8e88a771e78d270}} 
+\index{mixer.h@{mixer.h}!PYGAMEAPI\_MIXER\_NUMSLOTS@{PYGAMEAPI\_MIXER\_NUMSLOTS}}
+\index{PYGAMEAPI\_MIXER\_NUMSLOTS@{PYGAMEAPI\_MIXER\_NUMSLOTS}!mixer.h@{mixer.h}}
+\subsubsection{\texorpdfstring{PYGAMEAPI\_MIXER\_NUMSLOTS}{PYGAMEAPI\_MIXER\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS~7}
+

@@ -1,0 +1,58 @@
+\hypertarget{classloader__life__support}{}\section{loader\+\_\+life\+\_\+support Class Reference}
+\label{classloader__life__support}\index{loader\_life\_support@{loader\_life\_support}}
+
+
+{\ttfamily \#include $<$cast.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classloader__life__support_abd8830be409a78f3dfb6741b045ad929}{loader\+\_\+life\+\_\+support}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_a}{A}} new patient frame is created when a function is entered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classloader__life__support_ae37f1ea05059dff6ef805d1dcd34b3e4}{$\sim$loader\+\_\+life\+\_\+support}} ()
+\begin{DoxyCompactList}\small\item\em ... and destroyed after it returns \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{classloader__life__support_a0759a5fe160fb836f1f1d47eecdfb36f}{add\+\_\+patient}} (\mbox{\hyperlink{classhandle}{handle}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_afa0fb1b5e976920c0abeff2dca3ed774}{h}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{struct_a}{A}} life support system for temporary objects created by {\ttfamily \mbox{\hyperlink{classtype__caster__generic_aa841c81d370ff23ccafa8507cc01a0b1}{type\+\_\+caster\+::load()}}}. Adding a patient will keep it alive up until the enclosing function returns. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classloader__life__support_abd8830be409a78f3dfb6741b045ad929}\label{classloader__life__support_abd8830be409a78f3dfb6741b045ad929}} 
+\index{loader\_life\_support@{loader\_life\_support}!loader\_life\_support@{loader\_life\_support}}
+\index{loader\_life\_support@{loader\_life\_support}!loader\_life\_support@{loader\_life\_support}}
+\subsubsection{\texorpdfstring{loader\_life\_support()}{loader\_life\_support()}}
+{\footnotesize\ttfamily loader\+\_\+life\+\_\+support\+::loader\+\_\+life\+\_\+support (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{struct_a}{A}} new patient frame is created when a function is entered. 
+
+\mbox{\Hypertarget{classloader__life__support_ae37f1ea05059dff6ef805d1dcd34b3e4}\label{classloader__life__support_ae37f1ea05059dff6ef805d1dcd34b3e4}} 
+\index{loader\_life\_support@{loader\_life\_support}!````~loader\_life\_support@{$\sim$loader\_life\_support}}
+\index{````~loader\_life\_support@{$\sim$loader\_life\_support}!loader\_life\_support@{loader\_life\_support}}
+\subsubsection{\texorpdfstring{$\sim$loader\_life\_support()}{~loader\_life\_support()}}
+{\footnotesize\ttfamily loader\+\_\+life\+\_\+support\+::$\sim$loader\+\_\+life\+\_\+support (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+... and destroyed after it returns 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classloader__life__support_a0759a5fe160fb836f1f1d47eecdfb36f}\label{classloader__life__support_a0759a5fe160fb836f1f1d47eecdfb36f}} 
+\index{loader\_life\_support@{loader\_life\_support}!add\_patient@{add\_patient}}
+\index{add\_patient@{add\_patient}!loader\_life\_support@{loader\_life\_support}}
+\subsubsection{\texorpdfstring{add\_patient()}{add\_patient()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} loader\+\_\+life\+\_\+support\+::add\+\_\+patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhandle}{handle}}}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+This can only be used inside a pybind11-\/bound function, either by {\ttfamily \mbox{\hyperlink{classargument__loader}{argument\+\_\+loader}}} at argument preparation time or by {\ttfamily py\+::cast()} at execution time. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/include/pybind11/\mbox{\hyperlink{cast_8h}{cast.\+h}}\end{DoxyCompactItemize}

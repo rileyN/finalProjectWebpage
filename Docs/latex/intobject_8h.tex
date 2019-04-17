@@ -1,0 +1,129 @@
+\hypertarget{intobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/intobject.h File Reference}
+\label{intobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/intobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/intobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_int_object}{Py\+Int\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{intobject_8h_a21032284abba996c80b3f6c6847f02cf}{Py\+Int\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a93b50d584d2f30b899c2dce5d841d8b9}{Py\+Type\+\_\+\+Fast\+Subclass}}((op)-\/$>$ob\+\_\+type, \mbox{\hyperlink{_python27_2object_8h_ac5b1563d9cf92d29d0bea473ee1394cd}{Py\+\_\+\+T\+P\+F\+L\+A\+G\+S\+\_\+\+I\+N\+T\+\_\+\+S\+U\+B\+C\+L\+A\+SS}})
+\item 
+\#define \mbox{\hyperlink{intobject_8h_a0cecd6cd4a497505d1c3412f96b20848}{Py\+Int\+\_\+\+Check\+Exact}}(op)~((op)-\/$>$ob\+\_\+type == \&Py\+Int\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{intobject_8h_a225d34d2e970c9942b56910a20c29277}{Py\+Int\+\_\+\+A\+S\+\_\+\+L\+O\+NG}}(op)~(((\mbox{\hyperlink{struct_py_int_object}{Py\+Int\+Object}} $\ast$)(op))-\/$>$ob\+\_\+ival)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{intobject_8h_a96124942b123757ec7e33bbcc562f298}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Int\+\_\+\+Type
+\item 
+\mbox{\hyperlink{intobject_8h_ae07ff490074a4b2d70c0e34f4e0dad85}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Int\+\_\+\+From\+String(char $\ast$
+\item 
+\mbox{\hyperlink{intobject_8h_a504ee350d91146c6a4ec6e688fee96bf}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}) Py\+Int\+\_\+\+As\+Long(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{intobject_8h_aef3491f452aa4cc856a788f2ecb2e6d4}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}) Py\+Int\+\_\+\+As\+Ssize\+\_\+t(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{intobject_8h_a0fa4705e741f174678eff6f0fb1624b4}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}) Py\+Int\+\_\+\+As\+Unsigned\+Long\+Mask(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{intobject_8h_ad65b480f8c8270356b45a9890f6499ae}{int}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{intobject_8h_a19437a5875428e719515fb20de8a6927}{base}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{intobject_8h_ab7cd93743c18a967711c2418c0b92007}{newstyle}}
+\item 
+char $\ast$ \mbox{\hyperlink{intobject_8h_a511588f1400d07ba62786e976717db68}{format\+\_\+spec}}
+\item 
+char \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{intobject_8h_ae660a894b4d2865d2999b38ad335e237}{format\+\_\+spec\+\_\+len}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{intobject_8h_a225d34d2e970c9942b56910a20c29277}\label{intobject_8h_a225d34d2e970c9942b56910a20c29277}} 
+\index{intobject.h@{intobject.h}!PyInt\_AS\_LONG@{PyInt\_AS\_LONG}}
+\index{PyInt\_AS\_LONG@{PyInt\_AS\_LONG}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyInt\_AS\_LONG}{PyInt\_AS\_LONG}}
+{\footnotesize\ttfamily \#define Py\+Int\+\_\+\+A\+S\+\_\+\+L\+O\+NG(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_int_object}{Py\+Int\+Object}} $\ast$)(op))-\/$>$ob\+\_\+ival)}
+
+\mbox{\Hypertarget{intobject_8h_a21032284abba996c80b3f6c6847f02cf}\label{intobject_8h_a21032284abba996c80b3f6c6847f02cf}} 
+\index{intobject.h@{intobject.h}!PyInt\_Check@{PyInt\_Check}}
+\index{PyInt\_Check@{PyInt\_Check}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyInt\_Check}{PyInt\_Check}}
+{\footnotesize\ttfamily \#define Py\+Int\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a93b50d584d2f30b899c2dce5d841d8b9}{Py\+Type\+\_\+\+Fast\+Subclass}}((op)-\/$>$ob\+\_\+type, \mbox{\hyperlink{_python27_2object_8h_ac5b1563d9cf92d29d0bea473ee1394cd}{Py\+\_\+\+T\+P\+F\+L\+A\+G\+S\+\_\+\+I\+N\+T\+\_\+\+S\+U\+B\+C\+L\+A\+SS}})}
+
+\mbox{\Hypertarget{intobject_8h_a0cecd6cd4a497505d1c3412f96b20848}\label{intobject_8h_a0cecd6cd4a497505d1c3412f96b20848}} 
+\index{intobject.h@{intobject.h}!PyInt\_CheckExact@{PyInt\_CheckExact}}
+\index{PyInt\_CheckExact@{PyInt\_CheckExact}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyInt\_CheckExact}{PyInt\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Int\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~((op)-\/$>$ob\+\_\+type == \&Py\+Int\+\_\+\+Type)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{intobject_8h_a96124942b123757ec7e33bbcc562f298}\label{intobject_8h_a96124942b123757ec7e33bbcc562f298}} 
+\index{intobject.h@{intobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{intobject_8h_ae07ff490074a4b2d70c0e34f4e0dad85}\label{intobject_8h_ae07ff490074a4b2d70c0e34f4e0dad85}} 
+\index{intobject.h@{intobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{intobject_8h_a504ee350d91146c6a4ec6e688fee96bf}\label{intobject_8h_a504ee350d91146c6a4ec6e688fee96bf}} 
+\index{intobject.h@{intobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{intobject_8h_aef3491f452aa4cc856a788f2ecb2e6d4}\label{intobject_8h_aef3491f452aa4cc856a788f2ecb2e6d4}} 
+\index{intobject.h@{intobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{intobject_8h_a0fa4705e741f174678eff6f0fb1624b4}\label{intobject_8h_a0fa4705e741f174678eff6f0fb1624b4}} 
+\index{intobject.h@{intobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{intobject_8h_a19437a5875428e719515fb20de8a6927}\label{intobject_8h_a19437a5875428e719515fb20de8a6927}} 
+\index{intobject.h@{intobject.h}!base@{base}}
+\index{base@{base}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{structbase}{base}}}
+
+\mbox{\Hypertarget{intobject_8h_a511588f1400d07ba62786e976717db68}\label{intobject_8h_a511588f1400d07ba62786e976717db68}} 
+\index{intobject.h@{intobject.h}!format\_spec@{format\_spec}}
+\index{format\_spec@{format\_spec}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{format\_spec}{format\_spec}}
+{\footnotesize\ttfamily char$\ast$ format\+\_\+spec}
+
+\mbox{\Hypertarget{intobject_8h_ae660a894b4d2865d2999b38ad335e237}\label{intobject_8h_ae660a894b4d2865d2999b38ad335e237}} 
+\index{intobject.h@{intobject.h}!format\_spec\_len@{format\_spec\_len}}
+\index{format\_spec\_len@{format\_spec\_len}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{format\_spec\_len}{format\_spec\_len}}
+{\footnotesize\ttfamily char \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} format\+\_\+spec\+\_\+len}
+
+\mbox{\Hypertarget{intobject_8h_ad65b480f8c8270356b45a9890f6499ae}\label{intobject_8h_ad65b480f8c8270356b45a9890f6499ae}} 
+\index{intobject.h@{intobject.h}!int@{int}}
+\index{int@{int}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily char int}
+
+\mbox{\Hypertarget{intobject_8h_ab7cd93743c18a967711c2418c0b92007}\label{intobject_8h_ab7cd93743c18a967711c2418c0b92007}} 
+\index{intobject.h@{intobject.h}!newstyle@{newstyle}}
+\index{newstyle@{newstyle}!intobject.h@{intobject.h}}
+\subsubsection{\texorpdfstring{newstyle}{newstyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} newstyle}
+

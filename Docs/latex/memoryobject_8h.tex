@@ -1,0 +1,81 @@
+\hypertarget{memoryobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/memoryobject.h File Reference}
+\label{memoryobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/memoryobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/memoryobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_memory_view_object}{Py\+Memory\+View\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{memoryobject_8h_a814f92273e85147a616731bafb843bf0}{Py\+Memory\+View\+\_\+\+Check}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Memory\+View\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{memoryobject_8h_a35d739b4ee838043d41bf35306b49f9b}{Py\+Memory\+View\+\_\+\+G\+E\+T\+\_\+\+B\+U\+F\+F\+ER}}(op)~(\&((\mbox{\hyperlink{struct_py_memory_view_object}{Py\+Memory\+View\+Object}} $\ast$)(op))-\/$>$\mbox{\hyperlink{abstract_8h_acf20161ba2eafe657cb45d60dafefb51}{view}})
+\item 
+\#define \mbox{\hyperlink{memoryobject_8h_a875665e8bbb49fb4306ec5085b620055}{Py\+Memory\+View\+\_\+\+G\+E\+T\+\_\+\+B\+A\+SE}}(op)~(((\mbox{\hyperlink{struct_py_memory_view_object}{Py\+Memory\+View\+Object}} $\ast$)(op))-\/$>$\mbox{\hyperlink{abstract_8h_aaa12580403a2cc24c96324b4c5715889}{view.\+obj}})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{memoryobject_8h_ac4884ad2ce81c026ed26592bda160336}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Memory\+View\+\_\+\+Type
+\item 
+\mbox{\hyperlink{memoryobject_8h_a2c811cdd9ae428ab2daf31f3b70e0d66}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Memory\+View\+\_\+\+Get\+Contiguous(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{structbase}{base}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{memoryobject_8h_a9e70be5a4c46304c93eb2f413a726b66}{buffertype}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char \mbox{\hyperlink{memoryobject_8h_a3fa04bfea8e5dc29f4e33a0fd12d18d3}{fort}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{memoryobject_8h_a814f92273e85147a616731bafb843bf0}\label{memoryobject_8h_a814f92273e85147a616731bafb843bf0}} 
+\index{memoryobject.h@{memoryobject.h}!PyMemoryView\_Check@{PyMemoryView\_Check}}
+\index{PyMemoryView\_Check@{PyMemoryView\_Check}!memoryobject.h@{memoryobject.h}}
+\subsubsection{\texorpdfstring{PyMemoryView\_Check}{PyMemoryView\_Check}}
+{\footnotesize\ttfamily \#define Py\+Memory\+View\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Memory\+View\+\_\+\+Type)}
+
+\mbox{\Hypertarget{memoryobject_8h_a875665e8bbb49fb4306ec5085b620055}\label{memoryobject_8h_a875665e8bbb49fb4306ec5085b620055}} 
+\index{memoryobject.h@{memoryobject.h}!PyMemoryView\_GET\_BASE@{PyMemoryView\_GET\_BASE}}
+\index{PyMemoryView\_GET\_BASE@{PyMemoryView\_GET\_BASE}!memoryobject.h@{memoryobject.h}}
+\subsubsection{\texorpdfstring{PyMemoryView\_GET\_BASE}{PyMemoryView\_GET\_BASE}}
+{\footnotesize\ttfamily \#define Py\+Memory\+View\+\_\+\+G\+E\+T\+\_\+\+B\+A\+SE(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_memory_view_object}{Py\+Memory\+View\+Object}} $\ast$)(op))-\/$>$\mbox{\hyperlink{abstract_8h_aaa12580403a2cc24c96324b4c5715889}{view.\+obj}})}
+
+\mbox{\Hypertarget{memoryobject_8h_a35d739b4ee838043d41bf35306b49f9b}\label{memoryobject_8h_a35d739b4ee838043d41bf35306b49f9b}} 
+\index{memoryobject.h@{memoryobject.h}!PyMemoryView\_GET\_BUFFER@{PyMemoryView\_GET\_BUFFER}}
+\index{PyMemoryView\_GET\_BUFFER@{PyMemoryView\_GET\_BUFFER}!memoryobject.h@{memoryobject.h}}
+\subsubsection{\texorpdfstring{PyMemoryView\_GET\_BUFFER}{PyMemoryView\_GET\_BUFFER}}
+{\footnotesize\ttfamily \#define Py\+Memory\+View\+\_\+\+G\+E\+T\+\_\+\+B\+U\+F\+F\+ER(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\&((\mbox{\hyperlink{struct_py_memory_view_object}{Py\+Memory\+View\+Object}} $\ast$)(op))-\/$>$\mbox{\hyperlink{abstract_8h_acf20161ba2eafe657cb45d60dafefb51}{view}})}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{memoryobject_8h_ac4884ad2ce81c026ed26592bda160336}\label{memoryobject_8h_ac4884ad2ce81c026ed26592bda160336}} 
+\index{memoryobject.h@{memoryobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!memoryobject.h@{memoryobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{memoryobject_8h_a2c811cdd9ae428ab2daf31f3b70e0d66}\label{memoryobject_8h_a2c811cdd9ae428ab2daf31f3b70e0d66}} 
+\index{memoryobject.h@{memoryobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!memoryobject.h@{memoryobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{memoryobject_8h_a9e70be5a4c46304c93eb2f413a726b66}\label{memoryobject_8h_a9e70be5a4c46304c93eb2f413a726b66}} 
+\index{memoryobject.h@{memoryobject.h}!buffertype@{buffertype}}
+\index{buffertype@{buffertype}!memoryobject.h@{memoryobject.h}}
+\subsubsection{\texorpdfstring{buffertype}{buffertype}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} buffertype}
+
+\mbox{\Hypertarget{memoryobject_8h_a3fa04bfea8e5dc29f4e33a0fd12d18d3}\label{memoryobject_8h_a3fa04bfea8e5dc29f4e33a0fd12d18d3}} 
+\index{memoryobject.h@{memoryobject.h}!fort@{fort}}
+\index{fort@{fort}!memoryobject.h@{memoryobject.h}}
+\subsubsection{\texorpdfstring{fort}{fort}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char fort}
+

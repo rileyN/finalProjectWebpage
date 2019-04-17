@@ -1,0 +1,191 @@
+\hypertarget{py__curses_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/py\+\_\+curses.h File Reference}
+\label{py__curses_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/py\_curses.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/py\_curses.h}}
+{\ttfamily \#include $<$curses.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_curses_window_object}{Py\+Curses\+Window\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a7c66b1355f9f33f09ada3d2f4e147c0c}{Py\+Curses\+\_\+\+A\+P\+I\+\_\+pointers}}~4
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a11756b5b8b95ce92b3219eed8df2e877}{Py\+Curses\+Window\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}}) == \&\mbox{\hyperlink{py__curses_8h_a671e4286125e6ac89bc179fa55247a48}{Py\+Curses\+Window\+\_\+\+Type}})
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a8ce5d81ee2aa325184db599732f2daf3}{Py\+Curses\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}~\char`\"{}\+\_\+curses.\+\_\+\+C\+\_\+\+A\+PI\char`\"{}
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a671e4286125e6ac89bc179fa55247a48}{Py\+Curses\+Window\+\_\+\+Type}}~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$) Py\+Curses\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_adcd6672d209e60053329c0e125a9864e}{Py\+Curses\+Setup\+Term\+Called}}~\{if (! ((\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))Py\+Curses\+\_\+\+A\+PI\mbox{[}1\mbox{]}) () ) return \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a0175db4bc7fbc24ef5ae07c76321024b}{Py\+Curses\+Initialised}}~\{if (! ((\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))Py\+Curses\+\_\+\+A\+PI\mbox{[}2\mbox{]}) () ) return \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a21435c20ffc942f9174fb3e0961257a0}{Py\+Curses\+Initialised\+Color}}~\{if (! ((\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))Py\+Curses\+\_\+\+A\+PI\mbox{[}3\mbox{]}) () ) return \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a9c6c0726790a7b48357d57eb419b878f}{import\+\_\+curses}}()~Py\+Curses\+\_\+\+A\+PI = (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$$\ast$)Py\+Capsule\+\_\+\+Import(\mbox{\hyperlink{py__curses_8h_a8ce5d81ee2aa325184db599732f2daf3}{Py\+Curses\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}, 1);
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_ac1b128f9121332dbaf4a2b0e39b4719c}{No\+Arg\+No\+Return\+Function}}(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}})
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a17318c65ff579e19d4ab6fa7024ff88b}{No\+Arg\+Or\+Flag\+No\+Return\+Function}}(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}})
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a268e87f768dc41030a6cc7655d0c442d}{No\+Arg\+Return\+Int\+Function}}(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}})
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a46541ef7ff1caab5f64826dfedb798ee}{No\+Arg\+Return\+String\+Function}}(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}})
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_a3a941afe09412c006830f40470d0a136}{No\+Arg\+True\+False\+Function}}(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}})
+\item 
+\#define \mbox{\hyperlink{py__curses_8h_adaf75b089b123b9a81ddea0ce23302fb}{No\+Arg\+No\+Return\+Void\+Function}}(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{py__curses_8h_a9c6c0726790a7b48357d57eb419b878f}\label{py__curses_8h_a9c6c0726790a7b48357d57eb419b878f}} 
+\index{py\_curses.h@{py\_curses.h}!import\_curses@{import\_curses}}
+\index{import\_curses@{import\_curses}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{import\_curses}{import\_curses}}
+{\footnotesize\ttfamily \#define import\+\_\+curses(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~Py\+Curses\+\_\+\+A\+PI = (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$$\ast$)Py\+Capsule\+\_\+\+Import(\mbox{\hyperlink{py__curses_8h_a8ce5d81ee2aa325184db599732f2daf3}{Py\+Curses\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}, 1);}
+
+\mbox{\Hypertarget{py__curses_8h_ac1b128f9121332dbaf4a2b0e39b4719c}\label{py__curses_8h_ac1b128f9121332dbaf4a2b0e39b4719c}} 
+\index{py\_curses.h@{py\_curses.h}!NoArgNoReturnFunction@{NoArgNoReturnFunction}}
+\index{NoArgNoReturnFunction@{NoArgNoReturnFunction}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{NoArgNoReturnFunction}{NoArgNoReturnFunction}}
+{\footnotesize\ttfamily \#define No\+Arg\+No\+Return\+Function(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \mbox{\hyperlink{struct__object}{PyObject}} *PyCurses\_ \#\# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} (\mbox{\hyperlink{struct__object}{PyObject}} *\textcolor{keyword}{self}) \(\backslash\)}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{  PyCursesInitialised \(\backslash\)}
+\DoxyCodeLine{  return PyCursesCheckERR(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}(), \# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{py__curses_8h_adaf75b089b123b9a81ddea0ce23302fb}\label{py__curses_8h_adaf75b089b123b9a81ddea0ce23302fb}} 
+\index{py\_curses.h@{py\_curses.h}!NoArgNoReturnVoidFunction@{NoArgNoReturnVoidFunction}}
+\index{NoArgNoReturnVoidFunction@{NoArgNoReturnVoidFunction}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{NoArgNoReturnVoidFunction}{NoArgNoReturnVoidFunction}}
+{\footnotesize\ttfamily \#define No\+Arg\+No\+Return\+Void\+Function(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \mbox{\hyperlink{struct__object}{PyObject}} *PyCurses\_ \#\# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} (\mbox{\hyperlink{struct__object}{PyObject}} *\textcolor{keyword}{self}) \(\backslash\)}
+\DoxyCodeLine{\{ \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{  PyCursesInitialised \(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{  X}}(); \(\backslash\)}
+\DoxyCodeLine{  Py\_INCREF(\mbox{\hyperlink{_python27_2object_8h_a02ab767ffd5e5a73d8dcd6db87c05e40}{Py\_None}}); \(\backslash\)}
+\DoxyCodeLine{  return \mbox{\hyperlink{_python27_2object_8h_a02ab767ffd5e5a73d8dcd6db87c05e40}{Py\_None}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{py__curses_8h_a17318c65ff579e19d4ab6fa7024ff88b}\label{py__curses_8h_a17318c65ff579e19d4ab6fa7024ff88b}} 
+\index{py\_curses.h@{py\_curses.h}!NoArgOrFlagNoReturnFunction@{NoArgOrFlagNoReturnFunction}}
+\index{NoArgOrFlagNoReturnFunction@{NoArgOrFlagNoReturnFunction}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{NoArgOrFlagNoReturnFunction}{NoArgOrFlagNoReturnFunction}}
+{\footnotesize\ttfamily \#define No\+Arg\+Or\+Flag\+No\+Return\+Function(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \mbox{\hyperlink{struct__object}{PyObject}} *PyCurses\_ \#\# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} (\mbox{\hyperlink{struct__object}{PyObject}} *\textcolor{keyword}{self}, \mbox{\hyperlink{struct__object}{PyObject}} *\mbox{\hyperlink{classargs}{args}}) \(\backslash\)}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{  int flag = 0; \(\backslash\)}
+\DoxyCodeLine{  PyCursesInitialised \(\backslash\)}
+\DoxyCodeLine{  switch(PyTuple\_Size(\mbox{\hyperlink{classargs}{args}})) \{ \(\backslash\)}
+\DoxyCodeLine{  case 0: \(\backslash\)}
+\DoxyCodeLine{    return PyCursesCheckERR(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}(), \# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}); \(\backslash\)}
+\DoxyCodeLine{  case 1: \(\backslash\)}
+\DoxyCodeLine{    if (!PyArg\_ParseTuple(\mbox{\hyperlink{classargs}{args}}, \textcolor{stringliteral}{"i;True(1) or False(0)"}, \&flag)) \textcolor{keywordflow}{return} \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}; \(\backslash\)}
+\DoxyCodeLine{    if (flag) \textcolor{keywordflow}{return} PyCursesCheckERR(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}(), \# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}); \(\backslash\)}
+\DoxyCodeLine{    else \textcolor{keywordflow}{return} PyCursesCheckERR(no \#\# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} (), \# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}); \(\backslash\)}
+\DoxyCodeLine{  default: \(\backslash\)}
+\DoxyCodeLine{    PyErr\_SetString(PyExc\_TypeError, \# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} \textcolor{stringliteral}{" requires 0 or 1 arguments"}); \(\backslash\)}
+\DoxyCodeLine{    return \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{py__curses_8h_a268e87f768dc41030a6cc7655d0c442d}\label{py__curses_8h_a268e87f768dc41030a6cc7655d0c442d}} 
+\index{py\_curses.h@{py\_curses.h}!NoArgReturnIntFunction@{NoArgReturnIntFunction}}
+\index{NoArgReturnIntFunction@{NoArgReturnIntFunction}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{NoArgReturnIntFunction}{NoArgReturnIntFunction}}
+{\footnotesize\ttfamily \#define No\+Arg\+Return\+Int\+Function(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \mbox{\hyperlink{struct__object}{PyObject}} *PyCurses\_ \#\# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} (\mbox{\hyperlink{struct__object}{PyObject}} *\textcolor{keyword}{self}) \(\backslash\)}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{ PyCursesInitialised \(\backslash\)}
+\DoxyCodeLine{ return PyInt\_FromLong((\textcolor{keywordtype}{long}) \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}()); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{py__curses_8h_a46541ef7ff1caab5f64826dfedb798ee}\label{py__curses_8h_a46541ef7ff1caab5f64826dfedb798ee}} 
+\index{py\_curses.h@{py\_curses.h}!NoArgReturnStringFunction@{NoArgReturnStringFunction}}
+\index{NoArgReturnStringFunction@{NoArgReturnStringFunction}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{NoArgReturnStringFunction}{NoArgReturnStringFunction}}
+{\footnotesize\ttfamily \#define No\+Arg\+Return\+String\+Function(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \mbox{\hyperlink{struct__object}{PyObject}} *PyCurses\_ \#\# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} (\mbox{\hyperlink{struct__object}{PyObject}} *\textcolor{keyword}{self}) \(\backslash\)}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{  PyCursesInitialised \(\backslash\)}
+\DoxyCodeLine{  return PyString\_FromString(\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}}()); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{py__curses_8h_a3a941afe09412c006830f40470d0a136}\label{py__curses_8h_a3a941afe09412c006830f40470d0a136}} 
+\index{py\_curses.h@{py\_curses.h}!NoArgTrueFalseFunction@{NoArgTrueFalseFunction}}
+\index{NoArgTrueFalseFunction@{NoArgTrueFalseFunction}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{NoArgTrueFalseFunction}{NoArgTrueFalseFunction}}
+{\footnotesize\ttfamily \#define No\+Arg\+True\+False\+Function(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \mbox{\hyperlink{struct__object}{PyObject}} *PyCurses\_ \#\# \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} (\mbox{\hyperlink{struct__object}{PyObject}} *\textcolor{keyword}{self}) \(\backslash\)}
+\DoxyCodeLine{\{ \(\backslash\)}
+\DoxyCodeLine{  PyCursesInitialised \(\backslash\)}
+\DoxyCodeLine{  if (\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} () == FALSE) \{ \(\backslash\)}
+\DoxyCodeLine{    Py\_INCREF(\mbox{\hyperlink{boolobject_8h_ad370273b9ddb8c4c535ee809fac4b41a}{Py\_False}}); \(\backslash\)}
+\DoxyCodeLine{    return \mbox{\hyperlink{boolobject_8h_ad370273b9ddb8c4c535ee809fac4b41a}{Py\_False}}; \(\backslash\)}
+\DoxyCodeLine{  \} \(\backslash\)}
+\DoxyCodeLine{  Py\_INCREF(\mbox{\hyperlink{boolobject_8h_a2e7a644528dfe7d96653d2f8bd0f94fc}{Py\_True}}); \(\backslash\)}
+\DoxyCodeLine{  return \mbox{\hyperlink{boolobject_8h_a2e7a644528dfe7d96653d2f8bd0f94fc}{Py\_True}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{py__curses_8h_a7c66b1355f9f33f09ada3d2f4e147c0c}\label{py__curses_8h_a7c66b1355f9f33f09ada3d2f4e147c0c}} 
+\index{py\_curses.h@{py\_curses.h}!PyCurses\_API\_pointers@{PyCurses\_API\_pointers}}
+\index{PyCurses\_API\_pointers@{PyCurses\_API\_pointers}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{PyCurses\_API\_pointers}{PyCurses\_API\_pointers}}
+{\footnotesize\ttfamily \#define Py\+Curses\+\_\+\+A\+P\+I\+\_\+pointers~4}
+
+\mbox{\Hypertarget{py__curses_8h_a8ce5d81ee2aa325184db599732f2daf3}\label{py__curses_8h_a8ce5d81ee2aa325184db599732f2daf3}} 
+\index{py\_curses.h@{py\_curses.h}!PyCurses\_CAPSULE\_NAME@{PyCurses\_CAPSULE\_NAME}}
+\index{PyCurses\_CAPSULE\_NAME@{PyCurses\_CAPSULE\_NAME}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{PyCurses\_CAPSULE\_NAME}{PyCurses\_CAPSULE\_NAME}}
+{\footnotesize\ttfamily \#define Py\+Curses\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME~\char`\"{}\+\_\+curses.\+\_\+\+C\+\_\+\+A\+PI\char`\"{}}
+
+\mbox{\Hypertarget{py__curses_8h_a0175db4bc7fbc24ef5ae07c76321024b}\label{py__curses_8h_a0175db4bc7fbc24ef5ae07c76321024b}} 
+\index{py\_curses.h@{py\_curses.h}!PyCursesInitialised@{PyCursesInitialised}}
+\index{PyCursesInitialised@{PyCursesInitialised}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{PyCursesInitialised}{PyCursesInitialised}}
+{\footnotesize\ttfamily \#define Py\+Curses\+Initialised~\{if (! ((\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))Py\+Curses\+\_\+\+A\+PI\mbox{[}2\mbox{]}) () ) return \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}}
+
+\mbox{\Hypertarget{py__curses_8h_a21435c20ffc942f9174fb3e0961257a0}\label{py__curses_8h_a21435c20ffc942f9174fb3e0961257a0}} 
+\index{py\_curses.h@{py\_curses.h}!PyCursesInitialisedColor@{PyCursesInitialisedColor}}
+\index{PyCursesInitialisedColor@{PyCursesInitialisedColor}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{PyCursesInitialisedColor}{PyCursesInitialisedColor}}
+{\footnotesize\ttfamily \#define Py\+Curses\+Initialised\+Color~\{if (! ((\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))Py\+Curses\+\_\+\+A\+PI\mbox{[}3\mbox{]}) () ) return \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}}
+
+\mbox{\Hypertarget{py__curses_8h_adcd6672d209e60053329c0e125a9864e}\label{py__curses_8h_adcd6672d209e60053329c0e125a9864e}} 
+\index{py\_curses.h@{py\_curses.h}!PyCursesSetupTermCalled@{PyCursesSetupTermCalled}}
+\index{PyCursesSetupTermCalled@{PyCursesSetupTermCalled}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{PyCursesSetupTermCalled}{PyCursesSetupTermCalled}}
+{\footnotesize\ttfamily \#define Py\+Curses\+Setup\+Term\+Called~\{if (! ((\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}))Py\+Curses\+\_\+\+A\+PI\mbox{[}1\mbox{]}) () ) return \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}}
+
+\mbox{\Hypertarget{py__curses_8h_a11756b5b8b95ce92b3219eed8df2e877}\label{py__curses_8h_a11756b5b8b95ce92b3219eed8df2e877}} 
+\index{py\_curses.h@{py\_curses.h}!PyCursesWindow\_Check@{PyCursesWindow\_Check}}
+\index{PyCursesWindow\_Check@{PyCursesWindow\_Check}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{PyCursesWindow\_Check}{PyCursesWindow\_Check}}
+{\footnotesize\ttfamily \#define Py\+Curses\+Window\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}}) == \&\mbox{\hyperlink{py__curses_8h_a671e4286125e6ac89bc179fa55247a48}{Py\+Curses\+Window\+\_\+\+Type}})}
+
+\mbox{\Hypertarget{py__curses_8h_a671e4286125e6ac89bc179fa55247a48}\label{py__curses_8h_a671e4286125e6ac89bc179fa55247a48}} 
+\index{py\_curses.h@{py\_curses.h}!PyCursesWindow\_Type@{PyCursesWindow\_Type}}
+\index{PyCursesWindow\_Type@{PyCursesWindow\_Type}!py\_curses.h@{py\_curses.h}}
+\subsubsection{\texorpdfstring{PyCursesWindow\_Type}{PyCursesWindow\_Type}}
+{\footnotesize\ttfamily \#define Py\+Curses\+Window\+\_\+\+Type~($\ast$(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$) Py\+Curses\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+

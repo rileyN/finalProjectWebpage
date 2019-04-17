@@ -1,0 +1,247 @@
+\hypertarget{test__numpy__dtypes_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+numpy\+\_\+dtypes.cpp File Reference}
+\label{test__numpy__dtypes_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_numpy\_dtypes.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_numpy\_dtypes.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pybind11/numpy.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_simple_struct}{Simple\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_partial_struct}{Partial\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_partial_nested_struct}{Partial\+Nested\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_unbound_struct}{Unbound\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_string_struct}{String\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_complex_struct}{Complex\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_array_struct}{Array\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_a}{A}}
+\item 
+struct \mbox{\hyperlink{struct_b}{B}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test__numpy__dtypes_8cpp_af652ff2c97994c9f23cef0993e95ae28}{P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED}}(\mbox{\hyperlink{abstract_8h_aef8d78cdf29fea309930170eca82dc73}{cls}})~\+\_\+\+\_\+pragma(pack(push, 1)) \mbox{\hyperlink{abstract_8h_aef8d78cdf29fea309930170eca82dc73}{cls}} \+\_\+\+\_\+pragma(pack(pop))
+\item 
+\#define \mbox{\hyperlink{test__numpy__dtypes_8cpp_acee0f2e93e591299b6c88e79b93df84d}{S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+V\+A\+LS}}(\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}})
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528}{E1}} \+: int64\+\_\+t \{ \mbox{\hyperlink{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528a7fc56270e7a70fa81a5935b72eacbe29}{E1\+::A}} = -\/1, 
+\mbox{\hyperlink{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528a9d5ed678fe57bcca610140957afab571}{E1\+::B}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701}{E2}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}{X}} = 1, 
+\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a5596231eabd6cf29050967d5ac83ad84}{Y}} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__numpy__dtypes_8cpp_af47f5e62ff6e7f5e6331f79af341def4}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{struct_simple_struct}{Simple\+Struct}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+\mbox{\hyperlink{test__numpy__dtypes_8cpp_a1506bfa791719c94bb17fd160a563717}{P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED}} (struct Packed\+Struct \{ \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classbool__}{bool\+\_\+}};\mbox{\hyperlink{_s_d_l__config_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} uint\+\_\+;float \mbox{\hyperlink{classfloat__}{float\+\_\+}};\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} double ldbl\+\_\+;\})
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__numpy__dtypes_8cpp_a4495adf00cf8c03aed9e0e2e9fa8c6fd}{operator$<$$<$}} (std\+::ostream \&os, const Packed\+Struct \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+\mbox{\hyperlink{test__numpy__dtypes_8cpp_addd13421a716c2a1a8aade773674fe51}{P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED}} (struct Nested\+Struct \{ \mbox{\hyperlink{struct_simple_struct}{Simple\+Struct}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}};Packed\+Struct \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}};\})
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__numpy__dtypes_8cpp_a4193cac39d8db7c85d793a533ce4680c}{operator$<$$<$}} (std\+::ostream \&os, const Nested\+Struct \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__numpy__dtypes_8cpp_a536d3323f42e3ee4b95cd9d74f0df833}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{struct_complex_struct}{Complex\+Struct}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+\mbox{\hyperlink{test__numpy__dtypes_8cpp_ad21b69bb8e375db7274383aaf890fb29}{P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED}} (struct Struct\+With\+Ugly\+Names \{ \mbox{\hyperlink{_s_d_l__config_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} \+\_\+\+\_\+x\+\_\+\+\_\+;\mbox{\hyperlink{_s_d_l__config_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t}} \+\_\+\+\_\+y\+\_\+\+\_\+;\})
+\item 
+\mbox{\hyperlink{test__numpy__dtypes_8cpp_a66f928a4c62ea91918092b1966d43065}{P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED}} (struct Enum\+Struct \{ \mbox{\hyperlink{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528}{E1}} e1;\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701}{E2}} e2;\})
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__numpy__dtypes_8cpp_ae8f0ce12766d558960aa082f167d9102}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{struct_string_struct}{String\+Struct}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__numpy__dtypes_8cpp_ad34952e14976ebbc24d1f941e1c58e38}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{struct_array_struct}{Array\+Struct}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__numpy__dtypes_8cpp_a7498d1fb1accef59c454a2f6dce1396a}{operator$<$$<$}} (std\+::ostream \&os, const Enum\+Struct \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a52f38e7d822a46377fde7a02708eedb1}{py\+::array}} \mbox{\hyperlink{test__numpy__dtypes_8cpp_a0406a95602e71aec9d9d8e879fcd71ef}{mkarray\+\_\+via\+\_\+buffer}} (\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})
+\item 
+{\footnotesize template$<$typename S $>$ }\\py\+::array\+\_\+t$<$ S, 0 $>$ \mbox{\hyperlink{test__numpy__dtypes_8cpp_abef4ffb41d2b4dc920af79438875ee06}{create\+\_\+recarray}} (\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})
+\item 
+{\footnotesize template$<$typename S $>$ }\\py\+::list \mbox{\hyperlink{test__numpy__dtypes_8cpp_ab3a37caa7679f449391d1527d9d157bc}{print\+\_\+recarray}} (py\+::array\+\_\+t$<$ S, 0 $>$ \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}})
+\item 
+py\+::array\+\_\+t$<$ \mbox{\hyperlink{_s_d_l__config_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}}, 0 $>$ \mbox{\hyperlink{test__numpy__dtypes_8cpp_a47b0799dcfda354bb7ca69cbc2949f74}{test\+\_\+array\+\_\+ctors}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}})
+\item 
+py\+::list \mbox{\hyperlink{test__numpy__dtypes_8cpp_a5b3c8e59735b6955dc3d63342f339cb3}{test\+\_\+dtype\+\_\+ctors}} ()
+\item 
+\mbox{\hyperlink{test__numpy__dtypes_8cpp_a71861b7a2103581b46a0822b1d5d7875}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (numpy\+\_\+dtypes, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_af652ff2c97994c9f23cef0993e95ae28}\label{test__numpy__dtypes_8cpp_af652ff2c97994c9f23cef0993e95ae28}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!PYBIND11\_PACKED@{PYBIND11\_PACKED}}
+\index{PYBIND11\_PACKED@{PYBIND11\_PACKED}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_PACKED}{PYBIND11\_PACKED}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_aef8d78cdf29fea309930170eca82dc73}{cls}} }\end{DoxyParamCaption})~\+\_\+\+\_\+pragma(pack(push, 1)) \mbox{\hyperlink{abstract_8h_aef8d78cdf29fea309930170eca82dc73}{cls}} \+\_\+\+\_\+pragma(pack(pop))}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_acee0f2e93e591299b6c88e79b93df84d}\label{test__numpy__dtypes_8cpp_acee0f2e93e591299b6c88e79b93df84d}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!SET\_TEST\_VALS@{SET\_TEST\_VALS}}
+\index{SET\_TEST\_VALS@{SET\_TEST\_VALS}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{SET\_TEST\_VALS}{SET\_TEST\_VALS}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+T\+E\+S\+T\+\_\+\+V\+A\+LS(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  }\item[{}]{\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{    s.bool\_ = (\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}) \% 2 != 0; \(\backslash\)}
+\DoxyCodeLine{    s.uint\_ = (\mbox{\hyperlink{_s_d_l__config_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}}) (\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}); \(\backslash\)}
+\DoxyCodeLine{    s.float\_ = (float) (\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}) * 1.5f; \(\backslash\)}
+\DoxyCodeLine{    s.ldbl\_ = (\textcolor{keywordtype}{long} double) (\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}) * -2.5L; \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528}\label{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!E1@{E1}}
+\index{E1@{E1}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{E1}{E1}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528}{E1}} \+: \mbox{\hyperlink{_s_d_l__config_8h_adec1df1b8b51cb32b77e5b86fff46471}{int64\+\_\+t}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!A@{A}}}\mbox{\Hypertarget{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528a7fc56270e7a70fa81a5935b72eacbe29}\label{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528a7fc56270e7a70fa81a5935b72eacbe29}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!B@{B}}}\mbox{\Hypertarget{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528a9d5ed678fe57bcca610140957afab571}\label{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528a9d5ed678fe57bcca610140957afab571}} 
+B&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701}\label{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!E2@{E2}}
+\index{E2@{E2}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{E2}{E2}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701}{E2}} \+: \mbox{\hyperlink{_s_d_l__config_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!X@{X}}}\mbox{\Hypertarget{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}\label{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a58833a3110c570fb05130d40c365d1e4}} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!Y@{Y}}}\mbox{\Hypertarget{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a5596231eabd6cf29050967d5ac83ad84}\label{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701a5596231eabd6cf29050967d5ac83ad84}} 
+Y&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_abef4ffb41d2b4dc920af79438875ee06}\label{test__numpy__dtypes_8cpp_abef4ffb41d2b4dc920af79438875ee06}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!create\_recarray@{create\_recarray}}
+\index{create\_recarray@{create\_recarray}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{create\_recarray()}{create\_recarray()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+py\+::array\+\_\+t$<$S, 0$>$ create\+\_\+recarray (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}}}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a0406a95602e71aec9d9d8e879fcd71ef}\label{test__numpy__dtypes_8cpp_a0406a95602e71aec9d9d8e879fcd71ef}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!mkarray\_via\_buffer@{mkarray\_via\_buffer}}
+\index{mkarray\_via\_buffer@{mkarray\_via\_buffer}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{mkarray\_via\_buffer()}{mkarray\_via\_buffer()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a52f38e7d822a46377fde7a02708eedb1}{py\+::array}} mkarray\+\_\+via\+\_\+buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}}}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_af47f5e62ff6e7f5e6331f79af341def4}\label{test__numpy__dtypes_8cpp_af47f5e62ff6e7f5e6331f79af341def4}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{struct_simple_struct}{Simple\+Struct}} \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a4495adf00cf8c03aed9e0e2e9fa8c6fd}\label{test__numpy__dtypes_8cpp_a4495adf00cf8c03aed9e0e2e9fa8c6fd}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const Packed\+Struct \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a4193cac39d8db7c85d793a533ce4680c}\label{test__numpy__dtypes_8cpp_a4193cac39d8db7c85d793a533ce4680c}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const Nested\+Struct \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a536d3323f42e3ee4b95cd9d74f0df833}\label{test__numpy__dtypes_8cpp_a536d3323f42e3ee4b95cd9d74f0df833}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{struct_complex_struct}{Complex\+Struct}} \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_ae8f0ce12766d558960aa082f167d9102}\label{test__numpy__dtypes_8cpp_ae8f0ce12766d558960aa082f167d9102}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{struct_string_struct}{String\+Struct}} \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_ad34952e14976ebbc24d1f941e1c58e38}\label{test__numpy__dtypes_8cpp_ad34952e14976ebbc24d1f941e1c58e38}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{struct_array_struct}{Array\+Struct}} \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a7498d1fb1accef59c454a2f6dce1396a}\label{test__numpy__dtypes_8cpp_a7498d1fb1accef59c454a2f6dce1396a}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const Enum\+Struct \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_ab3a37caa7679f449391d1527d9d157bc}\label{test__numpy__dtypes_8cpp_ab3a37caa7679f449391d1527d9d157bc}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!print\_recarray@{print\_recarray}}
+\index{print\_recarray@{print\_recarray}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{print\_recarray()}{print\_recarray()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+py\+::list print\+\_\+recarray (\begin{DoxyParamCaption}\item[{py\+::array\+\_\+t$<$ S, 0 $>$}]{arr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a1506bfa791719c94bb17fd160a563717}\label{test__numpy__dtypes_8cpp_a1506bfa791719c94bb17fd160a563717}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!PYBIND11\_PACKED@{PYBIND11\_PACKED}}
+\index{PYBIND11\_PACKED@{PYBIND11\_PACKED}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_PACKED()}{PYBIND11\_PACKED()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED (\begin{DoxyParamCaption}\item[{struct Packed\+Struct \{ \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classbool__}{bool\+\_\+}};\mbox{\hyperlink{_s_d_l__config_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} uint\+\_\+;float \mbox{\hyperlink{classfloat__}{float\+\_\+}};\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} double ldbl\+\_\+;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_addd13421a716c2a1a8aade773674fe51}\label{test__numpy__dtypes_8cpp_addd13421a716c2a1a8aade773674fe51}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!PYBIND11\_PACKED@{PYBIND11\_PACKED}}
+\index{PYBIND11\_PACKED@{PYBIND11\_PACKED}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_PACKED()}{PYBIND11\_PACKED()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED (\begin{DoxyParamCaption}\item[{struct Nested\+Struct \{ \mbox{\hyperlink{struct_simple_struct}{Simple\+Struct}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}};Packed\+Struct \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}};\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_ad21b69bb8e375db7274383aaf890fb29}\label{test__numpy__dtypes_8cpp_ad21b69bb8e375db7274383aaf890fb29}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!PYBIND11\_PACKED@{PYBIND11\_PACKED}}
+\index{PYBIND11\_PACKED@{PYBIND11\_PACKED}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_PACKED()}{PYBIND11\_PACKED()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED (\begin{DoxyParamCaption}\item[{struct Struct\+With\+Ugly\+Names \{ \mbox{\hyperlink{_s_d_l__config_8h_aef44329758059c91c76d334e8fc09700}{int8\+\_\+t}} \+\_\+\+\_\+x\+\_\+\+\_\+;\mbox{\hyperlink{_s_d_l__config_8h_aaa5d1cd013383c889537491c3cfd9aad}{uint64\+\_\+t}} \+\_\+\+\_\+y\+\_\+\+\_\+;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a66f928a4c62ea91918092b1966d43065}\label{test__numpy__dtypes_8cpp_a66f928a4c62ea91918092b1966d43065}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!PYBIND11\_PACKED@{PYBIND11\_PACKED}}
+\index{PYBIND11\_PACKED@{PYBIND11\_PACKED}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_PACKED()}{PYBIND11\_PACKED()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+P\+A\+C\+K\+ED (\begin{DoxyParamCaption}\item[{struct Enum\+Struct \{ \mbox{\hyperlink{test__numpy__dtypes_8cpp_ac848181148f36d4a46a0fb4d15d17528}{E1}} e1;\mbox{\hyperlink{test__numpy__dtypes_8cpp_afa8c5d6704e6f74df94fd42e62e1f701}{E2}} e2;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a47b0799dcfda354bb7ca69cbc2949f74}\label{test__numpy__dtypes_8cpp_a47b0799dcfda354bb7ca69cbc2949f74}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!test\_array\_ctors@{test\_array\_ctors}}
+\index{test\_array\_ctors@{test\_array\_ctors}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{test\_array\_ctors()}{test\_array\_ctors()}}
+{\footnotesize\ttfamily py\+::array\+\_\+t$<$\mbox{\hyperlink{_s_d_l__config_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}}, 0$>$ test\+\_\+array\+\_\+ctors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a5b3c8e59735b6955dc3d63342f339cb3}\label{test__numpy__dtypes_8cpp_a5b3c8e59735b6955dc3d63342f339cb3}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!test\_dtype\_ctors@{test\_dtype\_ctors}}
+\index{test\_dtype\_ctors@{test\_dtype\_ctors}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{test\_dtype\_ctors()}{test\_dtype\_ctors()}}
+{\footnotesize\ttfamily py\+::list test\+\_\+dtype\+\_\+ctors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__dtypes_8cpp_a71861b7a2103581b46a0822b1d5d7875}\label{test__numpy__dtypes_8cpp_a71861b7a2103581b46a0822b1d5d7875}} 
+\index{test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_numpy\_dtypes.cpp@{test\_numpy\_dtypes.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{numpy\+\_\+dtypes}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+

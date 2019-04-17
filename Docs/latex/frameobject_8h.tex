@@ -1,0 +1,113 @@
+\hypertarget{frameobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/frameobject.h File Reference}
+\label{frameobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/frameobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/frameobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_try_block}{Py\+Try\+Block}}
+\item 
+struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{frameobject_8h_a08f9777ee608b36e0aad194c282cca86}{Py\+Frame\+\_\+\+Check}}(op)~((op)-\/$>$ob\+\_\+type == \&Py\+Frame\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{frameobject_8h_a9c7646acc4083c85c743b31c5a7e6414}{Py\+Frame\+\_\+\+Is\+Restricted}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}})-\/$>$f\+\_\+builtins != (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}})-\/$>$f\+\_\+tstate-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8df6d532843e6b3c43d14798522b9f44}{interp}}-\/$>$builtins)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}} \mbox{\hyperlink{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}{Py\+Frame\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{frameobject_8h_a537b89df1538348e7409e20fbf801276}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Frame\+\_\+\+Type
+\item 
+\mbox{\hyperlink{frameobject_8h_a05cebb1580b787b65b175502a4952f46}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}{Py\+Frame\+Object}} $\ast$) Py\+Frame\+\_\+\+New(\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$
+\item 
+\mbox{\hyperlink{struct_py_code_object}{Py\+Code\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{frameobject_8h_afacaed3098e489ee9f0228353f8ddca6}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+Frame\+\_\+\+Block\+Setup(\mbox{\hyperlink{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}{Py\+Frame\+Object}} $\ast$
+\item 
+\mbox{\hyperlink{frameobject_8h_a8d4d03f280a5b12963b0494577619d47}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{struct_py_try_block}{Py\+Try\+Block}} $\ast$) Py\+Frame\+\_\+\+Block\+Pop(\mbox{\hyperlink{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}{Py\+Frame\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{frameobject_8h_aafaea598172d5ca02411662a60abd0c5}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$$\ast$) Py\+Frame\+\_\+\+Extend\+Stack(\mbox{\hyperlink{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}{Py\+Frame\+Object}} $\ast$
+\item 
+\mbox{\hyperlink{frameobject_8h_a096e3edbec1dcbe3785a6982796cc3af}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Frame\+\_\+\+Clear\+Free\+List(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_py_code_object}{Py\+Code\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{frameobject_8h_a61569f2965b7a369eb10b6d75d410d11}{int}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{frameobject_8h_a08f9777ee608b36e0aad194c282cca86}\label{frameobject_8h_a08f9777ee608b36e0aad194c282cca86}} 
+\index{frameobject.h@{frameobject.h}!PyFrame\_Check@{PyFrame\_Check}}
+\index{PyFrame\_Check@{PyFrame\_Check}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyFrame\_Check}{PyFrame\_Check}}
+{\footnotesize\ttfamily \#define Py\+Frame\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~((op)-\/$>$ob\+\_\+type == \&Py\+Frame\+\_\+\+Type)}
+
+\mbox{\Hypertarget{frameobject_8h_a9c7646acc4083c85c743b31c5a7e6414}\label{frameobject_8h_a9c7646acc4083c85c743b31c5a7e6414}} 
+\index{frameobject.h@{frameobject.h}!PyFrame\_IsRestricted@{PyFrame\_IsRestricted}}
+\index{PyFrame\_IsRestricted@{PyFrame\_IsRestricted}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyFrame\_IsRestricted}{PyFrame\_IsRestricted}}
+{\footnotesize\ttfamily \#define Py\+Frame\+\_\+\+Is\+Restricted(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}})-\/$>$f\+\_\+builtins != (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}})-\/$>$f\+\_\+tstate-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8df6d532843e6b3c43d14798522b9f44}{interp}}-\/$>$builtins)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}\label{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}} 
+\index{frameobject.h@{frameobject.h}!PyFrameObject@{PyFrameObject}}
+\index{PyFrameObject@{PyFrameObject}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyFrameObject}{PyFrameObject}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}}  \mbox{\hyperlink{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}{Py\+Frame\+Object}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{frameobject_8h_a537b89df1538348e7409e20fbf801276}\label{frameobject_8h_a537b89df1538348e7409e20fbf801276}} 
+\index{frameobject.h@{frameobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{frameobject_8h_a05cebb1580b787b65b175502a4952f46}\label{frameobject_8h_a05cebb1580b787b65b175502a4952f46}} 
+\index{frameobject.h@{frameobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{frameobject_8h_a45f431f2cbaf64f690de7c3e892d089d}{Py\+Frame\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{frameobject_8h_afacaed3098e489ee9f0228353f8ddca6}\label{frameobject_8h_afacaed3098e489ee9f0228353f8ddca6}} 
+\index{frameobject.h@{frameobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_py_code_object}{Py\+Code\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{frameobject_8h_a8d4d03f280a5b12963b0494577619d47}\label{frameobject_8h_a8d4d03f280a5b12963b0494577619d47}} 
+\index{frameobject.h@{frameobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_py_try_block}{Py\+Try\+Block}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{frameobject_8h_aafaea598172d5ca02411662a60abd0c5}\label{frameobject_8h_aafaea598172d5ca02411662a60abd0c5}} 
+\index{frameobject.h@{frameobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{frameobject_8h_a096e3edbec1dcbe3785a6982796cc3af}\label{frameobject_8h_a096e3edbec1dcbe3785a6982796cc3af}} 
+\index{frameobject.h@{frameobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{frameobject_8h_a61569f2965b7a369eb10b6d75d410d11}\label{frameobject_8h_a61569f2965b7a369eb10b6d75d410d11}} 
+\index{frameobject.h@{frameobject.h}!int@{int}}
+\index{int@{int}!frameobject.h@{frameobject.h}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily int}
+

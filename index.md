@@ -8,7 +8,7 @@
 
 
 ## Documentation
-[Click here for documentation](DOCUMENTATIONLINK)
+[Click here for documentation](Docs/html/index.html)
 
 ## Gameplay Trailer
 

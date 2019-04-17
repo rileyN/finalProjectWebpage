@@ -1,0 +1,280 @@
+\hypertarget{classref}{}\section{ref$<$ T $>$ Class Template Reference}
+\label{classref}\index{ref$<$ T $>$@{ref$<$ T $>$}}
+
+
+Reference counting helper.  
+
+
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classref_a32c2f3c2bde5b57e6ef0a80254773854}{ref}} ()
+\begin{DoxyCompactList}\small\item\em Create a nullptr reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref_ac593e903c13a8dfe520978053ac4b319}{ref}} (T $\ast$\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}})
+\begin{DoxyCompactList}\small\item\em Construct a reference from a pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref_ab6041fce6b4a78faac0613b3b05e74e0}{ref}} (const \mbox{\hyperlink{classref}{ref}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref_aad576503d5b820e6d1bbf33d881dc7a7}{ref}} (\mbox{\hyperlink{classref}{ref}} \&\&\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref_a0f91cf031c803c7a34471dabce694454}{$\sim$ref}} ()
+\begin{DoxyCompactList}\small\item\em Destroy this reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_aed9cb8611b7e85e2a3ee5d05b13b9a0b}{operator=}} (\mbox{\hyperlink{classref}{ref}} \&\&\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})
+\begin{DoxyCompactList}\small\item\em Move another reference into the current one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_a1155f824011414922d9b6a3b5d90c8d8}{operator=}} (const \mbox{\hyperlink{classref}{ref}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})
+\begin{DoxyCompactList}\small\item\em Overwrite this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref}{ref}} \& \mbox{\hyperlink{classref_a16ebd4ab3890e76d47cf7ef30f338690}{operator=}} (T $\ast$\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}})
+\begin{DoxyCompactList}\small\item\em Overwrite this reference with a pointer to another object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref_a8a96aae6d9787e988ff148d1dd9a773d}{operator==}} (const \mbox{\hyperlink{classref}{ref}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}{operator!=}} (const \mbox{\hyperlink{classref}{ref}} \&\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with another reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref_a6131b1c40dd6977c7e005826ba660213}{operator==}} (const T $\ast$\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}}) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with a pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref_a932a54e9c0e107e7edf78d550ef4852f}{operator!=}} (const T $\ast$\mbox{\hyperlink{pystrtod_8h_a671b2e1a427060ad8b5362882ed58f5b}{ptr}}) const
+\begin{DoxyCompactList}\small\item\em Compare this reference with a pointer. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classref_acc07281f5c8afd7660e0965da19a2c0c}{operator-\/$>$}} ()
+\begin{DoxyCompactList}\small\item\em Access the object referenced by this reference. \end{DoxyCompactList}\item 
+const T $\ast$ \mbox{\hyperlink{classref_a2b60a27dafb793f808195c2ddfd8d013}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em Access the object referenced by this reference. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classref_a38e0c7c7edd142e8f57365866060c64a}{operator $\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Return a C++ reference to the referenced object. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{classref_a600454c0804772ec0b144ebddcfce263}{operator $\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Return a const C++ reference to the referenced object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classref_a67b4f9ea37f8b63ea1a6638f228d8b5a}{operator T $\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Return a pointer to the referenced object. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classref_ad70261d8ee00b42350f69c96be30beaa}{get\+\_\+ptr}} ()
+\begin{DoxyCompactList}\small\item\em Return a const pointer to the referenced object. \end{DoxyCompactList}\item 
+const T $\ast$ \mbox{\hyperlink{classref_a76b8f2eec00eb3c3041cc9c7fb14ba0b}{get\+\_\+ptr}} () const
+\begin{DoxyCompactList}\small\item\em Return a pointer to the referenced object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class ref$<$ T $>$}
+
+Reference counting helper. 
+
+The {\itshape ref} refeference template is a simple wrapper to store a pointer to an object. It takes care of increasing and decreasing the reference count of the object. When the last reference goes out of scope, the associated object will be deallocated. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classref_a32c2f3c2bde5b57e6ef0a80254773854}\label{classref_a32c2f3c2bde5b57e6ef0a80254773854}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!ref@{ref}}
+\index{ref@{ref}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{ref()}{ref()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::\mbox{\hyperlink{classref}{ref}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a nullptr reference. 
+
+\mbox{\Hypertarget{classref_ac593e903c13a8dfe520978053ac4b319}\label{classref_ac593e903c13a8dfe520978053ac4b319}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!ref@{ref}}
+\index{ref@{ref}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{ref()}{ref()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::\mbox{\hyperlink{classref}{ref}} (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a reference from a pointer. 
+
+\mbox{\Hypertarget{classref_ab6041fce6b4a78faac0613b3b05e74e0}\label{classref_ab6041fce6b4a78faac0613b3b05e74e0}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!ref@{ref}}
+\index{ref@{ref}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{ref()}{ref()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::\mbox{\hyperlink{classref}{ref}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classref}{ref}}$<$ T $>$ \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{classref_aad576503d5b820e6d1bbf33d881dc7a7}\label{classref_aad576503d5b820e6d1bbf33d881dc7a7}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!ref@{ref}}
+\index{ref@{ref}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{ref()}{ref()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::\mbox{\hyperlink{classref}{ref}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classref}{ref}}$<$ T $>$ \&\&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor. 
+
+\mbox{\Hypertarget{classref_a0f91cf031c803c7a34471dabce694454}\label{classref_a0f91cf031c803c7a34471dabce694454}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!````~ref@{$\sim$ref}}
+\index{````~ref@{$\sim$ref}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{$\sim$ref()}{~ref()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classref}{ref}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy this reference. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classref_ad70261d8ee00b42350f69c96be30beaa}\label{classref_ad70261d8ee00b42350f69c96be30beaa}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!get\_ptr@{get\_ptr}}
+\index{get\_ptr@{get\_ptr}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{get\_ptr()}{get\_ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::get\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const pointer to the referenced object. 
+
+\mbox{\Hypertarget{classref_a76b8f2eec00eb3c3041cc9c7fb14ba0b}\label{classref_a76b8f2eec00eb3c3041cc9c7fb14ba0b}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!get\_ptr@{get\_ptr}}
+\index{get\_ptr@{get\_ptr}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{get\_ptr()}{get\_ptr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T$\ast$ \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::get\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a pointer to the referenced object. 
+
+\mbox{\Hypertarget{classref_a38e0c7c7edd142e8f57365866060c64a}\label{classref_a38e0c7c7edd142e8f57365866060c64a}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a C++ reference to the referenced object. 
+
+\mbox{\Hypertarget{classref_a600454c0804772ec0b144ebddcfce263}\label{classref_a600454c0804772ec0b144ebddcfce263}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const C++ reference to the referenced object. 
+
+\mbox{\Hypertarget{classref_a67b4f9ea37f8b63ea1a6638f228d8b5a}\label{classref_a67b4f9ea37f8b63ea1a6638f228d8b5a}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator T $\ast$@{operator T $\ast$}}
+\index{operator T $\ast$@{operator T $\ast$}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator T $\ast$()}{operator T *()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator T $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a pointer to the referenced object. 
+
+\mbox{\Hypertarget{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}\label{classref_ae4fb583b5cdbd8659c8dfc91ca5ba4f2}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classref}{ref}}$<$ T $>$ \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare this reference with another reference. 
+
+\mbox{\Hypertarget{classref_a932a54e9c0e107e7edf78d550ef4852f}\label{classref_a932a54e9c0e107e7edf78d550ef4852f}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const T $\ast$}]{ptr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare this reference with a pointer. 
+
+\mbox{\Hypertarget{classref_acc07281f5c8afd7660e0965da19a2c0c}\label{classref_acc07281f5c8afd7660e0965da19a2c0c}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access the object referenced by this reference. 
+
+\mbox{\Hypertarget{classref_a2b60a27dafb793f808195c2ddfd8d013}\label{classref_a2b60a27dafb793f808195c2ddfd8d013}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T$\ast$ \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access the object referenced by this reference. 
+
+\mbox{\Hypertarget{classref_aed9cb8611b7e85e2a3ee5d05b13b9a0b}\label{classref_aed9cb8611b7e85e2a3ee5d05b13b9a0b}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}\& \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classref}{ref}}$<$ T $>$ \&\&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move another reference into the current one. 
+
+\mbox{\Hypertarget{classref_a1155f824011414922d9b6a3b5d90c8d8}\label{classref_a1155f824011414922d9b6a3b5d90c8d8}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}\& \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classref}{ref}}$<$ T $>$ \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overwrite this reference with another reference. 
+
+\mbox{\Hypertarget{classref_a16ebd4ab3890e76d47cf7ef30f338690}\label{classref_a16ebd4ab3890e76d47cf7ef30f338690}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classref}{ref}}\& \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overwrite this reference with a pointer to another object. 
+
+\mbox{\Hypertarget{classref_a8a96aae6d9787e988ff148d1dd9a773d}\label{classref_a8a96aae6d9787e988ff148d1dd9a773d}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classref}{ref}}$<$ T $>$ \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare this reference with another reference. 
+
+\mbox{\Hypertarget{classref_a6131b1c40dd6977c7e005826ba660213}\label{classref_a6131b1c40dd6977c7e005826ba660213}} 
+\index{ref$<$ T $>$@{ref$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!ref$<$ T $>$@{ref$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{classref}{ref}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const T $\ast$}]{ptr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare this reference with a pointer. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/\mbox{\hyperlink{pybind11_2tests_2object_8h}{object.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,201 @@
+\hypertarget{constructor__stats_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/constructor\+\_\+stats.h File Reference}
+\label{constructor__stats_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/constructor\_stats.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/constructor\_stats.h}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$typeindex$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_constructor_stats}{Constructor\+Stats}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_aa0a336255601a8bf0783b2413ed3fd8b}{track\+\_\+copy\+\_\+created}} (T $\ast$inst)
+\item 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a57f93fb95cf8487da895b53c296e2740}{track\+\_\+move\+\_\+created}} (T $\ast$inst)
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_ac3106ef7c48c8c449f52c1b21c0d4ede}{track\+\_\+copy\+\_\+assigned}} (T $\ast$, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a13d16d6eea0b1903e331fed093d6b19f}{track\+\_\+move\+\_\+assigned}} (T $\ast$, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_aeb80390aebc9afb3e6a8a82e9b7bd092}{track\+\_\+default\+\_\+created}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a3953d62e34d96650851944033b72acf4}{track\+\_\+created}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a0e3f6ec1076b02b53362c05ae144cb0b}{track\+\_\+destroyed}} (T $\ast$inst)
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a135b137911fc704373031a99c25f3fa9}{track\+\_\+values}} (T $\ast$, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+const char $\ast$ \mbox{\hyperlink{constructor__stats_8h_a127a5762b49cc6b4c93d7f16fc3704ea}{format\+\_\+ptrs}} (const char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}})
+\begin{DoxyCompactList}\small\item\em Don\textquotesingle{}t cast pointers to Python, print them as strings. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{node_8h_a62b34ca1362fe946082b7aa0cd9be844}{py\+::str}} \mbox{\hyperlink{constructor__stats_8h_a5ef99ffe03052861fe831c98e5c70813}{format\+\_\+ptrs}} (T $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\auto \mbox{\hyperlink{constructor__stats_8h_a4e19150b49c3b1c959f13550395756f6}{format\+\_\+ptrs}} (T \&\&\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}) -\/$>$ decltype(std\+::forward$<$ T $>$(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))
+\item 
+{\footnotesize template$<$class T , typename... Output$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a18bdcc4ac8e3ee4025f3756a24df122d}{print\+\_\+constr\+\_\+details}} (T $\ast$inst, const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&action, Output \&\&...output)
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a32969c46a6c1dc8598af2eace4ab8b1f}{print\+\_\+copy\+\_\+created}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_afc4ab5ed8aa28c7bb1750d0ff8372db3}{print\+\_\+move\+\_\+created}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a3498f0d6e5c700739bcb60ba27a01d1b}{print\+\_\+copy\+\_\+assigned}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_add4269817c3271c461e2ee9b8b69945a}{print\+\_\+move\+\_\+assigned}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a01b340592c6e9622a0f4f16445fa2f4a}{print\+\_\+default\+\_\+created}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a447d91e14ea0054addb8bfde726e2c48}{print\+\_\+created}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_ad6aced3fb84b509cc350357e2adc6423}{print\+\_\+destroyed}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\item 
+{\footnotesize template$<$class T , typename... Values$>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{constructor__stats_8h_a652f4308190d7a481f3b8331a218f232}{print\+\_\+values}} (T $\ast$inst, Values \&\&...\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0aa8cf39c79d294b1d9f4daef5020bec}{values}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{constructor__stats_8h_a127a5762b49cc6b4c93d7f16fc3704ea}\label{constructor__stats_8h_a127a5762b49cc6b4c93d7f16fc3704ea}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!format\_ptrs@{format\_ptrs}}
+\index{format\_ptrs@{format\_ptrs}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{format\_ptrs()}{format\_ptrs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily const char$\ast$ format\+\_\+ptrs (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Don\textquotesingle{}t cast pointers to Python, print them as strings. 
+
+\mbox{\Hypertarget{constructor__stats_8h_a5ef99ffe03052861fe831c98e5c70813}\label{constructor__stats_8h_a5ef99ffe03052861fe831c98e5c70813}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!format\_ptrs@{format\_ptrs}}
+\index{format\_ptrs@{format\_ptrs}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{format\_ptrs()}{format\_ptrs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{node_8h_a62b34ca1362fe946082b7aa0cd9be844}{py\+::str}} format\+\_\+ptrs (\begin{DoxyParamCaption}\item[{T $\ast$}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a4e19150b49c3b1c959f13550395756f6}\label{constructor__stats_8h_a4e19150b49c3b1c959f13550395756f6}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!format\_ptrs@{format\_ptrs}}
+\index{format\_ptrs@{format\_ptrs}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{format\_ptrs()}{format\_ptrs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto format\+\_\+ptrs (\begin{DoxyParamCaption}\item[{T \&\&}]{x }\end{DoxyParamCaption}) -\/$>$ decltype(std\+::forward$<$T$>$(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})) }
+
+\mbox{\Hypertarget{constructor__stats_8h_a18bdcc4ac8e3ee4025f3756a24df122d}\label{constructor__stats_8h_a18bdcc4ac8e3ee4025f3756a24df122d}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_constr\_details@{print\_constr\_details}}
+\index{print\_constr\_details@{print\_constr\_details}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_constr\_details()}{print\_constr\_details()}}
+{\footnotesize\ttfamily template$<$class T , typename... Output$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+constr\+\_\+details (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&}]{action,  }\item[{Output \&\&...}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a3498f0d6e5c700739bcb60ba27a01d1b}\label{constructor__stats_8h_a3498f0d6e5c700739bcb60ba27a01d1b}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_copy\_assigned@{print\_copy\_assigned}}
+\index{print\_copy\_assigned@{print\_copy\_assigned}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_copy\_assigned()}{print\_copy\_assigned()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+copy\+\_\+assigned (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a32969c46a6c1dc8598af2eace4ab8b1f}\label{constructor__stats_8h_a32969c46a6c1dc8598af2eace4ab8b1f}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_copy\_created@{print\_copy\_created}}
+\index{print\_copy\_created@{print\_copy\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_copy\_created()}{print\_copy\_created()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+copy\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a447d91e14ea0054addb8bfde726e2c48}\label{constructor__stats_8h_a447d91e14ea0054addb8bfde726e2c48}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_created@{print\_created}}
+\index{print\_created@{print\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_created()}{print\_created()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a01b340592c6e9622a0f4f16445fa2f4a}\label{constructor__stats_8h_a01b340592c6e9622a0f4f16445fa2f4a}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_default\_created@{print\_default\_created}}
+\index{print\_default\_created@{print\_default\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_default\_created()}{print\_default\_created()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+default\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_ad6aced3fb84b509cc350357e2adc6423}\label{constructor__stats_8h_ad6aced3fb84b509cc350357e2adc6423}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_destroyed@{print\_destroyed}}
+\index{print\_destroyed@{print\_destroyed}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_destroyed()}{print\_destroyed()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+destroyed (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_add4269817c3271c461e2ee9b8b69945a}\label{constructor__stats_8h_add4269817c3271c461e2ee9b8b69945a}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_move\_assigned@{print\_move\_assigned}}
+\index{print\_move\_assigned@{print\_move\_assigned}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_move\_assigned()}{print\_move\_assigned()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+move\+\_\+assigned (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_afc4ab5ed8aa28c7bb1750d0ff8372db3}\label{constructor__stats_8h_afc4ab5ed8aa28c7bb1750d0ff8372db3}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_move\_created@{print\_move\_created}}
+\index{print\_move\_created@{print\_move\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_move\_created()}{print\_move\_created()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+move\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a652f4308190d7a481f3b8331a218f232}\label{constructor__stats_8h_a652f4308190d7a481f3b8331a218f232}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!print\_values@{print\_values}}
+\index{print\_values@{print\_values}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{print\_values()}{print\_values()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} print\+\_\+values (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_ac3106ef7c48c8c449f52c1b21c0d4ede}\label{constructor__stats_8h_ac3106ef7c48c8c449f52c1b21c0d4ede}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_copy\_assigned@{track\_copy\_assigned}}
+\index{track\_copy\_assigned@{track\_copy\_assigned}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_copy\_assigned()}{track\_copy\_assigned()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+copy\+\_\+assigned (\begin{DoxyParamCaption}\item[{T $\ast$}]{,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_aa0a336255601a8bf0783b2413ed3fd8b}\label{constructor__stats_8h_aa0a336255601a8bf0783b2413ed3fd8b}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_copy\_created@{track\_copy\_created}}
+\index{track\_copy\_created@{track\_copy\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_copy\_created()}{track\_copy\_created()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+copy\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a3953d62e34d96650851944033b72acf4}\label{constructor__stats_8h_a3953d62e34d96650851944033b72acf4}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_created@{track\_created}}
+\index{track\_created@{track\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_created()}{track\_created()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_aeb80390aebc9afb3e6a8a82e9b7bd092}\label{constructor__stats_8h_aeb80390aebc9afb3e6a8a82e9b7bd092}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_default\_created@{track\_default\_created}}
+\index{track\_default\_created@{track\_default\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_default\_created()}{track\_default\_created()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+default\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a0e3f6ec1076b02b53362c05ae144cb0b}\label{constructor__stats_8h_a0e3f6ec1076b02b53362c05ae144cb0b}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_destroyed@{track\_destroyed}}
+\index{track\_destroyed@{track\_destroyed}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_destroyed()}{track\_destroyed()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+destroyed (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a13d16d6eea0b1903e331fed093d6b19f}\label{constructor__stats_8h_a13d16d6eea0b1903e331fed093d6b19f}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_move\_assigned@{track\_move\_assigned}}
+\index{track\_move\_assigned@{track\_move\_assigned}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_move\_assigned()}{track\_move\_assigned()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+move\+\_\+assigned (\begin{DoxyParamCaption}\item[{T $\ast$}]{,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a57f93fb95cf8487da895b53c296e2740}\label{constructor__stats_8h_a57f93fb95cf8487da895b53c296e2740}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_move\_created@{track\_move\_created}}
+\index{track\_move\_created@{track\_move\_created}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_move\_created()}{track\_move\_created()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+move\+\_\+created (\begin{DoxyParamCaption}\item[{T $\ast$}]{inst }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{constructor__stats_8h_a135b137911fc704373031a99c25f3fa9}\label{constructor__stats_8h_a135b137911fc704373031a99c25f3fa9}} 
+\index{constructor\_stats.h@{constructor\_stats.h}!track\_values@{track\_values}}
+\index{track\_values@{track\_values}!constructor\_stats.h@{constructor\_stats.h}}
+\subsubsection{\texorpdfstring{track\_values()}{track\_values()}}
+{\footnotesize\ttfamily template$<$class T , typename... Values$>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} track\+\_\+values (\begin{DoxyParamCaption}\item[{T $\ast$}]{,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})}
+

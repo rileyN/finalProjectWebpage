@@ -1,0 +1,96 @@
+\hypertarget{struct__slice}{}\section{\+\_\+slice Struct Reference}
+\label{struct__slice}\index{\_slice@{\_slice}}
+
+
+{\ttfamily \#include $<$Python-\/ast.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_python-ast_8h_aca2c61e8b8abfd4a29eda6a47f491fcb}{\+\_\+slice\+\_\+kind}} \mbox{\hyperlink{struct__slice_a9db6ac61022be11837644803e62dbae3}{kind}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__slice_a6f093b55e957623c74a6331d8f937500}{lower}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__slice_a9535a1f77a13185667a1be7eacd5f557}{upper}}\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__slice_ace8e2eccc20477db2a1ac90d267154b2}{step}}\\
+\>\} \mbox{\hyperlink{struct__slice_a3ced7266b77b6f06f45a30747fa88e76}{Slice}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{structasdl__seq}{asdl\_seq}} $\ast$ \mbox{\hyperlink{struct__slice_a93030a4ad534e07757aee5a01339c4e1}{dims}}\\
+\>\} \mbox{\hyperlink{struct__slice_a742c6e26c3e02b543c1f40aa4bd47020}{ExtSlice}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\_ty}} \mbox{\hyperlink{struct__slice_af026e3a8887c949516ce9a869cf73fb4}{value}}\\
+\>\} \mbox{\hyperlink{struct__slice_a5c77aabc98d3024ed8af2781d6cdfcf2}{Index}}\\
+\} \mbox{\hyperlink{struct__slice_a60bb76561c60164951048efe2222a44e}{v}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct__slice_a93030a4ad534e07757aee5a01339c4e1}\label{struct__slice_a93030a4ad534e07757aee5a01339c4e1}} 
+\index{\_slice@{\_slice}!dims@{dims}}
+\index{dims@{dims}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{dims}{dims}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ \+\_\+slice\+::dims}
+
+\mbox{\Hypertarget{struct__slice_a742c6e26c3e02b543c1f40aa4bd47020}\label{struct__slice_a742c6e26c3e02b543c1f40aa4bd47020}} 
+\index{\_slice@{\_slice}!ExtSlice@{ExtSlice}}
+\index{ExtSlice@{ExtSlice}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{ExtSlice}{ExtSlice}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+slice\+::\+Ext\+Slice}
+
+\mbox{\Hypertarget{struct__slice_a5c77aabc98d3024ed8af2781d6cdfcf2}\label{struct__slice_a5c77aabc98d3024ed8af2781d6cdfcf2}} 
+\index{\_slice@{\_slice}!Index@{Index}}
+\index{Index@{Index}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{Index}{Index}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+slice\+::\+Index}
+
+\mbox{\Hypertarget{struct__slice_a9db6ac61022be11837644803e62dbae3}\label{struct__slice_a9db6ac61022be11837644803e62dbae3}} 
+\index{\_slice@{\_slice}!kind@{kind}}
+\index{kind@{kind}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{kind}{kind}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_python-ast_8h_aca2c61e8b8abfd4a29eda6a47f491fcb}{\+\_\+slice\+\_\+kind}} \+\_\+slice\+::kind}
+
+\mbox{\Hypertarget{struct__slice_a6f093b55e957623c74a6331d8f937500}\label{struct__slice_a6f093b55e957623c74a6331d8f937500}} 
+\index{\_slice@{\_slice}!lower@{lower}}
+\index{lower@{lower}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{lower}{lower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+slice\+::lower}
+
+\mbox{\Hypertarget{struct__slice_a3ced7266b77b6f06f45a30747fa88e76}\label{struct__slice_a3ced7266b77b6f06f45a30747fa88e76}} 
+\index{\_slice@{\_slice}!Slice@{Slice}}
+\index{Slice@{Slice}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{Slice}{Slice}}
+{\footnotesize\ttfamily struct \{ ... \}   \+\_\+slice\+::\+Slice}
+
+\mbox{\Hypertarget{struct__slice_ace8e2eccc20477db2a1ac90d267154b2}\label{struct__slice_ace8e2eccc20477db2a1ac90d267154b2}} 
+\index{\_slice@{\_slice}!step@{step}}
+\index{step@{step}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+slice\+::step}
+
+\mbox{\Hypertarget{struct__slice_a9535a1f77a13185667a1be7eacd5f557}\label{struct__slice_a9535a1f77a13185667a1be7eacd5f557}} 
+\index{\_slice@{\_slice}!upper@{upper}}
+\index{upper@{upper}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{upper}{upper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+slice\+::upper}
+
+\mbox{\Hypertarget{struct__slice_a60bb76561c60164951048efe2222a44e}\label{struct__slice_a60bb76561c60164951048efe2222a44e}} 
+\index{\_slice@{\_slice}!v@{v}}
+\index{v@{v}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily union \{ ... \}   \+\_\+slice\+::v}
+
+\mbox{\Hypertarget{struct__slice_af026e3a8887c949516ce9a869cf73fb4}\label{struct__slice_af026e3a8887c949516ce9a869cf73fb4}} 
+\index{\_slice@{\_slice}!value@{value}}
+\index{value@{value}!\_slice@{\_slice}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python-ast_8h_a56d3705e020a071405094a220c4592bd}{expr\+\_\+ty}} \+\_\+slice\+::value}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/\mbox{\hyperlink{_python-ast_8h}{Python-\/ast.\+h}}\end{DoxyCompactItemize}

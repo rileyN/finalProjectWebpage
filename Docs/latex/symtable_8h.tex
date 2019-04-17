@@ -1,0 +1,291 @@
+\hypertarget{symtable_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/symtable.h File Reference}
+\label{symtable_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/symtable.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/symtable.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsymtable}{symtable}}
+\item 
+struct \mbox{\hyperlink{struct__symtable__entry}{\+\_\+symtable\+\_\+entry}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{symtable_8h_ad61c0a2ba6b2e2b657ec5187407f9ad8}{Py\+S\+T\+Entry\+\_\+\+Check}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+S\+T\+Entry\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{symtable_8h_ae61890827b93a161d78b8a5e27fe4611}{D\+E\+F\+\_\+\+G\+L\+O\+B\+AL}}~1           /$\ast$ global \mbox{\hyperlink{graminit_8h_a19ece6b6912613eaf16e6d9e2e41b4b1}{stmt}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_af2614a3c972f02013d680e151cf49bb6}{D\+E\+F\+\_\+\+L\+O\+C\+AL}}~2            /$\ast$ assignment \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} code block $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_ac55189a61b47f4e9e56500ce014e4584}{D\+E\+F\+\_\+\+P\+A\+R\+AM}}~2$<$$<$1         /$\ast$ formal parameter $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a1d392886fec552aac0632c91a8cb7be0}{U\+SE}}~2$<$$<$2               /$\ast$ \mbox{\hyperlink{structname}{name}} is used $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_aaf114c038b6a7bf190f41202e2828dc8}{D\+E\+F\+\_\+\+F\+R\+EE}}~2$<$$<$3         /$\ast$ \mbox{\hyperlink{structname}{name}} used but not defined \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} nested block $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a03120dcd92503a79b1d84e32ccb721df}{D\+E\+F\+\_\+\+F\+R\+E\+E\+\_\+\+C\+L\+A\+SS}}~2$<$$<$4    /$\ast$ free \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aac5473f0a0d0d38841ea8d37c5ca032d}{variable}} from class\textquotesingle{}\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}} method $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_abb5ee75cd2ff62b9c3b6c090c567314e}{D\+E\+F\+\_\+\+I\+M\+P\+O\+RT}}~2$<$$<$5        /$\ast$ assignment occurred via import $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_ab66a2d49f2c96e6dc3612e02d3ccea9d}{D\+E\+F\+\_\+\+B\+O\+U\+ND}}~(\mbox{\hyperlink{symtable_8h_af2614a3c972f02013d680e151cf49bb6}{D\+E\+F\+\_\+\+L\+O\+C\+AL}} $\vert$ \mbox{\hyperlink{symtable_8h_ac55189a61b47f4e9e56500ce014e4584}{D\+E\+F\+\_\+\+P\+A\+R\+AM}} $\vert$ \mbox{\hyperlink{symtable_8h_abb5ee75cd2ff62b9c3b6c090c567314e}{D\+E\+F\+\_\+\+I\+M\+P\+O\+RT}})
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a69842abf181f0d96b087949e54f5bffe}{S\+C\+O\+P\+E\+\_\+\+O\+FF}}~11
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a22cd50e677a8d77bf09a4efa930dfab4}{S\+C\+O\+P\+E\+\_\+\+M\+A\+SK}}~7
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a3758dd5d300a594312c95bc393378df0}{L\+O\+C\+AL}}~1
+\item 
+\#define \mbox{\hyperlink{symtable_8h_aa08fc77ff6dc8bc5e845975c7dc2c842}{G\+L\+O\+B\+A\+L\+\_\+\+E\+X\+P\+L\+I\+C\+IT}}~2
+\item 
+\#define \mbox{\hyperlink{symtable_8h_ac5e1c137fda2ab97be457cad3583c6da}{G\+L\+O\+B\+A\+L\+\_\+\+I\+M\+P\+L\+I\+C\+IT}}~3
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a9a8e700d56e7d858108b755ad3edb52e}{F\+R\+EE}}~4
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a8b4d4a1fcf419d5a3820c5b4b027ee8b}{C\+E\+LL}}~5
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a64ba2a1b74d09571cfacc402cc2bdb1b}{O\+P\+T\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+S\+T\+AR}}~1
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a9e9b221aec0ed57ba325cf0205d18d87}{O\+P\+T\+\_\+\+E\+X\+EC}}~2
+\item 
+\#define \mbox{\hyperlink{symtable_8h_acaad8edde252b45f495cda77d9b55a60}{O\+P\+T\+\_\+\+B\+A\+R\+E\+\_\+\+E\+X\+EC}}~4
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a4d4f0f96b10b6da4d16371395fbb135d}{O\+P\+T\+\_\+\+T\+O\+P\+L\+E\+V\+EL}}~8  /$\ast$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a5ab323daeacf8dfdb8f91132fecdca23}{top}}-\/\mbox{\hyperlink{_s_d_l__opengl_8h_a2b536fca24f51d6a849aed325793e661}{level}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a339b9616ddcfbc036f0258f8dcdd8902}{names}}, including \mbox{\hyperlink{pybind11_2include_2pybind11_2eval_8h_a3b6eb7f016d217d0519d9b41ca972661}{eval}} and \mbox{\hyperlink{pybind11_2include_2pybind11_2eval_8h_a2dce85cf26d9e90f433aaf790d616489}{exec}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a18b05db4d4bb40d54787cde210bf88ca}{G\+E\+N\+E\+R\+A\+T\+OR}}~1
+\item 
+\#define \mbox{\hyperlink{symtable_8h_a78ced2f4e56377bd0e257bc4d89856ce}{G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+\+E\+X\+P\+R\+E\+S\+S\+I\+ON}}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{symtable_8h_a465de2608e3625f9b65501597b49c5fc}{\+\_\+block\+\_\+type}} \mbox{\hyperlink{symtable_8h_a027dc810c50764bb9a23c5c30ae99f1f}{\+\_\+\+Py\+\_\+block\+\_\+ty}}
+\item 
+typedef struct \mbox{\hyperlink{struct__symtable__entry}{\+\_\+symtable\+\_\+entry}} \mbox{\hyperlink{symtable_8h_ad59d40fc50faa83d9d93406025dca81a}{Py\+S\+T\+Entry\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{symtable_8h_a465de2608e3625f9b65501597b49c5fc}{\+\_\+block\+\_\+type}} \{ \mbox{\hyperlink{symtable_8h_a465de2608e3625f9b65501597b49c5fca7064c43c58cad14740cc9c0cac71c43c}{Function\+Block}}, 
+\mbox{\hyperlink{symtable_8h_a465de2608e3625f9b65501597b49c5fcaef40f18a4e44181a6938182636b542e8}{Class\+Block}}, 
+\mbox{\hyperlink{symtable_8h_a465de2608e3625f9b65501597b49c5fca4f773c6ab1f796b5522e8a77cf45e44c}{Module\+Block}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{symtable_8h_a5a6f75d22f6a17663a6c776a37db659f}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+S\+T\+Entry\+\_\+\+Type
+\item 
+\mbox{\hyperlink{symtable_8h_ab1ee69d96cb7611e2b53f6d53db4f0b3}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+S\+T\+\_\+\+Get\+Scope(\mbox{\hyperlink{symtable_8h_ad59d40fc50faa83d9d93406025dca81a}{Py\+S\+T\+Entry\+Object}} $\ast$
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{symtable_8h_a3e17b298cdf5704eefa954e51a313ac6}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (struct \mbox{\hyperlink{structsymtable}{symtable}} $\ast$) Py\+Symtable\+\_\+\+Build(\mbox{\hyperlink{_python-ast_8h_ac5ca223bf2573144610f74dc91fc431e}{mod\+\_\+ty}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char \mbox{\hyperlink{struct_py_future_features}{Py\+Future\+Features}} $\ast$ \mbox{\hyperlink{symtable_8h_aa1c346382c4678991462abed91507e2d}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{symtable_8h_ad59d40fc50faa83d9d93406025dca81a}{Py\+S\+T\+Entry\+Object}} $\ast$) Py\+Symtable\+\_\+\+Lookup(struct \mbox{\hyperlink{structsymtable}{symtable}} $\ast$
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char \mbox{\hyperlink{struct_py_future_features}{Py\+Future\+Features}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ \mbox{\hyperlink{symtable_8h_a972275c96088636daef2bc7189d1c0b6}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+Symtable\+\_\+\+Free(struct \mbox{\hyperlink{structsymtable}{symtable}} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{symtable_8h_a8b4d4a1fcf419d5a3820c5b4b027ee8b}\label{symtable_8h_a8b4d4a1fcf419d5a3820c5b4b027ee8b}} 
+\index{symtable.h@{symtable.h}!CELL@{CELL}}
+\index{CELL@{CELL}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{CELL}{CELL}}
+{\footnotesize\ttfamily \#define C\+E\+LL~5}
+
+\mbox{\Hypertarget{symtable_8h_ab66a2d49f2c96e6dc3612e02d3ccea9d}\label{symtable_8h_ab66a2d49f2c96e6dc3612e02d3ccea9d}} 
+\index{symtable.h@{symtable.h}!DEF\_BOUND@{DEF\_BOUND}}
+\index{DEF\_BOUND@{DEF\_BOUND}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{DEF\_BOUND}{DEF\_BOUND}}
+{\footnotesize\ttfamily \#define D\+E\+F\+\_\+\+B\+O\+U\+ND~(\mbox{\hyperlink{symtable_8h_af2614a3c972f02013d680e151cf49bb6}{D\+E\+F\+\_\+\+L\+O\+C\+AL}} $\vert$ \mbox{\hyperlink{symtable_8h_ac55189a61b47f4e9e56500ce014e4584}{D\+E\+F\+\_\+\+P\+A\+R\+AM}} $\vert$ \mbox{\hyperlink{symtable_8h_abb5ee75cd2ff62b9c3b6c090c567314e}{D\+E\+F\+\_\+\+I\+M\+P\+O\+RT}})}
+
+\mbox{\Hypertarget{symtable_8h_aaf114c038b6a7bf190f41202e2828dc8}\label{symtable_8h_aaf114c038b6a7bf190f41202e2828dc8}} 
+\index{symtable.h@{symtable.h}!DEF\_FREE@{DEF\_FREE}}
+\index{DEF\_FREE@{DEF\_FREE}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{DEF\_FREE}{DEF\_FREE}}
+{\footnotesize\ttfamily \#define D\+E\+F\+\_\+\+F\+R\+EE~2$<$$<$3         /$\ast$ \mbox{\hyperlink{structname}{name}} used but not defined \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} nested block $\ast$/}
+
+\mbox{\Hypertarget{symtable_8h_a03120dcd92503a79b1d84e32ccb721df}\label{symtable_8h_a03120dcd92503a79b1d84e32ccb721df}} 
+\index{symtable.h@{symtable.h}!DEF\_FREE\_CLASS@{DEF\_FREE\_CLASS}}
+\index{DEF\_FREE\_CLASS@{DEF\_FREE\_CLASS}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{DEF\_FREE\_CLASS}{DEF\_FREE\_CLASS}}
+{\footnotesize\ttfamily \#define D\+E\+F\+\_\+\+F\+R\+E\+E\+\_\+\+C\+L\+A\+SS~2$<$$<$4    /$\ast$ free \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aac5473f0a0d0d38841ea8d37c5ca032d}{variable}} from class\textquotesingle{}\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}} method $\ast$/}
+
+\mbox{\Hypertarget{symtable_8h_ae61890827b93a161d78b8a5e27fe4611}\label{symtable_8h_ae61890827b93a161d78b8a5e27fe4611}} 
+\index{symtable.h@{symtable.h}!DEF\_GLOBAL@{DEF\_GLOBAL}}
+\index{DEF\_GLOBAL@{DEF\_GLOBAL}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{DEF\_GLOBAL}{DEF\_GLOBAL}}
+{\footnotesize\ttfamily \#define D\+E\+F\+\_\+\+G\+L\+O\+B\+AL~1           /$\ast$ global \mbox{\hyperlink{graminit_8h_a19ece6b6912613eaf16e6d9e2e41b4b1}{stmt}} $\ast$/}
+
+\mbox{\Hypertarget{symtable_8h_abb5ee75cd2ff62b9c3b6c090c567314e}\label{symtable_8h_abb5ee75cd2ff62b9c3b6c090c567314e}} 
+\index{symtable.h@{symtable.h}!DEF\_IMPORT@{DEF\_IMPORT}}
+\index{DEF\_IMPORT@{DEF\_IMPORT}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{DEF\_IMPORT}{DEF\_IMPORT}}
+{\footnotesize\ttfamily \#define D\+E\+F\+\_\+\+I\+M\+P\+O\+RT~2$<$$<$5        /$\ast$ assignment occurred via import $\ast$/}
+
+\mbox{\Hypertarget{symtable_8h_af2614a3c972f02013d680e151cf49bb6}\label{symtable_8h_af2614a3c972f02013d680e151cf49bb6}} 
+\index{symtable.h@{symtable.h}!DEF\_LOCAL@{DEF\_LOCAL}}
+\index{DEF\_LOCAL@{DEF\_LOCAL}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{DEF\_LOCAL}{DEF\_LOCAL}}
+{\footnotesize\ttfamily \#define D\+E\+F\+\_\+\+L\+O\+C\+AL~2            /$\ast$ assignment \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} code block $\ast$/}
+
+\mbox{\Hypertarget{symtable_8h_ac55189a61b47f4e9e56500ce014e4584}\label{symtable_8h_ac55189a61b47f4e9e56500ce014e4584}} 
+\index{symtable.h@{symtable.h}!DEF\_PARAM@{DEF\_PARAM}}
+\index{DEF\_PARAM@{DEF\_PARAM}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{DEF\_PARAM}{DEF\_PARAM}}
+{\footnotesize\ttfamily \#define D\+E\+F\+\_\+\+P\+A\+R\+AM~2$<$$<$1         /$\ast$ formal parameter $\ast$/}
+
+\mbox{\Hypertarget{symtable_8h_a9a8e700d56e7d858108b755ad3edb52e}\label{symtable_8h_a9a8e700d56e7d858108b755ad3edb52e}} 
+\index{symtable.h@{symtable.h}!FREE@{FREE}}
+\index{FREE@{FREE}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{FREE}{FREE}}
+{\footnotesize\ttfamily \#define F\+R\+EE~4}
+
+\mbox{\Hypertarget{symtable_8h_a18b05db4d4bb40d54787cde210bf88ca}\label{symtable_8h_a18b05db4d4bb40d54787cde210bf88ca}} 
+\index{symtable.h@{symtable.h}!GENERATOR@{GENERATOR}}
+\index{GENERATOR@{GENERATOR}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{GENERATOR}{GENERATOR}}
+{\footnotesize\ttfamily \#define G\+E\+N\+E\+R\+A\+T\+OR~1}
+
+\mbox{\Hypertarget{symtable_8h_a78ced2f4e56377bd0e257bc4d89856ce}\label{symtable_8h_a78ced2f4e56377bd0e257bc4d89856ce}} 
+\index{symtable.h@{symtable.h}!GENERATOR\_EXPRESSION@{GENERATOR\_EXPRESSION}}
+\index{GENERATOR\_EXPRESSION@{GENERATOR\_EXPRESSION}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{GENERATOR\_EXPRESSION}{GENERATOR\_EXPRESSION}}
+{\footnotesize\ttfamily \#define G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+\+E\+X\+P\+R\+E\+S\+S\+I\+ON~2}
+
+\mbox{\Hypertarget{symtable_8h_aa08fc77ff6dc8bc5e845975c7dc2c842}\label{symtable_8h_aa08fc77ff6dc8bc5e845975c7dc2c842}} 
+\index{symtable.h@{symtable.h}!GLOBAL\_EXPLICIT@{GLOBAL\_EXPLICIT}}
+\index{GLOBAL\_EXPLICIT@{GLOBAL\_EXPLICIT}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{GLOBAL\_EXPLICIT}{GLOBAL\_EXPLICIT}}
+{\footnotesize\ttfamily \#define G\+L\+O\+B\+A\+L\+\_\+\+E\+X\+P\+L\+I\+C\+IT~2}
+
+\mbox{\Hypertarget{symtable_8h_ac5e1c137fda2ab97be457cad3583c6da}\label{symtable_8h_ac5e1c137fda2ab97be457cad3583c6da}} 
+\index{symtable.h@{symtable.h}!GLOBAL\_IMPLICIT@{GLOBAL\_IMPLICIT}}
+\index{GLOBAL\_IMPLICIT@{GLOBAL\_IMPLICIT}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{GLOBAL\_IMPLICIT}{GLOBAL\_IMPLICIT}}
+{\footnotesize\ttfamily \#define G\+L\+O\+B\+A\+L\+\_\+\+I\+M\+P\+L\+I\+C\+IT~3}
+
+\mbox{\Hypertarget{symtable_8h_a3758dd5d300a594312c95bc393378df0}\label{symtable_8h_a3758dd5d300a594312c95bc393378df0}} 
+\index{symtable.h@{symtable.h}!LOCAL@{LOCAL}}
+\index{LOCAL@{LOCAL}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{LOCAL}{LOCAL}}
+{\footnotesize\ttfamily \#define L\+O\+C\+AL~1}
+
+\mbox{\Hypertarget{symtable_8h_acaad8edde252b45f495cda77d9b55a60}\label{symtable_8h_acaad8edde252b45f495cda77d9b55a60}} 
+\index{symtable.h@{symtable.h}!OPT\_BARE\_EXEC@{OPT\_BARE\_EXEC}}
+\index{OPT\_BARE\_EXEC@{OPT\_BARE\_EXEC}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{OPT\_BARE\_EXEC}{OPT\_BARE\_EXEC}}
+{\footnotesize\ttfamily \#define O\+P\+T\+\_\+\+B\+A\+R\+E\+\_\+\+E\+X\+EC~4}
+
+\mbox{\Hypertarget{symtable_8h_a9e9b221aec0ed57ba325cf0205d18d87}\label{symtable_8h_a9e9b221aec0ed57ba325cf0205d18d87}} 
+\index{symtable.h@{symtable.h}!OPT\_EXEC@{OPT\_EXEC}}
+\index{OPT\_EXEC@{OPT\_EXEC}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{OPT\_EXEC}{OPT\_EXEC}}
+{\footnotesize\ttfamily \#define O\+P\+T\+\_\+\+E\+X\+EC~2}
+
+\mbox{\Hypertarget{symtable_8h_a64ba2a1b74d09571cfacc402cc2bdb1b}\label{symtable_8h_a64ba2a1b74d09571cfacc402cc2bdb1b}} 
+\index{symtable.h@{symtable.h}!OPT\_IMPORT\_STAR@{OPT\_IMPORT\_STAR}}
+\index{OPT\_IMPORT\_STAR@{OPT\_IMPORT\_STAR}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{OPT\_IMPORT\_STAR}{OPT\_IMPORT\_STAR}}
+{\footnotesize\ttfamily \#define O\+P\+T\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+S\+T\+AR~1}
+
+\mbox{\Hypertarget{symtable_8h_a4d4f0f96b10b6da4d16371395fbb135d}\label{symtable_8h_a4d4f0f96b10b6da4d16371395fbb135d}} 
+\index{symtable.h@{symtable.h}!OPT\_TOPLEVEL@{OPT\_TOPLEVEL}}
+\index{OPT\_TOPLEVEL@{OPT\_TOPLEVEL}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{OPT\_TOPLEVEL}{OPT\_TOPLEVEL}}
+{\footnotesize\ttfamily \#define O\+P\+T\+\_\+\+T\+O\+P\+L\+E\+V\+EL~8  /$\ast$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a5ab323daeacf8dfdb8f91132fecdca23}{top}}-\/\mbox{\hyperlink{_s_d_l__opengl_8h_a2b536fca24f51d6a849aed325793e661}{level}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a339b9616ddcfbc036f0258f8dcdd8902}{names}}, including \mbox{\hyperlink{pybind11_2include_2pybind11_2eval_8h_a3b6eb7f016d217d0519d9b41ca972661}{eval}} and \mbox{\hyperlink{pybind11_2include_2pybind11_2eval_8h_a2dce85cf26d9e90f433aaf790d616489}{exec}} $\ast$/}
+
+\mbox{\Hypertarget{symtable_8h_ad61c0a2ba6b2e2b657ec5187407f9ad8}\label{symtable_8h_ad61c0a2ba6b2e2b657ec5187407f9ad8}} 
+\index{symtable.h@{symtable.h}!PySTEntry\_Check@{PySTEntry\_Check}}
+\index{PySTEntry\_Check@{PySTEntry\_Check}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{PySTEntry\_Check}{PySTEntry\_Check}}
+{\footnotesize\ttfamily \#define Py\+S\+T\+Entry\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+S\+T\+Entry\+\_\+\+Type)}
+
+\mbox{\Hypertarget{symtable_8h_a22cd50e677a8d77bf09a4efa930dfab4}\label{symtable_8h_a22cd50e677a8d77bf09a4efa930dfab4}} 
+\index{symtable.h@{symtable.h}!SCOPE\_MASK@{SCOPE\_MASK}}
+\index{SCOPE\_MASK@{SCOPE\_MASK}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{SCOPE\_MASK}{SCOPE\_MASK}}
+{\footnotesize\ttfamily \#define S\+C\+O\+P\+E\+\_\+\+M\+A\+SK~7}
+
+\mbox{\Hypertarget{symtable_8h_a69842abf181f0d96b087949e54f5bffe}\label{symtable_8h_a69842abf181f0d96b087949e54f5bffe}} 
+\index{symtable.h@{symtable.h}!SCOPE\_OFF@{SCOPE\_OFF}}
+\index{SCOPE\_OFF@{SCOPE\_OFF}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{SCOPE\_OFF}{SCOPE\_OFF}}
+{\footnotesize\ttfamily \#define S\+C\+O\+P\+E\+\_\+\+O\+FF~11}
+
+\mbox{\Hypertarget{symtable_8h_a1d392886fec552aac0632c91a8cb7be0}\label{symtable_8h_a1d392886fec552aac0632c91a8cb7be0}} 
+\index{symtable.h@{symtable.h}!USE@{USE}}
+\index{USE@{USE}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{USE}{USE}}
+{\footnotesize\ttfamily \#define U\+SE~2$<$$<$2               /$\ast$ \mbox{\hyperlink{structname}{name}} is used $\ast$/}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{symtable_8h_a027dc810c50764bb9a23c5c30ae99f1f}\label{symtable_8h_a027dc810c50764bb9a23c5c30ae99f1f}} 
+\index{symtable.h@{symtable.h}!\_Py\_block\_ty@{\_Py\_block\_ty}}
+\index{\_Py\_block\_ty@{\_Py\_block\_ty}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{\_Py\_block\_ty}{\_Py\_block\_ty}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{symtable_8h_a465de2608e3625f9b65501597b49c5fc}{\+\_\+block\+\_\+type}}
+     \mbox{\hyperlink{symtable_8h_a027dc810c50764bb9a23c5c30ae99f1f}{\+\_\+\+Py\+\_\+block\+\_\+ty}}}
+
+\mbox{\Hypertarget{symtable_8h_ad59d40fc50faa83d9d93406025dca81a}\label{symtable_8h_ad59d40fc50faa83d9d93406025dca81a}} 
+\index{symtable.h@{symtable.h}!PySTEntryObject@{PySTEntryObject}}
+\index{PySTEntryObject@{PySTEntryObject}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{PySTEntryObject}{PySTEntryObject}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__symtable__entry}{\+\_\+symtable\+\_\+entry}}  \mbox{\hyperlink{symtable_8h_ad59d40fc50faa83d9d93406025dca81a}{Py\+S\+T\+Entry\+Object}}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{symtable_8h_a465de2608e3625f9b65501597b49c5fc}\label{symtable_8h_a465de2608e3625f9b65501597b49c5fc}} 
+\index{symtable.h@{symtable.h}!\_block\_type@{\_block\_type}}
+\index{\_block\_type@{\_block\_type}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{\_block\_type}{\_block\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{symtable_8h_a465de2608e3625f9b65501597b49c5fc}{\+\_\+block\+\_\+type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FunctionBlock@{FunctionBlock}!symtable.h@{symtable.h}}\index{symtable.h@{symtable.h}!FunctionBlock@{FunctionBlock}}}\mbox{\Hypertarget{symtable_8h_a465de2608e3625f9b65501597b49c5fca7064c43c58cad14740cc9c0cac71c43c}\label{symtable_8h_a465de2608e3625f9b65501597b49c5fca7064c43c58cad14740cc9c0cac71c43c}} 
+Function\+Block&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ClassBlock@{ClassBlock}!symtable.h@{symtable.h}}\index{symtable.h@{symtable.h}!ClassBlock@{ClassBlock}}}\mbox{\Hypertarget{symtable_8h_a465de2608e3625f9b65501597b49c5fcaef40f18a4e44181a6938182636b542e8}\label{symtable_8h_a465de2608e3625f9b65501597b49c5fcaef40f18a4e44181a6938182636b542e8}} 
+Class\+Block&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ModuleBlock@{ModuleBlock}!symtable.h@{symtable.h}}\index{symtable.h@{symtable.h}!ModuleBlock@{ModuleBlock}}}\mbox{\Hypertarget{symtable_8h_a465de2608e3625f9b65501597b49c5fca4f773c6ab1f796b5522e8a77cf45e44c}\label{symtable_8h_a465de2608e3625f9b65501597b49c5fca4f773c6ab1f796b5522e8a77cf45e44c}} 
+Module\+Block&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{symtable_8h_a5a6f75d22f6a17663a6c776a37db659f}\label{symtable_8h_a5a6f75d22f6a17663a6c776a37db659f}} 
+\index{symtable.h@{symtable.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{symtable_8h_ab1ee69d96cb7611e2b53f6d53db4f0b3}\label{symtable_8h_ab1ee69d96cb7611e2b53f6d53db4f0b3}} 
+\index{symtable.h@{symtable.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{symtable_8h_a3e17b298cdf5704eefa954e51a313ac6}\label{symtable_8h_a3e17b298cdf5704eefa954e51a313ac6}} 
+\index{symtable.h@{symtable.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structsymtable}{symtable}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{symtable_8h_aa1c346382c4678991462abed91507e2d}\label{symtable_8h_aa1c346382c4678991462abed91507e2d}} 
+\index{symtable.h@{symtable.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char \mbox{\hyperlink{struct_py_future_features}{Py\+Future\+Features}}$\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{symtable_8h_ad59d40fc50faa83d9d93406025dca81a}{Py\+S\+T\+Entry\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{symtable_8h_a972275c96088636daef2bc7189d1c0b6}\label{symtable_8h_a972275c96088636daef2bc7189d1c0b6}} 
+\index{symtable.h@{symtable.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!symtable.h@{symtable.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char \mbox{\hyperlink{struct_py_future_features}{Py\+Future\+Features}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+

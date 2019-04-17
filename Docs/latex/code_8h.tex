@@ -1,0 +1,279 @@
+\hypertarget{code_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/code.h File Reference}
+\label{code_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/code.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/code.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_code_object}{Py\+Code\+Object}}
+\item 
+struct \mbox{\hyperlink{struct__addr__pair}{\+\_\+addr\+\_\+pair}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{code_8h_a6092b4b4fd681c2b1d7ffb57369226ad}{C\+O\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+ED}}~0x0001
+\item 
+\#define \mbox{\hyperlink{code_8h_a499d8b0557d581ea9e1c8ff4a5df76d2}{C\+O\+\_\+\+N\+E\+W\+L\+O\+C\+A\+LS}}~0x0002
+\item 
+\#define \mbox{\hyperlink{code_8h_a131ed0adee546279032af3a55ef6b719}{C\+O\+\_\+\+V\+A\+R\+A\+R\+GS}}~0x0004
+\item 
+\#define \mbox{\hyperlink{code_8h_a97802102d8f13ad3295498951c112163}{C\+O\+\_\+\+V\+A\+R\+K\+E\+Y\+W\+O\+R\+DS}}~0x0008
+\item 
+\#define \mbox{\hyperlink{code_8h_a175198c9b71d2d62938431d7272a2da5}{C\+O\+\_\+\+N\+E\+S\+T\+ED}}~0x0010
+\item 
+\#define \mbox{\hyperlink{code_8h_a9a0dd05ab78d9b782216883ca27e8486}{C\+O\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR}}~0x0020
+\item 
+\#define \mbox{\hyperlink{code_8h_a55edd7bed68a37b7934041183e4d3dd2}{C\+O\+\_\+\+N\+O\+F\+R\+EE}}~0x0040
+\item 
+\#define \mbox{\hyperlink{code_8h_a5a7ee54f647d5668f8236d1cbc1171a9}{C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+D\+I\+V\+I\+S\+I\+ON}}~0x2000
+\item 
+\#define \mbox{\hyperlink{code_8h_ab4e5184532bbc4baf3adea2e2bc2c38b}{C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+A\+B\+S\+O\+L\+U\+T\+E\+\_\+\+I\+M\+P\+O\+RT}}~0x4000 /$\ast$ do absolute imports by default $\ast$/
+\item 
+\#define \mbox{\hyperlink{code_8h_ad113e68a773580336c24c72ef7ad8666}{C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+W\+I\+T\+H\+\_\+\+S\+T\+A\+T\+E\+M\+E\+NT}}~0x8000
+\item 
+\#define \mbox{\hyperlink{code_8h_a80398933b7467dc979f4141aba15b972}{C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}~0x10000
+\item 
+\#define \mbox{\hyperlink{code_8h_a83ab0fb78b5e7075e2b2947c657ba8ef}{C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+U\+N\+I\+C\+O\+D\+E\+\_\+\+L\+I\+T\+E\+R\+A\+LS}}~0x20000
+\item 
+\#define \mbox{\hyperlink{code_8h_a4d1e583f3588ea0c261d3a82d24a5c77}{P\+Y\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+K\+E\+Y\+W\+O\+RD}}
+\item 
+\#define \mbox{\hyperlink{code_8h_a3667103ec7f96a81ef3d4529d3cd0f88}{C\+O\+\_\+\+M\+A\+X\+B\+L\+O\+C\+KS}}~20 /$\ast$ Max static block nesting within \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}} \mbox{\hyperlink{classfunction}{function}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{code_8h_ae582fa708a7a7b082150e850212170ec}{Py\+Code\+\_\+\+Check}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Code\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{code_8h_af04a012a0c0cd6941e1f5c5e1a4f98bb}{Py\+Code\+\_\+\+Get\+Num\+Free}}(op)~(\mbox{\hyperlink{tupleobject_8h_ae09726b3e4fea952ea830c68d5e53cd1}{Py\+Tuple\+\_\+\+G\+E\+T\+\_\+\+S\+I\+ZE}}((op)-\/$>$co\+\_\+freevars))
+\item 
+\#define \mbox{\hyperlink{code_8h_aa94ac4c642803c713186e4fbe4672f54}{\+\_\+\+Py\+Code\+\_\+\+G\+E\+T\+C\+O\+D\+E\+P\+TR}}(\mbox{\hyperlink{import_8h_a200de96400a34d73744a765134d824c2}{co}},  pp)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__addr__pair}{\+\_\+addr\+\_\+pair}} \mbox{\hyperlink{code_8h_a04d7019e355cd76d55d625f57b9e27af}{Py\+Addr\+Pair}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{code_8h_a1745284711ff720d19c5d8f0efca154c}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Code\+\_\+\+Type
+\item 
+\mbox{\hyperlink{code_8h_a785bc38726cbaac322147a36fe67e5ec}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{struct_py_code_object}{Py\+Code\+Object}} $\ast$) Py\+Code\+\_\+\+New(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}
+\item 
+\mbox{\hyperlink{code_8h_ac14b4a4bf92ef904be9d03147e010a5f}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Code\+\_\+\+Addr2\+Line(\mbox{\hyperlink{struct_py_code_object}{Py\+Code\+Object}} $\ast$
+\item 
+\mbox{\hyperlink{code_8h_a15a223951b1e10511c1d3eb7c1695672}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) \+\_\+\+Py\+Code\+\_\+\+Constant\+Key(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{code_8h_aa4332194bf83cd22038ee4511e4decea}{int}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char $\ast$ \mbox{\hyperlink{code_8h_a6399f8ee92fc595a950491df6fcbb96d}{funcname}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{code_8h_a398980b276a6b82cc059ec8f0bd799de}{firstlineno}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{code_8h_add0e7cfd001c4265d48db2ae8491cb24}{lasti}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{code_8h_a04d7019e355cd76d55d625f57b9e27af}{Py\+Addr\+Pair}} $\ast$ \mbox{\hyperlink{code_8h_a088761a95473f90ef897a790d99d97b2}{bounds}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{code_8h_a73c3fe2be6e8c3350b99f79669896ee9}{consts}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{code_8h_a6d70b6a7be698d5bd5953a831fc49278}{names}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{code_8h_a86594622e19d6e93e6d6f3e59ce77e33}{lineno\+\_\+obj}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{code_8h_aa94ac4c642803c713186e4fbe4672f54}\label{code_8h_aa94ac4c642803c713186e4fbe4672f54}} 
+\index{code.h@{code.h}!\_PyCode\_GETCODEPTR@{\_PyCode\_GETCODEPTR}}
+\index{\_PyCode\_GETCODEPTR@{\_PyCode\_GETCODEPTR}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{\_PyCode\_GETCODEPTR}{\_PyCode\_GETCODEPTR}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Code\+\_\+\+G\+E\+T\+C\+O\+D\+E\+P\+TR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{import_8h_a200de96400a34d73744a765134d824c2}{co}},  }\item[{}]{pp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((*\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}((\mbox{\hyperlink{import_8h_a200de96400a34d73744a765134d824c2}{co}})->co\_code)->tp\_as\_buffer->bf\_getreadbuffer) \(\backslash\)}
+\DoxyCodeLine{     ((\mbox{\hyperlink{import_8h_a200de96400a34d73744a765134d824c2}{co}})->co\_code, 0, (\textcolor{keywordtype}{void} **)(pp)))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{code_8h_ab4e5184532bbc4baf3adea2e2bc2c38b}\label{code_8h_ab4e5184532bbc4baf3adea2e2bc2c38b}} 
+\index{code.h@{code.h}!CO\_FUTURE\_ABSOLUTE\_IMPORT@{CO\_FUTURE\_ABSOLUTE\_IMPORT}}
+\index{CO\_FUTURE\_ABSOLUTE\_IMPORT@{CO\_FUTURE\_ABSOLUTE\_IMPORT}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_FUTURE\_ABSOLUTE\_IMPORT}{CO\_FUTURE\_ABSOLUTE\_IMPORT}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+A\+B\+S\+O\+L\+U\+T\+E\+\_\+\+I\+M\+P\+O\+RT~0x4000 /$\ast$ do absolute imports by default $\ast$/}
+
+\mbox{\Hypertarget{code_8h_a5a7ee54f647d5668f8236d1cbc1171a9}\label{code_8h_a5a7ee54f647d5668f8236d1cbc1171a9}} 
+\index{code.h@{code.h}!CO\_FUTURE\_DIVISION@{CO\_FUTURE\_DIVISION}}
+\index{CO\_FUTURE\_DIVISION@{CO\_FUTURE\_DIVISION}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_FUTURE\_DIVISION}{CO\_FUTURE\_DIVISION}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+D\+I\+V\+I\+S\+I\+ON~0x2000}
+
+\mbox{\Hypertarget{code_8h_a80398933b7467dc979f4141aba15b972}\label{code_8h_a80398933b7467dc979f4141aba15b972}} 
+\index{code.h@{code.h}!CO\_FUTURE\_PRINT\_FUNCTION@{CO\_FUTURE\_PRINT\_FUNCTION}}
+\index{CO\_FUTURE\_PRINT\_FUNCTION@{CO\_FUTURE\_PRINT\_FUNCTION}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_FUTURE\_PRINT\_FUNCTION}{CO\_FUTURE\_PRINT\_FUNCTION}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+P\+R\+I\+N\+T\+\_\+\+F\+U\+N\+C\+T\+I\+ON~0x10000}
+
+\mbox{\Hypertarget{code_8h_a83ab0fb78b5e7075e2b2947c657ba8ef}\label{code_8h_a83ab0fb78b5e7075e2b2947c657ba8ef}} 
+\index{code.h@{code.h}!CO\_FUTURE\_UNICODE\_LITERALS@{CO\_FUTURE\_UNICODE\_LITERALS}}
+\index{CO\_FUTURE\_UNICODE\_LITERALS@{CO\_FUTURE\_UNICODE\_LITERALS}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_FUTURE\_UNICODE\_LITERALS}{CO\_FUTURE\_UNICODE\_LITERALS}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+U\+N\+I\+C\+O\+D\+E\+\_\+\+L\+I\+T\+E\+R\+A\+LS~0x20000}
+
+\mbox{\Hypertarget{code_8h_ad113e68a773580336c24c72ef7ad8666}\label{code_8h_ad113e68a773580336c24c72ef7ad8666}} 
+\index{code.h@{code.h}!CO\_FUTURE\_WITH\_STATEMENT@{CO\_FUTURE\_WITH\_STATEMENT}}
+\index{CO\_FUTURE\_WITH\_STATEMENT@{CO\_FUTURE\_WITH\_STATEMENT}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_FUTURE\_WITH\_STATEMENT}{CO\_FUTURE\_WITH\_STATEMENT}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+W\+I\+T\+H\+\_\+\+S\+T\+A\+T\+E\+M\+E\+NT~0x8000}
+
+\mbox{\Hypertarget{code_8h_a9a0dd05ab78d9b782216883ca27e8486}\label{code_8h_a9a0dd05ab78d9b782216883ca27e8486}} 
+\index{code.h@{code.h}!CO\_GENERATOR@{CO\_GENERATOR}}
+\index{CO\_GENERATOR@{CO\_GENERATOR}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_GENERATOR}{CO\_GENERATOR}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR~0x0020}
+
+\mbox{\Hypertarget{code_8h_a3667103ec7f96a81ef3d4529d3cd0f88}\label{code_8h_a3667103ec7f96a81ef3d4529d3cd0f88}} 
+\index{code.h@{code.h}!CO\_MAXBLOCKS@{CO\_MAXBLOCKS}}
+\index{CO\_MAXBLOCKS@{CO\_MAXBLOCKS}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_MAXBLOCKS}{CO\_MAXBLOCKS}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+M\+A\+X\+B\+L\+O\+C\+KS~20 /$\ast$ Max static block nesting within \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}} \mbox{\hyperlink{classfunction}{function}} $\ast$/}
+
+\mbox{\Hypertarget{code_8h_a175198c9b71d2d62938431d7272a2da5}\label{code_8h_a175198c9b71d2d62938431d7272a2da5}} 
+\index{code.h@{code.h}!CO\_NESTED@{CO\_NESTED}}
+\index{CO\_NESTED@{CO\_NESTED}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_NESTED}{CO\_NESTED}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+N\+E\+S\+T\+ED~0x0010}
+
+\mbox{\Hypertarget{code_8h_a499d8b0557d581ea9e1c8ff4a5df76d2}\label{code_8h_a499d8b0557d581ea9e1c8ff4a5df76d2}} 
+\index{code.h@{code.h}!CO\_NEWLOCALS@{CO\_NEWLOCALS}}
+\index{CO\_NEWLOCALS@{CO\_NEWLOCALS}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_NEWLOCALS}{CO\_NEWLOCALS}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+N\+E\+W\+L\+O\+C\+A\+LS~0x0002}
+
+\mbox{\Hypertarget{code_8h_a55edd7bed68a37b7934041183e4d3dd2}\label{code_8h_a55edd7bed68a37b7934041183e4d3dd2}} 
+\index{code.h@{code.h}!CO\_NOFREE@{CO\_NOFREE}}
+\index{CO\_NOFREE@{CO\_NOFREE}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_NOFREE}{CO\_NOFREE}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+N\+O\+F\+R\+EE~0x0040}
+
+\mbox{\Hypertarget{code_8h_a6092b4b4fd681c2b1d7ffb57369226ad}\label{code_8h_a6092b4b4fd681c2b1d7ffb57369226ad}} 
+\index{code.h@{code.h}!CO\_OPTIMIZED@{CO\_OPTIMIZED}}
+\index{CO\_OPTIMIZED@{CO\_OPTIMIZED}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_OPTIMIZED}{CO\_OPTIMIZED}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+ED~0x0001}
+
+\mbox{\Hypertarget{code_8h_a131ed0adee546279032af3a55ef6b719}\label{code_8h_a131ed0adee546279032af3a55ef6b719}} 
+\index{code.h@{code.h}!CO\_VARARGS@{CO\_VARARGS}}
+\index{CO\_VARARGS@{CO\_VARARGS}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_VARARGS}{CO\_VARARGS}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+V\+A\+R\+A\+R\+GS~0x0004}
+
+\mbox{\Hypertarget{code_8h_a97802102d8f13ad3295498951c112163}\label{code_8h_a97802102d8f13ad3295498951c112163}} 
+\index{code.h@{code.h}!CO\_VARKEYWORDS@{CO\_VARKEYWORDS}}
+\index{CO\_VARKEYWORDS@{CO\_VARKEYWORDS}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{CO\_VARKEYWORDS}{CO\_VARKEYWORDS}}
+{\footnotesize\ttfamily \#define C\+O\+\_\+\+V\+A\+R\+K\+E\+Y\+W\+O\+R\+DS~0x0008}
+
+\mbox{\Hypertarget{code_8h_a4d1e583f3588ea0c261d3a82d24a5c77}\label{code_8h_a4d1e583f3588ea0c261d3a82d24a5c77}} 
+\index{code.h@{code.h}!PY\_PARSER\_REQUIRES\_FUTURE\_KEYWORD@{PY\_PARSER\_REQUIRES\_FUTURE\_KEYWORD}}
+\index{PY\_PARSER\_REQUIRES\_FUTURE\_KEYWORD@{PY\_PARSER\_REQUIRES\_FUTURE\_KEYWORD}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PY\_PARSER\_REQUIRES\_FUTURE\_KEYWORD}{PY\_PARSER\_REQUIRES\_FUTURE\_KEYWORD}}
+{\footnotesize\ttfamily \#define P\+Y\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+F\+U\+T\+U\+R\+E\+\_\+\+K\+E\+Y\+W\+O\+RD}
+
+\mbox{\Hypertarget{code_8h_ae582fa708a7a7b082150e850212170ec}\label{code_8h_ae582fa708a7a7b082150e850212170ec}} 
+\index{code.h@{code.h}!PyCode\_Check@{PyCode\_Check}}
+\index{PyCode\_Check@{PyCode\_Check}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PyCode\_Check}{PyCode\_Check}}
+{\footnotesize\ttfamily \#define Py\+Code\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Code\+\_\+\+Type)}
+
+\mbox{\Hypertarget{code_8h_af04a012a0c0cd6941e1f5c5e1a4f98bb}\label{code_8h_af04a012a0c0cd6941e1f5c5e1a4f98bb}} 
+\index{code.h@{code.h}!PyCode\_GetNumFree@{PyCode\_GetNumFree}}
+\index{PyCode\_GetNumFree@{PyCode\_GetNumFree}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PyCode\_GetNumFree}{PyCode\_GetNumFree}}
+{\footnotesize\ttfamily \#define Py\+Code\+\_\+\+Get\+Num\+Free(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{tupleobject_8h_ae09726b3e4fea952ea830c68d5e53cd1}{Py\+Tuple\+\_\+\+G\+E\+T\+\_\+\+S\+I\+ZE}}((op)-\/$>$co\+\_\+freevars))}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{code_8h_a04d7019e355cd76d55d625f57b9e27af}\label{code_8h_a04d7019e355cd76d55d625f57b9e27af}} 
+\index{code.h@{code.h}!PyAddrPair@{PyAddrPair}}
+\index{PyAddrPair@{PyAddrPair}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PyAddrPair}{PyAddrPair}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__addr__pair}{\+\_\+addr\+\_\+pair}}  \mbox{\hyperlink{code_8h_a04d7019e355cd76d55d625f57b9e27af}{Py\+Addr\+Pair}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{code_8h_a1745284711ff720d19c5d8f0efca154c}\label{code_8h_a1745284711ff720d19c5d8f0efca154c}} 
+\index{code.h@{code.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code_8h_a785bc38726cbaac322147a36fe67e5ec}\label{code_8h_a785bc38726cbaac322147a36fe67e5ec}} 
+\index{code.h@{code.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_py_code_object}{Py\+Code\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code_8h_ac14b4a4bf92ef904be9d03147e010a5f}\label{code_8h_ac14b4a4bf92ef904be9d03147e010a5f}} 
+\index{code.h@{code.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code_8h_a15a223951b1e10511c1d3eb7c1695672}\label{code_8h_a15a223951b1e10511c1d3eb7c1695672}} 
+\index{code.h@{code.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{code_8h_a088761a95473f90ef897a790d99d97b2}\label{code_8h_a088761a95473f90ef897a790d99d97b2}} 
+\index{code.h@{code.h}!bounds@{bounds}}
+\index{bounds@{bounds}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{code_8h_a04d7019e355cd76d55d625f57b9e27af}{Py\+Addr\+Pair}}$\ast$ bounds}
+
+\mbox{\Hypertarget{code_8h_a73c3fe2be6e8c3350b99f79669896ee9}\label{code_8h_a73c3fe2be6e8c3350b99f79669896ee9}} 
+\index{code.h@{code.h}!consts@{consts}}
+\index{consts@{consts}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{consts}{consts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ consts}
+
+\mbox{\Hypertarget{code_8h_a398980b276a6b82cc059ec8f0bd799de}\label{code_8h_a398980b276a6b82cc059ec8f0bd799de}} 
+\index{code.h@{code.h}!firstlineno@{firstlineno}}
+\index{firstlineno@{firstlineno}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{firstlineno}{firstlineno}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} firstlineno}
+
+\mbox{\Hypertarget{code_8h_a6399f8ee92fc595a950491df6fcbb96d}\label{code_8h_a6399f8ee92fc595a950491df6fcbb96d}} 
+\index{code.h@{code.h}!funcname@{funcname}}
+\index{funcname@{funcname}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{funcname}{funcname}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char$\ast$ funcname}
+
+\mbox{\Hypertarget{code_8h_aa4332194bf83cd22038ee4511e4decea}\label{code_8h_aa4332194bf83cd22038ee4511e4decea}} 
+\index{code.h@{code.h}!int@{int}}
+\index{int@{int}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char int}
+
+\mbox{\Hypertarget{code_8h_add0e7cfd001c4265d48db2ae8491cb24}\label{code_8h_add0e7cfd001c4265d48db2ae8491cb24}} 
+\index{code.h@{code.h}!lasti@{lasti}}
+\index{lasti@{lasti}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{lasti}{lasti}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} lasti}
+
+\mbox{\Hypertarget{code_8h_a86594622e19d6e93e6d6f3e59ce77e33}\label{code_8h_a86594622e19d6e93e6d6f3e59ce77e33}} 
+\index{code.h@{code.h}!lineno\_obj@{lineno\_obj}}
+\index{lineno\_obj@{lineno\_obj}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{lineno\_obj}{lineno\_obj}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ lineno\+\_\+obj}
+
+\mbox{\Hypertarget{code_8h_a6d70b6a7be698d5bd5953a831fc49278}\label{code_8h_a6d70b6a7be698d5bd5953a831fc49278}} 
+\index{code.h@{code.h}!names@{names}}
+\index{names@{names}!code.h@{code.h}}
+\subsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a339b9616ddcfbc036f0258f8dcdd8902}{names}}}
+

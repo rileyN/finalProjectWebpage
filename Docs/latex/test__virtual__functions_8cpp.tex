@@ -1,0 +1,145 @@
+\hypertarget{test__virtual__functions_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+virtual\+\_\+functions.cpp File Reference}
+\label{test__virtual__functions_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_virtual\_functions.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_virtual\_functions.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}constructor\+\_\+stats.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pybind11/functional.\+h$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_example_virt}{Example\+Virt}}
+\item 
+class \mbox{\hyperlink{class_py_example_virt}{Py\+Example\+Virt}}
+\item 
+class \mbox{\hyperlink{class_non_copyable}{Non\+Copyable}}
+\item 
+class \mbox{\hyperlink{class_movable}{Movable}}
+\item 
+class \mbox{\hyperlink{class_n_c_virt}{N\+C\+Virt}}
+\item 
+class \mbox{\hyperlink{class_n_c_virt_trampoline}{N\+C\+Virt\+Trampoline}}
+\item 
+struct \mbox{\hyperlink{struct_base}{Base}}
+\item 
+struct \mbox{\hyperlink{struct_dispatch_issue}{Dispatch\+Issue}}
+\item 
+class \mbox{\hyperlink{class_a___repeat}{A\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_b___repeat}{B\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_c___repeat}{C\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_d___repeat}{D\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_a___tpl}{A\+\_\+\+Tpl}}
+\item 
+class \mbox{\hyperlink{class_b___tpl}{B\+\_\+\+Tpl}}
+\item 
+class \mbox{\hyperlink{class_c___tpl}{C\+\_\+\+Tpl}}
+\item 
+class \mbox{\hyperlink{class_d___tpl}{D\+\_\+\+Tpl}}
+\item 
+class \mbox{\hyperlink{class_py_a___repeat}{Py\+A\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_py_b___repeat}{Py\+B\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_py_c___repeat}{Py\+C\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_py_d___repeat}{Py\+D\+\_\+\+Repeat}}
+\item 
+class \mbox{\hyperlink{class_py_a___tpl}{Py\+A\+\_\+\+Tpl$<$ Base $>$}}
+\item 
+class \mbox{\hyperlink{class_py_b___tpl}{Py\+B\+\_\+\+Tpl$<$ Base $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test__virtual__functions_8cpp_a4126fe74ab69ce25d84c37843b37a239}{A\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\item 
+\#define \mbox{\hyperlink{test__virtual__functions_8cpp_ad9329bcfdebbe2a5875f060c129a8c9f}{B\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\item 
+\#define \mbox{\hyperlink{test__virtual__functions_8cpp_a1791101e1d2b33a398aa652fe3df619d}{C\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\item 
+\#define \mbox{\hyperlink{test__virtual__functions_8cpp_acd67f8765ab27b2355af55976141131d}{D\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{test__virtual__functions_8cpp_a1f9da5fa164b3496a120494f920c9114}{initialize\+\_\+inherited\+\_\+virtuals}} (py\+::module \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{test__virtual__functions_8cpp_a3c5f99f8a80500a0e44c6cfcc71163e1}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (virtual\+\_\+functions, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{test__virtual__functions_8cpp_a4126fe74ab69ce25d84c37843b37a239}\label{test__virtual__functions_8cpp_a4126fe74ab69ce25d84c37843b37a239}} 
+\index{test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}!A\_METHODS@{A\_METHODS}}
+\index{A\_METHODS@{A\_METHODS}!test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}}
+\subsubsection{\texorpdfstring{A\_METHODS}{A\_METHODS}}
+{\footnotesize\ttfamily \#define A\+\_\+\+M\+E\+T\+H\+O\+DS}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}: \(\backslash\)}
+\DoxyCodeLine{    virtual \textcolor{keywordtype}{int} unlucky\_number() = 0; \(\backslash\)}
+\DoxyCodeLine{    virtual \mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{std::string}} say\_something(\textcolor{keywordtype}{unsigned} times) \{ \mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{        std::string}} \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}} = \textcolor{stringliteral}{""}; \(\backslash\)}
+\DoxyCodeLine{        for (\textcolor{keywordtype}{unsigned} \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}} = 0; \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}} < times; ++\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}) \(\backslash\)}
+\DoxyCodeLine{            \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}} += \textcolor{stringliteral}{"hi"}; \(\backslash\)}
+\DoxyCodeLine{        return \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}; \(\backslash\)}
+\DoxyCodeLine{    \} \mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{    std::string}} say\_everything() \{ \(\backslash\)}
+\DoxyCodeLine{        return say\_something(1) + \textcolor{stringliteral}{" "} + std::to\_string(unlucky\_number()); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__virtual__functions_8cpp_ad9329bcfdebbe2a5875f060c129a8c9f}\label{test__virtual__functions_8cpp_ad9329bcfdebbe2a5875f060c129a8c9f}} 
+\index{test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}!B\_METHODS@{B\_METHODS}}
+\index{B\_METHODS@{B\_METHODS}!test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}}
+\subsubsection{\texorpdfstring{B\_METHODS}{B\_METHODS}}
+{\footnotesize\ttfamily \#define B\+\_\+\+M\+E\+T\+H\+O\+DS}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}: \(\backslash\)}
+\DoxyCodeLine{    int unlucky\_number()\textcolor{keyword}{ override }\{ \textcolor{keywordflow}{return} 13; \} \mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{    std::string}} say\_something(\textcolor{keywordtype}{unsigned} times)\textcolor{keyword}{ override }\{ \(\backslash\)}
+\DoxyCodeLine{        return \textcolor{stringliteral}{"B says hi "} + std::to\_string(times) + \textcolor{stringliteral}{" times"}; \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    virtual \textcolor{keywordtype}{double} lucky\_number() \{ \textcolor{keywordflow}{return} 7.0; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__virtual__functions_8cpp_a1791101e1d2b33a398aa652fe3df619d}\label{test__virtual__functions_8cpp_a1791101e1d2b33a398aa652fe3df619d}} 
+\index{test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}!C\_METHODS@{C\_METHODS}}
+\index{C\_METHODS@{C\_METHODS}!test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}}
+\subsubsection{\texorpdfstring{C\_METHODS}{C\_METHODS}}
+{\footnotesize\ttfamily \#define C\+\_\+\+M\+E\+T\+H\+O\+DS}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}: \(\backslash\)}
+\DoxyCodeLine{    int unlucky\_number()\textcolor{keyword}{ override }\{ \textcolor{keywordflow}{return} 4444; \} \(\backslash\)}
+\DoxyCodeLine{    double lucky\_number()\textcolor{keyword}{ override }\{ \textcolor{keywordflow}{return} 888; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__virtual__functions_8cpp_acd67f8765ab27b2355af55976141131d}\label{test__virtual__functions_8cpp_acd67f8765ab27b2355af55976141131d}} 
+\index{test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}!D\_METHODS@{D\_METHODS}}
+\index{D\_METHODS@{D\_METHODS}!test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}}
+\subsubsection{\texorpdfstring{D\_METHODS}{D\_METHODS}}
+{\footnotesize\ttfamily \#define D\+\_\+\+M\+E\+T\+H\+O\+DS}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__virtual__functions_8cpp_a1f9da5fa164b3496a120494f920c9114}\label{test__virtual__functions_8cpp_a1f9da5fa164b3496a120494f920c9114}} 
+\index{test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}!initialize\_inherited\_virtuals@{initialize\_inherited\_virtuals}}
+\index{initialize\_inherited\_virtuals@{initialize\_inherited\_virtuals}!test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}}
+\subsubsection{\texorpdfstring{initialize\_inherited\_virtuals()}{initialize\_inherited\_virtuals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} initialize\+\_\+inherited\+\_\+virtuals (\begin{DoxyParamCaption}\item[{py\+::module \&}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__virtual__functions_8cpp_a3c5f99f8a80500a0e44c6cfcc71163e1}\label{test__virtual__functions_8cpp_a3c5f99f8a80500a0e44c6cfcc71163e1}} 
+\index{test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_virtual\_functions.cpp@{test\_virtual\_functions.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{virtual\+\_\+functions}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+

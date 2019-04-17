@@ -1,0 +1,66 @@
+\hypertarget{_s_d_l__main_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+S\+D\+L2/\+S\+D\+L\+\_\+main.h File Reference}
+\label{_s_d_l__main_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/SDL2/SDL\_main.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/SDL2/SDL\_main.h}}
+{\ttfamily \#include \char`\"{}S\+D\+L\+\_\+stdinc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}begin\+\_\+code.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}close\+\_\+code.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_s_d_l__main_8h_aff46224d961128004c2b4223648f3d40}{C\+\_\+\+L\+I\+N\+K\+A\+GE}}
+\item 
+\#define \mbox{\hyperlink{_s_d_l__main_8h_a3934e9a3a2bfa70c194144202edf41bb}{S\+D\+L\+M\+A\+I\+N\+\_\+\+D\+E\+C\+L\+S\+P\+EC}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_d_l__main_8h_aff46224d961128004c2b4223648f3d40}{C\+\_\+\+L\+I\+N\+K\+A\+GE}} \mbox{\hyperlink{_s_d_l__main_8h_a3934e9a3a2bfa70c194144202edf41bb}{S\+D\+L\+M\+A\+I\+N\+\_\+\+D\+E\+C\+L\+S\+P\+EC}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__main_8h_a76f28ab03bb126b3bb81fdaecea030d5}{S\+D\+L\+\_\+main}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_python27_2eval_8h_a9e4bf27daf5ceabe639e59fd5e9fd3b2}{argc}}, char $\ast$\mbox{\hyperlink{pythonrun_8h_af3cb49c013b6d4b79e7a00fc6807e954}{argv}}\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\+E\+C\+L\+S\+P\+EC}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\+D\+L\+C\+A\+LL}} \mbox{\hyperlink{_s_d_l__main_8h_a6a4bb5ffb489bf0956bc1b813397306d}{S\+D\+L\+\_\+\+Set\+Main\+Ready}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Redefine \mbox{\hyperlink{namespacepybind11_1_1____main_____a52c17c6403836cdf54441f7af087e631}{main()}} on some platforms so that it is called by S\+DL.
+
+The application\textquotesingle{}s \mbox{\hyperlink{namespacepybind11_1_1____main_____a52c17c6403836cdf54441f7af087e631}{main()}} function must be called with C linkage, and should be declared like this\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\textcolor{keyword}{extern} \textcolor{stringliteral}{"C"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{namespacepybind11_1_1____main_____a52c17c6403836cdf54441f7af087e631}{main}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{_python27_2eval_8h_a9e4bf27daf5ceabe639e59fd5e9fd3b2}{argc}}, \textcolor{keywordtype}{char} *\mbox{\hyperlink{pygetopt_8h_af2efa898e9eed6fe6715279cb1ec35b0}{argv}}[])}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_s_d_l__main_8h_aff46224d961128004c2b4223648f3d40}\label{_s_d_l__main_8h_aff46224d961128004c2b4223648f3d40}} 
+\index{SDL\_main.h@{SDL\_main.h}!C\_LINKAGE@{C\_LINKAGE}}
+\index{C\_LINKAGE@{C\_LINKAGE}!SDL\_main.h@{SDL\_main.h}}
+\subsubsection{\texorpdfstring{C\_LINKAGE}{C\_LINKAGE}}
+{\footnotesize\ttfamily \#define C\+\_\+\+L\+I\+N\+K\+A\+GE}
+
+\mbox{\Hypertarget{_s_d_l__main_8h_a3934e9a3a2bfa70c194144202edf41bb}\label{_s_d_l__main_8h_a3934e9a3a2bfa70c194144202edf41bb}} 
+\index{SDL\_main.h@{SDL\_main.h}!SDLMAIN\_DECLSPEC@{SDLMAIN\_DECLSPEC}}
+\index{SDLMAIN\_DECLSPEC@{SDLMAIN\_DECLSPEC}!SDL\_main.h@{SDL\_main.h}}
+\subsubsection{\texorpdfstring{SDLMAIN\_DECLSPEC}{SDLMAIN\_DECLSPEC}}
+{\footnotesize\ttfamily \#define S\+D\+L\+M\+A\+I\+N\+\_\+\+D\+E\+C\+L\+S\+P\+EC}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_s_d_l__main_8h_a76f28ab03bb126b3bb81fdaecea030d5}\label{_s_d_l__main_8h_a76f28ab03bb126b3bb81fdaecea030d5}} 
+\index{SDL\_main.h@{SDL\_main.h}!SDL\_main@{SDL\_main}}
+\index{SDL\_main@{SDL\_main}!SDL\_main.h@{SDL\_main.h}}
+\subsubsection{\texorpdfstring{SDL\_main()}{SDL\_main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__main_8h_aff46224d961128004c2b4223648f3d40}{C\+\_\+\+L\+I\+N\+K\+A\+GE}} \mbox{\hyperlink{_s_d_l__main_8h_a3934e9a3a2bfa70c194144202edf41bb}{S\+D\+L\+M\+A\+I\+N\+\_\+\+D\+E\+C\+L\+S\+P\+EC}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} S\+D\+L\+\_\+main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+The prototype for the application\textquotesingle{}s \mbox{\hyperlink{namespacepybind11_1_1____main_____a52c17c6403836cdf54441f7af087e631}{main()}} function \mbox{\Hypertarget{_s_d_l__main_8h_a6a4bb5ffb489bf0956bc1b813397306d}\label{_s_d_l__main_8h_a6a4bb5ffb489bf0956bc1b813397306d}} 
+\index{SDL\_main.h@{SDL\_main.h}!SDL\_SetMainReady@{SDL\_SetMainReady}}
+\index{SDL\_SetMainReady@{SDL\_SetMainReady}!SDL\_main.h@{SDL\_main.h}}
+\subsubsection{\texorpdfstring{SDL\_SetMainReady()}{SDL\_SetMainReady()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\+E\+C\+L\+S\+P\+EC}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\+D\+L\+C\+A\+LL}} S\+D\+L\+\_\+\+Set\+Main\+Ready (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+This is called by the real S\+DL main function to let the rest of the library know that initialization was done properly.
+
+Calling this yourself without knowing what you\textquotesingle{}re doing can cause crashes and hard to diagnose problems with your application. 

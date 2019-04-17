@@ -1,0 +1,237 @@
+\hypertarget{camera_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pygame/camera.h File Reference}
+\label{camera_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/camera.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/camera.h}}
+{\ttfamily \#include \char`\"{}pygame.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}doc/camera\+\_\+doc.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{classbuffer}{buffer}}
+\item 
+struct \mbox{\hyperlink{structpg_camera_object}{pg\+Camera\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{camera_8h_aa807ba1a3c4f30be53bda729161520fb}{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24}}~\textquotesingle{}R\+G\+B3\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{camera_8h_ad160406e838dd17b4efbb013324ef600}{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444}}~\textquotesingle{}R444\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{camera_8h_a5e78c1fcd63f3e67a818c9c9bf11fac7}{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV}}~\textquotesingle{}Y\+U\+YV\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{camera_8h_ab0ba4dd6e237b96132c0a66be2fb3bc2}{C\+L\+E\+AR}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})~memset (\&(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}), 0, sizeof (\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))
+\item 
+\#define \mbox{\hyperlink{camera_8h_ab20ef9c02db6d17a4d398d9cd70ada82}{S\+AT}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}})~if (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} \& ($\sim$255)) \{ if (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} $<$ 0) \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} = 0; else \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} = 255; \}
+\item 
+\#define \mbox{\hyperlink{camera_8h_af4cb7fc28424a86815336c6b27f13c60}{S\+A\+T2}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}) \& ($\sim$255) ? ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}) $<$ 0 ? 0 \+: 255) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}))
+\item 
+\#define \mbox{\hyperlink{camera_8h_a93493eb8fae5549bd5be67f3449245e0}{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH}}~640
+\item 
+\#define \mbox{\hyperlink{camera_8h_a1879f9e5604a01f0983829846001ab23}{D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT}}~480
+\item 
+\#define \mbox{\hyperlink{camera_8h_aceb4cff8917b474171a1abf7118cc624}{R\+G\+B\+\_\+\+O\+UT}}~1
+\item 
+\#define \mbox{\hyperlink{camera_8h_a7e478bddaad17cdb90d235ac6c3d2334}{Y\+U\+V\+\_\+\+O\+UT}}~2
+\item 
+\#define \mbox{\hyperlink{camera_8h_ae318f064c20dc114bef22f1ee61fa009}{H\+S\+V\+\_\+\+O\+UT}}~4
+\item 
+\#define \mbox{\hyperlink{camera_8h_af1eee8175f9533ace83bb2240756ed1d}{C\+A\+M\+\_\+\+V4L}}~1 /$\ast$ deprecated. the incomplete support \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} pygame was removed $\ast$/
+\item 
+\#define \mbox{\hyperlink{camera_8h_a72aa631989ed613a015ac145a97b0854}{C\+A\+M\+\_\+\+V4\+L2}}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpg_camera_object}{pg\+Camera\+Object}} \mbox{\hyperlink{camera_8h_abde32eadaff9fb318ae207050a52a2b4}{pg\+Camera\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_ace54b55c0bb6bad402d9d5b77fe9edb7}{colorspace}} (\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} cspace)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a8173aad02424ad8d9e12dc09e2c7a3d7}{rgb24\+\_\+to\+\_\+rgb}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a91959aa20dd8a1ee0e48b3af0046231e}{rgb444\+\_\+to\+\_\+rgb}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a3b20981f63e4e14298631a157537b0b1}{rgb\+\_\+to\+\_\+yuv}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a633906574fe6e39b7f2840bed0e49832}{source}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_afa783d3721685fe2e4027b1642afa578}{rgb\+\_\+to\+\_\+hsv}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a633906574fe6e39b7f2840bed0e49832}{source}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a5f0711dc1488fc0bfa8905efdcb1dc70}{yuyv\+\_\+to\+\_\+rgb}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a35e7868980f2007400fd84543c9b1626}{yuyv\+\_\+to\+\_\+yuv}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a464152ff09f6de09e74c8f1268573774}{uyvy\+\_\+to\+\_\+rgb}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a8190bc2f7318a436bd0a896abeb3cadb}{uyvy\+\_\+to\+\_\+yuv}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a6189ee471d787fb0c4507707d61b6905}{sbggr8\+\_\+to\+\_\+rgb}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_a3b63c2b940db9f95fd45fa3d52989bfd}{yuv420\+\_\+to\+\_\+rgb}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{camera_8h_ad9226101925417d0382e5d08e871ba47}{yuv420\+\_\+to\+\_\+yuv}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}}, \mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{camera_8h_af1eee8175f9533ace83bb2240756ed1d}\label{camera_8h_af1eee8175f9533ace83bb2240756ed1d}} 
+\index{camera.h@{camera.h}!CAM\_V4L@{CAM\_V4L}}
+\index{CAM\_V4L@{CAM\_V4L}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{CAM\_V4L}{CAM\_V4L}}
+{\footnotesize\ttfamily \#define C\+A\+M\+\_\+\+V4L~1 /$\ast$ deprecated. the incomplete support \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} pygame was removed $\ast$/}
+
+\mbox{\Hypertarget{camera_8h_a72aa631989ed613a015ac145a97b0854}\label{camera_8h_a72aa631989ed613a015ac145a97b0854}} 
+\index{camera.h@{camera.h}!CAM\_V4L2@{CAM\_V4L2}}
+\index{CAM\_V4L2@{CAM\_V4L2}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{CAM\_V4L2}{CAM\_V4L2}}
+{\footnotesize\ttfamily \#define C\+A\+M\+\_\+\+V4\+L2~2}
+
+\mbox{\Hypertarget{camera_8h_ab0ba4dd6e237b96132c0a66be2fb3bc2}\label{camera_8h_ab0ba4dd6e237b96132c0a66be2fb3bc2}} 
+\index{camera.h@{camera.h}!CLEAR@{CLEAR}}
+\index{CLEAR@{CLEAR}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{CLEAR}{CLEAR}}
+{\footnotesize\ttfamily \#define C\+L\+E\+AR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})~memset (\&(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}), 0, sizeof (\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))}
+
+\mbox{\Hypertarget{camera_8h_a1879f9e5604a01f0983829846001ab23}\label{camera_8h_a1879f9e5604a01f0983829846001ab23}} 
+\index{camera.h@{camera.h}!DEFAULT\_HEIGHT@{DEFAULT\_HEIGHT}}
+\index{DEFAULT\_HEIGHT@{DEFAULT\_HEIGHT}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{DEFAULT\_HEIGHT}{DEFAULT\_HEIGHT}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT~480}
+
+\mbox{\Hypertarget{camera_8h_a93493eb8fae5549bd5be67f3449245e0}\label{camera_8h_a93493eb8fae5549bd5be67f3449245e0}} 
+\index{camera.h@{camera.h}!DEFAULT\_WIDTH@{DEFAULT\_WIDTH}}
+\index{DEFAULT\_WIDTH@{DEFAULT\_WIDTH}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{DEFAULT\_WIDTH}{DEFAULT\_WIDTH}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH~640}
+
+\mbox{\Hypertarget{camera_8h_ae318f064c20dc114bef22f1ee61fa009}\label{camera_8h_ae318f064c20dc114bef22f1ee61fa009}} 
+\index{camera.h@{camera.h}!HSV\_OUT@{HSV\_OUT}}
+\index{HSV\_OUT@{HSV\_OUT}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{HSV\_OUT}{HSV\_OUT}}
+{\footnotesize\ttfamily \#define H\+S\+V\+\_\+\+O\+UT~4}
+
+\mbox{\Hypertarget{camera_8h_aceb4cff8917b474171a1abf7118cc624}\label{camera_8h_aceb4cff8917b474171a1abf7118cc624}} 
+\index{camera.h@{camera.h}!RGB\_OUT@{RGB\_OUT}}
+\index{RGB\_OUT@{RGB\_OUT}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{RGB\_OUT}{RGB\_OUT}}
+{\footnotesize\ttfamily \#define R\+G\+B\+\_\+\+O\+UT~1}
+
+\mbox{\Hypertarget{camera_8h_ab20ef9c02db6d17a4d398d9cd70ada82}\label{camera_8h_ab20ef9c02db6d17a4d398d9cd70ada82}} 
+\index{camera.h@{camera.h}!SAT@{SAT}}
+\index{SAT@{SAT}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{SAT}{SAT}}
+{\footnotesize\ttfamily \#define S\+AT(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} }\end{DoxyParamCaption})~if (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} \& ($\sim$255)) \{ if (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} $<$ 0) \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} = 0; else \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} = 255; \}}
+
+\mbox{\Hypertarget{camera_8h_af4cb7fc28424a86815336c6b27f13c60}\label{camera_8h_af4cb7fc28424a86815336c6b27f13c60}} 
+\index{camera.h@{camera.h}!SAT2@{SAT2}}
+\index{SAT2@{SAT2}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{SAT2}{SAT2}}
+{\footnotesize\ttfamily \#define S\+A\+T2(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}) \& ($\sim$255) ? ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}) $<$ 0 ? 0 \+: 255) \+: (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}))}
+
+\mbox{\Hypertarget{camera_8h_aa807ba1a3c4f30be53bda729161520fb}\label{camera_8h_aa807ba1a3c4f30be53bda729161520fb}} 
+\index{camera.h@{camera.h}!V4L2\_PIX\_FMT\_RGB24@{V4L2\_PIX\_FMT\_RGB24}}
+\index{V4L2\_PIX\_FMT\_RGB24@{V4L2\_PIX\_FMT\_RGB24}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{V4L2\_PIX\_FMT\_RGB24}{V4L2\_PIX\_FMT\_RGB24}}
+{\footnotesize\ttfamily \#define V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24~\textquotesingle{}R\+G\+B3\textquotesingle{}}
+
+\mbox{\Hypertarget{camera_8h_ad160406e838dd17b4efbb013324ef600}\label{camera_8h_ad160406e838dd17b4efbb013324ef600}} 
+\index{camera.h@{camera.h}!V4L2\_PIX\_FMT\_RGB444@{V4L2\_PIX\_FMT\_RGB444}}
+\index{V4L2\_PIX\_FMT\_RGB444@{V4L2\_PIX\_FMT\_RGB444}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{V4L2\_PIX\_FMT\_RGB444}{V4L2\_PIX\_FMT\_RGB444}}
+{\footnotesize\ttfamily \#define V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444~\textquotesingle{}R444\textquotesingle{}}
+
+\mbox{\Hypertarget{camera_8h_a5e78c1fcd63f3e67a818c9c9bf11fac7}\label{camera_8h_a5e78c1fcd63f3e67a818c9c9bf11fac7}} 
+\index{camera.h@{camera.h}!V4L2\_PIX\_FMT\_YUYV@{V4L2\_PIX\_FMT\_YUYV}}
+\index{V4L2\_PIX\_FMT\_YUYV@{V4L2\_PIX\_FMT\_YUYV}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{V4L2\_PIX\_FMT\_YUYV}{V4L2\_PIX\_FMT\_YUYV}}
+{\footnotesize\ttfamily \#define V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV~\textquotesingle{}Y\+U\+YV\textquotesingle{}}
+
+\mbox{\Hypertarget{camera_8h_a7e478bddaad17cdb90d235ac6c3d2334}\label{camera_8h_a7e478bddaad17cdb90d235ac6c3d2334}} 
+\index{camera.h@{camera.h}!YUV\_OUT@{YUV\_OUT}}
+\index{YUV\_OUT@{YUV\_OUT}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{YUV\_OUT}{YUV\_OUT}}
+{\footnotesize\ttfamily \#define Y\+U\+V\+\_\+\+O\+UT~2}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{camera_8h_abde32eadaff9fb318ae207050a52a2b4}\label{camera_8h_abde32eadaff9fb318ae207050a52a2b4}} 
+\index{camera.h@{camera.h}!pgCameraObject@{pgCameraObject}}
+\index{pgCameraObject@{pgCameraObject}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{pgCameraObject}{pgCameraObject}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpg_camera_object}{pg\+Camera\+Object}}  \mbox{\hyperlink{structpg_camera_object}{pg\+Camera\+Object}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{camera_8h_ace54b55c0bb6bad402d9d5b77fe9edb7}\label{camera_8h_ace54b55c0bb6bad402d9d5b77fe9edb7}} 
+\index{camera.h@{camera.h}!colorspace@{colorspace}}
+\index{colorspace@{colorspace}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{colorspace()}{colorspace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} colorspace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{cspace }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a8173aad02424ad8d9e12dc09e2c7a3d7}\label{camera_8h_a8173aad02424ad8d9e12dc09e2c7a3d7}} 
+\index{camera.h@{camera.h}!rgb24\_to\_rgb@{rgb24\_to\_rgb}}
+\index{rgb24\_to\_rgb@{rgb24\_to\_rgb}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{rgb24\_to\_rgb()}{rgb24\_to\_rgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} rgb24\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a91959aa20dd8a1ee0e48b3af0046231e}\label{camera_8h_a91959aa20dd8a1ee0e48b3af0046231e}} 
+\index{camera.h@{camera.h}!rgb444\_to\_rgb@{rgb444\_to\_rgb}}
+\index{rgb444\_to\_rgb@{rgb444\_to\_rgb}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{rgb444\_to\_rgb()}{rgb444\_to\_rgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} rgb444\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_afa783d3721685fe2e4027b1642afa578}\label{camera_8h_afa783d3721685fe2e4027b1642afa578}} 
+\index{camera.h@{camera.h}!rgb\_to\_hsv@{rgb\_to\_hsv}}
+\index{rgb\_to\_hsv@{rgb\_to\_hsv}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{rgb\_to\_hsv()}{rgb\_to\_hsv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} rgb\+\_\+to\+\_\+hsv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}}]{source,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a3b20981f63e4e14298631a157537b0b1}\label{camera_8h_a3b20981f63e4e14298631a157537b0b1}} 
+\index{camera.h@{camera.h}!rgb\_to\_yuv@{rgb\_to\_yuv}}
+\index{rgb\_to\_yuv@{rgb\_to\_yuv}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{rgb\_to\_yuv()}{rgb\_to\_yuv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} rgb\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}}]{source,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a6189ee471d787fb0c4507707d61b6905}\label{camera_8h_a6189ee471d787fb0c4507707d61b6905}} 
+\index{camera.h@{camera.h}!sbggr8\_to\_rgb@{sbggr8\_to\_rgb}}
+\index{sbggr8\_to\_rgb@{sbggr8\_to\_rgb}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{sbggr8\_to\_rgb()}{sbggr8\_to\_rgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} sbggr8\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{width,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{height,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a464152ff09f6de09e74c8f1268573774}\label{camera_8h_a464152ff09f6de09e74c8f1268573774}} 
+\index{camera.h@{camera.h}!uyvy\_to\_rgb@{uyvy\_to\_rgb}}
+\index{uyvy\_to\_rgb@{uyvy\_to\_rgb}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{uyvy\_to\_rgb()}{uyvy\_to\_rgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} uyvy\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a8190bc2f7318a436bd0a896abeb3cadb}\label{camera_8h_a8190bc2f7318a436bd0a896abeb3cadb}} 
+\index{camera.h@{camera.h}!uyvy\_to\_yuv@{uyvy\_to\_yuv}}
+\index{uyvy\_to\_yuv@{uyvy\_to\_yuv}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{uyvy\_to\_yuv()}{uyvy\_to\_yuv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} uyvy\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a3b63c2b940db9f95fd45fa3d52989bfd}\label{camera_8h_a3b63c2b940db9f95fd45fa3d52989bfd}} 
+\index{camera.h@{camera.h}!yuv420\_to\_rgb@{yuv420\_to\_rgb}}
+\index{yuv420\_to\_rgb@{yuv420\_to\_rgb}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{yuv420\_to\_rgb()}{yuv420\_to\_rgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} yuv420\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{width,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{height,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_ad9226101925417d0382e5d08e871ba47}\label{camera_8h_ad9226101925417d0382e5d08e871ba47}} 
+\index{camera.h@{camera.h}!yuv420\_to\_yuv@{yuv420\_to\_yuv}}
+\index{yuv420\_to\_yuv@{yuv420\_to\_yuv}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{yuv420\_to\_yuv()}{yuv420\_to\_yuv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} yuv420\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{width,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{height,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a5f0711dc1488fc0bfa8905efdcb1dc70}\label{camera_8h_a5f0711dc1488fc0bfa8905efdcb1dc70}} 
+\index{camera.h@{camera.h}!yuyv\_to\_rgb@{yuyv\_to\_rgb}}
+\index{yuyv\_to\_rgb@{yuyv\_to\_rgb}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{yuyv\_to\_rgb()}{yuyv\_to\_rgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} yuyv\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a35e7868980f2007400fd84543c9b1626}\label{camera_8h_a35e7868980f2007400fd84543c9b1626}} 
+\index{camera.h@{camera.h}!yuyv\_to\_yuv@{yuyv\_to\_yuv}}
+\index{yuyv\_to\_yuv@{yuyv\_to\_yuv}!camera.h@{camera.h}}
+\subsubsection{\texorpdfstring{yuyv\_to\_yuv()}{yuyv\_to\_yuv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} yuyv\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{length,  }\item[{\mbox{\hyperlink{struct_s_d_l___pixel_format}{S\+D\+L\+\_\+\+Pixel\+Format}} $\ast$}]{format }\end{DoxyParamCaption})}
+

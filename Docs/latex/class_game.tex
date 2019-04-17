@@ -1,0 +1,244 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game_1_1_enemy}{Enemy}}
+\item 
+class \mbox{\hyperlink{class_game_1_1_entity}{Entity}}
+\item 
+class \mbox{\hyperlink{class_game_1_1_item}{Item}}
+\item 
+class \mbox{\hyperlink{class_game_1_1_player}{Player}}
+\item 
+class \mbox{\hyperlink{class_game_1_1_tile}{Tile}}
+\item 
+class \mbox{\hyperlink{class_game_1_1_vec2_d}{Vec2D}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_a12d537b50fbf7000e60c183411ac0142}{Game}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a6ee8f168a7ab6785a9bb57c6715dad99}{w}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_afa0fb1b5e976920c0abeff2dca3ed774}{h}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}})
+\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a8ba8d7bcda356ed584dc445184320ff7}{clear}} ()
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a1018ac77db757af6826cbd712da5e20e}{flip}} ()
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a922b044ea75b008453028c334d8a6978}{delay}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} milliseconds)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a7ad92b77b596d7882a7ae76eb18b5e6c}{loop}} ()
+\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{class_game_ac0e29588db21270fc613a2e2b6a209c5}{check\+Key\+Pressed}} (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} key\+Name)
+\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{class_game_a3713033ec8d0e8bb80c6cb9fdbb596df}{check\+Mouse\+Pressed}} ()
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{class_game_ad8d6d28b0469587b7641d9f706c35e0c}{get\+MouseX}} ()
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{class_game_a802bb7ac7db292d86099d8712f2988fc}{get\+MouseY}} ()
+\item 
+\mbox{\hyperlink{_s_d_l__video_8h_a55a196c7d3b8497538632c79ae1e6392}{S\+D\+L\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_game_a42abcdfd6a9f87b50ea47315304c7b33}{get\+S\+D\+L\+Window}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ \mbox{\hyperlink{class_game_a611ea1285ac55df5229fed214efa333b}{read\+Tile\+Map}} (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} filename)
+\item 
+std\+::list$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ \mbox{\hyperlink{class_game_a77336c7c6dcb70b4be0366d3aaac4688}{read\+Entity\+File}} (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} filename)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a01f5a8eef42666769787945e2aa24305}{draw}} (std\+::list$<$ std\+::tuple$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ $>$ tup\+List)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_ae6f0d940c21cbdc2951d6435f311c6d9}{Save\+Entities}} (std\+::list$<$ std\+::tuple$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ $>$ entity\+List, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} filename)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a083193df013a787ccc3d819856822254}{Save\+Tiles}} (std\+::list$<$ std\+::tuple$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ $>$ tile\+List, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} filename, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a6ee8f168a7ab6785a9bb57c6715dad99}{w}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_afa0fb1b5e976920c0abeff2dca3ed774}{h}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{class_game_a6af3a4730712fed523037d4a2cf0beab}{W\+I\+N\+\_\+W}} = 12
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{class_game_a59e081cafbf5991c96838c09806319f9}{W\+I\+N\+\_\+H}} = 7
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{class_game_a54d3bb2d75dd10ce20a72da67d73b898}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+ZE}} = 16
+\item 
+\mbox{\hyperlink{class_game_a822fbaa2802a646fcdf2271bf422a6c6}{process}} = Popen(\mbox{[}\textquotesingle{}python3\textquotesingle{}, \textquotesingle{}G\+U\+I.\+py\textquotesingle{}\mbox{]}, stdout=P\+I\+PE, stderr=P\+I\+PE)
+\item 
+\mbox{\hyperlink{class_game_a6567b017dc559d77cb86f65b802c5913}{q}} = queue.\+Queue()
+\item 
+\mbox{\hyperlink{class_game_a6d717106010fb16b734c03c9b147d0a4}{thread1}} = threading.\+Thread(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}}=\mbox{\hyperlink{namespace_game_a0a46e1967198035abbe8eb1cde4d95ba}{func1}})
+\item 
+\mbox{\hyperlink{class_game_acc08a249af8743e6b07bf588cd94b930}{thread2}} = threading.\+Thread(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}}=\mbox{\hyperlink{namespace_game_ae3908fde602ee2498ff3e95476ae78ed}{func2}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to represent the visual of the \mbox{\hyperlink{class_game}{Game}} (aka the renderer) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_a12d537b50fbf7000e60c183411ac0142}\label{class_game_a12d537b50fbf7000e60c183411ac0142}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{w,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{h,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{s }\end{DoxyParamCaption})}
+
+Constructor
+
+Constructor function Returns a true or false value based on successful completion of setup. Takes in dimensions of window. \mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor
+
+Destructor function Shutdown of S\+DL and destruction of initialized objects 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_ac0e29588db21270fc613a2e2b6a209c5}\label{class_game_ac0e29588db21270fc613a2e2b6a209c5}} 
+\index{Game@{Game}!checkKeyPressed@{checkKeyPressed}}
+\index{checkKeyPressed@{checkKeyPressed}!Game@{Game}}
+\subsubsection{\texorpdfstring{checkKeyPressed()}{checkKeyPressed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Game\+::check\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}}]{key\+Name }\end{DoxyParamCaption})}
+
+Check if a key is pressed \mbox{\Hypertarget{class_game_a3713033ec8d0e8bb80c6cb9fdbb596df}\label{class_game_a3713033ec8d0e8bb80c6cb9fdbb596df}} 
+\index{Game@{Game}!checkMousePressed@{checkMousePressed}}
+\index{checkMousePressed@{checkMousePressed}!Game@{Game}}
+\subsubsection{\texorpdfstring{checkMousePressed()}{checkMousePressed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Game\+::check\+Mouse\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if left mouse is pressed \mbox{\Hypertarget{class_game_a8ba8d7bcda356ed584dc445184320ff7}\label{class_game_a8ba8d7bcda356ed584dc445184320ff7}} 
+\index{Game@{Game}!clear@{clear}}
+\index{clear@{clear}!Game@{Game}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the screen
+
+clear Clears the screen \mbox{\Hypertarget{class_game_a922b044ea75b008453028c334d8a6978}\label{class_game_a922b044ea75b008453028c334d8a6978}} 
+\index{Game@{Game}!delay@{delay}}
+\index{delay@{delay}!Game@{Game}}
+\subsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{milliseconds }\end{DoxyParamCaption})}
+
+Delay rendering
+
+Handles frame capping for the game window \mbox{\Hypertarget{class_game_a01f5a8eef42666769787945e2aa24305}\label{class_game_a01f5a8eef42666769787945e2aa24305}} 
+\index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::draw (\begin{DoxyParamCaption}\item[{std\+::list$<$ std\+::tuple$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ $>$}]{tup\+List }\end{DoxyParamCaption})}
+
+draw entities from given tuple list \mbox{\Hypertarget{class_game_a1018ac77db757af6826cbd712da5e20e}\label{class_game_a1018ac77db757af6826cbd712da5e20e}} 
+\index{Game@{Game}!flip@{flip}}
+\index{flip@{flip}!Game@{Game}}
+\subsubsection{\texorpdfstring{flip()}{flip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Needed for rendering
+
+Flip The flip function gets called once per loop It swaps out the previvous frame in a double-\/buffering system \mbox{\Hypertarget{class_game_ad8d6d28b0469587b7641d9f706c35e0c}\label{class_game_ad8d6d28b0469587b7641d9f706c35e0c}} 
+\index{Game@{Game}!getMouseX@{getMouseX}}
+\index{getMouseX@{getMouseX}!Game@{Game}}
+\subsubsection{\texorpdfstring{getMouseX()}{getMouseX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Game\+::get\+MouseX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the mouse\textquotesingle{}s current x coordinate relative to the window \mbox{\Hypertarget{class_game_a802bb7ac7db292d86099d8712f2988fc}\label{class_game_a802bb7ac7db292d86099d8712f2988fc}} 
+\index{Game@{Game}!getMouseY@{getMouseY}}
+\index{getMouseY@{getMouseY}!Game@{Game}}
+\subsubsection{\texorpdfstring{getMouseY()}{getMouseY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Game\+::get\+MouseY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the mouse\textquotesingle{}s current y coordinate relative to the window \mbox{\Hypertarget{class_game_a42abcdfd6a9f87b50ea47315304c7b33}\label{class_game_a42abcdfd6a9f87b50ea47315304c7b33}} 
+\index{Game@{Game}!getSDLWindow@{getSDLWindow}}
+\index{getSDLWindow@{getSDLWindow}!Game@{Game}}
+\subsubsection{\texorpdfstring{getSDLWindow()}{getSDLWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__video_8h_a55a196c7d3b8497538632c79ae1e6392}{S\+D\+L\+\_\+\+Window}} $\ast$ Game\+::get\+S\+D\+L\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get pointer to Window
+
+Get Pointer to Window \mbox{\Hypertarget{class_game_a7ad92b77b596d7882a7ae76eb18b5e6c}\label{class_game_a7ad92b77b596d7882a7ae76eb18b5e6c}} 
+\index{Game@{Game}!loop@{loop}}
+\index{loop@{loop}!Game@{Game}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loop the runs forever
+
+Main loop flag loops the runs forever \mbox{\Hypertarget{class_game_a77336c7c6dcb70b4be0366d3aaac4688}\label{class_game_a77336c7c6dcb70b4be0366d3aaac4688}} 
+\index{Game@{Game}!readEntityFile@{readEntityFile}}
+\index{readEntityFile@{readEntityFile}!Game@{Game}}
+\subsubsection{\texorpdfstring{readEntityFile()}{readEntityFile()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ Game\+::read\+Entity\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}}]{filename }\end{DoxyParamCaption})}
+
+read entity locations and values from file \mbox{\Hypertarget{class_game_a611ea1285ac55df5229fed214efa333b}\label{class_game_a611ea1285ac55df5229fed214efa333b}} 
+\index{Game@{Game}!readTileMap@{readTileMap}}
+\index{readTileMap@{readTileMap}!Game@{Game}}
+\subsubsection{\texorpdfstring{readTileMap()}{readTileMap()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ Game\+::read\+Tile\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}}]{filename }\end{DoxyParamCaption})}
+
+read tile locations and values from file \mbox{\Hypertarget{class_game_ae6f0d940c21cbdc2951d6435f311c6d9}\label{class_game_ae6f0d940c21cbdc2951d6435f311c6d9}} 
+\index{Game@{Game}!SaveEntities@{SaveEntities}}
+\index{SaveEntities@{SaveEntities}!Game@{Game}}
+\subsubsection{\texorpdfstring{SaveEntities()}{SaveEntities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::\+Save\+Entities (\begin{DoxyParamCaption}\item[{std\+::list$<$ std\+::tuple$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ $>$}]{entity\+List,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}}]{filename }\end{DoxyParamCaption})}
+
+Save the current state of entities and tiles to a file \mbox{\Hypertarget{class_game_a083193df013a787ccc3d819856822254}\label{class_game_a083193df013a787ccc3d819856822254}} 
+\index{Game@{Game}!SaveTiles@{SaveTiles}}
+\index{SaveTiles@{SaveTiles}!Game@{Game}}
+\subsubsection{\texorpdfstring{SaveTiles()}{SaveTiles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::\+Save\+Tiles (\begin{DoxyParamCaption}\item[{std\+::list$<$ std\+::tuple$<$ \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $>$ $>$}]{tile\+List,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}}]{filename,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{w,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{h }\end{DoxyParamCaption})}
+
+Save the current tile state 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a822fbaa2802a646fcdf2271bf422a6c6}\label{class_game_a822fbaa2802a646fcdf2271bf422a6c6}} 
+\index{Game@{Game}!process@{process}}
+\index{process@{process}!Game@{Game}}
+\subsubsection{\texorpdfstring{process}{process}}
+{\footnotesize\ttfamily Game.\+process = Popen(\mbox{[}\textquotesingle{}python3\textquotesingle{}, \textquotesingle{}G\+U\+I.\+py\textquotesingle{}\mbox{]}, stdout=P\+I\+PE, stderr=P\+I\+PE)}
+
+\mbox{\Hypertarget{class_game_a6567b017dc559d77cb86f65b802c5913}\label{class_game_a6567b017dc559d77cb86f65b802c5913}} 
+\index{Game@{Game}!q@{q}}
+\index{q@{q}!Game@{Game}}
+\subsubsection{\texorpdfstring{q}{q}}
+{\footnotesize\ttfamily Game.\+q = queue.\+Queue()}
+
+\mbox{\Hypertarget{class_game_a54d3bb2d75dd10ce20a72da67d73b898}\label{class_game_a54d3bb2d75dd10ce20a72da67d73b898}} 
+\index{Game@{Game}!SPRITE\_SIZE@{SPRITE\_SIZE}}
+\index{SPRITE\_SIZE@{SPRITE\_SIZE}!Game@{Game}}
+\subsubsection{\texorpdfstring{SPRITE\_SIZE}{SPRITE\_SIZE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Game.\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+ZE = 16}
+
+\mbox{\Hypertarget{class_game_a6d717106010fb16b734c03c9b147d0a4}\label{class_game_a6d717106010fb16b734c03c9b147d0a4}} 
+\index{Game@{Game}!thread1@{thread1}}
+\index{thread1@{thread1}!Game@{Game}}
+\subsubsection{\texorpdfstring{thread1}{thread1}}
+{\footnotesize\ttfamily Game.\+thread1 = threading.\+Thread(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}}=\mbox{\hyperlink{namespace_game_a0a46e1967198035abbe8eb1cde4d95ba}{func1}})}
+
+\mbox{\Hypertarget{class_game_acc08a249af8743e6b07bf588cd94b930}\label{class_game_acc08a249af8743e6b07bf588cd94b930}} 
+\index{Game@{Game}!thread2@{thread2}}
+\index{thread2@{thread2}!Game@{Game}}
+\subsubsection{\texorpdfstring{thread2}{thread2}}
+{\footnotesize\ttfamily Game.\+thread2 = threading.\+Thread(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af9d0cbbbeb7414e786c41899e5a856d7}{target}}=\mbox{\hyperlink{namespace_game_ae3908fde602ee2498ff3e95476ae78ed}{func2}})}
+
+\mbox{\Hypertarget{class_game_a59e081cafbf5991c96838c09806319f9}\label{class_game_a59e081cafbf5991c96838c09806319f9}} 
+\index{Game@{Game}!WIN\_H@{WIN\_H}}
+\index{WIN\_H@{WIN\_H}!Game@{Game}}
+\subsubsection{\texorpdfstring{WIN\_H}{WIN\_H}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Game.\+W\+I\+N\+\_\+H = 7}
+
+\mbox{\Hypertarget{class_game_a6af3a4730712fed523037d4a2cf0beab}\label{class_game_a6af3a4730712fed523037d4a2cf0beab}} 
+\index{Game@{Game}!WIN\_W@{WIN\_W}}
+\index{WIN\_W@{WIN\_W}!Game@{Game}}
+\subsubsection{\texorpdfstring{WIN\_W}{WIN\_W}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Game.\+W\+I\+N\+\_\+W = 12}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/include/\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/src/\mbox{\hyperlink{_game_8py}{Game.\+py}}\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/src/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

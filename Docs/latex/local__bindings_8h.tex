@@ -1,0 +1,236 @@
+\hypertarget{local__bindings_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/local\+\_\+bindings.h File Reference}
+\label{local__bindings_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/local\_bindings.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/local\_bindings.h}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_local_base}{Local\+Base$<$ int $>$}}
+\begin{DoxyCompactList}\small\item\em Simple class used to test py\+::local\+: \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpets_1_1_pet}{pets\+::\+Pet}}
+\item 
+struct \mbox{\hyperlink{struct_mix_g_l}{Mix\+GL}}
+\item 
+struct \mbox{\hyperlink{struct_mix_g_l2}{Mix\+G\+L2}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepets}{pets}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}{Local\+Type}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 0 $>$
+\begin{DoxyCompactList}\small\item\em Registered with py\+::module\+\_\+local in both main and secondary modules\+: \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{local__bindings_8h_a18f8458db3a414141745e6d455348250}{Non\+Local\+Type}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Registered without py\+::module\+\_\+local in both modules\+: \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}{Non\+Local2}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 2 $>$
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_a}{A}} second non-\/local type (for stl\+\_\+bind tests)\+: \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{local__bindings_8h_af9c532fa5a1c2a823615618acc365d56}{Local\+External}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 3 $>$
+\begin{DoxyCompactList}\small\item\em Tests within-\/module, different-\/compilation-\/unit local definition conflict\+: \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{local__bindings_8h_a656cfcd753cef17592926c8db521b14a}{Mixed\+Local\+Global}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 4 $>$
+\begin{DoxyCompactList}\small\item\em Mixed\+: registered local first, then global. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{local__bindings_8h_af214b27aa24038f9fc81c955506d92c6}{Mixed\+Global\+Local}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 5 $>$
+\begin{DoxyCompactList}\small\item\em Mixed\+: global first, then local. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{local__bindings_8h_a9b777e9dc5ea7cc537bf590f760e443f}{External\+Type1}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 6 $>$
+\begin{DoxyCompactList}\small\item\em Registered with py\+::module\+\_\+local only in the secondary module\+: \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{local__bindings_8h_a69a90503252a3dedb5dcc6940b00cf77}{External\+Type2}} = \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$ 7 $>$
+\item 
+using \mbox{\hyperlink{local__bindings_8h_a49fff3a00676980aeb982c7a86e0743d}{Local\+Vec}} = std\+::vector$<$ \mbox{\hyperlink{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}{Local\+Type}} $>$
+\item 
+using \mbox{\hyperlink{local__bindings_8h_a4e4cc34faeb6011f75b3430213efcd04}{Local\+Vec2}} = std\+::vector$<$ \mbox{\hyperlink{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}{Non\+Local2}} $>$
+\item 
+using \mbox{\hyperlink{local__bindings_8h_a60cf22650a750931b76d0a201bd567cb}{Local\+Map}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}{Local\+Type}} $>$
+\item 
+using \mbox{\hyperlink{local__bindings_8h_a1b423234e942db1b7a28434a58248666}{Non\+Local\+Vec}} = std\+::vector$<$ \mbox{\hyperlink{local__bindings_8h_a18f8458db3a414141745e6d455348250}{Non\+Local\+Type}} $>$
+\item 
+using \mbox{\hyperlink{local__bindings_8h_a866b4619d59d5ad3360c695dd5f7551b}{Non\+Local\+Vec2}} = std\+::vector$<$ \mbox{\hyperlink{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}{Non\+Local2}} $>$
+\item 
+using \mbox{\hyperlink{local__bindings_8h_ac0b8ffa5d18cd1e6f26cd460686958dd}{Non\+Local\+Map}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{local__bindings_8h_a18f8458db3a414141745e6d455348250}{Non\+Local\+Type}} $>$
+\item 
+using \mbox{\hyperlink{local__bindings_8h_a0e142d9dfa743cfc074af2cc4978e660}{Non\+Local\+Map2}} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{_s_d_l__config_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{local__bindings_8h_aa3c8083e28dd1cb2bb5618d678da3050}{P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE}} (\mbox{\hyperlink{local__bindings_8h_a49fff3a00676980aeb982c7a86e0743d}{Local\+Vec}})
+\item 
+\mbox{\hyperlink{local__bindings_8h_ad05b830069e520f1c962b1921d623d33}{P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE}} (\mbox{\hyperlink{local__bindings_8h_a4e4cc34faeb6011f75b3430213efcd04}{Local\+Vec2}})
+\item 
+\mbox{\hyperlink{local__bindings_8h_ae6633fded4f1a06121be86c81a4ba018}{P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE}} (\mbox{\hyperlink{local__bindings_8h_a60cf22650a750931b76d0a201bd567cb}{Local\+Map}})
+\item 
+\mbox{\hyperlink{local__bindings_8h_a809b9095220e66f46b552080808140ef}{P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE}} (\mbox{\hyperlink{local__bindings_8h_a1b423234e942db1b7a28434a58248666}{Non\+Local\+Vec}})
+\item 
+\mbox{\hyperlink{local__bindings_8h_aba63e2570190cbff0d8d47f6d3ac1b0b}{P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE}} (\mbox{\hyperlink{local__bindings_8h_ac0b8ffa5d18cd1e6f26cd460686958dd}{Non\+Local\+Map}})
+\item 
+\mbox{\hyperlink{local__bindings_8h_a74178467d8e75440b0cf305c5b0487a2}{P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE}} (\mbox{\hyperlink{local__bindings_8h_a0e142d9dfa743cfc074af2cc4978e660}{Non\+Local\+Map2}})
+\item 
+{\footnotesize template$<$typename T , int Adjust = 0, typename... Args$>$ }\\py\+::class\+\_\+$<$ T $>$ \mbox{\hyperlink{local__bindings_8h_a8b1768d29bedbe4a3b6d1fc48358ad1d}{bind\+\_\+local}} (Args \&\&...\mbox{\hyperlink{classargs}{args}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{local__bindings_8h_a9b777e9dc5ea7cc537bf590f760e443f}\label{local__bindings_8h_a9b777e9dc5ea7cc537bf590f760e443f}} 
+\index{local\_bindings.h@{local\_bindings.h}!ExternalType1@{ExternalType1}}
+\index{ExternalType1@{ExternalType1}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{ExternalType1}{ExternalType1}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a9b777e9dc5ea7cc537bf590f760e443f}{External\+Type1}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$6$>$}
+
+
+
+Registered with py\+::module\+\_\+local only in the secondary module\+: 
+
+\mbox{\Hypertarget{local__bindings_8h_a69a90503252a3dedb5dcc6940b00cf77}\label{local__bindings_8h_a69a90503252a3dedb5dcc6940b00cf77}} 
+\index{local\_bindings.h@{local\_bindings.h}!ExternalType2@{ExternalType2}}
+\index{ExternalType2@{ExternalType2}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{ExternalType2}{ExternalType2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a69a90503252a3dedb5dcc6940b00cf77}{External\+Type2}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$7$>$}
+
+\mbox{\Hypertarget{local__bindings_8h_af9c532fa5a1c2a823615618acc365d56}\label{local__bindings_8h_af9c532fa5a1c2a823615618acc365d56}} 
+\index{local\_bindings.h@{local\_bindings.h}!LocalExternal@{LocalExternal}}
+\index{LocalExternal@{LocalExternal}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{LocalExternal}{LocalExternal}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_af9c532fa5a1c2a823615618acc365d56}{Local\+External}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$3$>$}
+
+
+
+Tests within-\/module, different-\/compilation-\/unit local definition conflict\+: 
+
+\mbox{\Hypertarget{local__bindings_8h_a60cf22650a750931b76d0a201bd567cb}\label{local__bindings_8h_a60cf22650a750931b76d0a201bd567cb}} 
+\index{local\_bindings.h@{local\_bindings.h}!LocalMap@{LocalMap}}
+\index{LocalMap@{LocalMap}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{LocalMap}{LocalMap}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a60cf22650a750931b76d0a201bd567cb}{Local\+Map}} =  std\+::unordered\+\_\+map$<$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}{Local\+Type}}$>$}
+
+\mbox{\Hypertarget{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}\label{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}} 
+\index{local\_bindings.h@{local\_bindings.h}!LocalType@{LocalType}}
+\index{LocalType@{LocalType}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{LocalType}{LocalType}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}{Local\+Type}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$0$>$}
+
+
+
+Registered with py\+::module\+\_\+local in both main and secondary modules\+: 
+
+\mbox{\Hypertarget{local__bindings_8h_a49fff3a00676980aeb982c7a86e0743d}\label{local__bindings_8h_a49fff3a00676980aeb982c7a86e0743d}} 
+\index{local\_bindings.h@{local\_bindings.h}!LocalVec@{LocalVec}}
+\index{LocalVec@{LocalVec}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{LocalVec}{LocalVec}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a49fff3a00676980aeb982c7a86e0743d}{Local\+Vec}} =  std\+::vector$<$\mbox{\hyperlink{local__bindings_8h_a9bf585f4e25f49a5491122db03826823}{Local\+Type}}$>$}
+
+\mbox{\Hypertarget{local__bindings_8h_a4e4cc34faeb6011f75b3430213efcd04}\label{local__bindings_8h_a4e4cc34faeb6011f75b3430213efcd04}} 
+\index{local\_bindings.h@{local\_bindings.h}!LocalVec2@{LocalVec2}}
+\index{LocalVec2@{LocalVec2}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{LocalVec2}{LocalVec2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a4e4cc34faeb6011f75b3430213efcd04}{Local\+Vec2}} =  std\+::vector$<$\mbox{\hyperlink{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}{Non\+Local2}}$>$}
+
+\mbox{\Hypertarget{local__bindings_8h_af214b27aa24038f9fc81c955506d92c6}\label{local__bindings_8h_af214b27aa24038f9fc81c955506d92c6}} 
+\index{local\_bindings.h@{local\_bindings.h}!MixedGlobalLocal@{MixedGlobalLocal}}
+\index{MixedGlobalLocal@{MixedGlobalLocal}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{MixedGlobalLocal}{MixedGlobalLocal}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_af214b27aa24038f9fc81c955506d92c6}{Mixed\+Global\+Local}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$5$>$}
+
+
+
+Mixed\+: global first, then local. 
+
+\mbox{\Hypertarget{local__bindings_8h_a656cfcd753cef17592926c8db521b14a}\label{local__bindings_8h_a656cfcd753cef17592926c8db521b14a}} 
+\index{local\_bindings.h@{local\_bindings.h}!MixedLocalGlobal@{MixedLocalGlobal}}
+\index{MixedLocalGlobal@{MixedLocalGlobal}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{MixedLocalGlobal}{MixedLocalGlobal}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a656cfcd753cef17592926c8db521b14a}{Mixed\+Local\+Global}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$4$>$}
+
+
+
+Mixed\+: registered local first, then global. 
+
+\mbox{\Hypertarget{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}\label{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}} 
+\index{local\_bindings.h@{local\_bindings.h}!NonLocal2@{NonLocal2}}
+\index{NonLocal2@{NonLocal2}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{NonLocal2}{NonLocal2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}{Non\+Local2}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$2$>$}
+
+
+
+\mbox{\hyperlink{struct_a}{A}} second non-\/local type (for stl\+\_\+bind tests)\+: 
+
+\mbox{\Hypertarget{local__bindings_8h_ac0b8ffa5d18cd1e6f26cd460686958dd}\label{local__bindings_8h_ac0b8ffa5d18cd1e6f26cd460686958dd}} 
+\index{local\_bindings.h@{local\_bindings.h}!NonLocalMap@{NonLocalMap}}
+\index{NonLocalMap@{NonLocalMap}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{NonLocalMap}{NonLocalMap}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_ac0b8ffa5d18cd1e6f26cd460686958dd}{Non\+Local\+Map}} =  std\+::unordered\+\_\+map$<$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{local__bindings_8h_a18f8458db3a414141745e6d455348250}{Non\+Local\+Type}}$>$}
+
+\mbox{\Hypertarget{local__bindings_8h_a0e142d9dfa743cfc074af2cc4978e660}\label{local__bindings_8h_a0e142d9dfa743cfc074af2cc4978e660}} 
+\index{local\_bindings.h@{local\_bindings.h}!NonLocalMap2@{NonLocalMap2}}
+\index{NonLocalMap2@{NonLocalMap2}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{NonLocalMap2}{NonLocalMap2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a0e142d9dfa743cfc074af2cc4978e660}{Non\+Local\+Map2}} =  std\+::unordered\+\_\+map$<$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}}, \mbox{\hyperlink{_s_d_l__config_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}$>$}
+
+\mbox{\Hypertarget{local__bindings_8h_a18f8458db3a414141745e6d455348250}\label{local__bindings_8h_a18f8458db3a414141745e6d455348250}} 
+\index{local\_bindings.h@{local\_bindings.h}!NonLocalType@{NonLocalType}}
+\index{NonLocalType@{NonLocalType}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{NonLocalType}{NonLocalType}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a18f8458db3a414141745e6d455348250}{Non\+Local\+Type}} =  \mbox{\hyperlink{class_local_base}{Local\+Base}}$<$1$>$}
+
+
+
+Registered without py\+::module\+\_\+local in both modules\+: 
+
+\mbox{\Hypertarget{local__bindings_8h_a1b423234e942db1b7a28434a58248666}\label{local__bindings_8h_a1b423234e942db1b7a28434a58248666}} 
+\index{local\_bindings.h@{local\_bindings.h}!NonLocalVec@{NonLocalVec}}
+\index{NonLocalVec@{NonLocalVec}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{NonLocalVec}{NonLocalVec}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a1b423234e942db1b7a28434a58248666}{Non\+Local\+Vec}} =  std\+::vector$<$\mbox{\hyperlink{local__bindings_8h_a18f8458db3a414141745e6d455348250}{Non\+Local\+Type}}$>$}
+
+\mbox{\Hypertarget{local__bindings_8h_a866b4619d59d5ad3360c695dd5f7551b}\label{local__bindings_8h_a866b4619d59d5ad3360c695dd5f7551b}} 
+\index{local\_bindings.h@{local\_bindings.h}!NonLocalVec2@{NonLocalVec2}}
+\index{NonLocalVec2@{NonLocalVec2}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{NonLocalVec2}{NonLocalVec2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{local__bindings_8h_a866b4619d59d5ad3360c695dd5f7551b}{Non\+Local\+Vec2}} =  std\+::vector$<$\mbox{\hyperlink{local__bindings_8h_a4a4fd4894fd59a3d4ca2c59e93fc178d}{Non\+Local2}}$>$}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{local__bindings_8h_a8b1768d29bedbe4a3b6d1fc48358ad1d}\label{local__bindings_8h_a8b1768d29bedbe4a3b6d1fc48358ad1d}} 
+\index{local\_bindings.h@{local\_bindings.h}!bind\_local@{bind\_local}}
+\index{bind\_local@{bind\_local}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{bind\_local()}{bind\_local()}}
+{\footnotesize\ttfamily template$<$typename T , int Adjust = 0, typename... Args$>$ \\
+py\+::class\+\_\+$<$T$>$ bind\+\_\+local (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{local__bindings_8h_aa3c8083e28dd1cb2bb5618d678da3050}\label{local__bindings_8h_aa3c8083e28dd1cb2bb5618d678da3050}} 
+\index{local\_bindings.h@{local\_bindings.h}!PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}}
+\index{PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_MAKE\_OPAQUE()}{PYBIND11\_MAKE\_OPAQUE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{local__bindings_8h_a49fff3a00676980aeb982c7a86e0743d}{Local\+Vec}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{local__bindings_8h_ad05b830069e520f1c962b1921d623d33}\label{local__bindings_8h_ad05b830069e520f1c962b1921d623d33}} 
+\index{local\_bindings.h@{local\_bindings.h}!PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}}
+\index{PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_MAKE\_OPAQUE()}{PYBIND11\_MAKE\_OPAQUE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{local__bindings_8h_a4e4cc34faeb6011f75b3430213efcd04}{Local\+Vec2}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{local__bindings_8h_ae6633fded4f1a06121be86c81a4ba018}\label{local__bindings_8h_ae6633fded4f1a06121be86c81a4ba018}} 
+\index{local\_bindings.h@{local\_bindings.h}!PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}}
+\index{PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_MAKE\_OPAQUE()}{PYBIND11\_MAKE\_OPAQUE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{local__bindings_8h_a60cf22650a750931b76d0a201bd567cb}{Local\+Map}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{local__bindings_8h_a809b9095220e66f46b552080808140ef}\label{local__bindings_8h_a809b9095220e66f46b552080808140ef}} 
+\index{local\_bindings.h@{local\_bindings.h}!PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}}
+\index{PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_MAKE\_OPAQUE()}{PYBIND11\_MAKE\_OPAQUE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{local__bindings_8h_a1b423234e942db1b7a28434a58248666}{Non\+Local\+Vec}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{local__bindings_8h_aba63e2570190cbff0d8d47f6d3ac1b0b}\label{local__bindings_8h_aba63e2570190cbff0d8d47f6d3ac1b0b}} 
+\index{local\_bindings.h@{local\_bindings.h}!PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}}
+\index{PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_MAKE\_OPAQUE()}{PYBIND11\_MAKE\_OPAQUE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{local__bindings_8h_ac0b8ffa5d18cd1e6f26cd460686958dd}{Non\+Local\+Map}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{local__bindings_8h_a74178467d8e75440b0cf305c5b0487a2}\label{local__bindings_8h_a74178467d8e75440b0cf305c5b0487a2}} 
+\index{local\_bindings.h@{local\_bindings.h}!PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}}
+\index{PYBIND11\_MAKE\_OPAQUE@{PYBIND11\_MAKE\_OPAQUE}!local\_bindings.h@{local\_bindings.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_MAKE\_OPAQUE()}{PYBIND11\_MAKE\_OPAQUE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+M\+A\+K\+E\+\_\+\+O\+P\+A\+Q\+UE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{local__bindings_8h_a0e142d9dfa743cfc074af2cc4978e660}{Non\+Local\+Map2}}}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,150 @@
+\hypertarget{grammar_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/grammar.h File Reference}
+\label{grammar_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/grammar.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/grammar.h}}
+{\ttfamily \#include \char`\"{}bitset.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structlabel}{label}}
+\item 
+struct \mbox{\hyperlink{structlabellist}{labellist}}
+\item 
+struct \mbox{\hyperlink{structarc}{arc}}
+\item 
+struct \mbox{\hyperlink{structstate}{state}}
+\item 
+struct \mbox{\hyperlink{structdfa}{dfa}}
+\item 
+struct \mbox{\hyperlink{structgrammar}{grammar}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{grammar_8h_a2b7cf2a3641be7b89138615764d60ba3}{E\+M\+P\+TY}}~0		/$\ast$ Label number 0 is \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by}} definition the \mbox{\hyperlink{structempty}{empty}} \mbox{\hyperlink{structlabel}{label}} $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgrammar}{grammar}} $\ast$ \mbox{\hyperlink{grammar_8h_ad971da63d2b0494623db81a202b9da37}{newgrammar}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac55adc720a3098c1b454d2a4647f4361}{start}})
+\item 
+\mbox{\hyperlink{structdfa}{dfa}} $\ast$ \mbox{\hyperlink{grammar_8h_ad6bac5d0d7252af577ffa669ab4d33c4}{adddfa}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}}, char $\ast$\mbox{\hyperlink{structname}{name}})
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{grammar_8h_a841cce30eae5a66f7b64488ebf8ec906}{addstate}} (\mbox{\hyperlink{structdfa}{dfa}} $\ast$\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{grammar_8h_ac1c54d753f3a4569e0ddd720b336f882}{addarc}} (\mbox{\hyperlink{structdfa}{dfa}} $\ast$\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} from, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} to, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} lbl)
+\item 
+\mbox{\hyperlink{structdfa}{dfa}} $\ast$ \mbox{\hyperlink{grammar_8h_aaf0931ed06ea7d384fd0ca8244d032ca}{Py\+Grammar\+\_\+\+Find\+D\+FA}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}})
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{grammar_8h_a0c6fe5cce2b63d5d47826c1cb317ed21}{addlabel}} (\mbox{\hyperlink{structlabellist}{labellist}} $\ast$ll, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}}, char $\ast$\mbox{\hyperlink{classstr}{str}})
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{grammar_8h_a58cbabf0abe2855dc70e5d19f427eab4}{findlabel}} (\mbox{\hyperlink{structlabellist}{labellist}} $\ast$ll, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}}, char $\ast$\mbox{\hyperlink{classstr}{str}})
+\item 
+char $\ast$ \mbox{\hyperlink{grammar_8h_a825110fc3e3765596390861b4e2db823}{Py\+Grammar\+\_\+\+Label\+Repr}} (\mbox{\hyperlink{structlabel}{label}} $\ast$lb)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{grammar_8h_a16bbb2f7f5a9a44a0cd8b638f2d9eb78}{translatelabels}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{grammar_8h_ab22e19a1f7a065daeeec72ee4486eda4}{addfirstsets}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{grammar_8h_a55a5e409e0da4b12e7417c203174abbc}{Py\+Grammar\+\_\+\+Add\+Accelerators}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{grammar_8h_a30d9ae43422792d89348c40e96e45bb6}{Py\+Grammar\+\_\+\+Remove\+Accelerators}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{grammar_8h_a0c0f56be1152f46271c3ca2ea0f94467}{printgrammar}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, \mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} $\ast$fp)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{grammar_8h_a454df263bf4def1c76cf827547d7f434}{printnonterminals}} (\mbox{\hyperlink{structgrammar}{grammar}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, \mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} $\ast$fp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{grammar_8h_a2b7cf2a3641be7b89138615764d60ba3}\label{grammar_8h_a2b7cf2a3641be7b89138615764d60ba3}} 
+\index{grammar.h@{grammar.h}!EMPTY@{EMPTY}}
+\index{EMPTY@{EMPTY}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{EMPTY}{EMPTY}}
+{\footnotesize\ttfamily \#define E\+M\+P\+TY~0		/$\ast$ Label number 0 is \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aee54e9aab2837a54be2ff5fb1c073bd2}{by}} definition the \mbox{\hyperlink{structempty}{empty}} \mbox{\hyperlink{structlabel}{label}} $\ast$/}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{grammar_8h_ac1c54d753f3a4569e0ddd720b336f882}\label{grammar_8h_ac1c54d753f3a4569e0ddd720b336f882}} 
+\index{grammar.h@{grammar.h}!addarc@{addarc}}
+\index{addarc@{addarc}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{addarc()}{addarc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} addarc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdfa}{dfa}} $\ast$}]{d,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{from,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{to,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{lbl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_ad6bac5d0d7252af577ffa669ab4d33c4}\label{grammar_8h_ad6bac5d0d7252af577ffa669ab4d33c4}} 
+\index{grammar.h@{grammar.h}!adddfa@{adddfa}}
+\index{adddfa@{adddfa}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{adddfa()}{adddfa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdfa}{dfa}}$\ast$ adddfa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{g,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{type,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_ab22e19a1f7a065daeeec72ee4486eda4}\label{grammar_8h_ab22e19a1f7a065daeeec72ee4486eda4}} 
+\index{grammar.h@{grammar.h}!addfirstsets@{addfirstsets}}
+\index{addfirstsets@{addfirstsets}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{addfirstsets()}{addfirstsets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} addfirstsets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{g }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a0c6fe5cce2b63d5d47826c1cb317ed21}\label{grammar_8h_a0c6fe5cce2b63d5d47826c1cb317ed21}} 
+\index{grammar.h@{grammar.h}!addlabel@{addlabel}}
+\index{addlabel@{addlabel}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{addlabel()}{addlabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} addlabel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlabellist}{labellist}} $\ast$}]{ll,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{type,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a841cce30eae5a66f7b64488ebf8ec906}\label{grammar_8h_a841cce30eae5a66f7b64488ebf8ec906}} 
+\index{grammar.h@{grammar.h}!addstate@{addstate}}
+\index{addstate@{addstate}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{addstate()}{addstate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} addstate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdfa}{dfa}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a58cbabf0abe2855dc70e5d19f427eab4}\label{grammar_8h_a58cbabf0abe2855dc70e5d19f427eab4}} 
+\index{grammar.h@{grammar.h}!findlabel@{findlabel}}
+\index{findlabel@{findlabel}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{findlabel()}{findlabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} findlabel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlabellist}{labellist}} $\ast$}]{ll,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{type,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_ad971da63d2b0494623db81a202b9da37}\label{grammar_8h_ad971da63d2b0494623db81a202b9da37}} 
+\index{grammar.h@{grammar.h}!newgrammar@{newgrammar}}
+\index{newgrammar@{newgrammar}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{newgrammar()}{newgrammar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgrammar}{grammar}}$\ast$ newgrammar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a0c0f56be1152f46271c3ca2ea0f94467}\label{grammar_8h_a0c0f56be1152f46271c3ca2ea0f94467}} 
+\index{grammar.h@{grammar.h}!printgrammar@{printgrammar}}
+\index{printgrammar@{printgrammar}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{printgrammar()}{printgrammar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} printgrammar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{g,  }\item[{\mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} $\ast$}]{fp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a454df263bf4def1c76cf827547d7f434}\label{grammar_8h_a454df263bf4def1c76cf827547d7f434}} 
+\index{grammar.h@{grammar.h}!printnonterminals@{printnonterminals}}
+\index{printnonterminals@{printnonterminals}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{printnonterminals()}{printnonterminals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} printnonterminals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{g,  }\item[{\mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} $\ast$}]{fp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a55a5e409e0da4b12e7417c203174abbc}\label{grammar_8h_a55a5e409e0da4b12e7417c203174abbc}} 
+\index{grammar.h@{grammar.h}!PyGrammar\_AddAccelerators@{PyGrammar\_AddAccelerators}}
+\index{PyGrammar\_AddAccelerators@{PyGrammar\_AddAccelerators}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{PyGrammar\_AddAccelerators()}{PyGrammar\_AddAccelerators()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Py\+Grammar\+\_\+\+Add\+Accelerators (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{g }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_aaf0931ed06ea7d384fd0ca8244d032ca}\label{grammar_8h_aaf0931ed06ea7d384fd0ca8244d032ca}} 
+\index{grammar.h@{grammar.h}!PyGrammar\_FindDFA@{PyGrammar\_FindDFA}}
+\index{PyGrammar\_FindDFA@{PyGrammar\_FindDFA}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{PyGrammar\_FindDFA()}{PyGrammar\_FindDFA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdfa}{dfa}}$\ast$ Py\+Grammar\+\_\+\+Find\+D\+FA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{g,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a825110fc3e3765596390861b4e2db823}\label{grammar_8h_a825110fc3e3765596390861b4e2db823}} 
+\index{grammar.h@{grammar.h}!PyGrammar\_LabelRepr@{PyGrammar\_LabelRepr}}
+\index{PyGrammar\_LabelRepr@{PyGrammar\_LabelRepr}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{PyGrammar\_LabelRepr()}{PyGrammar\_LabelRepr()}}
+{\footnotesize\ttfamily char$\ast$ Py\+Grammar\+\_\+\+Label\+Repr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlabel}{label}} $\ast$}]{lb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a30d9ae43422792d89348c40e96e45bb6}\label{grammar_8h_a30d9ae43422792d89348c40e96e45bb6}} 
+\index{grammar.h@{grammar.h}!PyGrammar\_RemoveAccelerators@{PyGrammar\_RemoveAccelerators}}
+\index{PyGrammar\_RemoveAccelerators@{PyGrammar\_RemoveAccelerators}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{PyGrammar\_RemoveAccelerators()}{PyGrammar\_RemoveAccelerators()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Py\+Grammar\+\_\+\+Remove\+Accelerators (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grammar_8h_a16bbb2f7f5a9a44a0cd8b638f2d9eb78}\label{grammar_8h_a16bbb2f7f5a9a44a0cd8b638f2d9eb78}} 
+\index{grammar.h@{grammar.h}!translatelabels@{translatelabels}}
+\index{translatelabels@{translatelabels}!grammar.h@{grammar.h}}
+\subsubsection{\texorpdfstring{translatelabels()}{translatelabels()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} translatelabels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrammar}{grammar}} $\ast$}]{g }\end{DoxyParamCaption})}
+

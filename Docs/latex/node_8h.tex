@@ -1,0 +1,143 @@
+\hypertarget{node_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/node.h File Reference}
+\label{node_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/node.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/node.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__node}{\+\_\+node}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{node_8h_aa48e3121238ad7f5a038d00ce32f3aeb}{N\+CH}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+nchildren)
+\item 
+\#define \mbox{\hyperlink{node_8h_a16760997ad087b4f2c25ac8eeb3982bb}{C\+H\+I\+LD}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}})~(\&(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+child\mbox{[}\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}\mbox{]})
+\item 
+\#define \mbox{\hyperlink{node_8h_ae36e76c681f41c2d10d730b5d4a0c1c5}{R\+C\+H\+I\+LD}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}})~(\mbox{\hyperlink{node_8h_a16760997ad087b4f2c25ac8eeb3982bb}{C\+H\+I\+LD}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}, \mbox{\hyperlink{node_8h_aa48e3121238ad7f5a038d00ce32f3aeb}{N\+CH}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}) + \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}))
+\item 
+\#define \mbox{\hyperlink{node_8h_a71fef1a9182c7451b07752233174cac2}{T\+Y\+PE}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+type)
+\item 
+\#define \mbox{\hyperlink{node_8h_aa039726a60de283dd121a4a761266ac2}{S\+TR}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+str)
+\item 
+\#define \mbox{\hyperlink{node_8h_af71929eb520068c1cafca386caf66d3d}{R\+EQ}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}})~assert(\mbox{\hyperlink{node_8h_a71fef1a9182c7451b07752233174cac2}{T\+Y\+PE}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}) == (\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}}))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__node}{\+\_\+node}} \mbox{\hyperlink{node_8h_addb697c9bca6f8981a870daa4953af4f}{node}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node_8h_a61d67fd646c376492b296295f438da9c}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{node_8h_addb697c9bca6f8981a870daa4953af4f}{node}} $\ast$) Py\+Node\+\_\+\+New(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}})
+\item 
+\mbox{\hyperlink{node_8h_a7bcc965d6c9d081a3aad670586b75fb6}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Node\+\_\+\+Add\+Child(\mbox{\hyperlink{node_8h_addb697c9bca6f8981a870daa4953af4f}{node}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}
+\item 
+\mbox{\hyperlink{node_8h_a40ec62bc4496aeec6a9b58e82416853b}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+Node\+\_\+\+Free(\mbox{\hyperlink{node_8h_addb697c9bca6f8981a870daa4953af4f}{node}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{node_8h_ac765329451135abec74c45e1897abf26}{type}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char $\ast$ \mbox{\hyperlink{node_8h_a62b34ca1362fe946082b7aa0cd9be844}{str}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{node_8h_acf52a954706b048baabf2e778e0333b5}{lineno}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{node_8h_ae2ed0efcc01d73248ef2b41134cfc7a1}{col\+\_\+offset}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{node_8h_a16760997ad087b4f2c25ac8eeb3982bb}\label{node_8h_a16760997ad087b4f2c25ac8eeb3982bb}} 
+\index{node.h@{node.h}!CHILD@{CHILD}}
+\index{CHILD@{CHILD}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{CHILD}{CHILD}}
+{\footnotesize\ttfamily \#define C\+H\+I\+LD(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  }\item[{}]{\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}} }\end{DoxyParamCaption})~(\&(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+child\mbox{[}\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}\mbox{]})}
+
+\mbox{\Hypertarget{node_8h_aa48e3121238ad7f5a038d00ce32f3aeb}\label{node_8h_aa48e3121238ad7f5a038d00ce32f3aeb}} 
+\index{node.h@{node.h}!NCH@{NCH}}
+\index{NCH@{NCH}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{NCH}{NCH}}
+{\footnotesize\ttfamily \#define N\+CH(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+nchildren)}
+
+\mbox{\Hypertarget{node_8h_ae36e76c681f41c2d10d730b5d4a0c1c5}\label{node_8h_ae36e76c681f41c2d10d730b5d4a0c1c5}} 
+\index{node.h@{node.h}!RCHILD@{RCHILD}}
+\index{RCHILD@{RCHILD}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{RCHILD}{RCHILD}}
+{\footnotesize\ttfamily \#define R\+C\+H\+I\+LD(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  }\item[{}]{\mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{node_8h_a16760997ad087b4f2c25ac8eeb3982bb}{C\+H\+I\+LD}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}, \mbox{\hyperlink{node_8h_aa48e3121238ad7f5a038d00ce32f3aeb}{N\+CH}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}) + \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}))}
+
+\mbox{\Hypertarget{node_8h_af71929eb520068c1cafca386caf66d3d}\label{node_8h_af71929eb520068c1cafca386caf66d3d}} 
+\index{node.h@{node.h}!REQ@{REQ}}
+\index{REQ@{REQ}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{REQ}{REQ}}
+{\footnotesize\ttfamily \#define R\+EQ(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}} }\end{DoxyParamCaption})~assert(\mbox{\hyperlink{node_8h_a71fef1a9182c7451b07752233174cac2}{T\+Y\+PE}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}) == (\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}}))}
+
+\mbox{\Hypertarget{node_8h_aa039726a60de283dd121a4a761266ac2}\label{node_8h_aa039726a60de283dd121a4a761266ac2}} 
+\index{node.h@{node.h}!STR@{STR}}
+\index{STR@{STR}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{STR}{STR}}
+{\footnotesize\ttfamily \#define S\+TR(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+str)}
+
+\mbox{\Hypertarget{node_8h_a71fef1a9182c7451b07752233174cac2}\label{node_8h_a71fef1a9182c7451b07752233174cac2}} 
+\index{node.h@{node.h}!TYPE@{TYPE}}
+\index{TYPE@{TYPE}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{TYPE}{TYPE}}
+{\footnotesize\ttfamily \#define T\+Y\+PE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})-\/$>$n\+\_\+type)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{node_8h_addb697c9bca6f8981a870daa4953af4f}\label{node_8h_addb697c9bca6f8981a870daa4953af4f}} 
+\index{node.h@{node.h}!node@{node}}
+\index{node@{node}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{node}{node}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__node}{\+\_\+node}}  \mbox{\hyperlink{node_8h_addb697c9bca6f8981a870daa4953af4f}{node}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{node_8h_a61d67fd646c376492b296295f438da9c}\label{node_8h_a61d67fd646c376492b296295f438da9c}} 
+\index{node.h@{node.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{node_8h_addb697c9bca6f8981a870daa4953af4f}{node}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{node_8h_a7bcc965d6c9d081a3aad670586b75fb6}\label{node_8h_a7bcc965d6c9d081a3aad670586b75fb6}} 
+\index{node.h@{node.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{node_8h_a40ec62bc4496aeec6a9b58e82416853b}\label{node_8h_a40ec62bc4496aeec6a9b58e82416853b}} 
+\index{node.h@{node.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{node_8h_ae2ed0efcc01d73248ef2b41134cfc7a1}\label{node_8h_ae2ed0efcc01d73248ef2b41134cfc7a1}} 
+\index{node.h@{node.h}!col\_offset@{col\_offset}}
+\index{col\_offset@{col\_offset}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{col\_offset}{col\_offset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} col\+\_\+offset}
+
+\mbox{\Hypertarget{node_8h_acf52a954706b048baabf2e778e0333b5}\label{node_8h_acf52a954706b048baabf2e778e0333b5}} 
+\index{node.h@{node.h}!lineno@{lineno}}
+\index{lineno@{lineno}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{lineno}{lineno}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} lineno}
+
+\mbox{\Hypertarget{node_8h_a62b34ca1362fe946082b7aa0cd9be844}\label{node_8h_a62b34ca1362fe946082b7aa0cd9be844}} 
+\index{node.h@{node.h}!str@{str}}
+\index{str@{str}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} char$\ast$ \mbox{\hyperlink{classstr}{str}}}
+
+\mbox{\Hypertarget{node_8h_ac765329451135abec74c45e1897abf26}\label{node_8h_ac765329451135abec74c45e1897abf26}} 
+\index{node.h@{node.h}!type@{type}}
+\index{type@{type}!node.h@{node.h}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}}}
+

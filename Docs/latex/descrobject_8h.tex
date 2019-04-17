@@ -1,0 +1,124 @@
+\hypertarget{descrobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/descrobject.h File Reference}
+\label{descrobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/descrobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/descrobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_get_set_def}{Py\+Get\+Set\+Def}}
+\item 
+struct \mbox{\hyperlink{structwrapperbase}{wrapperbase}}
+\item 
+struct \mbox{\hyperlink{struct_py_descr_object}{Py\+Descr\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_method_descr_object}{Py\+Method\+Descr\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_member_descr_object}{Py\+Member\+Descr\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_get_set_descr_object}{Py\+Get\+Set\+Descr\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_wrapper_descr_object}{Py\+Wrapper\+Descr\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{descrobject_8h_a807a348a304599d36e358aeaa19d4731}{Py\+Wrapper\+Flag\+\_\+\+K\+E\+Y\+W\+O\+R\+DS}}~1 /$\ast$ wrapper \mbox{\hyperlink{classfunction}{function}} takes \mbox{\hyperlink{_python-ast_8h_a6f4e4451f80663655311eff20aad3ed5}{keyword}} \mbox{\hyperlink{classargs}{args}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{descrobject_8h_ad6657abf0a8b1122cdcd1c1d9625a65d}{Py\+Descr\+\_\+\+C\+O\+M\+M\+ON}}
+\item 
+\#define \mbox{\hyperlink{descrobject_8h_a67772c19d805c1c792b7075ccb4f81cb}{Py\+Descr\+\_\+\+Is\+Data}}(\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}})-\/$>$tp\+\_\+descr\+\_\+set != \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$($\ast$ \mbox{\hyperlink{descrobject_8h_ac44beb2d92298f4cdf6b605b6d9ecb25}{getter}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$)
+\item 
+typedef \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ \mbox{\hyperlink{descrobject_8h_a92c8202514fe030a3d6b691da347af29}{setter}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$)
+\item 
+typedef struct \mbox{\hyperlink{struct_py_get_set_def}{Py\+Get\+Set\+Def}} \mbox{\hyperlink{descrobject_8h_a83c2c298287ad5d24d8b49fbb13aeee9}{Py\+Get\+Set\+Def}}
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$($\ast$ \mbox{\hyperlink{descrobject_8h_aa0427daa24e34913e3ab0a4cd794ee9b}{wrapperfunc}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{modsupport_8h_a0180ca1808366e5da641475e8bf8cca3}{self}}, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{classargs}{args}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$wrapped)
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$($\ast$ \mbox{\hyperlink{descrobject_8h_ad3e5330d306a8e4f7f9bc410d207d085}{wrapperfunc\+\_\+kwds}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{modsupport_8h_a0180ca1808366e5da641475e8bf8cca3}{self}}, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{classargs}{args}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$wrapped, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{_python27_2eval_8h_aa04271af298f9ec15521bd6e9af69658}{kwds}})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{descrobject_8h_a27f7713a30bc77a2e27bd66b9adf287b}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Wrapper\+Descr\+\_\+\+Type
+\item 
+\mbox{\hyperlink{descrobject_8h_a7012edcd95055cf2fba9f8e2e84da920}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Descr\+\_\+\+New\+Method(\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{descrobject_8h_ad6657abf0a8b1122cdcd1c1d9625a65d}\label{descrobject_8h_ad6657abf0a8b1122cdcd1c1d9625a65d}} 
+\index{descrobject.h@{descrobject.h}!PyDescr\_COMMON@{PyDescr\_COMMON}}
+\index{PyDescr\_COMMON@{PyDescr\_COMMON}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{PyDescr\_COMMON}{PyDescr\_COMMON}}
+{\footnotesize\ttfamily \#define Py\+Descr\+\_\+\+C\+O\+M\+M\+ON}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PyObject\_HEAD \(\backslash\)}
+\DoxyCodeLine{    PyTypeObject *d\_type; \(\backslash\)}
+\DoxyCodeLine{    PyObject *d\_name}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{descrobject_8h_a67772c19d805c1c792b7075ccb4f81cb}\label{descrobject_8h_a67772c19d805c1c792b7075ccb4f81cb}} 
+\index{descrobject.h@{descrobject.h}!PyDescr\_IsData@{PyDescr\_IsData}}
+\index{PyDescr\_IsData@{PyDescr\_IsData}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{PyDescr\_IsData}{PyDescr\_IsData}}
+{\footnotesize\ttfamily \#define Py\+Descr\+\_\+\+Is\+Data(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}})-\/$>$tp\+\_\+descr\+\_\+set != \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{descrobject_8h_a807a348a304599d36e358aeaa19d4731}\label{descrobject_8h_a807a348a304599d36e358aeaa19d4731}} 
+\index{descrobject.h@{descrobject.h}!PyWrapperFlag\_KEYWORDS@{PyWrapperFlag\_KEYWORDS}}
+\index{PyWrapperFlag\_KEYWORDS@{PyWrapperFlag\_KEYWORDS}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{PyWrapperFlag\_KEYWORDS}{PyWrapperFlag\_KEYWORDS}}
+{\footnotesize\ttfamily \#define Py\+Wrapper\+Flag\+\_\+\+K\+E\+Y\+W\+O\+R\+DS~1 /$\ast$ wrapper \mbox{\hyperlink{classfunction}{function}} takes \mbox{\hyperlink{_python-ast_8h_a6f4e4451f80663655311eff20aad3ed5}{keyword}} \mbox{\hyperlink{classargs}{args}} $\ast$/}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{descrobject_8h_ac44beb2d92298f4cdf6b605b6d9ecb25}\label{descrobject_8h_ac44beb2d92298f4cdf6b605b6d9ecb25}} 
+\index{descrobject.h@{descrobject.h}!getter@{getter}}
+\index{getter@{getter}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{getter}{getter}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$ getter) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$)}
+
+\mbox{\Hypertarget{descrobject_8h_a83c2c298287ad5d24d8b49fbb13aeee9}\label{descrobject_8h_a83c2c298287ad5d24d8b49fbb13aeee9}} 
+\index{descrobject.h@{descrobject.h}!PyGetSetDef@{PyGetSetDef}}
+\index{PyGetSetDef@{PyGetSetDef}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{PyGetSetDef}{PyGetSetDef}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_py_get_set_def}{Py\+Get\+Set\+Def}}  \mbox{\hyperlink{struct_py_get_set_def}{Py\+Get\+Set\+Def}}}
+
+\mbox{\Hypertarget{descrobject_8h_a92c8202514fe030a3d6b691da347af29}\label{descrobject_8h_a92c8202514fe030a3d6b691da347af29}} 
+\index{descrobject.h@{descrobject.h}!setter@{setter}}
+\index{setter@{setter}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{setter}{setter}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ setter) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$)}
+
+\mbox{\Hypertarget{descrobject_8h_aa0427daa24e34913e3ab0a4cd794ee9b}\label{descrobject_8h_aa0427daa24e34913e3ab0a4cd794ee9b}} 
+\index{descrobject.h@{descrobject.h}!wrapperfunc@{wrapperfunc}}
+\index{wrapperfunc@{wrapperfunc}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{wrapperfunc}{wrapperfunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$ wrapperfunc) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{modsupport_8h_a0180ca1808366e5da641475e8bf8cca3}{self}}, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{classargs}{args}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$wrapped)}
+
+\mbox{\Hypertarget{descrobject_8h_ad3e5330d306a8e4f7f9bc410d207d085}\label{descrobject_8h_ad3e5330d306a8e4f7f9bc410d207d085}} 
+\index{descrobject.h@{descrobject.h}!wrapperfunc\_kwds@{wrapperfunc\_kwds}}
+\index{wrapperfunc\_kwds@{wrapperfunc\_kwds}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{wrapperfunc\_kwds}{wrapperfunc\_kwds}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$ wrapperfunc\+\_\+kwds) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{modsupport_8h_a0180ca1808366e5da641475e8bf8cca3}{self}}, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{classargs}{args}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$wrapped, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{_python27_2eval_8h_aa04271af298f9ec15521bd6e9af69658}{kwds}})}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{descrobject_8h_a27f7713a30bc77a2e27bd66b9adf287b}\label{descrobject_8h_a27f7713a30bc77a2e27bd66b9adf287b}} 
+\index{descrobject.h@{descrobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descrobject_8h_a7012edcd95055cf2fba9f8e2e84da920}\label{descrobject_8h_a7012edcd95055cf2fba9f8e2e84da920}} 
+\index{descrobject.h@{descrobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!descrobject.h@{descrobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+

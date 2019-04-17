@@ -1,0 +1,59 @@
+\hypertarget{genobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/genobject.h File Reference}
+\label{genobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/genobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/genobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_gen_object}{Py\+Gen\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{genobject_8h_a81c5928a7fe913e526ce8df8316eb1c9}{Py\+Gen\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, \&Py\+Gen\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{genobject_8h_ab675683bceadb72050a4e03f8c641dff}{Py\+Gen\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Gen\+\_\+\+Type)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{genobject_8h_aa52d317bca2798e4191968a4f4a464f8}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Gen\+\_\+\+Type
+\item 
+\mbox{\hyperlink{genobject_8h_a589ee920a7e1e9c25b7ac256892836ae}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Gen\+\_\+\+New(struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}} $\ast$)
+\item 
+\mbox{\hyperlink{genobject_8h_a6911564beb160fcf03ed3774f8177f25}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Gen\+\_\+\+Needs\+Finalizing(\mbox{\hyperlink{struct_py_gen_object}{Py\+Gen\+Object}} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{genobject_8h_a81c5928a7fe913e526ce8df8316eb1c9}\label{genobject_8h_a81c5928a7fe913e526ce8df8316eb1c9}} 
+\index{genobject.h@{genobject.h}!PyGen\_Check@{PyGen\_Check}}
+\index{PyGen\_Check@{PyGen\_Check}!genobject.h@{genobject.h}}
+\subsubsection{\texorpdfstring{PyGen\_Check}{PyGen\_Check}}
+{\footnotesize\ttfamily \#define Py\+Gen\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, \&Py\+Gen\+\_\+\+Type)}
+
+\mbox{\Hypertarget{genobject_8h_ab675683bceadb72050a4e03f8c641dff}\label{genobject_8h_ab675683bceadb72050a4e03f8c641dff}} 
+\index{genobject.h@{genobject.h}!PyGen\_CheckExact@{PyGen\_CheckExact}}
+\index{PyGen\_CheckExact@{PyGen\_CheckExact}!genobject.h@{genobject.h}}
+\subsubsection{\texorpdfstring{PyGen\_CheckExact}{PyGen\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Gen\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Gen\+\_\+\+Type)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{genobject_8h_aa52d317bca2798e4191968a4f4a464f8}\label{genobject_8h_aa52d317bca2798e4191968a4f4a464f8}} 
+\index{genobject.h@{genobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!genobject.h@{genobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{genobject_8h_a589ee920a7e1e9c25b7ac256892836ae}\label{genobject_8h_a589ee920a7e1e9c25b7ac256892836ae}} 
+\index{genobject.h@{genobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!genobject.h@{genobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{genobject_8h_a6911564beb160fcf03ed3774f8177f25}\label{genobject_8h_a6911564beb160fcf03ed3774f8177f25}} 
+\index{genobject.h@{genobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!genobject.h@{genobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+

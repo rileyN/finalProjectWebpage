@@ -1,0 +1,367 @@
+\hypertarget{test__class_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+class.cpp File Reference}
+\label{test__class_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_class.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_class.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}constructor\+\_\+stats.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}local\+\_\+bindings.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pybind11/stl.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_no_brace_initialization}{No\+Brace\+Initialization}}
+\item 
+class \mbox{\hyperlink{class_breaks_base}{Breaks\+Base$<$ N $>$}}
+\item 
+class \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp$<$ N $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test__class_8cpp_a200e2588100a645fdb73e39777711c57}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}}(N)
+\item 
+\#define \mbox{\hyperlink{test__class_8cpp_a504a60427db19f1bd261f690dea764ac}{C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS}}(N)
+\item 
+\#define \mbox{\hyperlink{test__class_8cpp_af918cfffd37402121ff76494a7f7dcaf}{C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS}}(N)
+\item 
+\#define \mbox{\hyperlink{test__class_8cpp_a8cdee37a2e902750e6c2d789ffe8baac}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}}(N,  \mbox{\hyperlink{node_8h_a71fef1a9182c7451b07752233174cac2}{T\+Y\+PE}})
+\item 
+\#define \mbox{\hyperlink{test__class_8cpp_ac975c8f12a5981a224fb10ca0967ce06}{C\+H\+E\+C\+K\+\_\+\+B\+R\+O\+K\+EN}}(N)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 1 $>$, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 1 $>$ $>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$ 1 $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a04731e204d24fb474212b8ed4a5286ed}{Doesnt\+Break1}}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 2 $>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$ 2 $>$, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 2 $>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a053207ad6c1d9d08a73370837a756215}{Doesnt\+Break2}}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 3 $>$, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 3 $>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_ac6b24bdd5c145aefda84158dd9ea972c}{Doesnt\+Break3}}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 4 $>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$ 4 $>$ $>$ \mbox{\hyperlink{test__class_8cpp_af6738b98a44be55cb3948fa9b8c5a8ed}{Doesnt\+Break4}}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 5 $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a2cedd7e58d50b46f50e7c63d925b9754}{Doesnt\+Break5}}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 6 $>$, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 6 $>$ $>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$ 6 $>$ $>$ \mbox{\hyperlink{test__class_8cpp_ad4d364d33e1e6efc7c16d1d1931172de}{Doesnt\+Break6}}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 7 $>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$ 7 $>$, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 7 $>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a14b204e0663fc8869a38a661602f32c3}{Doesnt\+Break7}}
+\item 
+typedef py\+::class\+\_\+$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 8 $>$, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$ 8 $>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a1f4933c438ebe7c63024460cf897cd6a}{Doesnt\+Break8}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test__class_8cpp_afaf4438bfc840994d141b8c633b30662}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (\mbox{\hyperlink{classclass__}{class\+\_\+}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{test__class_8cpp_abfb4c822f523147244de6497017a8ff0}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (1)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ad313536abea6fb6f6587111fb21af0cc}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (2)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a9c7dae0932fab53a37e267c6e1e1167d}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (3)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a1767a47e25dc429c1424282a804c9621}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (4)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ad3ed4928aa7dd5957267b1ebecdf7a42}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (5)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a419804236f9376089e81c2c3b9ad50c5}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (6)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a15e5d895f405919c79aea241b478c2a1}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (7)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a963d0de5a4aeadc9979bc1056dfac39e}{C\+H\+E\+C\+K\+\_\+\+B\+A\+SE}} (8)
+\item 
+\mbox{\hyperlink{test__class_8cpp_abd1e00b357579da349c2dc2ad3ba11a3}{C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS}} (1)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a56032c018a5c2785d94621f99a9a2aab}{C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS}} (2)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a5b678232cd6facdd2f9bf800d0825196}{C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS}} (3)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ad0a19288daca934a61f66bd720f5f290}{C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS}} (4)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a711544e7381463aea1d8b4e86b5d04b1}{C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS}} (5)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ac3add7b540570e29acc567da232143f3}{C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS}} (6)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ade112ee9be154052d6d12182366dccb6}{C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS}} (7)
+\item 
+\mbox{\hyperlink{test__class_8cpp_aa4bce673a06beaa3a2d0626d8826e66f}{C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS}} (8)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ad3f3dc7cb3079442d2a419964f7e67b7}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (1, unique)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ac8a5ce43a20777a851fdd0151d5bb59c}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (2, unique)
+\item 
+\mbox{\hyperlink{test__class_8cpp_abe2b30a09a240c09fa4b26d07de68c0d}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (3, unique)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a2d8d1f9b70118dc33e49c6ad60a44b4a}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (4, unique)
+\item 
+\mbox{\hyperlink{test__class_8cpp_ac3b545c8e9ba864fe2962526cea7ff23}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (5, unique)
+\item 
+\mbox{\hyperlink{test__class_8cpp_a1162979f447f96b8fbd37b5228180f89}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (6, shared)
+\item 
+\mbox{\hyperlink{test__class_8cpp_aeba6c07b7a3bb0c24def18979d6fb80b}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (7, shared)
+\item 
+\mbox{\hyperlink{test__class_8cpp_aa29d8f537005c8d23156c273d86c8463}{C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER}} (8, shared)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{test__class_8cpp_a504a60427db19f1bd261f690dea764ac}\label{test__class_8cpp_a504a60427db19f1bd261f690dea764ac}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_ALIAS@{CHECK\_ALIAS}}
+\index{CHECK\_ALIAS@{CHECK\_ALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_ALIAS}{CHECK\_ALIAS}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS(\begin{DoxyParamCaption}\item[{}]{N }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{static\_assert(DoesntBreak\#\#N::has\_alias \&\& std::is\_same<\textcolor{keyword}{typename} DoesntBreak\#\#N::type\_alias, \mbox{\hyperlink{class_breaks_tramp}{BreaksTramp<N>}}>::\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}}, \(\backslash\)}
+\DoxyCodeLine{        \textcolor{stringliteral}{"DoesntBreak"} \#N \textcolor{stringliteral}{" has wrong type\_alias!"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__class_8cpp_a200e2588100a645fdb73e39777711c57}\label{test__class_8cpp_a200e2588100a645fdb73e39777711c57}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE}{CHECK\_BASE}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+B\+A\+SE(\begin{DoxyParamCaption}\item[{}]{N }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{static\_assert(std::is\_same<\textcolor{keyword}{typename} DoesntBreak\#\#\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{N::type}}, \mbox{\hyperlink{class_breaks_base}{BreaksBase<N>}}>::\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}}, \(\backslash\)}
+\DoxyCodeLine{        \textcolor{stringliteral}{"DoesntBreak"} \#N \textcolor{stringliteral}{" has wrong type!"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__class_8cpp_ac975c8f12a5981a224fb10ca0967ce06}\label{test__class_8cpp_ac975c8f12a5981a224fb10ca0967ce06}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BROKEN@{CHECK\_BROKEN}}
+\index{CHECK\_BROKEN@{CHECK\_BROKEN}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BROKEN}{CHECK\_BROKEN}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+B\+R\+O\+K\+EN(\begin{DoxyParamCaption}\item[{}]{N }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{static\_assert(std::is\_same<\textcolor{keyword}{typename} Breaks\#\#\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{N::type}}, \mbox{\hyperlink{class_breaks_base}{BreaksBase<-N>}}>::\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}}, \(\backslash\)}
+\DoxyCodeLine{        \textcolor{stringliteral}{"Breaks1 has wrong type!"});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__class_8cpp_a8cdee37a2e902750e6c2d789ffe8baac}\label{test__class_8cpp_a8cdee37a2e902750e6c2d789ffe8baac}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER}{CHECK\_HOLDER}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER(\begin{DoxyParamCaption}\item[{}]{N,  }\item[{}]{\mbox{\hyperlink{node_8h_a71fef1a9182c7451b07752233174cac2}{T\+Y\+PE}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{static\_assert(std::is\_same<\textcolor{keyword}{typename} DoesntBreak\#\#N::holder\_type, \mbox{\hyperlink{node_8h_a71fef1a9182c7451b07752233174cac2}{std::TYPE}}\#\#\_ptr<\mbox{\hyperlink{class_breaks_base}{BreaksBase<N>}}>>::\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}}, \(\backslash\)}
+\DoxyCodeLine{        \textcolor{stringliteral}{"DoesntBreak"} \#N \textcolor{stringliteral}{" has wrong holder\_type!"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{test__class_8cpp_af918cfffd37402121ff76494a7f7dcaf}\label{test__class_8cpp_af918cfffd37402121ff76494a7f7dcaf}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_NOALIAS@{CHECK\_NOALIAS}}
+\index{CHECK\_NOALIAS@{CHECK\_NOALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_NOALIAS}{CHECK\_NOALIAS}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS(\begin{DoxyParamCaption}\item[{}]{N }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{static\_assert(!DoesntBreak\#\#N::has\_alias \&\& \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{std::is\_void<typename DoesntBreak\#\#N::type\_alias>::value}}, \(\backslash\)}
+\DoxyCodeLine{        \textcolor{stringliteral}{"DoesntBreak"} \#N \textcolor{stringliteral}{" has type alias, but shouldn't!"})}
+
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{test__class_8cpp_a04731e204d24fb474212b8ed4a5286ed}\label{test__class_8cpp_a04731e204d24fb474212b8ed4a5286ed}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak1@{DoesntBreak1}}
+\index{DoesntBreak1@{DoesntBreak1}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak1}{DoesntBreak1}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$1$>$, std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$1$>$ $>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$1$>$ $>$ \mbox{\hyperlink{test__class_8cpp_a04731e204d24fb474212b8ed4a5286ed}{Doesnt\+Break1}}}
+
+\mbox{\Hypertarget{test__class_8cpp_a053207ad6c1d9d08a73370837a756215}\label{test__class_8cpp_a053207ad6c1d9d08a73370837a756215}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak2@{DoesntBreak2}}
+\index{DoesntBreak2@{DoesntBreak2}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak2}{DoesntBreak2}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$2$>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$2$>$, std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$2$>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a053207ad6c1d9d08a73370837a756215}{Doesnt\+Break2}}}
+
+\mbox{\Hypertarget{test__class_8cpp_ac6b24bdd5c145aefda84158dd9ea972c}\label{test__class_8cpp_ac6b24bdd5c145aefda84158dd9ea972c}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak3@{DoesntBreak3}}
+\index{DoesntBreak3@{DoesntBreak3}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak3}{DoesntBreak3}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$3$>$, std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$3$>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_ac6b24bdd5c145aefda84158dd9ea972c}{Doesnt\+Break3}}}
+
+\mbox{\Hypertarget{test__class_8cpp_af6738b98a44be55cb3948fa9b8c5a8ed}\label{test__class_8cpp_af6738b98a44be55cb3948fa9b8c5a8ed}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak4@{DoesntBreak4}}
+\index{DoesntBreak4@{DoesntBreak4}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak4}{DoesntBreak4}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$4$>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$4$>$ $>$ \mbox{\hyperlink{test__class_8cpp_af6738b98a44be55cb3948fa9b8c5a8ed}{Doesnt\+Break4}}}
+
+\mbox{\Hypertarget{test__class_8cpp_a2cedd7e58d50b46f50e7c63d925b9754}\label{test__class_8cpp_a2cedd7e58d50b46f50e7c63d925b9754}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak5@{DoesntBreak5}}
+\index{DoesntBreak5@{DoesntBreak5}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak5}{DoesntBreak5}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$5$>$ $>$ \mbox{\hyperlink{test__class_8cpp_a2cedd7e58d50b46f50e7c63d925b9754}{Doesnt\+Break5}}}
+
+\mbox{\Hypertarget{test__class_8cpp_ad4d364d33e1e6efc7c16d1d1931172de}\label{test__class_8cpp_ad4d364d33e1e6efc7c16d1d1931172de}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak6@{DoesntBreak6}}
+\index{DoesntBreak6@{DoesntBreak6}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak6}{DoesntBreak6}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$6$>$, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$6$>$ $>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$6$>$ $>$ \mbox{\hyperlink{test__class_8cpp_ad4d364d33e1e6efc7c16d1d1931172de}{Doesnt\+Break6}}}
+
+\mbox{\Hypertarget{test__class_8cpp_a14b204e0663fc8869a38a661602f32c3}\label{test__class_8cpp_a14b204e0663fc8869a38a661602f32c3}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak7@{DoesntBreak7}}
+\index{DoesntBreak7@{DoesntBreak7}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak7}{DoesntBreak7}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$7$>$, \mbox{\hyperlink{class_breaks_tramp}{Breaks\+Tramp}}$<$7$>$, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$7$>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a14b204e0663fc8869a38a661602f32c3}{Doesnt\+Break7}}}
+
+\mbox{\Hypertarget{test__class_8cpp_a1f4933c438ebe7c63024460cf897cd6a}\label{test__class_8cpp_a1f4933c438ebe7c63024460cf897cd6a}} 
+\index{test\_class.cpp@{test\_class.cpp}!DoesntBreak8@{DoesntBreak8}}
+\index{DoesntBreak8@{DoesntBreak8}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{DoesntBreak8}{DoesntBreak8}}
+{\footnotesize\ttfamily typedef py\+::class\+\_\+$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$8$>$, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_breaks_base}{Breaks\+Base}}$<$8$>$ $>$ $>$ \mbox{\hyperlink{test__class_8cpp_a1f4933c438ebe7c63024460cf897cd6a}{Doesnt\+Break8}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__class_8cpp_abd1e00b357579da349c2dc2ad3ba11a3}\label{test__class_8cpp_abd1e00b357579da349c2dc2ad3ba11a3}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_ALIAS@{CHECK\_ALIAS}}
+\index{CHECK\_ALIAS@{CHECK\_ALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_ALIAS()}{CHECK\_ALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a56032c018a5c2785d94621f99a9a2aab}\label{test__class_8cpp_a56032c018a5c2785d94621f99a9a2aab}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_ALIAS@{CHECK\_ALIAS}}
+\index{CHECK\_ALIAS@{CHECK\_ALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_ALIAS()}{CHECK\_ALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ade112ee9be154052d6d12182366dccb6}\label{test__class_8cpp_ade112ee9be154052d6d12182366dccb6}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_ALIAS@{CHECK\_ALIAS}}
+\index{CHECK\_ALIAS@{CHECK\_ALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_ALIAS()}{CHECK\_ALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{7}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ad0a19288daca934a61f66bd720f5f290}\label{test__class_8cpp_ad0a19288daca934a61f66bd720f5f290}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_ALIAS@{CHECK\_ALIAS}}
+\index{CHECK\_ALIAS@{CHECK\_ALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_ALIAS()}{CHECK\_ALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{4}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ac3add7b540570e29acc567da232143f3}\label{test__class_8cpp_ac3add7b540570e29acc567da232143f3}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_ALIAS@{CHECK\_ALIAS}}
+\index{CHECK\_ALIAS@{CHECK\_ALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_ALIAS()}{CHECK\_ALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{6}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a15e5d895f405919c79aea241b478c2a1}\label{test__class_8cpp_a15e5d895f405919c79aea241b478c2a1}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{7}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a963d0de5a4aeadc9979bc1056dfac39e}\label{test__class_8cpp_a963d0de5a4aeadc9979bc1056dfac39e}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{8}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_abfb4c822f523147244de6497017a8ff0}\label{test__class_8cpp_abfb4c822f523147244de6497017a8ff0}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a1767a47e25dc429c1424282a804c9621}\label{test__class_8cpp_a1767a47e25dc429c1424282a804c9621}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{4}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a9c7dae0932fab53a37e267c6e1e1167d}\label{test__class_8cpp_a9c7dae0932fab53a37e267c6e1e1167d}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ad313536abea6fb6f6587111fb21af0cc}\label{test__class_8cpp_ad313536abea6fb6f6587111fb21af0cc}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ad3ed4928aa7dd5957267b1ebecdf7a42}\label{test__class_8cpp_ad3ed4928aa7dd5957267b1ebecdf7a42}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{5}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a419804236f9376089e81c2c3b9ad50c5}\label{test__class_8cpp_a419804236f9376089e81c2c3b9ad50c5}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_BASE@{CHECK\_BASE}}
+\index{CHECK\_BASE@{CHECK\_BASE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_BASE()}{CHECK\_BASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+B\+A\+SE (\begin{DoxyParamCaption}\item[{6}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a2d8d1f9b70118dc33e49c6ad60a44b4a}\label{test__class_8cpp_a2d8d1f9b70118dc33e49c6ad60a44b4a}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{4}]{,  }\item[{unique}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ad3f3dc7cb3079442d2a419964f7e67b7}\label{test__class_8cpp_ad3f3dc7cb3079442d2a419964f7e67b7}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{1}]{,  }\item[{unique}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_abe2b30a09a240c09fa4b26d07de68c0d}\label{test__class_8cpp_abe2b30a09a240c09fa4b26d07de68c0d}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{3}]{,  }\item[{unique}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ac8a5ce43a20777a851fdd0151d5bb59c}\label{test__class_8cpp_ac8a5ce43a20777a851fdd0151d5bb59c}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{2}]{,  }\item[{unique}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_ac3b545c8e9ba864fe2962526cea7ff23}\label{test__class_8cpp_ac3b545c8e9ba864fe2962526cea7ff23}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{5}]{,  }\item[{unique}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_aa29d8f537005c8d23156c273d86c8463}\label{test__class_8cpp_aa29d8f537005c8d23156c273d86c8463}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{8}]{,  }\item[{shared}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a1162979f447f96b8fbd37b5228180f89}\label{test__class_8cpp_a1162979f447f96b8fbd37b5228180f89}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{6}]{,  }\item[{shared}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_aeba6c07b7a3bb0c24def18979d6fb80b}\label{test__class_8cpp_aeba6c07b7a3bb0c24def18979d6fb80b}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_HOLDER@{CHECK\_HOLDER}}
+\index{CHECK\_HOLDER@{CHECK\_HOLDER}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_HOLDER()}{CHECK\_HOLDER()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+H\+O\+L\+D\+ER (\begin{DoxyParamCaption}\item[{7}]{,  }\item[{shared}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a711544e7381463aea1d8b4e86b5d04b1}\label{test__class_8cpp_a711544e7381463aea1d8b4e86b5d04b1}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_NOALIAS@{CHECK\_NOALIAS}}
+\index{CHECK\_NOALIAS@{CHECK\_NOALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_NOALIAS()}{CHECK\_NOALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{5}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_a5b678232cd6facdd2f9bf800d0825196}\label{test__class_8cpp_a5b678232cd6facdd2f9bf800d0825196}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_NOALIAS@{CHECK\_NOALIAS}}
+\index{CHECK\_NOALIAS@{CHECK\_NOALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_NOALIAS()}{CHECK\_NOALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_aa4bce673a06beaa3a2d0626d8826e66f}\label{test__class_8cpp_aa4bce673a06beaa3a2d0626d8826e66f}} 
+\index{test\_class.cpp@{test\_class.cpp}!CHECK\_NOALIAS@{CHECK\_NOALIAS}}
+\index{CHECK\_NOALIAS@{CHECK\_NOALIAS}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{CHECK\_NOALIAS()}{CHECK\_NOALIAS()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily C\+H\+E\+C\+K\+\_\+\+N\+O\+A\+L\+I\+AS (\begin{DoxyParamCaption}\item[{8}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__class_8cpp_afaf4438bfc840994d141b8c633b30662}\label{test__class_8cpp_afaf4438bfc840994d141b8c633b30662}} 
+\index{test\_class.cpp@{test\_class.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_class.cpp@{test\_class.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classclass__}{class\+\_\+}}}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+

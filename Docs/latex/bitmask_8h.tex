@@ -1,0 +1,186 @@
+\hypertarget{bitmask_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pygame/bitmask.h File Reference}
+\label{bitmask_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/bitmask.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/bitmask.h}}
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbitmask}{bitmask}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{bitmask_8h_a2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\+N\+L\+I\+NE}}
+\item 
+\#define \mbox{\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W}}~unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}
+\item 
+\#define \mbox{\hyperlink{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN}}~(sizeof(\mbox{\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W}})$\ast$C\+H\+A\+R\+\_\+\+B\+IT)
+\item 
+\#define \mbox{\hyperlink{bitmask_8h_afa7e67b271a40c990b32d0352d7af437}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK}}~(\mbox{\hyperlink{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN}} -\/ 1)
+\item 
+\#define \mbox{\hyperlink{bitmask_8h_a2cd17dec717b4d75b7ec651c0b146c14}{B\+I\+T\+M\+A\+S\+K\+\_\+N}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})~((\mbox{\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W}})1 $<$$<$ (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structbitmask}{bitmask}} \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$ \mbox{\hyperlink{bitmask_8h_aa752ba4914c2b0281e5936851f223d7a}{bitmask\+\_\+create}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a6ee8f168a7ab6785a9bb57c6715dad99}{w}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_afa0fb1b5e976920c0abeff2dca3ed774}{h}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_a379d419bea71c3f666f6da85c03541d7}{bitmask\+\_\+free}} (\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_ae020ada4c4e04de0e829cc0248fcf552}{bitmask\+\_\+clear}} (\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_a82bb2f19bb34d8ba5240afb64e8552f2}{bitmask\+\_\+fill}} (\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_ae8cd3225bc8d4217adc83c0ab6fc0f25}{bitmask\+\_\+invert}} (\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+unsigned \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{bitmask_8h_a1339d047b942a5dd649763a3869c380d}{bitmask\+\_\+count}} (\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{bitmask_8h_a07c65f652b03bee8d0cad4dedee17fe7}{bitmask\+\_\+overlap}} (const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac20a0ffebf4c476650fcfa0633066f0e}{xoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a76dfb6803dcff61037ba688b7f4242b8}{yoffset}})
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{bitmask_8h_a695a67d13d6f85c01acb6e1549c45d52}{bitmask\+\_\+overlap\+\_\+pos}} (const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac20a0ffebf4c476650fcfa0633066f0e}{xoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a76dfb6803dcff61037ba688b7f4242b8}{yoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{bitmask_8h_afd774ee58a1a496ba270efccf991aff4}{bitmask\+\_\+overlap\+\_\+area}} (const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac20a0ffebf4c476650fcfa0633066f0e}{xoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a76dfb6803dcff61037ba688b7f4242b8}{yoffset}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_a548594904deeac9b21d930ee40630a88}{bitmask\+\_\+overlap\+\_\+mask}} (const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac20a0ffebf4c476650fcfa0633066f0e}{xoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a76dfb6803dcff61037ba688b7f4242b8}{yoffset}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_a045e7585fa0aa5541fda13168ca6064c}{bitmask\+\_\+draw}} (\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac20a0ffebf4c476650fcfa0633066f0e}{xoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a76dfb6803dcff61037ba688b7f4242b8}{yoffset}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_a1fdb8ba386423e0d18207826b32a1e24}{bitmask\+\_\+erase}} (\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac20a0ffebf4c476650fcfa0633066f0e}{xoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a76dfb6803dcff61037ba688b7f4242b8}{yoffset}})
+\item 
+\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$ \mbox{\hyperlink{bitmask_8h_a6d32f0aa6f50c71ed378073059943f70}{bitmask\+\_\+scale}} (const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a6ee8f168a7ab6785a9bb57c6715dad99}{w}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_afa0fb1b5e976920c0abeff2dca3ed774}{h}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitmask_8h_afda667839c5c0e71e5bdf374f113845f}{bitmask\+\_\+convolve}} (const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$\mbox{\hyperlink{abstract_8h_a70a0763575096c5545f2232a32ec302a}{o}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_ac20a0ffebf4c476650fcfa0633066f0e}{xoffset}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl_8h_a76dfb6803dcff61037ba688b7f4242b8}{yoffset}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{bitmask_8h_a2cd17dec717b4d75b7ec651c0b146c14}\label{bitmask_8h_a2cd17dec717b4d75b7ec651c0b146c14}} 
+\index{bitmask.h@{bitmask.h}!BITMASK\_N@{BITMASK\_N}}
+\index{BITMASK\_N@{BITMASK\_N}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{BITMASK\_N}{BITMASK\_N}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+N(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}} }\end{DoxyParamCaption})~((\mbox{\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W}})1 $<$$<$ (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}))}
+
+\mbox{\Hypertarget{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}\label{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}} 
+\index{bitmask.h@{bitmask.h}!BITMASK\_W@{BITMASK\_W}}
+\index{BITMASK\_W@{BITMASK\_W}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{BITMASK\_W}{BITMASK\_W}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+W~unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}
+
+\mbox{\Hypertarget{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}\label{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}} 
+\index{bitmask.h@{bitmask.h}!BITMASK\_W\_LEN@{BITMASK\_W\_LEN}}
+\index{BITMASK\_W\_LEN@{BITMASK\_W\_LEN}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{BITMASK\_W\_LEN}{BITMASK\_W\_LEN}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN~(sizeof(\mbox{\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W}})$\ast$C\+H\+A\+R\+\_\+\+B\+IT)}
+
+\mbox{\Hypertarget{bitmask_8h_afa7e67b271a40c990b32d0352d7af437}\label{bitmask_8h_afa7e67b271a40c990b32d0352d7af437}} 
+\index{bitmask.h@{bitmask.h}!BITMASK\_W\_MASK@{BITMASK\_W\_MASK}}
+\index{BITMASK\_W\_MASK@{BITMASK\_W\_MASK}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{BITMASK\_W\_MASK}{BITMASK\_W\_MASK}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK~(\mbox{\hyperlink{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN}} -\/ 1)}
+
+\mbox{\Hypertarget{bitmask_8h_a2eb6f9e0395b47b8d5e3eeae4fe0c116}\label{bitmask_8h_a2eb6f9e0395b47b8d5e3eeae4fe0c116}} 
+\index{bitmask.h@{bitmask.h}!INLINE@{INLINE}}
+\index{INLINE@{INLINE}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{INLINE}{INLINE}}
+{\footnotesize\ttfamily \#define I\+N\+L\+I\+NE}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}\label{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_t@{bitmask\_t}}
+\index{bitmask\_t@{bitmask\_t}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_t}{bitmask\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structbitmask}{bitmask}}  \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{bitmask_8h_ae020ada4c4e04de0e829cc0248fcf552}\label{bitmask_8h_ae020ada4c4e04de0e829cc0248fcf552}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_clear@{bitmask\_clear}}
+\index{bitmask\_clear@{bitmask\_clear}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_clear()}{bitmask\_clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_afda667839c5c0e71e5bdf374f113845f}\label{bitmask_8h_afda667839c5c0e71e5bdf374f113845f}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_convolve@{bitmask\_convolve}}
+\index{bitmask\_convolve@{bitmask\_convolve}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_convolve()}{bitmask\_convolve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+convolve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{o,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{xoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a1339d047b942a5dd649763a3869c380d}\label{bitmask_8h_a1339d047b942a5dd649763a3869c380d}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_count@{bitmask\_count}}
+\index{bitmask\_count@{bitmask\_count}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_count()}{bitmask\_count()}}
+{\footnotesize\ttfamily unsigned \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} bitmask\+\_\+count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_aa752ba4914c2b0281e5936851f223d7a}\label{bitmask_8h_aa752ba4914c2b0281e5936851f223d7a}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_create@{bitmask\_create}}
+\index{bitmask\_create@{bitmask\_create}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_create()}{bitmask\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}}$\ast$ bitmask\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{w,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a045e7585fa0aa5541fda13168ca6064c}\label{bitmask_8h_a045e7585fa0aa5541fda13168ca6064c}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_draw@{bitmask\_draw}}
+\index{bitmask\_draw@{bitmask\_draw}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_draw()}{bitmask\_draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{xoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a1fdb8ba386423e0d18207826b32a1e24}\label{bitmask_8h_a1fdb8ba386423e0d18207826b32a1e24}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_erase@{bitmask\_erase}}
+\index{bitmask\_erase@{bitmask\_erase}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_erase()}{bitmask\_erase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{xoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a82bb2f19bb34d8ba5240afb64e8552f2}\label{bitmask_8h_a82bb2f19bb34d8ba5240afb64e8552f2}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_fill@{bitmask\_fill}}
+\index{bitmask\_fill@{bitmask\_fill}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_fill()}{bitmask\_fill()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a379d419bea71c3f666f6da85c03541d7}\label{bitmask_8h_a379d419bea71c3f666f6da85c03541d7}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_free@{bitmask\_free}}
+\index{bitmask\_free@{bitmask\_free}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_free()}{bitmask\_free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_ae8cd3225bc8d4217adc83c0ab6fc0f25}\label{bitmask_8h_ae8cd3225bc8d4217adc83c0ab6fc0f25}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_invert@{bitmask\_invert}}
+\index{bitmask\_invert@{bitmask\_invert}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_invert()}{bitmask\_invert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+invert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a07c65f652b03bee8d0cad4dedee17fe7}\label{bitmask_8h_a07c65f652b03bee8d0cad4dedee17fe7}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_overlap@{bitmask\_overlap}}
+\index{bitmask\_overlap@{bitmask\_overlap}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_overlap()}{bitmask\_overlap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} bitmask\+\_\+overlap (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{xoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_afd774ee58a1a496ba270efccf991aff4}\label{bitmask_8h_afd774ee58a1a496ba270efccf991aff4}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_overlap\_area@{bitmask\_overlap\_area}}
+\index{bitmask\_overlap\_area@{bitmask\_overlap\_area}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_overlap\_area()}{bitmask\_overlap\_area()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} bitmask\+\_\+overlap\+\_\+area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{xoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a548594904deeac9b21d930ee40630a88}\label{bitmask_8h_a548594904deeac9b21d930ee40630a88}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_overlap\_mask@{bitmask\_overlap\_mask}}
+\index{bitmask\_overlap\_mask@{bitmask\_overlap\_mask}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_overlap\_mask()}{bitmask\_overlap\_mask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} bitmask\+\_\+overlap\+\_\+mask (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{xoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a695a67d13d6f85c01acb6e1549c45d52}\label{bitmask_8h_a695a67d13d6f85c01acb6e1549c45d52}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_overlap\_pos@{bitmask\_overlap\_pos}}
+\index{bitmask\_overlap\_pos@{bitmask\_overlap\_pos}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_overlap\_pos()}{bitmask\_overlap\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} bitmask\+\_\+overlap\+\_\+pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{xoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{yoffset,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$}]{x,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a6d32f0aa6f50c71ed378073059943f70}\label{bitmask_8h_a6d32f0aa6f50c71ed378073059943f70}} 
+\index{bitmask.h@{bitmask.h}!bitmask\_scale@{bitmask\_scale}}
+\index{bitmask\_scale@{bitmask\_scale}!bitmask.h@{bitmask.h}}
+\subsubsection{\texorpdfstring{bitmask\_scale()}{bitmask\_scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}}$\ast$ bitmask\+\_\+scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}} $\ast$}]{m,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{w,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{h }\end{DoxyParamCaption})}
+

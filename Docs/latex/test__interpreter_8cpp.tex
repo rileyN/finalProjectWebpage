@@ -1,0 +1,126 @@
+\hypertarget{test__interpreter_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+embed/test\+\_\+interpreter.cpp File Reference}
+\label{test__interpreter_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_embed/test\_interpreter.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_embed/test\_interpreter.cpp}}
+{\ttfamily \#include $<$pybind11/embed.\+h$>$}\newline
+{\ttfamily \#include $<$catch.\+hpp$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_widget}{Widget}}
+\item 
+class \mbox{\hyperlink{class_py_widget}{Py\+Widget}}
+\item 
+struct \mbox{\hyperlink{structscope__exit}{scope\+\_\+exit}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_a4964391fa776b19aeee7ddd6a36e8c1a}{P\+Y\+B\+I\+N\+D11\+\_\+\+E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+M\+O\+D\+U\+LE}} (widget\+\_\+module, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_a6817bb93865332e4d5124d4db557b641}{P\+Y\+B\+I\+N\+D11\+\_\+\+E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+M\+O\+D\+U\+LE}} (throw\+\_\+exception,)
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_af9706077fc0c35b637f273671b14419a}{P\+Y\+B\+I\+N\+D11\+\_\+\+E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+M\+O\+D\+U\+LE}} (throw\+\_\+error\+\_\+already\+\_\+set,)
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_abf1aae767d263384da01bcf712bdacf9}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Pass classes and \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}} between modules defined \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} C++ and Python\char`\"{})
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_abd2b8918d1fb1d3a703c7b3c091d1325}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Import \mbox{\hyperlink{codecs_8h_a4ced81935a07858f3b68148553ab9998}{error}} handling\char`\"{})
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_a7a26f3787ee0c362914e9a5b5b354f1a}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}There can be only one interpreter\char`\"{})
+\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{test__interpreter_8cpp_ad82b8785e8beb59027fce535101e11a9}{has\+\_\+pybind11\+\_\+internals\+\_\+builtin}} ()
+\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{test__interpreter_8cpp_a1eb3f99b33a9fa06a3ccbe804c88f48b}{has\+\_\+pybind11\+\_\+internals\+\_\+static}} ()
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_ae0500c7ca59b5731bdcec0f6ea9dfa95}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Restart the interpreter\char`\"{})
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_a4f215c9d1a5d6f21e995e4d22c384698}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Subinterpreter\char`\"{})
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_a8d57517a2f2c7e3a12b1090fdc8f3bfd}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Execution frame\char`\"{})
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_aef991574fca412cac421b99fede94ae1}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Threads\char`\"{})
+\item 
+\mbox{\hyperlink{test__interpreter_8cpp_a04159104bb31f0436e49c77f967c080e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Reload \mbox{\hyperlink{classmodule}{module}} from file\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__interpreter_8cpp_ad82b8785e8beb59027fce535101e11a9}\label{test__interpreter_8cpp_ad82b8785e8beb59027fce535101e11a9}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!has\_pybind11\_internals\_builtin@{has\_pybind11\_internals\_builtin}}
+\index{has\_pybind11\_internals\_builtin@{has\_pybind11\_internals\_builtin}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{has\_pybind11\_internals\_builtin()}{has\_pybind11\_internals\_builtin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} has\+\_\+pybind11\+\_\+internals\+\_\+builtin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_a1eb3f99b33a9fa06a3ccbe804c88f48b}\label{test__interpreter_8cpp_a1eb3f99b33a9fa06a3ccbe804c88f48b}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!has\_pybind11\_internals\_static@{has\_pybind11\_internals\_static}}
+\index{has\_pybind11\_internals\_static@{has\_pybind11\_internals\_static}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{has\_pybind11\_internals\_static()}{has\_pybind11\_internals\_static()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} has\+\_\+pybind11\+\_\+internals\+\_\+static (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_a4964391fa776b19aeee7ddd6a36e8c1a}\label{test__interpreter_8cpp_a4964391fa776b19aeee7ddd6a36e8c1a}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!PYBIND11\_EMBEDDED\_MODULE@{PYBIND11\_EMBEDDED\_MODULE}}
+\index{PYBIND11\_EMBEDDED\_MODULE@{PYBIND11\_EMBEDDED\_MODULE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_EMBEDDED\_MODULE()}{PYBIND11\_EMBEDDED\_MODULE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{widget\+\_\+module}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_a6817bb93865332e4d5124d4db557b641}\label{test__interpreter_8cpp_a6817bb93865332e4d5124d4db557b641}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!PYBIND11\_EMBEDDED\_MODULE@{PYBIND11\_EMBEDDED\_MODULE}}
+\index{PYBIND11\_EMBEDDED\_MODULE@{PYBIND11\_EMBEDDED\_MODULE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_EMBEDDED\_MODULE()}{PYBIND11\_EMBEDDED\_MODULE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{throw\+\_\+exception}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_af9706077fc0c35b637f273671b14419a}\label{test__interpreter_8cpp_af9706077fc0c35b637f273671b14419a}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!PYBIND11\_EMBEDDED\_MODULE@{PYBIND11\_EMBEDDED\_MODULE}}
+\index{PYBIND11\_EMBEDDED\_MODULE@{PYBIND11\_EMBEDDED\_MODULE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_EMBEDDED\_MODULE()}{PYBIND11\_EMBEDDED\_MODULE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+E\+M\+B\+E\+D\+D\+E\+D\+\_\+\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{throw\+\_\+error\+\_\+already\+\_\+set}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_abf1aae767d263384da01bcf712bdacf9}\label{test__interpreter_8cpp_abf1aae767d263384da01bcf712bdacf9}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Pass classes and \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}} between modules defined \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} C++ and Python\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_abd2b8918d1fb1d3a703c7b3c091d1325}\label{test__interpreter_8cpp_abd2b8918d1fb1d3a703c7b3c091d1325}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Import \mbox{\hyperlink{codecs_8h_a4ced81935a07858f3b68148553ab9998}{error}} handling\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_a7a26f3787ee0c362914e9a5b5b354f1a}\label{test__interpreter_8cpp_a7a26f3787ee0c362914e9a5b5b354f1a}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}There can be only one interpreter\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_ae0500c7ca59b5731bdcec0f6ea9dfa95}\label{test__interpreter_8cpp_ae0500c7ca59b5731bdcec0f6ea9dfa95}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Restart the interpreter\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_a4f215c9d1a5d6f21e995e4d22c384698}\label{test__interpreter_8cpp_a4f215c9d1a5d6f21e995e4d22c384698}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Subinterpreter\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+Create and switch to a subinterpreter. \mbox{\Hypertarget{test__interpreter_8cpp_a8d57517a2f2c7e3a12b1090fdc8f3bfd}\label{test__interpreter_8cpp_a8d57517a2f2c7e3a12b1090fdc8f3bfd}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Execution frame\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_aef991574fca412cac421b99fede94ae1}\label{test__interpreter_8cpp_aef991574fca412cac421b99fede94ae1}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Threads\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__interpreter_8cpp_a04159104bb31f0436e49c77f967c080e}\label{test__interpreter_8cpp_a04159104bb31f0436e49c77f967c080e}} 
+\index{test\_interpreter.cpp@{test\_interpreter.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_interpreter.cpp@{test\_interpreter.cpp}}
+\subsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Reload \mbox{\hyperlink{classmodule}{module}} from file\char`\"{}}]{ }\end{DoxyParamCaption})}
+

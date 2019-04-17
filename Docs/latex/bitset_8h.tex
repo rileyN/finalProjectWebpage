@@ -1,0 +1,132 @@
+\hypertarget{bitset_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/bitset.h File Reference}
+\label{bitset_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/bitset.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/bitset.h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{bitset_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE}}~char
+\item 
+\#define \mbox{\hyperlink{bitset_8h_ab0d80d9d22cf43d5fec82bb3d7ad7f15}{testbit}}(ss,  ibit)~(((ss)\mbox{[}\mbox{\hyperlink{bitset_8h_aca5f429c8a79e97bca979758e5b61306}{B\+I\+T2\+B\+Y\+TE}}(ibit)\mbox{]} \& \mbox{\hyperlink{bitset_8h_aecd8c1460a6019e118826c6b165c9af7}{B\+I\+T2\+M\+A\+SK}}(ibit)) != 0)
+\item 
+\#define \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}}~(8$\ast$sizeof(\mbox{\hyperlink{bitset_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE}}))
+\item 
+\#define \mbox{\hyperlink{bitset_8h_a9eef04c2ef5eb0085b01c7d0d5d35360}{N\+B\+Y\+T\+ES}}(nbits)~(((nbits) + \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}} -\/ 1) / \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})
+\item 
+\#define \mbox{\hyperlink{bitset_8h_aca5f429c8a79e97bca979758e5b61306}{B\+I\+T2\+B\+Y\+TE}}(ibit)~((ibit) / \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})
+\item 
+\#define \mbox{\hyperlink{bitset_8h_a19ffafa7cf3668630de00c2a11b6fd2d}{B\+I\+T2\+S\+H\+I\+FT}}(ibit)~((ibit) \% \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})
+\item 
+\#define \mbox{\hyperlink{bitset_8h_aecd8c1460a6019e118826c6b165c9af7}{B\+I\+T2\+M\+A\+SK}}(ibit)~(1 $<$$<$ \mbox{\hyperlink{bitset_8h_a19ffafa7cf3668630de00c2a11b6fd2d}{B\+I\+T2\+S\+H\+I\+FT}}(ibit))
+\item 
+\#define \mbox{\hyperlink{bitset_8h_a35cb98e2709b4f697b98aba257f4f7ee}{B\+Y\+T\+E2\+B\+IT}}(ibyte)~((ibyte) $\ast$ \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{bitset_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE}} $\ast$ \mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} \mbox{\hyperlink{bitset_8h_a46e89ffcd529f77e4e138e79278316be}{newbitset}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} nbits)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitset_8h_aecd68b7fc4e181e56ef77671f84000ef}{delbitset}} (\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} bs)
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{bitset_8h_a1df723e1a426034f19e0dac34095da7d}{addbit}} (\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} bs, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ibit)
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{bitset_8h_a810e4fca4216f712e31a31eb75914acb}{samebitset}} (\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} bs1, \mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} bs2, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} nbits)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{bitset_8h_ab8f4cf4bc3668e8bd8cd31e7d5281ccf}{mergebitset}} (\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} bs1, \mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} bs2, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} nbits)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{bitset_8h_aca5f429c8a79e97bca979758e5b61306}\label{bitset_8h_aca5f429c8a79e97bca979758e5b61306}} 
+\index{bitset.h@{bitset.h}!BIT2BYTE@{BIT2BYTE}}
+\index{BIT2BYTE@{BIT2BYTE}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{BIT2BYTE}{BIT2BYTE}}
+{\footnotesize\ttfamily \#define B\+I\+T2\+B\+Y\+TE(\begin{DoxyParamCaption}\item[{}]{ibit }\end{DoxyParamCaption})~((ibit) / \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})}
+
+\mbox{\Hypertarget{bitset_8h_aecd8c1460a6019e118826c6b165c9af7}\label{bitset_8h_aecd8c1460a6019e118826c6b165c9af7}} 
+\index{bitset.h@{bitset.h}!BIT2MASK@{BIT2MASK}}
+\index{BIT2MASK@{BIT2MASK}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{BIT2MASK}{BIT2MASK}}
+{\footnotesize\ttfamily \#define B\+I\+T2\+M\+A\+SK(\begin{DoxyParamCaption}\item[{}]{ibit }\end{DoxyParamCaption})~(1 $<$$<$ \mbox{\hyperlink{bitset_8h_a19ffafa7cf3668630de00c2a11b6fd2d}{B\+I\+T2\+S\+H\+I\+FT}}(ibit))}
+
+\mbox{\Hypertarget{bitset_8h_a19ffafa7cf3668630de00c2a11b6fd2d}\label{bitset_8h_a19ffafa7cf3668630de00c2a11b6fd2d}} 
+\index{bitset.h@{bitset.h}!BIT2SHIFT@{BIT2SHIFT}}
+\index{BIT2SHIFT@{BIT2SHIFT}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{BIT2SHIFT}{BIT2SHIFT}}
+{\footnotesize\ttfamily \#define B\+I\+T2\+S\+H\+I\+FT(\begin{DoxyParamCaption}\item[{}]{ibit }\end{DoxyParamCaption})~((ibit) \% \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})}
+
+\mbox{\Hypertarget{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}\label{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}} 
+\index{bitset.h@{bitset.h}!BITSPERBYTE@{BITSPERBYTE}}
+\index{BITSPERBYTE@{BITSPERBYTE}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{BITSPERBYTE}{BITSPERBYTE}}
+{\footnotesize\ttfamily \#define B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE~(8$\ast$sizeof(\mbox{\hyperlink{bitset_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE}}))}
+
+\mbox{\Hypertarget{bitset_8h_aec93e83855ac17c3c25c55c37ca186dd}\label{bitset_8h_aec93e83855ac17c3c25c55c37ca186dd}} 
+\index{bitset.h@{bitset.h}!BYTE@{BYTE}}
+\index{BYTE@{BYTE}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{BYTE}{BYTE}}
+{\footnotesize\ttfamily \#define B\+Y\+TE~char}
+
+\mbox{\Hypertarget{bitset_8h_a35cb98e2709b4f697b98aba257f4f7ee}\label{bitset_8h_a35cb98e2709b4f697b98aba257f4f7ee}} 
+\index{bitset.h@{bitset.h}!BYTE2BIT@{BYTE2BIT}}
+\index{BYTE2BIT@{BYTE2BIT}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{BYTE2BIT}{BYTE2BIT}}
+{\footnotesize\ttfamily \#define B\+Y\+T\+E2\+B\+IT(\begin{DoxyParamCaption}\item[{}]{ibyte }\end{DoxyParamCaption})~((ibyte) $\ast$ \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})}
+
+\mbox{\Hypertarget{bitset_8h_a9eef04c2ef5eb0085b01c7d0d5d35360}\label{bitset_8h_a9eef04c2ef5eb0085b01c7d0d5d35360}} 
+\index{bitset.h@{bitset.h}!NBYTES@{NBYTES}}
+\index{NBYTES@{NBYTES}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{NBYTES}{NBYTES}}
+{\footnotesize\ttfamily \#define N\+B\+Y\+T\+ES(\begin{DoxyParamCaption}\item[{}]{nbits }\end{DoxyParamCaption})~(((nbits) + \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}} -\/ 1) / \mbox{\hyperlink{bitset_8h_a2a8ea87871fc789a6d9364c79eee0137}{B\+I\+T\+S\+P\+E\+R\+B\+Y\+TE}})}
+
+\mbox{\Hypertarget{bitset_8h_ab0d80d9d22cf43d5fec82bb3d7ad7f15}\label{bitset_8h_ab0d80d9d22cf43d5fec82bb3d7ad7f15}} 
+\index{bitset.h@{bitset.h}!testbit@{testbit}}
+\index{testbit@{testbit}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{testbit}{testbit}}
+{\footnotesize\ttfamily \#define testbit(\begin{DoxyParamCaption}\item[{}]{ss,  }\item[{}]{ibit }\end{DoxyParamCaption})~(((ss)\mbox{[}\mbox{\hyperlink{bitset_8h_aca5f429c8a79e97bca979758e5b61306}{B\+I\+T2\+B\+Y\+TE}}(ibit)\mbox{]} \& \mbox{\hyperlink{bitset_8h_aecd8c1460a6019e118826c6b165c9af7}{B\+I\+T2\+M\+A\+SK}}(ibit)) != 0)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}\label{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}} 
+\index{bitset.h@{bitset.h}!bitset@{bitset}}
+\index{bitset@{bitset}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{bitset}{bitset}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{bitset_8h_aec93e83855ac17c3c25c55c37ca186dd}{B\+Y\+TE}}$\ast$ \mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{bitset_8h_a1df723e1a426034f19e0dac34095da7d}\label{bitset_8h_a1df723e1a426034f19e0dac34095da7d}} 
+\index{bitset.h@{bitset.h}!addbit@{addbit}}
+\index{addbit@{addbit}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{addbit()}{addbit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} addbit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}}]{bs,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ibit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitset_8h_aecd68b7fc4e181e56ef77671f84000ef}\label{bitset_8h_aecd68b7fc4e181e56ef77671f84000ef}} 
+\index{bitset.h@{bitset.h}!delbitset@{delbitset}}
+\index{delbitset@{delbitset}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{delbitset()}{delbitset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} delbitset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}}]{bs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitset_8h_ab8f4cf4bc3668e8bd8cd31e7d5281ccf}\label{bitset_8h_ab8f4cf4bc3668e8bd8cd31e7d5281ccf}} 
+\index{bitset.h@{bitset.h}!mergebitset@{mergebitset}}
+\index{mergebitset@{mergebitset}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{mergebitset()}{mergebitset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} mergebitset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}}]{bs1,  }\item[{\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}}]{bs2,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{nbits }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitset_8h_a46e89ffcd529f77e4e138e79278316be}\label{bitset_8h_a46e89ffcd529f77e4e138e79278316be}} 
+\index{bitset.h@{bitset.h}!newbitset@{newbitset}}
+\index{newbitset@{newbitset}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{newbitset()}{newbitset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}} newbitset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{nbits }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitset_8h_a810e4fca4216f712e31a31eb75914acb}\label{bitset_8h_a810e4fca4216f712e31a31eb75914acb}} 
+\index{bitset.h@{bitset.h}!samebitset@{samebitset}}
+\index{samebitset@{samebitset}!bitset.h@{bitset.h}}
+\subsubsection{\texorpdfstring{samebitset()}{samebitset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} samebitset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}}]{bs1,  }\item[{\mbox{\hyperlink{bitset_8h_ac7e27e031c9c878d9fc78425c9724038}{bitset}}}]{bs2,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{nbits }\end{DoxyParamCaption})}
+
