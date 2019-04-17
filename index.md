@@ -4,7 +4,7 @@
 
 ## Download
 
-[Click here to download!](DOWNLOADLINK)
+[Click here to download!](https://github.com/Spring19GameEngines/finalproject-bluesentinel)
 
 
 ## Documentation
