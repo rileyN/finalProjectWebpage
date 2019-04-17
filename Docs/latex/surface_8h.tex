@@ -1,0 +1,609 @@
+\hypertarget{surface_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pygame/surface.h File Reference}
+\label{surface_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/surface.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pygame/surface.h}}
+{\ttfamily \#include $<$S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}pygame.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{surface_8h_af7279472846c0fd8cd15b15d1a85d8be}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+DD}}~0x1
+\item 
+\#define \mbox{\hyperlink{surface_8h_a857144113c1a0da2426f150360bcdff9}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+S\+UB}}~0x2
+\item 
+\#define \mbox{\hyperlink{surface_8h_a7fc4613bf55c487fd8e4202d40076a4b}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+M\+U\+LT}}~0x3
+\item 
+\#define \mbox{\hyperlink{surface_8h_a135a6235326e531e1f39869ac95b0ff9}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+M\+IN}}~0x4
+\item 
+\#define \mbox{\hyperlink{surface_8h_a923e5bd2637cbb627ed64c5df33bb55a}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+M\+AX}}~0x5
+\item 
+\#define \mbox{\hyperlink{surface_8h_aa7e9d1c28e6ed9f00372515393a60087}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+A\+DD}}~0x1
+\item 
+\#define \mbox{\hyperlink{surface_8h_a10ce7a1325802e395e430b55983a2537}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+S\+UB}}~0x2
+\item 
+\#define \mbox{\hyperlink{surface_8h_af99dbb5dbfafc555dd78c512732651b8}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+M\+U\+LT}}~0x3
+\item 
+\#define \mbox{\hyperlink{surface_8h_a7d45906facf3f77344b1f8d04aa29bbc}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+M\+IN}}~0x4
+\item 
+\#define \mbox{\hyperlink{surface_8h_a87e1c674c85c1b0d4a0897f0063b545c}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+M\+AX}}~0x5
+\item 
+\#define \mbox{\hyperlink{surface_8h_adcf761d38366e8a2f3db3a9c984ab316}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+A\+DD}}~0x6
+\item 
+\#define \mbox{\hyperlink{surface_8h_a31772c17d907314896bd33d58905fcbc}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+S\+UB}}~0x7
+\item 
+\#define \mbox{\hyperlink{surface_8h_ae037f5699fb2c8b95892dbfc4b2f221a}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+U\+LT}}~0x8
+\item 
+\#define \mbox{\hyperlink{surface_8h_a92f7a13fe475118361ade02dc46d9a6e}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+IN}}~0x9
+\item 
+\#define \mbox{\hyperlink{surface_8h_a4f9670c3ba9801ce90216502675d3925}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+AX}}~0x10
+\item 
+\#define \mbox{\hyperlink{surface_8h_ae6d8c6bd9d588078cfcd5acbfa7e17ae}{P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED}}~0x11
+\item 
+\#define \mbox{\hyperlink{surface_8h_a6190106ecfce5534d336ec783af5e41a}{G\+E\+T\+\_\+\+P\+I\+X\+E\+L\+\_\+24}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}})~(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}\mbox{[}0\mbox{]} + (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}\mbox{[}1\mbox{]} $<$$<$ 8) + (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}\mbox{[}2\mbox{]} $<$$<$ 16))
+\item 
+\#define \mbox{\hyperlink{surface_8h_acd8f77b9ea9fb11c64475b692a5ee29a}{G\+E\+T\+\_\+\+P\+I\+X\+EL}}(pxl,  bpp,  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a633906574fe6e39b7f2840bed0e49832}{source}})
+\item 
+\#define \mbox{\hyperlink{surface_8h_a7c05aa80de0c88be59b88e5ac09987c2}{G\+E\+T\+\_\+\+P\+I\+X\+E\+L\+V\+A\+LS}}(\+\_\+sR,  \+\_\+sG,  \+\_\+sB,  \+\_\+sA,  px,  fmt,  ppa)
+\item 
+\#define \mbox{\hyperlink{surface_8h_aaa287b15db255fbd83d828d273482182}{G\+E\+T\+\_\+\+P\+I\+X\+E\+L\+V\+A\+L\+S\+\_\+1}}(sr,  sg,  sb,  sa,  \+\_\+src,  \+\_\+fmt)
+\item 
+\#define \mbox{\hyperlink{surface_8h_ac13e107eae196fe04e5292e19b745093}{S\+E\+T\+\_\+\+P\+I\+X\+E\+L\+V\+AL}}(px,  fmt,  \+\_\+dR,  \+\_\+dG,  \+\_\+dB,  \+\_\+dA)~$\ast$(px) = (\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}}) \mbox{\hyperlink{_s_d_l__pixels_8h_a157cf64c250c578722b939ea11a85b39}{S\+D\+L\+\_\+\+Map\+R\+GB}}(fmt, \+\_\+dR, \+\_\+dG, \+\_\+dB)
+\item 
+\#define \mbox{\hyperlink{surface_8h_aa721240ddc021ee55d2b2fcd885f3160}{S\+E\+T\+\_\+\+O\+F\+F\+S\+E\+T\+S\+\_\+24}}(or,  og,  \mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}},  fmt)
+\item 
+\#define \mbox{\hyperlink{surface_8h_ac25d77752a4b99e72adb209cf1db57c8}{S\+E\+T\+\_\+\+O\+F\+F\+S\+E\+T\+S\+\_\+32}}(or,  og,  \mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}},  fmt)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a3f22450015bc3a9410aeb4cd42796ca2}{C\+R\+E\+A\+T\+E\+\_\+\+P\+I\+X\+EL}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa3b73d9ca9f2e2396cbeae1ce6ce14be}{buf}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}},  bp,  ft)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a12aefc4f47bff8b826ae4c5c50f66a78}{L\+O\+O\+P\+\_\+\+U\+N\+R\+O\+L\+L\+E\+D4}}(code,  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}})
+\item 
+\#define \mbox{\hyperlink{surface_8h_a4881706822b4b1501e4745e7706c2982}{R\+E\+P\+E\+A\+T\+\_\+3}}(code)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a1ffab82c9c4bb8d1de93bc44914cba48}{R\+E\+P\+E\+A\+T\+\_\+4}}(code)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a41fe3b12cdaad131025487663d0a65e8}{B\+L\+E\+N\+D\+\_\+\+A\+DD}}(tmp,  sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_ae1867e7f74b5a92411344676bfeed2cd}{B\+L\+E\+N\+D\+\_\+\+S\+UB}}(tmp,  sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a031058572c47b881c176adb7cbe763ff}{B\+L\+E\+N\+D\+\_\+\+M\+U\+LT}}(sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a5b30bcdd3d29aa8ce7e633278b6cb05e}{B\+L\+E\+N\+D\+\_\+\+M\+IN}}(sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a0dd294202980a36cea697fcda51ede40}{B\+L\+E\+N\+D\+\_\+\+M\+AX}}(sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a444ac1e11a2eec92be0a6abeca092a6a}{B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+A\+DD}}(tmp,  sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a10dd3023f1f3ac1cc34d80e47ce78602}{B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+S\+UB}}(tmp,  sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_afc1ea013bf980218f9301f91a5801d6b}{B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+U\+LT}}(sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a331208b640617352550a6ed759ef5141}{B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+IN}}(sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a6632c2c3091c99eb0037439c3da3966a}{B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+AX}}(sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a152e808537060b381ad37b3e21f1d27a}{A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+N\+D\+\_\+\+C\+O\+MP}}(sC,  dC,  sA)~((((sC -\/ dC) $\ast$ sA + sC) $>$$>$ 8) + dC)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a8ae7881b0711c994606c1b7ffd383a94}{A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+ND}}(sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\item 
+\#define \mbox{\hyperlink{surface_8h_a27c9b9a453d041d0745c918c3295b2fa}{A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+N\+D\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+E\+D\+\_\+\+C\+O\+MP}}(sC,  dC,  sA)~(sC + dC -\/ ((dC $\ast$ sA) $>$$>$ 8))
+\item 
+\#define \mbox{\hyperlink{surface_8h_a3089867d72cd87eb2c8271aafb0c0b84}{A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+N\+D\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED}}(tmp,  sR,  sG,  sB,  sA,  dR,  dG,  dB,  dA)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{surface_8h_a4c63b5a659da656a8f65d74633ba7f64}{surface\+\_\+fill\+\_\+blend}} (\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$surface, \mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$rect, \mbox{\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3ea846f998d64f079b86052b6c4193a8}{color}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} blendargs)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{surface_8h_ae0356d7566d54fae421061e713c2ab40}{surface\+\_\+respect\+\_\+clip\+\_\+rect}} (\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$surface, \mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$rect)
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{surface_8h_a8b5dc0eda37612bf333593d7b5442e41}{pygame\+\_\+\+Alpha\+Blit}} (\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$srcrect, \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$dstrect, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} the\+\_\+args)
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{surface_8h_a0f19c17a37f34cc3283c9ba4fa133f15}{pygame\+\_\+\+Blit}} (\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a72e0fdf0f845ded60b1fada9e9195cd7}{src}}, \mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$srcrect, \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a92034251bfd455d524a9b5610cddba00}{dst}}, \mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$dstrect, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} the\+\_\+args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{surface_8h_a8ae7881b0711c994606c1b7ffd383a94}\label{surface_8h_a8ae7881b0711c994606c1b7ffd383a94}} 
+\index{surface.h@{surface.h}!ALPHA\_BLEND@{ALPHA\_BLEND}}
+\index{ALPHA\_BLEND@{ALPHA\_BLEND}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{ALPHA\_BLEND}{ALPHA\_BLEND}}
+{\footnotesize\ttfamily \#define A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+ND(\begin{DoxyParamCaption}\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{                                            \(\backslash\)}
+\DoxyCodeLine{        if (dA)                                     \(\backslash\)}
+\DoxyCodeLine{        \{                                           \(\backslash\)}
+\DoxyCodeLine{            dR = \mbox{\hyperlink{surface_8h_a152e808537060b381ad37b3e21f1d27a}{ALPHA\_BLEND\_COMP}}(sR, dR, sA);      \(\backslash\)}
+\DoxyCodeLine{            dG = \mbox{\hyperlink{surface_8h_a152e808537060b381ad37b3e21f1d27a}{ALPHA\_BLEND\_COMP}}(sG, dG, sA);      \(\backslash\)}
+\DoxyCodeLine{            dB = \mbox{\hyperlink{surface_8h_a152e808537060b381ad37b3e21f1d27a}{ALPHA\_BLEND\_COMP}}(sB, dB, sA);      \(\backslash\)}
+\DoxyCodeLine{            dA = sA + dA - ((sA * dA) / 255);       \(\backslash\)}
+\DoxyCodeLine{        \}                                           \(\backslash\)}
+\DoxyCodeLine{        else                                        \(\backslash\)}
+\DoxyCodeLine{        \{                                           \(\backslash\)}
+\DoxyCodeLine{            dR = sR;                                \(\backslash\)}
+\DoxyCodeLine{            dG = sG;                                \(\backslash\)}
+\DoxyCodeLine{            dB = sB;                                \(\backslash\)}
+\DoxyCodeLine{            dA = sA;                                \(\backslash\)}
+\DoxyCodeLine{        \}                                           \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a152e808537060b381ad37b3e21f1d27a}\label{surface_8h_a152e808537060b381ad37b3e21f1d27a}} 
+\index{surface.h@{surface.h}!ALPHA\_BLEND\_COMP@{ALPHA\_BLEND\_COMP}}
+\index{ALPHA\_BLEND\_COMP@{ALPHA\_BLEND\_COMP}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{ALPHA\_BLEND\_COMP}{ALPHA\_BLEND\_COMP}}
+{\footnotesize\ttfamily \#define A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+N\+D\+\_\+\+C\+O\+MP(\begin{DoxyParamCaption}\item[{}]{sC,  }\item[{}]{dC,  }\item[{}]{sA }\end{DoxyParamCaption})~((((sC -\/ dC) $\ast$ sA + sC) $>$$>$ 8) + dC)}
+
+\mbox{\Hypertarget{surface_8h_a3089867d72cd87eb2c8271aafb0c0b84}\label{surface_8h_a3089867d72cd87eb2c8271aafb0c0b84}} 
+\index{surface.h@{surface.h}!ALPHA\_BLEND\_PREMULTIPLIED@{ALPHA\_BLEND\_PREMULTIPLIED}}
+\index{ALPHA\_BLEND\_PREMULTIPLIED@{ALPHA\_BLEND\_PREMULTIPLIED}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{ALPHA\_BLEND\_PREMULTIPLIED}{ALPHA\_BLEND\_PREMULTIPLIED}}
+{\footnotesize\ttfamily \#define A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+N\+D\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED(\begin{DoxyParamCaption}\item[{}]{tmp,  }\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{                                            \(\backslash\)}
+\DoxyCodeLine{            tmp = \mbox{\hyperlink{surface_8h_a27c9b9a453d041d0745c918c3295b2fa}{ALPHA\_BLEND\_PREMULTIPLIED\_COMP}}(sR, dR, sA); dR = (tmp > 255 ? 255 : tmp); \(\backslash\)}
+\DoxyCodeLine{            tmp = \mbox{\hyperlink{surface_8h_a27c9b9a453d041d0745c918c3295b2fa}{ALPHA\_BLEND\_PREMULTIPLIED\_COMP}}(sG, dG, sA); dG = (tmp > 255 ? 255 : tmp); \(\backslash\)}
+\DoxyCodeLine{            tmp = \mbox{\hyperlink{surface_8h_a27c9b9a453d041d0745c918c3295b2fa}{ALPHA\_BLEND\_PREMULTIPLIED\_COMP}}(sB, dB, sA); dB = (tmp > 255 ? 255 : tmp); \(\backslash\)}
+\DoxyCodeLine{            dA = sA + dA - ((sA * dA) / 255);       \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a27c9b9a453d041d0745c918c3295b2fa}\label{surface_8h_a27c9b9a453d041d0745c918c3295b2fa}} 
+\index{surface.h@{surface.h}!ALPHA\_BLEND\_PREMULTIPLIED\_COMP@{ALPHA\_BLEND\_PREMULTIPLIED\_COMP}}
+\index{ALPHA\_BLEND\_PREMULTIPLIED\_COMP@{ALPHA\_BLEND\_PREMULTIPLIED\_COMP}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{ALPHA\_BLEND\_PREMULTIPLIED\_COMP}{ALPHA\_BLEND\_PREMULTIPLIED\_COMP}}
+{\footnotesize\ttfamily \#define A\+L\+P\+H\+A\+\_\+\+B\+L\+E\+N\+D\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+E\+D\+\_\+\+C\+O\+MP(\begin{DoxyParamCaption}\item[{}]{sC,  }\item[{}]{dC,  }\item[{}]{sA }\end{DoxyParamCaption})~(sC + dC -\/ ((dC $\ast$ sA) $>$$>$ 8))}
+
+\mbox{\Hypertarget{surface_8h_a41fe3b12cdaad131025487663d0a65e8}\label{surface_8h_a41fe3b12cdaad131025487663d0a65e8}} 
+\index{surface.h@{surface.h}!BLEND\_ADD@{BLEND\_ADD}}
+\index{BLEND\_ADD@{BLEND\_ADD}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_ADD}{BLEND\_ADD}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+A\+DD(\begin{DoxyParamCaption}\item[{}]{tmp,  }\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tmp = dR + sR; dR = (tmp <= 255 ? tmp : 255);       \(\backslash\)}
+\DoxyCodeLine{    tmp = dG + sG; dG = (tmp <= 255 ? tmp : 255);       \(\backslash\)}
+\DoxyCodeLine{    tmp = dB + sB; dB = (tmp <= 255 ? tmp : 255);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a0dd294202980a36cea697fcda51ede40}\label{surface_8h_a0dd294202980a36cea697fcda51ede40}} 
+\index{surface.h@{surface.h}!BLEND\_MAX@{BLEND\_MAX}}
+\index{BLEND\_MAX@{BLEND\_MAX}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_MAX}{BLEND\_MAX}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+M\+AX(\begin{DoxyParamCaption}\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(sR > dR) \{ dR = sR; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sG > dG) \{ dG = sG; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sB > dB) \{ dB = sB; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a5b30bcdd3d29aa8ce7e633278b6cb05e}\label{surface_8h_a5b30bcdd3d29aa8ce7e633278b6cb05e}} 
+\index{surface.h@{surface.h}!BLEND\_MIN@{BLEND\_MIN}}
+\index{BLEND\_MIN@{BLEND\_MIN}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_MIN}{BLEND\_MIN}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+M\+IN(\begin{DoxyParamCaption}\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(sR < dR) \{ dR = sR; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sG < dG) \{ dG = sG; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sB < dB) \{ dB = sB; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a031058572c47b881c176adb7cbe763ff}\label{surface_8h_a031058572c47b881c176adb7cbe763ff}} 
+\index{surface.h@{surface.h}!BLEND\_MULT@{BLEND\_MULT}}
+\index{BLEND\_MULT@{BLEND\_MULT}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_MULT}{BLEND\_MULT}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+M\+U\+LT(\begin{DoxyParamCaption}\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dR = (dR \&\& sR) ? (dR * sR) >> 8 : 0;          \(\backslash\)}
+\DoxyCodeLine{    dG = (dG \&\& sG) ? (dG * sG) >> 8 : 0;          \(\backslash\)}
+\DoxyCodeLine{    dB = (dB \&\& sB) ? (dB * sB) >> 8 : 0;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a444ac1e11a2eec92be0a6abeca092a6a}\label{surface_8h_a444ac1e11a2eec92be0a6abeca092a6a}} 
+\index{surface.h@{surface.h}!BLEND\_RGBA\_ADD@{BLEND\_RGBA\_ADD}}
+\index{BLEND\_RGBA\_ADD@{BLEND\_RGBA\_ADD}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_RGBA\_ADD}{BLEND\_RGBA\_ADD}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+A\+DD(\begin{DoxyParamCaption}\item[{}]{tmp,  }\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tmp = dR + sR; dR = (tmp <= 255 ? tmp : 255);       \(\backslash\)}
+\DoxyCodeLine{    tmp = dG + sG; dG = (tmp <= 255 ? tmp : 255);       \(\backslash\)}
+\DoxyCodeLine{    tmp = dB + sB; dB = (tmp <= 255 ? tmp : 255);       \(\backslash\)}
+\DoxyCodeLine{    tmp = dA + sA; dA = (tmp <= 255 ? tmp : 255);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a6632c2c3091c99eb0037439c3da3966a}\label{surface_8h_a6632c2c3091c99eb0037439c3da3966a}} 
+\index{surface.h@{surface.h}!BLEND\_RGBA\_MAX@{BLEND\_RGBA\_MAX}}
+\index{BLEND\_RGBA\_MAX@{BLEND\_RGBA\_MAX}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_RGBA\_MAX}{BLEND\_RGBA\_MAX}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+AX(\begin{DoxyParamCaption}\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(sR > dR) \{ dR = sR; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sG > dG) \{ dG = sG; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sB > dB) \{ dB = sB; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sA > dA) \{ dA = sA; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a331208b640617352550a6ed759ef5141}\label{surface_8h_a331208b640617352550a6ed759ef5141}} 
+\index{surface.h@{surface.h}!BLEND\_RGBA\_MIN@{BLEND\_RGBA\_MIN}}
+\index{BLEND\_RGBA\_MIN@{BLEND\_RGBA\_MIN}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_RGBA\_MIN}{BLEND\_RGBA\_MIN}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+IN(\begin{DoxyParamCaption}\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(sR < dR) \{ dR = sR; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sG < dG) \{ dG = sG; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sB < dB) \{ dB = sB; \}                      \(\backslash\)}
+\DoxyCodeLine{    if(sA < dA) \{ dA = sA; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_afc1ea013bf980218f9301f91a5801d6b}\label{surface_8h_afc1ea013bf980218f9301f91a5801d6b}} 
+\index{surface.h@{surface.h}!BLEND\_RGBA\_MULT@{BLEND\_RGBA\_MULT}}
+\index{BLEND\_RGBA\_MULT@{BLEND\_RGBA\_MULT}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_RGBA\_MULT}{BLEND\_RGBA\_MULT}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+U\+LT(\begin{DoxyParamCaption}\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dR = (dR \&\& sR) ? (dR * sR) >> 8 : 0;          \(\backslash\)}
+\DoxyCodeLine{    dG = (dG \&\& sG) ? (dG * sG) >> 8 : 0;          \(\backslash\)}
+\DoxyCodeLine{    dB = (dB \&\& sB) ? (dB * sB) >> 8 : 0;          \(\backslash\)}
+\DoxyCodeLine{    dA = (dA \&\& sA) ? (dA * sA) >> 8 : 0;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a10dd3023f1f3ac1cc34d80e47ce78602}\label{surface_8h_a10dd3023f1f3ac1cc34d80e47ce78602}} 
+\index{surface.h@{surface.h}!BLEND\_RGBA\_SUB@{BLEND\_RGBA\_SUB}}
+\index{BLEND\_RGBA\_SUB@{BLEND\_RGBA\_SUB}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_RGBA\_SUB}{BLEND\_RGBA\_SUB}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+S\+UB(\begin{DoxyParamCaption}\item[{}]{tmp,  }\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tmp = dR - sR; dR = (tmp >= 0 ? tmp : 0);          \(\backslash\)}
+\DoxyCodeLine{    tmp = dG - sG; dG = (tmp >= 0 ? tmp : 0);          \(\backslash\)}
+\DoxyCodeLine{    tmp = dB - sB; dB = (tmp >= 0 ? tmp : 0);          \(\backslash\)}
+\DoxyCodeLine{    tmp = dA - sA; dA = (tmp >= 0 ? tmp : 0);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_ae1867e7f74b5a92411344676bfeed2cd}\label{surface_8h_ae1867e7f74b5a92411344676bfeed2cd}} 
+\index{surface.h@{surface.h}!BLEND\_SUB@{BLEND\_SUB}}
+\index{BLEND\_SUB@{BLEND\_SUB}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{BLEND\_SUB}{BLEND\_SUB}}
+{\footnotesize\ttfamily \#define B\+L\+E\+N\+D\+\_\+\+S\+UB(\begin{DoxyParamCaption}\item[{}]{tmp,  }\item[{}]{sR,  }\item[{}]{sG,  }\item[{}]{sB,  }\item[{}]{sA,  }\item[{}]{dR,  }\item[{}]{dG,  }\item[{}]{dB,  }\item[{}]{dA }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tmp = dR - sR; dR = (tmp >= 0 ? tmp : 0);          \(\backslash\)}
+\DoxyCodeLine{    tmp = dG - sG; dG = (tmp >= 0 ? tmp : 0);          \(\backslash\)}
+\DoxyCodeLine{    tmp = dB - sB; dB = (tmp >= 0 ? tmp : 0);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a3f22450015bc3a9410aeb4cd42796ca2}\label{surface_8h_a3f22450015bc3a9410aeb4cd42796ca2}} 
+\index{surface.h@{surface.h}!CREATE\_PIXEL@{CREATE\_PIXEL}}
+\index{CREATE\_PIXEL@{CREATE\_PIXEL}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{CREATE\_PIXEL}{CREATE\_PIXEL}}
+{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+P\+I\+X\+EL(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa3b73d9ca9f2e2396cbeae1ce6ce14be}{buf}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}},  }\item[{}]{bp,  }\item[{}]{ft }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{switch} (bp)                                   \(\backslash\)}
+\DoxyCodeLine{    \{                                             \(\backslash\)}
+\DoxyCodeLine{    case 2:                                       \(\backslash\)}
+\DoxyCodeLine{        *((\mbox{\hyperlink{_s_d_l__stdinc_8h_a31fcc0a076c9068668173ee26d33e42b}{Uint16}} *) (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa3b73d9ca9f2e2396cbeae1ce6ce14be}{buf}})) =                     \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}} >> ft->Rloss) << ft->Rshift) |    \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}} >> ft->Gloss) << ft->Gshift) |    \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}} >> ft->Bloss) << ft->Bshift) |    \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}} >> ft->Aloss) << ft->Ashift);     \(\backslash\)}
+\DoxyCodeLine{        break;                                    \(\backslash\)}
+\DoxyCodeLine{    case 4:                                       \(\backslash\)}
+\DoxyCodeLine{        *((\mbox{\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32}} *) (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa3b73d9ca9f2e2396cbeae1ce6ce14be}{buf}})) =                     \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}} >> ft->Rloss) << ft->Rshift) |    \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}} >> ft->Gloss) << ft->Gshift) |    \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}} >> ft->Bloss) << ft->Bshift) |    \(\backslash\)}
+\DoxyCodeLine{            ((\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}} >> ft->Aloss) << ft->Ashift);     \(\backslash\)}
+\DoxyCodeLine{        break;                                    \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_acd8f77b9ea9fb11c64475b692a5ee29a}\label{surface_8h_acd8f77b9ea9fb11c64475b692a5ee29a}} 
+\index{surface.h@{surface.h}!GET\_PIXEL@{GET\_PIXEL}}
+\index{GET\_PIXEL@{GET\_PIXEL}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{GET\_PIXEL}{GET\_PIXEL}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+P\+I\+X\+EL(\begin{DoxyParamCaption}\item[{}]{pxl,  }\item[{}]{bpp,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a633906574fe6e39b7f2840bed0e49832}{source}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{switch} (bpp)                                  \(\backslash\)}
+\DoxyCodeLine{    \{                                             \(\backslash\)}
+\DoxyCodeLine{    case 2:                                       \(\backslash\)}
+\DoxyCodeLine{        pxl = *((\mbox{\hyperlink{_s_d_l__stdinc_8h_a31fcc0a076c9068668173ee26d33e42b}{Uint16}} *) (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a633906574fe6e39b7f2840bed0e49832}{source}}));             \(\backslash\)}
+\DoxyCodeLine{        break;                                    \(\backslash\)}
+\DoxyCodeLine{    case 4:                                       \(\backslash\)}
+\DoxyCodeLine{        pxl = *((\mbox{\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32}} *) (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a633906574fe6e39b7f2840bed0e49832}{source}}));             \(\backslash\)}
+\DoxyCodeLine{        break;                                    \(\backslash\)}
+\DoxyCodeLine{    default:                                      \(\backslash\)}
+\DoxyCodeLine{    \{                                             \(\backslash\)}
+\DoxyCodeLine{        Uint8 *\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}} = (\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}} *) \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a633906574fe6e39b7f2840bed0e49832}{source}};              \(\backslash\)}
+\DoxyCodeLine{        pxl = \mbox{\hyperlink{surface_8h_a6190106ecfce5534d336ec783af5e41a}{GET\_PIXEL\_24}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}});                    \(\backslash\)}
+\DoxyCodeLine{    \}                                             \(\backslash\)}
+\DoxyCodeLine{    break;                                        \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a6190106ecfce5534d336ec783af5e41a}\label{surface_8h_a6190106ecfce5534d336ec783af5e41a}} 
+\index{surface.h@{surface.h}!GET\_PIXEL\_24@{GET\_PIXEL\_24}}
+\index{GET\_PIXEL\_24@{GET\_PIXEL\_24}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{GET\_PIXEL\_24}{GET\_PIXEL\_24}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+P\+I\+X\+E\+L\+\_\+24(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}\mbox{[}0\mbox{]} + (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}\mbox{[}1\mbox{]} $<$$<$ 8) + (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}\mbox{[}2\mbox{]} $<$$<$ 16))}
+
+\mbox{\Hypertarget{surface_8h_a7c05aa80de0c88be59b88e5ac09987c2}\label{surface_8h_a7c05aa80de0c88be59b88e5ac09987c2}} 
+\index{surface.h@{surface.h}!GET\_PIXELVALS@{GET\_PIXELVALS}}
+\index{GET\_PIXELVALS@{GET\_PIXELVALS}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{GET\_PIXELVALS}{GET\_PIXELVALS}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+P\+I\+X\+E\+L\+V\+A\+LS(\begin{DoxyParamCaption}\item[{}]{\+\_\+sR,  }\item[{}]{\+\_\+sG,  }\item[{}]{\+\_\+sB,  }\item[{}]{\+\_\+sA,  }\item[{}]{px,  }\item[{}]{fmt,  }\item[{}]{ppa }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_sR = ((px \& fmt->Rmask) >> fmt->Rshift);                         \(\backslash\)}
+\DoxyCodeLine{    \_sR = (\_sR << fmt->Rloss) + (\_sR >> (8 - (fmt->Rloss << 1)));     \(\backslash\)}
+\DoxyCodeLine{    \_sG = ((px \& fmt->Gmask) >> fmt->Gshift);                         \(\backslash\)}
+\DoxyCodeLine{    \_sG = (\_sG << fmt->Gloss) + (\_sG >> (8 - (fmt->Gloss << 1)));     \(\backslash\)}
+\DoxyCodeLine{    \_sB = ((px \& fmt->Bmask) >> fmt->Bshift);                         \(\backslash\)}
+\DoxyCodeLine{    \_sB = (\_sB << fmt->Bloss) + (\_sB >> (8 - (fmt->Bloss << 1)));     \(\backslash\)}
+\DoxyCodeLine{    if (ppa)                                                          \(\backslash\)}
+\DoxyCodeLine{    \{                                                                 \(\backslash\)}
+\DoxyCodeLine{        \_sA = ((px \& fmt->Amask) >> fmt->Ashift);                     \(\backslash\)}
+\DoxyCodeLine{        \_sA = (\_sA << fmt->Aloss) + (\_sA >> (8 - (fmt->Aloss << 1))); \(\backslash\)}
+\DoxyCodeLine{    \}                                                                 \(\backslash\)}
+\DoxyCodeLine{    else                                                              \(\backslash\)}
+\DoxyCodeLine{    \{                                                                 \(\backslash\)}
+\DoxyCodeLine{        \_sA = 255;                                                    \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_aaa287b15db255fbd83d828d273482182}\label{surface_8h_aaa287b15db255fbd83d828d273482182}} 
+\index{surface.h@{surface.h}!GET\_PIXELVALS\_1@{GET\_PIXELVALS\_1}}
+\index{GET\_PIXELVALS\_1@{GET\_PIXELVALS\_1}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{GET\_PIXELVALS\_1}{GET\_PIXELVALS\_1}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+P\+I\+X\+E\+L\+V\+A\+L\+S\+\_\+1(\begin{DoxyParamCaption}\item[{}]{sr,  }\item[{}]{sg,  }\item[{}]{sb,  }\item[{}]{sa,  }\item[{}]{\+\_\+src,  }\item[{}]{\+\_\+fmt }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sr = \_fmt->palette->colors[*((\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}} *) (\_src))].\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}; \(\backslash\)}
+\DoxyCodeLine{    sg = \_fmt->palette->colors[*((\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}} *) (\_src))].\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}; \(\backslash\)}
+\DoxyCodeLine{    sb = \_fmt->palette->colors[*((\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}} *) (\_src))].\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}; \(\backslash\)}
+\DoxyCodeLine{    sa = 255;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a12aefc4f47bff8b826ae4c5c50f66a78}\label{surface_8h_a12aefc4f47bff8b826ae4c5c50f66a78}} 
+\index{surface.h@{surface.h}!LOOP\_UNROLLED4@{LOOP\_UNROLLED4}}
+\index{LOOP\_UNROLLED4@{LOOP\_UNROLLED4}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{LOOP\_UNROLLED4}{LOOP\_UNROLLED4}}
+{\footnotesize\ttfamily \#define L\+O\+O\+P\+\_\+\+U\+N\+R\+O\+L\+L\+E\+D4(\begin{DoxyParamCaption}\item[{}]{code,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}} = (\mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} + 3) / 4;               \(\backslash\)}
+\DoxyCodeLine{    switch (\mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} \& 3)                 \(\backslash\)}
+\DoxyCodeLine{    \{                                  \(\backslash\)}
+\DoxyCodeLine{    case 0: \textcolor{keywordflow}{do} \{ code;                 \(\backslash\)}
+\DoxyCodeLine{        case 3: code;                  \(\backslash\)}
+\DoxyCodeLine{        case 2: code;                  \(\backslash\)}
+\DoxyCodeLine{        case 1: code;                  \(\backslash\)}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{while} (--\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}} > 0);             \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_af7279472846c0fd8cd15b15d1a85d8be}\label{surface_8h_af7279472846c0fd8cd15b15d1a85d8be}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_ADD@{PYGAME\_BLEND\_ADD}}
+\index{PYGAME\_BLEND\_ADD@{PYGAME\_BLEND\_ADD}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_ADD}{PYGAME\_BLEND\_ADD}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+A\+DD~0x1}
+
+\mbox{\Hypertarget{surface_8h_a923e5bd2637cbb627ed64c5df33bb55a}\label{surface_8h_a923e5bd2637cbb627ed64c5df33bb55a}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_MAX@{PYGAME\_BLEND\_MAX}}
+\index{PYGAME\_BLEND\_MAX@{PYGAME\_BLEND\_MAX}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_MAX}{PYGAME\_BLEND\_MAX}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+M\+AX~0x5}
+
+\mbox{\Hypertarget{surface_8h_a135a6235326e531e1f39869ac95b0ff9}\label{surface_8h_a135a6235326e531e1f39869ac95b0ff9}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_MIN@{PYGAME\_BLEND\_MIN}}
+\index{PYGAME\_BLEND\_MIN@{PYGAME\_BLEND\_MIN}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_MIN}{PYGAME\_BLEND\_MIN}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+M\+IN~0x4}
+
+\mbox{\Hypertarget{surface_8h_a7fc4613bf55c487fd8e4202d40076a4b}\label{surface_8h_a7fc4613bf55c487fd8e4202d40076a4b}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_MULT@{PYGAME\_BLEND\_MULT}}
+\index{PYGAME\_BLEND\_MULT@{PYGAME\_BLEND\_MULT}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_MULT}{PYGAME\_BLEND\_MULT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+M\+U\+LT~0x3}
+
+\mbox{\Hypertarget{surface_8h_ae6d8c6bd9d588078cfcd5acbfa7e17ae}\label{surface_8h_ae6d8c6bd9d588078cfcd5acbfa7e17ae}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_PREMULTIPLIED@{PYGAME\_BLEND\_PREMULTIPLIED}}
+\index{PYGAME\_BLEND\_PREMULTIPLIED@{PYGAME\_BLEND\_PREMULTIPLIED}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_PREMULTIPLIED}{PYGAME\_BLEND\_PREMULTIPLIED}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+P\+R\+E\+M\+U\+L\+T\+I\+P\+L\+I\+ED~0x11}
+
+\mbox{\Hypertarget{surface_8h_aa7e9d1c28e6ed9f00372515393a60087}\label{surface_8h_aa7e9d1c28e6ed9f00372515393a60087}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGB\_ADD@{PYGAME\_BLEND\_RGB\_ADD}}
+\index{PYGAME\_BLEND\_RGB\_ADD@{PYGAME\_BLEND\_RGB\_ADD}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGB\_ADD}{PYGAME\_BLEND\_RGB\_ADD}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+A\+DD~0x1}
+
+\mbox{\Hypertarget{surface_8h_a87e1c674c85c1b0d4a0897f0063b545c}\label{surface_8h_a87e1c674c85c1b0d4a0897f0063b545c}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGB\_MAX@{PYGAME\_BLEND\_RGB\_MAX}}
+\index{PYGAME\_BLEND\_RGB\_MAX@{PYGAME\_BLEND\_RGB\_MAX}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGB\_MAX}{PYGAME\_BLEND\_RGB\_MAX}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+M\+AX~0x5}
+
+\mbox{\Hypertarget{surface_8h_a7d45906facf3f77344b1f8d04aa29bbc}\label{surface_8h_a7d45906facf3f77344b1f8d04aa29bbc}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGB\_MIN@{PYGAME\_BLEND\_RGB\_MIN}}
+\index{PYGAME\_BLEND\_RGB\_MIN@{PYGAME\_BLEND\_RGB\_MIN}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGB\_MIN}{PYGAME\_BLEND\_RGB\_MIN}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+M\+IN~0x4}
+
+\mbox{\Hypertarget{surface_8h_af99dbb5dbfafc555dd78c512732651b8}\label{surface_8h_af99dbb5dbfafc555dd78c512732651b8}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGB\_MULT@{PYGAME\_BLEND\_RGB\_MULT}}
+\index{PYGAME\_BLEND\_RGB\_MULT@{PYGAME\_BLEND\_RGB\_MULT}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGB\_MULT}{PYGAME\_BLEND\_RGB\_MULT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+M\+U\+LT~0x3}
+
+\mbox{\Hypertarget{surface_8h_a10ce7a1325802e395e430b55983a2537}\label{surface_8h_a10ce7a1325802e395e430b55983a2537}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGB\_SUB@{PYGAME\_BLEND\_RGB\_SUB}}
+\index{PYGAME\_BLEND\_RGB\_SUB@{PYGAME\_BLEND\_RGB\_SUB}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGB\_SUB}{PYGAME\_BLEND\_RGB\_SUB}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+\_\+\+S\+UB~0x2}
+
+\mbox{\Hypertarget{surface_8h_adcf761d38366e8a2f3db3a9c984ab316}\label{surface_8h_adcf761d38366e8a2f3db3a9c984ab316}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGBA\_ADD@{PYGAME\_BLEND\_RGBA\_ADD}}
+\index{PYGAME\_BLEND\_RGBA\_ADD@{PYGAME\_BLEND\_RGBA\_ADD}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGBA\_ADD}{PYGAME\_BLEND\_RGBA\_ADD}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+A\+DD~0x6}
+
+\mbox{\Hypertarget{surface_8h_a4f9670c3ba9801ce90216502675d3925}\label{surface_8h_a4f9670c3ba9801ce90216502675d3925}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGBA\_MAX@{PYGAME\_BLEND\_RGBA\_MAX}}
+\index{PYGAME\_BLEND\_RGBA\_MAX@{PYGAME\_BLEND\_RGBA\_MAX}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGBA\_MAX}{PYGAME\_BLEND\_RGBA\_MAX}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+AX~0x10}
+
+\mbox{\Hypertarget{surface_8h_a92f7a13fe475118361ade02dc46d9a6e}\label{surface_8h_a92f7a13fe475118361ade02dc46d9a6e}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGBA\_MIN@{PYGAME\_BLEND\_RGBA\_MIN}}
+\index{PYGAME\_BLEND\_RGBA\_MIN@{PYGAME\_BLEND\_RGBA\_MIN}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGBA\_MIN}{PYGAME\_BLEND\_RGBA\_MIN}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+IN~0x9}
+
+\mbox{\Hypertarget{surface_8h_ae037f5699fb2c8b95892dbfc4b2f221a}\label{surface_8h_ae037f5699fb2c8b95892dbfc4b2f221a}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGBA\_MULT@{PYGAME\_BLEND\_RGBA\_MULT}}
+\index{PYGAME\_BLEND\_RGBA\_MULT@{PYGAME\_BLEND\_RGBA\_MULT}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGBA\_MULT}{PYGAME\_BLEND\_RGBA\_MULT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+M\+U\+LT~0x8}
+
+\mbox{\Hypertarget{surface_8h_a31772c17d907314896bd33d58905fcbc}\label{surface_8h_a31772c17d907314896bd33d58905fcbc}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_RGBA\_SUB@{PYGAME\_BLEND\_RGBA\_SUB}}
+\index{PYGAME\_BLEND\_RGBA\_SUB@{PYGAME\_BLEND\_RGBA\_SUB}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_RGBA\_SUB}{PYGAME\_BLEND\_RGBA\_SUB}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+R\+G\+B\+A\+\_\+\+S\+UB~0x7}
+
+\mbox{\Hypertarget{surface_8h_a857144113c1a0da2426f150360bcdff9}\label{surface_8h_a857144113c1a0da2426f150360bcdff9}} 
+\index{surface.h@{surface.h}!PYGAME\_BLEND\_SUB@{PYGAME\_BLEND\_SUB}}
+\index{PYGAME\_BLEND\_SUB@{PYGAME\_BLEND\_SUB}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{PYGAME\_BLEND\_SUB}{PYGAME\_BLEND\_SUB}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+B\+L\+E\+N\+D\+\_\+\+S\+UB~0x2}
+
+\mbox{\Hypertarget{surface_8h_a4881706822b4b1501e4745e7706c2982}\label{surface_8h_a4881706822b4b1501e4745e7706c2982}} 
+\index{surface.h@{surface.h}!REPEAT\_3@{REPEAT\_3}}
+\index{REPEAT\_3@{REPEAT\_3}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{REPEAT\_3}{REPEAT\_3}}
+{\footnotesize\ttfamily \#define R\+E\+P\+E\+A\+T\+\_\+3(\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{code;              \(\backslash\)}
+\DoxyCodeLine{    code;              \(\backslash\)}
+\DoxyCodeLine{    code;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_a1ffab82c9c4bb8d1de93bc44914cba48}\label{surface_8h_a1ffab82c9c4bb8d1de93bc44914cba48}} 
+\index{surface.h@{surface.h}!REPEAT\_4@{REPEAT\_4}}
+\index{REPEAT\_4@{REPEAT\_4}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{REPEAT\_4}{REPEAT\_4}}
+{\footnotesize\ttfamily \#define R\+E\+P\+E\+A\+T\+\_\+4(\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{code;              \(\backslash\)}
+\DoxyCodeLine{    code;              \(\backslash\)}
+\DoxyCodeLine{    code;              \(\backslash\)}
+\DoxyCodeLine{    code;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_aa721240ddc021ee55d2b2fcd885f3160}\label{surface_8h_aa721240ddc021ee55d2b2fcd885f3160}} 
+\index{surface.h@{surface.h}!SET\_OFFSETS\_24@{SET\_OFFSETS\_24}}
+\index{SET\_OFFSETS\_24@{SET\_OFFSETS\_24}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{SET\_OFFSETS\_24}{SET\_OFFSETS\_24}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+O\+F\+F\+S\+E\+T\+S\+\_\+24(\begin{DoxyParamCaption}\item[{}]{or,  }\item[{}]{og,  }\item[{}]{\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}},  }\item[{}]{fmt }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{                                             \(\backslash\)}
+\DoxyCodeLine{    or = (fmt->Rshift == 0 ? 0 :                  \(\backslash\)}
+\DoxyCodeLine{          fmt->Rshift == 8 ? 1 :                  \(\backslash\)}
+\DoxyCodeLine{                         2   );                   \(\backslash\)}
+\DoxyCodeLine{    og = (fmt->Gshift == 0 ? 0 :                  \(\backslash\)}
+\DoxyCodeLine{          fmt->Gshift == 8 ? 1 :                  \(\backslash\)}
+\DoxyCodeLine{                         2   );                   \(\backslash\)}
+\DoxyCodeLine{    ob = (fmt->Bshift == 0 ? 0 :                  \(\backslash\)}
+\DoxyCodeLine{          fmt->Bshift == 8 ? 1 :                  \(\backslash\)}
+\DoxyCodeLine{                         2   );                   \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_ac25d77752a4b99e72adb209cf1db57c8}\label{surface_8h_ac25d77752a4b99e72adb209cf1db57c8}} 
+\index{surface.h@{surface.h}!SET\_OFFSETS\_32@{SET\_OFFSETS\_32}}
+\index{SET\_OFFSETS\_32@{SET\_OFFSETS\_32}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{SET\_OFFSETS\_32}{SET\_OFFSETS\_32}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+O\+F\+F\+S\+E\+T\+S\+\_\+32(\begin{DoxyParamCaption}\item[{}]{or,  }\item[{}]{og,  }\item[{}]{\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}},  }\item[{}]{fmt }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{                                             \(\backslash\)}
+\DoxyCodeLine{    or = (fmt->Rshift == 0  ? 0 :                 \(\backslash\)}
+\DoxyCodeLine{          fmt->Rshift == 8  ? 1 :                 \(\backslash\)}
+\DoxyCodeLine{          fmt->Rshift == 16 ? 2 :                 \(\backslash\)}
+\DoxyCodeLine{                          3   );                  \(\backslash\)}
+\DoxyCodeLine{    og = (fmt->Gshift == 0  ? 0 :                 \(\backslash\)}
+\DoxyCodeLine{          fmt->Gshift == 8  ? 1 :                 \(\backslash\)}
+\DoxyCodeLine{          fmt->Gshift == 16 ? 2 :                 \(\backslash\)}
+\DoxyCodeLine{                          3   );                  \(\backslash\)}
+\DoxyCodeLine{    ob = (fmt->Bshift == 0  ? 0 :                 \(\backslash\)}
+\DoxyCodeLine{          fmt->Bshift == 8  ? 1 :                 \(\backslash\)}
+\DoxyCodeLine{          fmt->Bshift == 16 ? 2 :                 \(\backslash\)}
+\DoxyCodeLine{                          3   );                  \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{surface_8h_ac13e107eae196fe04e5292e19b745093}\label{surface_8h_ac13e107eae196fe04e5292e19b745093}} 
+\index{surface.h@{surface.h}!SET\_PIXELVAL@{SET\_PIXELVAL}}
+\index{SET\_PIXELVAL@{SET\_PIXELVAL}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{SET\_PIXELVAL}{SET\_PIXELVAL}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+P\+I\+X\+E\+L\+V\+AL(\begin{DoxyParamCaption}\item[{}]{px,  }\item[{}]{fmt,  }\item[{}]{\+\_\+dR,  }\item[{}]{\+\_\+dG,  }\item[{}]{\+\_\+dB,  }\item[{}]{\+\_\+dA }\end{DoxyParamCaption})~$\ast$(px) = (\mbox{\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8}}) \mbox{\hyperlink{_s_d_l__pixels_8h_a157cf64c250c578722b939ea11a85b39}{S\+D\+L\+\_\+\+Map\+R\+GB}}(fmt, \+\_\+dR, \+\_\+dG, \+\_\+dB)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{surface_8h_a8b5dc0eda37612bf333593d7b5442e41}\label{surface_8h_a8b5dc0eda37612bf333593d7b5442e41}} 
+\index{surface.h@{surface.h}!pygame\_AlphaBlit@{pygame\_AlphaBlit}}
+\index{pygame\_AlphaBlit@{pygame\_AlphaBlit}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{pygame\_AlphaBlit()}{pygame\_AlphaBlit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} pygame\+\_\+\+Alpha\+Blit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$}]{srcrect,  }\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$}]{dstrect,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{the\+\_\+args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{surface_8h_a0f19c17a37f34cc3283c9ba4fa133f15}\label{surface_8h_a0f19c17a37f34cc3283c9ba4fa133f15}} 
+\index{surface.h@{surface.h}!pygame\_Blit@{pygame\_Blit}}
+\index{pygame\_Blit@{pygame\_Blit}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{pygame\_Blit()}{pygame\_Blit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} pygame\+\_\+\+Blit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$}]{srcrect,  }\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{dst,  }\item[{\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$}]{dstrect,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{the\+\_\+args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{surface_8h_a4c63b5a659da656a8f65d74633ba7f64}\label{surface_8h_a4c63b5a659da656a8f65d74633ba7f64}} 
+\index{surface.h@{surface.h}!surface\_fill\_blend@{surface\_fill\_blend}}
+\index{surface\_fill\_blend@{surface\_fill\_blend}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{surface\_fill\_blend()}{surface\_fill\_blend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} surface\+\_\+fill\+\_\+blend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{surface,  }\item[{\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$}]{rect,  }\item[{\mbox{\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32}}}]{color,  }\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{blendargs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{surface_8h_ae0356d7566d54fae421061e713c2ab40}\label{surface_8h_ae0356d7566d54fae421061e713c2ab40}} 
+\index{surface.h@{surface.h}!surface\_respect\_clip\_rect@{surface\_respect\_clip\_rect}}
+\index{surface\_respect\_clip\_rect@{surface\_respect\_clip\_rect}!surface.h@{surface.h}}
+\subsubsection{\texorpdfstring{surface\_respect\_clip\_rect()}{surface\_respect\_clip\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} surface\+\_\+respect\+\_\+clip\+\_\+rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{surface,  }\item[{\mbox{\hyperlink{struct_s_d_l___rect}{S\+D\+L\+\_\+\+Rect}} $\ast$}]{rect }\end{DoxyParamCaption})}
+

@@ -1,0 +1,226 @@
+\hypertarget{pyerrors_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pyerrors.h File Reference}
+\label{pyerrors_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pyerrors.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pyerrors.h}}
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_base_exception_object}{Py\+Base\+Exception\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_syntax_error_object}{Py\+Syntax\+Error\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_system_exit_object}{Py\+System\+Exit\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_environment_error_object}{Py\+Environment\+Error\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pyerrors_8h_abb17514a972d4bbfd3a247053d30561b}{\+\_\+\+Py\+Err\+\_\+\+O\+C\+C\+U\+R\+R\+ED}}()~(\+\_\+\+Py\+Thread\+State\+\_\+\+Current-\/$>$curexc\+\_\+type)
+\item 
+\#define \mbox{\hyperlink{pyerrors_8h_ae362d2e7c9c308f6d78a83c04dfbfa46}{Py\+Exception\+Class\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{pyerrors_8h_a401733c07c90305de8165eecce2c1c34}{Py\+Exception\+Instance\+\_\+\+Check}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{pyerrors_8h_a0a3ed6e0fe31e404c6b0a8c75d277923}{Py\+Exception\+Class\+\_\+\+Name}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{pyerrors_8h_ad3825cc895aabb9fe95256cef7ea90b7}{Py\+Exception\+Instance\+\_\+\+Class}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{pyerrors_8h_a54d108ac44714fcebf79cda8a6d41bde}{Py\+Err\+\_\+\+Bad\+Internal\+Call}}()~\+\_\+\+Py\+Err\+\_\+\+Bad\+Internal\+Call(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pyerrors_8h_a444951237f0f5583293ccff4e97427e8}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+Err\+\_\+\+Set\+None(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char $\ast$ \mbox{\hyperlink{pyerrors_8h_aa6052677fdfe9c2b72b7dc4253fdb708}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Err\+\_\+\+Occurred(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pyerrors_8h_abce1448c2eb2dc5f580c1ce55e0072eb}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Err\+\_\+\+Given\+Exception\+Matches(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$
+\item 
+\mbox{\hyperlink{pyerrors_8h_acdf1a6acb6cab378938f5ad2a24832cc}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Exc\+\_\+\+Base\+Exception
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char const char \mbox{\hyperlink{pyerrors_8h_abcc88147d1443816e3d70f65cce08d9a}{Py\+\_\+\+G\+C\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} ((\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}}(printf, 2, 3)))
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{pyerrors_8h_a5f3572abae13318b4377875a549a7ab4}{Py\+Signal\+\_\+\+Set\+Wakeup\+Fd}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} fd)
+\item 
+\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} const char \mbox{\hyperlink{pyerrors_8h_a75fe2cf58a458a9864606fb9adf2707a}{Py\+\_\+\+G\+C\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} ((\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}}(printf, 3, 4)))
+\item 
+\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} const char \mbox{\hyperlink{modsupport_8h_a9354b34c6038f94e4a571b66aab7d6b2}{va\+\_\+list}} va \mbox{\hyperlink{pyerrors_8h_a2bd42affd00b7a2f901c365f283d23a8}{Py\+\_\+\+G\+C\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} ((\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}}(printf, 3, 0)))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{pyerrors_8h_a501b314f49b3a9ff6e7be599d94686ee}{lineno}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{pyerrors_8h_afb14d5a30f1edac00eedb41be2939678}{base}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{pyerrors_8h_a9a67a16ee8134b9b5325f6f10bf62b32}{dict}}
+\item 
+char $\ast$ \mbox{\hyperlink{pyerrors_8h_a7ea52c0c994d7e75db8c3dc0c33dcbec}{doc}}
+\item 
+\mbox{\hyperlink{pyerrors_8h_a61569f2965b7a369eb10b6d75d410d11}{int}}
+\item 
+\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{pyerrors_8h_a854352f53b148adc24983a58a1866d66}{size}}
+\item 
+\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} const char $\ast$ \mbox{\hyperlink{pyerrors_8h_a9848f15707456389149bad9324249089}{format}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pyerrors_8h_abb17514a972d4bbfd3a247053d30561b}\label{pyerrors_8h_abb17514a972d4bbfd3a247053d30561b}} 
+\index{pyerrors.h@{pyerrors.h}!\_PyErr\_OCCURRED@{\_PyErr\_OCCURRED}}
+\index{\_PyErr\_OCCURRED@{\_PyErr\_OCCURRED}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{\_PyErr\_OCCURRED}{\_PyErr\_OCCURRED}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Err\+\_\+\+O\+C\+C\+U\+R\+R\+ED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\+\_\+\+Py\+Thread\+State\+\_\+\+Current-\/$>$curexc\+\_\+type)}
+
+\mbox{\Hypertarget{pyerrors_8h_a54d108ac44714fcebf79cda8a6d41bde}\label{pyerrors_8h_a54d108ac44714fcebf79cda8a6d41bde}} 
+\index{pyerrors.h@{pyerrors.h}!PyErr\_BadInternalCall@{PyErr\_BadInternalCall}}
+\index{PyErr\_BadInternalCall@{PyErr\_BadInternalCall}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyErr\_BadInternalCall}{PyErr\_BadInternalCall}}
+{\footnotesize\ttfamily \#define Py\+Err\+\_\+\+Bad\+Internal\+Call(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\+\_\+\+Py\+Err\+\_\+\+Bad\+Internal\+Call(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{pyerrors_8h_ae362d2e7c9c308f6d78a83c04dfbfa46}\label{pyerrors_8h_ae362d2e7c9c308f6d78a83c04dfbfa46}} 
+\index{pyerrors.h@{pyerrors.h}!PyExceptionClass\_Check@{PyExceptionClass\_Check}}
+\index{PyExceptionClass\_Check@{PyExceptionClass\_Check}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyExceptionClass\_Check}{PyExceptionClass\_Check}}
+{\footnotesize\ttfamily \#define Py\+Exception\+Class\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{classobject_8h_a0bb58ace8f169cff796ada045ba79b79}{PyClass\_Check}}((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})) || (\mbox{\hyperlink{_python27_2object_8h_a91e27fe8248c7289e3aaceccadca3f4a}{PyType\_Check}}((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})) \&\&                        \(\backslash\)}
+\DoxyCodeLine{      PyType\_FastSubclass((\mbox{\hyperlink{struct__typeobject}{PyTypeObject}}*)(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}), \mbox{\hyperlink{_python27_2object_8h_ac286266fab750316b72029ab3f7344b0}{Py\_TPFLAGS\_BASE\_EXC\_SUBCLASS}})))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pyerrors_8h_a0a3ed6e0fe31e404c6b0a8c75d277923}\label{pyerrors_8h_a0a3ed6e0fe31e404c6b0a8c75d277923}} 
+\index{pyerrors.h@{pyerrors.h}!PyExceptionClass\_Name@{PyExceptionClass\_Name}}
+\index{PyExceptionClass\_Name@{PyExceptionClass\_Name}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyExceptionClass\_Name}{PyExceptionClass\_Name}}
+{\footnotesize\ttfamily \#define Py\+Exception\+Class\+\_\+\+Name(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{classobject_8h_a0bb58ace8f169cff796ada045ba79b79}{PyClass\_Check}}((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))                                            \(\backslash\)}
+\DoxyCodeLine{     ? \mbox{\hyperlink{stringobject_8h_a6b52cda9d1a70744519ff81999f8243a}{PyString\_AS\_STRING}}(((\mbox{\hyperlink{struct_py_class_object}{PyClassObject}}*)(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))->cl\_name)          \(\backslash\)}
+\DoxyCodeLine{     : (\textcolor{keywordtype}{char} *)(((\mbox{\hyperlink{struct__typeobject}{PyTypeObject}}*)(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))->tp\_name))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pyerrors_8h_a401733c07c90305de8165eecce2c1c34}\label{pyerrors_8h_a401733c07c90305de8165eecce2c1c34}} 
+\index{pyerrors.h@{pyerrors.h}!PyExceptionInstance\_Check@{PyExceptionInstance\_Check}}
+\index{PyExceptionInstance\_Check@{PyExceptionInstance\_Check}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyExceptionInstance\_Check}{PyExceptionInstance\_Check}}
+{\footnotesize\ttfamily \#define Py\+Exception\+Instance\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{classobject_8h_a3cae225d35c99d2a3e146031eac1f636}{PyInstance\_Check}}((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})) ||                           \(\backslash\)}
+\DoxyCodeLine{     PyType\_FastSubclass((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type, \mbox{\hyperlink{_python27_2object_8h_ac286266fab750316b72029ab3f7344b0}{Py\_TPFLAGS\_BASE\_EXC\_SUBCLASS}}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pyerrors_8h_ad3825cc895aabb9fe95256cef7ea90b7}\label{pyerrors_8h_ad3825cc895aabb9fe95256cef7ea90b7}} 
+\index{pyerrors.h@{pyerrors.h}!PyExceptionInstance\_Class@{PyExceptionInstance\_Class}}
+\index{PyExceptionInstance\_Class@{PyExceptionInstance\_Class}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyExceptionInstance\_Class}{PyExceptionInstance\_Class}}
+{\footnotesize\ttfamily \#define Py\+Exception\+Instance\+\_\+\+Class(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{classobject_8h_a3cae225d35c99d2a3e146031eac1f636}{PyInstance\_Check}}((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))                                             \(\backslash\)}
+\DoxyCodeLine{      ? (\mbox{\hyperlink{struct__object}{PyObject}}*)((\mbox{\hyperlink{struct_py_instance_object}{PyInstanceObject}}*)(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}))->in\_class                   \(\backslash\)}
+\DoxyCodeLine{      : (\mbox{\hyperlink{struct__object}{PyObject}}*)((\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})->ob\_type)))}
+
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pyerrors_8h_abcc88147d1443816e3d70f65cce08d9a}\label{pyerrors_8h_abcc88147d1443816e3d70f65cce08d9a}} 
+\index{pyerrors.h@{pyerrors.h}!Py\_GCC\_ATTRIBUTE@{Py\_GCC\_ATTRIBUTE}}
+\index{Py\_GCC\_ATTRIBUTE@{Py\_GCC\_ATTRIBUTE}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{Py\_GCC\_ATTRIBUTE()}{Py\_GCC\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char const char Py\+\_\+\+G\+C\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}}(printf, 2, 3))}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pyerrors_8h_a75fe2cf58a458a9864606fb9adf2707a}\label{pyerrors_8h_a75fe2cf58a458a9864606fb9adf2707a}} 
+\index{pyerrors.h@{pyerrors.h}!Py\_GCC\_ATTRIBUTE@{Py\_GCC\_ATTRIBUTE}}
+\index{Py\_GCC\_ATTRIBUTE@{Py\_GCC\_ATTRIBUTE}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{Py\_GCC\_ATTRIBUTE()}{Py\_GCC\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} const char Py\+\_\+\+G\+C\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}}(printf, 3, 4))}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pyerrors_8h_a2bd42affd00b7a2f901c365f283d23a8}\label{pyerrors_8h_a2bd42affd00b7a2f901c365f283d23a8}} 
+\index{pyerrors.h@{pyerrors.h}!Py\_GCC\_ATTRIBUTE@{Py\_GCC\_ATTRIBUTE}}
+\index{Py\_GCC\_ATTRIBUTE@{Py\_GCC\_ATTRIBUTE}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{Py\_GCC\_ATTRIBUTE()}{Py\_GCC\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} const char \mbox{\hyperlink{modsupport_8h_a9354b34c6038f94e4a571b66aab7d6b2}{va\+\_\+list}} va Py\+\_\+\+G\+C\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}}(printf, 3, 0))}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pyerrors_8h_acdf1a6acb6cab378938f5ad2a24832cc}\label{pyerrors_8h_acdf1a6acb6cab378938f5ad2a24832cc}} 
+\index{pyerrors.h@{pyerrors.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pyerrors_8h_a444951237f0f5583293ccff4e97427e8}\label{pyerrors_8h_a444951237f0f5583293ccff4e97427e8}} 
+\index{pyerrors.h@{pyerrors.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pyerrors_8h_aa6052677fdfe9c2b72b7dc4253fdb708}\label{pyerrors_8h_aa6052677fdfe9c2b72b7dc4253fdb708}} 
+\index{pyerrors.h@{pyerrors.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} const char$\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pyerrors_8h_abce1448c2eb2dc5f580c1ce55e0072eb}\label{pyerrors_8h_abce1448c2eb2dc5f580c1ce55e0072eb}} 
+\index{pyerrors.h@{pyerrors.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pyerrors_8h_a5f3572abae13318b4377875a549a7ab4}\label{pyerrors_8h_a5f3572abae13318b4377875a549a7ab4}} 
+\index{pyerrors.h@{pyerrors.h}!PySignal\_SetWakeupFd@{PySignal\_SetWakeupFd}}
+\index{PySignal\_SetWakeupFd@{PySignal\_SetWakeupFd}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{PySignal\_SetWakeupFd()}{PySignal\_SetWakeupFd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Py\+Signal\+\_\+\+Set\+Wakeup\+Fd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{fd }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{pyerrors_8h_afb14d5a30f1edac00eedb41be2939678}\label{pyerrors_8h_afb14d5a30f1edac00eedb41be2939678}} 
+\index{pyerrors.h@{pyerrors.h}!base@{base}}
+\index{base@{base}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily char \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \mbox{\hyperlink{structbase}{base}}}
+
+\mbox{\Hypertarget{pyerrors_8h_a9a67a16ee8134b9b5325f6f10bf62b32}\label{pyerrors_8h_a9a67a16ee8134b9b5325f6f10bf62b32}} 
+\index{pyerrors.h@{pyerrors.h}!dict@{dict}}
+\index{dict@{dict}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{dict}{dict}}
+{\footnotesize\ttfamily char \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{classdict}{dict}}}
+
+\mbox{\Hypertarget{pyerrors_8h_a7ea52c0c994d7e75db8c3dc0c33dcbec}\label{pyerrors_8h_a7ea52c0c994d7e75db8c3dc0c33dcbec}} 
+\index{pyerrors.h@{pyerrors.h}!doc@{doc}}
+\index{doc@{doc}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{doc}{doc}}
+{\footnotesize\ttfamily char$\ast$ \mbox{\hyperlink{structdoc}{doc}}}
+
+\mbox{\Hypertarget{pyerrors_8h_a9848f15707456389149bad9324249089}\label{pyerrors_8h_a9848f15707456389149bad9324249089}} 
+\index{pyerrors.h@{pyerrors.h}!format@{format}}
+\index{format@{format}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} const char$\ast$ \mbox{\hyperlink{_s_d_l__audio_8h_a71a65ffd977afe9c3fef116a5bc9ee27}{format}}}
+
+\mbox{\Hypertarget{pyerrors_8h_a61569f2965b7a369eb10b6d75d410d11}\label{pyerrors_8h_a61569f2965b7a369eb10b6d75d410d11}} 
+\index{pyerrors.h@{pyerrors.h}!int@{int}}
+\index{int@{int}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily int}
+
+\mbox{\Hypertarget{pyerrors_8h_a501b314f49b3a9ff6e7be599d94686ee}\label{pyerrors_8h_a501b314f49b3a9ff6e7be599d94686ee}} 
+\index{pyerrors.h@{pyerrors.h}!lineno@{lineno}}
+\index{lineno@{lineno}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{lineno}{lineno}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} lineno}
+
+\mbox{\Hypertarget{pyerrors_8h_a854352f53b148adc24983a58a1866d66}\label{pyerrors_8h_a854352f53b148adc24983a58a1866d66}} 
+\index{pyerrors.h@{pyerrors.h}!size@{size}}
+\index{size@{size}!pyerrors.h@{pyerrors.h}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}}
+

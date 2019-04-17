@@ -1,0 +1,241 @@
+\hypertarget{internals_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/include/pybind11/detail/internals.h File Reference}
+\label{internals_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/include/pybind11/detail/internals.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/include/pybind11/detail/internals.h}}
+{\ttfamily \#include \char`\"{}../pytypes.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtype__hash}{type\+\_\+hash}}
+\item 
+struct \mbox{\hyperlink{structtype__equal__to}{type\+\_\+equal\+\_\+to}}
+\item 
+struct \mbox{\hyperlink{structoverload__hash}{overload\+\_\+hash}}
+\item 
+struct \mbox{\hyperlink{structinternals}{internals}}
+\item 
+struct \mbox{\hyperlink{structtype__info}{type\+\_\+info}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{internals_8h_a009bfe148775050b79be8e494afdb748}{P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+IT}}(var)~decltype(Py\+Thread\+\_\+create\+\_\+key()) var = 0
+\item 
+\#define \mbox{\hyperlink{internals_8h_a34975e6c272e654bc010ddd4cb584790}{P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+G\+E\+T\+\_\+\+V\+A\+L\+UE}}(\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}})~Py\+Thread\+\_\+get\+\_\+key\+\_\+value((\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}}))
+\item 
+\#define \mbox{\hyperlink{internals_8h_a4c96bfb72913196499ea2ce454963ae8}{P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+V\+A\+L\+UE}}(\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}})~Py\+Thread\+\_\+delete\+\_\+key\+\_\+value(\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}})
+\item 
+\#define \mbox{\hyperlink{internals_8h_aad298889827f395dbffe2beed1770cdf}{P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+R\+E\+P\+L\+A\+C\+E\+\_\+\+V\+A\+L\+UE}}(\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}})
+\item 
+\#define \mbox{\hyperlink{internals_8h_a7a66914fd08a54ffa9fbc3cd71cc0eb2}{P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+V\+E\+R\+S\+I\+ON}}~3
+\begin{DoxyCompactList}\small\item\em Tracks the {\ttfamily internals} and {\ttfamily \mbox{\hyperlink{structtype__info}{type\+\_\+info}}} A\+BI version independent of the main library version. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{internals_8h_a6d8a58586ba8252b8044c46c861c69c4}{P\+Y\+B\+I\+N\+D11\+\_\+\+B\+U\+I\+L\+D\+\_\+\+T\+Y\+PE}}~\char`\"{}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{internals_8h_a3a0a12fd77883ebe99c3f3f278817669}{P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+K\+I\+ND}}~\char`\"{}\+\_\+without\+\_\+thread\char`\"{}
+\item 
+\#define \mbox{\hyperlink{internals_8h_ad4044f737821eb5e0398e5f0139d621e}{P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+ID}}
+\item 
+\#define \mbox{\hyperlink{internals_8h_a4b53f6b732a7f457c9bd615b5a42d89e}{P\+Y\+B\+I\+N\+D11\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+L\+O\+C\+A\+L\+\_\+\+ID}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename value\+\_\+type $>$ }\\using \mbox{\hyperlink{internals_8h_a1452521ed22e2af29a7f00dfd4bacb0b}{type\+\_\+map}} = std\+::unordered\+\_\+map$<$ std\+::type\+\_\+index, value\+\_\+type, \mbox{\hyperlink{structtype__hash}{type\+\_\+hash}}, \mbox{\hyperlink{structtype__equal__to}{type\+\_\+equal\+\_\+to}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$ \mbox{\hyperlink{internals_8h_aaea95bf4b1207c83bfbe863e5f7abe6e}{make\+\_\+static\+\_\+property\+\_\+type}} ()
+\item 
+\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$ \mbox{\hyperlink{internals_8h_abccd2a99616e0a3725f8ebae7a23bd3e}{make\+\_\+default\+\_\+metaclass}} ()
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{internals_8h_a891ba5da5fdb0fa713f95b70602075c5}{make\+\_\+object\+\_\+base\+\_\+type}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$\mbox{\hyperlink{structmetaclass}{metaclass}})
+\item 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{internals_8h_af90d902fda8bf068ff26b9fda7e77727}{same\+\_\+type}} (const std\+::type\+\_\+info \&lhs, const std\+::type\+\_\+info \&rhs)
+\item 
+\mbox{\hyperlink{structinternals}{internals}} $\ast$$\ast$\& \mbox{\hyperlink{internals_8h_a38d870b534fcce3cd4702febb098a399}{get\+\_\+internals\+\_\+pp}} ()
+\item 
+\mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{structinternals}{internals}} \& \mbox{\hyperlink{internals_8h_a04a9d4c2d4a027e104437cce54c0cc5f}{get\+\_\+internals}} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to the current {\ttfamily internals} data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{internals_8h_a1452521ed22e2af29a7f00dfd4bacb0b}{type\+\_\+map}}$<$ \mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$ $>$ \& \mbox{\hyperlink{internals_8h_a2388ec44151241ac2fc42af8c2fb0d53}{registered\+\_\+local\+\_\+types\+\_\+cpp}} ()
+\begin{DoxyCompactList}\small\item\em Works like {\ttfamily \mbox{\hyperlink{structinternals_a55c8874ee4ee135c2ed8b3f5a958e6a3}{internals.\+registered\+\_\+types\+\_\+cpp}}}, but for module-\/local registered types\+: \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\const char $\ast$ \mbox{\hyperlink{internals_8h_a8a94b116fb4a5c1228b60729f82b430a}{c\+\_\+str}} (Args \&\&...\mbox{\hyperlink{classargs}{args}})
+\item 
+\mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ \mbox{\hyperlink{internals_8h_a2f5e5048e9bf78cb6364e495147228ca}{get\+\_\+shared\+\_\+data}} (const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&\mbox{\hyperlink{structname}{name}})
+\item 
+\mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ \mbox{\hyperlink{internals_8h_ab86cdc8a2844cc15dac5250fc06b5eb0}{set\+\_\+shared\+\_\+data}} (const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&\mbox{\hyperlink{structname}{name}}, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}})
+\begin{DoxyCompactList}\small\item\em Set the shared data that can be later recovered by {\ttfamily \mbox{\hyperlink{internals_8h_a2f5e5048e9bf78cb6364e495147228ca}{get\+\_\+shared\+\_\+data()}}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{internals_8h_a1084d16c91a52300a1d8ab0100729441}{get\+\_\+or\+\_\+create\+\_\+shared\+\_\+data}} (const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&\mbox{\hyperlink{structname}{name}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{internals_8h_a6d8a58586ba8252b8044c46c861c69c4}\label{internals_8h_a6d8a58586ba8252b8044c46c861c69c4}} 
+\index{internals.h@{internals.h}!PYBIND11\_BUILD\_TYPE@{PYBIND11\_BUILD\_TYPE}}
+\index{PYBIND11\_BUILD\_TYPE@{PYBIND11\_BUILD\_TYPE}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_BUILD\_TYPE}{PYBIND11\_BUILD\_TYPE}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+B\+U\+I\+L\+D\+\_\+\+T\+Y\+PE~\char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{internals_8h_ad4044f737821eb5e0398e5f0139d621e}\label{internals_8h_ad4044f737821eb5e0398e5f0139d621e}} 
+\index{internals.h@{internals.h}!PYBIND11\_INTERNALS\_ID@{PYBIND11\_INTERNALS\_ID}}
+\index{PYBIND11\_INTERNALS\_ID@{PYBIND11\_INTERNALS\_ID}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_INTERNALS\_ID}{PYBIND11\_INTERNALS\_ID}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+ID}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{"\_\_pybind11\_internals\_v"} \(\backslash\)}
+\DoxyCodeLine{    PYBIND11\_TOSTRING(\mbox{\hyperlink{internals_8h_a7a66914fd08a54ffa9fbc3cd71cc0eb2}{PYBIND11\_INTERNALS\_VERSION}}) \mbox{\hyperlink{internals_8h_a3a0a12fd77883ebe99c3f3f278817669}{PYBIND11\_INTERNALS\_KIND}} \mbox{\hyperlink{internals_8h_a6d8a58586ba8252b8044c46c861c69c4}{PYBIND11\_BUILD\_TYPE}} \textcolor{stringliteral}{"\_\_"}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{internals_8h_a3a0a12fd77883ebe99c3f3f278817669}\label{internals_8h_a3a0a12fd77883ebe99c3f3f278817669}} 
+\index{internals.h@{internals.h}!PYBIND11\_INTERNALS\_KIND@{PYBIND11\_INTERNALS\_KIND}}
+\index{PYBIND11\_INTERNALS\_KIND@{PYBIND11\_INTERNALS\_KIND}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_INTERNALS\_KIND}{PYBIND11\_INTERNALS\_KIND}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+K\+I\+ND~\char`\"{}\+\_\+without\+\_\+thread\char`\"{}}
+
+\mbox{\Hypertarget{internals_8h_a7a66914fd08a54ffa9fbc3cd71cc0eb2}\label{internals_8h_a7a66914fd08a54ffa9fbc3cd71cc0eb2}} 
+\index{internals.h@{internals.h}!PYBIND11\_INTERNALS\_VERSION@{PYBIND11\_INTERNALS\_VERSION}}
+\index{PYBIND11\_INTERNALS\_VERSION@{PYBIND11\_INTERNALS\_VERSION}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_INTERNALS\_VERSION}{PYBIND11\_INTERNALS\_VERSION}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+V\+E\+R\+S\+I\+ON~3}
+
+
+
+Tracks the {\ttfamily internals} and {\ttfamily \mbox{\hyperlink{structtype__info}{type\+\_\+info}}} A\+BI version independent of the main library version. 
+
+\mbox{\Hypertarget{internals_8h_a4b53f6b732a7f457c9bd615b5a42d89e}\label{internals_8h_a4b53f6b732a7f457c9bd615b5a42d89e}} 
+\index{internals.h@{internals.h}!PYBIND11\_MODULE\_LOCAL\_ID@{PYBIND11\_MODULE\_LOCAL\_ID}}
+\index{PYBIND11\_MODULE\_LOCAL\_ID@{PYBIND11\_MODULE\_LOCAL\_ID}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_MODULE\_LOCAL\_ID}{PYBIND11\_MODULE\_LOCAL\_ID}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+L\+O\+C\+A\+L\+\_\+\+ID}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{"\_\_pybind11\_module\_local\_v"} \(\backslash\)}
+\DoxyCodeLine{    PYBIND11\_TOSTRING(\mbox{\hyperlink{internals_8h_a7a66914fd08a54ffa9fbc3cd71cc0eb2}{PYBIND11\_INTERNALS\_VERSION}}) \mbox{\hyperlink{internals_8h_a3a0a12fd77883ebe99c3f3f278817669}{PYBIND11\_INTERNALS\_KIND}} \mbox{\hyperlink{internals_8h_a6d8a58586ba8252b8044c46c861c69c4}{PYBIND11\_BUILD\_TYPE}} \textcolor{stringliteral}{"\_\_"}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{internals_8h_a4c96bfb72913196499ea2ce454963ae8}\label{internals_8h_a4c96bfb72913196499ea2ce454963ae8}} 
+\index{internals.h@{internals.h}!PYBIND11\_TLS\_DELETE\_VALUE@{PYBIND11\_TLS\_DELETE\_VALUE}}
+\index{PYBIND11\_TLS\_DELETE\_VALUE@{PYBIND11\_TLS\_DELETE\_VALUE}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_TLS\_DELETE\_VALUE}{PYBIND11\_TLS\_DELETE\_VALUE}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}} }\end{DoxyParamCaption})~Py\+Thread\+\_\+delete\+\_\+key\+\_\+value(\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}})}
+
+\mbox{\Hypertarget{internals_8h_a34975e6c272e654bc010ddd4cb584790}\label{internals_8h_a34975e6c272e654bc010ddd4cb584790}} 
+\index{internals.h@{internals.h}!PYBIND11\_TLS\_GET\_VALUE@{PYBIND11\_TLS\_GET\_VALUE}}
+\index{PYBIND11\_TLS\_GET\_VALUE@{PYBIND11\_TLS\_GET\_VALUE}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_TLS\_GET\_VALUE}{PYBIND11\_TLS\_GET\_VALUE}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+G\+E\+T\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}} }\end{DoxyParamCaption})~Py\+Thread\+\_\+get\+\_\+key\+\_\+value((\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}}))}
+
+\mbox{\Hypertarget{internals_8h_a009bfe148775050b79be8e494afdb748}\label{internals_8h_a009bfe148775050b79be8e494afdb748}} 
+\index{internals.h@{internals.h}!PYBIND11\_TLS\_KEY\_INIT@{PYBIND11\_TLS\_KEY\_INIT}}
+\index{PYBIND11\_TLS\_KEY\_INIT@{PYBIND11\_TLS\_KEY\_INIT}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_TLS\_KEY\_INIT}{PYBIND11\_TLS\_KEY\_INIT}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+IT(\begin{DoxyParamCaption}\item[{}]{var }\end{DoxyParamCaption})~decltype(Py\+Thread\+\_\+create\+\_\+key()) var = 0}
+
+\mbox{\Hypertarget{internals_8h_aad298889827f395dbffe2beed1770cdf}\label{internals_8h_aad298889827f395dbffe2beed1770cdf}} 
+\index{internals.h@{internals.h}!PYBIND11\_TLS\_REPLACE\_VALUE@{PYBIND11\_TLS\_REPLACE\_VALUE}}
+\index{PYBIND11\_TLS\_REPLACE\_VALUE@{PYBIND11\_TLS\_REPLACE\_VALUE}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_TLS\_REPLACE\_VALUE}{PYBIND11\_TLS\_REPLACE\_VALUE}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+T\+L\+S\+\_\+\+R\+E\+P\+L\+A\+C\+E\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{                                                            \(\backslash\)}
+\DoxyCodeLine{                 PyThread\_delete\_key\_value((\mbox{\hyperlink{abstract_8h_ada6705808cbd8c921df38387db9a6aee}{key}}));                           \(\backslash\)}
+\DoxyCodeLine{                 PyThread\_set\_key\_value((\mbox{\hyperlink{abstract_8h_ada6705808cbd8c921df38387db9a6aee}{key}}), (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}}));                     \(\backslash\)}
+\DoxyCodeLine{             \} \textcolor{keywordflow}{while} (\textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{internals_8h_a1452521ed22e2af29a7f00dfd4bacb0b}\label{internals_8h_a1452521ed22e2af29a7f00dfd4bacb0b}} 
+\index{internals.h@{internals.h}!type\_map@{type\_map}}
+\index{type\_map@{type\_map}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{type\_map}{type\_map}}
+{\footnotesize\ttfamily template$<$typename value\+\_\+type $>$ \\
+using \mbox{\hyperlink{internals_8h_a1452521ed22e2af29a7f00dfd4bacb0b}{type\+\_\+map}} =  std\+::unordered\+\_\+map$<$std\+::type\+\_\+index, value\+\_\+type, \mbox{\hyperlink{structtype__hash}{type\+\_\+hash}}, \mbox{\hyperlink{structtype__equal__to}{type\+\_\+equal\+\_\+to}}$>$}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{internals_8h_a8a94b116fb4a5c1228b60729f82b430a}\label{internals_8h_a8a94b116fb4a5c1228b60729f82b430a}} 
+\index{internals.h@{internals.h}!c\_str@{c\_str}}
+\index{c\_str@{c\_str}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{c\_str()}{c\_str()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+const char$\ast$ c\+\_\+str (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+Constructs a std\+::string with the given arguments, stores it in {\ttfamily internals}, and returns its {\ttfamily \mbox{\hyperlink{internals_8h_a8a94b116fb4a5c1228b60729f82b430a}{c\+\_\+str()}}}. Such strings objects have a long storage duration -- the internal strings are only cleared when the program exits or after interpreter shutdown (when embedding), and so are suitable for c-\/style strings needed by Python internals (such as Py\+Type\+Object\textquotesingle{}s tp\+\_\+name). \mbox{\Hypertarget{internals_8h_a04a9d4c2d4a027e104437cce54c0cc5f}\label{internals_8h_a04a9d4c2d4a027e104437cce54c0cc5f}} 
+\index{internals.h@{internals.h}!get\_internals@{get\_internals}}
+\index{get\_internals@{get\_internals}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{get\_internals()}{get\_internals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{structinternals}{internals}}\& get\+\_\+internals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to the current {\ttfamily internals} data. 
+
+\mbox{\Hypertarget{internals_8h_a38d870b534fcce3cd4702febb098a399}\label{internals_8h_a38d870b534fcce3cd4702febb098a399}} 
+\index{internals.h@{internals.h}!get\_internals\_pp@{get\_internals\_pp}}
+\index{get\_internals\_pp@{get\_internals\_pp}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{get\_internals\_pp()}{get\_internals\_pp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structinternals}{internals}}$\ast$$\ast$\& get\+\_\+internals\+\_\+pp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Each module locally stores a pointer to the {\ttfamily internals} data. The data itself is shared among modules with the same {\ttfamily P\+Y\+B\+I\+N\+D11\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+S\+\_\+\+ID}. \mbox{\Hypertarget{internals_8h_a1084d16c91a52300a1d8ab0100729441}\label{internals_8h_a1084d16c91a52300a1d8ab0100729441}} 
+\index{internals.h@{internals.h}!get\_or\_create\_shared\_data@{get\_or\_create\_shared\_data}}
+\index{get\_or\_create\_shared\_data@{get\_or\_create\_shared\_data}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{get\_or\_create\_shared\_data()}{get\_or\_create\_shared\_data()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& get\+\_\+or\+\_\+create\+\_\+shared\+\_\+data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&}]{name }\end{DoxyParamCaption})}
+
+Returns a typed reference to a shared data entry (by using {\ttfamily \mbox{\hyperlink{internals_8h_a2f5e5048e9bf78cb6364e495147228ca}{get\+\_\+shared\+\_\+data()}}}) if such entry exists. Otherwise, a new object of default-\/constructible type {\ttfamily T} is added to the shared data under the given name and a reference to it is returned. \mbox{\Hypertarget{internals_8h_a2f5e5048e9bf78cb6364e495147228ca}\label{internals_8h_a2f5e5048e9bf78cb6364e495147228ca}} 
+\index{internals.h@{internals.h}!get\_shared\_data@{get\_shared\_data}}
+\index{get\_shared\_data@{get\_shared\_data}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{get\_shared\_data()}{get\_shared\_data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$ get\+\_\+shared\+\_\+data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a named pointer that is shared among all extension modules (using the same \mbox{\hyperlink{namespacepybind11}{pybind11}} version) running in the current interpreter. Names starting with underscores are reserved for internal usage. Returns {\ttfamily nullptr} if no matching entry was found. \mbox{\Hypertarget{internals_8h_abccd2a99616e0a3725f8ebae7a23bd3e}\label{internals_8h_abccd2a99616e0a3725f8ebae7a23bd3e}} 
+\index{internals.h@{internals.h}!make\_default\_metaclass@{make\_default\_metaclass}}
+\index{make\_default\_metaclass@{make\_default\_metaclass}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{make\_default\_metaclass()}{make\_default\_metaclass()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$ make\+\_\+default\+\_\+metaclass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This metaclass is assigned by default to all \mbox{\hyperlink{namespacepybind11}{pybind11}} types and is required in order for static properties to function correctly. Users may override this using {\ttfamily py\+::metaclass}. Return value\+: New reference. \mbox{\Hypertarget{internals_8h_a891ba5da5fdb0fa713f95b70602075c5}\label{internals_8h_a891ba5da5fdb0fa713f95b70602075c5}} 
+\index{internals.h@{internals.h}!make\_object\_base\_type@{make\_object\_base\_type}}
+\index{make\_object\_base\_type@{make\_object\_base\_type}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{make\_object\_base\_type()}{make\_object\_base\_type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ make\+\_\+object\+\_\+base\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}} $\ast$}]{metaclass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create the type which can be used as a common base for all classes. This is needed in order to satisfy Python\textquotesingle{}s requirements for multiple inheritance. Return value\+: New reference. \mbox{\Hypertarget{internals_8h_aaea95bf4b1207c83bfbe863e5f7abe6e}\label{internals_8h_aaea95bf4b1207c83bfbe863e5f7abe6e}} 
+\index{internals.h@{internals.h}!make\_static\_property\_type@{make\_static\_property\_type}}
+\index{make\_static\_property\_type@{make\_static\_property\_type}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{make\_static\_property\_type()}{make\_static\_property\_type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}$\ast$ make\+\_\+static\+\_\+property\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{struct_a}{A}} {\ttfamily static\+\_\+property} is the same as a {\ttfamily property} but the {\ttfamily \+\_\+\+\_\+get\+\_\+\+\_\+()} and {\ttfamily \+\_\+\+\_\+set\+\_\+\+\_\+()} methods are modified to always use the object type instead of a concrete instance. Return value\+: New reference. \mbox{\Hypertarget{internals_8h_a2388ec44151241ac2fc42af8c2fb0d53}\label{internals_8h_a2388ec44151241ac2fc42af8c2fb0d53}} 
+\index{internals.h@{internals.h}!registered\_local\_types\_cpp@{registered\_local\_types\_cpp}}
+\index{registered\_local\_types\_cpp@{registered\_local\_types\_cpp}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{registered\_local\_types\_cpp()}{registered\_local\_types\_cpp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{internals_8h_a1452521ed22e2af29a7f00dfd4bacb0b}{type\+\_\+map}}$<$\mbox{\hyperlink{structtype__info}{type\+\_\+info}} $\ast$$>$\& registered\+\_\+local\+\_\+types\+\_\+cpp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Works like {\ttfamily \mbox{\hyperlink{structinternals_a55c8874ee4ee135c2ed8b3f5a958e6a3}{internals.\+registered\+\_\+types\+\_\+cpp}}}, but for module-\/local registered types\+: 
+
+\mbox{\Hypertarget{internals_8h_af90d902fda8bf068ff26b9fda7e77727}\label{internals_8h_af90d902fda8bf068ff26b9fda7e77727}} 
+\index{internals.h@{internals.h}!same\_type@{same\_type}}
+\index{same\_type@{same\_type}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{same\_type()}{same\_type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} same\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::type\+\_\+info \&}]{lhs,  }\item[{const std\+::type\+\_\+info \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{internals_8h_ab86cdc8a2844cc15dac5250fc06b5eb0}\label{internals_8h_ab86cdc8a2844cc15dac5250fc06b5eb0}} 
+\index{internals.h@{internals.h}!set\_shared\_data@{set\_shared\_data}}
+\index{set\_shared\_data@{set\_shared\_data}!internals.h@{internals.h}}
+\subsubsection{\texorpdfstring{set\_shared\_data()}{set\_shared\_data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{detail_2common_8h_a1fb186b7494d5c576d902c0730ecbb71}{P\+Y\+B\+I\+N\+D11\+\_\+\+N\+O\+I\+N\+L\+I\+NE}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$ set\+\_\+shared\+\_\+data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \&}]{name,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the shared data that can be later recovered by {\ttfamily \mbox{\hyperlink{internals_8h_a2f5e5048e9bf78cb6364e495147228ca}{get\+\_\+shared\+\_\+data()}}}. 
+

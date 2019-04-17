@@ -1,0 +1,59 @@
+\hypertarget{structvectorize__arg}{}\section{vectorize\+\_\+arg$<$ T $>$ Struct Template Reference}
+\label{structvectorize__arg}\index{vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}}
+
+
+{\ttfamily \#include $<$numpy.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}{call\+\_\+type}} = \mbox{\hyperlink{detail_2common_8h_a3a08cea569e6926ac8d7d74dd7178b5f}{remove\+\_\+reference\+\_\+t}}$<$ T $>$
+\item 
+using \mbox{\hyperlink{structvectorize__arg_a1eac44d967c2119c39a13843b8546c9d}{type}} = \mbox{\hyperlink{detail_2common_8h_acdb0eff728aec08ed6fff07d2885ea9d}{conditional\+\_\+t}}$<$ \mbox{\hyperlink{structvectorize__arg_a2713dcb369c1ff6d3ec66f9b91419735}{vectorize}}, \mbox{\hyperlink{classarray__t}{array\+\_\+t}}$<$ \mbox{\hyperlink{detail_2common_8h_a92dc8767e0b0b9b6022f61cb5b52278f}{remove\+\_\+cv\+\_\+t}}$<$ \mbox{\hyperlink{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}{call\+\_\+type}} $>$, \mbox{\hyperlink{classarray_af40deff69606a75cf645863432967ba7a2886e477a3f6090266168e82d389adc1}{array\+::forcecast}} $>$, T $>$
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{structvectorize__arg_a2713dcb369c1ff6d3ec66f9b91419735}{vectorize}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}\label{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}} 
+\index{vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}!call\_type@{call\_type}}
+\index{call\_type@{call\_type}!vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}}
+\subsubsection{\texorpdfstring{call\_type}{call\_type}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+using \mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$ T $>$\+::\mbox{\hyperlink{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}{call\+\_\+type}} =  \mbox{\hyperlink{detail_2common_8h_a3a08cea569e6926ac8d7d74dd7178b5f}{remove\+\_\+reference\+\_\+t}}$<$T$>$}
+
+\mbox{\Hypertarget{structvectorize__arg_a1eac44d967c2119c39a13843b8546c9d}\label{structvectorize__arg_a1eac44d967c2119c39a13843b8546c9d}} 
+\index{vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}!type@{type}}
+\index{type@{type}!vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+using \mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$ T $>$\+::\mbox{\hyperlink{structvectorize__arg_a1eac44d967c2119c39a13843b8546c9d}{type}} =  \mbox{\hyperlink{detail_2common_8h_acdb0eff728aec08ed6fff07d2885ea9d}{conditional\+\_\+t}}$<$\mbox{\hyperlink{structvectorize__arg_a2713dcb369c1ff6d3ec66f9b91419735}{vectorize}}, \mbox{\hyperlink{classarray__t}{array\+\_\+t}}$<$\mbox{\hyperlink{detail_2common_8h_a92dc8767e0b0b9b6022f61cb5b52278f}{remove\+\_\+cv\+\_\+t}}$<$\mbox{\hyperlink{structvectorize__arg_a465d48643eac1a5fb514819ceaf8eb1c}{call\+\_\+type}}$>$, \mbox{\hyperlink{classarray_af40deff69606a75cf645863432967ba7a2886e477a3f6090266168e82d389adc1}{array\+::forcecast}}$>$, T$>$}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structvectorize__arg_a2713dcb369c1ff6d3ec66f9b91419735}\label{structvectorize__arg_a2713dcb369c1ff6d3ec66f9b91419735}} 
+\index{vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}!vectorize@{vectorize}}
+\index{vectorize@{vectorize}!vectorize\_arg$<$ T $>$@{vectorize\_arg$<$ T $>$}}
+\subsubsection{\texorpdfstring{vectorize}{vectorize}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+constexpr \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{structvectorize__arg}{vectorize\+\_\+arg}}$<$ T $>$\+::vectorize\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \mbox{\hyperlink{structnegation}{satisfies\_any\_of<call\_type, std::is\_arithmetic, is\_complex, std::is\_pod>::value}} \&\&}
+\DoxyCodeLine{        \mbox{\hyperlink{structnegation}{satisfies\_none\_of<call\_type, std::is\_pointer, std::is\_array, is\_std\_array, std::is\_enum>::value}} \&\&}
+\DoxyCodeLine{        (!\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{std::is\_reference<T>::value}} ||}
+\DoxyCodeLine{         (\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{std::is\_lvalue\_reference<T>::value}} \&\& \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{std::is\_const<call\_type>::value}}))}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/include/pybind11/\mbox{\hyperlink{numpy_8h}{numpy.\+h}}\end{DoxyCompactItemize}

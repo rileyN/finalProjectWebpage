@@ -1,0 +1,105 @@
+\hypertarget{_g_u_i_8py}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/src/\+G\+UI.py File Reference}
+\label{_g_u_i_8py}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/src/GUI.py@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/src/GUI.py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_g_u_i}{G\+UI}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_g_u_i_ae82f740e6453cdd542b52ede1560c2c3}{G\+U\+I.\+send\+Signal}} (sig)
+\begin{DoxyCompactList}\small\item\em Sends a signal through the socket. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_g_u_i_a6331e60bc4c66b1f0460cd987e6b0d1d}{G\+U\+I.\+end}} ()
+\begin{DoxyCompactList}\small\item\em Called when the application is closing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a75551f8a671434e8c984ec81add33a23}{G\+U\+I.\+r}} = tk.\+Tk()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_g_u_i}{G\+UI}} Functionality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}} \mbox{\hyperlink{namespace_g_u_i_a293e22c0a27a45862ad50fcb8ed12f15}{G\+U\+I.\+img\+Path}} = \textquotesingle{}../media/Buttons/\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a95a82d369df3d4c7b727a9411b5200bf}{G\+U\+I.\+l1}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Level Variables\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=0)
+\begin{DoxyCompactList}\small\item\em Level Variables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_ac7c465b5857043b3fa99979abb72f6f8}{G\+U\+I.\+l2}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a8c8f50b76976c33a0eaa959e28d7b453}{Num}} of Rows\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=1,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a35519123b77b2a3bdeaaa694185dd02a}{G\+U\+I.\+l3}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a8c8f50b76976c33a0eaa959e28d7b453}{Num}} of Columns\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=2,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a9a674293f87e667971e46f422129f8be}{G\+U\+I.\+s1}} = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a9b4f27a5e87a161111559dd8e38219d4}{G\+U\+I.\+s2}} = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a50392865479db3a869a19c926d474f1f}{G\+U\+I.\+row}}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a4d9166e323570c16afa5de2e7bd788af}{G\+U\+I.\+column}}
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a329472468460bb661747b9e01449d184}{G\+U\+I.\+b1}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Size\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 10, command = partial(send\+Signal,\textquotesingle{}Change Size\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ac505e29343a8c79d7347a8be5c4fffa5}{G\+U\+I.\+l4}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Tiles\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=4)
+\begin{DoxyCompactList}\small\item\em Tiles Section. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_a2b9af2e6ceeadebce40ff8171633d86c}{G\+U\+I.\+img1}} = Photo\+Image(file=img\+Path+\textquotesingle{}Floor\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ac572e0369b73d3b0493771239995d91d}{G\+U\+I.\+b2}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img1, command = partial(send\+Signal, \textquotesingle{}Draw Floor\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a49cad6894844031f41a996947032a4a4}{G\+U\+I.\+img2}} = Photo\+Image(file=img\+Path+\textquotesingle{}Wall\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ae03019b48b46235fcf9eb1ae963fd68e}{G\+U\+I.\+b3}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img2, command = partial(send\+Signal, \textquotesingle{}Draw Wall\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a06adcfe75921645a1ef64cf7a4cdb3fd}{G\+U\+I.\+img3}} = Photo\+Image(file=img\+Path+\textquotesingle{}Statue\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a4e69ff82719fbda902c3b2126e79d692}{G\+U\+I.\+b4}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img3, command = partial(send\+Signal, \textquotesingle{}Draw Statue\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a63bec101ed0dcb5864839c78fcb02572}{G\+U\+I.\+img4}} = Photo\+Image(file=img\+Path+\textquotesingle{}Spikes\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ab78877371456f13f3765198ec7ee8d91}{G\+U\+I.\+b5}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img4, command = partial(send\+Signal, \textquotesingle{}Draw Spikes\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a3e9631bef05195054e18899712ee62e7}{G\+U\+I.\+img5}} = Photo\+Image(file=img\+Path+\textquotesingle{}Lock\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a8b3fe1a314a7f97eb58e91a936f16d24}{G\+U\+I.\+b6}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img5, command = partial(send\+Signal, \textquotesingle{}Draw Lock\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a6cb0dc882c4030753831044192cbef73}{G\+U\+I.\+img6}} = Photo\+Image(file=img\+Path+\textquotesingle{}Quad\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a2b170b4727c7ee7938399888e449e39b}{G\+U\+I.\+b7}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img6, command = partial(send\+Signal, \textquotesingle{}Draw Quad\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_af4d553e4d64242f914c988b9b5cb6c88}{G\+U\+I.\+l5}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Items\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=7)
+\begin{DoxyCompactList}\small\item\em Items. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_ab8b458d392f9b3d983f3d09b8eadf226}{G\+U\+I.\+img7}} = Photo\+Image(file=img\+Path+\textquotesingle{}Heart\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a75a5a8fdd144311f4409de4a0dcfd143}{G\+U\+I.\+b8}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img7, command = partial(send\+Signal, \textquotesingle{}Draw Heart\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a16cb8d3ad11106b26025ddbf102b8a6f}{G\+U\+I.\+img8}} = Photo\+Image(file=img\+Path+\textquotesingle{}Key\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ad8ee1e3aaa566c9c531afb653646940f}{G\+U\+I.\+b9}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img8, command = partial(send\+Signal, \textquotesingle{}Draw Key\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a030836603e07318a291bb6c3ad25ff3f}{G\+U\+I.\+l6}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Enemies\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=9)
+\begin{DoxyCompactList}\small\item\em Enemies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_a6ece4b78fbb7ed63258caf1a781471f4}{G\+U\+I.\+img9}} = Photo\+Image(file=img\+Path+\textquotesingle{}Ghost\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a385149b9ed164ef153e01cc07a42a12f}{G\+U\+I.\+b10}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img9, command = partial(send\+Signal, \textquotesingle{}Draw Ghost\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_ae7bae4d0c7bb1a98517fed2294b60f46}{G\+U\+I.\+img10}} = Photo\+Image(file=img\+Path+\textquotesingle{}Octo\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a737db9240917cd4bce0a7f294b6038b2}{G\+U\+I.\+b11}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img10, command = partial(send\+Signal, \textquotesingle{}Draw Octo\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a3e7474bdd0fb176960a855522043a291}{G\+U\+I.\+l7}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \char`\"{}Player Values\char`\"{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=11)
+\begin{DoxyCompactList}\small\item\em Player Vaues. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_g_u_i_a54eba3e54367f4dc592947bf19468e7f}{G\+U\+I.\+img11}} = Photo\+Image(file=img\+Path+\textquotesingle{}Player\+Button.\+png\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_af2a2606c0440d1c893c60b4d6d4fbec5}{G\+U\+I.\+b12}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a0a221b005894579fea3b9eb7bfc2ee71}{image}} = img11, command = partial(send\+Signal, \textquotesingle{}Move Player\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a66ff0e016573e1293d4bf6cc8e2238bd}{G\+U\+I.\+l8}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Player Lives\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=12,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a16b808fdebb02f1fb7304c7de82b9584}{G\+U\+I.\+s3}} = Spinbox(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 5, from\+\_\+ = 0, to = 10)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a70f8a6b3e40fa679f0be933103c4e3c1}{G\+U\+I.\+b13}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Change Lives\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(send\+Signal,\textquotesingle{}Change Lives\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a92765160ab69a02bcf2f7aa02a16aaa7}{G\+U\+I.\+l9}} = Label(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}File \mbox{\hyperlink{_python-ast_8h_a3e9f22c154a65956ebd413d2d8dafc0f}{Name}}\textquotesingle{}).grid(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a90d3e7e4182a9630993f640fa0443b0b}{row}}=13,\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0027cf4871ca9857e8e241960701189f}{column}}=1)
+\item 
+\mbox{\hyperlink{namespace_g_u_i_af268557bd2f393a6fce1161af8ab0300}{G\+U\+I.\+e1}} = Entry(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}})
+\item 
+\mbox{\hyperlink{namespace_g_u_i_aa59d8fa69f7030816bf471c883ccf8fc}{G\+U\+I.\+b14}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Save Level\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(send\+Signal,\textquotesingle{}Save Level\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a88eaf4fa14b32d5a2a10202a201bbe88}{G\+U\+I.\+b15}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a7cc9da6a6307ea8052f27a18bd3d7d5bac40ec5db2990469fc236f4c5dea23edb}{Load}} Level\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 8, command = partial(send\+Signal,\textquotesingle{}\mbox{\hyperlink{_python-ast_8h_a7cc9da6a6307ea8052f27a18bd3d7d5bac40ec5db2990469fc236f4c5dea23edb}{Load}} Level\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespace_g_u_i_a676b78f5c42c7f4c6c3e338e078dd0fb}{G\+U\+I.\+b16}} = tk.\+Button(\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, text = \textquotesingle{}Q\+U\+IT\textquotesingle{}, \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}} = 7, command = \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}})
+\end{DoxyCompactItemize}

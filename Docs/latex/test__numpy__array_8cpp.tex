@@ -1,0 +1,163 @@
+\hypertarget{test__numpy__array_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+numpy\+\_\+array.cpp File Reference}
+\label{test__numpy__array_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_numpy\_array.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_numpy\_array.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pybind11/numpy.\+h$>$}\newline
+{\ttfamily \#include $<$pybind11/stl.\+h$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test__numpy__array_8cpp_acfe7655c46e2388f1a63cdc6670b6f2b}{def\+\_\+index\+\_\+fn}}(\mbox{\hyperlink{structname}{name}},  \mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} = \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a52f38e7d822a46377fde7a02708eedb1}{py\+::array}}
+\item 
+using \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} = py\+::array\+\_\+t$<$ \mbox{\hyperlink{_s_d_l__config_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}, 0 $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \mbox{\hyperlink{test__numpy__array_8cpp_a280c04624750db59fbcdea5cb30cf7ba}{data}} (const \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}})
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \mbox{\hyperlink{test__numpy__array_8cpp_aafcec8208643c7f9962dea40d884ba81}{data\+\_\+t}} (const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}})
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \& \mbox{\hyperlink{test__numpy__array_8cpp_a7ed41e55843bcc6689982fe31a158ede}{mutate\+\_\+data}} (\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}})
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \& \mbox{\hyperlink{test__numpy__array_8cpp_abffbe38183a43ecccd83a4b381283ce6}{mutate\+\_\+data\+\_\+t}} (\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}})
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} \mbox{\hyperlink{test__numpy__array_8cpp_a666a1d70cf6f36d66bbcf695aeadf161}{index\+\_\+at}} (const \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... idx)
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} \mbox{\hyperlink{test__numpy__array_8cpp_aa5a4064721d0cef2bd0ab2bd4edbf9a0}{index\+\_\+at\+\_\+t}} (const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... idx)
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} \mbox{\hyperlink{test__numpy__array_8cpp_ac4064363e9be4729c129891f1156a5aa}{offset\+\_\+at}} (const \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... idx)
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} \mbox{\hyperlink{test__numpy__array_8cpp_aadec4edbb0ded484487c597df6f31ae0}{offset\+\_\+at\+\_\+t}} (const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... idx)
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} \mbox{\hyperlink{test__numpy__array_8cpp_aeddf77d18ab2aa247840e4adb25854a6}{at\+\_\+t}} (const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... idx)
+\item 
+{\footnotesize template$<$typename... Ix$>$ }\\\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \& \mbox{\hyperlink{test__numpy__array_8cpp_a3c99ce8eb8825649f9aeb7e3d5990410}{mutate\+\_\+at\+\_\+t}} (\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, Ix... idx)
+\item 
+{\footnotesize template$<$typename T , typename T2 $>$ }\\py\+::handle \mbox{\hyperlink{test__numpy__array_8cpp_ac117c9dade7cfecb35bb3b37c0585a89}{auxiliaries}} (T \&\&\mbox{\hyperlink{_s_d_l__opengl_8h_a42ce7cdc612e53abee15043f80220d97}{r}}, T2 \&\&r2)
+\item 
+\mbox{\hyperlink{test__numpy__array_8cpp_ab30bffb5b26d45f7aa8b9e1dfd0b5f17}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (numpy\+\_\+array, sm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{test__numpy__array_8cpp_acfe7655c46e2388f1a63cdc6670b6f2b}\label{test__numpy__array_8cpp_acfe7655c46e2388f1a63cdc6670b6f2b}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!def\_index\_fn@{def\_index\_fn}}
+\index{def\_index\_fn@{def\_index\_fn}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{def\_index\_fn}{def\_index\_fn}}
+{\footnotesize\ttfamily \#define def\+\_\+index\+\_\+fn(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{structname}{name}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sm.def(\#\mbox{\hyperlink{structname}{name}}, [](\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}); \}); \(\backslash\)}
+\DoxyCodeLine{    sm.def(\#\mbox{\hyperlink{structname}{name}}, [](\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}); \}); \(\backslash\)}
+\DoxyCodeLine{    sm.def(\#\mbox{\hyperlink{structname}{name}}, [](\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}, \textcolor{keywordtype}{int} j) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}, j); \}); \(\backslash\)}
+\DoxyCodeLine{    sm.def(\#\mbox{\hyperlink{structname}{name}}, [](\mbox{\hyperlink{_s_d_l__opengl_8h_ad5ddf6fca7b585646515660e810e0188}{type}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}, \textcolor{keywordtype}{int} j, \textcolor{keywordtype}{int} k) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{i}}, j, k); \});}
+
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}\label{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!arr@{arr}}
+\index{arr@{arr}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{arr}{arr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} =  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a52f38e7d822a46377fde7a02708eedb1}{py\+::array}}}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}\label{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!arr\_t@{arr\_t}}
+\index{arr\_t@{arr\_t}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{arr\_t}{arr\_t}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} =  py\+::array\+\_\+t$<$\mbox{\hyperlink{_s_d_l__config_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}, 0$>$}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__numpy__array_8cpp_aeddf77d18ab2aa247840e4adb25854a6}\label{test__numpy__array_8cpp_aeddf77d18ab2aa247840e4adb25854a6}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!at\_t@{at\_t}}
+\index{at\_t@{at\_t}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{at\_t()}{at\_t()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} at\+\_\+t (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&}]{a,  }\item[{Ix...}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_ac117c9dade7cfecb35bb3b37c0585a89}\label{test__numpy__array_8cpp_ac117c9dade7cfecb35bb3b37c0585a89}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!auxiliaries@{auxiliaries}}
+\index{auxiliaries@{auxiliaries}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{auxiliaries()}{auxiliaries()}}
+{\footnotesize\ttfamily template$<$typename T , typename T2 $>$ \\
+py\+::handle auxiliaries (\begin{DoxyParamCaption}\item[{T \&\&}]{r,  }\item[{T2 \&\&}]{r2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_a280c04624750db59fbcdea5cb30cf7ba}\label{test__numpy__array_8cpp_a280c04624750db59fbcdea5cb30cf7ba}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!data@{data}}
+\index{data@{data}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&}]{a,  }\item[{Ix...}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_aafcec8208643c7f9962dea40d884ba81}\label{test__numpy__array_8cpp_aafcec8208643c7f9962dea40d884ba81}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!data\_t@{data\_t}}
+\index{data\_t@{data\_t}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{data\_t()}{data\_t()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} data\+\_\+t (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&}]{a,  }\item[{Ix...}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_a666a1d70cf6f36d66bbcf695aeadf161}\label{test__numpy__array_8cpp_a666a1d70cf6f36d66bbcf695aeadf161}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!index\_at@{index\_at}}
+\index{index\_at@{index\_at}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{index\_at()}{index\_at()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} index\+\_\+at (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&}]{a,  }\item[{Ix...}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_aa5a4064721d0cef2bd0ab2bd4edbf9a0}\label{test__numpy__array_8cpp_aa5a4064721d0cef2bd0ab2bd4edbf9a0}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!index\_at\_t@{index\_at\_t}}
+\index{index\_at\_t@{index\_at\_t}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{index\_at\_t()}{index\_at\_t()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} index\+\_\+at\+\_\+t (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&}]{a,  }\item[{Ix...}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_a3c99ce8eb8825649f9aeb7e3d5990410}\label{test__numpy__array_8cpp_a3c99ce8eb8825649f9aeb7e3d5990410}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!mutate\_at\_t@{mutate\_at\_t}}
+\index{mutate\_at\_t@{mutate\_at\_t}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{mutate\_at\_t()}{mutate\_at\_t()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}}\& mutate\+\_\+at\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&}]{a,  }\item[{Ix...}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_a7ed41e55843bcc6689982fe31a158ede}\label{test__numpy__array_8cpp_a7ed41e55843bcc6689982fe31a158ede}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!mutate\_data@{mutate\_data}}
+\index{mutate\_data@{mutate\_data}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{mutate\_data()}{mutate\_data()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}}\& mutate\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&}]{a,  }\item[{Ix...}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_abffbe38183a43ecccd83a4b381283ce6}\label{test__numpy__array_8cpp_abffbe38183a43ecccd83a4b381283ce6}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!mutate\_data\_t@{mutate\_data\_t}}
+\index{mutate\_data\_t@{mutate\_data\_t}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{mutate\_data\_t()}{mutate\_data\_t()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}}\& mutate\+\_\+data\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&}]{a,  }\item[{Ix...}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_ac4064363e9be4729c129891f1156a5aa}\label{test__numpy__array_8cpp_ac4064363e9be4729c129891f1156a5aa}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!offset\_at@{offset\_at}}
+\index{offset\_at@{offset\_at}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{offset\_at()}{offset\_at()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} offset\+\_\+at (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{test__numpy__array_8cpp_a42c56bc9bb4c61baf74b3b581765cbd9}{arr}} \&}]{a,  }\item[{Ix...}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_aadec4edbb0ded484487c597df6f31ae0}\label{test__numpy__array_8cpp_aadec4edbb0ded484487c597df6f31ae0}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!offset\_at\_t@{offset\_at\_t}}
+\index{offset\_at\_t@{offset\_at\_t}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{offset\_at\_t()}{offset\_at\_t()}}
+{\footnotesize\ttfamily template$<$typename... Ix$>$ \\
+\mbox{\hyperlink{detail_2common_8h_ac430d16fc097b3bf0a7469cfd09decda}{ssize\+\_\+t}} offset\+\_\+at\+\_\+t (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{test__numpy__array_8cpp_a26d7420c6a76682bb261f2e8c5d089a3}{arr\+\_\+t}} \&}]{a,  }\item[{Ix...}]{idx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__numpy__array_8cpp_ab30bffb5b26d45f7aa8b9e1dfd0b5f17}\label{test__numpy__array_8cpp_ab30bffb5b26d45f7aa8b9e1dfd0b5f17}} 
+\index{test\_numpy\_array.cpp@{test\_numpy\_array.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_numpy\_array.cpp@{test\_numpy\_array.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{numpy\+\_\+array}]{,  }\item[{sm}]{ }\end{DoxyParamCaption})}
+

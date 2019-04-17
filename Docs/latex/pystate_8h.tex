@@ -1,0 +1,213 @@
+\hypertarget{pystate_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pystate.h File Reference}
+\label{pystate_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pystate.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pystate.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__is}{\+\_\+is}}
+\item 
+struct \mbox{\hyperlink{struct__ts}{\+\_\+ts}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pystate_8h_aacf397c2f0fbe11e8fcf144f6fb56f18}{Py\+Trace\+\_\+\+C\+A\+LL}}~0
+\item 
+\#define \mbox{\hyperlink{pystate_8h_a276d1ce1b715bfab502bde88ac57322e}{Py\+Trace\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}}~1
+\item 
+\#define \mbox{\hyperlink{pystate_8h_acc4a6258a390d65fa09192ca7f942bbf}{Py\+Trace\+\_\+\+L\+I\+NE}}~2
+\item 
+\#define \mbox{\hyperlink{pystate_8h_a13ca69ab4808b2d1cff3148d8ce09d72}{Py\+Trace\+\_\+\+R\+E\+T\+U\+RN}}~3
+\item 
+\#define \mbox{\hyperlink{pystate_8h_a73bf8e0a6013201581841d683dafbb7a}{Py\+Trace\+\_\+\+C\+\_\+\+C\+A\+LL}}~4
+\item 
+\#define \mbox{\hyperlink{pystate_8h_aa0e88859b4774fb3935e2860f643eb84}{Py\+Trace\+\_\+\+C\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}}~5
+\item 
+\#define \mbox{\hyperlink{pystate_8h_a0aeb92df4ca79e2ba43924d9ba8f81f1}{Py\+Trace\+\_\+\+C\+\_\+\+R\+E\+T\+U\+RN}}~6
+\item 
+\#define \mbox{\hyperlink{pystate_8h_aa13672d2ef4e677011492493c991a605}{Py\+Thread\+State\+\_\+\+G\+ET}}()~(\+\_\+\+Py\+Thread\+State\+\_\+\+Current)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__is}{\+\_\+is}} \mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}}
+\item 
+typedef \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ \mbox{\hyperlink{pystate_8h_ab5c10be1fd41472f8b22569c5f15f8e6}{Py\+\_\+tracefunc}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}} $\ast$, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+typedef struct \mbox{\hyperlink{struct__ts}{\+\_\+ts}} \mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}}
+\item 
+typedef struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}} $\ast$($\ast$ \mbox{\hyperlink{pystate_8h_a7782accce17188799c730c61324156d8}{Py\+Thread\+Frame\+Getter}}) (\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$self\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{pystate_8h_acec61a42d4edd65f94039d4671ce80be}{Py\+G\+I\+L\+State\+\_\+\+S\+T\+A\+TE}} \{ \mbox{\hyperlink{pystate_8h_acec61a42d4edd65f94039d4671ce80bead9ba2aa50dfab0ae36ca769a271ccd2d}{Py\+G\+I\+L\+State\+\_\+\+L\+O\+C\+K\+ED}}, 
+\mbox{\hyperlink{pystate_8h_acec61a42d4edd65f94039d4671ce80bea1e3be71b26057a37ce15ea270d15571d}{Py\+G\+I\+L\+State\+\_\+\+U\+N\+L\+O\+C\+K\+ED}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pystate_8h_a93b356c5da2c5291f3425bd9e59c25e2}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}} $\ast$) Py\+Interpreter\+State\+\_\+\+New(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pystate_8h_a82a9dad094eb92626b712f6052792a7f}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+Interpreter\+State\+\_\+\+Clear(\mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}} $\ast$)
+\item 
+\mbox{\hyperlink{pystate_8h_a851c2ec7b18b1df5cdc65bacc96d00fb}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$) Py\+Thread\+State\+\_\+\+New(\mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}} $\ast$)
+\item 
+\mbox{\hyperlink{pystate_8h_a3c0299b4b01281cad7104e2538bd8d78}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Thread\+State\+\_\+\+Get\+Dict(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pystate_8h_a91e69eb827680bcb24f237a4bf1f66f6}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Thread\+State\+\_\+\+Set\+Async\+Exc(\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{pystate_8h_abbab0ce86b426387d253b551f3023b6c}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$) \+\_\+\+Py\+Thread\+State\+\_\+\+Current
+\item 
+\mbox{\hyperlink{pystate_8h_a3449b411480d08255bd3a823d03970e6}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pystate_8h_acec61a42d4edd65f94039d4671ce80be}{Py\+G\+I\+L\+State\+\_\+\+S\+T\+A\+TE}}) Py\+G\+I\+L\+State\+\_\+\+Ensure(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pystate_8h_a494208e549cd30e8b66c30c6193a984d}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{pystate_8h_a7782accce17188799c730c61324156d8}{Py\+Thread\+Frame\+Getter}}) \+\_\+\+Py\+Thread\+State\+\_\+\+Get\+Frame
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pystate_8h_aa13672d2ef4e677011492493c991a605}\label{pystate_8h_aa13672d2ef4e677011492493c991a605}} 
+\index{pystate.h@{pystate.h}!PyThreadState\_GET@{PyThreadState\_GET}}
+\index{PyThreadState\_GET@{PyThreadState\_GET}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyThreadState\_GET}{PyThreadState\_GET}}
+{\footnotesize\ttfamily \#define Py\+Thread\+State\+\_\+\+G\+ET(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\+\_\+\+Py\+Thread\+State\+\_\+\+Current)}
+
+\mbox{\Hypertarget{pystate_8h_a73bf8e0a6013201581841d683dafbb7a}\label{pystate_8h_a73bf8e0a6013201581841d683dafbb7a}} 
+\index{pystate.h@{pystate.h}!PyTrace\_C\_CALL@{PyTrace\_C\_CALL}}
+\index{PyTrace\_C\_CALL@{PyTrace\_C\_CALL}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyTrace\_C\_CALL}{PyTrace\_C\_CALL}}
+{\footnotesize\ttfamily \#define Py\+Trace\+\_\+\+C\+\_\+\+C\+A\+LL~4}
+
+\mbox{\Hypertarget{pystate_8h_aa0e88859b4774fb3935e2860f643eb84}\label{pystate_8h_aa0e88859b4774fb3935e2860f643eb84}} 
+\index{pystate.h@{pystate.h}!PyTrace\_C\_EXCEPTION@{PyTrace\_C\_EXCEPTION}}
+\index{PyTrace\_C\_EXCEPTION@{PyTrace\_C\_EXCEPTION}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyTrace\_C\_EXCEPTION}{PyTrace\_C\_EXCEPTION}}
+{\footnotesize\ttfamily \#define Py\+Trace\+\_\+\+C\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON~5}
+
+\mbox{\Hypertarget{pystate_8h_a0aeb92df4ca79e2ba43924d9ba8f81f1}\label{pystate_8h_a0aeb92df4ca79e2ba43924d9ba8f81f1}} 
+\index{pystate.h@{pystate.h}!PyTrace\_C\_RETURN@{PyTrace\_C\_RETURN}}
+\index{PyTrace\_C\_RETURN@{PyTrace\_C\_RETURN}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyTrace\_C\_RETURN}{PyTrace\_C\_RETURN}}
+{\footnotesize\ttfamily \#define Py\+Trace\+\_\+\+C\+\_\+\+R\+E\+T\+U\+RN~6}
+
+\mbox{\Hypertarget{pystate_8h_aacf397c2f0fbe11e8fcf144f6fb56f18}\label{pystate_8h_aacf397c2f0fbe11e8fcf144f6fb56f18}} 
+\index{pystate.h@{pystate.h}!PyTrace\_CALL@{PyTrace\_CALL}}
+\index{PyTrace\_CALL@{PyTrace\_CALL}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyTrace\_CALL}{PyTrace\_CALL}}
+{\footnotesize\ttfamily \#define Py\+Trace\+\_\+\+C\+A\+LL~0}
+
+\mbox{\Hypertarget{pystate_8h_a276d1ce1b715bfab502bde88ac57322e}\label{pystate_8h_a276d1ce1b715bfab502bde88ac57322e}} 
+\index{pystate.h@{pystate.h}!PyTrace\_EXCEPTION@{PyTrace\_EXCEPTION}}
+\index{PyTrace\_EXCEPTION@{PyTrace\_EXCEPTION}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyTrace\_EXCEPTION}{PyTrace\_EXCEPTION}}
+{\footnotesize\ttfamily \#define Py\+Trace\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON~1}
+
+\mbox{\Hypertarget{pystate_8h_acc4a6258a390d65fa09192ca7f942bbf}\label{pystate_8h_acc4a6258a390d65fa09192ca7f942bbf}} 
+\index{pystate.h@{pystate.h}!PyTrace\_LINE@{PyTrace\_LINE}}
+\index{PyTrace\_LINE@{PyTrace\_LINE}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyTrace\_LINE}{PyTrace\_LINE}}
+{\footnotesize\ttfamily \#define Py\+Trace\+\_\+\+L\+I\+NE~2}
+
+\mbox{\Hypertarget{pystate_8h_a13ca69ab4808b2d1cff3148d8ce09d72}\label{pystate_8h_a13ca69ab4808b2d1cff3148d8ce09d72}} 
+\index{pystate.h@{pystate.h}!PyTrace\_RETURN@{PyTrace\_RETURN}}
+\index{PyTrace\_RETURN@{PyTrace\_RETURN}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyTrace\_RETURN}{PyTrace\_RETURN}}
+{\footnotesize\ttfamily \#define Py\+Trace\+\_\+\+R\+E\+T\+U\+RN~3}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{pystate_8h_ab5c10be1fd41472f8b22569c5f15f8e6}\label{pystate_8h_ab5c10be1fd41472f8b22569c5f15f8e6}} 
+\index{pystate.h@{pystate.h}!Py\_tracefunc@{Py\_tracefunc}}
+\index{Py\_tracefunc@{Py\_tracefunc}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{Py\_tracefunc}{Py\_tracefunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ Py\+\_\+tracefunc) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}} $\ast$, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)}
+
+\mbox{\Hypertarget{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}\label{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}} 
+\index{pystate.h@{pystate.h}!PyInterpreterState@{PyInterpreterState}}
+\index{PyInterpreterState@{PyInterpreterState}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyInterpreterState}{PyInterpreterState}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__is}{\+\_\+is}}  \mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}}}
+
+\mbox{\Hypertarget{pystate_8h_a7782accce17188799c730c61324156d8}\label{pystate_8h_a7782accce17188799c730c61324156d8}} 
+\index{pystate.h@{pystate.h}!PyThreadFrameGetter@{PyThreadFrameGetter}}
+\index{PyThreadFrameGetter@{PyThreadFrameGetter}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyThreadFrameGetter}{PyThreadFrameGetter}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}}$\ast$($\ast$ Py\+Thread\+Frame\+Getter) (\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$self\+\_\+)}
+
+\mbox{\Hypertarget{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}\label{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}} 
+\index{pystate.h@{pystate.h}!PyThreadState@{PyThreadState}}
+\index{PyThreadState@{PyThreadState}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyThreadState}{PyThreadState}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__ts}{\+\_\+ts}}  \mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{pystate_8h_acec61a42d4edd65f94039d4671ce80be}\label{pystate_8h_acec61a42d4edd65f94039d4671ce80be}} 
+\index{pystate.h@{pystate.h}!PyGILState\_STATE@{PyGILState\_STATE}}
+\index{PyGILState\_STATE@{PyGILState\_STATE}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyGILState\_STATE}{PyGILState\_STATE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{pystate_8h_acec61a42d4edd65f94039d4671ce80be}{Py\+G\+I\+L\+State\+\_\+\+S\+T\+A\+TE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PyGILState\_LOCKED@{PyGILState\_LOCKED}!pystate.h@{pystate.h}}\index{pystate.h@{pystate.h}!PyGILState\_LOCKED@{PyGILState\_LOCKED}}}\mbox{\Hypertarget{pystate_8h_acec61a42d4edd65f94039d4671ce80bead9ba2aa50dfab0ae36ca769a271ccd2d}\label{pystate_8h_acec61a42d4edd65f94039d4671ce80bead9ba2aa50dfab0ae36ca769a271ccd2d}} 
+Py\+G\+I\+L\+State\+\_\+\+L\+O\+C\+K\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PyGILState\_UNLOCKED@{PyGILState\_UNLOCKED}!pystate.h@{pystate.h}}\index{pystate.h@{pystate.h}!PyGILState\_UNLOCKED@{PyGILState\_UNLOCKED}}}\mbox{\Hypertarget{pystate_8h_acec61a42d4edd65f94039d4671ce80bea1e3be71b26057a37ce15ea270d15571d}\label{pystate_8h_acec61a42d4edd65f94039d4671ce80bea1e3be71b26057a37ce15ea270d15571d}} 
+Py\+G\+I\+L\+State\+\_\+\+U\+N\+L\+O\+C\+K\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pystate_8h_abbab0ce86b426387d253b551f3023b6c}\label{pystate_8h_abbab0ce86b426387d253b551f3023b6c}} 
+\index{pystate.h@{pystate.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pystate_8h_a494208e549cd30e8b66c30c6193a984d}\label{pystate_8h_a494208e549cd30e8b66c30c6193a984d}} 
+\index{pystate.h@{pystate.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pystate_8h_a7782accce17188799c730c61324156d8}{Py\+Thread\+Frame\+Getter}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pystate_8h_a93b356c5da2c5291f3425bd9e59c25e2}\label{pystate_8h_a93b356c5da2c5291f3425bd9e59c25e2}} 
+\index{pystate.h@{pystate.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pystate_8h_a82a9dad094eb92626b712f6052792a7f}\label{pystate_8h_a82a9dad094eb92626b712f6052792a7f}} 
+\index{pystate.h@{pystate.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pystate_8h_a851c2ec7b18b1df5cdc65bacc96d00fb}\label{pystate_8h_a851c2ec7b18b1df5cdc65bacc96d00fb}} 
+\index{pystate.h@{pystate.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pystate_8h_a3c0299b4b01281cad7104e2538bd8d78}\label{pystate_8h_a3c0299b4b01281cad7104e2538bd8d78}} 
+\index{pystate.h@{pystate.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pystate_8h_a91e69eb827680bcb24f237a4bf1f66f6}\label{pystate_8h_a91e69eb827680bcb24f237a4bf1f66f6}} 
+\index{pystate.h@{pystate.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pystate_8h_a3449b411480d08255bd3a823d03970e6}\label{pystate_8h_a3449b411480d08255bd3a823d03970e6}} 
+\index{pystate.h@{pystate.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pystate.h@{pystate.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pystate_8h_acec61a42d4edd65f94039d4671ce80be}{Py\+G\+I\+L\+State\+\_\+\+S\+T\+A\+TE}}}]{ }\end{DoxyParamCaption})}
+

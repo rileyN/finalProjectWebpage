@@ -1,0 +1,106 @@
+\hypertarget{pythread_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pythread.h File Reference}
+\label{pythread_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pythread.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pythread.h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pythread_8h_ab6ab095e0a6ee85f425b6863a4329e0c}{W\+A\+I\+T\+\_\+\+L\+O\+CK}}~1
+\item 
+\#define \mbox{\hyperlink{pythread_8h_a1710d207563f0bed62e43cc397dd3944}{N\+O\+W\+A\+I\+T\+\_\+\+L\+O\+CK}}~0
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ \mbox{\hyperlink{pythread_8h_a3b2176e03c1fe39be5b4efe587669dc0}{Py\+Thread\+\_\+type\+\_\+lock}}
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ \mbox{\hyperlink{pythread_8h_ae4590c2298a1cb0b978f67b01622e502}{Py\+Thread\+\_\+type\+\_\+sema}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pythread_8h_ae11f608f7ba249ec5253464a9aef4bbf}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+Thread\+\_\+init\+\_\+thread(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pythread_8h_a9bf4f5e4a037565b1097ed8c0c07003c}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}) Py\+Thread\+\_\+start\+\_\+new\+\_\+thread(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$)(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$)
+\item 
+\mbox{\hyperlink{pythread_8h_a2758969b52cf8e9ed38490a0f844fe5e}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pythread_8h_a3b2176e03c1fe39be5b4efe587669dc0}{Py\+Thread\+\_\+type\+\_\+lock}}) Py\+Thread\+\_\+allocate\+\_\+lock(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pythread_8h_a4ed02d6eff571cb09d36ed4b149bab51}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Thread\+\_\+acquire\+\_\+lock(\mbox{\hyperlink{pythread_8h_a3b2176e03c1fe39be5b4efe587669dc0}{Py\+Thread\+\_\+type\+\_\+lock}}
+\item 
+\mbox{\hyperlink{pythread_8h_a519a79065264220a585bfb7cf3264fd8}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}}) Py\+Thread\+\_\+get\+\_\+stacksize(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pythread_8h_a61569f2965b7a369eb10b6d75d410d11}{int}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pythread_8h_a1710d207563f0bed62e43cc397dd3944}\label{pythread_8h_a1710d207563f0bed62e43cc397dd3944}} 
+\index{pythread.h@{pythread.h}!NOWAIT\_LOCK@{NOWAIT\_LOCK}}
+\index{NOWAIT\_LOCK@{NOWAIT\_LOCK}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{NOWAIT\_LOCK}{NOWAIT\_LOCK}}
+{\footnotesize\ttfamily \#define N\+O\+W\+A\+I\+T\+\_\+\+L\+O\+CK~0}
+
+\mbox{\Hypertarget{pythread_8h_ab6ab095e0a6ee85f425b6863a4329e0c}\label{pythread_8h_ab6ab095e0a6ee85f425b6863a4329e0c}} 
+\index{pythread.h@{pythread.h}!WAIT\_LOCK@{WAIT\_LOCK}}
+\index{WAIT\_LOCK@{WAIT\_LOCK}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{WAIT\_LOCK}{WAIT\_LOCK}}
+{\footnotesize\ttfamily \#define W\+A\+I\+T\+\_\+\+L\+O\+CK~1}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{pythread_8h_a3b2176e03c1fe39be5b4efe587669dc0}\label{pythread_8h_a3b2176e03c1fe39be5b4efe587669dc0}} 
+\index{pythread.h@{pythread.h}!PyThread\_type\_lock@{PyThread\_type\_lock}}
+\index{PyThread\_type\_lock@{PyThread\_type\_lock}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{PyThread\_type\_lock}{PyThread\_type\_lock}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$ \mbox{\hyperlink{pythread_8h_a3b2176e03c1fe39be5b4efe587669dc0}{Py\+Thread\+\_\+type\+\_\+lock}}}
+
+\mbox{\Hypertarget{pythread_8h_ae4590c2298a1cb0b978f67b01622e502}\label{pythread_8h_ae4590c2298a1cb0b978f67b01622e502}} 
+\index{pythread.h@{pythread.h}!PyThread\_type\_sema@{PyThread\_type\_sema}}
+\index{PyThread\_type\_sema@{PyThread\_type\_sema}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{PyThread\_type\_sema}{PyThread\_type\_sema}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$ \mbox{\hyperlink{pythread_8h_ae4590c2298a1cb0b978f67b01622e502}{Py\+Thread\+\_\+type\+\_\+sema}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pythread_8h_ae11f608f7ba249ec5253464a9aef4bbf}\label{pythread_8h_ae11f608f7ba249ec5253464a9aef4bbf}} 
+\index{pythread.h@{pythread.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythread_8h_a9bf4f5e4a037565b1097ed8c0c07003c}\label{pythread_8h_a9bf4f5e4a037565b1097ed8c0c07003c}} 
+\index{pythread.h@{pythread.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythread_8h_a2758969b52cf8e9ed38490a0f844fe5e}\label{pythread_8h_a2758969b52cf8e9ed38490a0f844fe5e}} 
+\index{pythread.h@{pythread.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pythread_8h_a3b2176e03c1fe39be5b4efe587669dc0}{Py\+Thread\+\_\+type\+\_\+lock}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythread_8h_a4ed02d6eff571cb09d36ed4b149bab51}\label{pythread_8h_a4ed02d6eff571cb09d36ed4b149bab51}} 
+\index{pythread.h@{pythread.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythread_8h_a519a79065264220a585bfb7cf3264fd8}\label{pythread_8h_a519a79065264220a585bfb7cf3264fd8}} 
+\index{pythread.h@{pythread.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{pythread_8h_a61569f2965b7a369eb10b6d75d410d11}\label{pythread_8h_a61569f2965b7a369eb10b6d75d410d11}} 
+\index{pythread.h@{pythread.h}!int@{int}}
+\index{int@{int}!pythread.h@{pythread.h}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily int}
+

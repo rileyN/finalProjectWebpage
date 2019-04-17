@@ -1,0 +1,350 @@
+\hypertarget{pythonrun_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pythonrun.h File Reference}
+\label{pythonrun_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pythonrun.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/pythonrun.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a1d12a6ce6fbee675191aa0c448b38124}{Py\+C\+F\+\_\+\+M\+A\+SK}}
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a57d5b10e19f273327108a82baa816fbc}{Py\+C\+F\+\_\+\+M\+A\+S\+K\+\_\+\+O\+B\+S\+O\+L\+E\+TE}}~(\mbox{\hyperlink{code_8h_a175198c9b71d2d62938431d7272a2da5}{C\+O\+\_\+\+N\+E\+S\+T\+ED}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_aad0ae3019acc2cd2bb89a7e073388afc}{Py\+C\+F\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+I\+S\+\_\+\+U\+T\+F8}}~0x0100
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a9028d25367e09be0b02d376f23cac840}{Py\+C\+F\+\_\+\+D\+O\+N\+T\+\_\+\+I\+M\+P\+L\+Y\+\_\+\+D\+E\+D\+E\+NT}}~0x0200
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a09e0320e84ddce5141c2895899239955}{Py\+C\+F\+\_\+\+O\+N\+L\+Y\+\_\+\+A\+ST}}~0x0400
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a2b854e94c3c4d43a1735cf60349bc3f9}{Py\+Parser\+\_\+\+Simple\+Parse\+String}}(S,  \mbox{\hyperlink{struct_b}{B}})~Py\+Parser\+\_\+\+Simple\+Parse\+String\+Flags(S, \mbox{\hyperlink{struct_b}{B}}, 0)
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a76f0f14e3418716265e5c95ba2580ceb}{Py\+Parser\+\_\+\+Simple\+Parse\+File}}(FP,  S,  \mbox{\hyperlink{struct_b}{B}})~Py\+Parser\+\_\+\+Simple\+Parse\+File\+Flags(FP, S, \mbox{\hyperlink{struct_b}{B}}, 0)
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_af9f2f6efa661eebb035591169efdea7c}{Py\+\_\+\+Compile\+String}}(\mbox{\hyperlink{classstr}{str}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}})~Py\+\_\+\+Compile\+String\+Flags(\mbox{\hyperlink{classstr}{str}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a8ce80a6c4e8d7460a55e2f86aae95310}{Py\+Run\+\_\+\+String}}(\mbox{\hyperlink{classstr}{str}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  l)~Py\+Run\+\_\+\+String\+Flags(\mbox{\hyperlink{classstr}{str}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_aa3b94c5a34856a200ee0927aeeebf245}{Py\+Run\+\_\+\+Any\+File}}(fp,  \mbox{\hyperlink{structname}{name}})~Py\+Run\+\_\+\+Any\+File\+Ex\+Flags(fp, \mbox{\hyperlink{structname}{name}}, 0, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_ab506966cac6742dab8241667c1d14d34}{Py\+Run\+\_\+\+Any\+File\+Ex}}(fp,  \mbox{\hyperlink{structname}{name}},  closeit)~Py\+Run\+\_\+\+Any\+File\+Ex\+Flags(fp, \mbox{\hyperlink{structname}{name}}, closeit, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_ab3b7e36ed054f855e8d68b2b28e07140}{Py\+Run\+\_\+\+Any\+File\+Flags}}(fp,  \mbox{\hyperlink{structname}{name}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}})~Py\+Run\+\_\+\+Any\+File\+Ex\+Flags(fp, \mbox{\hyperlink{structname}{name}}, 0, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a67858e9f03ae94301ce9f86ce6ef9376}{Py\+Run\+\_\+\+Simple\+String}}(\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}})~Py\+Run\+\_\+\+Simple\+String\+Flags(\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a9189e5625f4a180cca5e6f5ce2ddd9fb}{Py\+Run\+\_\+\+Simple\+File}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}})~Py\+Run\+\_\+\+Simple\+File\+Ex\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, 0, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a117eb7c1696274e7a0f30585badfb124}{Py\+Run\+\_\+\+Simple\+File\+Ex}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}})~Py\+Run\+\_\+\+Simple\+File\+Ex\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a9919c1f3553ed4183ce4d99a5ae3f05c}{Py\+Run\+\_\+\+Interactive\+One}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}})~Py\+Run\+\_\+\+Interactive\+One\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_ab71151cadee4152038998381a51e0c57}{Py\+Run\+\_\+\+Interactive\+Loop}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}})~Py\+Run\+\_\+\+Interactive\+Loop\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_af008cd314d44e8595cb456818c6cbf7d}{Py\+Run\+\_\+\+File}}(fp,  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  l)~Py\+Run\+\_\+\+File\+Ex\+Flags(fp, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, 0, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a4c1c241cc6d343258fb9951e178357a6}{Py\+Run\+\_\+\+File\+Ex}}(fp,  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  l,  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}})~Py\+Run\+\_\+\+File\+Ex\+Flags(fp, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_adffe28a65742d8e0bbea5d13bc663082}{Py\+Run\+\_\+\+File\+Flags}}(fp,  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  l,  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}})~Py\+Run\+\_\+\+File\+Ex\+Flags(fp, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, 0, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}})
+\item 
+\#define \mbox{\hyperlink{pythonrun_8h_a830538db26260e18b43ac3e42e1b6da6}{P\+Y\+O\+S\+\_\+\+S\+T\+A\+C\+K\+\_\+\+M\+A\+R\+G\+IN}}~2048
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{pythonrun_8h_a0afa543be92186f5c6dbecad346cd321}{Py\+O\+S\+\_\+sighandler\+\_\+t}}) (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pythonrun_8h_a72d218663cdaadd0ed2b31aa57a44ff2}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+\_\+\+Set\+Program\+Name(char $\ast$)
+\item 
+\mbox{\hyperlink{pythonrun_8h_a832d9f9f3beba2de741dbed74a6ff9d3}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (char $\ast$) Py\+\_\+\+Get\+Program\+Name(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pythonrun_8h_a4c3a62568ddd90f6969da62d7d0dc6c8}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+\_\+\+Is\+Initialized(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pythonrun_8h_a9ef8bacc1e421db54b1d4b939da0a7bf}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$) Py\+\_\+\+New\+Interpreter(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} $\ast$ \mbox{\hyperlink{pythonrun_8h_a09a0873e341a1be661eebd0b575e43f6}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (struct \mbox{\hyperlink{struct__mod}{\+\_\+mod}} $\ast$) Py\+Parser\+\_\+\+A\+S\+T\+From\+String(const char $\ast$
+\item 
+\mbox{\hyperlink{pythonrun_8h_ae0d5d34b5941658aa9f8dbc4f5553aaa}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (struct \mbox{\hyperlink{struct__node}{\+\_\+node}} $\ast$) Py\+Parser\+\_\+\+Simple\+Parse\+String\+Flags(const char $\ast$
+\item 
+\mbox{\hyperlink{pythonrun_8h_a3279804513b3df861617dd07dd1e8c31}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Run\+\_\+\+String\+Flags(const char $\ast$
+\item 
+const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} $\ast$ \mbox{\hyperlink{pythonrun_8h_abc13265125b3a8cab200a6603d91197d}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (struct \mbox{\hyperlink{structsymtable}{symtable}} $\ast$) Py\+\_\+\+Symtable\+String(const char $\ast$
+\item 
+\mbox{\hyperlink{pythonrun_8h_a1fa6f9e54c12d4f80830f41b94fe33ca}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (const char $\ast$) Py\+\_\+\+Get\+Version(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pythonrun_8h_a7e946f92f641fc4616d9c4b548284053}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (char) $\ast$($\ast$Py\+O\+S\+\_\+\+Readline\+Function\+Pointer)(\mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} $\ast$
+\item 
+\mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} char $\ast$ \mbox{\hyperlink{pythonrun_8h_ae89e6ce84c04344d5c9983ca1041b1d7}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$) \+\_\+\+Py\+O\+S\+\_\+\+Readline\+T\+State
+\item 
+\mbox{\hyperlink{pythonrun_8h_a9f5aae37e9a568e87fb00ab5c23ca5b8}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pythonrun_8h_a0afa543be92186f5c6dbecad346cd321}{Py\+O\+S\+\_\+sighandler\+\_\+t}}) Py\+O\+S\+\_\+getsig(\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{pythonrun_8h_ab7c36254f09c23c702756c51939a37dd}{int}}
+\item 
+const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} $\ast$ \mbox{\hyperlink{pythonrun_8h_abaec711d13304482dde64e5fa2322160}{flags}}
+\item 
+const char char $\ast$$\ast$ \mbox{\hyperlink{pythonrun_8h_af3cb49c013b6d4b79e7a00fc6807e954}{argv}}
+\item 
+\mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} char $\ast$\mbox{\hyperlink{weakrefobject_8h_af0a8dfbe115c8dcf14d297413297b6b8}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}}() \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ \mbox{\hyperlink{pythonrun_8h_a52b6ec88ffe784b567ee2dd8f07635df}{Py\+O\+S\+\_\+\+Input\+Hook}} )(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{pythonrun_8h_a612c27dae5681d14a5d92d0b3d8ab6e5}{size}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pythonrun_8h_af9f2f6efa661eebb035591169efdea7c}\label{pythonrun_8h_af9f2f6efa661eebb035591169efdea7c}} 
+\index{pythonrun.h@{pythonrun.h}!Py\_CompileString@{Py\_CompileString}}
+\index{Py\_CompileString@{Py\_CompileString}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{Py\_CompileString}{Py\_CompileString}}
+{\footnotesize\ttfamily \#define Py\+\_\+\+Compile\+String(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{classstr}{str}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}} }\end{DoxyParamCaption})~Py\+\_\+\+Compile\+String\+Flags(\mbox{\hyperlink{classstr}{str}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a9028d25367e09be0b02d376f23cac840}\label{pythonrun_8h_a9028d25367e09be0b02d376f23cac840}} 
+\index{pythonrun.h@{pythonrun.h}!PyCF\_DONT\_IMPLY\_DEDENT@{PyCF\_DONT\_IMPLY\_DEDENT}}
+\index{PyCF\_DONT\_IMPLY\_DEDENT@{PyCF\_DONT\_IMPLY\_DEDENT}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyCF\_DONT\_IMPLY\_DEDENT}{PyCF\_DONT\_IMPLY\_DEDENT}}
+{\footnotesize\ttfamily \#define Py\+C\+F\+\_\+\+D\+O\+N\+T\+\_\+\+I\+M\+P\+L\+Y\+\_\+\+D\+E\+D\+E\+NT~0x0200}
+
+\mbox{\Hypertarget{pythonrun_8h_a1d12a6ce6fbee675191aa0c448b38124}\label{pythonrun_8h_a1d12a6ce6fbee675191aa0c448b38124}} 
+\index{pythonrun.h@{pythonrun.h}!PyCF\_MASK@{PyCF\_MASK}}
+\index{PyCF\_MASK@{PyCF\_MASK}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyCF\_MASK}{PyCF\_MASK}}
+{\footnotesize\ttfamily \#define Py\+C\+F\+\_\+\+M\+A\+SK}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{code_8h_a5a7ee54f647d5668f8236d1cbc1171a9}{CO\_FUTURE\_DIVISION}} | \mbox{\hyperlink{code_8h_ab4e5184532bbc4baf3adea2e2bc2c38b}{CO\_FUTURE\_ABSOLUTE\_IMPORT}} | \(\backslash\)}
+\DoxyCodeLine{                   CO\_FUTURE\_WITH\_STATEMENT | \mbox{\hyperlink{code_8h_a80398933b7467dc979f4141aba15b972}{CO\_FUTURE\_PRINT\_FUNCTION}} | \(\backslash\)}
+\DoxyCodeLine{                   CO\_FUTURE\_UNICODE\_LITERALS)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pythonrun_8h_a57d5b10e19f273327108a82baa816fbc}\label{pythonrun_8h_a57d5b10e19f273327108a82baa816fbc}} 
+\index{pythonrun.h@{pythonrun.h}!PyCF\_MASK\_OBSOLETE@{PyCF\_MASK\_OBSOLETE}}
+\index{PyCF\_MASK\_OBSOLETE@{PyCF\_MASK\_OBSOLETE}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyCF\_MASK\_OBSOLETE}{PyCF\_MASK\_OBSOLETE}}
+{\footnotesize\ttfamily \#define Py\+C\+F\+\_\+\+M\+A\+S\+K\+\_\+\+O\+B\+S\+O\+L\+E\+TE~(\mbox{\hyperlink{code_8h_a175198c9b71d2d62938431d7272a2da5}{C\+O\+\_\+\+N\+E\+S\+T\+ED}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a09e0320e84ddce5141c2895899239955}\label{pythonrun_8h_a09e0320e84ddce5141c2895899239955}} 
+\index{pythonrun.h@{pythonrun.h}!PyCF\_ONLY\_AST@{PyCF\_ONLY\_AST}}
+\index{PyCF\_ONLY\_AST@{PyCF\_ONLY\_AST}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyCF\_ONLY\_AST}{PyCF\_ONLY\_AST}}
+{\footnotesize\ttfamily \#define Py\+C\+F\+\_\+\+O\+N\+L\+Y\+\_\+\+A\+ST~0x0400}
+
+\mbox{\Hypertarget{pythonrun_8h_aad0ae3019acc2cd2bb89a7e073388afc}\label{pythonrun_8h_aad0ae3019acc2cd2bb89a7e073388afc}} 
+\index{pythonrun.h@{pythonrun.h}!PyCF\_SOURCE\_IS\_UTF8@{PyCF\_SOURCE\_IS\_UTF8}}
+\index{PyCF\_SOURCE\_IS\_UTF8@{PyCF\_SOURCE\_IS\_UTF8}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyCF\_SOURCE\_IS\_UTF8}{PyCF\_SOURCE\_IS\_UTF8}}
+{\footnotesize\ttfamily \#define Py\+C\+F\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+I\+S\+\_\+\+U\+T\+F8~0x0100}
+
+\mbox{\Hypertarget{pythonrun_8h_a830538db26260e18b43ac3e42e1b6da6}\label{pythonrun_8h_a830538db26260e18b43ac3e42e1b6da6}} 
+\index{pythonrun.h@{pythonrun.h}!PYOS\_STACK\_MARGIN@{PYOS\_STACK\_MARGIN}}
+\index{PYOS\_STACK\_MARGIN@{PYOS\_STACK\_MARGIN}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PYOS\_STACK\_MARGIN}{PYOS\_STACK\_MARGIN}}
+{\footnotesize\ttfamily \#define P\+Y\+O\+S\+\_\+\+S\+T\+A\+C\+K\+\_\+\+M\+A\+R\+G\+IN~2048}
+
+\mbox{\Hypertarget{pythonrun_8h_a76f0f14e3418716265e5c95ba2580ceb}\label{pythonrun_8h_a76f0f14e3418716265e5c95ba2580ceb}} 
+\index{pythonrun.h@{pythonrun.h}!PyParser\_SimpleParseFile@{PyParser\_SimpleParseFile}}
+\index{PyParser\_SimpleParseFile@{PyParser\_SimpleParseFile}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyParser\_SimpleParseFile}{PyParser\_SimpleParseFile}}
+{\footnotesize\ttfamily \#define Py\+Parser\+\_\+\+Simple\+Parse\+File(\begin{DoxyParamCaption}\item[{}]{FP,  }\item[{}]{S,  }\item[{}]{\mbox{\hyperlink{struct_b}{B}} }\end{DoxyParamCaption})~Py\+Parser\+\_\+\+Simple\+Parse\+File\+Flags(FP, S, \mbox{\hyperlink{struct_b}{B}}, 0)}
+
+\mbox{\Hypertarget{pythonrun_8h_a2b854e94c3c4d43a1735cf60349bc3f9}\label{pythonrun_8h_a2b854e94c3c4d43a1735cf60349bc3f9}} 
+\index{pythonrun.h@{pythonrun.h}!PyParser\_SimpleParseString@{PyParser\_SimpleParseString}}
+\index{PyParser\_SimpleParseString@{PyParser\_SimpleParseString}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyParser\_SimpleParseString}{PyParser\_SimpleParseString}}
+{\footnotesize\ttfamily \#define Py\+Parser\+\_\+\+Simple\+Parse\+String(\begin{DoxyParamCaption}\item[{}]{S,  }\item[{}]{\mbox{\hyperlink{struct_b}{B}} }\end{DoxyParamCaption})~Py\+Parser\+\_\+\+Simple\+Parse\+String\+Flags(S, \mbox{\hyperlink{struct_b}{B}}, 0)}
+
+\mbox{\Hypertarget{pythonrun_8h_aa3b94c5a34856a200ee0927aeeebf245}\label{pythonrun_8h_aa3b94c5a34856a200ee0927aeeebf245}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_AnyFile@{PyRun\_AnyFile}}
+\index{PyRun\_AnyFile@{PyRun\_AnyFile}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_AnyFile}{PyRun\_AnyFile}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Any\+File(\begin{DoxyParamCaption}\item[{}]{fp,  }\item[{}]{\mbox{\hyperlink{structname}{name}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Any\+File\+Ex\+Flags(fp, \mbox{\hyperlink{structname}{name}}, 0, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_ab506966cac6742dab8241667c1d14d34}\label{pythonrun_8h_ab506966cac6742dab8241667c1d14d34}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_AnyFileEx@{PyRun\_AnyFileEx}}
+\index{PyRun\_AnyFileEx@{PyRun\_AnyFileEx}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_AnyFileEx}{PyRun\_AnyFileEx}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Any\+File\+Ex(\begin{DoxyParamCaption}\item[{}]{fp,  }\item[{}]{\mbox{\hyperlink{structname}{name}},  }\item[{}]{closeit }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Any\+File\+Ex\+Flags(fp, \mbox{\hyperlink{structname}{name}}, closeit, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_ab3b7e36ed054f855e8d68b2b28e07140}\label{pythonrun_8h_ab3b7e36ed054f855e8d68b2b28e07140}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_AnyFileFlags@{PyRun\_AnyFileFlags}}
+\index{PyRun\_AnyFileFlags@{PyRun\_AnyFileFlags}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_AnyFileFlags}{PyRun\_AnyFileFlags}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Any\+File\+Flags(\begin{DoxyParamCaption}\item[{}]{fp,  }\item[{}]{\mbox{\hyperlink{structname}{name}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Any\+File\+Ex\+Flags(fp, \mbox{\hyperlink{structname}{name}}, 0, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}})}
+
+\mbox{\Hypertarget{pythonrun_8h_af008cd314d44e8595cb456818c6cbf7d}\label{pythonrun_8h_af008cd314d44e8595cb456818c6cbf7d}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_File@{PyRun\_File}}
+\index{PyRun\_File@{PyRun\_File}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_File}{PyRun\_File}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+File(\begin{DoxyParamCaption}\item[{}]{fp,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  }\item[{}]{l }\end{DoxyParamCaption})~Py\+Run\+\_\+\+File\+Ex\+Flags(fp, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, 0, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a4c1c241cc6d343258fb9951e178357a6}\label{pythonrun_8h_a4c1c241cc6d343258fb9951e178357a6}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_FileEx@{PyRun\_FileEx}}
+\index{PyRun\_FileEx@{PyRun\_FileEx}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_FileEx}{PyRun\_FileEx}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+File\+Ex(\begin{DoxyParamCaption}\item[{}]{fp,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  }\item[{}]{l,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+File\+Ex\+Flags(fp, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_adffe28a65742d8e0bbea5d13bc663082}\label{pythonrun_8h_adffe28a65742d8e0bbea5d13bc663082}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_FileFlags@{PyRun\_FileFlags}}
+\index{PyRun\_FileFlags@{PyRun\_FileFlags}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_FileFlags}{PyRun\_FileFlags}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+File\+Flags(\begin{DoxyParamCaption}\item[{}]{fp,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  }\item[{}]{l,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+File\+Ex\+Flags(fp, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, 0, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}})}
+
+\mbox{\Hypertarget{pythonrun_8h_ab71151cadee4152038998381a51e0c57}\label{pythonrun_8h_ab71151cadee4152038998381a51e0c57}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_InteractiveLoop@{PyRun\_InteractiveLoop}}
+\index{PyRun\_InteractiveLoop@{PyRun\_InteractiveLoop}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_InteractiveLoop}{PyRun\_InteractiveLoop}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Interactive\+Loop(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Interactive\+Loop\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a9919c1f3553ed4183ce4d99a5ae3f05c}\label{pythonrun_8h_a9919c1f3553ed4183ce4d99a5ae3f05c}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_InteractiveOne@{PyRun\_InteractiveOne}}
+\index{PyRun\_InteractiveOne@{PyRun\_InteractiveOne}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_InteractiveOne}{PyRun\_InteractiveOne}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Interactive\+One(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Interactive\+One\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a9189e5625f4a180cca5e6f5ce2ddd9fb}\label{pythonrun_8h_a9189e5625f4a180cca5e6f5ce2ddd9fb}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_SimpleFile@{PyRun\_SimpleFile}}
+\index{PyRun\_SimpleFile@{PyRun\_SimpleFile}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_SimpleFile}{PyRun\_SimpleFile}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Simple\+File(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Simple\+File\+Ex\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, 0, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a117eb7c1696274e7a0f30585badfb124}\label{pythonrun_8h_a117eb7c1696274e7a0f30585badfb124}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_SimpleFileEx@{PyRun\_SimpleFileEx}}
+\index{PyRun\_SimpleFileEx@{PyRun\_SimpleFileEx}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_SimpleFileEx}{PyRun\_SimpleFileEx}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Simple\+File\+Ex(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Simple\+File\+Ex\+Flags(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a691492ec0bd6383f91200e49f6ae40ed}{f}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a67858e9f03ae94301ce9f86ce6ef9376}\label{pythonrun_8h_a67858e9f03ae94301ce9f86ce6ef9376}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_SimpleString@{PyRun\_SimpleString}}
+\index{PyRun\_SimpleString@{PyRun\_SimpleString}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_SimpleString}{PyRun\_SimpleString}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+Simple\+String(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}} }\end{DoxyParamCaption})~Py\+Run\+\_\+\+Simple\+String\+Flags(\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a8ce80a6c4e8d7460a55e2f86aae95310}\label{pythonrun_8h_a8ce80a6c4e8d7460a55e2f86aae95310}} 
+\index{pythonrun.h@{pythonrun.h}!PyRun\_String@{PyRun\_String}}
+\index{PyRun\_String@{PyRun\_String}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyRun\_String}{PyRun\_String}}
+{\footnotesize\ttfamily \#define Py\+Run\+\_\+\+String(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{classstr}{str}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}},  }\item[{}]{l }\end{DoxyParamCaption})~Py\+Run\+\_\+\+String\+Flags(\mbox{\hyperlink{classstr}{str}}, \mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_acaceb3a655ff28b75259860bcb868f9f}{g}}, l, \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{pythonrun_8h_a0afa543be92186f5c6dbecad346cd321}\label{pythonrun_8h_a0afa543be92186f5c6dbecad346cd321}} 
+\index{pythonrun.h@{pythonrun.h}!PyOS\_sighandler\_t@{PyOS\_sighandler\_t}}
+\index{PyOS\_sighandler\_t@{PyOS\_sighandler\_t}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyOS\_sighandler\_t}{PyOS\_sighandler\_t}}
+{\footnotesize\ttfamily Py\+O\+S\+\_\+sighandler\+\_\+t}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pythonrun_8h_a7e946f92f641fc4616d9c4b548284053}\label{pythonrun_8h_a7e946f92f641fc4616d9c4b548284053}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{char}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythonrun_8h_ae89e6ce84c04344d5c9983ca1041b1d7}\label{pythonrun_8h_ae89e6ce84c04344d5c9983ca1041b1d7}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} char$\ast$ Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythonrun_8h_a72d218663cdaadd0ed2b31aa57a44ff2}\label{pythonrun_8h_a72d218663cdaadd0ed2b31aa57a44ff2}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythonrun_8h_a832d9f9f3beba2de741dbed74a6ff9d3}\label{pythonrun_8h_a832d9f9f3beba2de741dbed74a6ff9d3}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{char $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythonrun_8h_a4c3a62568ddd90f6969da62d7d0dc6c8}\label{pythonrun_8h_a4c3a62568ddd90f6969da62d7d0dc6c8}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythonrun_8h_a9ef8bacc1e421db54b1d4b939da0a7bf}\label{pythonrun_8h_a9ef8bacc1e421db54b1d4b939da0a7bf}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pystate_8h_abd09a2e80e53ee363c70921fca241bfd}{Py\+Thread\+State}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythonrun_8h_a09a0873e341a1be661eebd0b575e43f6}\label{pythonrun_8h_a09a0873e341a1be661eebd0b575e43f6}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} \mbox{\hyperlink{pyarena_8h_a9edeb357fbb27333471022a0975adb7a}{Py\+Arena}} $\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct__mod}{\+\_\+mod}} $\ast$}]{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{pythonrun_8h_ae0d5d34b5941658aa9f8dbc4f5553aaa}\label{pythonrun_8h_ae0d5d34b5941658aa9f8dbc4f5553aaa}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct__node}{\+\_\+node}} $\ast$}]{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{pythonrun_8h_a3279804513b3df861617dd07dd1e8c31}\label{pythonrun_8h_a3279804513b3df861617dd07dd1e8c31}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{pythonrun_8h_abc13265125b3a8cab200a6603d91197d}\label{pythonrun_8h_abc13265125b3a8cab200a6603d91197d}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}}$\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structsymtable}{symtable}} $\ast$}]{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{pythonrun_8h_a1fa6f9e54c12d4f80830f41b94fe33ca}\label{pythonrun_8h_a1fa6f9e54c12d4f80830f41b94fe33ca}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pythonrun_8h_a9f5aae37e9a568e87fb00ab5c23ca5b8}\label{pythonrun_8h_a9f5aae37e9a568e87fb00ab5c23ca5b8}} 
+\index{pythonrun.h@{pythonrun.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pythonrun_8h_a0afa543be92186f5c6dbecad346cd321}{Py\+O\+S\+\_\+sighandler\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{pythonrun_8h_af3cb49c013b6d4b79e7a00fc6807e954}\label{pythonrun_8h_af3cb49c013b6d4b79e7a00fc6807e954}} 
+\index{pythonrun.h@{pythonrun.h}!argv@{argv}}
+\index{argv@{argv}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily const char char$\ast$$\ast$ argv}
+
+\mbox{\Hypertarget{pythonrun_8h_abaec711d13304482dde64e5fa2322160}\label{pythonrun_8h_abaec711d13304482dde64e5fa2322160}} 
+\index{pythonrun.h@{pythonrun.h}!flags@{flags}}
+\index{flags@{flags}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}}$\ast$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac7ba7d3cce3d19ca020e056b37231289}{flags}}}
+
+\mbox{\Hypertarget{pythonrun_8h_ab7c36254f09c23c702756c51939a37dd}\label{pythonrun_8h_ab7c36254f09c23c702756c51939a37dd}} 
+\index{pythonrun.h@{pythonrun.h}!int@{int}}
+\index{int@{int}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily const char \mbox{\hyperlink{struct_py_compiler_flags}{Py\+Compiler\+Flags}} const char int}
+
+\mbox{\Hypertarget{pythonrun_8h_a52b6ec88ffe784b567ee2dd8f07635df}\label{pythonrun_8h_a52b6ec88ffe784b567ee2dd8f07635df}} 
+\index{pythonrun.h@{pythonrun.h}!PyOS\_InputHook@{PyOS\_InputHook}}
+\index{PyOS\_InputHook@{PyOS\_InputHook}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{PyOS\_InputHook}{PyOS\_InputHook}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fileobject_8h_ae8a16e073fe79a434049ae0c07f71fd3}{F\+I\+LE}} char$\ast$ \mbox{\hyperlink{weakrefobject_8h_af0a8dfbe115c8dcf14d297413297b6b8}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}}() \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}($\ast$ Py\+O\+S\+\_\+\+Input\+Hook) (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})}
+
+\mbox{\Hypertarget{pythonrun_8h_a612c27dae5681d14a5d92d0b3d8ab6e5}\label{pythonrun_8h_a612c27dae5681d14a5d92d0b3d8ab6e5}} 
+\index{pythonrun.h@{pythonrun.h}!size@{size}}
+\index{size@{size}!pythonrun.h@{pythonrun.h}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}}
+

@@ -1,0 +1,129 @@
+\hypertarget{structpg_font_object}{}\section{pg\+Font\+Object Struct Reference}
+\label{structpg_font_object}\index{pgFontObject@{pgFontObject}}
+
+
+{\ttfamily \#include $<$freetype.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_a0bf35c1f3ea13f925de94d8593db3b7e}{Py\+Object\+\_\+\+H\+E\+AD}} \mbox{\hyperlink{structpg_font_id}{pg\+Font\+Id}} \mbox{\hyperlink{structpg_font_object_a20540d70bdb4ed063ff927c38522741b}{id}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{structpg_font_object_a91662711b34054539569c74b4d46bdf6}{path}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{structpg_font_object_a1c2a4772a867ea084e8d25ffc1a6972b}{is\+\_\+scalable}}
+\item 
+\mbox{\hyperlink{freetype_8h_a7b7f11d7e1985559df17f8da75ea76b3}{Scale\+\_\+t}} \mbox{\hyperlink{structpg_font_object_ac60c5b915ec67e9a4cac9de614d0257e}{face\+\_\+size}}
+\item 
+F\+T\+\_\+\+Int16 \mbox{\hyperlink{structpg_font_object_ae5eed244546d80f452d96882cf022c91}{style}}
+\item 
+F\+T\+\_\+\+Int16 \mbox{\hyperlink{structpg_font_object_afa0356bb79b52e587177481a94662b90}{render\+\_\+flags}}
+\item 
+double \mbox{\hyperlink{structpg_font_object_ab63990a97aee56ed72ad714d04eef9cd}{strength}}
+\item 
+double \mbox{\hyperlink{structpg_font_object_a3d76b1e36c49d1bcc25d7f9bf03ef936}{underline\+\_\+adjustment}}
+\item 
+F\+T\+\_\+\+U\+Int \mbox{\hyperlink{structpg_font_object_a001531cf20c3cc2d19f5882f190a857a}{resolution}}
+\item 
+\mbox{\hyperlink{freetype_8h_af330e1256f38e235547df00ff7e08861}{Angle\+\_\+t}} \mbox{\hyperlink{structpg_font_object_ae243df88deae255775fc7bda7dd6d036}{rotation}}
+\item 
+F\+T\+\_\+\+Matrix \mbox{\hyperlink{structpg_font_object_a6ac91874c7492a81c2b4a7ef83cb8a26}{transform}}
+\item 
+F\+T\+\_\+\+Byte \mbox{\hyperlink{structpg_font_object_a5d4105c21e0da1199ee816568ce22ad3}{fgcolor}} \mbox{[}4\mbox{]}
+\item 
+struct freetypeinstance\+\_\+ $\ast$ \mbox{\hyperlink{structpg_font_object_a62634b59e91f97fc657ad10df92d92e3}{freetype}}
+\item 
+struct fontinternals\+\_\+ $\ast$ \mbox{\hyperlink{structpg_font_object_a19bbf351975bc8011958a6cb9f28e25c}{\+\_\+internals}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structpg_font_object_a19bbf351975bc8011958a6cb9f28e25c}\label{structpg_font_object_a19bbf351975bc8011958a6cb9f28e25c}} 
+\index{pgFontObject@{pgFontObject}!\_internals@{\_internals}}
+\index{\_internals@{\_internals}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{\_internals}{\_internals}}
+{\footnotesize\ttfamily struct fontinternals\+\_\+$\ast$ pg\+Font\+Object\+::\+\_\+internals}
+
+\mbox{\Hypertarget{structpg_font_object_ac60c5b915ec67e9a4cac9de614d0257e}\label{structpg_font_object_ac60c5b915ec67e9a4cac9de614d0257e}} 
+\index{pgFontObject@{pgFontObject}!face\_size@{face\_size}}
+\index{face\_size@{face\_size}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{face\_size}{face\_size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{freetype_8h_a7b7f11d7e1985559df17f8da75ea76b3}{Scale\+\_\+t}} pg\+Font\+Object\+::face\+\_\+size}
+
+\mbox{\Hypertarget{structpg_font_object_a5d4105c21e0da1199ee816568ce22ad3}\label{structpg_font_object_a5d4105c21e0da1199ee816568ce22ad3}} 
+\index{pgFontObject@{pgFontObject}!fgcolor@{fgcolor}}
+\index{fgcolor@{fgcolor}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{fgcolor}{fgcolor}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Byte pg\+Font\+Object\+::fgcolor\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{structpg_font_object_a62634b59e91f97fc657ad10df92d92e3}\label{structpg_font_object_a62634b59e91f97fc657ad10df92d92e3}} 
+\index{pgFontObject@{pgFontObject}!freetype@{freetype}}
+\index{freetype@{freetype}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{freetype}{freetype}}
+{\footnotesize\ttfamily struct freetypeinstance\+\_\+$\ast$ pg\+Font\+Object\+::freetype}
+
+\mbox{\Hypertarget{structpg_font_object_a20540d70bdb4ed063ff927c38522741b}\label{structpg_font_object_a20540d70bdb4ed063ff927c38522741b}} 
+\index{pgFontObject@{pgFontObject}!id@{id}}
+\index{id@{id}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_a0bf35c1f3ea13f925de94d8593db3b7e}{Py\+Object\+\_\+\+H\+E\+AD}} \mbox{\hyperlink{structpg_font_id}{pg\+Font\+Id}} pg\+Font\+Object\+::id}
+
+\mbox{\Hypertarget{structpg_font_object_a1c2a4772a867ea084e8d25ffc1a6972b}\label{structpg_font_object_a1c2a4772a867ea084e8d25ffc1a6972b}} 
+\index{pgFontObject@{pgFontObject}!is\_scalable@{is\_scalable}}
+\index{is\_scalable@{is\_scalable}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{is\_scalable}{is\_scalable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} pg\+Font\+Object\+::is\+\_\+scalable}
+
+\mbox{\Hypertarget{structpg_font_object_a91662711b34054539569c74b4d46bdf6}\label{structpg_font_object_a91662711b34054539569c74b4d46bdf6}} 
+\index{pgFontObject@{pgFontObject}!path@{path}}
+\index{path@{path}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ pg\+Font\+Object\+::path}
+
+\mbox{\Hypertarget{structpg_font_object_afa0356bb79b52e587177481a94662b90}\label{structpg_font_object_afa0356bb79b52e587177481a94662b90}} 
+\index{pgFontObject@{pgFontObject}!render\_flags@{render\_flags}}
+\index{render\_flags@{render\_flags}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{render\_flags}{render\_flags}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Int16 pg\+Font\+Object\+::render\+\_\+flags}
+
+\mbox{\Hypertarget{structpg_font_object_a001531cf20c3cc2d19f5882f190a857a}\label{structpg_font_object_a001531cf20c3cc2d19f5882f190a857a}} 
+\index{pgFontObject@{pgFontObject}!resolution@{resolution}}
+\index{resolution@{resolution}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{resolution}{resolution}}
+{\footnotesize\ttfamily F\+T\+\_\+\+U\+Int pg\+Font\+Object\+::resolution}
+
+\mbox{\Hypertarget{structpg_font_object_ae243df88deae255775fc7bda7dd6d036}\label{structpg_font_object_ae243df88deae255775fc7bda7dd6d036}} 
+\index{pgFontObject@{pgFontObject}!rotation@{rotation}}
+\index{rotation@{rotation}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{freetype_8h_af330e1256f38e235547df00ff7e08861}{Angle\+\_\+t}} pg\+Font\+Object\+::rotation}
+
+\mbox{\Hypertarget{structpg_font_object_ab63990a97aee56ed72ad714d04eef9cd}\label{structpg_font_object_ab63990a97aee56ed72ad714d04eef9cd}} 
+\index{pgFontObject@{pgFontObject}!strength@{strength}}
+\index{strength@{strength}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{strength}{strength}}
+{\footnotesize\ttfamily double pg\+Font\+Object\+::strength}
+
+\mbox{\Hypertarget{structpg_font_object_ae5eed244546d80f452d96882cf022c91}\label{structpg_font_object_ae5eed244546d80f452d96882cf022c91}} 
+\index{pgFontObject@{pgFontObject}!style@{style}}
+\index{style@{style}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Int16 pg\+Font\+Object\+::style}
+
+\mbox{\Hypertarget{structpg_font_object_a6ac91874c7492a81c2b4a7ef83cb8a26}\label{structpg_font_object_a6ac91874c7492a81c2b4a7ef83cb8a26}} 
+\index{pgFontObject@{pgFontObject}!transform@{transform}}
+\index{transform@{transform}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Matrix pg\+Font\+Object\+::transform}
+
+\mbox{\Hypertarget{structpg_font_object_a3d76b1e36c49d1bcc25d7f9bf03ef936}\label{structpg_font_object_a3d76b1e36c49d1bcc25d7f9bf03ef936}} 
+\index{pgFontObject@{pgFontObject}!underline\_adjustment@{underline\_adjustment}}
+\index{underline\_adjustment@{underline\_adjustment}!pgFontObject@{pgFontObject}}
+\subsubsection{\texorpdfstring{underline\_adjustment}{underline\_adjustment}}
+{\footnotesize\ttfamily double pg\+Font\+Object\+::underline\+\_\+adjustment}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/pygame/\mbox{\hyperlink{freetype_8h}{freetype.\+h}}\end{DoxyCompactItemize}

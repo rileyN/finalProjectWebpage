@@ -1,0 +1,39 @@
+\hypertarget{pybind11__tests_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/pybind11\+\_\+tests.h File Reference}
+\label{pybind11__tests_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/pybind11\_tests.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/pybind11\_tests.h}}
+{\ttfamily \#include $<$pybind11/pybind11.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__initializer}{test\+\_\+initializer}}
+\item 
+struct \mbox{\hyperlink{struct_unregistered_type}{Unregistered\+Type}}
+\begin{DoxyCompactList}\small\item\em Dummy type which is not exported anywhere -- something to trigger a conversion error. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_user_type}{User\+Type}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_a}{A}} user-\/defined type which is exported and can be used by any test. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_inc_type}{Inc\+Type}}
+\begin{DoxyCompactList}\small\item\em Like \mbox{\hyperlink{class_user_type}{User\+Type}}, but increments {\ttfamily value} on copy for quick reference vs. copy tests. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_r_value_caster}{R\+Value\+Caster}}
+\item 
+class \mbox{\hyperlink{classtype__caster_3_01_r_value_caster_01_4}{type\+\_\+caster$<$ R\+Value\+Caster $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pybind11__tests_8h_a32f38f36ba506cf3a21e8d6175c16c79}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}}(\mbox{\hyperlink{structname}{name}},  \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aac5473f0a0d0d38841ea8d37c5ca032d}{variable}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pybind11__tests_8h_a32f38f36ba506cf3a21e8d6175c16c79}\label{pybind11__tests_8h_a32f38f36ba506cf3a21e8d6175c16c79}} 
+\index{pybind11\_tests.h@{pybind11\_tests.h}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!pybind11\_tests.h@{pybind11\_tests.h}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE}{TEST\_SUBMODULE}}
+{\footnotesize\ttfamily \#define T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{structname}{name}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aac5473f0a0d0d38841ea8d37c5ca032d}{variable}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} test\_submodule\_\#\#\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name}}(py::module \&);            \(\backslash\)}
+\DoxyCodeLine{    test\_initializer \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name}}(\#\mbox{\hyperlink{structname}{name}}, test\_submodule\_\#\#\mbox{\hyperlink{structname}{name}}); \(\backslash\)}
+\DoxyCodeLine{    void test\_submodule\_\#\#\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name}}(py::module \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aac5473f0a0d0d38841ea8d37c5ca032d}{variable}})}
+
+\end{DoxyCode}

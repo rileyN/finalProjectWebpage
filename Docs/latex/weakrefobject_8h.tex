@@ -1,0 +1,132 @@
+\hypertarget{weakrefobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/weakrefobject.h File Reference}
+\label{weakrefobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/weakrefobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/weakrefobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct___py_weak_reference}{\+\_\+\+Py\+Weak\+Reference}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{weakrefobject_8h_acc47a9d9700a1457bbc2e70e8a0088ea}{Py\+Weakref\+\_\+\+Check\+Ref}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, \&\+\_\+\+Py\+Weakref\+\_\+\+Ref\+Type)
+\item 
+\#define \mbox{\hyperlink{weakrefobject_8h_a52e7d152fa23fd2b407aef47846b495f}{Py\+Weakref\+\_\+\+Check\+Ref\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&\+\_\+\+Py\+Weakref\+\_\+\+Ref\+Type)
+\item 
+\#define \mbox{\hyperlink{weakrefobject_8h_a760406f2acdec3728dcd35095a73082d}{Py\+Weakref\+\_\+\+Check\+Proxy}}(op)
+\item 
+\#define \mbox{\hyperlink{weakrefobject_8h_a53cc0b0f3fd8ffe45cc83c9462e185f5}{Py\+Weakref\+\_\+\+Check}}(op)~(\mbox{\hyperlink{weakrefobject_8h_acc47a9d9700a1457bbc2e70e8a0088ea}{Py\+Weakref\+\_\+\+Check\+Ref}}(op) $\vert$$\vert$ \mbox{\hyperlink{weakrefobject_8h_a760406f2acdec3728dcd35095a73082d}{Py\+Weakref\+\_\+\+Check\+Proxy}}(op))
+\item 
+\#define \mbox{\hyperlink{weakrefobject_8h_a79c55d7cdfd7e6672b7eefcf8d286d07}{Py\+Weakref\+\_\+\+G\+E\+T\+\_\+\+O\+B\+J\+E\+CT}}(\mbox{\hyperlink{classref}{ref}})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct___py_weak_reference}{\+\_\+\+Py\+Weak\+Reference}} \mbox{\hyperlink{weakrefobject_8h_a7d8920320e9b260a1cab32ab0380add2}{Py\+Weak\+Reference}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{weakrefobject_8h_af0a8dfbe115c8dcf14d297413297b6b8}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) \+\_\+\+Py\+Weakref\+\_\+\+Ref\+Type
+\item 
+\mbox{\hyperlink{weakrefobject_8h_a1ec066f652cb8ef0f3dab95218d7c2b9}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Weakref\+\_\+\+New\+Ref(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}
+\item 
+\mbox{\hyperlink{weakrefobject_8h_a69760dc50ca7b331bc93fa4b2d65186f}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}) \+\_\+\+Py\+Weakref\+\_\+\+Get\+Weakref\+Count(\mbox{\hyperlink{weakrefobject_8h_a7d8920320e9b260a1cab32ab0380add2}{Py\+Weak\+Reference}} $\ast$head)
+\item 
+\mbox{\hyperlink{weakrefobject_8h_a10b0ab9fbfe09e066f05f5b5acb11a2e}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) \+\_\+\+Py\+Weakref\+\_\+\+Clear\+Ref(\mbox{\hyperlink{weakrefobject_8h_a7d8920320e9b260a1cab32ab0380add2}{Py\+Weak\+Reference}} $\ast$\mbox{\hyperlink{modsupport_8h_a0180ca1808366e5da641475e8bf8cca3}{self}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{weakrefobject_8h_adec875b7d7d5b29e2741082daf99dde9}{callback}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{weakrefobject_8h_a53cc0b0f3fd8ffe45cc83c9462e185f5}\label{weakrefobject_8h_a53cc0b0f3fd8ffe45cc83c9462e185f5}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyWeakref\_Check@{PyWeakref\_Check}}
+\index{PyWeakref\_Check@{PyWeakref\_Check}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyWeakref\_Check}{PyWeakref\_Check}}
+{\footnotesize\ttfamily \#define Py\+Weakref\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{weakrefobject_8h_acc47a9d9700a1457bbc2e70e8a0088ea}{Py\+Weakref\+\_\+\+Check\+Ref}}(op) $\vert$$\vert$ \mbox{\hyperlink{weakrefobject_8h_a760406f2acdec3728dcd35095a73082d}{Py\+Weakref\+\_\+\+Check\+Proxy}}(op))}
+
+\mbox{\Hypertarget{weakrefobject_8h_a760406f2acdec3728dcd35095a73082d}\label{weakrefobject_8h_a760406f2acdec3728dcd35095a73082d}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyWeakref\_CheckProxy@{PyWeakref\_CheckProxy}}
+\index{PyWeakref\_CheckProxy@{PyWeakref\_CheckProxy}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyWeakref\_CheckProxy}{PyWeakref\_CheckProxy}}
+{\footnotesize\ttfamily \#define Py\+Weakref\+\_\+\+Check\+Proxy(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(op) == \&\_PyWeakref\_ProxyType) || \(\backslash\)}
+\DoxyCodeLine{         (\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(op) == \&\_PyWeakref\_CallableProxyType))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{weakrefobject_8h_acc47a9d9700a1457bbc2e70e8a0088ea}\label{weakrefobject_8h_acc47a9d9700a1457bbc2e70e8a0088ea}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyWeakref\_CheckRef@{PyWeakref\_CheckRef}}
+\index{PyWeakref\_CheckRef@{PyWeakref\_CheckRef}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyWeakref\_CheckRef}{PyWeakref\_CheckRef}}
+{\footnotesize\ttfamily \#define Py\+Weakref\+\_\+\+Check\+Ref(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, \&\+\_\+\+Py\+Weakref\+\_\+\+Ref\+Type)}
+
+\mbox{\Hypertarget{weakrefobject_8h_a52e7d152fa23fd2b407aef47846b495f}\label{weakrefobject_8h_a52e7d152fa23fd2b407aef47846b495f}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyWeakref\_CheckRefExact@{PyWeakref\_CheckRefExact}}
+\index{PyWeakref\_CheckRefExact@{PyWeakref\_CheckRefExact}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyWeakref\_CheckRefExact}{PyWeakref\_CheckRefExact}}
+{\footnotesize\ttfamily \#define Py\+Weakref\+\_\+\+Check\+Ref\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&\+\_\+\+Py\+Weakref\+\_\+\+Ref\+Type)}
+
+\mbox{\Hypertarget{weakrefobject_8h_a79c55d7cdfd7e6672b7eefcf8d286d07}\label{weakrefobject_8h_a79c55d7cdfd7e6672b7eefcf8d286d07}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyWeakref\_GET\_OBJECT@{PyWeakref\_GET\_OBJECT}}
+\index{PyWeakref\_GET\_OBJECT@{PyWeakref\_GET\_OBJECT}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyWeakref\_GET\_OBJECT}{PyWeakref\_GET\_OBJECT}}
+{\footnotesize\ttfamily \#define Py\+Weakref\+\_\+\+G\+E\+T\+\_\+\+O\+B\+J\+E\+CT(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{classref}{ref}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{_python27_2object_8h_a1cd6a39fecc0dd7c56b90e133987c3c9}{Py\_REFCNT}}(((\mbox{\hyperlink{struct___py_weak_reference}{PyWeakReference}} *)(\mbox{\hyperlink{classref}{ref}}))->wr\_object) > 0   \(\backslash\)}
+\DoxyCodeLine{     ? ((\mbox{\hyperlink{struct___py_weak_reference}{PyWeakReference}} *)(\mbox{\hyperlink{classref}{ref}}))->wr\_object                \(\backslash\)}
+\DoxyCodeLine{     : \mbox{\hyperlink{_python27_2object_8h_a02ab767ffd5e5a73d8dcd6db87c05e40}{Py\_None}})}
+
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{weakrefobject_8h_a7d8920320e9b260a1cab32ab0380add2}\label{weakrefobject_8h_a7d8920320e9b260a1cab32ab0380add2}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyWeakReference@{PyWeakReference}}
+\index{PyWeakReference@{PyWeakReference}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyWeakReference}{PyWeakReference}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct___py_weak_reference}{\+\_\+\+Py\+Weak\+Reference}} \mbox{\hyperlink{weakrefobject_8h_a7d8920320e9b260a1cab32ab0380add2}{Py\+Weak\+Reference}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{weakrefobject_8h_af0a8dfbe115c8dcf14d297413297b6b8}\label{weakrefobject_8h_af0a8dfbe115c8dcf14d297413297b6b8}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{weakrefobject_8h_a1ec066f652cb8ef0f3dab95218d7c2b9}\label{weakrefobject_8h_a1ec066f652cb8ef0f3dab95218d7c2b9}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{weakrefobject_8h_a69760dc50ca7b331bc93fa4b2d65186f}\label{weakrefobject_8h_a69760dc50ca7b331bc93fa4b2d65186f}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{weakrefobject_8h_a10b0ab9fbfe09e066f05f5b5acb11a2e}\label{weakrefobject_8h_a10b0ab9fbfe09e066f05f5b5acb11a2e}} 
+\index{weakrefobject.h@{weakrefobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{weakrefobject_8h_adec875b7d7d5b29e2741082daf99dde9}\label{weakrefobject_8h_adec875b7d7d5b29e2741082daf99dde9}} 
+\index{weakrefobject.h@{weakrefobject.h}!callback@{callback}}
+\index{callback@{callback}!weakrefobject.h@{weakrefobject.h}}
+\subsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ callback}
+

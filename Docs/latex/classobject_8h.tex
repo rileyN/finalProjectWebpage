@@ -1,0 +1,125 @@
+\hypertarget{classobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/classobject.h File Reference}
+\label{classobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/classobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/classobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_class_object}{Py\+Class\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_instance_object}{Py\+Instance\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_py_method_object}{Py\+Method\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{classobject_8h_a0bb58ace8f169cff796ada045ba79b79}{Py\+Class\+\_\+\+Check}}(op)~((op)-\/$>$ob\+\_\+type == \&Py\+Class\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{classobject_8h_a3cae225d35c99d2a3e146031eac1f636}{Py\+Instance\+\_\+\+Check}}(op)~((op)-\/$>$ob\+\_\+type == \&\mbox{\hyperlink{classobject_8h_a9d44d0f345cd0d39a29f5a78afad55aa}{Py\+Instance\+\_\+\+Type}})
+\item 
+\#define \mbox{\hyperlink{classobject_8h_a416dc8cba4ea7a93cec5b02a63fa78f9}{Py\+Method\+\_\+\+Check}}(op)~((op)-\/$>$ob\+\_\+type == \&\mbox{\hyperlink{classobject_8h_a5bf45b259a4512eb3982d412f11a98d1}{Py\+Method\+\_\+\+Type}})
+\item 
+\#define \mbox{\hyperlink{classobject_8h_a6194904d6c037fdd5abc712129c82495}{Py\+Method\+\_\+\+G\+E\+T\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}(meth)~(((\mbox{\hyperlink{struct_py_method_object}{Py\+Method\+Object}} $\ast$)meth) -\/$>$ im\+\_\+func)
+\item 
+\#define \mbox{\hyperlink{classobject_8h_a7d13ba295e5e7e63f65e11b34648370f}{Py\+Method\+\_\+\+G\+E\+T\+\_\+\+S\+E\+LF}}(meth)~(((\mbox{\hyperlink{struct_py_method_object}{Py\+Method\+Object}} $\ast$)meth) -\/$>$ im\+\_\+self)
+\item 
+\#define \mbox{\hyperlink{classobject_8h_a4cdd6a07bf98106c93afd9478ea8d746}{Py\+Method\+\_\+\+G\+E\+T\+\_\+\+C\+L\+A\+SS}}(meth)~(((\mbox{\hyperlink{struct_py_method_object}{Py\+Method\+Object}} $\ast$)meth) -\/$>$ im\+\_\+class)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classobject_8h_add8d249d069eed2ff4a44c7e5248c3e2}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Class\+\_\+\+Type
+\item 
+\mbox{\hyperlink{classobject_8h_a3a14e7257948f9f4b3be95467ee66da4}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Class\+\_\+\+New(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$
+\item 
+\mbox{\hyperlink{classobject_8h_ac218189cafe43e1df913fdac64ca4dcc}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Class\+\_\+\+Is\+Subclass(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classobject_8h_a9d44d0f345cd0d39a29f5a78afad55aa}{Py\+Instance\+\_\+\+Type}}
+\item 
+\mbox{\hyperlink{classobject_8h_a5bf45b259a4512eb3982d412f11a98d1}{Py\+Method\+\_\+\+Type}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{classobject_8h_ab3978d96531ad97f1c3139b11f771f98}{name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{classobject_8h_a0bb58ace8f169cff796ada045ba79b79}\label{classobject_8h_a0bb58ace8f169cff796ada045ba79b79}} 
+\index{classobject.h@{classobject.h}!PyClass\_Check@{PyClass\_Check}}
+\index{PyClass\_Check@{PyClass\_Check}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyClass\_Check}{PyClass\_Check}}
+{\footnotesize\ttfamily \#define Py\+Class\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~((op)-\/$>$ob\+\_\+type == \&Py\+Class\+\_\+\+Type)}
+
+\mbox{\Hypertarget{classobject_8h_a3cae225d35c99d2a3e146031eac1f636}\label{classobject_8h_a3cae225d35c99d2a3e146031eac1f636}} 
+\index{classobject.h@{classobject.h}!PyInstance\_Check@{PyInstance\_Check}}
+\index{PyInstance\_Check@{PyInstance\_Check}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyInstance\_Check}{PyInstance\_Check}}
+{\footnotesize\ttfamily \#define Py\+Instance\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~((op)-\/$>$ob\+\_\+type == \&\mbox{\hyperlink{classobject_8h_a9d44d0f345cd0d39a29f5a78afad55aa}{Py\+Instance\+\_\+\+Type}})}
+
+\mbox{\Hypertarget{classobject_8h_a416dc8cba4ea7a93cec5b02a63fa78f9}\label{classobject_8h_a416dc8cba4ea7a93cec5b02a63fa78f9}} 
+\index{classobject.h@{classobject.h}!PyMethod\_Check@{PyMethod\_Check}}
+\index{PyMethod\_Check@{PyMethod\_Check}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyMethod\_Check}{PyMethod\_Check}}
+{\footnotesize\ttfamily \#define Py\+Method\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~((op)-\/$>$ob\+\_\+type == \&\mbox{\hyperlink{classobject_8h_a5bf45b259a4512eb3982d412f11a98d1}{Py\+Method\+\_\+\+Type}})}
+
+\mbox{\Hypertarget{classobject_8h_a4cdd6a07bf98106c93afd9478ea8d746}\label{classobject_8h_a4cdd6a07bf98106c93afd9478ea8d746}} 
+\index{classobject.h@{classobject.h}!PyMethod\_GET\_CLASS@{PyMethod\_GET\_CLASS}}
+\index{PyMethod\_GET\_CLASS@{PyMethod\_GET\_CLASS}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyMethod\_GET\_CLASS}{PyMethod\_GET\_CLASS}}
+{\footnotesize\ttfamily \#define Py\+Method\+\_\+\+G\+E\+T\+\_\+\+C\+L\+A\+SS(\begin{DoxyParamCaption}\item[{}]{meth }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_method_object}{Py\+Method\+Object}} $\ast$)meth) -\/$>$ im\+\_\+class)}
+
+\mbox{\Hypertarget{classobject_8h_a6194904d6c037fdd5abc712129c82495}\label{classobject_8h_a6194904d6c037fdd5abc712129c82495}} 
+\index{classobject.h@{classobject.h}!PyMethod\_GET\_FUNCTION@{PyMethod\_GET\_FUNCTION}}
+\index{PyMethod\_GET\_FUNCTION@{PyMethod\_GET\_FUNCTION}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyMethod\_GET\_FUNCTION}{PyMethod\_GET\_FUNCTION}}
+{\footnotesize\ttfamily \#define Py\+Method\+\_\+\+G\+E\+T\+\_\+\+F\+U\+N\+C\+T\+I\+ON(\begin{DoxyParamCaption}\item[{}]{meth }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_method_object}{Py\+Method\+Object}} $\ast$)meth) -\/$>$ im\+\_\+func)}
+
+\mbox{\Hypertarget{classobject_8h_a7d13ba295e5e7e63f65e11b34648370f}\label{classobject_8h_a7d13ba295e5e7e63f65e11b34648370f}} 
+\index{classobject.h@{classobject.h}!PyMethod\_GET\_SELF@{PyMethod\_GET\_SELF}}
+\index{PyMethod\_GET\_SELF@{PyMethod\_GET\_SELF}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyMethod\_GET\_SELF}{PyMethod\_GET\_SELF}}
+{\footnotesize\ttfamily \#define Py\+Method\+\_\+\+G\+E\+T\+\_\+\+S\+E\+LF(\begin{DoxyParamCaption}\item[{}]{meth }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_method_object}{Py\+Method\+Object}} $\ast$)meth) -\/$>$ im\+\_\+self)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{classobject_8h_add8d249d069eed2ff4a44c7e5248c3e2}\label{classobject_8h_add8d249d069eed2ff4a44c7e5248c3e2}} 
+\index{classobject.h@{classobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobject_8h_a3a14e7257948f9f4b3be95467ee66da4}\label{classobject_8h_a3a14e7257948f9f4b3be95467ee66da4}} 
+\index{classobject.h@{classobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobject_8h_ac218189cafe43e1df913fdac64ca4dcc}\label{classobject_8h_ac218189cafe43e1df913fdac64ca4dcc}} 
+\index{classobject.h@{classobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{classobject_8h_ab3978d96531ad97f1c3139b11f771f98}\label{classobject_8h_ab3978d96531ad97f1c3139b11f771f98}} 
+\index{classobject.h@{classobject.h}!name@{name}}
+\index{name@{name}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \mbox{\hyperlink{structname}{name}}}
+
+\mbox{\Hypertarget{classobject_8h_a9d44d0f345cd0d39a29f5a78afad55aa}\label{classobject_8h_a9d44d0f345cd0d39a29f5a78afad55aa}} 
+\index{classobject.h@{classobject.h}!PyInstance\_Type@{PyInstance\_Type}}
+\index{PyInstance\_Type@{PyInstance\_Type}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyInstance\_Type}{PyInstance\_Type}}
+{\footnotesize\ttfamily Py\+Instance\+\_\+\+Type}
+
+\mbox{\Hypertarget{classobject_8h_a5bf45b259a4512eb3982d412f11a98d1}\label{classobject_8h_a5bf45b259a4512eb3982d412f11a98d1}} 
+\index{classobject.h@{classobject.h}!PyMethod\_Type@{PyMethod\_Type}}
+\index{PyMethod\_Type@{PyMethod\_Type}!classobject.h@{classobject.h}}
+\subsubsection{\texorpdfstring{PyMethod\_Type}{PyMethod\_Type}}
+{\footnotesize\ttfamily Py\+Method\+\_\+\+Type}
+

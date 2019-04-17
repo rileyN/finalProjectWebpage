@@ -1,0 +1,99 @@
+\hypertarget{namespacetest__local__bindings}{}\section{test\+\_\+local\+\_\+bindings Namespace Reference}
+\label{namespacetest__local__bindings}\index{test\_local\_bindings@{test\_local\_bindings}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a74879937e35258fb5bb64e0c54123958}{test\+\_\+load\+\_\+external}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a4049ee495a07c69bf03d37d6d77259d1}{test\+\_\+local\+\_\+bindings}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a0f2dc6fa85f74e8b754696aa20f68681}{test\+\_\+nonlocal\+\_\+failure}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a641060e93ec6852ee97d786e47fc78e9}{test\+\_\+duplicate\+\_\+local}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_acad0e8cde4bdc9fd13a5d4c938e23e6f}{test\+\_\+stl\+\_\+bind\+\_\+local}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a93862ca3bfbed9b8ff63680dc7910593}{test\+\_\+stl\+\_\+bind\+\_\+global}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a23ac750737cd60717eac38fa84b0e2c2}{test\+\_\+mixed\+\_\+local\+\_\+global}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a07fe6fdd4ccaa3697563f193a9b0fcd1}{test\+\_\+internal\+\_\+locals\+\_\+differ}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_ad5623f08ba98a36b99196b9461a0d1ca}{test\+\_\+stl\+\_\+caster\+\_\+vs\+\_\+stl\+\_\+bind}} (msg)
+\item 
+def \mbox{\hyperlink{namespacetest__local__bindings_a26bfc5189a484ce000784c5c3a095940}{test\+\_\+cross\+\_\+module\+\_\+calls}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacetest__local__bindings_a26bfc5189a484ce000784c5c3a095940}\label{namespacetest__local__bindings_a26bfc5189a484ce000784c5c3a095940}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_cross\_module\_calls@{test\_cross\_module\_calls}}
+\index{test\_cross\_module\_calls@{test\_cross\_module\_calls}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_cross\_module\_calls()}{test\_cross\_module\_calls()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+cross\+\_\+module\+\_\+calls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetest__local__bindings_a641060e93ec6852ee97d786e47fc78e9}\label{namespacetest__local__bindings_a641060e93ec6852ee97d786e47fc78e9}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_duplicate\_local@{test\_duplicate\_local}}
+\index{test\_duplicate\_local@{test\_duplicate\_local}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_duplicate\_local()}{test\_duplicate\_local()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+duplicate\+\_\+local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests expected failure when registering a class twice with py::local in the same module\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__local__bindings_a07fe6fdd4ccaa3697563f193a9b0fcd1}\label{namespacetest__local__bindings_a07fe6fdd4ccaa3697563f193a9b0fcd1}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_internal\_locals\_differ@{test\_internal\_locals\_differ}}
+\index{test\_internal\_locals\_differ@{test\_internal\_locals\_differ}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_internal\_locals\_differ()}{test\_internal\_locals\_differ()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+internal\+\_\+locals\+\_\+differ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes sure the internal local type map differs across the two modules\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__local__bindings_a74879937e35258fb5bb64e0c54123958}\label{namespacetest__local__bindings_a74879937e35258fb5bb64e0c54123958}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_load\_external@{test\_load\_external}}
+\index{test\_load\_external@{test\_load\_external}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_load\_external()}{test\_load\_external()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+load\+\_\+external (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load a `py::module_local` type that's only registered in an external module\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__local__bindings_a4049ee495a07c69bf03d37d6d77259d1}\label{namespacetest__local__bindings_a4049ee495a07c69bf03d37d6d77259d1}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_local\_bindings@{test\_local\_bindings}}
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_local\_bindings()}{test\_local\_bindings()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+local\+\_\+bindings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests that duplicate `py::module_local` class bindings work across modules\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__local__bindings_a23ac750737cd60717eac38fa84b0e2c2}\label{namespacetest__local__bindings_a23ac750737cd60717eac38fa84b0e2c2}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_mixed\_local\_global@{test\_mixed\_local\_global}}
+\index{test\_mixed\_local\_global@{test\_mixed\_local\_global}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_mixed\_local\_global()}{test\_mixed\_local\_global()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+mixed\+\_\+local\+\_\+global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Local types take precedence over globally registered types: a module with a `module_local`
+type can be registered even if the type is already registered globally.  With the module,
+casting will go to the local type; outside the module casting goes to the global type.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__local__bindings_a0f2dc6fa85f74e8b754696aa20f68681}\label{namespacetest__local__bindings_a0f2dc6fa85f74e8b754696aa20f68681}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_nonlocal\_failure@{test\_nonlocal\_failure}}
+\index{test\_nonlocal\_failure@{test\_nonlocal\_failure}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_nonlocal\_failure()}{test\_nonlocal\_failure()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+nonlocal\+\_\+failure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests that attempting to register a non-local type in multiple modules fails\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__local__bindings_a93862ca3bfbed9b8ff63680dc7910593}\label{namespacetest__local__bindings_a93862ca3bfbed9b8ff63680dc7910593}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_stl\_bind\_global@{test\_stl\_bind\_global}}
+\index{test\_stl\_bind\_global@{test\_stl\_bind\_global}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_stl\_bind\_global()}{test\_stl\_bind\_global()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+stl\+\_\+bind\+\_\+global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetest__local__bindings_acad0e8cde4bdc9fd13a5d4c938e23e6f}\label{namespacetest__local__bindings_acad0e8cde4bdc9fd13a5d4c938e23e6f}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_stl\_bind\_local@{test\_stl\_bind\_local}}
+\index{test\_stl\_bind\_local@{test\_stl\_bind\_local}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_stl\_bind\_local()}{test\_stl\_bind\_local()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+stl\+\_\+bind\+\_\+local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetest__local__bindings_ad5623f08ba98a36b99196b9461a0d1ca}\label{namespacetest__local__bindings_ad5623f08ba98a36b99196b9461a0d1ca}} 
+\index{test\_local\_bindings@{test\_local\_bindings}!test\_stl\_caster\_vs\_stl\_bind@{test\_stl\_caster\_vs\_stl\_bind}}
+\index{test\_stl\_caster\_vs\_stl\_bind@{test\_stl\_caster\_vs\_stl\_bind}!test\_local\_bindings@{test\_local\_bindings}}
+\subsubsection{\texorpdfstring{test\_stl\_caster\_vs\_stl\_bind()}{test\_stl\_caster\_vs\_stl\_bind()}}
+{\footnotesize\ttfamily def test\+\_\+local\+\_\+bindings.\+test\+\_\+stl\+\_\+caster\+\_\+vs\+\_\+stl\+\_\+bind (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}One module uses a generic vector caster from `<pybind11/stl.h>` while the other
+exports `std::vector<int>` via `py:bind_vector` and `py::module_local`\end{DoxyVerb}
+ 

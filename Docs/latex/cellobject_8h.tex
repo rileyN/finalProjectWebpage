@@ -1,0 +1,67 @@
+\hypertarget{cellobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/cellobject.h File Reference}
+\label{cellobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/cellobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/cellobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_cell_object}{Py\+Cell\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cellobject_8h_abd82a712916140ec1becd89ea0c8a7b2}{Py\+Cell\+\_\+\+Check}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Cell\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{cellobject_8h_aa3def8a27dc9ce4e800b91d83f596856}{Py\+Cell\+\_\+\+G\+ET}}(op)~(((\mbox{\hyperlink{struct_py_cell_object}{Py\+Cell\+Object}} $\ast$)(op))-\/$>$ob\+\_\+ref)
+\item 
+\#define \mbox{\hyperlink{cellobject_8h_a1b0139bdfcf55d9d560773088624753d}{Py\+Cell\+\_\+\+S\+ET}}(op,  \mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})~(((\mbox{\hyperlink{struct_py_cell_object}{Py\+Cell\+Object}} $\ast$)(op))-\/$>$ob\+\_\+ref = \mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cellobject_8h_aa2b38a2a1b3f0c4e1a50aa0a65a0578d}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Cell\+\_\+\+Type
+\item 
+\mbox{\hyperlink{cellobject_8h_a368c94171dcbf62bde443f23173e54d2}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Cell\+\_\+\+New(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{cellobject_8h_aeabc93fcc01b961c34774572c9fd1762}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+Cell\+\_\+\+Set(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{cellobject_8h_abd82a712916140ec1becd89ea0c8a7b2}\label{cellobject_8h_abd82a712916140ec1becd89ea0c8a7b2}} 
+\index{cellobject.h@{cellobject.h}!PyCell\_Check@{PyCell\_Check}}
+\index{PyCell\_Check@{PyCell\_Check}!cellobject.h@{cellobject.h}}
+\subsubsection{\texorpdfstring{PyCell\_Check}{PyCell\_Check}}
+{\footnotesize\ttfamily \#define Py\+Cell\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Cell\+\_\+\+Type)}
+
+\mbox{\Hypertarget{cellobject_8h_aa3def8a27dc9ce4e800b91d83f596856}\label{cellobject_8h_aa3def8a27dc9ce4e800b91d83f596856}} 
+\index{cellobject.h@{cellobject.h}!PyCell\_GET@{PyCell\_GET}}
+\index{PyCell\_GET@{PyCell\_GET}!cellobject.h@{cellobject.h}}
+\subsubsection{\texorpdfstring{PyCell\_GET}{PyCell\_GET}}
+{\footnotesize\ttfamily \#define Py\+Cell\+\_\+\+G\+ET(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_cell_object}{Py\+Cell\+Object}} $\ast$)(op))-\/$>$ob\+\_\+ref)}
+
+\mbox{\Hypertarget{cellobject_8h_a1b0139bdfcf55d9d560773088624753d}\label{cellobject_8h_a1b0139bdfcf55d9d560773088624753d}} 
+\index{cellobject.h@{cellobject.h}!PyCell\_SET@{PyCell\_SET}}
+\index{PyCell\_SET@{PyCell\_SET}!cellobject.h@{cellobject.h}}
+\subsubsection{\texorpdfstring{PyCell\_SET}{PyCell\_SET}}
+{\footnotesize\ttfamily \#define Py\+Cell\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_cell_object}{Py\+Cell\+Object}} $\ast$)(op))-\/$>$ob\+\_\+ref = \mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{cellobject_8h_aa2b38a2a1b3f0c4e1a50aa0a65a0578d}\label{cellobject_8h_aa2b38a2a1b3f0c4e1a50aa0a65a0578d}} 
+\index{cellobject.h@{cellobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!cellobject.h@{cellobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cellobject_8h_a368c94171dcbf62bde443f23173e54d2}\label{cellobject_8h_a368c94171dcbf62bde443f23173e54d2}} 
+\index{cellobject.h@{cellobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!cellobject.h@{cellobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cellobject_8h_aeabc93fcc01b961c34774572c9fd1762}\label{cellobject_8h_aeabc93fcc01b961c34774572c9fd1762}} 
+\index{cellobject.h@{cellobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!cellobject.h@{cellobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+

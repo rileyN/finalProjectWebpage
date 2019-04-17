@@ -1,0 +1,177 @@
+\hypertarget{struct_py_expat___c_a_p_i}{}\section{Py\+Expat\+\_\+\+C\+A\+PI Struct Reference}
+\label{struct_py_expat___c_a_p_i}\index{PyExpat\_CAPI@{PyExpat\_CAPI}}
+
+
+{\ttfamily \#include $<$pyexpat.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a30fce229975c2354354560dd2e906dc3}{magic}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct_py_expat___c_a_p_i_af92677867a91271e628f211a96c9b5df}{size}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct_py_expat___c_a_p_i_a584f37c57c8604474f31abda36f06055}{M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct_py_expat___c_a_p_i_a4254d96093f733cbed41fded6308b334}{M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct_py_expat___c_a_p_i_abd706f536a4b44a93c5207a7e568ce9a}{M\+I\+C\+R\+O\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\item 
+const X\+M\+L\+\_\+\+L\+Char $\ast$($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_af7c49b4a394f57108377beb4690ccdf9}{Error\+String}} )(enum X\+M\+L\+\_\+\+Error code)
+\item 
+enum X\+M\+L\+\_\+\+Error($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_ae4ba4b470a4d80ba107c556eada59492}{Get\+Error\+Code}} )(X\+M\+L\+\_\+\+Parser parser)
+\item 
+X\+M\+L\+\_\+\+Size($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a52fccb9618f4a0db6c6a5ef8f799f4f7}{Get\+Error\+Column\+Number}} )(X\+M\+L\+\_\+\+Parser parser)
+\item 
+X\+M\+L\+\_\+\+Size($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a238c98224fe4c4761527fdb823e565cd}{Get\+Error\+Line\+Number}} )(X\+M\+L\+\_\+\+Parser parser)
+\item 
+enum X\+M\+L\+\_\+\+Status($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a7d1e36f41cf7327ea479886dadb31321}{Parse}} )(X\+M\+L\+\_\+\+Parser parser, const char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} is\+Final)
+\item 
+X\+M\+L\+\_\+\+Parser($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_abb499eb0db9d22b485ed45be20100bd9}{Parser\+Create\+\_\+\+MM}} )(const X\+M\+L\+\_\+\+Char $\ast$\mbox{\hyperlink{stringobject_8h_a8bf289d3d3f54f840150ecab442b16b1}{encoding}}, const X\+M\+L\+\_\+\+Memory\+\_\+\+Handling\+\_\+\+Suite $\ast$memsuite, const X\+M\+L\+\_\+\+Char $\ast$namespace\+Separator)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a6f02d5578475c187cc6e187a15308eba}{Parser\+Free}} )(X\+M\+L\+\_\+\+Parser parser)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a7440612167b3fa8089d41411a0904409}{Set\+Character\+Data\+Handler}} )(X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Character\+Data\+Handler handler)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a9199d4d4f57dda08f2e798351cdbb7ab}{Set\+Comment\+Handler}} )(X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Comment\+Handler handler)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a0bee5d83ab5e9eb578ffb92cd60f8043}{Set\+Default\+Handler\+Expand}} )(X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Default\+Handler handler)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a53fc65a60b9dae1d652221e2dfdeb4d0}{Set\+Element\+Handler}} )(X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Start\+Element\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_ac55adc720a3098c1b454d2a4647f4361}{start}}, X\+M\+L\+\_\+\+End\+Element\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_ad9e94c45149136ca717b975acc06a127}{Set\+Namespace\+Decl\+Handler}} )(X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Start\+Namespace\+Decl\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_ac55adc720a3098c1b454d2a4647f4361}{start}}, X\+M\+L\+\_\+\+End\+Namespace\+Decl\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}})
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a215cc650811061dac3193bcb2c3473db}{Set\+Processing\+Instruction\+Handler}} )(X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Processing\+Instruction\+Handler handler)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a0e096e97c2371eb148a6af3916cbba8d}{Set\+Unknown\+Encoding\+Handler}} )(X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Unknown\+Encoding\+Handler handler, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$encoding\+Handler\+Data)
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{struct_py_expat___c_a_p_i_a43b5bc9b3ec3772d9edb2295e9a54489}{Set\+User\+Data}} )(X\+M\+L\+\_\+\+Parser parser, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$user\+Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_af7c49b4a394f57108377beb4690ccdf9}\label{struct_py_expat___c_a_p_i_af7c49b4a394f57108377beb4690ccdf9}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!ErrorString@{ErrorString}}
+\index{ErrorString@{ErrorString}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{ErrorString}{ErrorString}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+L\+Char$\ast$($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Error\+String) (enum X\+M\+L\+\_\+\+Error code)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_ae4ba4b470a4d80ba107c556eada59492}\label{struct_py_expat___c_a_p_i_ae4ba4b470a4d80ba107c556eada59492}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!GetErrorCode@{GetErrorCode}}
+\index{GetErrorCode@{GetErrorCode}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{GetErrorCode}{GetErrorCode}}
+{\footnotesize\ttfamily enum X\+M\+L\+\_\+\+Error($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Get\+Error\+Code) (X\+M\+L\+\_\+\+Parser parser)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a52fccb9618f4a0db6c6a5ef8f799f4f7}\label{struct_py_expat___c_a_p_i_a52fccb9618f4a0db6c6a5ef8f799f4f7}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!GetErrorColumnNumber@{GetErrorColumnNumber}}
+\index{GetErrorColumnNumber@{GetErrorColumnNumber}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{GetErrorColumnNumber}{GetErrorColumnNumber}}
+{\footnotesize\ttfamily X\+M\+L\+\_\+\+Size($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Get\+Error\+Column\+Number) (X\+M\+L\+\_\+\+Parser parser)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a238c98224fe4c4761527fdb823e565cd}\label{struct_py_expat___c_a_p_i_a238c98224fe4c4761527fdb823e565cd}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!GetErrorLineNumber@{GetErrorLineNumber}}
+\index{GetErrorLineNumber@{GetErrorLineNumber}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{GetErrorLineNumber}{GetErrorLineNumber}}
+{\footnotesize\ttfamily X\+M\+L\+\_\+\+Size($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Get\+Error\+Line\+Number) (X\+M\+L\+\_\+\+Parser parser)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a30fce229975c2354354560dd2e906dc3}\label{struct_py_expat___c_a_p_i_a30fce229975c2354354560dd2e906dc3}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!magic@{magic}}
+\index{magic@{magic}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{magic}{magic}}
+{\footnotesize\ttfamily char$\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::magic}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a584f37c57c8604474f31abda36f06055}\label{struct_py_expat___c_a_p_i_a584f37c57c8604474f31abda36f06055}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!MAJOR\_VERSION@{MAJOR\_VERSION}}
+\index{MAJOR\_VERSION@{MAJOR\_VERSION}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{MAJOR\_VERSION}{MAJOR\_VERSION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_abd706f536a4b44a93c5207a7e568ce9a}\label{struct_py_expat___c_a_p_i_abd706f536a4b44a93c5207a7e568ce9a}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!MICRO\_VERSION@{MICRO\_VERSION}}
+\index{MICRO\_VERSION@{MICRO\_VERSION}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{MICRO\_VERSION}{MICRO\_VERSION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+M\+I\+C\+R\+O\+\_\+\+V\+E\+R\+S\+I\+ON}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a4254d96093f733cbed41fded6308b334}\label{struct_py_expat___c_a_p_i_a4254d96093f733cbed41fded6308b334}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!MINOR\_VERSION@{MINOR\_VERSION}}
+\index{MINOR\_VERSION@{MINOR\_VERSION}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{MINOR\_VERSION}{MINOR\_VERSION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a7d1e36f41cf7327ea479886dadb31321}\label{struct_py_expat___c_a_p_i_a7d1e36f41cf7327ea479886dadb31321}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!Parse@{Parse}}
+\index{Parse@{Parse}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{Parse}{Parse}}
+{\footnotesize\ttfamily enum X\+M\+L\+\_\+\+Status($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Parse) (X\+M\+L\+\_\+\+Parser parser, const char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} is\+Final)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_abb499eb0db9d22b485ed45be20100bd9}\label{struct_py_expat___c_a_p_i_abb499eb0db9d22b485ed45be20100bd9}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!ParserCreate\_MM@{ParserCreate\_MM}}
+\index{ParserCreate\_MM@{ParserCreate\_MM}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{ParserCreate\_MM}{ParserCreate\_MM}}
+{\footnotesize\ttfamily X\+M\+L\+\_\+\+Parser($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Parser\+Create\+\_\+\+MM) (const X\+M\+L\+\_\+\+Char $\ast$\mbox{\hyperlink{stringobject_8h_a8bf289d3d3f54f840150ecab442b16b1}{encoding}}, const X\+M\+L\+\_\+\+Memory\+\_\+\+Handling\+\_\+\+Suite $\ast$memsuite, const X\+M\+L\+\_\+\+Char $\ast$namespace\+Separator)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a6f02d5578475c187cc6e187a15308eba}\label{struct_py_expat___c_a_p_i_a6f02d5578475c187cc6e187a15308eba}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!ParserFree@{ParserFree}}
+\index{ParserFree@{ParserFree}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{ParserFree}{ParserFree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Parser\+Free) (X\+M\+L\+\_\+\+Parser parser)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a7440612167b3fa8089d41411a0904409}\label{struct_py_expat___c_a_p_i_a7440612167b3fa8089d41411a0904409}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetCharacterDataHandler@{SetCharacterDataHandler}}
+\index{SetCharacterDataHandler@{SetCharacterDataHandler}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetCharacterDataHandler}{SetCharacterDataHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+Character\+Data\+Handler) (X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Character\+Data\+Handler handler)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a9199d4d4f57dda08f2e798351cdbb7ab}\label{struct_py_expat___c_a_p_i_a9199d4d4f57dda08f2e798351cdbb7ab}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetCommentHandler@{SetCommentHandler}}
+\index{SetCommentHandler@{SetCommentHandler}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetCommentHandler}{SetCommentHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+Comment\+Handler) (X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Comment\+Handler handler)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a0bee5d83ab5e9eb578ffb92cd60f8043}\label{struct_py_expat___c_a_p_i_a0bee5d83ab5e9eb578ffb92cd60f8043}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetDefaultHandlerExpand@{SetDefaultHandlerExpand}}
+\index{SetDefaultHandlerExpand@{SetDefaultHandlerExpand}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetDefaultHandlerExpand}{SetDefaultHandlerExpand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+Default\+Handler\+Expand) (X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Default\+Handler handler)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a53fc65a60b9dae1d652221e2dfdeb4d0}\label{struct_py_expat___c_a_p_i_a53fc65a60b9dae1d652221e2dfdeb4d0}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetElementHandler@{SetElementHandler}}
+\index{SetElementHandler@{SetElementHandler}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetElementHandler}{SetElementHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+Element\+Handler) (X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Start\+Element\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_ac55adc720a3098c1b454d2a4647f4361}{start}}, X\+M\+L\+\_\+\+End\+Element\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}})}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_ad9e94c45149136ca717b975acc06a127}\label{struct_py_expat___c_a_p_i_ad9e94c45149136ca717b975acc06a127}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetNamespaceDeclHandler@{SetNamespaceDeclHandler}}
+\index{SetNamespaceDeclHandler@{SetNamespaceDeclHandler}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetNamespaceDeclHandler}{SetNamespaceDeclHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+Namespace\+Decl\+Handler) (X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Start\+Namespace\+Decl\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_ac55adc720a3098c1b454d2a4647f4361}{start}}, X\+M\+L\+\_\+\+End\+Namespace\+Decl\+Handler \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}})}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a215cc650811061dac3193bcb2c3473db}\label{struct_py_expat___c_a_p_i_a215cc650811061dac3193bcb2c3473db}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetProcessingInstructionHandler@{SetProcessingInstructionHandler}}
+\index{SetProcessingInstructionHandler@{SetProcessingInstructionHandler}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetProcessingInstructionHandler}{SetProcessingInstructionHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+Processing\+Instruction\+Handler) (X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Processing\+Instruction\+Handler handler)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a0e096e97c2371eb148a6af3916cbba8d}\label{struct_py_expat___c_a_p_i_a0e096e97c2371eb148a6af3916cbba8d}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetUnknownEncodingHandler@{SetUnknownEncodingHandler}}
+\index{SetUnknownEncodingHandler@{SetUnknownEncodingHandler}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetUnknownEncodingHandler}{SetUnknownEncodingHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+Unknown\+Encoding\+Handler) (X\+M\+L\+\_\+\+Parser parser, X\+M\+L\+\_\+\+Unknown\+Encoding\+Handler handler, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$encoding\+Handler\+Data)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_a43b5bc9b3ec3772d9edb2295e9a54489}\label{struct_py_expat___c_a_p_i_a43b5bc9b3ec3772d9edb2295e9a54489}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!SetUserData@{SetUserData}}
+\index{SetUserData@{SetUserData}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{SetUserData}{SetUserData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Py\+Expat\+\_\+\+C\+A\+P\+I\+::\+Set\+User\+Data) (X\+M\+L\+\_\+\+Parser parser, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$user\+Data)}
+
+\mbox{\Hypertarget{struct_py_expat___c_a_p_i_af92677867a91271e628f211a96c9b5df}\label{struct_py_expat___c_a_p_i_af92677867a91271e628f211a96c9b5df}} 
+\index{PyExpat\_CAPI@{PyExpat\_CAPI}!size@{size}}
+\index{size@{size}!PyExpat\_CAPI@{PyExpat\_CAPI}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Py\+Expat\+\_\+\+C\+A\+P\+I\+::size}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/\mbox{\hyperlink{pyexpat_8h}{pyexpat.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,156 @@
+\hypertarget{descr_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/include/pybind11/detail/descr.h File Reference}
+\label{descr_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/include/pybind11/detail/descr.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/include/pybind11/detail/descr.h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdescr}{descr$<$ N, Ts $>$}}
+\item 
+struct \mbox{\hyperlink{structint__to__str}{int\+\_\+to\+\_\+str$<$ Rem, Digits $>$}}
+\item 
+struct \mbox{\hyperlink{structint__to__str_3_010_00_01_digits_8_8_8_01_4}{int\+\_\+to\+\_\+str$<$ 0, Digits... $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{descr_8h_a1fa473d16c54256f9e61a9960f6fb5fd}{P\+Y\+B\+I\+N\+D11\+\_\+\+D\+E\+S\+C\+R\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}}~static constexpr
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N1, size\+\_\+t N2, typename... Ts1, typename... Ts2, size\+\_\+t... Is1, size\+\_\+t... Is2$>$ }\\constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ N1+N2, Ts1..., Ts2... $>$ \mbox{\hyperlink{descr_8h_a9517bdfea9123a01fe30ad0653359279}{plus\+\_\+impl}} (const \mbox{\hyperlink{structdescr}{descr}}$<$ N1, Ts1... $>$ \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{structdescr}{descr}}$<$ N2, Ts2... $>$ \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is1... $>$, \mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is2... $>$)
+\item 
+{\footnotesize template$<$size\+\_\+t N1, size\+\_\+t N2, typename... Ts1, typename... Ts2$>$ }\\constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ N1+N2, Ts1..., Ts2... $>$ \mbox{\hyperlink{descr_8h_a4e1a48946b4418f27dd7a578fb14f2c8}{operator+}} (const \mbox{\hyperlink{structdescr}{descr}}$<$ N1, Ts1... $>$ \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}, const \mbox{\hyperlink{structdescr}{descr}}$<$ N2, Ts2... $>$ \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}})
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ N -\/ 1 $>$ \mbox{\hyperlink{descr_8h_add5205764fa4a870d1bde12121077db1}{\+\_\+}} (char const(\&text)\mbox{[}N\mbox{]})
+\item 
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ 0 $>$ \mbox{\hyperlink{descr_8h_ab65f6f155fb4f031d37d069c066d3d39}{\+\_\+}} (char const(\&)\mbox{[}1\mbox{]})
+\item 
+{\footnotesize template$<$bool B, size\+\_\+t N1, size\+\_\+t N2$>$ }\\constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$ \mbox{\hyperlink{struct_b}{B}}, \mbox{\hyperlink{structdescr}{descr}}$<$ N1 -\/ 1 $>$ $>$ \mbox{\hyperlink{descr_8h_a37fc02624ff276d4c4082efffedf25f0}{\+\_\+}} (char const(\&text1)\mbox{[}N1\mbox{]}, char const(\&)\mbox{[}N2\mbox{]})
+\item 
+{\footnotesize template$<$bool B, size\+\_\+t N1, size\+\_\+t N2$>$ }\\constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$!\mbox{\hyperlink{struct_b}{B}}, \mbox{\hyperlink{structdescr}{descr}}$<$ N2 -\/ 1 $>$ $>$ \mbox{\hyperlink{descr_8h_a9b8e08afc5b5e7406b536fa40672ffc5}{\+\_\+}} (char const(\&)\mbox{[}N1\mbox{]}, char const(\&text2)\mbox{[}N2\mbox{]})
+\item 
+{\footnotesize template$<$bool B, typename T1 , typename T2 $>$ }\\constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$ \mbox{\hyperlink{struct_b}{B}}, T1 $>$ \mbox{\hyperlink{descr_8h_a1064793fbedfc6ca45736e7b68542ea1}{\+\_\+}} (const T1 \&\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}}, const T2 \&)
+\item 
+{\footnotesize template$<$bool B, typename T1 , typename T2 $>$ }\\constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$!\mbox{\hyperlink{struct_b}{B}}, T2 $>$ \mbox{\hyperlink{descr_8h_aa36067071e99c7102041a6a21361da4f}{\+\_\+}} (const T1 \&, const T2 \&\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}})
+\item 
+{\footnotesize template$<$size\+\_\+t Size$>$ }\\auto constexpr \mbox{\hyperlink{descr_8h_a3968aee856fae9aa07fe3ae7543e7b28}{\+\_\+}} () -\/$>$ decltype(\mbox{\hyperlink{structint__to__str}{int\+\_\+to\+\_\+str}}$<$ Size/10, Size \% 10 $>$\+::\mbox{\hyperlink{stringobject_8h_ad2f6480d654ec9190275a40948267323}{digits}})
+\item 
+{\footnotesize template$<$typename Type $>$ }\\constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ 1, Type $>$ \mbox{\hyperlink{descr_8h_af114703e20c6527e87163eb2798f74b8}{\+\_\+}} ()
+\item 
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ 0 $>$ \mbox{\hyperlink{descr_8h_a23d496e9859c7c9a498b055fb8fde10a}{concat}} ()
+\item 
+{\footnotesize template$<$size\+\_\+t N, typename... Ts$>$ }\\constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ N, Ts... $>$ \mbox{\hyperlink{descr_8h_a00bfcea5c4f6f2863d23b5315d1fc729}{concat}} (const \mbox{\hyperlink{structdescr}{descr}}$<$ N, Ts... $>$ \&\mbox{\hyperlink{structdescr}{descr}})
+\item 
+{\footnotesize template$<$size\+\_\+t N, typename... Ts, typename... Args$>$ }\\constexpr auto \mbox{\hyperlink{descr_8h_a0d8d147b3e705401458d3caec882e855}{concat}} (const \mbox{\hyperlink{structdescr}{descr}}$<$ N, Ts... $>$ \&\mbox{\hyperlink{pystrtod_8h_aebc55cdba1447f899efca30032620f9e}{d}}, const Args \&...\mbox{\hyperlink{classargs}{args}}) -\/$>$ decltype(std\+::declval$<$ \mbox{\hyperlink{structdescr}{descr}}$<$ N+2, Ts... $>$$>$()+concat(args...))
+\item 
+{\footnotesize template$<$size\+\_\+t N, typename... Ts$>$ }\\constexpr \mbox{\hyperlink{structdescr}{descr}}$<$ N+2, Ts... $>$ \mbox{\hyperlink{descr_8h_a65529edb79d0d99ef5b83524e2e0b0dc}{type\+\_\+descr}} (const \mbox{\hyperlink{structdescr}{descr}}$<$ N, Ts... $>$ \&\mbox{\hyperlink{structdescr}{descr}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{descr_8h_a1fa473d16c54256f9e61a9960f6fb5fd}\label{descr_8h_a1fa473d16c54256f9e61a9960f6fb5fd}} 
+\index{descr.h@{descr.h}!PYBIND11\_DESCR\_CONSTEXPR@{PYBIND11\_DESCR\_CONSTEXPR}}
+\index{PYBIND11\_DESCR\_CONSTEXPR@{PYBIND11\_DESCR\_CONSTEXPR}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{PYBIND11\_DESCR\_CONSTEXPR}{PYBIND11\_DESCR\_CONSTEXPR}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+D\+E\+S\+C\+R\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR~static constexpr}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{descr_8h_add5205764fa4a870d1bde12121077db1}\label{descr_8h_add5205764fa4a870d1bde12121077db1}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$N -\/ 1$>$ \+\_\+ (\begin{DoxyParamCaption}\item[{char const(\&)}]{text\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_ab65f6f155fb4f031d37d069c066d3d39}\label{descr_8h_ab65f6f155fb4f031d37d069c066d3d39}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structdescr}{descr}}$<$0$>$ \+\_\+ (\begin{DoxyParamCaption}\item[{char const }]{(\&)\mbox{[}1\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a37fc02624ff276d4c4082efffedf25f0}\label{descr_8h_a37fc02624ff276d4c4082efffedf25f0}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$bool B, size\+\_\+t N1, size\+\_\+t N2$>$ \\
+constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$\mbox{\hyperlink{struct_b}{B}}, \mbox{\hyperlink{structdescr}{descr}}$<$N1 -\/ 1$>$ $>$ \+\_\+ (\begin{DoxyParamCaption}\item[{char const(\&)}]{text1\mbox{[}\+N1\mbox{]},  }\item[{char const }]{(\&)\mbox{[}\+N2\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a9b8e08afc5b5e7406b536fa40672ffc5}\label{descr_8h_a9b8e08afc5b5e7406b536fa40672ffc5}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$bool B, size\+\_\+t N1, size\+\_\+t N2$>$ \\
+constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$!\mbox{\hyperlink{struct_b}{B}}, \mbox{\hyperlink{structdescr}{descr}}$<$N2 -\/ 1$>$ $>$ \+\_\+ (\begin{DoxyParamCaption}\item[{char const }]{(\&)\mbox{[}\+N1\mbox{]},  }\item[{char const(\&)}]{text2\mbox{[}\+N2\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a1064793fbedfc6ca45736e7b68542ea1}\label{descr_8h_a1064793fbedfc6ca45736e7b68542ea1}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$bool B, typename T1 , typename T2 $>$ \\
+constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$\mbox{\hyperlink{struct_b}{B}}, T1$>$ \+\_\+ (\begin{DoxyParamCaption}\item[{const T1 \&}]{d,  }\item[{const T2 \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_aa36067071e99c7102041a6a21361da4f}\label{descr_8h_aa36067071e99c7102041a6a21361da4f}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$bool B, typename T1 , typename T2 $>$ \\
+constexpr \mbox{\hyperlink{detail_2common_8h_a012819c9e8b5e04872a271f50f8b8196}{enable\+\_\+if\+\_\+t}}$<$!\mbox{\hyperlink{struct_b}{B}}, T2$>$ \+\_\+ (\begin{DoxyParamCaption}\item[{const T1 \&}]{,  }\item[{const T2 \&}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a3968aee856fae9aa07fe3ae7543e7b28}\label{descr_8h_a3968aee856fae9aa07fe3ae7543e7b28}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t Size$>$ \\
+auto constexpr \+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ decltype(\mbox{\hyperlink{structint__to__str}{int\+\_\+to\+\_\+str}}$<$Size / 10, Size \% 10$>$\+::\mbox{\hyperlink{stringobject_8h_ad2f6480d654ec9190275a40948267323}{digits}}) }
+
+\mbox{\Hypertarget{descr_8h_af114703e20c6527e87163eb2798f74b8}\label{descr_8h_af114703e20c6527e87163eb2798f74b8}} 
+\index{descr.h@{descr.h}!\_@{\_}}
+\index{\_@{\_}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{\_()}{\_()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$1, Type$>$ \+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a23d496e9859c7c9a498b055fb8fde10a}\label{descr_8h_a23d496e9859c7c9a498b055fb8fde10a}} 
+\index{descr.h@{descr.h}!concat@{concat}}
+\index{concat@{concat}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{concat()}{concat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structdescr}{descr}}$<$0$>$ concat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a00bfcea5c4f6f2863d23b5315d1fc729}\label{descr_8h_a00bfcea5c4f6f2863d23b5315d1fc729}} 
+\index{descr.h@{descr.h}!concat@{concat}}
+\index{concat@{concat}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{concat()}{concat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename... Ts$>$ \\
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$N, Ts...$>$ concat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdescr}{descr}}$<$ N, Ts... $>$ \&}]{descr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a0d8d147b3e705401458d3caec882e855}\label{descr_8h_a0d8d147b3e705401458d3caec882e855}} 
+\index{descr.h@{descr.h}!concat@{concat}}
+\index{concat@{concat}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{concat()}{concat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename... Ts, typename... Args$>$ \\
+constexpr auto concat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdescr}{descr}}$<$ N, Ts... $>$ \&}]{d,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption}) -\/$>$ decltype(std\+::declval$<$\mbox{\hyperlink{structdescr}{descr}}$<$N + 2, Ts...$>$$>$() + concat(args...)) }
+
+\mbox{\Hypertarget{descr_8h_a4e1a48946b4418f27dd7a578fb14f2c8}\label{descr_8h_a4e1a48946b4418f27dd7a578fb14f2c8}} 
+\index{descr.h@{descr.h}!operator+@{operator+}}
+\index{operator+@{operator+}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N1, size\+\_\+t N2, typename... Ts1, typename... Ts2$>$ \\
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$N1 + N2, Ts1..., Ts2...$>$ operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdescr}{descr}}$<$ N1, Ts1... $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{structdescr}{descr}}$<$ N2, Ts2... $>$ \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a9517bdfea9123a01fe30ad0653359279}\label{descr_8h_a9517bdfea9123a01fe30ad0653359279}} 
+\index{descr.h@{descr.h}!plus\_impl@{plus\_impl}}
+\index{plus\_impl@{plus\_impl}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{plus\_impl()}{plus\_impl()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N1, size\+\_\+t N2, typename... Ts1, typename... Ts2, size\+\_\+t... Is1, size\+\_\+t... Is2$>$ \\
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$N1 + N2, Ts1..., Ts2...$>$ plus\+\_\+impl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdescr}{descr}}$<$ N1, Ts1... $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{structdescr}{descr}}$<$ N2, Ts2... $>$ \&}]{b,  }\item[{\mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is1... $>$}]{,  }\item[{\mbox{\hyperlink{structindex__sequence}{index\+\_\+sequence}}$<$ Is2... $>$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{descr_8h_a65529edb79d0d99ef5b83524e2e0b0dc}\label{descr_8h_a65529edb79d0d99ef5b83524e2e0b0dc}} 
+\index{descr.h@{descr.h}!type\_descr@{type\_descr}}
+\index{type\_descr@{type\_descr}!descr.h@{descr.h}}
+\subsubsection{\texorpdfstring{type\_descr()}{type\_descr()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N, typename... Ts$>$ \\
+constexpr \mbox{\hyperlink{structdescr}{descr}}$<$N + 2, Ts...$>$ type\+\_\+descr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdescr}{descr}}$<$ N, Ts... $>$ \&}]{descr }\end{DoxyParamCaption})}
+

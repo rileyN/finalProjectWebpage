@@ -1,0 +1,90 @@
+\hypertarget{test__eigen_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+eigen.cpp File Reference}
+\label{test__eigen_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_eigen.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_eigen.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}constructor\+\_\+stats.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pybind11/eigen.\+h$>$}\newline
+{\ttfamily \#include $<$pybind11/stl.\+h$>$}\newline
+{\ttfamily \#include $<$Eigen/\+Cholesky$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_custom_operator_new}{Custom\+Operator\+New}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{test__eigen_8cpp_ad000448bbb67b188318a0c52792208e2}{Matrix\+XdR}} = Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, Eigen\+::\+Row\+Major $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename M $>$ }\\\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{test__eigen_8cpp_a8c5bbe5c5a601239679e79d21fae51a7}{reset\+\_\+ref}} (M \&\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+Eigen\+::\+Matrix\+Xd \& \mbox{\hyperlink{test__eigen_8cpp_a6bbf42c75a84df87ea0c40dd9e42cafe}{get\+\_\+cm}} ()
+\item 
+\mbox{\hyperlink{test__eigen_8cpp_ad000448bbb67b188318a0c52792208e2}{Matrix\+XdR}} \& \mbox{\hyperlink{test__eigen_8cpp_ab8dc7bea511b13738f3da263f1442abc}{get\+\_\+rm}} ()
+\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{test__eigen_8cpp_a98b269a71b425dad5642c5303633c4ea}{reset\+\_\+refs}} ()
+\item 
+double \mbox{\hyperlink{test__eigen_8cpp_ad9c1ed955e47a57daa9949d1b42c01c5}{get\+\_\+elem}} (Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+{\footnotesize template$<$typename Matrix\+Arg\+Type $>$ }\\Eigen\+::\+Matrix\+Xd \mbox{\hyperlink{test__eigen_8cpp_a59f1baa77e0cf70aa8967ee27f311244}{adjust\+\_\+matrix}} (Matrix\+Arg\+Type \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+\mbox{\hyperlink{test__eigen_8cpp_a836aa8b06a2fea99d8cea81688323510}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (eigen, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{test__eigen_8cpp_ad000448bbb67b188318a0c52792208e2}\label{test__eigen_8cpp_ad000448bbb67b188318a0c52792208e2}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!MatrixXdR@{MatrixXdR}}
+\index{MatrixXdR@{MatrixXdR}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{MatrixXdR}{MatrixXdR}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{test__eigen_8cpp_ad000448bbb67b188318a0c52792208e2}{Matrix\+XdR}} =  Eigen\+::\+Matrix$<$double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, Eigen\+::\+Row\+Major$>$}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__eigen_8cpp_a59f1baa77e0cf70aa8967ee27f311244}\label{test__eigen_8cpp_a59f1baa77e0cf70aa8967ee27f311244}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!adjust\_matrix@{adjust\_matrix}}
+\index{adjust\_matrix@{adjust\_matrix}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{adjust\_matrix()}{adjust\_matrix()}}
+{\footnotesize\ttfamily template$<$typename Matrix\+Arg\+Type $>$ \\
+Eigen\+::\+Matrix\+Xd adjust\+\_\+matrix (\begin{DoxyParamCaption}\item[{Matrix\+Arg\+Type}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__eigen_8cpp_a6bbf42c75a84df87ea0c40dd9e42cafe}\label{test__eigen_8cpp_a6bbf42c75a84df87ea0c40dd9e42cafe}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!get\_cm@{get\_cm}}
+\index{get\_cm@{get\_cm}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{get\_cm()}{get\_cm()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix\+Xd\& get\+\_\+cm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__eigen_8cpp_ad9c1ed955e47a57daa9949d1b42c01c5}\label{test__eigen_8cpp_ad9c1ed955e47a57daa9949d1b42c01c5}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!get\_elem@{get\_elem}}
+\index{get\_elem@{get\_elem}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{get\_elem()}{get\_elem()}}
+{\footnotesize\ttfamily double get\+\_\+elem (\begin{DoxyParamCaption}\item[{Eigen\+::\+Ref$<$ const Eigen\+::\+Matrix\+Xd $>$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__eigen_8cpp_ab8dc7bea511b13738f3da263f1442abc}\label{test__eigen_8cpp_ab8dc7bea511b13738f3da263f1442abc}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!get\_rm@{get\_rm}}
+\index{get\_rm@{get\_rm}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{get\_rm()}{get\_rm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{test__eigen_8cpp_ad000448bbb67b188318a0c52792208e2}{Matrix\+XdR}}\& get\+\_\+rm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__eigen_8cpp_a8c5bbe5c5a601239679e79d21fae51a7}\label{test__eigen_8cpp_a8c5bbe5c5a601239679e79d21fae51a7}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!reset\_ref@{reset\_ref}}
+\index{reset\_ref@{reset\_ref}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{reset\_ref()}{reset\_ref()}}
+{\footnotesize\ttfamily template$<$typename M $>$ \\
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} reset\+\_\+ref (\begin{DoxyParamCaption}\item[{M \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__eigen_8cpp_a98b269a71b425dad5642c5303633c4ea}\label{test__eigen_8cpp_a98b269a71b425dad5642c5303633c4ea}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!reset\_refs@{reset\_refs}}
+\index{reset\_refs@{reset\_refs}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{reset\_refs()}{reset\_refs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} reset\+\_\+refs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__eigen_8cpp_a836aa8b06a2fea99d8cea81688323510}\label{test__eigen_8cpp_a836aa8b06a2fea99d8cea81688323510}} 
+\index{test\_eigen.cpp@{test\_eigen.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_eigen.cpp@{test\_eigen.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{eigen}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+

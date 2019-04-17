@@ -1,0 +1,117 @@
+\hypertarget{asdl_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/asdl.h File Reference}
+\label{asdl_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/asdl.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/asdl.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}
+\item 
+struct \mbox{\hyperlink{structasdl__int__seq}{asdl\+\_\+int\+\_\+seq}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{asdl_8h_ab6c5bdbf74f25c02b2d7ff07d96ad310}{asdl\+\_\+seq\+\_\+\+G\+ET}}(S,  I)~(S)-\/$>$elements\mbox{[}(I)\mbox{]}
+\item 
+\#define \mbox{\hyperlink{asdl_8h_ac7fe7f0a54c1e48a16daad321bff5cd0}{asdl\+\_\+seq\+\_\+\+L\+EN}}(S)~((S) == \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}} ? 0 \+: (S)-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\#define \mbox{\hyperlink{asdl_8h_a075db219ef4057a487985144b51c062e}{asdl\+\_\+seq\+\_\+\+S\+ET}}(S,  I,  V)~(S)-\/$>$elements\mbox{[}I\mbox{]} = (V)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{asdl_8h_a78ca2081e230a95abc88c411c9816775}{identifier}}
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}}
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{asdl_8h_ab49790263c78300fbf05719e38246198}{object}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \{ \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}{false}}, 
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}} $\ast$ \mbox{\hyperlink{asdl_8h_aa232eeaecd022b91278c53416fb56d42}{asdl\+\_\+seq\+\_\+new}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{pyarena_8h_a9edeb357fbb27333471022a0975adb7a}{Py\+Arena}} $\ast$arena)
+\item 
+\mbox{\hyperlink{structasdl__int__seq}{asdl\+\_\+int\+\_\+seq}} $\ast$ \mbox{\hyperlink{asdl_8h_a6e427809efb8ac3515f4273d320c0537}{asdl\+\_\+int\+\_\+seq\+\_\+new}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, \mbox{\hyperlink{pyarena_8h_a9edeb357fbb27333471022a0975adb7a}{Py\+Arena}} $\ast$arena)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{asdl_8h_ab6c5bdbf74f25c02b2d7ff07d96ad310}\label{asdl_8h_ab6c5bdbf74f25c02b2d7ff07d96ad310}} 
+\index{asdl.h@{asdl.h}!asdl\_seq\_GET@{asdl\_seq\_GET}}
+\index{asdl\_seq\_GET@{asdl\_seq\_GET}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{asdl\_seq\_GET}{asdl\_seq\_GET}}
+{\footnotesize\ttfamily \#define asdl\+\_\+seq\+\_\+\+G\+ET(\begin{DoxyParamCaption}\item[{}]{S,  }\item[{}]{I }\end{DoxyParamCaption})~(S)-\/$>$elements\mbox{[}(I)\mbox{]}}
+
+\mbox{\Hypertarget{asdl_8h_ac7fe7f0a54c1e48a16daad321bff5cd0}\label{asdl_8h_ac7fe7f0a54c1e48a16daad321bff5cd0}} 
+\index{asdl.h@{asdl.h}!asdl\_seq\_LEN@{asdl\_seq\_LEN}}
+\index{asdl\_seq\_LEN@{asdl\_seq\_LEN}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{asdl\_seq\_LEN}{asdl\_seq\_LEN}}
+{\footnotesize\ttfamily \#define asdl\+\_\+seq\+\_\+\+L\+EN(\begin{DoxyParamCaption}\item[{}]{S }\end{DoxyParamCaption})~((S) == \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}} ? 0 \+: (S)-\/$>$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})}
+
+\mbox{\Hypertarget{asdl_8h_a075db219ef4057a487985144b51c062e}\label{asdl_8h_a075db219ef4057a487985144b51c062e}} 
+\index{asdl.h@{asdl.h}!asdl\_seq\_SET@{asdl\_seq\_SET}}
+\index{asdl\_seq\_SET@{asdl\_seq\_SET}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{asdl\_seq\_SET}{asdl\_seq\_SET}}
+{\footnotesize\ttfamily \#define asdl\+\_\+seq\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{S,  }\item[{}]{I,  }\item[{}]{V }\end{DoxyParamCaption})~(S)-\/$>$elements\mbox{[}I\mbox{]} = (V)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{asdl_8h_a78ca2081e230a95abc88c411c9816775}\label{asdl_8h_a78ca2081e230a95abc88c411c9816775}} 
+\index{asdl.h@{asdl.h}!identifier@{identifier}}
+\index{identifier@{identifier}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \mbox{\hyperlink{asdl_8h_a78ca2081e230a95abc88c411c9816775}{identifier}}}
+
+\mbox{\Hypertarget{asdl_8h_ab49790263c78300fbf05719e38246198}\label{asdl_8h_ab49790263c78300fbf05719e38246198}} 
+\index{asdl.h@{asdl.h}!object@{object}}
+\index{object@{object}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{object}{object}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengl_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\+Luint}} \mbox{\hyperlink{classobject}{object}}}
+
+\mbox{\Hypertarget{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}\label{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}} 
+\index{asdl.h@{asdl.h}!string@{string}}
+\index{string@{string}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily typedef const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ \mbox{\hyperlink{asdl_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{asdl_8h_af6a258d8f3ee5206d682d799316314b1}\label{asdl_8h_af6a258d8f3ee5206d682d799316314b1}} 
+\index{asdl.h@{asdl.h}!bool@{bool}}
+\index{bool@{bool}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{false@{false}!asdl.h@{asdl.h}}\index{asdl.h@{asdl.h}!false@{false}}}\mbox{\Hypertarget{asdl_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}\label{asdl_8h_af6a258d8f3ee5206d682d799316314b1ae9de385ef6fe9bf3360d1038396b884c}} 
+false&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{true@{true}!asdl.h@{asdl.h}}\index{asdl.h@{asdl.h}!true@{true}}}\mbox{\Hypertarget{asdl_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}\label{asdl_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}} 
+true&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{asdl_8h_a6e427809efb8ac3515f4273d320c0537}\label{asdl_8h_a6e427809efb8ac3515f4273d320c0537}} 
+\index{asdl.h@{asdl.h}!asdl\_int\_seq\_new@{asdl\_int\_seq\_new}}
+\index{asdl\_int\_seq\_new@{asdl\_int\_seq\_new}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{asdl\_int\_seq\_new()}{asdl\_int\_seq\_new()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__int__seq}{asdl\+\_\+int\+\_\+seq}}$\ast$ asdl\+\_\+int\+\_\+seq\+\_\+new (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{size,  }\item[{\mbox{\hyperlink{pyarena_8h_a9edeb357fbb27333471022a0975adb7a}{Py\+Arena}} $\ast$}]{arena }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{asdl_8h_aa232eeaecd022b91278c53416fb56d42}\label{asdl_8h_aa232eeaecd022b91278c53416fb56d42}} 
+\index{asdl.h@{asdl.h}!asdl\_seq\_new@{asdl\_seq\_new}}
+\index{asdl\_seq\_new@{asdl\_seq\_new}!asdl.h@{asdl.h}}
+\subsubsection{\texorpdfstring{asdl\_seq\_new()}{asdl\_seq\_new()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structasdl__seq}{asdl\+\_\+seq}}$\ast$ asdl\+\_\+seq\+\_\+new (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{size,  }\item[{\mbox{\hyperlink{pyarena_8h_a9edeb357fbb27333471022a0975adb7a}{Py\+Arena}} $\ast$}]{arena }\end{DoxyParamCaption})}
+

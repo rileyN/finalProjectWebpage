@@ -1,0 +1,179 @@
+\hypertarget{floatobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/floatobject.h File Reference}
+\label{floatobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/floatobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/floatobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_float_object}{Py\+Float\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{floatobject_8h_a2283f07375da5426b17e8235c6f91cad}{Py\+Float\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, \&Py\+Float\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{floatobject_8h_abfa5c0f1643068228e1d9f8452da9c5d}{Py\+Float\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Float\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{floatobject_8h_ae8b0b13a1755cd901e707174ad7ac2a9}{Py\+Float\+\_\+\+S\+T\+R\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}}~12
+\item 
+\#define \mbox{\hyperlink{floatobject_8h_ab206bc55aaf6de4588f1e1569f8e9611}{Py\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+I\+NF}}(\mbox{\hyperlink{dtoa_8h_a36b684ca8c040951f446b4a9acbc929c}{sign}})
+\item 
+\#define \mbox{\hyperlink{floatobject_8h_aaf67bd1d7a5a1042370b4bfa0af17287}{Py\+Float\+\_\+\+A\+S\+\_\+\+D\+O\+U\+B\+LE}}(op)~(((\mbox{\hyperlink{struct_py_float_object}{Py\+Float\+Object}} $\ast$)(op))-\/$>$ob\+\_\+fval)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{floatobject_8h_af1667a24f64f5e3bf929b0d7c45ee7d0}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Float\+\_\+\+Type
+\item 
+\mbox{\hyperlink{floatobject_8h_acfee89bc2f6d415778b1bd3841c5047c}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (double) Py\+Float\+\_\+\+Get\+Max(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{floatobject_8h_a19e5f17b8d33f7180ad400183b5b5381}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Float\+\_\+\+Get\+Info(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{floatobject_8h_a99c0429a1b41741e67c95c40827d066a}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}) Py\+Float\+\_\+\+As\+Repr\+String(char $\ast$
+\item 
+\mbox{\hyperlink{floatobject_8h_aff7ac5517d9bd191580f7129f380212c}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) \+\_\+\+Py\+Float\+\_\+\+Pack4(double \mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{floatobject_8h_a4186bc0bda94c8ceca7f32c473448a58}{junk}}
+\item 
+\mbox{\hyperlink{struct_py_float_object}{Py\+Float\+Object}} $\ast$ \mbox{\hyperlink{floatobject_8h_a3b90d5a73541ab9402511d87bed076ef}{v}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{floatobject_8h_a4014c6f4a6fa0e565ca592bcaca0fa58}{p}}
+\item 
+unsigned char \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{floatobject_8h_aaf1ab6d375ab5bde60adebbacb84be11}{le}}
+\item 
+double \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$ \mbox{\hyperlink{floatobject_8h_afbaf08088d4180de362997d14b0a43df}{signum}}
+\item 
+char $\ast$ \mbox{\hyperlink{floatobject_8h_a511588f1400d07ba62786e976717db68}{format\+\_\+spec}}
+\item 
+char \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{floatobject_8h_ae660a894b4d2865d2999b38ad335e237}{format\+\_\+spec\+\_\+len}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{floatobject_8h_a3910ae52b12498568bb21407873fdde0}{ndigits}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{floatobject_8h_ab206bc55aaf6de4588f1e1569f8e9611}\label{floatobject_8h_ab206bc55aaf6de4588f1e1569f8e9611}} 
+\index{floatobject.h@{floatobject.h}!Py\_RETURN\_INF@{Py\_RETURN\_INF}}
+\index{Py\_RETURN\_INF@{Py\_RETURN\_INF}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{Py\_RETURN\_INF}{Py\_RETURN\_INF}}
+{\footnotesize\ttfamily \#define Py\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+I\+NF(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{dtoa_8h_a36b684ca8c040951f446b4a9acbc929c}{sign}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{do                  \(\backslash\)}
+\DoxyCodeLine{    if (copysign(1., \mbox{\hyperlink{dtoa_8h_a36b684ca8c040951f446b4a9acbc929c}{sign}}) == 1.) \{             \(\backslash\)}
+\DoxyCodeLine{        return PyFloat\_FromDouble(\mbox{\hyperlink{pymath_8h_aa705c4f692b1d1fabeae839dba44a825}{Py\_HUGE\_VAL}});  \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{else} \{                        \(\backslash\)}
+\DoxyCodeLine{        return PyFloat\_FromDouble(-\mbox{\hyperlink{pymath_8h_aa705c4f692b1d1fabeae839dba44a825}{Py\_HUGE\_VAL}}); \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{floatobject_8h_aaf67bd1d7a5a1042370b4bfa0af17287}\label{floatobject_8h_aaf67bd1d7a5a1042370b4bfa0af17287}} 
+\index{floatobject.h@{floatobject.h}!PyFloat\_AS\_DOUBLE@{PyFloat\_AS\_DOUBLE}}
+\index{PyFloat\_AS\_DOUBLE@{PyFloat\_AS\_DOUBLE}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyFloat\_AS\_DOUBLE}{PyFloat\_AS\_DOUBLE}}
+{\footnotesize\ttfamily \#define Py\+Float\+\_\+\+A\+S\+\_\+\+D\+O\+U\+B\+LE(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_float_object}{Py\+Float\+Object}} $\ast$)(op))-\/$>$ob\+\_\+fval)}
+
+\mbox{\Hypertarget{floatobject_8h_a2283f07375da5426b17e8235c6f91cad}\label{floatobject_8h_a2283f07375da5426b17e8235c6f91cad}} 
+\index{floatobject.h@{floatobject.h}!PyFloat\_Check@{PyFloat\_Check}}
+\index{PyFloat\_Check@{PyFloat\_Check}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyFloat\_Check}{PyFloat\_Check}}
+{\footnotesize\ttfamily \#define Py\+Float\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a78a6cfb96870f055b16d8776d6366389}{Py\+Object\+\_\+\+Type\+Check}}(op, \&Py\+Float\+\_\+\+Type)}
+
+\mbox{\Hypertarget{floatobject_8h_abfa5c0f1643068228e1d9f8452da9c5d}\label{floatobject_8h_abfa5c0f1643068228e1d9f8452da9c5d}} 
+\index{floatobject.h@{floatobject.h}!PyFloat\_CheckExact@{PyFloat\_CheckExact}}
+\index{PyFloat\_CheckExact@{PyFloat\_CheckExact}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyFloat\_CheckExact}{PyFloat\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Float\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Float\+\_\+\+Type)}
+
+\mbox{\Hypertarget{floatobject_8h_ae8b0b13a1755cd901e707174ad7ac2a9}\label{floatobject_8h_ae8b0b13a1755cd901e707174ad7ac2a9}} 
+\index{floatobject.h@{floatobject.h}!PyFloat\_STR\_PRECISION@{PyFloat\_STR\_PRECISION}}
+\index{PyFloat\_STR\_PRECISION@{PyFloat\_STR\_PRECISION}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyFloat\_STR\_PRECISION}{PyFloat\_STR\_PRECISION}}
+{\footnotesize\ttfamily \#define Py\+Float\+\_\+\+S\+T\+R\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON~12}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{floatobject_8h_af1667a24f64f5e3bf929b0d7c45ee7d0}\label{floatobject_8h_af1667a24f64f5e3bf929b0d7c45ee7d0}} 
+\index{floatobject.h@{floatobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{floatobject_8h_acfee89bc2f6d415778b1bd3841c5047c}\label{floatobject_8h_acfee89bc2f6d415778b1bd3841c5047c}} 
+\index{floatobject.h@{floatobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{floatobject_8h_a19e5f17b8d33f7180ad400183b5b5381}\label{floatobject_8h_a19e5f17b8d33f7180ad400183b5b5381}} 
+\index{floatobject.h@{floatobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{floatobject_8h_a99c0429a1b41741e67c95c40827d066a}\label{floatobject_8h_a99c0429a1b41741e67c95c40827d066a}} 
+\index{floatobject.h@{floatobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{floatobject_8h_aff7ac5517d9bd191580f7129f380212c}\label{floatobject_8h_aff7ac5517d9bd191580f7129f380212c}} 
+\index{floatobject.h@{floatobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{floatobject_8h_a511588f1400d07ba62786e976717db68}\label{floatobject_8h_a511588f1400d07ba62786e976717db68}} 
+\index{floatobject.h@{floatobject.h}!format\_spec@{format\_spec}}
+\index{format\_spec@{format\_spec}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{format\_spec}{format\_spec}}
+{\footnotesize\ttfamily char$\ast$ format\+\_\+spec}
+
+\mbox{\Hypertarget{floatobject_8h_ae660a894b4d2865d2999b38ad335e237}\label{floatobject_8h_ae660a894b4d2865d2999b38ad335e237}} 
+\index{floatobject.h@{floatobject.h}!format\_spec\_len@{format\_spec\_len}}
+\index{format\_spec\_len@{format\_spec\_len}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{format\_spec\_len}{format\_spec\_len}}
+{\footnotesize\ttfamily char \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} format\+\_\+spec\+\_\+len}
+
+\mbox{\Hypertarget{floatobject_8h_a4186bc0bda94c8ceca7f32c473448a58}\label{floatobject_8h_a4186bc0bda94c8ceca7f32c473448a58}} 
+\index{floatobject.h@{floatobject.h}!junk@{junk}}
+\index{junk@{junk}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{junk}{junk}}
+{\footnotesize\ttfamily char$\ast$$\ast$ junk}
+
+\mbox{\Hypertarget{floatobject_8h_aaf1ab6d375ab5bde60adebbacb84be11}\label{floatobject_8h_aaf1ab6d375ab5bde60adebbacb84be11}} 
+\index{floatobject.h@{floatobject.h}!le@{le}}
+\index{le@{le}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{le}{le}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} le}
+
+\mbox{\Hypertarget{floatobject_8h_a3910ae52b12498568bb21407873fdde0}\label{floatobject_8h_a3910ae52b12498568bb21407873fdde0}} 
+\index{floatobject.h@{floatobject.h}!ndigits@{ndigits}}
+\index{ndigits@{ndigits}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{ndigits}{ndigits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} ndigits}
+
+\mbox{\Hypertarget{floatobject_8h_a4014c6f4a6fa0e565ca592bcaca0fa58}\label{floatobject_8h_a4014c6f4a6fa0e565ca592bcaca0fa58}} 
+\index{floatobject.h@{floatobject.h}!p@{p}}
+\index{p@{p}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily unsigned char$\ast$ \mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}}}
+
+\mbox{\Hypertarget{floatobject_8h_afbaf08088d4180de362997d14b0a43df}\label{floatobject_8h_afbaf08088d4180de362997d14b0a43df}} 
+\index{floatobject.h@{floatobject.h}!signum@{signum}}
+\index{signum@{signum}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{signum}{signum}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}$\ast$ signum}
+
+\mbox{\Hypertarget{floatobject_8h_a3b90d5a73541ab9402511d87bed076ef}\label{floatobject_8h_a3b90d5a73541ab9402511d87bed076ef}} 
+\index{floatobject.h@{floatobject.h}!v@{v}}
+\index{v@{v}!floatobject.h@{floatobject.h}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}}}
+

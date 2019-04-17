@@ -1,0 +1,201 @@
+\hypertarget{struct__ts}{}\section{\+\_\+ts Struct Reference}
+\label{struct__ts}\index{\_ts@{\_ts}}
+
+
+{\ttfamily \#include $<$pystate.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__ts}{\+\_\+ts}} $\ast$ \mbox{\hyperlink{struct__ts_a07c61e6e5019334491b799a4a35a364c}{next}}
+\item 
+\mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}} $\ast$ \mbox{\hyperlink{struct__ts_a218498c5d2725df0a11a604c873c7af2}{interp}}
+\item 
+struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}} $\ast$ \mbox{\hyperlink{struct__ts_a06cc5290746f822f1ef96a87983d0388}{frame}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__ts_a6b8d0637b018eecff79f70a6e23292ac}{recursion\+\_\+depth}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__ts_a471e83bc7094f90ee8ec4834eb240ad5}{tracing}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__ts_acfef5d2d1002bcf0b14e4535e8a9827b}{use\+\_\+tracing}}
+\item 
+\mbox{\hyperlink{pystate_8h_ab5c10be1fd41472f8b22569c5f15f8e6}{Py\+\_\+tracefunc}} \mbox{\hyperlink{struct__ts_a354e6c632d0c7d71b95edfa41a304e94}{c\+\_\+profilefunc}}
+\item 
+\mbox{\hyperlink{pystate_8h_ab5c10be1fd41472f8b22569c5f15f8e6}{Py\+\_\+tracefunc}} \mbox{\hyperlink{struct__ts_a62ef329915123042c2cb1a943e986e18}{c\+\_\+tracefunc}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_a69de89b983a3a9a5f81bbf59eb27023d}{c\+\_\+profileobj}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_ad1d1bf64520bc604c7177fd4ca6fbff0}{c\+\_\+traceobj}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_acc500baaee5daf1e51115b8799d91918}{curexc\+\_\+type}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_a49b753b1c8ed314bf3ca1cbd37cb5fc9}{curexc\+\_\+value}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_aeabab7a3345fe7f60a4c82ea81a1c81d}{curexc\+\_\+traceback}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_aef14d4a75d97d3296136822dd1ef439e}{exc\+\_\+type}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_a60f5422b5ac39104bf338015fb40900f}{exc\+\_\+value}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_ae3a9cc8bc03b5715c51c52a677a87552}{exc\+\_\+traceback}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_acd979c9d066dde17e31d442cf653e9d5}{dict}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__ts_ac2b96739a38ebf00be20c74a747e51a4}{tick\+\_\+counter}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__ts_a2a1af12986d8ab605b22d0840f2c23cf}{gilstate\+\_\+counter}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_a5049998e3860dc12b7104a382cf404c0}{async\+\_\+exc}}
+\item 
+\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} \mbox{\hyperlink{struct__ts_a8232b11c626b661c1d69560e0b562e7d}{thread\+\_\+id}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{struct__ts_ae8f5168097f7db47480b7c8e28832fc8}{trash\+\_\+delete\+\_\+nesting}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{struct__ts_a90079dbf02b1666ef4b6b1017ad9dab7}{trash\+\_\+delete\+\_\+later}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct__ts_a5049998e3860dc12b7104a382cf404c0}\label{struct__ts_a5049998e3860dc12b7104a382cf404c0}} 
+\index{\_ts@{\_ts}!async\_exc@{async\_exc}}
+\index{async\_exc@{async\_exc}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{async\_exc}{async\_exc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::async\+\_\+exc}
+
+\mbox{\Hypertarget{struct__ts_a354e6c632d0c7d71b95edfa41a304e94}\label{struct__ts_a354e6c632d0c7d71b95edfa41a304e94}} 
+\index{\_ts@{\_ts}!c\_profilefunc@{c\_profilefunc}}
+\index{c\_profilefunc@{c\_profilefunc}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{c\_profilefunc}{c\_profilefunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pystate_8h_ab5c10be1fd41472f8b22569c5f15f8e6}{Py\+\_\+tracefunc}} \+\_\+ts\+::c\+\_\+profilefunc}
+
+\mbox{\Hypertarget{struct__ts_a69de89b983a3a9a5f81bbf59eb27023d}\label{struct__ts_a69de89b983a3a9a5f81bbf59eb27023d}} 
+\index{\_ts@{\_ts}!c\_profileobj@{c\_profileobj}}
+\index{c\_profileobj@{c\_profileobj}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{c\_profileobj}{c\_profileobj}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::c\+\_\+profileobj}
+
+\mbox{\Hypertarget{struct__ts_a62ef329915123042c2cb1a943e986e18}\label{struct__ts_a62ef329915123042c2cb1a943e986e18}} 
+\index{\_ts@{\_ts}!c\_tracefunc@{c\_tracefunc}}
+\index{c\_tracefunc@{c\_tracefunc}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{c\_tracefunc}{c\_tracefunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pystate_8h_ab5c10be1fd41472f8b22569c5f15f8e6}{Py\+\_\+tracefunc}} \+\_\+ts\+::c\+\_\+tracefunc}
+
+\mbox{\Hypertarget{struct__ts_ad1d1bf64520bc604c7177fd4ca6fbff0}\label{struct__ts_ad1d1bf64520bc604c7177fd4ca6fbff0}} 
+\index{\_ts@{\_ts}!c\_traceobj@{c\_traceobj}}
+\index{c\_traceobj@{c\_traceobj}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{c\_traceobj}{c\_traceobj}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::c\+\_\+traceobj}
+
+\mbox{\Hypertarget{struct__ts_aeabab7a3345fe7f60a4c82ea81a1c81d}\label{struct__ts_aeabab7a3345fe7f60a4c82ea81a1c81d}} 
+\index{\_ts@{\_ts}!curexc\_traceback@{curexc\_traceback}}
+\index{curexc\_traceback@{curexc\_traceback}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{curexc\_traceback}{curexc\_traceback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::curexc\+\_\+traceback}
+
+\mbox{\Hypertarget{struct__ts_acc500baaee5daf1e51115b8799d91918}\label{struct__ts_acc500baaee5daf1e51115b8799d91918}} 
+\index{\_ts@{\_ts}!curexc\_type@{curexc\_type}}
+\index{curexc\_type@{curexc\_type}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{curexc\_type}{curexc\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::curexc\+\_\+type}
+
+\mbox{\Hypertarget{struct__ts_a49b753b1c8ed314bf3ca1cbd37cb5fc9}\label{struct__ts_a49b753b1c8ed314bf3ca1cbd37cb5fc9}} 
+\index{\_ts@{\_ts}!curexc\_value@{curexc\_value}}
+\index{curexc\_value@{curexc\_value}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{curexc\_value}{curexc\_value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::curexc\+\_\+value}
+
+\mbox{\Hypertarget{struct__ts_acd979c9d066dde17e31d442cf653e9d5}\label{struct__ts_acd979c9d066dde17e31d442cf653e9d5}} 
+\index{\_ts@{\_ts}!dict@{dict}}
+\index{dict@{dict}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{dict}{dict}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::dict}
+
+\mbox{\Hypertarget{struct__ts_ae3a9cc8bc03b5715c51c52a677a87552}\label{struct__ts_ae3a9cc8bc03b5715c51c52a677a87552}} 
+\index{\_ts@{\_ts}!exc\_traceback@{exc\_traceback}}
+\index{exc\_traceback@{exc\_traceback}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{exc\_traceback}{exc\_traceback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::exc\+\_\+traceback}
+
+\mbox{\Hypertarget{struct__ts_aef14d4a75d97d3296136822dd1ef439e}\label{struct__ts_aef14d4a75d97d3296136822dd1ef439e}} 
+\index{\_ts@{\_ts}!exc\_type@{exc\_type}}
+\index{exc\_type@{exc\_type}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{exc\_type}{exc\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::exc\+\_\+type}
+
+\mbox{\Hypertarget{struct__ts_a60f5422b5ac39104bf338015fb40900f}\label{struct__ts_a60f5422b5ac39104bf338015fb40900f}} 
+\index{\_ts@{\_ts}!exc\_value@{exc\_value}}
+\index{exc\_value@{exc\_value}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{exc\_value}{exc\_value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::exc\+\_\+value}
+
+\mbox{\Hypertarget{struct__ts_a06cc5290746f822f1ef96a87983d0388}\label{struct__ts_a06cc5290746f822f1ef96a87983d0388}} 
+\index{\_ts@{\_ts}!frame@{frame}}
+\index{frame@{frame}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct__frame}{\+\_\+frame}}$\ast$ \+\_\+ts\+::frame}
+
+\mbox{\Hypertarget{struct__ts_a2a1af12986d8ab605b22d0840f2c23cf}\label{struct__ts_a2a1af12986d8ab605b22d0840f2c23cf}} 
+\index{\_ts@{\_ts}!gilstate\_counter@{gilstate\_counter}}
+\index{gilstate\_counter@{gilstate\_counter}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{gilstate\_counter}{gilstate\_counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+ts\+::gilstate\+\_\+counter}
+
+\mbox{\Hypertarget{struct__ts_a218498c5d2725df0a11a604c873c7af2}\label{struct__ts_a218498c5d2725df0a11a604c873c7af2}} 
+\index{\_ts@{\_ts}!interp@{interp}}
+\index{interp@{interp}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{interp}{interp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pystate_8h_a7c19e387e7a6c47f2d1d639a0f741d4f}{Py\+Interpreter\+State}}$\ast$ \+\_\+ts\+::interp}
+
+\mbox{\Hypertarget{struct__ts_a07c61e6e5019334491b799a4a35a364c}\label{struct__ts_a07c61e6e5019334491b799a4a35a364c}} 
+\index{\_ts@{\_ts}!next@{next}}
+\index{next@{next}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct__ts}{\+\_\+ts}}$\ast$ \+\_\+ts\+::next}
+
+\mbox{\Hypertarget{struct__ts_a6b8d0637b018eecff79f70a6e23292ac}\label{struct__ts_a6b8d0637b018eecff79f70a6e23292ac}} 
+\index{\_ts@{\_ts}!recursion\_depth@{recursion\_depth}}
+\index{recursion\_depth@{recursion\_depth}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{recursion\_depth}{recursion\_depth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+ts\+::recursion\+\_\+depth}
+
+\mbox{\Hypertarget{struct__ts_a8232b11c626b661c1d69560e0b562e7d}\label{struct__ts_a8232b11c626b661c1d69560e0b562e7d}} 
+\index{\_ts@{\_ts}!thread\_id@{thread\_id}}
+\index{thread\_id@{thread\_id}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{thread\_id}{thread\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} \+\_\+ts\+::thread\+\_\+id}
+
+\mbox{\Hypertarget{struct__ts_ac2b96739a38ebf00be20c74a747e51a4}\label{struct__ts_ac2b96739a38ebf00be20c74a747e51a4}} 
+\index{\_ts@{\_ts}!tick\_counter@{tick\_counter}}
+\index{tick\_counter@{tick\_counter}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{tick\_counter}{tick\_counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+ts\+::tick\+\_\+counter}
+
+\mbox{\Hypertarget{struct__ts_a471e83bc7094f90ee8ec4834eb240ad5}\label{struct__ts_a471e83bc7094f90ee8ec4834eb240ad5}} 
+\index{\_ts@{\_ts}!tracing@{tracing}}
+\index{tracing@{tracing}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{tracing}{tracing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+ts\+::tracing}
+
+\mbox{\Hypertarget{struct__ts_a90079dbf02b1666ef4b6b1017ad9dab7}\label{struct__ts_a90079dbf02b1666ef4b6b1017ad9dab7}} 
+\index{\_ts@{\_ts}!trash\_delete\_later@{trash\_delete\_later}}
+\index{trash\_delete\_later@{trash\_delete\_later}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{trash\_delete\_later}{trash\_delete\_later}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \+\_\+ts\+::trash\+\_\+delete\+\_\+later}
+
+\mbox{\Hypertarget{struct__ts_ae8f5168097f7db47480b7c8e28832fc8}\label{struct__ts_ae8f5168097f7db47480b7c8e28832fc8}} 
+\index{\_ts@{\_ts}!trash\_delete\_nesting@{trash\_delete\_nesting}}
+\index{trash\_delete\_nesting@{trash\_delete\_nesting}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{trash\_delete\_nesting}{trash\_delete\_nesting}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+ts\+::trash\+\_\+delete\+\_\+nesting}
+
+\mbox{\Hypertarget{struct__ts_acfef5d2d1002bcf0b14e4535e8a9827b}\label{struct__ts_acfef5d2d1002bcf0b14e4535e8a9827b}} 
+\index{\_ts@{\_ts}!use\_tracing@{use\_tracing}}
+\index{use\_tracing@{use\_tracing}!\_ts@{\_ts}}
+\subsubsection{\texorpdfstring{use\_tracing}{use\_tracing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \+\_\+ts\+::use\+\_\+tracing}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/\mbox{\hyperlink{pystate_8h}{pystate.\+h}}\end{DoxyCompactItemize}

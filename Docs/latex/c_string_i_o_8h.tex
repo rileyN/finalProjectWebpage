@@ -1,0 +1,51 @@
+\hypertarget{c_string_i_o_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/c\+String\+IO.h File Reference}
+\label{c_string_i_o_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/cStringIO.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/cStringIO.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries Pyc\+String\+I\+O\+\_\+\+C\+A\+PI}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{c_string_i_o_8h_a3dda85986c4bffafac8cb50f74a820ce}{Pyc\+String\+I\+O\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME}}~\char`\"{}c\+String\+I\+O.\+c\+String\+I\+O\+\_\+\+C\+A\+PI\char`\"{}
+\item 
+\#define \mbox{\hyperlink{c_string_i_o_8h_a1dff3d2d79bb46efe8365262aea9d91f}{Pyc\+String\+\_\+\+I\+M\+P\+O\+RT}}
+\item 
+\#define \mbox{\hyperlink{c_string_i_o_8h_a5169b2d97d954e970f8309419992ed0b}{Pyc\+String\+I\+O\+\_\+\+Input\+Check}}(O)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(O)==Pyc\+String\+IO-\/$>$Input\+Type)
+\item 
+\#define \mbox{\hyperlink{c_string_i_o_8h_a62c81c52cc179c2ace0b31a997d926e6}{Pyc\+String\+I\+O\+\_\+\+Output\+Check}}(O)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(O)==Pyc\+String\+IO-\/$>$Output\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{c_string_i_o_8h_a1dff3d2d79bb46efe8365262aea9d91f}\label{c_string_i_o_8h_a1dff3d2d79bb46efe8365262aea9d91f}} 
+\index{cStringIO.h@{cStringIO.h}!PycString\_IMPORT@{PycString\_IMPORT}}
+\index{PycString\_IMPORT@{PycString\_IMPORT}!cStringIO.h@{cStringIO.h}}
+\subsubsection{\texorpdfstring{PycString\_IMPORT}{PycString\_IMPORT}}
+{\footnotesize\ttfamily \#define Pyc\+String\+\_\+\+I\+M\+P\+O\+RT}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PycStringIO = ((\textcolor{keyword}{struct }PycStringIO\_CAPI*)PyCapsule\_Import(\(\backslash\)}
+\DoxyCodeLine{    \mbox{\hyperlink{c_string_i_o_8h_a3dda85986c4bffafac8cb50f74a820ce}{PycStringIO\_CAPSULE\_NAME}}, 0))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{c_string_i_o_8h_a3dda85986c4bffafac8cb50f74a820ce}\label{c_string_i_o_8h_a3dda85986c4bffafac8cb50f74a820ce}} 
+\index{cStringIO.h@{cStringIO.h}!PycStringIO\_CAPSULE\_NAME@{PycStringIO\_CAPSULE\_NAME}}
+\index{PycStringIO\_CAPSULE\_NAME@{PycStringIO\_CAPSULE\_NAME}!cStringIO.h@{cStringIO.h}}
+\subsubsection{\texorpdfstring{PycStringIO\_CAPSULE\_NAME}{PycStringIO\_CAPSULE\_NAME}}
+{\footnotesize\ttfamily \#define Pyc\+String\+I\+O\+\_\+\+C\+A\+P\+S\+U\+L\+E\+\_\+\+N\+A\+ME~\char`\"{}c\+String\+I\+O.\+c\+String\+I\+O\+\_\+\+C\+A\+PI\char`\"{}}
+
+\mbox{\Hypertarget{c_string_i_o_8h_a5169b2d97d954e970f8309419992ed0b}\label{c_string_i_o_8h_a5169b2d97d954e970f8309419992ed0b}} 
+\index{cStringIO.h@{cStringIO.h}!PycStringIO\_InputCheck@{PycStringIO\_InputCheck}}
+\index{PycStringIO\_InputCheck@{PycStringIO\_InputCheck}!cStringIO.h@{cStringIO.h}}
+\subsubsection{\texorpdfstring{PycStringIO\_InputCheck}{PycStringIO\_InputCheck}}
+{\footnotesize\ttfamily \#define Pyc\+String\+I\+O\+\_\+\+Input\+Check(\begin{DoxyParamCaption}\item[{}]{O }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(O)==Pyc\+String\+IO-\/$>$Input\+Type)}
+
+\mbox{\Hypertarget{c_string_i_o_8h_a62c81c52cc179c2ace0b31a997d926e6}\label{c_string_i_o_8h_a62c81c52cc179c2ace0b31a997d926e6}} 
+\index{cStringIO.h@{cStringIO.h}!PycStringIO\_OutputCheck@{PycStringIO\_OutputCheck}}
+\index{PycStringIO\_OutputCheck@{PycStringIO\_OutputCheck}!cStringIO.h@{cStringIO.h}}
+\subsubsection{\texorpdfstring{PycStringIO\_OutputCheck}{PycStringIO\_OutputCheck}}
+{\footnotesize\ttfamily \#define Pyc\+String\+I\+O\+\_\+\+Output\+Check(\begin{DoxyParamCaption}\item[{}]{O }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(O)==Pyc\+String\+IO-\/$>$Output\+Type)}
+

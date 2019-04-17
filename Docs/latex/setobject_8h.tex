@@ -1,0 +1,172 @@
+\hypertarget{setobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/setobject.h File Reference}
+\label{setobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/setobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/setobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsetentry}{setentry}}
+\item 
+struct \mbox{\hyperlink{struct__setobject}{\+\_\+setobject}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{setobject_8h_a4d2d577602a30e417393d879b7eeb70c}{Py\+Set\+\_\+\+M\+I\+N\+S\+I\+ZE}}~8
+\item 
+\#define \mbox{\hyperlink{setobject_8h_ab5bd089c79794b75fb35f9d5fe0e9c45}{Py\+Frozen\+Set\+\_\+\+Check\+Exact}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&Py\+Frozen\+Set\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{setobject_8h_aa04fbd9bf289ad83b4c0f9216d301b63}{Py\+Any\+Set\+\_\+\+Check\+Exact}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&Py\+Set\+\_\+\+Type $\vert$$\vert$ \mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&Py\+Frozen\+Set\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{setobject_8h_a9f3be7e6027dc2296cf797509cc99f69}{Py\+Any\+Set\+\_\+\+Check}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}})
+\item 
+\#define \mbox{\hyperlink{setobject_8h_a5f2386ff11ddbfc71bc4560a6ef6473d}{Py\+Set\+\_\+\+Check}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}})
+\item 
+\#define \mbox{\hyperlink{setobject_8h_a3506ab5dd5fbfb35feaf2518f605498b}{Py\+Frozen\+Set\+\_\+\+Check}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}})
+\item 
+\#define \mbox{\hyperlink{setobject_8h_ae0e9372ef59d5555b90535a71ccbd021}{Py\+Set\+\_\+\+G\+E\+T\+\_\+\+S\+I\+ZE}}(so)~(((\mbox{\hyperlink{setobject_8h_ab78ba704793f52f076c487b137c4b169}{Py\+Set\+Object}} $\ast$)(so))-\/$>$used)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__setobject}{\+\_\+setobject}} \mbox{\hyperlink{setobject_8h_ab78ba704793f52f076c487b137c4b169}{Py\+Set\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{setobject_8h_a1f051d8e355c9f7b9f561420601cfcb2}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Set\+\_\+\+Type
+\item 
+\mbox{\hyperlink{setobject_8h_acffbedd5fcbcfe6d91f53aa5f69ecf4d}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Set\+\_\+\+New(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{setobject_8h_ad6ea98425341a337511d53a95642d829}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}) Py\+Set\+\_\+\+Size(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$anyset)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}{key}}
+\item 
+\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} $\ast$ \mbox{\hyperlink{setobject_8h_a0cdb1b70380fd629358aa8be81bb89b6}{pos}}
+\item 
+\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}} $\ast$ \mbox{\hyperlink{setobject_8h_ae01a8b3f19bd8677d7a18104740b999b}{hash}}
+\item 
+\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$ \mbox{\hyperlink{setobject_8h_abde1123f2e15338312430e40a313d9cf}{iterable}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{setobject_8h_a9f3be7e6027dc2296cf797509cc99f69}\label{setobject_8h_a9f3be7e6027dc2296cf797509cc99f69}} 
+\index{setobject.h@{setobject.h}!PyAnySet\_Check@{PyAnySet\_Check}}
+\index{PyAnySet\_Check@{PyAnySet\_Check}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PyAnySet\_Check}{PyAnySet\_Check}}
+{\footnotesize\ttfamily \#define Py\+Any\+Set\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&PySet\_Type || \mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&PyFrozenSet\_Type || \(\backslash\)}
+\DoxyCodeLine{      PyType\_IsSubtype(\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}), \&PySet\_Type) || \(\backslash\)}
+\DoxyCodeLine{      PyType\_IsSubtype(\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}), \&PyFrozenSet\_Type))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{setobject_8h_aa04fbd9bf289ad83b4c0f9216d301b63}\label{setobject_8h_aa04fbd9bf289ad83b4c0f9216d301b63}} 
+\index{setobject.h@{setobject.h}!PyAnySet\_CheckExact@{PyAnySet\_CheckExact}}
+\index{PyAnySet\_CheckExact@{PyAnySet\_CheckExact}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PyAnySet\_CheckExact}{PyAnySet\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Any\+Set\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&Py\+Set\+\_\+\+Type $\vert$$\vert$ \mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&Py\+Frozen\+Set\+\_\+\+Type)}
+
+\mbox{\Hypertarget{setobject_8h_a3506ab5dd5fbfb35feaf2518f605498b}\label{setobject_8h_a3506ab5dd5fbfb35feaf2518f605498b}} 
+\index{setobject.h@{setobject.h}!PyFrozenSet\_Check@{PyFrozenSet\_Check}}
+\index{PyFrozenSet\_Check@{PyFrozenSet\_Check}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PyFrozenSet\_Check}{PyFrozenSet\_Check}}
+{\footnotesize\ttfamily \#define Py\+Frozen\+Set\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&PyFrozenSet\_Type || \(\backslash\)}
+\DoxyCodeLine{      PyType\_IsSubtype(\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}), \&PyFrozenSet\_Type))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{setobject_8h_ab5bd089c79794b75fb35f9d5fe0e9c45}\label{setobject_8h_ab5bd089c79794b75fb35f9d5fe0e9c45}} 
+\index{setobject.h@{setobject.h}!PyFrozenSet\_CheckExact@{PyFrozenSet\_CheckExact}}
+\index{PyFrozenSet\_CheckExact@{PyFrozenSet\_CheckExact}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PyFrozenSet\_CheckExact}{PyFrozenSet\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Frozen\+Set\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}} }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&Py\+Frozen\+Set\+\_\+\+Type)}
+
+\mbox{\Hypertarget{setobject_8h_a5f2386ff11ddbfc71bc4560a6ef6473d}\label{setobject_8h_a5f2386ff11ddbfc71bc4560a6ef6473d}} 
+\index{setobject.h@{setobject.h}!PySet\_Check@{PySet\_Check}}
+\index{PySet\_Check@{PySet\_Check}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PySet\_Check}{PySet\_Check}}
+{\footnotesize\ttfamily \#define Py\+Set\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}) == \&PySet\_Type || \(\backslash\)}
+\DoxyCodeLine{    PyType\_IsSubtype(\mbox{\hyperlink{_python27_2object_8h_a02507aa5ff002289d6f1ad2e93351b8a}{Py\_TYPE}}(\mbox{\hyperlink{abstract_8h_aaa9f6c7943088e537735a92fbca1567f}{ob}}), \&PySet\_Type))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{setobject_8h_ae0e9372ef59d5555b90535a71ccbd021}\label{setobject_8h_ae0e9372ef59d5555b90535a71ccbd021}} 
+\index{setobject.h@{setobject.h}!PySet\_GET\_SIZE@{PySet\_GET\_SIZE}}
+\index{PySet\_GET\_SIZE@{PySet\_GET\_SIZE}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PySet\_GET\_SIZE}{PySet\_GET\_SIZE}}
+{\footnotesize\ttfamily \#define Py\+Set\+\_\+\+G\+E\+T\+\_\+\+S\+I\+ZE(\begin{DoxyParamCaption}\item[{}]{so }\end{DoxyParamCaption})~(((\mbox{\hyperlink{setobject_8h_ab78ba704793f52f076c487b137c4b169}{Py\+Set\+Object}} $\ast$)(so))-\/$>$used)}
+
+\mbox{\Hypertarget{setobject_8h_a4d2d577602a30e417393d879b7eeb70c}\label{setobject_8h_a4d2d577602a30e417393d879b7eeb70c}} 
+\index{setobject.h@{setobject.h}!PySet\_MINSIZE@{PySet\_MINSIZE}}
+\index{PySet\_MINSIZE@{PySet\_MINSIZE}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PySet\_MINSIZE}{PySet\_MINSIZE}}
+{\footnotesize\ttfamily \#define Py\+Set\+\_\+\+M\+I\+N\+S\+I\+ZE~8}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{setobject_8h_ab78ba704793f52f076c487b137c4b169}\label{setobject_8h_ab78ba704793f52f076c487b137c4b169}} 
+\index{setobject.h@{setobject.h}!PySetObject@{PySetObject}}
+\index{PySetObject@{PySetObject}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PySetObject}{PySetObject}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__setobject}{\+\_\+setobject}} \mbox{\hyperlink{setobject_8h_ab78ba704793f52f076c487b137c4b169}{Py\+Set\+Object}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{setobject_8h_a1f051d8e355c9f7b9f561420601cfcb2}\label{setobject_8h_a1f051d8e355c9f7b9f561420601cfcb2}} 
+\index{setobject.h@{setobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{setobject_8h_acffbedd5fcbcfe6d91f53aa5f69ecf4d}\label{setobject_8h_acffbedd5fcbcfe6d91f53aa5f69ecf4d}} 
+\index{setobject.h@{setobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{setobject_8h_ad6ea98425341a337511d53a95642d829}\label{setobject_8h_ad6ea98425341a337511d53a95642d829}} 
+\index{setobject.h@{setobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{setobject_8h_ae01a8b3f19bd8677d7a18104740b999b}\label{setobject_8h_ae01a8b3f19bd8677d7a18104740b999b}} 
+\index{setobject.h@{setobject.h}!hash@{hash}}
+\index{hash@{hash}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{hash}{hash}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}$\ast$ hash}
+
+\mbox{\Hypertarget{setobject_8h_abde1123f2e15338312430e40a313d9cf}\label{setobject_8h_abde1123f2e15338312430e40a313d9cf}} 
+\index{setobject.h@{setobject.h}!iterable@{iterable}}
+\index{iterable@{iterable}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{iterable}{iterable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$ \mbox{\hyperlink{classiterable}{iterable}}}
+
+\mbox{\Hypertarget{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}\label{setobject_8h_ab06f52e01abcbec81a27c56570d3c10b}} 
+\index{setobject.h@{setobject.h}!key@{key}}
+\index{key@{key}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$$\ast$ key}
+
+\mbox{\Hypertarget{setobject_8h_a0cdb1b70380fd629358aa8be81bb89b6}\label{setobject_8h_a0cdb1b70380fd629358aa8be81bb89b6}} 
+\index{setobject.h@{setobject.h}!pos@{pos}}
+\index{pos@{pos}!setobject.h@{setobject.h}}
+\subsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}$\ast$ pos}
+

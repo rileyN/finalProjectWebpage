@@ -1,0 +1,57 @@
+\hypertarget{namespacetest__gil__scoped}{}\section{test\+\_\+gil\+\_\+scoped Namespace Reference}
+\label{namespacetest__gil__scoped}\index{test\_gil\_scoped@{test\_gil\_scoped}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetest__gil__scoped_ac54f4e3b85ef926abdcaef7eb30da388}{test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+thread}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__gil__scoped_a888e2a5b3e2e85735b366cedcb36b949}{test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+thread\+\_\+multiple\+\_\+parallel}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__gil__scoped_ada15f4c3cc5f3b87c470073a6e296537}{test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+thread\+\_\+multiple\+\_\+sequential}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__gil__scoped_ae851cb7feb206233dd0904dea8dfbec9}{test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+process}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacetest__gil__scoped_ae851cb7feb206233dd0904dea8dfbec9}\label{namespacetest__gil__scoped_ae851cb7feb206233dd0904dea8dfbec9}} 
+\index{test\_gil\_scoped@{test\_gil\_scoped}!test\_python\_to\_cpp\_to\_python\_from\_process@{test\_python\_to\_cpp\_to\_python\_from\_process}}
+\index{test\_python\_to\_cpp\_to\_python\_from\_process@{test\_python\_to\_cpp\_to\_python\_from\_process}!test\_gil\_scoped@{test\_gil\_scoped}}
+\subsubsection{\texorpdfstring{test\_python\_to\_cpp\_to\_python\_from\_process()}{test\_python\_to\_cpp\_to\_python\_from\_process()}}
+{\footnotesize\ttfamily def test\+\_\+gil\+\_\+scoped.\+test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes sure there is no GIL deadlock when using processes.
+
+This test is for completion, but it was never an issue.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__gil__scoped_ac54f4e3b85ef926abdcaef7eb30da388}\label{namespacetest__gil__scoped_ac54f4e3b85ef926abdcaef7eb30da388}} 
+\index{test\_gil\_scoped@{test\_gil\_scoped}!test\_python\_to\_cpp\_to\_python\_from\_thread@{test\_python\_to\_cpp\_to\_python\_from\_thread}}
+\index{test\_python\_to\_cpp\_to\_python\_from\_thread@{test\_python\_to\_cpp\_to\_python\_from\_thread}!test\_gil\_scoped@{test\_gil\_scoped}}
+\subsubsection{\texorpdfstring{test\_python\_to\_cpp\_to\_python\_from\_thread()}{test\_python\_to\_cpp\_to\_python\_from\_thread()}}
+{\footnotesize\ttfamily def test\+\_\+gil\+\_\+scoped.\+test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes sure there is no GIL deadlock when running in a thread.
+
+It runs in a separate process to be able to stop and assert if it deadlocks.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__gil__scoped_a888e2a5b3e2e85735b366cedcb36b949}\label{namespacetest__gil__scoped_a888e2a5b3e2e85735b366cedcb36b949}} 
+\index{test\_gil\_scoped@{test\_gil\_scoped}!test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_parallel@{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_parallel}}
+\index{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_parallel@{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_parallel}!test\_gil\_scoped@{test\_gil\_scoped}}
+\subsubsection{\texorpdfstring{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_parallel()}{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_parallel()}}
+{\footnotesize\ttfamily def test\+\_\+gil\+\_\+scoped.\+test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+thread\+\_\+multiple\+\_\+parallel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes sure there is no GIL deadlock when running in a thread multiple times in parallel.
+
+It runs in a separate process to be able to stop and assert if it deadlocks.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__gil__scoped_ada15f4c3cc5f3b87c470073a6e296537}\label{namespacetest__gil__scoped_ada15f4c3cc5f3b87c470073a6e296537}} 
+\index{test\_gil\_scoped@{test\_gil\_scoped}!test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_sequential@{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_sequential}}
+\index{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_sequential@{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_sequential}!test\_gil\_scoped@{test\_gil\_scoped}}
+\subsubsection{\texorpdfstring{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_sequential()}{test\_python\_to\_cpp\_to\_python\_from\_thread\_multiple\_sequential()}}
+{\footnotesize\ttfamily def test\+\_\+gil\+\_\+scoped.\+test\+\_\+python\+\_\+to\+\_\+cpp\+\_\+to\+\_\+python\+\_\+from\+\_\+thread\+\_\+multiple\+\_\+sequential (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes sure there is no GIL deadlock when running in a thread multiple times sequentially.
+
+It runs in a separate process to be able to stop and assert if it deadlocks.
+\end{DoxyVerb}
+ 

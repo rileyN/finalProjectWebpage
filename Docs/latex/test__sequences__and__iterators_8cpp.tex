@@ -1,0 +1,52 @@
+\hypertarget{test__sequences__and__iterators_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+sequences\+\_\+and\+\_\+iterators.cpp File Reference}
+\label{test__sequences__and__iterators_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_sequences\_and\_iterators.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_sequences\_and\_iterators.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}constructor\+\_\+stats.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pybind11/operators.\+h$>$}\newline
+{\ttfamily \#include $<$pybind11/stl.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_non_zero_iterator}{Non\+Zero\+Iterator$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{class_non_zero_sentinel}{Non\+Zero\+Sentinel}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename A , typename B $>$ }\\\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{test__sequences__and__iterators_8cpp_afd5ece9d06e156aac56caaf155e239fb}{operator==}} (const \mbox{\hyperlink{class_non_zero_iterator}{Non\+Zero\+Iterator}}$<$ std\+::pair$<$ \mbox{\hyperlink{struct_a}{A}}, \mbox{\hyperlink{struct_b}{B}} $>$$>$ \&it, const \mbox{\hyperlink{class_non_zero_sentinel}{Non\+Zero\+Sentinel}} \&)
+\item 
+{\footnotesize template$<$typename Python\+Type $>$ }\\py\+::list \mbox{\hyperlink{test__sequences__and__iterators_8cpp_acadae9103a6f3a8604cafd766a927d51}{test\+\_\+random\+\_\+access\+\_\+iterator}} (Python\+Type \mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\mbox{\hyperlink{test__sequences__and__iterators_8cpp_a036205a4bfdf6fad4c9d1c5102acea1e}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (sequences\+\_\+and\+\_\+iterators, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__sequences__and__iterators_8cpp_afd5ece9d06e156aac56caaf155e239fb}\label{test__sequences__and__iterators_8cpp_afd5ece9d06e156aac56caaf155e239fb}} 
+\index{test\_sequences\_and\_iterators.cpp@{test\_sequences\_and\_iterators.cpp}!operator==@{operator==}}
+\index{operator==@{operator==}!test\_sequences\_and\_iterators.cpp@{test\_sequences\_and\_iterators.cpp}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename A , typename B $>$ \\
+\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_non_zero_iterator}{Non\+Zero\+Iterator}}$<$ std\+::pair$<$ \mbox{\hyperlink{struct_a}{A}}, \mbox{\hyperlink{struct_b}{B}} $>$$>$ \&}]{it,  }\item[{const \mbox{\hyperlink{class_non_zero_sentinel}{Non\+Zero\+Sentinel}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__sequences__and__iterators_8cpp_acadae9103a6f3a8604cafd766a927d51}\label{test__sequences__and__iterators_8cpp_acadae9103a6f3a8604cafd766a927d51}} 
+\index{test\_sequences\_and\_iterators.cpp@{test\_sequences\_and\_iterators.cpp}!test\_random\_access\_iterator@{test\_random\_access\_iterator}}
+\index{test\_random\_access\_iterator@{test\_random\_access\_iterator}!test\_sequences\_and\_iterators.cpp@{test\_sequences\_and\_iterators.cpp}}
+\subsubsection{\texorpdfstring{test\_random\_access\_iterator()}{test\_random\_access\_iterator()}}
+{\footnotesize\ttfamily template$<$typename Python\+Type $>$ \\
+py\+::list test\+\_\+random\+\_\+access\+\_\+iterator (\begin{DoxyParamCaption}\item[{Python\+Type}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__sequences__and__iterators_8cpp_a036205a4bfdf6fad4c9d1c5102acea1e}\label{test__sequences__and__iterators_8cpp_a036205a4bfdf6fad4c9d1c5102acea1e}} 
+\index{test\_sequences\_and\_iterators.cpp@{test\_sequences\_and\_iterators.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_sequences\_and\_iterators.cpp@{test\_sequences\_and\_iterators.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{sequences\+\_\+and\+\_\+iterators}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+
+Bare bones interface
+
+Optional sequence protocol operations
+
+Slicing protocol (optional)
+
+Comparisons 

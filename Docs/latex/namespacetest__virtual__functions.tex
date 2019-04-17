@@ -1,0 +1,115 @@
+\hypertarget{namespacetest__virtual__functions}{}\section{test\+\_\+virtual\+\_\+functions Namespace Reference}
+\label{namespacetest__virtual__functions}\index{test\_virtual\_functions@{test\_virtual\_functions}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_aa4539dae52e563d1ade4fd68cef498a9}{test\+\_\+override}} (capture, msg)
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_a5c20eb78c5144f7798743969442c0d92}{test\+\_\+alias\+\_\+delay\+\_\+initialization1}} (capture)
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_a88181b0dea0f4aa4dc7c009f751fb3ff}{test\+\_\+alias\+\_\+delay\+\_\+initialization2}} (capture)
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_a5862679ba686c1dc509ad1598fab0ddb}{test\+\_\+move\+\_\+support}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_aebcdfe688eeefd3b788681e3cb9a69a2}{test\+\_\+dispatch\+\_\+issue}} (msg)
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_ad2ea910fc087a0a939c5c6110c7d6146}{test\+\_\+override\+\_\+ref}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_a6659077ad0a4b585ae2980928dfebcd5}{test\+\_\+inherited\+\_\+virtuals}} ()
+\item 
+def \mbox{\hyperlink{namespacetest__virtual__functions_a8c8dcdf2a75a72c51c420893d6a37e45}{test\+\_\+issue\+\_\+1454}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__virtual__functions_a61c029ceb93e50c3ef9d6a8446074a1b}{data}}
+\item 
+\mbox{\hyperlink{namespacetest__virtual__functions_a821b60036e2adf44623c392bbd6b0e64}{movable}}
+\item 
+\mbox{\hyperlink{namespacetest__virtual__functions_a4d08100f674b7d5f707cb856d4cef965}{nc}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacetest__virtual__functions_a5c20eb78c5144f7798743969442c0d92}\label{namespacetest__virtual__functions_a5c20eb78c5144f7798743969442c0d92}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_alias\_delay\_initialization1@{test\_alias\_delay\_initialization1}}
+\index{test\_alias\_delay\_initialization1@{test\_alias\_delay\_initialization1}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_alias\_delay\_initialization1()}{test\_alias\_delay\_initialization1()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+alias\+\_\+delay\+\_\+initialization1 (\begin{DoxyParamCaption}\item[{}]{capture }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}`A` only initializes its trampoline class when we inherit from it
+
+If we just create and use an A instance directly, the trampoline initialization is
+bypassed and we only initialize an A() instead (for performance reasons).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__virtual__functions_a88181b0dea0f4aa4dc7c009f751fb3ff}\label{namespacetest__virtual__functions_a88181b0dea0f4aa4dc7c009f751fb3ff}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_alias\_delay\_initialization2@{test\_alias\_delay\_initialization2}}
+\index{test\_alias\_delay\_initialization2@{test\_alias\_delay\_initialization2}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_alias\_delay\_initialization2()}{test\_alias\_delay\_initialization2()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+alias\+\_\+delay\+\_\+initialization2 (\begin{DoxyParamCaption}\item[{}]{capture }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}`A2`, unlike the above, is configured to always initialize the alias
+
+While the extra initialization and extra class layer has small virtual dispatch
+performance penalty, it also allows us to do more things with the trampoline
+class such as defining local variables and performing construction/destruction.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__virtual__functions_aebcdfe688eeefd3b788681e3cb9a69a2}\label{namespacetest__virtual__functions_aebcdfe688eeefd3b788681e3cb9a69a2}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_dispatch\_issue@{test\_dispatch\_issue}}
+\index{test\_dispatch\_issue@{test\_dispatch\_issue}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_dispatch\_issue()}{test\_dispatch\_issue()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+dispatch\+\_\+issue (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}#159: virtual function dispatch has problems with similar-named functions\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacetest__virtual__functions_a6659077ad0a4b585ae2980928dfebcd5}\label{namespacetest__virtual__functions_a6659077ad0a4b585ae2980928dfebcd5}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_inherited\_virtuals@{test\_inherited\_virtuals}}
+\index{test\_inherited\_virtuals@{test\_inherited\_virtuals}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_inherited\_virtuals()}{test\_inherited\_virtuals()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+inherited\+\_\+virtuals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetest__virtual__functions_a8c8dcdf2a75a72c51c420893d6a37e45}\label{namespacetest__virtual__functions_a8c8dcdf2a75a72c51c420893d6a37e45}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_issue\_1454@{test\_issue\_1454}}
+\index{test\_issue\_1454@{test\_issue\_1454}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_issue\_1454()}{test\_issue\_1454()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+issue\+\_\+1454 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetest__virtual__functions_a5862679ba686c1dc509ad1598fab0ddb}\label{namespacetest__virtual__functions_a5862679ba686c1dc509ad1598fab0ddb}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_move\_support@{test\_move\_support}}
+\index{test\_move\_support@{test\_move\_support}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_move\_support()}{test\_move\_support()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+move\+\_\+support (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetest__virtual__functions_aa4539dae52e563d1ade4fd68cef498a9}\label{namespacetest__virtual__functions_aa4539dae52e563d1ade4fd68cef498a9}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_override@{test\_override}}
+\index{test\_override@{test\_override}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_override()}{test\_override()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+override (\begin{DoxyParamCaption}\item[{}]{capture,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetest__virtual__functions_ad2ea910fc087a0a939c5c6110c7d6146}\label{namespacetest__virtual__functions_ad2ea910fc087a0a939c5c6110c7d6146}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!test\_override\_ref@{test\_override\_ref}}
+\index{test\_override\_ref@{test\_override\_ref}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{test\_override\_ref()}{test\_override\_ref()}}
+{\footnotesize\ttfamily def test\+\_\+virtual\+\_\+functions.\+test\+\_\+override\+\_\+ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}#392/397: overriding reference-returning functions\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetest__virtual__functions_a61c029ceb93e50c3ef9d6a8446074a1b}\label{namespacetest__virtual__functions_a61c029ceb93e50c3ef9d6a8446074a1b}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!data@{data}}
+\index{data@{data}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily test\+\_\+virtual\+\_\+functions.\+data}
+
+\mbox{\Hypertarget{namespacetest__virtual__functions_a821b60036e2adf44623c392bbd6b0e64}\label{namespacetest__virtual__functions_a821b60036e2adf44623c392bbd6b0e64}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!movable@{movable}}
+\index{movable@{movable}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{movable}{movable}}
+{\footnotesize\ttfamily test\+\_\+virtual\+\_\+functions.\+movable}
+
+\mbox{\Hypertarget{namespacetest__virtual__functions_a4d08100f674b7d5f707cb856d4cef965}\label{namespacetest__virtual__functions_a4d08100f674b7d5f707cb856d4cef965}} 
+\index{test\_virtual\_functions@{test\_virtual\_functions}!nc@{nc}}
+\index{nc@{nc}!test\_virtual\_functions@{test\_virtual\_functions}}
+\subsubsection{\texorpdfstring{nc}{nc}}
+{\footnotesize\ttfamily test\+\_\+virtual\+\_\+functions.\+nc}
+

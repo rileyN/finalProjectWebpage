@@ -1,0 +1,113 @@
+\hypertarget{classany__container}{}\section{any\+\_\+container$<$ T $>$ Class Template Reference}
+\label{classany__container}\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+
+
+{\ttfamily \#include $<$common.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classany__container_ada7ea5cc76b0faf62d22d9bd3deca147}{any\+\_\+container}} ()=default
+\item 
+{\footnotesize template$<$typename It , typename  = enable\+\_\+if\+\_\+t$<$is\+\_\+input\+\_\+iterator$<$\+It$>$\+::value$>$$>$ }\\\mbox{\hyperlink{classany__container_a16c36f2f2714692d2112d66cf539f882}{any\+\_\+container}} (It \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ada771a798be00a696d20928c9a3371e7}{first}}, It \mbox{\hyperlink{detail_2common_8h_a98cc70241f124ef088fa2d7d716166fd}{last}})
+\item 
+{\footnotesize template$<$typename Container , typename  = enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$decltype($\ast$std\+::begin(std\+::declval$<$const Container \&$>$())), T$>$\+::value$>$$>$ }\\\mbox{\hyperlink{classany__container_a683c6b51acd3f23aa48505b2bca83629}{any\+\_\+container}} (const Container \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}})
+\item 
+{\footnotesize template$<$typename T\+In , typename  = enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$\+T\+In, T$>$\+::value$>$$>$ }\\\mbox{\hyperlink{classany__container_a7bc3471a016f7dafe3878fa66497ad26}{any\+\_\+container}} (const std\+::initializer\+\_\+list$<$ T\+In $>$ \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a1f2d7f8147412c43ba2303a56f97ee73}{c}})
+\item 
+\mbox{\hyperlink{classany__container_a6a530db0c5ae047d9d7fcea35426b278}{any\+\_\+container}} (std\+::vector$<$ T $>$ \&\&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+\mbox{\hyperlink{classany__container_afd688b631f9201494f55e82e6ff4b099}{operator std\+::vector$<$ T $>$ \&\&}} () \&\&
+\item 
+std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classany__container_a3d97f9a1acbca473d49914722f5a102e}{operator $\ast$}} ()
+\item 
+const std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classany__container_ab94e9ff5873cb2551b5e1a00fa8dc3cf}{operator $\ast$}} () const
+\item 
+std\+::vector$<$ T $>$ $\ast$ \mbox{\hyperlink{classany__container_a47c855832d83d1ccb543ff206b59f327}{operator-\/$>$}} ()
+\item 
+const std\+::vector$<$ T $>$ $\ast$ \mbox{\hyperlink{classany__container_ac8c067f37efdffba9d64bf34823c4ad6}{operator-\/$>$}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classany__container_ada7ea5cc76b0faf62d22d9bd3deca147}\label{classany__container_ada7ea5cc76b0faf62d22d9bd3deca147}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!any\_container@{any\_container}}
+\index{any\_container@{any\_container}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{any\_container()}{any\_container()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::\mbox{\hyperlink{classany__container}{any\+\_\+container}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classany__container_a16c36f2f2714692d2112d66cf539f882}\label{classany__container_a16c36f2f2714692d2112d66cf539f882}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!any\_container@{any\_container}}
+\index{any\_container@{any\_container}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{any\_container()}{any\_container()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename It , typename  = enable\+\_\+if\+\_\+t$<$is\+\_\+input\+\_\+iterator$<$\+It$>$\+::value$>$$>$ \\
+\mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::\mbox{\hyperlink{classany__container}{any\+\_\+container}} (\begin{DoxyParamCaption}\item[{It}]{first,  }\item[{It}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classany__container_a683c6b51acd3f23aa48505b2bca83629}\label{classany__container_a683c6b51acd3f23aa48505b2bca83629}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!any\_container@{any\_container}}
+\index{any\_container@{any\_container}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{any\_container()}{any\_container()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename Container , typename  = enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$decltype($\ast$std\+::begin(std\+::declval$<$const Container \&$>$())), T$>$\+::value$>$$>$ \\
+\mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::\mbox{\hyperlink{classany__container}{any\+\_\+container}} (\begin{DoxyParamCaption}\item[{const Container \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classany__container_a7bc3471a016f7dafe3878fa66497ad26}\label{classany__container_a7bc3471a016f7dafe3878fa66497ad26}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!any\_container@{any\_container}}
+\index{any\_container@{any\_container}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{any\_container()}{any\_container()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+template$<$typename T\+In , typename  = enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$\+T\+In, T$>$\+::value$>$$>$ \\
+\mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::\mbox{\hyperlink{classany__container}{any\+\_\+container}} (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ T\+In $>$ \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classany__container_a6a530db0c5ae047d9d7fcea35426b278}\label{classany__container_a6a530db0c5ae047d9d7fcea35426b278}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!any\_container@{any\_container}}
+\index{any\_container@{any\_container}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{any\_container()}{any\_container()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::\mbox{\hyperlink{classany__container}{any\+\_\+container}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&\&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classany__container_a3d97f9a1acbca473d49914722f5a102e}\label{classany__container_a3d97f9a1acbca473d49914722f5a102e}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::vector$<$T$>$\& \mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::operator $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classany__container_ab94e9ff5873cb2551b5e1a00fa8dc3cf}\label{classany__container_ab94e9ff5873cb2551b5e1a00fa8dc3cf}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const std\+::vector$<$T$>$\& \mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::operator $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classany__container_afd688b631f9201494f55e82e6ff4b099}\label{classany__container_afd688b631f9201494f55e82e6ff4b099}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!operator std::vector$<$ T $>$ \&\&@{operator std::vector$<$ T $>$ \&\&}}
+\index{operator std::vector$<$ T $>$ \&\&@{operator std::vector$<$ T $>$ \&\&}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator std::vector$<$ T $>$ \&\&()}{operator std::vector< T > \&\&()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::operator std\+::vector$<$ T $>$ \&\& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) \&\&\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classany__container_a47c855832d83d1ccb543ff206b59f327}\label{classany__container_a47c855832d83d1ccb543ff206b59f327}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::vector$<$T$>$$\ast$ \mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classany__container_ac8c067f37efdffba9d64bf34823c4ad6}\label{classany__container_ac8c067f37efdffba9d64bf34823c4ad6}} 
+\index{any\_container$<$ T $>$@{any\_container$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!any\_container$<$ T $>$@{any\_container$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const std\+::vector$<$T$>$$\ast$ \mbox{\hyperlink{classany__container}{any\+\_\+container}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/include/pybind11/detail/\mbox{\hyperlink{detail_2common_8h}{common.\+h}}\end{DoxyCompactItemize}

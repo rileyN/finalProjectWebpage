@@ -1,0 +1,47 @@
+\hypertarget{test__multiple__inheritance_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+multiple\+\_\+inheritance.cpp File Reference}
+\label{test__multiple__inheritance_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_multiple\_inheritance.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_multiple\_inheritance.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}constructor\+\_\+stats.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_base_n}{Base\+N$<$ N $>$}}
+\item 
+struct \mbox{\hyperlink{struct_vanilla}{Vanilla}}
+\item 
+struct \mbox{\hyperlink{struct_with_static1}{With\+Static1}}
+\item 
+struct \mbox{\hyperlink{struct_with_static2}{With\+Static2}}
+\item 
+struct \mbox{\hyperlink{struct_vanilla_static_mix1}{Vanilla\+Static\+Mix1}}
+\item 
+struct \mbox{\hyperlink{struct_vanilla_static_mix2}{Vanilla\+Static\+Mix2}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{test__multiple__inheritance_8cpp_a5ad0a60cdabf79079e8245cc88a19cc4}{P\+Y\+B\+I\+N\+D11\+\_\+\+B\+A\+S\+EN}}(N)~py\+::class\+\_\+$<$\mbox{\hyperlink{struct_base_n}{BaseN}}$<$N$>$$>$(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}, \char`\"{}BaseN\char`\"{} \#N).def(\mbox{\hyperlink{pybind11_8h_a144961765ca31801e21d87651871934c}{py\+::init}}$<$\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}$>$()).def(\char`\"{}f\char`\"{} \#N, \mbox{[}$\,$\mbox{]}(\mbox{\hyperlink{struct_base_n}{BaseN}}$<$N$>$ \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}) \{ return \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{b.\+i}} + N; \})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test__multiple__inheritance_8cpp_a3d13673afdae7d573184fb53f2532b99}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (\mbox{\hyperlink{structmultiple__inheritance}{multiple\+\_\+inheritance}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{test__multiple__inheritance_8cpp_a5ad0a60cdabf79079e8245cc88a19cc4}\label{test__multiple__inheritance_8cpp_a5ad0a60cdabf79079e8245cc88a19cc4}} 
+\index{test\_multiple\_inheritance.cpp@{test\_multiple\_inheritance.cpp}!PYBIND11\_BASEN@{PYBIND11\_BASEN}}
+\index{PYBIND11\_BASEN@{PYBIND11\_BASEN}!test\_multiple\_inheritance.cpp@{test\_multiple\_inheritance.cpp}}
+\subsubsection{\texorpdfstring{PYBIND11\_BASEN}{PYBIND11\_BASEN}}
+{\footnotesize\ttfamily \#define P\+Y\+B\+I\+N\+D11\+\_\+\+B\+A\+S\+EN(\begin{DoxyParamCaption}\item[{}]{N }\end{DoxyParamCaption})~py\+::class\+\_\+$<$\mbox{\hyperlink{struct_base_n}{BaseN}}$<$N$>$$>$(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}, \char`\"{}BaseN\char`\"{} \#N).def(\mbox{\hyperlink{pybind11_8h_a144961765ca31801e21d87651871934c}{py\+::init}}$<$\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}$>$()).def(\char`\"{}f\char`\"{} \#N, \mbox{[}$\,$\mbox{]}(\mbox{\hyperlink{struct_base_n}{BaseN}}$<$N$>$ \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a0f71581a41fd2264c8944126dabbd010}{b}}) \{ return \mbox{\hyperlink{abstract_8h_a13235ab5ddf5c2ccd5ca35ab01d91328}{b.\+i}} + N; \})}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__multiple__inheritance_8cpp_a3d13673afdae7d573184fb53f2532b99}\label{test__multiple__inheritance_8cpp_a3d13673afdae7d573184fb53f2532b99}} 
+\index{test\_multiple\_inheritance.cpp@{test\_multiple\_inheritance.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_multiple\_inheritance.cpp@{test\_multiple\_inheritance.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmultiple__inheritance}{multiple\+\_\+inheritance}}}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+

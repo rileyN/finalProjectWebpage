@@ -1,0 +1,205 @@
+\hypertarget{methodobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/methodobject.h File Reference}
+\label{methodobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/methodobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/methodobject.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_py_method_def}{Py\+Method\+Def}}
+\item 
+struct \mbox{\hyperlink{struct_py_method_chain}{Py\+Method\+Chain}}
+\item 
+struct \mbox{\hyperlink{struct_py_c_function_object}{Py\+C\+Function\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a6d39dd5426c1d11d64b8c04a8b6d550e}{Py\+C\+Function\+\_\+\+Check}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+C\+Function\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a91f4e55f86188bc21e014f1bb8ff3692}{Py\+C\+Function\+\_\+\+G\+E\+T\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}})~(((\mbox{\hyperlink{struct_py_c_function_object}{Py\+C\+Function\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}}) -\/$>$ m\+\_\+ml -\/$>$ ml\+\_\+meth)
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_ae870b1a8c502453a48c61ee893bda576}{Py\+C\+Function\+\_\+\+G\+E\+T\+\_\+\+S\+E\+LF}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}})~(((\mbox{\hyperlink{struct_py_c_function_object}{Py\+C\+Function\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}}) -\/$>$ m\+\_\+self)
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a40b73485cd3a09eebe4fc9ab12718449}{Py\+C\+Function\+\_\+\+G\+E\+T\+\_\+\+F\+L\+A\+GS}}(\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}})~(((\mbox{\hyperlink{struct_py_c_function_object}{Py\+C\+Function\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}}) -\/$>$ m\+\_\+ml -\/$>$ ml\+\_\+flags)
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a34c74178db052af6bcba2e388ad1def1}{Py\+C\+Function\+\_\+\+New}}(ML,  S\+E\+LF)~Py\+C\+Function\+\_\+\+New\+Ex((ML), (S\+E\+LF), \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_ae67db9ac129710e1eadda3e6e7217e00}{M\+E\+T\+H\+\_\+\+O\+L\+D\+A\+R\+GS}}~0x0000
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_afaf9b6eff112ee295a578d2aaa72b3dc}{M\+E\+T\+H\+\_\+\+V\+A\+R\+A\+R\+GS}}~0x0001
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a24bcef5ec3749c8987b30e77f3c7528d}{M\+E\+T\+H\+\_\+\+K\+E\+Y\+W\+O\+R\+DS}}~0x0002
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_acc040d2060f59a5fe19dfbcc26df2629}{M\+E\+T\+H\+\_\+\+N\+O\+A\+R\+GS}}~0x0004
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a7eda94090eff0409107444b0973570da}{M\+E\+T\+H\+\_\+O}}~0x0008
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a7b25057329168b11ff234dc42d3c4fe0}{M\+E\+T\+H\+\_\+\+C\+L\+A\+SS}}~0x0010
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_a15971999e8cecb2b3169d485908bf78f}{M\+E\+T\+H\+\_\+\+S\+T\+A\+T\+IC}}~0x0020
+\item 
+\#define \mbox{\hyperlink{methodobject_8h_af1096f0a899e6894666570a6753de2d6}{M\+E\+T\+H\+\_\+\+C\+O\+E\+X\+I\+ST}}~0x0040
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$($\ast$ \mbox{\hyperlink{methodobject_8h_af268178dccdbfeb92ee45524b69d5674}{Py\+C\+Function}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$($\ast$ \mbox{\hyperlink{methodobject_8h_a95bd42c02ad819eb68355267b8c5b491}{Py\+C\+Function\+With\+Keywords}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$($\ast$ \mbox{\hyperlink{methodobject_8h_a7275fa6c360b7c8e041b58127e758e05}{Py\+No\+Args\+Function}}) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+typedef struct \mbox{\hyperlink{struct_py_method_def}{Py\+Method\+Def}} \mbox{\hyperlink{methodobject_8h_a0c0fdbf8ed80219bbf8fd03b4a5b876f}{Py\+Method\+Def}}
+\item 
+typedef struct \mbox{\hyperlink{struct_py_method_chain}{Py\+Method\+Chain}} \mbox{\hyperlink{methodobject_8h_a4c5369edcc10632e5589a13f9b8b7607}{Py\+Method\+Chain}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{methodobject_8h_ab3b37f879a039a12ba0f4056b0c216a3}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+C\+Function\+\_\+\+Type
+\item 
+\mbox{\hyperlink{methodobject_8h_a05acf5a178dc6169316c310ddcf2fdc2}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{methodobject_8h_af268178dccdbfeb92ee45524b69d5674}{Py\+C\+Function}}) Py\+C\+Function\+\_\+\+Get\+Function(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{methodobject_8h_a68031318d33d5b78ecc90aa37229cbb0}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+C\+Function\+\_\+\+Get\+Self(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{methodobject_8h_a98093f80d7f499db20864faa06ea4ca3}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) Py\+C\+Function\+\_\+\+Get\+Flags(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{methodobject_8h_a7b25057329168b11ff234dc42d3c4fe0}\label{methodobject_8h_a7b25057329168b11ff234dc42d3c4fe0}} 
+\index{methodobject.h@{methodobject.h}!METH\_CLASS@{METH\_CLASS}}
+\index{METH\_CLASS@{METH\_CLASS}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_CLASS}{METH\_CLASS}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+\+C\+L\+A\+SS~0x0010}
+
+\mbox{\Hypertarget{methodobject_8h_af1096f0a899e6894666570a6753de2d6}\label{methodobject_8h_af1096f0a899e6894666570a6753de2d6}} 
+\index{methodobject.h@{methodobject.h}!METH\_COEXIST@{METH\_COEXIST}}
+\index{METH\_COEXIST@{METH\_COEXIST}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_COEXIST}{METH\_COEXIST}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+\+C\+O\+E\+X\+I\+ST~0x0040}
+
+\mbox{\Hypertarget{methodobject_8h_a24bcef5ec3749c8987b30e77f3c7528d}\label{methodobject_8h_a24bcef5ec3749c8987b30e77f3c7528d}} 
+\index{methodobject.h@{methodobject.h}!METH\_KEYWORDS@{METH\_KEYWORDS}}
+\index{METH\_KEYWORDS@{METH\_KEYWORDS}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_KEYWORDS}{METH\_KEYWORDS}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+\+K\+E\+Y\+W\+O\+R\+DS~0x0002}
+
+\mbox{\Hypertarget{methodobject_8h_acc040d2060f59a5fe19dfbcc26df2629}\label{methodobject_8h_acc040d2060f59a5fe19dfbcc26df2629}} 
+\index{methodobject.h@{methodobject.h}!METH\_NOARGS@{METH\_NOARGS}}
+\index{METH\_NOARGS@{METH\_NOARGS}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_NOARGS}{METH\_NOARGS}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+\+N\+O\+A\+R\+GS~0x0004}
+
+\mbox{\Hypertarget{methodobject_8h_a7eda94090eff0409107444b0973570da}\label{methodobject_8h_a7eda94090eff0409107444b0973570da}} 
+\index{methodobject.h@{methodobject.h}!METH\_O@{METH\_O}}
+\index{METH\_O@{METH\_O}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_O}{METH\_O}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+O~0x0008}
+
+\mbox{\Hypertarget{methodobject_8h_ae67db9ac129710e1eadda3e6e7217e00}\label{methodobject_8h_ae67db9ac129710e1eadda3e6e7217e00}} 
+\index{methodobject.h@{methodobject.h}!METH\_OLDARGS@{METH\_OLDARGS}}
+\index{METH\_OLDARGS@{METH\_OLDARGS}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_OLDARGS}{METH\_OLDARGS}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+\+O\+L\+D\+A\+R\+GS~0x0000}
+
+\mbox{\Hypertarget{methodobject_8h_a15971999e8cecb2b3169d485908bf78f}\label{methodobject_8h_a15971999e8cecb2b3169d485908bf78f}} 
+\index{methodobject.h@{methodobject.h}!METH\_STATIC@{METH\_STATIC}}
+\index{METH\_STATIC@{METH\_STATIC}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_STATIC}{METH\_STATIC}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+\+S\+T\+A\+T\+IC~0x0020}
+
+\mbox{\Hypertarget{methodobject_8h_afaf9b6eff112ee295a578d2aaa72b3dc}\label{methodobject_8h_afaf9b6eff112ee295a578d2aaa72b3dc}} 
+\index{methodobject.h@{methodobject.h}!METH\_VARARGS@{METH\_VARARGS}}
+\index{METH\_VARARGS@{METH\_VARARGS}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{METH\_VARARGS}{METH\_VARARGS}}
+{\footnotesize\ttfamily \#define M\+E\+T\+H\+\_\+\+V\+A\+R\+A\+R\+GS~0x0001}
+
+\mbox{\Hypertarget{methodobject_8h_a6d39dd5426c1d11d64b8c04a8b6d550e}\label{methodobject_8h_a6d39dd5426c1d11d64b8c04a8b6d550e}} 
+\index{methodobject.h@{methodobject.h}!PyCFunction\_Check@{PyCFunction\_Check}}
+\index{PyCFunction\_Check@{PyCFunction\_Check}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyCFunction\_Check}{PyCFunction\_Check}}
+{\footnotesize\ttfamily \#define Py\+C\+Function\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+C\+Function\+\_\+\+Type)}
+
+\mbox{\Hypertarget{methodobject_8h_a40b73485cd3a09eebe4fc9ab12718449}\label{methodobject_8h_a40b73485cd3a09eebe4fc9ab12718449}} 
+\index{methodobject.h@{methodobject.h}!PyCFunction\_GET\_FLAGS@{PyCFunction\_GET\_FLAGS}}
+\index{PyCFunction\_GET\_FLAGS@{PyCFunction\_GET\_FLAGS}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyCFunction\_GET\_FLAGS}{PyCFunction\_GET\_FLAGS}}
+{\footnotesize\ttfamily \#define Py\+C\+Function\+\_\+\+G\+E\+T\+\_\+\+F\+L\+A\+GS(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_c_function_object}{Py\+C\+Function\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}}) -\/$>$ m\+\_\+ml -\/$>$ ml\+\_\+flags)}
+
+\mbox{\Hypertarget{methodobject_8h_a91f4e55f86188bc21e014f1bb8ff3692}\label{methodobject_8h_a91f4e55f86188bc21e014f1bb8ff3692}} 
+\index{methodobject.h@{methodobject.h}!PyCFunction\_GET\_FUNCTION@{PyCFunction\_GET\_FUNCTION}}
+\index{PyCFunction\_GET\_FUNCTION@{PyCFunction\_GET\_FUNCTION}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyCFunction\_GET\_FUNCTION}{PyCFunction\_GET\_FUNCTION}}
+{\footnotesize\ttfamily \#define Py\+C\+Function\+\_\+\+G\+E\+T\+\_\+\+F\+U\+N\+C\+T\+I\+ON(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_c_function_object}{Py\+C\+Function\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}}) -\/$>$ m\+\_\+ml -\/$>$ ml\+\_\+meth)}
+
+\mbox{\Hypertarget{methodobject_8h_ae870b1a8c502453a48c61ee893bda576}\label{methodobject_8h_ae870b1a8c502453a48c61ee893bda576}} 
+\index{methodobject.h@{methodobject.h}!PyCFunction\_GET\_SELF@{PyCFunction\_GET\_SELF}}
+\index{PyCFunction\_GET\_SELF@{PyCFunction\_GET\_SELF}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyCFunction\_GET\_SELF}{PyCFunction\_GET\_SELF}}
+{\footnotesize\ttfamily \#define Py\+C\+Function\+\_\+\+G\+E\+T\+\_\+\+S\+E\+LF(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}} }\end{DoxyParamCaption})~(((\mbox{\hyperlink{struct_py_c_function_object}{Py\+C\+Function\+Object}} $\ast$)\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a18ae3ab36a07e388833b568cfdfa90c8}{func}}) -\/$>$ m\+\_\+self)}
+
+\mbox{\Hypertarget{methodobject_8h_a34c74178db052af6bcba2e388ad1def1}\label{methodobject_8h_a34c74178db052af6bcba2e388ad1def1}} 
+\index{methodobject.h@{methodobject.h}!PyCFunction\_New@{PyCFunction\_New}}
+\index{PyCFunction\_New@{PyCFunction\_New}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyCFunction\_New}{PyCFunction\_New}}
+{\footnotesize\ttfamily \#define Py\+C\+Function\+\_\+\+New(\begin{DoxyParamCaption}\item[{}]{ML,  }\item[{}]{S\+E\+LF }\end{DoxyParamCaption})~Py\+C\+Function\+\_\+\+New\+Ex((ML), (S\+E\+LF), \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{methodobject_8h_af268178dccdbfeb92ee45524b69d5674}\label{methodobject_8h_af268178dccdbfeb92ee45524b69d5674}} 
+\index{methodobject.h@{methodobject.h}!PyCFunction@{PyCFunction}}
+\index{PyCFunction@{PyCFunction}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyCFunction}{PyCFunction}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$ Py\+C\+Function) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)}
+
+\mbox{\Hypertarget{methodobject_8h_a95bd42c02ad819eb68355267b8c5b491}\label{methodobject_8h_a95bd42c02ad819eb68355267b8c5b491}} 
+\index{methodobject.h@{methodobject.h}!PyCFunctionWithKeywords@{PyCFunctionWithKeywords}}
+\index{PyCFunctionWithKeywords@{PyCFunctionWithKeywords}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyCFunctionWithKeywords}{PyCFunctionWithKeywords}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$ Py\+C\+Function\+With\+Keywords) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$, \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)}
+
+\mbox{\Hypertarget{methodobject_8h_a4c5369edcc10632e5589a13f9b8b7607}\label{methodobject_8h_a4c5369edcc10632e5589a13f9b8b7607}} 
+\index{methodobject.h@{methodobject.h}!PyMethodChain@{PyMethodChain}}
+\index{PyMethodChain@{PyMethodChain}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyMethodChain}{PyMethodChain}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_py_method_chain}{Py\+Method\+Chain}}  \mbox{\hyperlink{struct_py_method_chain}{Py\+Method\+Chain}}}
+
+\mbox{\Hypertarget{methodobject_8h_a0c0fdbf8ed80219bbf8fd03b4a5b876f}\label{methodobject_8h_a0c0fdbf8ed80219bbf8fd03b4a5b876f}} 
+\index{methodobject.h@{methodobject.h}!PyMethodDef@{PyMethodDef}}
+\index{PyMethodDef@{PyMethodDef}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyMethodDef}{PyMethodDef}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_py_method_def}{Py\+Method\+Def}} \mbox{\hyperlink{struct_py_method_def}{Py\+Method\+Def}}}
+
+\mbox{\Hypertarget{methodobject_8h_a7275fa6c360b7c8e041b58127e758e05}\label{methodobject_8h_a7275fa6c360b7c8e041b58127e758e05}} 
+\index{methodobject.h@{methodobject.h}!PyNoArgsFunction@{PyNoArgsFunction}}
+\index{PyNoArgsFunction@{PyNoArgsFunction}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyNoArgsFunction}{PyNoArgsFunction}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}}$\ast$($\ast$ Py\+No\+Args\+Function) (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{methodobject_8h_ab3b37f879a039a12ba0f4056b0c216a3}\label{methodobject_8h_ab3b37f879a039a12ba0f4056b0c216a3}} 
+\index{methodobject.h@{methodobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{methodobject_8h_a05acf5a178dc6169316c310ddcf2fdc2}\label{methodobject_8h_a05acf5a178dc6169316c310ddcf2fdc2}} 
+\index{methodobject.h@{methodobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{methodobject_8h_af268178dccdbfeb92ee45524b69d5674}{Py\+C\+Function}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{methodobject_8h_a68031318d33d5b78ecc90aa37229cbb0}\label{methodobject_8h_a68031318d33d5b78ecc90aa37229cbb0}} 
+\index{methodobject.h@{methodobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{methodobject_8h_a98093f80d7f499db20864faa06ea4ca3}\label{methodobject_8h_a98093f80d7f499db20864faa06ea4ca3}} 
+\index{methodobject.h@{methodobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!methodobject.h@{methodobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,111 @@
+\hypertarget{class_object}{}\section{Object Class Reference}
+\label{class_object}\index{Object@{Object}}
+
+
+Reference counted object base class.  
+
+
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_a40860402e64d8008fb42329df7097cdb}{Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object_af3b5cd7a9a24ddde484344200cf83281}{Object}} (const \mbox{\hyperlink{class_object}{Object}} \&)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{class_object_a4f97f143f9fb46ac52e2f11cfa034005}{get\+Ref\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Return the current reference count. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_object_a769b55a36d5a2d42af6ef37be0789f43}{inc\+Ref}} () const
+\begin{DoxyCompactList}\small\item\em Increase the object\textquotesingle{}s reference count by one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_object_aee1171037ab2f9137ff9864ceb8f3086}{dec\+Ref}} (\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} dealloc=\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}) const
+\begin{DoxyCompactList}\small\item\em Decrease the reference count of the object and possibly deallocate it. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} \mbox{\hyperlink{class_object_a89fee2453b0e7b4737afac15cf8ed039}{to\+String}} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_object_aa3e791419d84c4c346ef9499513b8e00}{$\sim$\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Virtual protected deconstructor. (Will only be called by \mbox{\hyperlink{classref}{ref}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reference counted object base class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_object_a40860402e64d8008fb42329df7097cdb}\label{class_object_a40860402e64d8008fb42329df7097cdb}} 
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{Object()}{Object()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object\+::\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_object_af3b5cd7a9a24ddde484344200cf83281}\label{class_object_af3b5cd7a9a24ddde484344200cf83281}} 
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{Object()}{Object()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object\+::\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_object}{Object}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+\mbox{\Hypertarget{class_object_aa3e791419d84c4c346ef9499513b8e00}\label{class_object_aa3e791419d84c4c346ef9499513b8e00}} 
+\index{Object@{Object}!````~Object@{$\sim$Object}}
+\index{````~Object@{$\sim$Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{$\sim$Object()}{~Object()}}
+{\footnotesize\ttfamily virtual Object\+::$\sim$\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Virtual protected deconstructor. (Will only be called by \mbox{\hyperlink{classref}{ref}}) 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_aee1171037ab2f9137ff9864ceb8f3086}\label{class_object_aee1171037ab2f9137ff9864ceb8f3086}} 
+\index{Object@{Object}!decRef@{decRef}}
+\index{decRef@{decRef}!Object@{Object}}
+\subsubsection{\texorpdfstring{decRef()}{decRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Object\+::dec\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{dealloc = {\ttfamily \mbox{\hyperlink{asdl_8h_af6a258d8f3ee5206d682d799316314b1a08f175a5505a10b9ed657defeb050e4b}{true}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Decrease the reference count of the object and possibly deallocate it. 
+
+The object will automatically be deallocated once the reference count reaches zero. \mbox{\Hypertarget{class_object_a4f97f143f9fb46ac52e2f11cfa034005}\label{class_object_a4f97f143f9fb46ac52e2f11cfa034005}} 
+\index{Object@{Object}!getRefCount@{getRefCount}}
+\index{getRefCount@{getRefCount}!Object@{Object}}
+\subsubsection{\texorpdfstring{getRefCount()}{getRefCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} Object\+::get\+Ref\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the current reference count. 
+
+\mbox{\Hypertarget{class_object_a769b55a36d5a2d42af6ef37be0789f43}\label{class_object_a769b55a36d5a2d42af6ef37be0789f43}} 
+\index{Object@{Object}!incRef@{incRef}}
+\index{incRef@{incRef}!Object@{Object}}
+\subsubsection{\texorpdfstring{incRef()}{incRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Object\+::inc\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increase the object\textquotesingle{}s reference count by one. 
+
+\mbox{\Hypertarget{class_object_a89fee2453b0e7b4737afac15cf8ed039}\label{class_object_a89fee2453b0e7b4737afac15cf8ed039}} 
+\index{Object@{Object}!toString@{toString}}
+\index{toString@{toString}!Object@{Object}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab4ccfaa8ab0e1afaae94dc96ef52dde1}{std\+::string}} Object\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/\mbox{\hyperlink{pybind11_2tests_2object_8h}{object.\+h}}\end{DoxyCompactItemize}

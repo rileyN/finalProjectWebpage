@@ -1,0 +1,234 @@
+\hypertarget{longobject_8h}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/\+Python27/longobject.h File Reference}
+\label{longobject_8h}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/longobject.h@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/Python27/longobject.h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{longobject_8h_a1c62aea534db077646030898de32ad87}{Py\+Long\+\_\+\+Check}}(op)~\mbox{\hyperlink{_python27_2object_8h_a93b50d584d2f30b899c2dce5d841d8b9}{Py\+Type\+\_\+\+Fast\+Subclass}}(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op), \mbox{\hyperlink{_python27_2object_8h_aa2d8b0423c31f61ac01285a563eb2482}{Py\+\_\+\+T\+P\+F\+L\+A\+G\+S\+\_\+\+L\+O\+N\+G\+\_\+\+S\+U\+B\+C\+L\+A\+SS}})
+\item 
+\#define \mbox{\hyperlink{longobject_8h_a509c76462166c82423ef67cb9c7eb926}{Py\+Long\+\_\+\+Check\+Exact}}(op)~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Long\+\_\+\+Type)
+\item 
+\#define \mbox{\hyperlink{longobject_8h_a8fa28a5dce24ea6650c1ead568afaf63}{\+\_\+\+Py\+Long\+\_\+\+As\+Ssize\+\_\+t}}~Py\+Long\+\_\+\+As\+Ssize\+\_\+t
+\item 
+\#define \mbox{\hyperlink{longobject_8h_aea49500be94bdb9a8f2884411e5de718}{\+\_\+\+Py\+Long\+\_\+\+From\+Size\+\_\+t}}~Py\+Long\+\_\+\+From\+Size\+\_\+t
+\item 
+\#define \mbox{\hyperlink{longobject_8h_a7a04241d1175f362bc27726f6b8ffa33}{\+\_\+\+Py\+Long\+\_\+\+From\+Ssize\+\_\+t}}~Py\+Long\+\_\+\+From\+Ssize\+\_\+t
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__longobject}{\+\_\+longobject}} \mbox{\hyperlink{longobject_8h_a9701b9a8fcff075db9c51cf85f11a244}{Py\+Long\+Object}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{longobject_8h_abc5f847296e93c6ecf72131131a6da08}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}) Py\+Long\+\_\+\+Type
+\item 
+\mbox{\hyperlink{longobject_8h_ad80b1dcbf9b7ca13e82adc71470ab7e2}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$) Py\+Long\+\_\+\+From\+Long(\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}})
+\item 
+\mbox{\hyperlink{longobject_8h_a4f65c42d79390013737eb9d4fe0e769d}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}) Py\+Long\+\_\+\+As\+Long(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} $\ast$ \mbox{\hyperlink{longobject_8h_ad7b2653d5f396531633215ce17841e28}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}) Py\+Long\+\_\+\+As\+Unsigned\+Long(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{longobject_8h_a10a6aabe3bc7c92a1aef7c1ecdd1cd38}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}) Py\+Long\+\_\+\+As\+Ssize\+\_\+t(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{longobject_8h_ab875e56f28583f40331d9a2c9bdf27cf}{Py\+A\+P\+I\+\_\+\+D\+A\+TA}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}) \+\_\+\+Py\+Long\+\_\+\+Digit\+Value\mbox{[}256\mbox{]}
+\item 
+\mbox{\hyperlink{longobject_8h_a45961c34ce7f42b63d87f6ed9ba90b43}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (double) \+\_\+\+Py\+Long\+\_\+\+Frexp(\mbox{\hyperlink{longobject_8h_a9701b9a8fcff075db9c51cf85f11a244}{Py\+Long\+Object}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3309789fc188587d666cda5ece79cf82}{a}}
+\item 
+\mbox{\hyperlink{longobject_8h_a02912e1f4e099a4960999f6ce28b929c}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$) Py\+Long\+\_\+\+As\+Void\+Ptr(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$)
+\item 
+\mbox{\hyperlink{longobject_8h_afd0b2181b0802807f5b00f1f6db17a3c}{Py\+A\+P\+I\+\_\+\+F\+U\+NC}} (\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}}) \+\_\+\+Py\+Long\+\_\+\+Num\+Bits(\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} $\ast$ \mbox{\hyperlink{longobject_8h_a28cf183ea1588229c01af441267bc98c}{e}}
+\item 
+char \mbox{\hyperlink{longobject_8h_ad65b480f8c8270356b45a9890f6499ae}{int}}
+\item 
+\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{longobject_8h_a0a1cb627ccae562872efc91e5b752be1}{n}}
+\item 
+\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{longobject_8h_ac26da10ba824869d0119ec594d5a73c1}{little\+\_\+endian}}
+\item 
+\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{longobject_8h_ad9d9c8fff108a941e143d34a86eb36a2}{is\+\_\+signed}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{longobject_8h_a4ed0df40a586c13fea61e803e2d60f13}{bytes}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{longobject_8h_a19437a5875428e719515fb20de8a6927}{base}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{longobject_8h_ad09de40e66def0b2a6c3a5db589f01a4}{addL}}
+\item 
+\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{longobject_8h_a5453e2895befc3f9accf8be3c746fe59}{newstyle}}
+\item 
+char $\ast$ \mbox{\hyperlink{longobject_8h_a511588f1400d07ba62786e976717db68}{format\+\_\+spec}}
+\item 
+char \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} \mbox{\hyperlink{longobject_8h_ae660a894b4d2865d2999b38ad335e237}{format\+\_\+spec\+\_\+len}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{longobject_8h_a8fa28a5dce24ea6650c1ead568afaf63}\label{longobject_8h_a8fa28a5dce24ea6650c1ead568afaf63}} 
+\index{longobject.h@{longobject.h}!\_PyLong\_AsSsize\_t@{\_PyLong\_AsSsize\_t}}
+\index{\_PyLong\_AsSsize\_t@{\_PyLong\_AsSsize\_t}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{\_PyLong\_AsSsize\_t}{\_PyLong\_AsSsize\_t}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Long\+\_\+\+As\+Ssize\+\_\+t~Py\+Long\+\_\+\+As\+Ssize\+\_\+t}
+
+\mbox{\Hypertarget{longobject_8h_aea49500be94bdb9a8f2884411e5de718}\label{longobject_8h_aea49500be94bdb9a8f2884411e5de718}} 
+\index{longobject.h@{longobject.h}!\_PyLong\_FromSize\_t@{\_PyLong\_FromSize\_t}}
+\index{\_PyLong\_FromSize\_t@{\_PyLong\_FromSize\_t}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{\_PyLong\_FromSize\_t}{\_PyLong\_FromSize\_t}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Long\+\_\+\+From\+Size\+\_\+t~Py\+Long\+\_\+\+From\+Size\+\_\+t}
+
+\mbox{\Hypertarget{longobject_8h_a7a04241d1175f362bc27726f6b8ffa33}\label{longobject_8h_a7a04241d1175f362bc27726f6b8ffa33}} 
+\index{longobject.h@{longobject.h}!\_PyLong\_FromSsize\_t@{\_PyLong\_FromSsize\_t}}
+\index{\_PyLong\_FromSsize\_t@{\_PyLong\_FromSsize\_t}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{\_PyLong\_FromSsize\_t}{\_PyLong\_FromSsize\_t}}
+{\footnotesize\ttfamily \#define \+\_\+\+Py\+Long\+\_\+\+From\+Ssize\+\_\+t~Py\+Long\+\_\+\+From\+Ssize\+\_\+t}
+
+\mbox{\Hypertarget{longobject_8h_a1c62aea534db077646030898de32ad87}\label{longobject_8h_a1c62aea534db077646030898de32ad87}} 
+\index{longobject.h@{longobject.h}!PyLong\_Check@{PyLong\_Check}}
+\index{PyLong\_Check@{PyLong\_Check}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyLong\_Check}{PyLong\_Check}}
+{\footnotesize\ttfamily \#define Py\+Long\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~\mbox{\hyperlink{_python27_2object_8h_a93b50d584d2f30b899c2dce5d841d8b9}{Py\+Type\+\_\+\+Fast\+Subclass}}(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op), \mbox{\hyperlink{_python27_2object_8h_aa2d8b0423c31f61ac01285a563eb2482}{Py\+\_\+\+T\+P\+F\+L\+A\+G\+S\+\_\+\+L\+O\+N\+G\+\_\+\+S\+U\+B\+C\+L\+A\+SS}})}
+
+\mbox{\Hypertarget{longobject_8h_a509c76462166c82423ef67cb9c7eb926}\label{longobject_8h_a509c76462166c82423ef67cb9c7eb926}} 
+\index{longobject.h@{longobject.h}!PyLong\_CheckExact@{PyLong\_CheckExact}}
+\index{PyLong\_CheckExact@{PyLong\_CheckExact}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyLong\_CheckExact}{PyLong\_CheckExact}}
+{\footnotesize\ttfamily \#define Py\+Long\+\_\+\+Check\+Exact(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(\mbox{\hyperlink{pgcompat_8h_a9d03711674b34e81776a78607105f7e4}{Py\+\_\+\+T\+Y\+PE}}(op) == \&Py\+Long\+\_\+\+Type)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{longobject_8h_a9701b9a8fcff075db9c51cf85f11a244}\label{longobject_8h_a9701b9a8fcff075db9c51cf85f11a244}} 
+\index{longobject.h@{longobject.h}!PyLongObject@{PyLongObject}}
+\index{PyLongObject@{PyLongObject}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyLongObject}{PyLongObject}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__longobject}{\+\_\+longobject}} \mbox{\hyperlink{longobject_8h_a9701b9a8fcff075db9c51cf85f11a244}{Py\+Long\+Object}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{longobject_8h_abc5f847296e93c6ecf72131131a6da08}\label{longobject_8h_abc5f847296e93c6ecf72131131a6da08}} 
+\index{longobject.h@{longobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_a42a55dd6e973872c7a6bc61632070f6f}{Py\+Type\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_ab875e56f28583f40331d9a2c9bdf27cf}\label{longobject_8h_ab875e56f28583f40331d9a2c9bdf27cf}} 
+\index{longobject.h@{longobject.h}!PyAPI\_DATA@{PyAPI\_DATA}}
+\index{PyAPI\_DATA@{PyAPI\_DATA}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_DATA()}{PyAPI\_DATA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+D\+A\+TA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_ad80b1dcbf9b7ca13e82adc71470ab7e2}\label{longobject_8h_ad80b1dcbf9b7ca13e82adc71470ab7e2}} 
+\index{longobject.h@{longobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_python27_2object_8h_aadc84ac7aed2cfa6f20c25f62bf3dac7}{Py\+Object}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_a4f65c42d79390013737eb9d4fe0e769d}\label{longobject_8h_a4f65c42d79390013737eb9d4fe0e769d}} 
+\index{longobject.h@{longobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_ad7b2653d5f396531633215ce17841e28}\label{longobject_8h_ad7b2653d5f396531633215ce17841e28}} 
+\index{longobject.h@{longobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}$\ast$ Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{unsigned \mbox{\hyperlink{modsupport_8h_a0cb68e00fb9fb1260ee2daadd9fe6611}{long}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_a10a6aabe3bc7c92a1aef7c1ecdd1cd38}\label{longobject_8h_a10a6aabe3bc7c92a1aef7c1ecdd1cd38}} 
+\index{longobject.h@{longobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_a45961c34ce7f42b63d87f6ed9ba90b43}\label{longobject_8h_a45961c34ce7f42b63d87f6ed9ba90b43}} 
+\index{longobject.h@{longobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_a02912e1f4e099a4960999f6ce28b929c}\label{longobject_8h_a02912e1f4e099a4960999f6ce28b929c}} 
+\index{longobject.h@{longobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{longobject_8h_afd0b2181b0802807f5b00f1f6db17a3c}\label{longobject_8h_afd0b2181b0802807f5b00f1f6db17a3c}} 
+\index{longobject.h@{longobject.h}!PyAPI\_FUNC@{PyAPI\_FUNC}}
+\index{PyAPI\_FUNC@{PyAPI\_FUNC}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{PyAPI\_FUNC()}{PyAPI\_FUNC()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily Py\+A\+P\+I\+\_\+\+F\+U\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{longobject_8h_ad09de40e66def0b2a6c3a5db589f01a4}\label{longobject_8h_ad09de40e66def0b2a6c3a5db589f01a4}} 
+\index{longobject.h@{longobject.h}!addL@{addL}}
+\index{addL@{addL}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{addL}{addL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} addL}
+
+\mbox{\Hypertarget{longobject_8h_a19437a5875428e719515fb20de8a6927}\label{longobject_8h_a19437a5875428e719515fb20de8a6927}} 
+\index{longobject.h@{longobject.h}!base@{base}}
+\index{base@{base}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{structbase}{base}}}
+
+\mbox{\Hypertarget{longobject_8h_a4ed0df40a586c13fea61e803e2d60f13}\label{longobject_8h_a4ed0df40a586c13fea61e803e2d60f13}} 
+\index{longobject.h@{longobject.h}!bytes@{bytes}}
+\index{bytes@{bytes}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily unsigned char$\ast$ \mbox{\hyperlink{classbytes}{bytes}}}
+
+\mbox{\Hypertarget{longobject_8h_a28cf183ea1588229c01af441267bc98c}\label{longobject_8h_a28cf183ea1588229c01af441267bc98c}} 
+\index{longobject.h@{longobject.h}!e@{e}}
+\index{e@{e}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}}$\ast$ e}
+
+\mbox{\Hypertarget{longobject_8h_a511588f1400d07ba62786e976717db68}\label{longobject_8h_a511588f1400d07ba62786e976717db68}} 
+\index{longobject.h@{longobject.h}!format\_spec@{format\_spec}}
+\index{format\_spec@{format\_spec}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{format\_spec}{format\_spec}}
+{\footnotesize\ttfamily char$\ast$ format\+\_\+spec}
+
+\mbox{\Hypertarget{longobject_8h_ae660a894b4d2865d2999b38ad335e237}\label{longobject_8h_ae660a894b4d2865d2999b38ad335e237}} 
+\index{longobject.h@{longobject.h}!format\_spec\_len@{format\_spec\_len}}
+\index{format\_spec\_len@{format\_spec\_len}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{format\_spec\_len}{format\_spec\_len}}
+{\footnotesize\ttfamily char \mbox{\hyperlink{pyport_8h_ac6411a3dfda9ac6feb9e8d859b1184bc}{Py\+\_\+ssize\+\_\+t}} format\+\_\+spec\+\_\+len}
+
+\mbox{\Hypertarget{longobject_8h_ad65b480f8c8270356b45a9890f6499ae}\label{longobject_8h_ad65b480f8c8270356b45a9890f6499ae}} 
+\index{longobject.h@{longobject.h}!int@{int}}
+\index{int@{int}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily char int}
+
+\mbox{\Hypertarget{longobject_8h_ad9d9c8fff108a941e143d34a86eb36a2}\label{longobject_8h_ad9d9c8fff108a941e143d34a86eb36a2}} 
+\index{longobject.h@{longobject.h}!is\_signed@{is\_signed}}
+\index{is\_signed@{is\_signed}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{is\_signed}{is\_signed}}
+{\footnotesize\ttfamily unsigned char \mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} is\+\_\+signed}
+
+\mbox{\Hypertarget{longobject_8h_ac26da10ba824869d0119ec594d5a73c1}\label{longobject_8h_ac26da10ba824869d0119ec594d5a73c1}} 
+\index{longobject.h@{longobject.h}!little\_endian@{little\_endian}}
+\index{little\_endian@{little\_endian}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{little\_endian}{little\_endian}}
+{\footnotesize\ttfamily unsigned char \mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} little\+\_\+endian}
+
+\mbox{\Hypertarget{longobject_8h_a0a1cb627ccae562872efc91e5b752be1}\label{longobject_8h_a0a1cb627ccae562872efc91e5b752be1}} 
+\index{longobject.h@{longobject.h}!n@{n}}
+\index{n@{n}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily unsigned char \mbox{\hyperlink{detail_2common_8h_a801d6a451a01953ef8cbae6feb6a3638}{size\+\_\+t}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}}}
+
+\mbox{\Hypertarget{longobject_8h_a5453e2895befc3f9accf8be3c746fe59}\label{longobject_8h_a5453e2895befc3f9accf8be3c746fe59}} 
+\index{longobject.h@{longobject.h}!newstyle@{newstyle}}
+\index{newstyle@{newstyle}!longobject.h@{longobject.h}}
+\subsubsection{\texorpdfstring{newstyle}{newstyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} newstyle}
+

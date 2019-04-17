@@ -1,0 +1,55 @@
+\hypertarget{test__stl__binders_8cpp}{}\section{C\+:/\+Users/\+Riley Nolan/\+Desktop/\+School/\+Spring 2019/\+C\+S4850/git/finalproject-\/bluesentinel/\+Project/pybind11/tests/test\+\_\+stl\+\_\+binders.cpp File Reference}
+\label{test__stl__binders_8cpp}\index{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_stl\_binders.cpp@{C:/Users/Riley Nolan/Desktop/School/Spring 2019/CS4850/git/finalproject-\/bluesentinel/Project/pybind11/tests/test\_stl\_binders.cpp}}
+{\ttfamily \#include \char`\"{}pybind11\+\_\+tests.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pybind11/stl\+\_\+bind.\+h$>$}\newline
+{\ttfamily \#include $<$pybind11/numpy.\+h$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_el}{El}}
+\item 
+class \mbox{\hyperlink{class_e__nc}{E\+\_\+nc}}
+\begin{DoxyCompactList}\small\item\em Issue \#487\+: binding std\+::vector$<$\+E$>$ with E non-\/copyable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{test__stl__binders_8cpp_a96c1d8fc7e2bbe3fb845f28231a85943}{operator$<$$<$}} (std\+::ostream \&\mbox{\hyperlink{_s_d_l__opengl_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, \mbox{\hyperlink{class_el}{El}} const \&\mbox{\hyperlink{_s_d_l__opengl_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+{\footnotesize template$<$class Container $>$ }\\Container $\ast$ \mbox{\hyperlink{test__stl__binders_8cpp_a6adf5a14617a35f2332fae1fd6101c11}{one\+\_\+to\+\_\+n}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})
+\item 
+{\footnotesize template$<$class Map $>$ }\\Map $\ast$ \mbox{\hyperlink{test__stl__binders_8cpp_af2ec468d3fb2f628fee7c706e774d044}{times\+\_\+ten}} (\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae2b4646468bc89d0ba646f5cf838e051}{n}})
+\item 
+\mbox{\hyperlink{test__stl__binders_8cpp_ab5aa4d2a5f0e73dfd585a8c1e22d016e}{T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE}} (stl\+\_\+binders, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__stl__binders_8cpp_a6adf5a14617a35f2332fae1fd6101c11}\label{test__stl__binders_8cpp_a6adf5a14617a35f2332fae1fd6101c11}} 
+\index{test\_stl\_binders.cpp@{test\_stl\_binders.cpp}!one\_to\_n@{one\_to\_n}}
+\index{one\_to\_n@{one\_to\_n}!test\_stl\_binders.cpp@{test\_stl\_binders.cpp}}
+\subsubsection{\texorpdfstring{one\_to\_n()}{one\_to\_n()}}
+{\footnotesize\ttfamily template$<$class Container $>$ \\
+Container$\ast$ one\+\_\+to\+\_\+n (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__stl__binders_8cpp_a96c1d8fc7e2bbe3fb845f28231a85943}\label{test__stl__binders_8cpp_a96c1d8fc7e2bbe3fb845f28231a85943}} 
+\index{test\_stl\_binders.cpp@{test\_stl\_binders.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!test\_stl\_binders.cpp@{test\_stl\_binders.cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{s,  }\item[{\mbox{\hyperlink{class_el}{El}} const \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__stl__binders_8cpp_ab5aa4d2a5f0e73dfd585a8c1e22d016e}\label{test__stl__binders_8cpp_ab5aa4d2a5f0e73dfd585a8c1e22d016e}} 
+\index{test\_stl\_binders.cpp@{test\_stl\_binders.cpp}!TEST\_SUBMODULE@{TEST\_SUBMODULE}}
+\index{TEST\_SUBMODULE@{TEST\_SUBMODULE}!test\_stl\_binders.cpp@{test\_stl\_binders.cpp}}
+\subsubsection{\texorpdfstring{TEST\_SUBMODULE()}{TEST\_SUBMODULE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+S\+U\+B\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{stl\+\_\+binders}]{,  }\item[{\mbox{\hyperlink{_s_d_l__opengl__glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test__stl__binders_8cpp_af2ec468d3fb2f628fee7c706e774d044}\label{test__stl__binders_8cpp_af2ec468d3fb2f628fee7c706e774d044}} 
+\index{test\_stl\_binders.cpp@{test\_stl\_binders.cpp}!times\_ten@{times\_ten}}
+\index{times\_ten@{times\_ten}!test\_stl\_binders.cpp@{test\_stl\_binders.cpp}}
+\subsubsection{\texorpdfstring{times\_ten()}{times\_ten()}}
+{\footnotesize\ttfamily template$<$class Map $>$ \\
+Map$\ast$ times\+\_\+ten (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{warnings_8h_a74f207b5aa4ba51c3a2ad59b219a423b}{int}}}]{n }\end{DoxyParamCaption})}
+
