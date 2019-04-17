@@ -42,12 +42,17 @@ On the whole I would have liked to have more time to actually do the project aft
 	                               within the socket then         uses pybind to call C++ 
 	                               calls the corresponding        functions to render the
 	                               functions)                     various entities in the
-	                                                              game, this contains the entities themselves and manages their variables)
+	                                                              game, this contains the entities
+	                                                              themselves and manages their variables)
 	                                                                         |
 	                                                                         |
 	                                                                         v
 	                                                                     Game.cpp
-	                                                                (C++ code in charge of reading from files and rendering the tiles, enemies, items, and the player, is also in charge of saving current entity locations to new txt files)
+	                                                                (C++ code in charge of reading 
+	                                                                from files and rendering the tiles, 
+	                                                                enemies, items, and the player, is 
+	                                                                also in charge of saving current 
+	                                                                entity locations to new txt files)
 
 ### Blue Sentinel
 - Can "Turk" Bekcioglu
