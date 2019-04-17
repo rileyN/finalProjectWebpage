@@ -1,25 +1,27 @@
-# Platformer by The Mound-Makers
+# Dungeon Editor Final Project by Blue Sentinel
 
 
 
 ## Download
 
-[Click here to download!](https://drive.google.com/open?id=1U6foNoy-kGcs-OoHv9PsSbV9A7Agyrwc)
+[Click here to download!](DOWNLOADLINK)
 
 
 ## Documentation
-[Click here for documentation](Docs/html/index.html)
+[Click here for documentation](DOCUMENTATIONLINK)
 
 ## Gameplay Trailer
 
+TRAILER
+
 ## Screenshots
 
-## Platformer Post Mortem
+SCREENSHOTS
 
-There are two main things that I would like to do if given more time to work on this project. The first would be to make the game function, as it doesn't seem to compile at this stage, so there is only so much to say about it all.
+## Final Project Post Mortem
 
-Secondly, I would like for the game to actually fulfill its scope that its groundwork laid. The game code had a lot promise, being so open ended that there was a ton of potential for what could have been added. Though we were unable to see it become promising like we thought it would because of how much we underestimated the work-load for the idea we went for, it's a learning experience that will likely aid our pacing and judgement in the future.
+POSTMORTEM
 
-### Mound-Makers
-- Zach Casey
+### Blue Sentinel
+- Can "Turk" Bekcioglu
 - Riley Nolan
